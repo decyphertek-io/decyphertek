@@ -142,6 +142,7 @@ Docs
      $ ansible-doc --type <plugin type>  >>> Example
      $ ansible-doc -t connection -s ssh
  
+ 
 References
 ----------
 

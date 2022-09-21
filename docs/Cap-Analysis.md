@@ -1,7 +1,7 @@
 Cap Analysis
 =====
 
-     Open Source Pcap Analysis w/ visuals. 
+Open Source Pcap Analysis w/ visuals. 
 
 Install
 --------

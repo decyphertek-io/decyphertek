@@ -83,6 +83,7 @@ Enable AWS Workspace
      1. AWS Console > WorkSpaces > Directories 
      2. Your directory > Actions > Update Details
      3. Access Control Options > Check-Linux- platform > Update and Exit to save 
+     
 
 References
 ----------

@@ -51,6 +51,7 @@ Ansible Plugin
      From the Type list, select the type of the variable for validation.  
      In the Value field, enter the value for the variable.  
 
+
 References
 ----------
 

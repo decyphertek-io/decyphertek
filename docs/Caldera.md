@@ -1,7 +1,7 @@
 Caldera
 =====
 
-     A Scalable, Automated Adversary Emulation Platform
+A Scalable, Automated Adversary Emulation Platform
 
 Install
 --------
@@ -13,6 +13,7 @@ Install
      # http://localhost:8888 with the
      # user = red 
      # password = conf/local.yml 
+
 
 References
 ----------

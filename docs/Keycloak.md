@@ -68,6 +68,7 @@ Install
      > Admin Console > Identity Providers > Open ID Connect v 1.0 > Add names & save 
      Next > Import External IDP Config >  see the Import from URL field. 
      > Azure AD > App registration > See Endpoints. 
+     
 
 References
 -----------
