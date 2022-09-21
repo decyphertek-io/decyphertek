@@ -12,9 +12,9 @@ Pop Culture
      * BBC Version - https://m.youtube.com/watch?v=S89BHnaxULo
 
      Android Netrunner: 
-     About - https://en.m.wikipedia.org/wiki/Android:_Netrunner
-     Online - https://www.jinteki.net/play
-     Buy - https://www.fantasyflightgames.com/en/products/android-netrunner-the-card-game/
+     * About - https://en.m.wikipedia.org/wiki/Android:_Netrunner
+     * Online - https://www.jinteki.net/play
+     * Buy - https://www.fantasyflightgames.com/en/products/android-netrunner-the-card-game/
 
      ShadowRun :
      - https://archive.org/details/sg_Shadowrun_1994_Sega_US
