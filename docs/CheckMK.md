@@ -3,7 +3,7 @@ CheckMK
 
 Modern Open Source network Monitoring solution. 
  
-Install:
+Install
 --------
 
      $ wget https://download.checkmk.com/checkmk/2.1.0p11/check-mk-raw-2.1.0p11_0.focal_amd64.deb
@@ -22,5 +22,7 @@ Install:
      $ htpasswd etc/htpasswd cmkadmin
 
 
-     ###References###
+References
+----------
+
      https://checkmk.com/download?edition=cre&version=stable

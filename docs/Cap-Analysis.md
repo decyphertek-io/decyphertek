@@ -3,7 +3,7 @@ Cap Analysis
 
      Open Source Pcap Analysis w/ visuals. 
 
-Install:
+Install
 --------
 
      $ wget http://sourceforge.net/projects/capanalysis/files/version%201.2.2/capanalysis_1.2.2_amd64.deb/download

@@ -1,9 +1,9 @@
 Beekeeper Studio 
 =====
 
-     BeeKeeper Studio is an open source SQL editor and database manager with an easy to use gui.     
+BeeKeeper Studio is an open source SQL editor and database manager with an easy to use gui.     
 
-Install:
+Install
 --------
 
      $ wget --quiet -O - https://deb.beekeeperstudio.io/beekeeper.key | sudo apt-key add - 

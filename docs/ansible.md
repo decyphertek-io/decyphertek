@@ -4,7 +4,7 @@ Ansible
 Ansible is an automation platform that can manage multiple technologies, 
 including Linux, Windows, Mac, firewalls, routers, switches, and many more. 
 
-Install:
+Install
 --------
 
      # Ubuntu Install
@@ -42,8 +42,8 @@ Install:
      $ sudo vim /etc/ansible/ansible.cfg
      $ vim ~/.ansible/ansible.cfg
  
-Ansible - AWS Cli Install/Setup
--------------------------------
+AWS Cli Install/Setup
+---------------------
 
      $ sudo apt install -y python3-pip
      $ pip3 install awscli --upgrade --user
@@ -52,7 +52,7 @@ Ansible - AWS Cli Install/Setup
      # Stored here: ~/.aws
      # update config and credentials from ansible
  
-Collections - AWS Example:
+Collections - AWS Example
 --------------------------
 
      $ ansible-galaxy collection install amazon.aws
@@ -60,8 +60,8 @@ Collections - AWS Example:
      # Install Python requirements
      $ python3 -m pip install -r requirements.txt
   
-Ansible - Vault:
------------------
+Vault
+------
 
      # Easy way , just encrypt the vars file
      $ ansible-vault encrypt variables.vault
@@ -82,8 +82,8 @@ Ansible - Vault:
      # How to decrypt vault and use with a playbook.
      $ ansible-playbook -l firewall panos_facts.yml --ask-vault-pass
 
-Ansible - Decyphertek Ansible:
-------------------------------
+Decyphertek Ansible
+--------------------
 
      # Choose a directory where you want ansible , ideally /etc/ansible
      $ cd /etc/ 
@@ -93,8 +93,8 @@ Ansible - Decyphertek Ansible:
      $ cd /etc/ansible
      $ git fetch
 
-Ansible - Version Control:
--------------------------
+Version Control
+----------------
 
      # Clone your branch of ansible
      # https://your-git
@@ -112,7 +112,7 @@ Ansible - Version Control:
      # Can push git changes in desktop gui via VsCodium
      $ sudo snap install codium
  
-General guidance:
+General guidance
 ----------------
 
      # AWS Cli Command via playbook
@@ -130,7 +130,7 @@ General guidance:
      # have to setup ~.aws/config & ~.aws/credentials
      $ aws configure
  
-Docs:
+Docs
 -----
 
      $ ansible-doc --version
@@ -142,9 +142,9 @@ Docs:
      $ ansible-doc --type <plugin type>  >>> Example
      $ ansible-doc -t connection -s ssh
  
- References
- -----------
- 
+References
+----------
+
      https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
      https://docs.ansible.com/ansible/latest/cli/ansible-doc.html
      https://docs.ansible.com/ansible/latest/cli/ansible-vault.html

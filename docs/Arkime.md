@@ -3,7 +3,7 @@ Arkime
 
 Open Source full network packet capture, with visual dashboard. 
 
-Install:
+Install
 --------
 
      $ wget https://s3.amazonaws.com/files.molo.ch/builds/ubuntu-20.04/arkime_3.4.2-1_amd64.deb

@@ -3,7 +3,7 @@ Auditd
 
 Auditd is an open source auditing tool that can increase security and generate reports via auditd logs.    
 
-Install:
+Install
 --------
 
      $ sudo apt install -y auditd audispd-plugins
@@ -13,23 +13,23 @@ Install:
      $ sudo systemctl restart auditd
      $ sudo systemctl status auditd
   
-Watch a directory:
+Watch a directory
 -----------------
 
      $ sudo auditctl -w /home/[your_user_name]/test_dir/ -k test_watch
   
-Search Auditd logs:
+Search Auditd logs
 ------------------
 
      $ sudo ausearch -k test_watch
   
-Create a report:
+Create a report
 ----------------
 
      $ sudo ausearch -k test_watch | aureport -f -I 
      $ sudo aureport
   
-Manage:
+Manage
 -------
 
      $ sudo systemctl enable auditd

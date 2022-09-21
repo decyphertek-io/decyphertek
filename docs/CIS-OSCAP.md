@@ -13,16 +13,24 @@ secure Linux servers.
      # CIS Level 2 breaks auditd, unresolved.
      # CIS Level 3 & Oscap, lock me out of the system and unable to use sudo, unresolved. 
   
-     ###CAUTION: CIS Level1 - Ubuntu 20.04 Server###
+CAUTION: CIS Level1 - Ubuntu 20.04 Server
+-----------------------------------------
+
      $ curl -sSL https://raw.githubusercontent.com/decyphertek-io/configs/main/ubuntu2004-script-cis_level1_server.sh | sudo bash
 
-     ###CAUTION: CIS Level2 - Ubuntu 20.04 Server###
+CAUTION: CIS Level2 - Ubuntu 20.04 Server
+-----------------------------------------
+
      $ curl -sSL https://raw.githubusercontent.com/decyphertek-io/configs/main/ubuntu2004-script-cis_level2_server.sh | sudo bash
 
-     ###CAUTION: CIS Level3/Stig V1R1 - Ubuntu 20.04 Server###
+CAUTION: CIS Level3/Stig V1R1 - Ubuntu 20.04 Server
+---------------------------------------------------
+
      $ curl -sSL https://raw.githubusercontent.com/decyphertek-io/configs/main/ubuntu2004-script-stig-cis_level3_server.sh | sudo bash
 
-     ###Oscap - Install####
+Oscap - Install
+----------------
+
      $ sudo apt install -y libopenscap8 ssg-base ssg-debderived ssg-debian ssg-nondebian ssg-applications unzip
      $ wget https://github.com/ComplianceAsCode/content/releases/download/v0.1.63/scap-security-guide-0.1.63.zip 
      $ unzip -q scap-security-guide-0.1.63.zip
@@ -31,10 +39,15 @@ secure Linux servers.
      $ sudo mv scap-security-guide-0.1.63 /opt/ssg/
      $ sudo rm -rf scap-security-guide-0.1.63.zip
   
-     ###CAUTION: Oscap - Quick Remediation###
+CAUTION: Oscap - Quick Remediation
+----------------------------------
+
      $ sudo oscap xccdf eval --remediate --profile xccdf_org.ssgproject.content_profile_stig \
      /opt/ssg/scap-security-guide-0.1.63/ssg-ubuntu2004-ds.xml > ~/ssg-reports/ssg-ubuntu2004-ds.txt
      $ cat ~/ssg-reports/ssg-ubuntu2004-ds.txt
+
+Optional
+--------
 
      # All CIS & Oscap break the passwd, adduser, and deluser commands. The fix .
      $ sudo sed -i 's/password requisite pam_pwhistory\.so remember=5  use_authtok/#password requisite pam_pwhistory\.so remember=5  use_authtok/g' /etc/pam.d/common-password 

@@ -3,7 +3,7 @@ Caldera
 
      A Scalable, Automated Adversary Emulation Platform
 
-Install:
+Install
 --------
 
      $ git clone https://github.com/mitre/caldera.git --recursive --branch 4.0.0

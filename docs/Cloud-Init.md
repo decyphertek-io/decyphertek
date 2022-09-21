@@ -3,8 +3,8 @@ Cloud Init
 
 Cloud Init can be used by all Linux systems to customize builds in all cloud platforms. 
 
-Cloud Init -  Install & Utilize
--------------------------------
+Install & Utilize:
+-----------------
 
      # Interactive
     $ sudo apt install cloud-init
@@ -31,7 +31,6 @@ Cloud Init -  Install & Utilize
     $ sudo pkill -KILL -u ubuntu
     $ sudo deluser ubuntu
     $ sudo rm -rf /home/ubuntu
-
 
 References
 ----------

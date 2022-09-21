@@ -3,8 +3,8 @@ Cloud Query
 
 Cloud Query is a simple CLI tool that can query your cloud infrastrucure as a database to ensure compliance.  
 
-CloudQuery - Install
---------------------
+Install
+-------
 
      $ curl -L https://github.com/cloudquery/cloudquery/releases/latest/download/cloudquery_linux_x86_64 -o cloudquery 
      $ chmod a+x cloudquery 

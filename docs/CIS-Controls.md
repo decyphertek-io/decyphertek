@@ -4,10 +4,8 @@ CIS Controls
 CIS Controls provides easy to follow guidance on securing the various domains of your IT 
 Infrastructure. CIS Controls maps to compliance stadards: NIST, SOC2, GDPR, HIPPA, & PCI,
 
-
-
-CIS Controls - List
--------------------
+List
+-----
 
      CIS Control 1: Inventory and Control of Enterprise Assets
      CIS Control 2: Inventory and Control of Software Assets
@@ -27,6 +25,7 @@ CIS Controls - List
      CIS Control 16: Application Software Security
      CIS Control 17: Incident Response Management
      CIS Control 18: Penetration Testing
+
 
 References
 ----------
