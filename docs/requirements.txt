@@ -66,3 +66,6 @@ zipp==3.8.0
     # via importlib-metadata
 mkdocs-windmill-dark==0.2.0
     # mkdocs
+mkdocs-material==8.5.3
+mkdocs-material-extensions==1.0.3
+    # mkdocs
