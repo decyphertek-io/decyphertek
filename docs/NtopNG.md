@@ -1,7 +1,7 @@
 NtopNG
 =====
 
-"ntopng is the next generation version of the original ntop, a network traffic 
+"Ntopng is the next generation version of the original ntop, a network traffic 
 probe that monitors network usage."
 
 Install

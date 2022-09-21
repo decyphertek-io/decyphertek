@@ -1,7 +1,7 @@
 Mist-io
 =====
 
-     Mist is an open source multicloud management platform.
+Mist is an open source multicloud management platform.
 
 Install {Kubernetes/Helm}
 --------------------------
