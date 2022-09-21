@@ -46,6 +46,7 @@ Setup
      $ git push
 
 IDE Version Control
+--------------------
 
      $ sudo snap install codium --classic
      # Open or git clone your repo

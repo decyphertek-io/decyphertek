@@ -3,7 +3,7 @@ Cloud Init
 
 Cloud Init can be used by all Linux systems to customize builds in all cloud platforms. 
 
-Install & Utilize:
+Install + Utilize
 -----------------
 
      # Interactive
