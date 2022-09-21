@@ -73,13 +73,14 @@ MongoDB Replica Set
      https://www.mongodb.com/docs/manual/tutorial/deploy-replica-set/
      https://docs.graylog.org/docs/multinode-setup
 
-Palo Alto & Fortigate
+Palo Alto + Fortigate
 ---------------------
 
      https://docs.graylog.org/docs/palo-alto
      https://docs.graylog.org/docs/fortigate
 
 Plugins
+-------
 
      https://community.graylog.org/t/active-directory-auditing-winlogbeats-graylog-3-0-2/22889
      https://community.graylog.org/search?context=category&context_id=31&q=Palo%20alto&skip_context=true
