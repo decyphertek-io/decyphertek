@@ -3,8 +3,8 @@ Arkime
 
 Open Source full network packet capture, with visual dashboard. 
 
-Arkime - Install
-----------------
+Install:
+--------
 
      $ wget https://s3.amazonaws.com/files.molo.ch/builds/ubuntu-20.04/arkime_3.4.2-1_amd64.deb
      $ sudo dpkg -i arkime_3.4.2-1_amd64.deb
@@ -30,7 +30,9 @@ Arkime - Install
      # you want IP -> Geo/ASN to work, you need to setup a maxmind account and the geoipupdate program. https://arkime.com/faq#maxmind
 
 
-     ###References###
+References
+----------
+
      https://arkime.com/
      https://arkime.com/faq
      https://arkime.com/settings

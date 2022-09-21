@@ -4,8 +4,8 @@ Ansible
 Ansible is an automation platform that can manage multiple technologies, 
 including Linux, Windows, Mac, firewalls, routers, switches, and many more. 
 
-Ansible - Install
------------------------
+Install:
+--------
 
      # Ubuntu Install
      $ sudo apt update
