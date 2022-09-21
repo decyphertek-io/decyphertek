@@ -5,8 +5,8 @@ Misp is an open source threat intelligence platform for cyber defense.
 
 Install
 -------
-
-     $ sudo useradd misp
+     $ sudo groupadd misp
+     $ sudo useradd -m misp
      $ wget -O /tmp/INSTALL.sh https://raw.githubusercontent.com/MISP/MISP/2.4/INSTALL/INSTALL.sh && bash /tmp/INSTALL.sh -c -M
   
 Variables
