@@ -3,7 +3,6 @@ Balena Etcher
 
 An easy way to create live USB.  
 
-
 Install:
 -------
 

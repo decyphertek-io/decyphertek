@@ -24,7 +24,9 @@ CloudQuery - Install
      # Execute A Policy, CIS 
      $ cloudquery policy run aws//cis_v1.2.0 
 
-     ###References### 
+References
+----------
+
      https://www.cloudquery.io/ 
      https://github.com/cloudquery/cloudquery 
      https://docs.cloudquery.io/docs/getting-started/getting-started-with-aws/ 

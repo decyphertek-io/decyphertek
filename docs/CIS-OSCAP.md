@@ -41,7 +41,9 @@ secure Linux servers.
      $ sudo sed -i 's/password requisite pam_pwquality\.so retry=3/#password requisite pam_pwquality\.so retry=3/g' /etc/pam.d/common-password
   
   
-     ###References###
+References
+----------
+
      https://www.open-scap.org/
      https://manpages.ubuntu.com/manpages/xenial/man8/oscap.8.html
      https://www.cisecurity.org/cis-benchmarks/cis-benchmarks-faq

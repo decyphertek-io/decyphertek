@@ -28,5 +28,7 @@ CIS Controls - List
      CIS Control 17: Incident Response Management
      CIS Control 18: Penetration Testing
 
-     ###References###
+References
+----------
+
      https://www.cisecurity.org/controls/cis-controls-list

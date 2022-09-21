@@ -3,8 +3,8 @@ Cap Analysis
 
      Open Source Pcap Analysis w/ visuals. 
 
-Cap Analysis - Install
-----------------------
+Install:
+--------
 
      $ wget http://sourceforge.net/projects/capanalysis/files/version%201.2.2/capanalysis_1.2.2_amd64.deb/download
      $ sudo dpkg -i capanalysis_1.2.2_amd64.deb
@@ -13,6 +13,8 @@ Cap Analysis - Install
      $ sudo /etc/init.d/capanalysis restart
 
 
-     ###References###
+References
+----------
+
      https://www.capanalysis.net/ca
      https://www.capanalysis.net/ca/how-to-install-capanalysis

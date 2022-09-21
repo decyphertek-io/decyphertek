@@ -36,7 +36,6 @@ Manage:
      $ sudo systemctl start auditd
      $ sudo systemctl restart auditd
 
-
 References
 ----------
 

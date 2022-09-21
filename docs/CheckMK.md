@@ -3,8 +3,8 @@ CheckMK
 
 Modern Open Source network Monitoring solution. 
  
-CheckMK - Install
------------------
+Install:
+--------
 
      $ wget https://download.checkmk.com/checkmk/2.1.0p11/check-mk-raw-2.1.0p11_0.focal_amd64.deb
      $ sudo apt update && sudo apt install -y gdebi

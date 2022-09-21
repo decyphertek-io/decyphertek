@@ -12,6 +12,8 @@ ClamAV - Install
     $ clamscan [options] [file/directory/-]
 
 
-    ###References###
+References
+----------
+
     https://docs.clamav.net/manual/Usage/Scanning.html
     https://docs.clamav.net/manual/Installing/Packages.html

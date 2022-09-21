@@ -33,7 +33,9 @@ Cloud Init -  Install & Utilize
     $ sudo rm -rf /home/ubuntu
 
 
-    ###References###
+References
+----------
+
     https://cloud-init.io/
     https://www.digitalocean.com/community/tutorials/how-to-use-cloud-config-for-your-initial-server-setup
     https://stackoverflow.com/questions/23065673/how-to-re-run-cloud-init-without-reboot
