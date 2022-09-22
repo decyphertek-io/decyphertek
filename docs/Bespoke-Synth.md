@@ -13,7 +13,7 @@ Install
 References
 ----------
 
-https://www.bespokesynth.com/#contact
-https://www.bespokesynth.com/docs/index.html
-https://github.com/BespokeSynth/BespokeSynth/releases
-https://software.opensuse.org//download.html?project=home%3Abespokesynth&package=bespokesynth
+     https://www.bespokesynth.com/#contact
+     https://www.bespokesynth.com/docs/index.html
+     https://github.com/BespokeSynth/BespokeSynth/releases
+     https://software.opensuse.org//download.html?project=home%3Abespokesynth&package=bespokesynth

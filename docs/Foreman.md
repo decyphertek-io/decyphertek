@@ -55,8 +55,8 @@ Ansible Plugin
 References
 ----------
 
-https://docs.theforeman.org/3.3/Quickstart_Guide/index-katello.html
-https://docs.theforeman.org/nightly/Configuring_Ansible/index-foreman-deb.html  
-https://www.theforeman.org/plugins/foreman_ansible/2.x/index.html 
-https://github.com/theforeman/foreman_ansible 
-https://theforeman.org/plugins/foreman_ansible/3.x/index.html 
+     https://docs.theforeman.org/3.3/Quickstart_Guide/index-katello.html
+     https://docs.theforeman.org/nightly/Configuring_Ansible/index-foreman-deb.html  
+     https://www.theforeman.org/plugins/foreman_ansible/2.x/index.html 
+     https://github.com/theforeman/foreman_ansible 
+     https://theforeman.org/plugins/foreman_ansible/3.x/index.html 

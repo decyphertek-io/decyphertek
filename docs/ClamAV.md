@@ -15,5 +15,5 @@ Install
 References
 ----------
 
-https://docs.clamav.net/manual/Usage/Scanning.html
-https://docs.clamav.net/manual/Installing/Packages.html
+    https://docs.clamav.net/manual/Usage/Scanning.html
+    https://docs.clamav.net/manual/Installing/Packages.html
