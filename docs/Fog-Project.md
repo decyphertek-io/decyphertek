@@ -16,4 +16,4 @@ Install
 References
 ----------
 
-     https://fogproject.org/
+https://fogproject.org/

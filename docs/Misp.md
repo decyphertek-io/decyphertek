@@ -39,7 +39,7 @@ Variables
 References
 -----------
 
-     https://www.misp-project.org/
-     https://misp.github.io/MISP/
+https://www.misp-project.org/
+https://misp.github.io/MISP/
 
   

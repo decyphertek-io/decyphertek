@@ -29,5 +29,5 @@ Install
 References
 ----------
 
-    https://docs.docker.com/engine/install/ubuntu/
-    https://docs.docker.com/compose/install/compose-plugin/#install-the-plugin-manually
+https://docs.docker.com/engine/install/ubuntu/
+https://docs.docker.com/compose/install/compose-plugin/#install-the-plugin-manually

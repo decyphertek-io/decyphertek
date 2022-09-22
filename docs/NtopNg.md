@@ -19,9 +19,9 @@ Install
 References
 -----------
 
-    https://www.ntop.org/products/traffic-analysis/ntop/#ntopng-screenshots
-    https://github.com/ntop/ntopng
-    https://packages.ntop.org/
-    https://packages.ntop.org/apt-stable/
-    https://github.com/ntop/ntopng/blob/dev/doc/README.md
-    https://www.ntop.org/guides/ntopng/faq.html#cannot-login-into-the-gui
+https://www.ntop.org/products/traffic-analysis/ntop/#ntopng-screenshots
+https://github.com/ntop/ntopng
+https://packages.ntop.org/
+https://packages.ntop.org/apt-stable/
+https://github.com/ntop/ntopng/blob/dev/doc/README.md
+https://www.ntop.org/guides/ntopng/faq.html#cannot-login-into-the-gui

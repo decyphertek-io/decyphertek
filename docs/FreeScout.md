@@ -97,5 +97,5 @@ Manual Install
 References
 ----------
 
-    https://freescout.net/
-    https://github.com/freescout-helpdesk/freescout
+https://freescout.net/
+https://github.com/freescout-helpdesk/freescout

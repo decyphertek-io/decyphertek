@@ -146,8 +146,8 @@ Docs
 References
 ----------
 
-     https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
-     https://docs.ansible.com/ansible/latest/cli/ansible-doc.html
-     https://docs.ansible.com/ansible/latest/cli/ansible-vault.html
-     https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/
-     https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-panorama-api/get-started-with-the-pan-os-xml-api/get-your-api-key.html
+https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
+https://docs.ansible.com/ansible/latest/cli/ansible-doc.html
+https://docs.ansible.com/ansible/latest/cli/ansible-vault.html
+https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/
+https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-panorama-api/get-started-with-the-pan-os-xml-api/get-your-api-key.html

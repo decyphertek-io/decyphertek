@@ -18,6 +18,6 @@ Install
 References
 ----------
 
-     https://caldera.mitre.org/
-     https://caldera.readthedocs.io/en/latest/Installing-CALDERA.html
-     https://caldera.readthedocs.io/en/latest/Getting-started.html
+https://caldera.mitre.org/
+https://caldera.readthedocs.io/en/latest/Installing-CALDERA.html
+https://caldera.readthedocs.io/en/latest/Getting-started.html

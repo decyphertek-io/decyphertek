@@ -44,12 +44,12 @@ Optional
 References
 -----------
 
-     https://readthedocs.org/
-     https://docs.readthedocs.io/en/stable/tutorial/
-     https://github.com/readthedocs/tutorial-template/
-     https://docs.readthedocs.io/en/stable/tutorial/
-     https://github.com/readthedocs-examples/example-sphinx-basic
-     https://www.tutorialspoint.com/online_markdown_editor.php
-     https://github.com/readthedocs/sphinx_rtd_theme/issues/295
+https://readthedocs.org/
+https://docs.readthedocs.io/en/stable/tutorial/
+https://github.com/readthedocs/tutorial-template/
+https://docs.readthedocs.io/en/stable/tutorial/
+https://github.com/readthedocs-examples/example-sphinx-basic
+https://www.tutorialspoint.com/online_markdown_editor.php
+https://github.com/readthedocs/sphinx_rtd_theme/issues/295
 
 

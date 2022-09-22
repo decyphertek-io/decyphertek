@@ -27,6 +27,6 @@ Phones
 References
 ----------
 
-     https://exodus-privacy.eu.org/en/
-     https://www.esim.net/helpdesk/esim-phones/
-     https://www.breathesim.com/
+https://exodus-privacy.eu.org/en/
+https://www.esim.net/helpdesk/esim-phones/
+https://www.breathesim.com/

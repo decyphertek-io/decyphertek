@@ -25,6 +25,6 @@ Useful Commands
 References
 ----------
 
-     https://docs.crowdsec.net/docs/getting_started/install_crowdsec/
+https://docs.crowdsec.net/docs/getting_started/install_crowdsec/
 
 

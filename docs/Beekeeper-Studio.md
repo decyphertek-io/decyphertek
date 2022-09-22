@@ -14,5 +14,5 @@ Install
 References
 ----------
 
-     https://www.beekeeperstudio.io/
-     https://docs.beekeeperstudio.io/installation/#apt-deb 
+https://www.beekeeperstudio.io/
+https://docs.beekeeperstudio.io/installation/#apt-deb 

@@ -21,6 +21,6 @@ Install
 References
 ----------
 
-  https://www.odoo.com/
-  https://www.odoo.com/documentation/15.0/administration/install.html
-  https://www.odoo.com/documentation/15.0/administration/install/install.html#running-odoo
+https://www.odoo.com/
+https://www.odoo.com/documentation/15.0/administration/install.html
+https://www.odoo.com/documentation/15.0/administration/install/install.html#running-odoo

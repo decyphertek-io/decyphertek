@@ -14,5 +14,5 @@ Install
 References
 ----------
 
-     https://github.com/balena-io/etcher
+https://github.com/balena-io/etcher
 

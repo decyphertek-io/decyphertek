@@ -60,9 +60,9 @@ AWS Image
 References
 ----------
 
-    https://github.com/hashicorp/packer
-    https://www.packer.io/
-    https://learn.hashicorp.com/tutorials/packer/aws-get-started-provision?in=packer/aws-get-started
-    https://marketplace.visualstudio.com/items?itemName=4ops.packer
-    https://www.packer.io/plugins/provisioners/ansible/ansible
-    https://tekanaid.com/posts/hashicorp-packer-terraform-and-ansible-to-set-up-jenkins/
+https://github.com/hashicorp/packer
+https://www.packer.io/
+https://learn.hashicorp.com/tutorials/packer/aws-get-started-provision?in=packer/aws-get-started
+https://marketplace.visualstudio.com/items?itemName=4ops.packer
+https://www.packer.io/plugins/provisioners/ansible/ansible
+https://tekanaid.com/posts/hashicorp-packer-terraform-and-ansible-to-set-up-jenkins/

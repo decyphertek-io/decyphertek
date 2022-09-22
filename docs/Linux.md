@@ -88,12 +88,12 @@ Enable AWS Workspace
 References
 ----------
 
-     https://linuxize.com/post/how-to-create-users-in-linux-using-the-useradd-command/
-     https://www.systutorials.com/docs/linux/man/8-deluser/
-     https://www.cyberciti.biz/faq/linux-logout-user-howto/
-     https://askubuntu.com/questions/388440/why-is-there-no-name-showing-at-the-command-line
-     https://www.howtogeek.com/197934/how-to-change-your-hostname-computer-name-on-ubuntu-linux/
-     https://linoxide.com/linux-set-access-control-list-using-setfacl-and-getfacl-commands/
-     https://linuxhint.com/change-hostname-ubuntu-permanently/
+https://linuxize.com/post/how-to-create-users-in-linux-using-the-useradd-command/
+https://www.systutorials.com/docs/linux/man/8-deluser/
+https://www.cyberciti.biz/faq/linux-logout-user-howto/
+https://askubuntu.com/questions/388440/why-is-there-no-name-showing-at-the-command-line
+https://www.howtogeek.com/197934/how-to-change-your-hostname-computer-name-on-ubuntu-linux/
+https://linoxide.com/linux-set-access-control-list-using-setfacl-and-getfacl-commands/
+https://linuxhint.com/change-hostname-ubuntu-permanently/
 
 

@@ -57,11 +57,11 @@ Optional
 References
 ----------
 
-     https://www.open-scap.org/
-     https://manpages.ubuntu.com/manpages/xenial/man8/oscap.8.html
-     https://www.cisecurity.org/cis-benchmarks/cis-benchmarks-faq
-     https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/security_guide/sect-using_openscap_to_remediate_the_system
-     https://askubuntu.com/questions/1390222/passwd-module-is-unknown
-     https://adamtheautomator.com/openscap/
+https://www.open-scap.org/
+https://manpages.ubuntu.com/manpages/xenial/man8/oscap.8.html
+https://www.cisecurity.org/cis-benchmarks/cis-benchmarks-faq
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/security_guide/sect-using_openscap_to_remediate_the_system
+https://askubuntu.com/questions/1390222/passwd-module-is-unknown
+https://adamtheautomator.com/openscap/
 
 

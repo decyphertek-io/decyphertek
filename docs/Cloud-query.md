@@ -28,6 +28,6 @@ Install
 References
 ----------
 
-     https://www.cloudquery.io/ 
-     https://github.com/cloudquery/cloudquery 
-     https://docs.cloudquery.io/docs/getting-started/getting-started-with-aws/ 
+https://www.cloudquery.io/ 
+https://github.com/cloudquery/cloudquery 
+https://docs.cloudquery.io/docs/getting-started/getting-started-with-aws/ 

@@ -62,7 +62,7 @@ External Flutter Packages
 References
 ----------
 
-  https://ubuntu.com/blog/getting-started-with-flutter-on-ubuntu
-  https://docs.flutter.dev/get-started/install/linux
-  https://docs.flutter.dev/get-started/test-drive
-  https://docs.flutter.dev/get-started/codelab
+https://ubuntu.com/blog/getting-started-with-flutter-on-ubuntu
+https://docs.flutter.dev/get-started/install/linux
+https://docs.flutter.dev/get-started/test-drive
+https://docs.flutter.dev/get-started/codelab

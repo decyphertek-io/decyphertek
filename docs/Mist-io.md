@@ -32,14 +32,14 @@ Install {Docker}
 References
 -----------
 
-     https://mist.io/
-     https://docs.mist.io/
-     https://github.com/mistio/mist-ce
-     https://github.com/mistio/mist-ce/releases/tag/v4.6.2
-     https://docs.mist.io/article/132-ansible-playbooks
-     https://github.com/mistio/ansible-examples
-     https://docs.docker.com/engine/install/ubuntu/
-     https://docs.docker.com/compose/install/
-     https://docs.mist.io/article/17-adding-amazon-ec2
-     https://docs.mist.io/article/69-what-ports-do-i-need-to-open-for-mist-io
+https://mist.io/
+https://docs.mist.io/
+https://github.com/mistio/mist-ce
+https://github.com/mistio/mist-ce/releases/tag/v4.6.2
+https://docs.mist.io/article/132-ansible-playbooks
+https://github.com/mistio/ansible-examples
+https://docs.docker.com/engine/install/ubuntu/
+https://docs.docker.com/compose/install/
+https://docs.mist.io/article/17-adding-amazon-ec2
+https://docs.mist.io/article/69-what-ports-do-i-need-to-open-for-mist-io
 

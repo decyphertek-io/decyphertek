@@ -16,5 +16,5 @@ Install
 References
 ----------
 
-     https://www.capanalysis.net/ca
-     https://www.capanalysis.net/ca/how-to-install-capanalysis
+https://www.capanalysis.net/ca
+https://www.capanalysis.net/ca/how-to-install-capanalysis

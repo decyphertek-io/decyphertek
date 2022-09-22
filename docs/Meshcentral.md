@@ -33,6 +33,6 @@ Install
 References
 ----------
 
-     https://meshcentral.com/info/
-     https://github.com/Ylianst/MeshCentral/issues/1076
-     https://info.meshcentral.com/downloads/MeshCentral2/MeshCentral2UserGuide.pdf
+https://meshcentral.com/info/
+https://github.com/Ylianst/MeshCentral/issues/1076
+https://info.meshcentral.com/downloads/MeshCentral2/MeshCentral2UserGuide.pdf
