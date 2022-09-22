@@ -21,6 +21,6 @@ Login Info
 References
 -----------
 
-https://www.manageiq.org/ 
-https://www.manageiq.org/docs/get-started/basic-configuration.html 
+     https://www.manageiq.org/ 
+     https://www.manageiq.org/docs/get-started/basic-configuration.html 
 

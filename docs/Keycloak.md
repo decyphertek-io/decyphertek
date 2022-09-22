@@ -73,8 +73,8 @@ Install
 References
 -----------
 
-https://linoxide.com/install-java-ubuntu-20-04/ 
-https://www.keycloak.org/getting-started/getting-started-zip 
-https://www.keycloak.org/docs/latest/server_admin/ 
-https://medium.com/keycloak/secure-jupyterlab-using-keycloak-56e60c369c5f 
-https://dev.to/andremoriya/keycloak-azure-active-directory-4cg4 
+     https://linoxide.com/install-java-ubuntu-20-04/ 
+     https://www.keycloak.org/getting-started/getting-started-zip 
+     https://www.keycloak.org/docs/latest/server_admin/ 
+     https://medium.com/keycloak/secure-jupyterlab-using-keycloak-56e60c369c5f 
+     https://dev.to/andremoriya/keycloak-azure-active-directory-4cg4 

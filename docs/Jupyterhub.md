@@ -111,10 +111,10 @@ Optional: CIS Can break permisisons
 References
 -----------
 
-https://jupyterhub.readthedocs.io/en/stable/quickstart.html#prerequisites
-https://jupyterhub.readthedocs.io/en/stable/getting-started/authenticators-users-basics.html
-https://jupyterhub.readthedocs.io/en/stable/troubleshooting.html
-https://aws.amazon.com/premiumsupport/knowledge-center/ec2-static-dns-ubuntu-debian
-https://hpc.llnl.gov/services/jupyterhub-and-jupyter-notebooks/jupyterhub-r-kernel
-https://github.com/nodesource/distributions/issues/1181
+     https://jupyterhub.readthedocs.io/en/stable/quickstart.html#prerequisites
+     https://jupyterhub.readthedocs.io/en/stable/getting-started/authenticators-users-basics.html
+     https://jupyterhub.readthedocs.io/en/stable/troubleshooting.html
+     https://aws.amazon.com/premiumsupport/knowledge-center/ec2-static-dns-ubuntu-debian
+     https://hpc.llnl.gov/services/jupyterhub-and-jupyter-notebooks/jupyterhub-r-kernel
+     https://github.com/nodesource/distributions/issues/1181
 

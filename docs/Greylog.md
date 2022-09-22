@@ -90,11 +90,11 @@ Plugins
 References
 ----------
 
-https://www.graylog.org/
-https://docs.graylog.org/docs/ubuntu
-https://docs.graylog.org/docs/sidecar
-https://kelley.jodymaroni.com/windows-filebeat-configuration-and-graylog-sidecar-the-graylog-blog/
-https://www.graylog.org/features/fault-tolerance
-https://docs.graylog.org/docs/server-conf
-https://docs.graylog.org/docs/multinode-setup
-https://www.mongodb.com/docs/manual/tutorial/deploy-replica-set/
+     https://www.graylog.org/
+     https://docs.graylog.org/docs/ubuntu
+     https://docs.graylog.org/docs/sidecar
+     https://kelley.jodymaroni.com/windows-filebeat-configuration-and-graylog-sidecar-the-graylog-blog/
+     https://www.graylog.org/features/fault-tolerance
+     https://docs.graylog.org/docs/server-conf
+     https://docs.graylog.org/docs/multinode-setup
+     https://www.mongodb.com/docs/manual/tutorial/deploy-replica-set/
