@@ -1,7 +1,7 @@
 Github
 =====
 
-     Github provides a cloud based git repo freely to those who open souece their code. Lets find an easy way to manage it. 
+Github provides a cloud based git repo freely to those who open souece their code. Lets find an easy way to manage it. 
 
 Add ssh keys
 ------------

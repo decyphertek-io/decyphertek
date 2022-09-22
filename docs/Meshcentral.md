@@ -2,8 +2,7 @@ MeshCentral
 =====
 
 "The open source, multi-platform, self-hosted, feature packed web site for remote device management."
-
-     WORK IN PROGRESS.... RESOLVING PERMISSION ISSUES.
+WORK IN PROGRESS.... RESOLVING PERMISSION ISSUES.
 
 Install
 --------

@@ -1,7 +1,7 @@
 Signal Desktop
 =====
  
- Open Source messenager. Privacy features and links desktop to your phone app.  
+Open Source messenager. Privacy features and links desktop to your phone app.  
 
 Install
 -------

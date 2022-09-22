@@ -1,7 +1,7 @@
 ESIM
 =====
 
-     eSIMs are the modern way have a data plan.
+eSIMs are the modern way have a data plan.
 
 No Trackers Found
 ------------------

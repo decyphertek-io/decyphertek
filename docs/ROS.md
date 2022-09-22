@@ -40,9 +40,9 @@ Notes
 -----
 
      * You should see the talker saying that it’s Publishing messages and the listener saying I heard those messages. This verifies both the C++ and Python 
-     APIs are working properly. 
+       APIs are working properly. 
      * Continue with the tutorials and demos to configure your environment, create your own workspace and packages, and learn ROS 2 core concepts.Using the 
-     ROS 1 bridge
+       ROS 1 bridge
      * The ROS 1 bridge can connect topics from ROS 1 to ROS 2 and vice-versa.
      * The default middleware that ROS 2 uses is Cyclone DDS, but the middleware (RMW) can be replaced at runtime.
 

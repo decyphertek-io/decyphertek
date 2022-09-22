@@ -1,7 +1,7 @@
 Deja Dup
 =====
 
-     Deja Dup is an easy to use cloud backup utility that encrypts your info and sets a passphrase. Easy to restore. 
+Deja Dup is an easy to use cloud backup utility that encrypts your info and sets a passphrase. Easy to restore. 
 
 Install:
 -------

@@ -1,7 +1,7 @@
 Exodus Privacy
 =====
 
-     The privacy audit platform for Android Applications. 
+The privacy audit platform for Android Applications. 
 
 App Trackers
 ------------
