@@ -17,5 +17,5 @@ Install
 References
 ----------
 
-    https://github.com/WebGoat/WebGoat
-    https://owasp.org/www-project-webgoat/
+https://github.com/WebGoat/WebGoat
+https://owasp.org/www-project-webgoat/

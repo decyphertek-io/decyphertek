@@ -18,7 +18,7 @@ Install
 References
 ----------
 
-     https://docs.stackstorm.com/
-     https://docs.stackstorm.com/install/index.html 
-     https://docs.stackstorm.com/authentication.html 
+https://docs.stackstorm.com/
+https://docs.stackstorm.com/install/index.html 
+https://docs.stackstorm.com/authentication.html 
 

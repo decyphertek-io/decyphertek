@@ -66,6 +66,6 @@ Troubleshooting
 References
 ----------
 
-    https://linuxhint.com/ufw_list_rules/
-    https://manpages.ubuntu.com/manpages/bionic/man8/ufw.8.html
-    https://www.linux.com/training-tutorials/introduction-uncomplicated-firewall-ufw/
+https://linuxhint.com/ufw_list_rules/
+https://manpages.ubuntu.com/manpages/bionic/man8/ufw.8.html
+https://www.linux.com/training-tutorials/introduction-uncomplicated-firewall-ufw/

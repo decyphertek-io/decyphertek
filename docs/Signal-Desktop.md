@@ -16,4 +16,4 @@ Install
 References
 ----------
 
-    https://www.signal.org/download/linux/
+https://www.signal.org/download/linux/
