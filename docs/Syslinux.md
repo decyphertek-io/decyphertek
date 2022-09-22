@@ -25,4 +25,4 @@ Multiboot USB
 References
 ----------
 
-https://wiki.syslinux.org/wiki/index.php?title=HowTos#How_to_Create_a_Bootable_USB:_For_Linux
+        https://wiki.syslinux.org/wiki/index.php?title=HowTos#How_to_Create_a_Bootable_USB:_For_Linux

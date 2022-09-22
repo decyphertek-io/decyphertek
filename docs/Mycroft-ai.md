@@ -45,6 +45,6 @@ Install
 References
 ----------
 
-https://mycroft.ai/
-https://market.mycroft.ai/skills
-https://github.com/MycroftAI?utf8=%E2%9C%93&q=android&type=&language=
+  https://mycroft.ai/
+  https://market.mycroft.ai/skills
+  https://github.com/MycroftAI?utf8=%E2%9C%93&q=android&type=&language=

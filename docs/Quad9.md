@@ -24,7 +24,7 @@ Test
 References
 ----------
 
-https://askubuntu.com/questions/1280277/how-to-change-dns-server-permanently-on-ubuntu-20-04
-https://support.quad9.net/hc/en-us/articles/4409217364237-DNS-over-TLS-Ubuntu-18-04-20-04-Stubby-
-https://www.techrepublic.com/article/how-to-use-dns-over-tls-on-ubuntu-linux/
+     https://askubuntu.com/questions/1280277/how-to-change-dns-server-permanently-on-ubuntu-20-04
+     https://support.quad9.net/hc/en-us/articles/4409217364237-DNS-over-TLS-Ubuntu-18-04-20-04-Stubby-
+     https://www.techrepublic.com/article/how-to-use-dns-over-tls-on-ubuntu-linux/
 

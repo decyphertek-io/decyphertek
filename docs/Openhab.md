@@ -22,6 +22,6 @@ TroubleShooting
 References
 ----------
   
-https://www.openhab.org/
-https://www.openhab.org/docs/installation/linux.html
+     https://www.openhab.org/
+     https://www.openhab.org/docs/installation/linux.html
 
