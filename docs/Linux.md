@@ -30,6 +30,7 @@ Remove a user
      username ALL=(ALL) NOPASSWD:ALL
 
 Change Hostname
+----------------
 
      $ sudo hostnamectl set-hostname "decyphertek"
      $ sudo su -c "echo '127.0.1.1 decyphertek' >> /etc/hosts"
