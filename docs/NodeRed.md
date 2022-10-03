@@ -17,8 +17,10 @@ Install
      $ pm2 save 
      $ pm2 startup
      $ sudo ufw allow 1880
-     $ vim ~/.node-red/settings.js 
      # http://<your-instance-ip>:1880/
+
+     # Secure Node Red - Work In progress.......
+     $ vim ~/.node-red/settings.js 
      
 
 References
