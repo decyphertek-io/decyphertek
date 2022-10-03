@@ -25,8 +25,20 @@ Install
      > Add a device Group > Download agent
      # Linux - run generated script as root.
      # Verify the agent checks into the console
-     
 
+     # Ports & Protocols
+     # Meshagent - Linux listeners
+     * 16990
+     * 33020
+     * 48063
+     * 54229
+     * 53358
+     # Meshcentral - Linux Listeners
+     * 80
+     * 443
+     * 4433 
+     * 16990
+     
 References
 ----------
 

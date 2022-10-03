@@ -12,11 +12,12 @@ Install
      $ curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash - 
      $ sudo apt-get install -y nodejs build-essential 
      $ sudo npm install -g --unsafe-perm node-red
-     # http://<your-instance-ip>:1880/
      $ sudo npm install -g --unsafe-perm pm2
      $ pm2 start `which node-red` -- -v 
      $ pm2 save 
      $ pm2 startup
+     $ sudo ufw allow 1880
+     # http://<your-instance-ip>:1880/
      
 
 References
