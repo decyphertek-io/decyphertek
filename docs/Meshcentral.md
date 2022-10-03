@@ -11,14 +11,15 @@ Install
      $ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - 
      $ sudo apt-get install -y nodejs 
      $ sudo npm install -g npm@latest
-     $ sudo mkdir /opt/meshcentral/
-     $ cd /opt/meshcentral/
-     $ sudo npm install meshcentral
+     $ sudo setcap cap_net_bind_service=+ep /usr/bin/node
+     $ mkdir ~/meshcentral/
+     $ cd ~/meshcentral/
+     $ npm install meshcentral
      # Systemd Managed MeshCentral
      $ sudo su -c "curl 'https://raw.githubusercontent.com/decyphertek-io/configs/main/meshcentral.service' >> /etc/systemd/system/meshcentral.service"
-     $ sudo systemctl enable meshcentral.service
-     $ sudo systemctl start meshcentral.service
-     $ sudo systemctl status meshcentral.service
+     $ sudo systemctl enable meshcentral
+     $ sudo systemctl start meshcentral
+     $ sudo systemctl status meshcentral
      # https://ip-of-server
      # Login > Create a new account 
      # Once the account is created you need to give that user permissions on /opt/meshcentral/* 
