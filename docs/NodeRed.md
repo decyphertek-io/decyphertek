@@ -17,6 +17,7 @@ Install
      $ pm2 save 
      $ pm2 startup
      $ sudo ufw allow 1880
+     $ vim ~/.node-red/settings.js 
      # http://<your-instance-ip>:1880/
      
 
@@ -24,3 +25,7 @@ References
 ----------
 
      https://nodered.org/docs/getting-started/aws#running-on-aws-ec2-with-ubuntu
+     https://nodered.org/docs/user-guide/runtime/securing-node-red
+     https://nodered.org/docs/user-guide/runtime/securing-node-red#enabling-https-access
+     https://nodered.org/docs/user-guide/runtime/securing-node-red#editor--admin-api-security
+     https://nodered.org/docs/user-guide/runtime/securing-node-red#http-node-security
