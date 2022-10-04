@@ -16,6 +16,11 @@ Install
      $ pm2 start `which node-red` -- -v 
      $ pm2 save 
      $ pm2 startup
+     # replace adminotaur with your username if different, pm2 startup outputs the command to run.
+     $ sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u adminotaur --hp /home/adminotaur
+     $ sudo systemctl enable pm2-adminotaur.service
+     $ sudo systemctl start pm2-adminotaur.service
+     $ sudo systemctl status pm2-adminotaur.service
      $ sudo ufw allow 1880
      # http://<your-instance-ip>:1880/
 
