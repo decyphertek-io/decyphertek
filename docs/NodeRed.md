@@ -21,12 +21,39 @@ Install
      $ sudo systemctl enable pm2-adminotaur.service
      $ sudo systemctl start pm2-adminotaur.service
      $ sudo systemctl status pm2-adminotaur.service
+     # If you are using ufw allow access to port 1880
      $ sudo ufw allow 1880
      # http://<your-instance-ip>:1880/
-
-     # Secure Node Red - Work In progress.......
+     # Secure Node Red - Enabling HTTPS Access
+     $ mkdir ~/.node-red/keys
+     $ openssl req -x509 -nodes -days 1095 -newkey rsa:2048 -keyout ~/.node-red/keys/private-ssl.key -out ~/.node-red/keys/private-ssl.crt -subj "/C=US/ST=Any/L=Anytown/O=decyphertek-io/OU=adminotaur/CN=decyphertek"
      $ vim ~/.node-red/settings.js 
+     https: {
+     key: require("fs").readFileSync('privkey.pem'),
+     cert: require("fs").readFileSync('cert.pem')
+     },
      
+     
+     # Secure Node Red - Editor & Admin API security
+     adminAuth: {
+          type: "credentials",
+          users: [
+               {
+                    username: "admin",
+                    password: "password",
+                    permissions: "*"
+        },
+        {
+            username: "username",
+            password: "password",
+            permissions: "read"
+        }
+      ]
+    }
+    # hash your password
+    $ node-red admin hash-pw
+
+
 
 References
 ----------
