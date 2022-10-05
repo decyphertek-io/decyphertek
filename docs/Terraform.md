@@ -69,8 +69,10 @@ Manually Manage
     $ terraform state list
 
 
-###References###
-https://www.terraform.io/
-https://learn.hashicorp.com/tutorials/terraform/aws-build?in=terraform/aws-get-started
-https://www.digitalocean.com/community/tutorials/how-to-use-ansible-with-terraform-for-configuration-management
-https://github.com/multycloud/multy
+References
+----------
+
+    https://www.terraform.io/
+    https://learn.hashicorp.com/tutorials/terraform/aws-build?in=terraform/aws-get-started
+    https://www.digitalocean.com/community/tutorials/how-to-use-ansible-with-terraform-for-configuration-management
+    https://github.com/multycloud/multy
