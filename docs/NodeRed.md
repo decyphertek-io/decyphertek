@@ -27,13 +27,16 @@ Install
 
 Secure Node Red - Enabling HTTPS Access - WORK IN PROGRES>>>>>
 ----------------------------------------
-
      $ mkdir ~/.node-red/keys
      $ openssl req -x509 -nodes -days 1095 -newkey rsa:2048 -keyout ~/.node-red/keys/private-ssl.key -out ~/.node-red/keys/private-ssl.crt -subj "/C=US/ST=Any/L=Anytown/O=decyphertek-io/OU=adminotaur/CN=decyphertek"
+     $ npm install node-red-contrib-bcrypt
+     $ cd ~/.node-red/
+     $ node -e "console.log(require('bcryptjs').hashSync(process.argv[1], 8));" your-password-here
+     # add  password hash to settings.js
      $ vim ~/.node-red/settings.js 
      https: {
-     key: require("fs").readFileSync('privkey.pem'),
-     cert: require("fs").readFileSync('cert.pem')
+     key: require("fs").readFileSync('/home/$USER/.node-red/keys/privkey.pem'),
+     cert: require("fs").readFileSync('/home/$USER/.node-red/keys/cert.pem')
      },
      
      
@@ -43,18 +46,18 @@ Secure Node Red - Enabling HTTPS Access - WORK IN PROGRES>>>>>
           users: [
                {
                     username: "admin",
-                    password: "password",
+                    password: "password-hash",
                     permissions: "*"
         },
         {
             username: "username",
-            password: "password",
+            password: "password-hash",
             permissions: "read"
         }
       ]
     }
-    # hash your password
-    $ node-red admin hash-pw
+    
+    
 
 
 
@@ -66,3 +69,4 @@ References
      https://nodered.org/docs/user-guide/runtime/securing-node-red#enabling-https-access
      https://nodered.org/docs/user-guide/runtime/securing-node-red#editor--admin-api-security
      https://nodered.org/docs/user-guide/runtime/securing-node-red#http-node-security
+     https://flows.nodered.org/node/node-red-contrib-bcrypt
