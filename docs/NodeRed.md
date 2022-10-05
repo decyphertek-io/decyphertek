@@ -24,7 +24,10 @@ Install
      # If you are using ufw allow access to port 1880
      $ sudo ufw allow 1880
      # http://<your-instance-ip>:1880/
-     # Secure Node Red - Enabling HTTPS Access
+
+Secure Node Red - Enabling HTTPS Access - WORK IN PROGRES>>>>>
+----------------------------------------
+
      $ mkdir ~/.node-red/keys
      $ openssl req -x509 -nodes -days 1095 -newkey rsa:2048 -keyout ~/.node-red/keys/private-ssl.key -out ~/.node-red/keys/private-ssl.crt -subj "/C=US/ST=Any/L=Anytown/O=decyphertek-io/OU=adminotaur/CN=decyphertek"
      $ vim ~/.node-red/settings.js 
