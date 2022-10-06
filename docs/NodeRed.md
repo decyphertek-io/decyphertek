@@ -72,12 +72,14 @@ Apply your changes
 ------------------
      
      $ sudo reboot 
+     $ pm2 start `which node-red` -- -v 
+     $ pm2 save 
+     $ pm2 startup
+     $ sudo systemctl restart pm2-adminotaur.service
      $ sudo systemctl status pm2-adminotaur.service
-     # If pm2 nodes status states stopped can start via 
-     $ pm2 start `which node-red`
      # Changes to configurations , require a daemon-reload
      $ sudo systemctl daemon-reload
-     $ sudo systemctl restart pm2-adminotaur.service
+     
      
     
 References
