@@ -69,10 +69,12 @@ Secure Node Red - Enabling HTTPS Access and Setting Password
       ]
     }
     
+Apply your changes
+------------------
+
+     $ sudo systemctl reload-daemon
+     $ sudo systemctl restart pm2-adminotaur.service
     
-
-
-
 References
 ----------
 
