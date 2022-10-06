@@ -27,8 +27,8 @@ Install
 
 Secure Node Red - Enabling HTTPS Access and Setting Password
 ----------------------------------------
-     $ mkdir ~/.node-red/keys
-     $ openssl req -x509 -nodes -days 1095 -newkey rsa:2048 -keyout ~/.node-red/keys/private-ssl.key -out ~/.node-red/keys/private-ssl.crt -subj "/C=US/ST=Any/L=Anytown/O=decyphertek-io/OU=adminotaur/CN=decyphertek"
+     $ mkdir /home/$USER/.node-red/keys
+     $ openssl req -x509 -nodes -days 1095 -newkey rsa:2048 -keyout /home/$USER/.node-red/keys/private-ssl.key -out /home/$USER/.node-red/keys/private-ssl.crt -subj "/C=US/ST=Any/L=Anytown/O=decyphertek-io/OU=adminotaur/CN=decyphertek"
      $ npm install bcryptjs
      $ cd ~/.node-red/
      $ node -e "console.log(require('bcryptjs').hashSync(process.argv[1], 8));" your-password-here

@@ -97,6 +97,12 @@ TroubleShooting
      $ ps aux | grep jupyterhub
      $ sudo kill -9 pid
 
+Upgrade
+-------
+
+     $ sudo -H python3 -m pip install --upgrade jupyterhub== <version> 
+     $ sudo jupyterhub upgrade-db
+     
 Optional: Python3 packages
 --------------------------
 
