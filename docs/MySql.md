@@ -54,6 +54,7 @@ Manage Database
      * CloudBeaver-cw
      * Beekeper Studio
      * myPHPadmin
+     * mysql editor
 
 
 References
