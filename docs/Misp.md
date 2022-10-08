@@ -10,9 +10,16 @@ Install
      $ sudo -H python3 -m pip install pytz -U
      $ sudo -H python3 -m pip install misp-lib-stix2 
      $ sudo useradd -m misp
-     $ sudo usermod misp -s /sbin/nologin
      $ wget -O /tmp/INSTALL.sh https://raw.githubusercontent.com/MISP/MISP/2.4/INSTALL/INSTALL.sh && bash /tmp/INSTALL.sh -A -D
-     # Change the database Passwords root & misp
+     $ sudo usermod misp -s /sbin/nologin
+     # Watch the terminal regarding password information
+     https://ip-of-server
+     user: local@admin.test
+     Pass: admin
+
+Change the database Passwords
+-----------------------------
+
      # script autogenerates db passwrods stored here > /home/misp/msql.txt
      $ mariadb -u root -p
      maraidb> use mysql;
@@ -26,7 +33,6 @@ Install
      mysql> exit
      
 
-  
 Variables
 ---------
 
