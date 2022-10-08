@@ -47,5 +47,5 @@ References
      https://www.misp-project.org/
      https://misp.github.io/MISP/
      https://www.circl.lu/doc/misp/administration/
-
+     https://www.misp-project.org/misp-training/cheatsheet.pdf
   
