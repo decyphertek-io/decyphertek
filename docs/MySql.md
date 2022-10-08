@@ -13,7 +13,9 @@ Install
     mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
     mysql> exit
     $ sudo mysql -u root -p
+    # CAUTION!!!! The auth_socket Commands breaks things. 
     mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;
+    mysql> exit
     $ sudo mysql_secure_installation
 
 Create a Dedicated User

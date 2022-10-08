@@ -11,6 +11,15 @@ Install
      $ sudo useradd -m misp
      $ sudo usermod misp -s /sbin/nologin
      $ wget -O /tmp/INSTALL.sh https://raw.githubusercontent.com/MISP/MISP/2.4/INSTALL/INSTALL.sh && bash /tmp/INSTALL.sh -A -D
+     # Change the database Passwords root & misp
+     $ mariadb -u root -p
+     maraidb> use mysql;
+     mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+     mysql> exit
+     $ mariadb -u misp -p
+     maraidb> use mysql;
+     mysql> ALTER USER 'misp'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+     mysql> exit
      
 
   
