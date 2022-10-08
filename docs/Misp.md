@@ -15,10 +15,12 @@ Install
      $ mariadb -u root -p
      maraidb> use mysql;
      mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+     mysql> FLUSH PRIVILEGES;
      mysql> exit
      $ mariadb -u misp -p
      maraidb> use mysql;
      mysql> ALTER USER 'misp'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+     mysql> FLUSH PRIVILEGES;
      mysql> exit
      
 
