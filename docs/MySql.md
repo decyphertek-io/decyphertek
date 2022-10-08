@@ -47,6 +47,13 @@ Datbase Information
     $ mysql -u username -p
     mysql> select distinct table_schema from information_schema.tables;
 
+Manage Database
+---------------
+
+     * debeaver-ce
+     * CloudBeaver-cw
+     * Beekeper Studio
+     * myPHPadmin
 
 
 References
