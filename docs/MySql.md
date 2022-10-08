@@ -47,6 +47,13 @@ Datbase Information
     $ mysql -u username -p
     mysql> select distinct table_schema from information_schema.tables;
 
+MariaDB
+-------
+
+    $ mariadb -u root -p
+    $ use mysql;
+    # mysql commands should work now on MariaDB
+
 Manage Database
 ---------------
 
