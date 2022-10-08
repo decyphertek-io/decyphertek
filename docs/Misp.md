@@ -14,7 +14,7 @@ Install
      $ sudo usermod misp -s /sbin/nologin
      # Watch the terminal regarding password information
      https://ip-of-server
-     user: local@admin.test
+     user: admin@admin.test
      Pass: admin
 
 Change the database Passwords
