@@ -35,11 +35,19 @@ Create a Dedicated User
     # login to test new account
     $ mysql -u username -p
 
-Testing
--------
+Troubleshoot
+-------------
 
     $ sudo systemctl status mysql.service
-   
+    $ sudo systemctl restart mysql.service
+
+Datbase Information
+-------------------
+
+    $ mysql -u username -p
+    mysql> select distinct table_schema from information_schema.tables;
+
+
 
 References
 ----------
