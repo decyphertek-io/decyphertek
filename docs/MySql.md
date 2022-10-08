@@ -29,7 +29,7 @@ Create a Dedicated User
     mysql> GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'username'@'localhost' WITH GRANT OPTION;
     <OR>
     # Root level permissions
-    mysql> GRANT ALL PRIVILEGES ON *.* TO 'sammy'@'localhost' WITH GRANT OPTION;
+    mysql> GRANT ALL PRIVILEGES ON *.* TO 'username'@'localhost' WITH GRANT OPTION;
     mysql> FLUSH PRIVILEGES;
     mysql> exit
     # login to test new account
