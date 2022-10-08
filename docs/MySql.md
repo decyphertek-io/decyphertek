@@ -35,6 +35,12 @@ Create a Dedicated User
     # login to test new account
     $ mysql -u username -p
 
+Testing
+-------
+
+    $ sudo systemctl status mysql.service
+   
+
 References
 ----------
 
