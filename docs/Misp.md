@@ -6,7 +6,10 @@ Misp is an open source threat intelligence platform for cyber defense.
 Install
 -------
      
+     $ sudo -H python3 -m pip install pytz -U
+     $ sudo -H python3 -m pip install misp-lib-stix2 
      $ sudo useradd -m misp
+     $ sudo usermod misp -s /sbin/nologin
      $ wget -O /tmp/INSTALL.sh https://raw.githubusercontent.com/MISP/MISP/2.4/INSTALL/INSTALL.sh && bash /tmp/INSTALL.sh -A -D
      
 
@@ -43,5 +46,6 @@ References
 
      https://www.misp-project.org/
      https://misp.github.io/MISP/
+     https://www.circl.lu/doc/misp/administration/
 
   
