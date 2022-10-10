@@ -16,6 +16,7 @@ Install
      https://ip-of-server
      user: admin@admin.test
      Pass: admin
+     # Change password and username . 
 
 Change the database Passwords
 -----------------------------
@@ -23,14 +24,15 @@ Change the database Passwords
      # script autogenerates db passwrods stored here > /home/misp/msql.txt
      $ mariadb -u root -p
      maraidb> use mysql;
-     mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+     mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
+     mysql> ALTER USER 'misp'@'localhost' IDENTIFIED BY 'password';
      mysql> FLUSH PRIVILEGES;
      mysql> exit
+     # Verify new passwords work.
+     $ mariadb -u root -p
      $ mariadb -u misp -p
-     maraidb> use mysql;
-     mysql> ALTER USER 'misp'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
-     mysql> FLUSH PRIVILEGES;
-     mysql> exit
+     
+     
      
 
 Install Options
