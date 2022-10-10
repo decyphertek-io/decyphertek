@@ -22,6 +22,7 @@ Change the database Passwords
 -----------------------------
 
      # script autogenerates db passwrods stored here > /home/misp/msql.txt
+     # CAUTION!!!! Changing the DB Password breaks MISP. WORK IN PROGRESS.........
      $ mariadb -u root -p
      maraidb> use mysql;
      mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
@@ -31,10 +32,12 @@ Change the database Passwords
      # Verify new passwords work.
      $ mariadb -u root -p
      $ mariadb -u misp -p
-     
-     
-     
 
+     # Optional Out going mail
+     $ sudo postconf -e 'relayhost = example.com'
+     $ sudo postfix reload
+     
+     
 Install Options
 ---------
 
