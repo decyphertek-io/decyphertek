@@ -16,10 +16,11 @@ Install
      $ cd /home/$USER/meshcentral/
      $ npm install meshcentral
      $ npm install pm2
-     $ pm2 start /home/adminotaur/meshcentral/node_modules/meshcentral
+     $ pm2 start /home/$USER/meshcentral/node_modules/meshcentral
      $ pm2 save 
      $ pm2 startup
-     # sudo reboot
+     # Notice output command, run from terminal, then reboot. 
+     $ sudo reboot
      $ sudo systemctl status pm2-$USER
      # https://ip-of-server
      # Login > Create a new account 
