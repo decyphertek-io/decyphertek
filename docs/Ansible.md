@@ -76,7 +76,7 @@ Vault
      # vars being referenced stored in ansible vault, example
      vars:
        - ip_address: '{{ ip_address }}'
-       - api_key: '{{ api_key | default(omit) }}'
+       - api_key: '{{ api_key }}'
      # Need to edit the vault, no probs
      $ ansible-vault edit variables.vault
      # How to decrypt vault and use with a playbook.
