@@ -12,14 +12,15 @@ Install
      $ sudo apt-get install -y nodejs 
      $ sudo npm install -g npm@latest
      $ sudo setcap cap_net_bind_service=+ep /usr/bin/node
-     $ mkdir ~/meshcentral/
-     $ cd ~/meshcentral/
+     $ mkdir /home/$USER/meshcentral/
+     $ cd /home/$USER/meshcentral/
      $ npm install meshcentral
-     # Systemd Managed MeshCentral
-     $ sudo su -c "curl 'https://raw.githubusercontent.com/decyphertek-io/configs/main/meshcentral.service' >> /etc/systemd/system/meshcentral.service"
-     $ sudo systemctl enable meshcentral
-     $ sudo systemctl start meshcentral
-     $ sudo systemctl status meshcentral
+     $ npm install pm2
+     $ pm2 start /home/adminotaur/meshcentral/node_modules/meshcentral
+     $ pm2 save 
+     $ pm2 startup
+     # sudo reboot
+     $ sudo systemctl status pm2-$USER
      # https://ip-of-server
      # Login > Create a new account 
      > Add a device Group > Download agent
