@@ -13,12 +13,14 @@ Install
     $ gpg --no-default-keyring \
         --keyring /usr/share/keyrings/hashicorp-archive-keyring.gpg \
         --fingerprint
+    # If you are using Ubuntu 22.04 Please run this instead:
+    $ sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com focal main"
+    # If you are running Ubuntu 20.04 or earlier, than run this. 
     $ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
         https://apt.releases.hashicorp.com $(lsb_release -cs) main" | \
         sudo tee /etc/apt/sources.list.d/hashicorp.list
     $ sudo apt update && sudo apt install -y terraform
     $ terraform -help
-    $ touch ~/.bashrc
     $ terraform -install-autocomplete
 
 Build infrastructure - AWS
