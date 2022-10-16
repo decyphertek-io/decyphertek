@@ -58,7 +58,7 @@ Collections - AWS Example
 --------------------------
 
      $ ansible-galaxy collection install amazon.aws
-     $ cd ~/.ansible/collections/ansible_collections/paloaltonetworks/panos
+     $ cd ~/.ansible/collections/ansible_collections/amazon/aws
      # Install Python requirements
      $ python3 -m pip install -r requirements.txt
   
