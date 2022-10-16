@@ -16,7 +16,8 @@ Install
   
      # Mac Install via Python
      $ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-     $ export PATH=$HOME/bin:~/Library/Python/3.8/bin:$PATH
+     $ python3 --version
+     $ export PATH=$HOME/bin:~/Library/Python/<version>/bin:$PATH
      $ python3 get-pip.py --user
      $ python3 -m pip install --upgrade pip
      $ python3 -m pip install --user ansible
@@ -26,7 +27,8 @@ Install
 
      # Linux Install via Python
      $ sudo apt install python3-pip
-     $ export PATH=$HOME/.local/bin:~/Library/Python/3.8/bin:$PATH
+     $ python3 --version
+     $ export PATH=$HOME/.local/bin:~/Library/Python/<version>/bin:$PATH
      $ python3 -m pip install --upgrade pip
      $ python3 -m pip install --user ansible
      $ python3 -m pip install --user paramiko
