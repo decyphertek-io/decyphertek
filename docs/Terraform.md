@@ -3,8 +3,8 @@ Terraform
 
 Manage Cloud Infrastructure as code. 
 
-Install
------
+Install - Ubuntu 20.04/18.04/16.04
+---------------------------
 
     $ sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
     $ wget -O- https://apt.releases.hashicorp.com/gpg | \
@@ -13,8 +13,6 @@ Install
     $ gpg --no-default-keyring \
         --keyring /usr/share/keyrings/hashicorp-archive-keyring.gpg \
         --fingerprint
-    # If you are using Ubuntu 22.04 Please run this instead:
-    $ sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com focal main"
     # If you are running Ubuntu 20.04 or earlier, than run this. 
     $ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
         https://apt.releases.hashicorp.com $(lsb_release -cs) main" | \
@@ -22,6 +20,16 @@ Install
     $ sudo apt update && sudo apt install -y terraform
     $ terraform -help
     $ terraform -install-autocomplete
+
+Install - Ubuntu 20.04
+-----------------------
+
+    $ sudo apt update
+    $ sudo apt install  software-properties-common gnupg2 curl
+    $ curl https://apt.releases.hashicorp.com/gpg | gpg --dearmor > hashicorp.gpg
+    $ sudo install -o root -g root -m 644 hashicorp.gpg /etc/apt/trusted.gpg.d/
+    $ sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com focal main"
+    $ sudo apt update && sudo apt install -y terraform
 
 Build infrastructure - AWS
 --------------------------
