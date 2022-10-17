@@ -62,13 +62,14 @@ Change Default DB
 Enable User Authentication
 --------------------------
 
-    Login to Zoneminder > Options > System >
+    Login > Options > System >
     OPT_USE_AUTH = Enable
     AUTH_TYPE = Built In
     AUTH_RELAY = Hashed
-    AUTH_HASH_SECRET = generate via - $ openssl passwd -6  ( Paste hash into box)
+    AUTH_HASH_SECRET = generate via command: $ openssl passwd -6  ( and Paste hash into box)
     AUTH_HASH_IP = disabled
     AUTH_HASH_LOGINS = Enabled
+    save
 
     http://ip-of-server/zm
     user: admin
