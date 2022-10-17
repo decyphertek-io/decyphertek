@@ -61,6 +61,7 @@ Firewall
 --------
 
     $ sudo ufw allow in "Apache"
+    $ sudo ufw block 80/tcp
 
 Change Default DB
 ---------
@@ -86,7 +87,7 @@ Enable User Authentication
 
     # Change password
     Login > options > system > user > make a new user with same privileges or change password on admin
-    
+
 
 Enable SSL
 ----------
@@ -108,8 +109,8 @@ Enable SSL
     <VirtualHost *:80>
 	ServerName 127.0.0.1
     DocumentRoot /usr/share/zoneminder/www
-	#Redirect / https://127.0.0.1/zm
-    #</VirtualHost>
+	Redirect / https://127.0.0.1/zm
+    </VirtualHost>
 
     $ sudo vim /etc/apache2/apache2.conf
     IncludeOptional sites-available/zoneminder-ssl.conf
