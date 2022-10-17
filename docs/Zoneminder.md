@@ -104,8 +104,7 @@ Enable SSL
 
     $ sudo a2ensite default-ssl.conf
     $ sudo systemctl reload apache2
-    $ sudo systemctl reload httpd.service
-
+   
 Manage Zoneminder & Apache
 -------------------------
 
