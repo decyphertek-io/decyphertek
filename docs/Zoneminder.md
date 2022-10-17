@@ -31,17 +31,15 @@ Set Permissions
 ---------------
 
     $ sudo chmod 740 /etc/zm/zm.conf 
-    $ sudo chown root:www-data /etc/zm/zm.conf 
+    $ sudo chown root:www-data 
     $ sudo chown -R www-data:www-data /usr/share/zoneminder/
 
 Configure Apache 
 ----------------
 
-    $ sudo a2enmod cgi
-    $ sudo a2enmod rewrite
+    $ sudo sudo a2enmod cgi rewrite expires headers
     $ sudo a2enconf zoneminder
-    $ sudo a2enmod expires
-    $ sudo a2enmod headers
+    
 
 Manage Zoneminder
 -------------------------
@@ -52,11 +50,7 @@ Manage Zoneminder
 Edit Timezone
 --------------
 
-    $ sudo vim /etc/php/7.2/apache2/php.ini
-    [Date]
-    ; Defines the default timezone used by the date functions
-    ; http://php.net/date.timezone
-    date.timezone = America/New_York
+    > Options > System > Timezone
 
 Reload Apache
 -------------
@@ -75,6 +69,61 @@ Change Default DB
     you need to update these values in zm.conf. Edit zm.conf to change ZM_DB_USER and ZM_DB_PASS 
     to the values you used.
 
+Enable User Authentication
+--------------------------
+
+    Login to Zoneminder > Options > System >
+    OPT_USE_AUTH = Enable
+    AUTH_TYPE = Built In
+    AUTH_RELAY = Hashed
+    AUTH_HASH_SECRET = generate via - $ openssl passwd -6  ( Paste hash into box)
+    AUTH_HASH_IP = disabled
+    AUTH_HASH_LOGINS = Enabled
+
+    http://ip-of-server/zm
+    user: admin
+    pass: admin
+
+    # Change password
+    Login > options > system > user > make a new user with same privileges or change password on admin
+    
+
+Enable SSL
+----------
+
+    $ sudo a2enmod ssl
+    $ sudo systemctl restart apache2
+    $ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache.key -out /etc/ssl/certs/apache.crt
+    $ sudo vim /etc/apache2/sites-available/zoneminder-ssl.conf
+
+    <VirtualHost *:443>
+    ServerName 127.0.0.1
+    DocumentRoot /usr/share/zoneminder/www
+    
+    SSLEngine on
+    SSLCertificateFile /etc/ssl/certs/apache.crt
+    SSLCertificateKeyFile /etc/ssl/private/apache.key
+    </VirtualHost>
+
+    <VirtualHost *:80>
+	ServerName 127.0.0.1
+    DocumentRoot /usr/share/zoneminder/www
+	#Redirect / https://127.0.0.1/zm
+    #</VirtualHost>
+
+    $ sudo vim /etc/apache2/apache2.conf
+    IncludeOptional sites-available/zoneminder-ssl.conf
+    $ sudo a2ensite zoneminder-ssl.conf
+    $ sudo systemctl reload apache2
+    $ sudo systemctl reload httpd.service
+
+TroubleShoot
+-------------
+
+    $ sudo apache2ctl configtest
+    $ sudo systemctl status apache2.service -l --no-pager
+    $ sudo journalctl -u apache2.service --since today --no-pager
+
 Login
 -----
 
@@ -89,3 +138,5 @@ References
 ----------
 
     https://zoneminder.readthedocs.io/en/stable/installationguide/ubuntu.html
+    https://www.howtogeek.com/devops/how-to-create-and-use-self-signed-ssl-on-apache/
+    https://www.how2shout.com/linux/how-to-install-zoneminder-on-ubuntu-22-04-20-04-lts/
