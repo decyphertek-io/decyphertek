@@ -61,7 +61,12 @@ Edit Timezone
 Reload Apache
 -------------
 
-    $ systemctl reload apache2
+    $ sudo systemctl reload apache2
+
+Firewall
+--------
+
+    $ sudo ufw allow in "Apache"
 
 Login
 -----
