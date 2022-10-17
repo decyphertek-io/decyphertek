@@ -40,22 +40,11 @@ Configure Apache
     $ sudo sudo a2enmod cgi rewrite expires headers
     $ sudo a2enconf zoneminder
     
-
-Manage Zoneminder
--------------------------
-
-    $ sudo systemctl enable zoneminder
-    $ sudo systemctl start zoneminder
-
 Edit Timezone
 --------------
 
     > Options > System > Timezone
 
-Reload Apache
--------------
-
-    $ sudo systemctl reload apache2
 
 Firewall
 --------
@@ -95,7 +84,7 @@ Enable SSL
     $ sudo a2enmod ssl
     $ sudo systemctl restart apache2
     $ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache.key -out /etc/ssl/certs/apache.crt
-    $ sudo vim /etc/apache2/sites-available/zoneminder-ssl.conf
+    $ sudo vim /etc/apache2/sites-available/default-ssl.conf
 
     <VirtualHost *:443>
     ServerName 127.0.0.1
@@ -106,17 +95,24 @@ Enable SSL
     SSLCertificateKeyFile /etc/ssl/private/apache.key
     </VirtualHost>
 
+    $ sudo vim /etc/apache2/sites-available/000-default.conf
     <VirtualHost *:80>
 	ServerName 127.0.0.1
     DocumentRoot /usr/share/zoneminder/www
 	Redirect / https://127.0.0.1/zm
     </VirtualHost>
 
-    $ sudo vim /etc/apache2/apache2.conf
-    IncludeOptional sites-available/zoneminder-ssl.conf
-    $ sudo a2ensite zoneminder-ssl.conf
+    $ sudo a2ensite default-ssl.conf
     $ sudo systemctl reload apache2
     $ sudo systemctl reload httpd.service
+
+Manage Zoneminder & Apache
+-------------------------
+
+    $ sudo systemctl enable zoneminder
+    $ sudo systemctl start zoneminder
+    $ sudo systemctl reload apache2
+    $ sudo systemctl restart apache2
 
 TroubleShoot
 -------------
