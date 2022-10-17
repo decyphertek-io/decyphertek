@@ -82,6 +82,10 @@ Enable User Authentication
 Enable SSL
 ----------
 
+    Weird Issue here where you have to go to /zm and unable to redirect to that ?
+    Possible Solution:
+    https://www.reddit.com/r/ZoneMinder/comments/gdl6oi/zoneminder_13410_on_debian_buster/
+
     $ sudo a2enmod ssl
     $ sudo systemctl restart apache2
     $ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache.key -out /etc/ssl/certs/apache.crt
@@ -89,7 +93,8 @@ Enable SSL
 
     <VirtualHost *:443>
     ServerName 127.0.0.1
-    DocumentRoot /usr/share/zoneminder/www
+    DocumentRoot /var/www/html
+    #Redirect / https://127.0.0.1/zm
     
     SSLEngine on
     SSLCertificateFile /etc/ssl/certs/apache.crt
@@ -99,8 +104,8 @@ Enable SSL
     $ sudo vim /etc/apache2/sites-available/000-default.conf
     <VirtualHost *:80>
 	ServerName 127.0.0.1
-    DocumentRoot /usr/share/zoneminder/www
-	Redirect / https://127.0.0.1/zm
+    DocumentRoot /var/www/html
+	#Redirect / https://127.0.0.1/zm
     </VirtualHost>
 
     $ sudo a2ensite default-ssl.conf
@@ -123,8 +128,8 @@ TroubleShoot
 
 Login
 -----
-
-    http://hostname_or_ip/zm
+    # There is a redirect bug that I am troubleshooting , need to have the /zm added . 
+    https://hostname_or_ip/zm
 
 Api 
 ---
