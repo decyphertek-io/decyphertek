@@ -52,7 +52,7 @@ Firewall
     $ sudo ufw allow in "Apache"
 
 Change Default DB
-------------------
+-----------------
 
     Changed Default DB User: If you have changed your DB login/password from zmuser/zmpass, 
     you need to update these values in zm.conf. Edit zm.conf to change ZM_DB_USER and ZM_DB_PASS 
