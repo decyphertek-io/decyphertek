@@ -58,6 +58,8 @@ Change Default DB
     you need to update these values in zm.conf. Edit zm.conf to change ZM_DB_USER and ZM_DB_PASS 
     to the values you used.
 
+    Default Paasword also found here - /etc/mysql/debian.cnf
+
 Enable User Authentication
 --------------------------
 
