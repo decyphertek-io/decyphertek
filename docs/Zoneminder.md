@@ -155,6 +155,7 @@ Email SSMTP
 
     # Test
     $ vim test.txt
+    write something here to test. 
     $ ssmtp -v ExampleTest@gmail.com < test.txt
 
 Zoneminder App
