@@ -26,12 +26,21 @@ SSD.conf
     $ sudo vim /etc/sssd/sssd.conf
 
     [sssd] 
-    domains = ad1.example.com config_file_version = 2 
+    domains = ad1.example.com 
+    config_file_version = 2 
     services = nss, pam 
 
     [domain/ad1.example.com] 
-    default_shell = /bin/bash krb5_store_password_if_offline = True cache_credentials = True 
-    krb5_realm = AD1.EXAMPLE.COM realmd_tags = manages-system joined-with-adcli id_provider = ad fallback_homedir = /home/%u@%d ad_domain = ad1.example.com use_fully_qualified_names = True ldap_id_mapping = True 
+    default_shell = /bin/bash 
+    krb5_store_password_if_offline = True 
+    cache_credentials = True 
+    krb5_realm = AD1.EXAMPLE.COM 
+    realmd_tags = manages-system 
+    joined-with-adcli id_provider = ad 
+    fallback_homedir = /home/%u@%d 
+    ad_domain = ad1.example.com 
+    use_fully_qualified_names = True 
+    ldap_id_mapping = True 
     access_provider = ad
 
 Checks
