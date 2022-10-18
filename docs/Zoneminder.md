@@ -153,6 +153,10 @@ Email SSMTP
     SSMTP_MAIL = enabled
     SSMTP_PATH = /usr/sbin/ssmtp
 
+    # Test
+    $ vim test.txt
+    $ ssmtp -v ExampleTest@gmail.com < test.txt
+
 Zoneminder App
 --------------
 
