@@ -81,10 +81,12 @@ Enable User Authentication
 
 Enable SSL
 ----------
-
-    Weird Issue here where you have to go to /zm and unable to redirect to that ?
-    Possible Solution:
-    https://www.reddit.com/r/ZoneMinder/comments/gdl6oi/zoneminder_13410_on_debian_buster/
+    
+    Note:
+    There is a glitch in the way that Zoneminder uses Apache. Redirects to /zm do not appear to work.
+    Once you have SSL set, have to manually go to https://ip-of-server/zm . Using the zoneminder directory
+    /usr/share/zonmeinder/www has permission issues. Solving the redirect or the permisison issues appears
+    to be a solution. 
 
     $ sudo a2enmod ssl
     $ sudo systemctl restart apache2
@@ -94,18 +96,20 @@ Enable SSL
     <VirtualHost *:443>
     ServerName 127.0.0.1
     DocumentRoot /var/www/html
-    #Redirect / https://127.0.0.1/zm
     
     SSLEngine on
     SSLCertificateFile /etc/ssl/certs/apache.crt
     SSLCertificateKeyFile /etc/ssl/private/apache.key
     </VirtualHost>
 
+    $ sudo vim /etc/apache2/envars
+    export APACHE_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
+
     $ sudo vim /etc/apache2/sites-available/000-default.conf
     <VirtualHost *:80>
 	ServerName 127.0.0.1
     DocumentRoot /var/www/html
-	#Redirect / https://127.0.0.1/zm
+	Redirect / https://${APACHE_IP}/
     </VirtualHost>
 
     $ sudo a2ensite default-ssl.conf
@@ -128,7 +132,7 @@ TroubleShoot
 
 Login
 -----
-    # There is a redirect bug that I am troubleshooting , need to have the /zm added . 
+    # There is a redirect bug, need to have the /zm added . 
     https://hostname_or_ip/zm
 
 Api 
@@ -142,3 +146,4 @@ References
     https://zoneminder.readthedocs.io/en/stable/installationguide/ubuntu.html
     https://www.howtogeek.com/devops/how-to-create-and-use-self-signed-ssl-on-apache/
     https://www.how2shout.com/linux/how-to-install-zoneminder-on-ubuntu-22-04-20-04-lts/
+    https://httpd.apache.org/docs/2.4/rewrite/remapping.html
