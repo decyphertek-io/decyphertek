@@ -79,7 +79,7 @@ Enable SSL
     There is a glitch in the way that Zoneminder uses Apache. Redirects to /zm do not appear to work.
     Once you have SSL set, have to manually go to https://ip-of-server/zm . Using the zoneminder directory
     /usr/share/zonmeinder/www has permission issues. Solving the redirect or the permisison issues appears
-    to be a solution. A simple solution is to make an index.html page that staes to go to /zm to login. 
+    to be a solution. A simple solution is to make an index.html page that states to go to /zm to login. 
 
     $ sudo a2enmod ssl
     $ sudo systemctl restart apache2
