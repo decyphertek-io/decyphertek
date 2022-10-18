@@ -147,6 +147,11 @@ Email SSMTP
     root:example@gmail.com:smtp.gmail.com:587
     www-data:example@gmail.com:smtp.gmail.com:587
 
+Zoneminder App
+--------------
+
+    https://zmninja.zoneminder.com/
+
 Manage Zoneminder & Apache
 -------------------------
 
