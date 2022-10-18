@@ -164,6 +164,10 @@ Zoneminder App
 --------------
     # zmNinja-pro
     https://zmninja.zoneminder.com/
+    # Use zm authetnication
+    # enter username & password. 
+    # Get an error - cgi-bin detection failed-No configureg/enabled monitor Zoneminder
+    # continue past error, should see the server from your phone.
 
 Manage Zoneminder & Apache
 -------------------------
