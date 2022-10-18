@@ -201,15 +201,35 @@ Optional: Change Default DB
     you need to update these values in zm.conf. Edit zm.conf to change ZM_DB_USER and ZM_DB_PASS 
     to the values you used.
 
+    # Set root password
     $ sudo mysql
+    mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+    mysql> FLUSH PRIVILEGES;
+    mysql>exit
+
+    # Login to root and change zmuser password
+    $ mysql -u root -p
     mysql> ALTER USER 'zmuser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
     mysql> FLUSH PRIVILEGES;
     mysql>exit
-    # Update Password here as well.
-    $ sudo vim /etc/zm/zm.conf
-    # Default debian generated Paasword also found here, May break things if altered. 
-    $ sudo vim /etc/mysql/debian.cnf
 
+    # Change default debian.conf password
+    $ mysql -u root -p
+    mysql> ALTER USER 'debian-sys-maint'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+    mysql> FLUSH PRIVILEGES;
+    mysql>exit
+
+    # verfiy changes worked
+    $ mysql -u debian-sys-maint -p
+    mysql> exit
+    $ mysql -u zmuser -p
+    mysql> exit
+
+    # Update change Passwords here as well.
+    $ sudo vim /etc/zm/zm.conf
+    <AND>
+    $ sudo vim /etc/mysql/debian.cnf
+ 
 References
 ----------
 
