@@ -50,7 +50,6 @@ Firewall
 --------
 
     $ sudo ufw allow in "Apache"
-    $ sudo ufw block 80/tcp
 
 Change Default DB
 ------------------
