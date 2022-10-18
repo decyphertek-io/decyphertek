@@ -51,22 +51,6 @@ Firewall
 
     $ sudo ufw allow in "Apache"
 
-Change Default DB
------------------
-
-    Note:
-    Changed Default DB User: If you have changed your DB login/password from zmuser/zmpass, 
-    you need to update these values in zm.conf. Edit zm.conf to change ZM_DB_USER and ZM_DB_PASS 
-    to the values you used.
-
-    $ sudo mysql
-    mysql> ALTER USER 'zmuser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
-    mysql> FLUSH PRIVILEGES;
-    mysql>exit
-    # Update Password here as well.
-    $ sudo vim /etc/zm/zm.conf
-    # Default debian generated Paasword also found here, May break things if altered. 
-    $ sudo vim /etc/mysql/debian.cnf
 
 Enable User Authentication
 --------------------------
@@ -208,6 +192,23 @@ Version
 -------
 
     V1.34.26
+
+Optional: Change Default DB
+----------------------------
+
+    Note:
+    Changed Default DB User: If you have changed your DB login/password from zmuser/zmpass, 
+    you need to update these values in zm.conf. Edit zm.conf to change ZM_DB_USER and ZM_DB_PASS 
+    to the values you used.
+
+    $ sudo mysql
+    mysql> ALTER USER 'zmuser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+    mysql> FLUSH PRIVILEGES;
+    mysql>exit
+    # Update Password here as well.
+    $ sudo vim /etc/zm/zm.conf
+    # Default debian generated Paasword also found here, May break things if altered. 
+    $ sudo vim /etc/mysql/debian.cnf
 
 References
 ----------
