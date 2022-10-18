@@ -126,7 +126,7 @@ Email SSMTP
     root=postmaster@domain.com
     mailhub=smtp.mailgun.org:587
     rewriteDomain=domain.com
-    hostname=decyphertek
+    hostname=localhost
     UseTLS=Yes
     UseSTARTTLS=Yes
     AuthUser=email
