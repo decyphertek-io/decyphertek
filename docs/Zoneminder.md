@@ -157,10 +157,12 @@ Email SSMTP
     $ vim test.txt
     write something here to test. 
     $ ssmtp -v ExampleTest@gmail.com < test.txt
+    <OR>
+    $ echo "Your Email Body" | mail -s "your subject" ExamplTest@gmail.com
 
 Zoneminder App
 --------------
-
+    # zmNinja-pro
     https://zmninja.zoneminder.com/
 
 Manage Zoneminder & Apache
