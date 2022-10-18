@@ -143,6 +143,10 @@ Email SSMTP
     AuthUser=example@gmail.com
     AuthPass=password
 
+    $ sudo vim /etc/ssmtp/revaliases
+    root:example@gmail.com:smtp.gmail.com:587
+    www-data:example@gmail.com:smtp.gmail.com:587
+
 Manage Zoneminder & Apache
 -------------------------
 
@@ -175,3 +179,5 @@ References
     https://www.howtogeek.com/devops/how-to-create-and-use-self-signed-ssl-on-apache/
     https://www.how2shout.com/linux/how-to-install-zoneminder-on-ubuntu-22-04-20-04-lts/
     https://httpd.apache.org/docs/2.4/rewrite/remapping.html
+    https://zoneminder.readthedocs.io/en/stable/userguide/options/options_email.html
+    https://wiki.zoneminder.com/How_to_get_ssmtp_working_with_Zoneminder
