@@ -115,7 +115,34 @@ Enable SSL
 
     $ sudo a2ensite default-ssl.conf
     $ sudo systemctl reload apache2
-   
+
+Email SSMTP
+-----------
+
+    $ sudo apt update
+    $ sudo apt install ssmtp mailutils
+    $ sudo vim /etc/ssmtp/ssmtp.conf
+    
+    # MailGun Example:
+    root=postmaster@domain.com
+    mailhub=smtp.mailgun.org:587
+    rewriteDomain=domain.com
+    hostname=decyphertek
+    UseTLS=Yes
+    UseSTARTTLS=Yes
+    AuthUser=email
+    AuthPass=password
+
+    # GMail Example
+    root=example@gmail.com
+    mailhub=smtp.gmail.com:587
+    hostname=localhost
+    RewriteDomain=gmail.com
+    UseSTARTTLS=YES
+    UseTLS=YES
+    AuthUser=example@gmail.com
+    AuthPass=password
+
 Manage Zoneminder & Apache
 -------------------------
 
