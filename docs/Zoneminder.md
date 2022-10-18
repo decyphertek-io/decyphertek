@@ -194,6 +194,11 @@ Api
 
     http://hostname_or_ip/zm/api/host/getVersion.json
 
+Version
+-------
+
+    V1.34.26
+
 References
 ----------
 
