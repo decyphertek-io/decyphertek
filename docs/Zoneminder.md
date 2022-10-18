@@ -197,6 +197,7 @@ Api
 References
 ----------
 
+    https://zoneminder.readthedocs.io/en/stable/userguide/gettingstarted.html
     https://zoneminder.readthedocs.io/en/stable/installationguide/ubuntu.html
     https://www.howtogeek.com/devops/how-to-create-and-use-self-signed-ssl-on-apache/
     https://www.how2shout.com/linux/how-to-install-zoneminder-on-ubuntu-22-04-20-04-lts/
