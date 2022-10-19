@@ -42,7 +42,7 @@ Install + Utilize
     $ sudo cloud-init init
     $ sudo cloud-init modules --mode=config
     $ sudo cloud-init modules --mode=final
-    # On a server build , the ubuntu user still exisits. Lets change that
+    # On a server build , the ubuntu user still exists. Lets change that
     $ sudo pkill -KILL -u ubuntu
     $ sudo deluser ubuntu
     $ sudo rm -rf /home/ubuntu

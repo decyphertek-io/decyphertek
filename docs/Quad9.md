@@ -14,6 +14,7 @@ Install
      $ sudo resolvconf -u
      $ sudo systemctl restart systemd-resolved.service && sudo systemctl restart network-manager 
      $ sudo service stubby restart
+     $ sudo ufw allow out 853/tcp
 
 Test
 ----
