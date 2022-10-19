@@ -10,8 +10,23 @@ Install + Utilize
     $ sudo apt install cloud-init
     $ sudo dpkg-reconfigure cloud-init
     <OR>
-    $ sudo vim /etc/cloud/cloud.cfg
+    # Debian systems
+    $ sudo vim 01_debian_cloud.cfg
+    apt_preserve_sources_list: true
+    manage_etc_hosts: true
+    system_info:
+      default_user:
+        name: admin
+        sudo: ALL=(ALL) NOPASSWD:ALL
+        shell: /bin/bash
+        lock_passwd: True
+        gecos: Debian
+        groups: [adm, audio, cdrom, dialout, dip, floppy, netdev, plugdev, sudo, video]
+        sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+        shell: /bin/bash
 
+    # Ubuntu Systems
+    $ sudo vim /etc/cloud/cloud.cfg
     # Change ubuntu to the username you want. 
     system_info:
      # This will affect which distro class gets used
