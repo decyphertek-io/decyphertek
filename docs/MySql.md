@@ -37,6 +37,18 @@ Create a Dedicated User
     # login to test new account
     $ mysql -u username -p
 
+Change User Password
+--------------------
+
+    # Login to root and change Username password
+    $ mysql -u root -p
+    mysql> ALTER USER 'username'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+    mysql> FLUSH PRIVILEGES;
+    mysql>exit
+    # Verify
+    $ mysql -u username -p
+    mysql> exit
+
 Troubleshoot
 -------------
 
