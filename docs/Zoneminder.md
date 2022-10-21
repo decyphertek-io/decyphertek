@@ -229,6 +229,9 @@ Optional: Change Default DB
     $ sudo vim /etc/zm/zm.conf
     <AND>
     $ sudo vim /etc/mysql/debian.cnf
+
+    # Once new passwords are set, secure mysql installation
+    $ sudo mysql_secure_installation
  
 References
 ----------
