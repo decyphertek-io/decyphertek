@@ -65,6 +65,9 @@ MariaDB
 -------
 
     $ mariadb -u root -p
+    <OR>
+    # If setting root password
+    $ sudo mysql
     $ use mysql;
     # mysql commands should work now on MariaDB
     Mysql> ALTER USER 'user'@'localhost' IDENTIFIED BY 'new_password';
