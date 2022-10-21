@@ -89,5 +89,6 @@ References
 
     https://dev.mysql.com/doc/mysql-getting-started/en/
     https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/
+    https://linuxconfig.org/how-to-change-mariadb-user-password
     https://www.tutorialspoint.com/mysql-secure-installation-improve-mysql-installation-security
     https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04
