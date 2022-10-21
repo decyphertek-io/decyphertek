@@ -67,6 +67,9 @@ MariaDB
     $ mariadb -u root -p
     $ use mysql;
     # mysql commands should work now on MariaDB
+    Mysql> ALTER USER 'user'@'localhost' IDENTIFIED BY 'new_password';
+    MySql> FLUSH PRIVILEGES;
+    MySql> exit
 
 Manage Database
 ---------------
