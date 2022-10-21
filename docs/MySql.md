@@ -64,8 +64,6 @@ Datbase Information
 MariaDB
 -------
 
-    $ mariadb -u root -p
-    <OR>
     # If setting root password
     $ sudo mysql
     $ use mysql;
@@ -73,6 +71,10 @@ MariaDB
     Mysql> ALTER USER 'user'@'localhost' IDENTIFIED BY 'new_password';
     MySql> FLUSH PRIVILEGES;
     MySql> exit
+    # Create a new user
+    $ mariadb -u root -p
+    $ use mysql;
+    $ CREATE USER username@t127.0.0.1 IDENTIFIED BY 'new_passwrod';
 
 Manage Database
 ---------------
