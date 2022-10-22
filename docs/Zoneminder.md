@@ -207,28 +207,14 @@ Optional: Change Default DB
     mysql> FLUSH PRIVILEGES;
     mysql>exit
 
-    # Login to root and change zmuser password
-    $ mysql -u root -p
-    mysql> ALTER USER 'zmuser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
-    mysql> FLUSH PRIVILEGES;
-    mysql>exit
-
-    # Change default debian.conf password
-    $ mysql -u root -p
-    mysql> ALTER USER 'debian-sys-maint'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
-    mysql> FLUSH PRIVILEGES;
-    mysql>exit
-
-    # verfiy changes worked
-    $ mysql -u debian-sys-maint -p
-    mysql> exit
-    $ mysql -u zmuser -p
-    mysql> exit
-
-    # Update change Passwords here as well.
-    $ sudo vim /etc/zm/zm.conf
-    <AND>
-    $ sudo vim /etc/mysql/debian.cnf
+    # The root password has been set by you from the above command, optional to change. 
+    $ sudo mysqladmin -u root -p'oldPassword' password 'newPassword'
+    # The debian-sys-maint password is found here - /etc/mysql/debian.cnf
+    $ sudo mysqladmin -u debian-sys-maint -p'oldPassword' 'newPassword'
+    # The zmuser password is found here - /etc/zm/zm.conf
+    $ sudo mysqladmin -u zmuser -p'zmpass' password 'newPassword'
+    $ sudo sed -i -r "s#^(ZM_DB_PASS=).*#\1newPassword#" /etc/zm/zm.conf
+    $ sudo sed -i -r "s#^(password =).*#\1 newPassword#" /etc/mysql/debian.cnf
 
     # Once new passwords are set, secure mysql installation
     $ sudo mysql_secure_installation
