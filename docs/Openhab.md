@@ -37,11 +37,9 @@ Cloud Install
      $ sudo mkdir /etc/nginx/ssl
      $ sudo openssl req -x509 -nodes -days 1095 -newkey rsa:2048 -keyout /etc/nginx/ssl/openhabcloud.key -out /etc/nginx/ssl/openhabcloud.crt -subj "/C=US/ST=Any/L=Anytown/O=decyphertek-io/OU=adminotaur/CN=decyphertek"
      $ sudo systemctl restart nginx
-     
-     
      $ sudo systemctl restart pm2-adminotaur
 
-     # Maybe try npm http server
+     # Maybe try npm http server instead of Nginx
      $ sudo npm install -g http-server
      $ cd ~/openhab-cloud/etc/
      $ http-server -p 3000
