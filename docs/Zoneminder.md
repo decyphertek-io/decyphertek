@@ -217,6 +217,8 @@ Optional: Change Default DB
     $ sudo mysqladmin -u zmuser -p'oldPassword' password 'newPassword'
     $ sudo sed -i -r "s#^(ZM_DB_PASS=).*#\1newPassword#" /etc/zm/zm.conf
     $ sudo sed -i -r "s#^(password =).*#\1 newPassword#" /etc/mysql/debian.cnf
+    $ sudo systemctl restart mysql
+    $ sudo systemctl restart zoneminder
 
     # Once new passwords are set, secure mysql installation
     $ sudo mysql_secure_installation
