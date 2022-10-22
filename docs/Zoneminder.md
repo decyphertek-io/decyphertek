@@ -4,6 +4,12 @@ Zoneminder
 "A full-featured, open source, state-of-the-art video surveillance software system."
 
 
+Version
+-------
+
+    V1.34.26
+    Ubuntu 20.04 LTS 
+
 Prepare System
 ---------------
 
@@ -188,10 +194,6 @@ Api
 
     http://hostname_or_ip/zm/api/host/getVersion.json
 
-Version
--------
-
-    V1.34.26
 
 Optional: Change Default DB
 ----------------------------
