@@ -222,6 +222,16 @@ Optional: Change Default DB
 
     # Once new passwords are set, secure mysql installation
     $ sudo mysql_secure_installation
+
+    # Optional: Update Gui Password from mysql ( Can update from gui, easier that way)
+    $ mysql -u root -p 
+    MySql> show databases;
+    MySql> use zm;
+    MySql> select * from Users;
+    MySql> update Users set Password="password" where Username="admin";
+    Mysql> FLUSH PRIVILEGES;
+    Mysql> exit
+
  
 References
 ----------
