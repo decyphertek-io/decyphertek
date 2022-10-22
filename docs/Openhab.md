@@ -37,10 +37,14 @@ Cloud Install
      $ sudo mkdir /etc/nginx/ssl
      $ sudo openssl req -x509 -nodes -days 1095 -newkey rsa:2048 -keyout /etc/nginx/ssl/openhabcloud.key -out /etc/nginx/ssl/openhabcloud.crt -subj "/C=US/ST=Any/L=Anytown/O=decyphertek-io/OU=adminotaur/CN=decyphertek"
      $ sudo systemctl restart nginx
-     $ sudo systemctl restart pm2-adminotaur
      
+     
+     $ sudo systemctl restart pm2-adminotaur
+
      # Maybe try npm http server
      $ sudo npm install -g http-server
+     $ cd ~/openhab-cloud/
+     $ http-server -p 3000
      # find out where the directories are and move nginx ones there . 
      
 Debian Install 
