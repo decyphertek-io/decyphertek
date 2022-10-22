@@ -43,7 +43,7 @@ Cloud Install
 
      # Maybe try npm http server
      $ sudo npm install -g http-server
-     $ cd ~/openhab-cloud/
+     $ cd ~/openhab-cloud/etc/
      $ http-server -p 3000
      # find out where the directories are and move nginx ones there . 
      
