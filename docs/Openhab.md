@@ -22,20 +22,16 @@ Cloud Install
      $ cd  /home/$USER/ 
      $ git clone https://github.com/openhab/openhab-cloud.git
      $ cd openhab-cloud
-     $ npm install
+     $ sudo npm install --force
+     $ sudo npm audit fix --force
      $ redis-cli ping
-     $ config-production.json -> config.json
-     $ sudo node app.js
-     http://localhost:3000
-
-Experimental: pm2 to run Openhab Cloud
--------------------
-
-     $ npm install pm2@latest -g 
+     $ cp config-production.json config.json
+     $ sudo npm install pm2@latest -g 
      $ pm2 start app.js
      $ pm2 save
      $ pm2 startup
-
+     # Doesnt work? Maybe Need to setup Nginx?
+     
 Debian Install 
 --------------
 
