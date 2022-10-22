@@ -199,7 +199,7 @@ Optional: Change Default DB
     Note:
     Changed Default DB User: If you have changed your DB login/password from zmuser/zmpass, 
     you need to update these values in zm.conf. Edit zm.conf to change ZM_DB_USER and ZM_DB_PASS 
-    to the values you used. CHanging the zmuser password breaks Zoneminder, looking for a solution. 
+    to the values you used. 
 
     # Set root password
     $ sudo mysql
