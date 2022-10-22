@@ -2,7 +2,7 @@ Openhab
 =====
 
 A smart home that you own and control. Works with most modern data tech, as it 
-inherits the same compatible technology. OPENHAB NEEDS REHAB , There instructions
+inherits the same compatible technology. OPENHAB NEEDS REHAB , Their instructions
 do not work? ( Tested on Ubuntu 22.04(MongoDB Fails) && Debain 11 ( installs, doesnt work?))
 
 Cloud Install
