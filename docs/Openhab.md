@@ -39,6 +39,10 @@ Cloud Install
      $ sudo systemctl restart nginx
      $ sudo systemctl restart pm2-adminotaur
      
+     # Maybe try npm http server
+     $ sudo npm install -g http-server
+     # find out where the directories are and move nginx ones there . 
+     
 Debian Install 
 --------------
 
