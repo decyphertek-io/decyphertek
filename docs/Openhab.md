@@ -65,7 +65,6 @@ OpenHabian Install
      # load and boot in Raspberry Pi
      # http://openhabian:8080/
 
-
 References
 ----------
 
