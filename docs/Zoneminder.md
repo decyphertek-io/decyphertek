@@ -207,7 +207,7 @@ Optional: Change Default DB
     $ sudo mysql
     mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
     mysql> FLUSH PRIVILEGES;
-    mysql>exit
+    mysql> exit
 
     # The root password has been set by you from the above command, optional to change. 
     $ sudo mysqladmin -u root -p'oldPassword' password 'newPassword'
