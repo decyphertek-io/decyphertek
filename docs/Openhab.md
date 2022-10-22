@@ -2,7 +2,8 @@ Openhab
 =====
 
 A smart home that you own and control. Works with most modern data tech, as it 
-inherits the same compatible technology. 
+inherits the same compatible technology. OPENHAB NEEDS REHAB , There instructions
+do not work? ( Tested on Ubuntu 22.04(MongoDB Fails) && Debain 11 ( installs, doesnt work?))
 
 Cloud Install
 --------------
@@ -42,8 +43,8 @@ Debian Install
 --------------
 
      $ curl -fsSL "https://openhab.jfrog.io/artifactory/api/gpg/key/public" | gpg --dearmor > openhab.gpg 
-     $ sudo mkdir /usr/share/keyrings 
-     $ sudo mv openhab.gpg /usr/share/keyrings $ sudo chmod u=rw,g=r,o=r /usr/share/keyrings/openhab.gpg
+     $ sudo mv openhab.gpg /usr/share/keyrings 
+     $ sudo chmod u=rw,g=r,o=r /usr/share/keyrings/openhab.gpg
      $ echo 'deb [signed-by=/usr/share/keyrings/openhab.gpg] https://openhab.jfrog.io/artifactory/openhab-linuxpkg stable main' | sudo tee /etc/apt/sources.list.d/openhab.list
      $ sudo apt-get update
      $ sudo apt-get install openhab openhab-addons
