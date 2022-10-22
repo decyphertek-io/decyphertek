@@ -31,7 +31,6 @@ Cloud Install
      $ pm2 start app.js
      $ pm2 save
      $ pm2 startup
-     # Doesnt work? Maybe Need to setup Nginx?
      $ sudo cp /home/$USER/openhab-cloud/etc/nginx_openhabcloud.conf /etc/nginx/sites-available/default
      $ sudo cat /etc/nginx/sites-enabled/default
      $ sudo mkdir /etc/nginx/ssl
