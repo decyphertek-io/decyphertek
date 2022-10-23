@@ -72,7 +72,12 @@ Setup SSL Cert
      python:
           version: 3.9
      # Consider replacing ( use to test) - /home/$USER/caldera/plugins/ssl/conf/insecure_certificate.pem
+     $ sudo openssl req -x509 -nodes -days 1095 -newkey rsa:2048 -keyout /etc/ssl/private/private-ssl.key -out /etc/ssl/certs/private-ssl.crt -subj "/C=US/ST=Any/L=Anytown/O=decyphertek-io/OU=adminotaur/CN=decyphertek"
+     $ sudo cat /etc/ssl/certs/private-ssl.crt /etc/ssl/private/private-ssl.key > ~/caldera/plugins/ssl/conf/secured_certificate.pem
+     $ vim /home/$USER/caldera/plugins/ssl/templates/haproxy.conf
+     bind *:8443 ssl crt plugins/ssl/conf/secured_certificate.pem
      $ sudo systemctl daemon-reload
+     $ sudo systemctl restart haproxy
      $ sudo systemctl restart caldera
      # https://ip-of-server:8443
 
