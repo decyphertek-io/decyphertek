@@ -6,6 +6,7 @@ A Scalable, Automated Adversary Emulation Platform
 Install
 --------
 
+     $ sudo apt update && sudo apt upgrade -y
      $ sudo apt install git python3-pip
      $ git clone https://github.com/mitre/caldera.git --recursive 
      $ cd caldera 
