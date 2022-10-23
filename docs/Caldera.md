@@ -22,9 +22,10 @@ Systemd Managed Caldera
      [Service]
      User=root
      WorkingDirectory=/home/$USER/caldera/
-     ExecStart=/usr/bin/python3 /home/$USER/caldera/server.py --insecure 
+     ExecStart=/usr/bin/python3 /home/$USER/caldera/server.py 
      [Install]
      WantedBy=multi-user.target
+     $ sudo systemctl daemon-reload
 
 Mange Caldera
 -------------
