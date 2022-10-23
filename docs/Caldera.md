@@ -40,6 +40,10 @@ Login
      # http://ip-of-server:8888 
      # user = admin
      # password = admin
+     # If you have a firewall or Security group , allow port 8888
+     # Example:
+     $ sudo ufw allow 8888/tcp
+
 
 Setup SSL Cert
 --------------
