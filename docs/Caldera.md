@@ -41,22 +41,14 @@ Login
 
 Setup SSL Cert
 --------------
-   
-     # Work In Progress.
-     # Mod default settings - Update 
-     $ vim /home/adminotaur/caldera/conf/default.yml
+    
+     # Mod default settings 
+     $ sudo apt install haproxy
+     $ vim /home/$USER/caldera/conf/default.yml
      app.contact.http = https://0.0.0.0:8443
      Change listener port from 8888 > 8443
-     # Enable the SSL Plugin on the default.yml
-     To enable a plugin, add it to the default.yml file in the 
-     conf/ directory. Make sure your server is stopped when editing the default.yml file.
-
-     # These Instructions do not work, Work in progress.....
-     $ sudo apt install haproxy
-      > Login > Configuration > Plugins > SSL = Enabled
-     > Login > Configuration > Setting Name > app.contact.http = https://0.0.0.0:8443 > Update
-     $ mv /home/$USER/caldera/plugins/ssl/conf/insecure_certificate.pem /home/$USER/caldera/plugins/ssl/conf/insecure_certificate.pem.bak
-     $ sudo openssl req -x509 -nodes -days 1095 -newkey rsa:2048 -keyout /home/$USER/caldera/plugins/ssl/conf/ssl.pem -out /home/$USER/caldera/plugins/ssl/conf/cert.pem -subj "/C=US/ST=Any/L=Anytown/O=decyphertek-io/OU=adminotaur/CN=decyphertek"
+     # Enable the SSL Plugin on the default.yml by adding it. 
+     # Consider replacing - /home/$USER/caldera/plugins/ssl/conf/insecure_certificate.pem
      $ sudo systemctl daemon-reload
      $ sudo systemctl restart caldera
      # https://ip-of-server:8443
