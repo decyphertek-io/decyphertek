@@ -53,15 +53,14 @@ Setup SSL Cert
      $ sudo systemctl enable haproxy
      $ sudo systemctl restart haproxy
      $ vim /home/$USER/caldera/conf/default.yml
+     <AND>
+     $ vim /home/$USER/caldera/conf/local.yml
      app.contact.http = https://0.0.0.0:8443
      $ vim /home/$USER/caldera/conf/default.yml
      # Enable the SSL Plugin on the default.yml by adding it.
      $ vim /home/$USER/caldera/conf/default.yml
      plugins:
      - ssl
-     $ cp local.yml local.yml.bak
-     $ rm -rf local.yml
-     $ cp default.yml local.yml
      # Consider replacing - /home/$USER/caldera/plugins/ssl/conf/insecure_certificate.pem
      $ sudo systemctl daemon-reload
      $ sudo systemctl restart caldera
@@ -72,7 +71,6 @@ Update Passwords
 
      $ vim /home/$USER/caldera/conf/default.yml
      Example:
-
 
 
 References
