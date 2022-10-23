@@ -59,7 +59,7 @@ Setup SSL Cert
      $ python3 --verison 
      $ go version
      $ vim /home/$USER/caldera/conf/default.yml
-     <AND>
+     <AND/OR>
      $ vim /home/$USER/caldera/conf/local.yml
      # Update both configs with the following info:
      app.contact.http = https://0.0.0.0:8443
