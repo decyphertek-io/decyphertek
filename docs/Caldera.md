@@ -22,13 +22,13 @@ Install
      [Service]
      User=root
      WorkingDirectory=/home/$USER/caldera/
-     ExecStart=/usr/bin/python3 /home/$USER/caldera/server.py 
+     ExecStart=/usr/bin/python3 /home/$USER/caldera/server.py --insecure 
      [Install]
      WantedBy=multi-user.target
      # Mange Caldera
-     $ sudo systemctl enable caldera.service
-     $ sudo systemctl start caldera.service
-     $ sudo systemctl status caldera.service
+     $ sudo systemctl enable caldera
+     $ sudo systemctl start caldera
+     $ sudo systemctl status caldera
 
 
 References
