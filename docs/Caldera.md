@@ -88,10 +88,9 @@ Update Passwords
      Example:
      users:
        blue:
-         blueteam: instance-id
-
+         blueteam: password
        red:
-         redteam: instance-id
+         redteam: password
      
 References
 ----------
