@@ -68,4 +68,5 @@ References
      https://caldera.mitre.org/
      https://caldera.readthedocs.io/en/latest/Installing-CALDERA.html
      https://caldera.readthedocs.io/en/latest/Getting-started.html
-     https://www.blackhillsinfosec.com/how-to-install-mitre-caldera-and-configure-your-ssl-certificate/
+     https://caldera.readthedocs.io/en/latest/Plugin-library.html
+     
