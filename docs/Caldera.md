@@ -10,10 +10,6 @@ Install
      $ cd caldera 
      $ sudo apt install python3-pip
      $ sudo -H python3 -m pip install -r requirements.txt
-     $ sudo python3 server.py --insecure
-     # http://localhost:8888 with the
-     # user = admin
-     # password = admin
      # Systemd Managed Caldera
      $ sudo vim /etc/systemd/system/caldera.service
      [Unit]
@@ -29,7 +25,10 @@ Install
      $ sudo systemctl enable caldera
      $ sudo systemctl start caldera
      $ sudo systemctl status caldera
-
+     # Login
+     # http://ip-of-server:8888 
+     # user = admin
+     # password = admin
 
 References
 ----------
