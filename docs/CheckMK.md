@@ -6,9 +6,12 @@ Modern Open Source network Monitoring solution.
 Install
 --------
 
-     $ wget https://download.checkmk.com/checkmk/2.1.0p11/check-mk-raw-2.1.0p11_0.focal_amd64.deb
-     $ sudo apt update && sudo apt install -y gdebi
-     $ sudo gdebi check-mk-raw-2.1.0p11_0.focal_amd64.deb
+     # Ubuntu 22.04 
+     $ sudo apt update && sudo apt upgrade -y
+     $ wget https://download.checkmk.com/checkmk/2.1.0p15/check-mk-free-2.1.0p15_0.jammy_amd64.deb
+     $ sudo dpkg -i check-mk-free-2.1.0p15_0.jammy_amd64.deb
+     # If fails due to dependencies, run the following
+     $ sudo apt install -f
      $ omd version
      $ sudo omd create monitoring
      # Follow output Information regarding access. 
@@ -20,6 +23,31 @@ Install
      # Change Password
      $ omd su monitoring
      $ htpasswd etc/htpasswd cmkadmin
+
+Enable HTTPS
+------------
+
+     $ sudo a2enmod ssl
+     $ sudo systemctl restart apache2
+     $ sudo openssl req -x509 -nodes -days 1095 -newkey rsa:2048 -keyout /etc/ssl/private/private-ssl.key -out /etc/ssl/certs/private-ssl.crt -subj "/C=US/ST=Any/L=Anytown/O=decyphertek-io/OU=adminotaur/CN=decyphertek"
+     $ sudo vim /etc/apache2/sites-available/default-ssl.conf
+     <VirtualHost *:443>
+     ServerName 127.0.0.1
+     DocumentRoot /var/www/html
+     
+     SSLEngine on
+     SSLCertificateFile /etc/ssl/certs/private-ssl.crt
+     SSLCertificateKeyFile /etc/ssl/private/private-ssl.key
+     </VirtualHost>
+     
+     $ sudo vim /etc/apache2/sites-enabled/000-default.conf
+     RewriteEngine On
+     RewriteCond %{SERVER_PORT} !^443$
+     RewriteRule (.*) https://%{HTTP_HOST}$1 [L]
+     $ sudo a2ensite default-ssl.conf
+     $ sudo systemctl reload apache2
+     $ sudo systemctl restart httpd
+     $ sudo systemctl restart apache2
 
 
 References
