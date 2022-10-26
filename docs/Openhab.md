@@ -8,7 +8,8 @@ do not work? ( Tested on Ubuntu 22.04(MongoDB Fails) && Debain 11 ( installs, do
 Cloud Install
 --------------
    
-     # Doesnt work based off the instructions provided? 
+     # Doesnt work based off the instructions provided , Opened up a github issue
+     - https://github.com/openhab/openhab-addons/issues/13581
      $ sudo apt-get update && sudo apt-get upgrade -y
      $ curl -fsSL https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
      $ echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
