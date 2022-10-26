@@ -7,14 +7,10 @@ Install
 -------
 
      # Ubuntu 20.04 
+     $ sudo apt update && sudo apt upgrade
      $ sudo apt install net-tools
-     $ sudo apt-get install -y erlang-base \
-                      erlang-asn1 erlang-crypto erlang-eldap erlang-ftp erlang-inets \
-                      erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key \
-                      erlang-runtime-tools erlang-snmp erlang-ssl \
-                      erlang-syntax-tools erlang-tftp erlang-tools erlang-xmerl
      $ bash <(curl -sSL https://stackstorm.com/packages/install.sh) --user=st2admin --password=Ch@ngeMe  
-     
+
      # Currently getting this error:
      The following packages have unmet dependencies:
      rabbitmq-server : Depends: erlang-base (>= 1:25.0) but 1:24.3.4.6-1 is to be installed or
