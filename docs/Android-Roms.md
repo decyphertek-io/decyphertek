@@ -1,4 +1,4 @@
-Android Privacy Roms
+Android Roms
 ====================
 
 De-Google-fy your phone and limit the amount of data shared. 
@@ -17,6 +17,11 @@ CalyxOS
 -------
 
     https://calyxos.org/
+
+Divest OS
+---------
+
+    https://divestos.org/
 
 References
 -----------
