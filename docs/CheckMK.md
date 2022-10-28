@@ -3,7 +3,7 @@ CheckMK
 
 Modern Open Source network Monitoring solution. 
  
-Install - Version OMD 2.1.0p15.cfe
+Install - OMD version 2.1.0p15.cfe
 --------
 
      # Ubuntu 22.04 
