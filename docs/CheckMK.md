@@ -3,7 +3,7 @@ CheckMK
 
 Modern Open Source network Monitoring solution. 
  
-Install
+Install - Version OMD 2.1.0p15.cfe
 --------
 
      # Ubuntu 22.04 
@@ -48,7 +48,6 @@ Enable HTTPS
      RewriteRule (.*) https://%{HTTP_HOST}$1 [L]
      $ sudo a2ensite default-ssl.conf
      $ sudo systemctl reload apache2
-     $ sudo systemctl restart httpd
      $ sudo systemctl restart apache2
 
 Managing Data
@@ -60,11 +59,6 @@ Managing Data
      # Can create an encryption key iwith a passphrase and schedule regular backups
      Login > Settings > Maintenance > Backups 
     
-
-
-
-
-
 References
 ----------
 
