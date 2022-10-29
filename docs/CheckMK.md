@@ -72,7 +72,7 @@ Installing Agents
      $ sudo cmk-agent-ctl register --help
      > login > setup > hosts > add host 
      # reference that hostname below. 
-     $ sudo cmk-agent-ctl register --hostname localhost --server ip-of-server:8000 --site monitoring -U cmkadmin -P password --trust-cert
+     $ sudo cmk-agent-ctl register --hostname hostname --server ip-of-server:8000 --site monitoring -U cmkadmin -P password --trust-cert
      
 References
 ----------
