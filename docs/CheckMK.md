@@ -58,7 +58,21 @@ Managing Data
 
      # Can create an encryption key iwith a passphrase and schedule regular backups
      Login > Settings > Maintenance > Backups 
-    
+
+Installing Agents
+-----------------
+
+     # Select your OS version and download from:
+     https://ip-of-server/monitoring/check_mk/agents/
+     # debian example
+     $ wget https://ip-of-server/monitoring/check_mk/agents/check-mk-agent_2.1.0p15-1_all.deb
+     $ sudo dpkg -i check-mk-agent_2.1.0p15-1_all.deb
+     $ sudo cmk-agent-ctl --help
+     $ sudo cmk-agent-ctl register --help
+     $ sudo cmk-agent-ctl register --server ip-of-server:443 --site monitoring -U cmkadmin -P password --trust-cert
+     # If you get a 404 error, then:
+
+
 References
 ----------
 
