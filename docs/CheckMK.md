@@ -63,15 +63,14 @@ Installing Agents
 -----------------
 
      # Select your OS version and download from:
-     https://ip-of-server/monitoring/check_mk/agents/
-     # debian example
-     $ sudo ufw allow 8000/tcp
-     $ wget https://ip-of-server/monitoring/check_mk/agents/check-mk-agent_2.1.0p15-1_all.deb
-     $ sudo dpkg -i check-mk-agent_2.1.0p15-1_all.deb
+     > Login > Setup > agents > Windows, Linux, Solaris, AIX 
+     # can use wget to download the link if no GUI access from client. 
+     $ sudo dpkg -i check-mk-agent*.deb
      $ sudo cmk-agent-ctl --help
      $ sudo cmk-agent-ctl register --help
+     # On server make a hostname
      > login > setup > hosts > add host 
-     # reference that hostname below. 
+     # On client run the following command that refernces the hostname created and is the hostname of the client. 
      $ sudo cmk-agent-ctl register --hostname hostname --server ip-of-server:8000 --site monitoring -U cmkadmin -P password --trust-cert
      
 References
