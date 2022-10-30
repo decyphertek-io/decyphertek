@@ -54,7 +54,7 @@ Adding Users
 ------------
 
     Login > Users > add user > set email & password > add device > download config Or get QR code
-    Follow - https://docs.firezone.dev/user-guides/client-instructions/
+    Client Instructions - https://docs.firezone.dev/user-guides/client-instructions/
     Wireguard - https://www.wireguard.com/install/#installation
     # Linux Example - Client side
     $ sudo apt install wireguard
