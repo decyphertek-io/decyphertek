@@ -25,8 +25,13 @@ Docker Install - Fails currently
 Firewall 
 --------
 
-    $ sudo ufw allow 443/tcp
-    $ sudo ufw allow 51820/udp
+    $ sudo ufw disable
+    $ sudo apt install nftables
+    $ sudo su -c "curl 'https://raw.githubusercontent.com/decyphertek-io/configs/main/nftables.conf' >> /etc/nftables.conf"
+    $ sudo systemctl enable nftables
+    $ sudo systemctl start nftables
+    $ sudo systemctl status nftables
+    $ sudo firezone-ctl restart phoenix
     
 Ports and protocols
 -------------------
