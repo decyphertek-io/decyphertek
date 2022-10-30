@@ -3,8 +3,8 @@ FireZone
 
 Firewall and wireguard VPN server. 
 
-Install - Ubuntu 22.04
------------------------
+Install - Ubuntu 22.04 / Debian 11
+----------------------------------
 
     $ curl -1sLf 'https://dl.cloudsmith.io/public/firezone/firezone/setup.deb.sh' | sudo -E bash
     $ sudo apt install -y firezone
