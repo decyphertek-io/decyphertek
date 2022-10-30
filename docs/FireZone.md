@@ -3,11 +3,6 @@ FireZone
 
 Firewall and wireguard VPN server. 
 
-Firezone Version
-----------------
-
-    0.6.5-1
-
 Install - Ubuntu 22.04
 -----------------------
 
@@ -86,6 +81,11 @@ TroubleShoot
 
     $ sudo firezone-ctl help
     $ sudo firezone-ctl tail 
+
+Upgrade
+-------
+
+    $ sudo firezone-ctl reconfigure
 
 References
 ----------
