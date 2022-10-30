@@ -49,7 +49,23 @@ Adding Users
 
     Login > Users > add user > set email & password > add device > download config Or get QR code
     Follow - https://docs.firezone.dev/user-guides/client-instructions/
-     
+    # Linux Example - Client side
+    $ sudo apt install wireguard
+    $ sudo nmcli connection import type wireguard file /path/to/configuration.conf
+    # Connect
+    $ nmcli connection up [vpn name]
+    # disconnect
+    $ nmcli connection down [vpn name]
+    # autoconnect
+    $ nmcli connection modify [vpn name] connection.autoconnect yes
+    # disable autoconnect
+    $ nmcli connection modify [vpn name] connection.autoconnect no
+
+Enable MFA 
+----------
+
+    To enable MFA navigate to /user_account/register_mfa in the Firezone portal. After 
+    generating the QR code, scan using your authenticator app and input the 6 digit code.
 
 TroubleShoot
 ------------
