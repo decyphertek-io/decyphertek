@@ -27,7 +27,7 @@ Firewall
 
     $ sudo ufw allow 443/tcp
     $ sudo ufw allow 51820/udp
-
+    
 Ports and protocols
 -------------------
 
@@ -82,6 +82,10 @@ TroubleShoot
 
     $ sudo firezone-ctl help
     $ sudo firezone-ctl tail 
+    # UFW Firewall - VPN Traffic no passing
+    $ sudo less /var/log/ufw* | grep 'BLOCK'
+    # Confirm by temporarily disabling the host firewall
+    $ sudo ufw disable
 
 Upgrade
 -------
