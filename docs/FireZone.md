@@ -60,6 +60,11 @@ Adding Users
     $ nmcli connection modify [vpn name] connection.autoconnect yes
     # disable autoconnect
     $ nmcli connection modify [vpn name] connection.autoconnect no
+    
+    # Android Wireguard App
+    Download - https://play.google.com/store/apps/details?id=com.wireguard.android&gl=US
+    Create user > add device > make sure to name tunnel > Scan QR code > Reference tunnel > Login > Confirm browse what is my IP. 
+    
 
 Enable MFA 
 ----------
