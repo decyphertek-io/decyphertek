@@ -19,7 +19,7 @@ Docker Install - Fails currently
 --------------------------------
 
     # Github issue opened - https://github.com/firezone/firezone/issues/1079
-    # Install Docker and Docker COmpose Plugin
+    # Install Docker and Docker Compose Plugin ( See Docker docs here )
     $ bash <(curl -fsSL https://github.com/firezone/firezone/raw/master/scripts/install.sh)
 
 Firewall 
