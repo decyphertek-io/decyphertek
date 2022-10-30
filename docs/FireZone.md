@@ -46,6 +46,8 @@ Security Configurations:
     (Omnibus-based deployments) or LOCAL_AUTH_ENABLED=false (Docker-based deployments).
     * Please make sure to promote a non-local user as admin first, so you can still login. 
     $ sudo vim /etc/firezone/firezone.rb
+    <OR>
+    # You can delete the firezone@localhost user as long as you promote another user as admin. 
     
 Adding Users
 ------------
@@ -72,8 +74,7 @@ Adding Users
 Enable MFA 
 ----------
 
-    To enable MFA navigate to /user_account/register_mfa in the Firezone portal. After 
-    generating the QR code, scan using your authenticator app and input the 6 digit code.
+    Login > Account > Add MFA > Scan QR code with MFA APP 
 
 TroubleShoot
 ------------
