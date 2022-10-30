@@ -48,6 +48,7 @@ Security Configurations:
     $ sudo vim /etc/firezone/firezone.rb
     <OR>
     # You can delete the firezone@localhost user as long as you promote another user as admin. 
+    # Except the following command - sudo firezone-ctl create-or-reset-admin - can regenerate a local login. 
     
 Adding Users
 ------------
