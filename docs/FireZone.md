@@ -22,11 +22,11 @@ Docker Install - Fails currently
     # Install Docker and Docker COmpose Plugin
     $ bash <(curl -fsSL https://github.com/firezone/firezone/raw/master/scripts/install.sh)
 
-TroubelShoot
-------------
+Firewall 
+--------
 
-    $ sudo firezone-ctl help
-    $ sudo firezone-ctl tail 
+    $ sudo ufw allow 443/tcp
+    $ sudo ufw allow 51820/udp
 
 Ports and protocols
 -------------------
@@ -43,6 +43,12 @@ Security Configurations:
     For production deployments of Firezone, we recommend you disable local authentication 
     altogether by setting default['firezone']['authentication']['local']['enabled'] = false 
     (Omnibus-based deployments) or LOCAL_AUTH_ENABLED=false (Docker-based deployments).
+
+TroubleShoot
+------------
+
+    $ sudo firezone-ctl help
+    $ sudo firezone-ctl tail 
 
 References
 ----------
