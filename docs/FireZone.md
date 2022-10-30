@@ -40,10 +40,13 @@ Ports and protocols
 Security Configurations:
 ------------------------
 
+    Note:
     For production deployments of Firezone, we recommend you disable local authentication 
     altogether by setting default['firezone']['authentication']['local']['enabled'] = false 
     (Omnibus-based deployments) or LOCAL_AUTH_ENABLED=false (Docker-based deployments).
-
+    * Please make sure to promote a non-local user as admin first, so you can still login. 
+    $ sudo vim /etc/firezone/firezone.rb
+    
 Adding Users
 ------------
 
@@ -64,7 +67,7 @@ Adding Users
     # Android Wireguard App
     Download - https://play.google.com/store/apps/details?id=com.wireguard.android&gl=US
     Create user > add device > make sure to name tunnel > Scan QR code > Reference tunnel > Login > Confirm browse what is my IP. 
-    
+
 
 Enable MFA 
 ----------
