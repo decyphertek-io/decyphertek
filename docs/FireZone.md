@@ -44,6 +44,13 @@ Security Configurations:
     altogether by setting default['firezone']['authentication']['local']['enabled'] = false 
     (Omnibus-based deployments) or LOCAL_AUTH_ENABLED=false (Docker-based deployments).
 
+Adding Users
+------------
+
+    Login > Users > add user > set email & password > add device > download config Or get QR code
+    Follow - https://docs.firezone.dev/user-guides/client-instructions/
+     
+
 TroubleShoot
 ------------
 
@@ -55,3 +62,4 @@ References
     https://www.firezone.dev/
     https://docs.firezone.dev/
     https://kalilinuxtutorials.com/firezone/
+    https://docs.firezone.dev/user-guides/client-instructions/
