@@ -3,11 +3,16 @@ FireZone
 
 Firewall and wireguard VPN server. 
 
+Firezone Version
+----------------
+
+    0.6.5-1
+
 Install - Ubuntu 22.04
 -----------------------
 
     $ curl -1sLf 'https://dl.cloudsmith.io/public/firezone/firezone/setup.deb.sh' | sudo -E bash
-    $ sudo apt install firezone
+    $ sudo apt install -y firezone
     $ sudo firezone-ctl reconfigure
     $ sudo firezone-ctl restart
     $ sudo firezone-ctl create-or-reset-admin
