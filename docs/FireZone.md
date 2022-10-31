@@ -41,7 +41,7 @@ Ports and protocols
     * Nginx	80/tcp - all Public HTTP port used for ACME. Disabled when ACME is disabled.
     * WireGuard	51820/udp -	all	Public WireGuard port used for VPN sessions.
     * Postgresql 15432/tcp - 127.0.0.1 Local-only port used for bundled Postgresql server.
-    * Phoenix 13000/tcp - 127.0.0.1 Local-only port used by upstream elixir app server.\
+    * Phoenix 13000/tcp - 127.0.0.1 Local-only port used by upstream elixir app server.
 
 Security Configurations:
 ------------------------
