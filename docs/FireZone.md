@@ -91,6 +91,16 @@ TroubleShoot
     $ sudo less /var/log/ufw* | grep 'BLOCK'
     # Confirm by temporarily disabling the host firewall
     $ sudo ufw disable
+    # Use nftables instead
+    $ sudo systemctl status nftables
+
+    ###CAUTION!!!###
+    # Please be aware If you stop your instance and relaunch , this may require a server reconfiguration and may void vpn connections.
+    # This is due to the public IP changing and server configurations and tunnels are driectly tied to that. Please be aware. 
+    # Production environments can use an elastic IP and assocaite a domain name that will avoid this issue. 
+    # To test this run reconfigure and restart, then create a new tunnel to see if this resolves the issue.
+    $ sudo firezone-ctl reconfigure
+    $ sudo firezone-ctl restart
 
 Upgrade
 -------
