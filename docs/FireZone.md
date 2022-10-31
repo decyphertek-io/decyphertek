@@ -109,6 +109,13 @@ Upgrade
 
     $ sudo firezone-ctl reconfigure
 
+Optional Security:
+------------------
+
+    # Once all vpn tunnels have been configured, you can set to only allow inbound traffic to port 51829/udp via 
+    # AWS Security group or other network based firewall. If you need ssh or console access , allow those temporaily. 
+    # This secures the VPN server and returns not results when scanning via Nmap. 
+
 References
 ----------
     https://www.firezone.dev/
