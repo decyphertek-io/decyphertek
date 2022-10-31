@@ -54,6 +54,7 @@ Security Configurations:
     <OR>
     # You can delete the firezone@localhost user as long as you promote another user as admin. 
     # Except the following command - sudo firezone-ctl create-or-reset-admin - can regenerate a local login. 
+    # This is why to prevent the local admin from being recreated, remove the option as stated above. 
     
 Adding Users
 ------------
