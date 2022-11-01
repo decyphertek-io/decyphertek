@@ -64,14 +64,19 @@ Installing Agents
 
      # Select your OS version and download from:
      > Login > Setup > agents > Windows, Linux, Solaris, AIX 
-     # can use wget to download the link if no GUI access from client. 
-     $ sudo dpkg -i check-mk-agent*.deb
+     $ sudo dpkg -i check-mk*.deb
      $ sudo cmk-agent-ctl --help
      $ sudo cmk-agent-ctl register --help
+     # find your hostname
+     $ hostnamectl
      # On server make a hostname
-     > login > setup > hosts > add host 
-     # On client run the following command that refernces the hostname created and is the hostname of the client. 
+     > login > setup > hosts > add host > save & go to connection test
+     # On client run the following command that references the hostname created and is the hostname of the client.
+     # This appears to be a limitation here , can set the /etc/hosts to refernce the hostname and IP.
+     $ sudo vim /etc/hosts
+     ip-of-server hostname
      $ sudo cmk-agent-ctl register --hostname hostname --server ip-of-server:8000 --site monitoring -U cmkadmin -P password --trust-cert
+     # Ports - CheckMK queries agents on TCP port 6556 and SNMP simultaneously.
      
 References
 ----------
