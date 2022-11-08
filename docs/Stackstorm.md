@@ -7,8 +7,9 @@ Install
 -------
 
      # Ubuntu 20.04 
-     $ sudo apt update && sudo apt upgrade
+     $ sudo apt update && sudo apt upgrade -y 
      $ sudo apt install net-tools
+     # This script currently fails, says st2 can not be found.
      $ bash <(curl -sSL https://stackstorm.com/packages/install.sh) --user=st2admin --password=Ch@ngeMe  
 
 Change password
