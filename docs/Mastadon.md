@@ -37,7 +37,7 @@ PostGresSQL
     $ CREATE USER mastodon CREATEDB;
     $ \q
 
-Setup Masatdon
+Mastadon Setup
 --------------
 
     $ sudo su - mastodon
@@ -52,7 +52,7 @@ Setup Masatdon
     $ exit
 
 nginx Setup
------------
+------------
 
     $ cp /home/mastodon/live/dist/nginx.conf /etc/nginx/sites-available/mastodon
     $ ln -s /etc/nginx/sites-available/mastodon /etc/nginx/sites-enabled/mastodon
@@ -65,7 +65,12 @@ Optional: Certbot SSL
 ---------------------
 
     $ certbot --nginx -d example.com
-    
+
+Systemd
+-------
+
+    $ cp /home/mastodon/live/dist/mastodon-*.service /etc/systemd/system/
+
 
 
 References
