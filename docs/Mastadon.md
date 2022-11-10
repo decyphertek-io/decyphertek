@@ -49,7 +49,8 @@ Mastadon Setup
     $ bundle config without 'development test'
     $ bundle install -j$(getconf _NPROCESSORS_ONLN)
     $ yarn install --pure-lockfile
-    # Need to set a domain name , unclear if 127.0.0.1 works?
+    # Need to set a domain name , unclear if 127.0.0.1 works? / nginx produces error if set to 127.0.0.1
+    # Looks like there is a lot of depency issues or outdated errors. 
     $ RAILS_ENV=production bundle exec rake mastodon:setup
     # config stored .env.production
     # Example
@@ -81,6 +82,8 @@ Mastadon Setup
     E-mail address to send e-mails "from": Mastodon <notifications@127.0.0.1>
     Send a test e-mail with this configuration right now? Yes
     Send test e-mail to: adminotaur@decyphertek.io
+
+    $ exit
     
 nginx Setup
 ------------
@@ -101,7 +104,8 @@ Systemd
 -------
 
     $ cp /home/mastodon/live/dist/mastodon-*.service /etc/systemd/system/
-
+    $ systemctl daemon-reload
+    $ systemctl enable --now mastodon-web mastodon-sidekiq mastodon-streaming
 
 
 References
