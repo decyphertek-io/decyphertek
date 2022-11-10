@@ -52,8 +52,35 @@ Mastadon Setup
     # Need to set a domain name and unable to change.
     $ RAILS_ENV=production bundle exec rake mastodon:setup
     # config stored .env.production
-    
+    # Example
+    mastodon@decyphertek:~/live$ RAILS_ENV=production bundle exec rake mastodon:setup
+    Your instance is identified by its domain name. Changing it afterward will break things.
+    Domain name: 127.0.0.1
 
+    Single user mode disables registrations and redirects the landing page to your public profile.
+    Do you want to enable single user mode? No
+
+    Are you using Docker to run Mastodon? no
+
+    PostgreSQL host: /var/run/postgresql
+    PostgreSQL port: 5432
+    Name of PostgreSQL database: mastodon_production
+    Name of PostgreSQL user: mastodon
+    Password of PostgreSQL user: 
+    Database configuration works! 🎆
+
+    Redis host: localhost
+    Redis port: 6379
+    Redis password: 
+    Redis configuration works! 🎆
+
+    Do you want to store uploaded files on the cloud? No
+
+    Do you want to send e-mails from localhost? yes
+    E-mail address to send e-mails "from": Mastodon <notifications@127.0.0.1>
+    Send a test e-mail with this configuration right now? Yes
+    Send test e-mail to: adminotaur@decyphertek.io
+    
 nginx Setup
 ------------
 
