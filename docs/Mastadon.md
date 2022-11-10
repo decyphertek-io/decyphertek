@@ -51,6 +51,23 @@ Setup Masatdon
     # config stored .env.production
     $ exit
 
+nginx Setup
+-----------
+
+    $ cp /home/mastodon/live/dist/nginx.conf /etc/nginx/sites-available/mastodon
+    $ ln -s /etc/nginx/sites-available/mastodon /etc/nginx/sites-enabled/mastodon
+    # Update domain name
+    $ sudo vim /etc/nginx/sites-available/mastodon
+    $ sudo systemctl deamon-reload 
+    $ sudo systemctl restart nginx
+
+Optional: Certbot SSL
+---------------------
+
+    $ certbot --nginx -d example.com
+    
+
+
 References
 ----------
 
