@@ -49,10 +49,11 @@ Mastadon Setup
     $ bundle config without 'development test'
     $ bundle install -j$(getconf _NPROCESSORS_ONLN)
     $ yarn install --pure-lockfile
-    # Need to set a domain name and unable to change.
+    # Need to set a domain name , unclear if 127.0.0.1 works?
     $ RAILS_ENV=production bundle exec rake mastodon:setup
     # config stored .env.production
     # Example
+
     mastodon@decyphertek:~/live$ RAILS_ENV=production bundle exec rake mastodon:setup
     Your instance is identified by its domain name. Changing it afterward will break things.
     Domain name: 127.0.0.1
