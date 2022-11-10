@@ -107,7 +107,6 @@ Systemd
     $ systemctl daemon-reload
     $ systemctl enable --now mastodon-web mastodon-sidekiq mastodon-streaming
 
-
 References
 ----------
 
