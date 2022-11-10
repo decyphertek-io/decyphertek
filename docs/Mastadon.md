@@ -89,7 +89,7 @@ nginx Setup
     $ ln -s /etc/nginx/sites-available/mastodon /etc/nginx/sites-enabled/mastodon
     # Update domain name
     $ vim /etc/nginx/sites-available/mastodon
-    $ systemctl deamon-reload 
+    $ systemctl daemon-reload 
     $ systemctl restart nginx
 
 Optional: Certbot SSL
