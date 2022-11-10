@@ -42,16 +42,17 @@ PostGresSQL
 Mastadon Setup
 --------------
 
-    $ sudo su - mastodon
+    $ su - mastodon
     $ git clone https://github.com/tootsuite/mastodon.git live && cd live
     $ git checkout $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tail -n 1)
     $ bundle config deployment 'true'
     $ bundle config without 'development test'
     $ bundle install -j$(getconf _NPROCESSORS_ONLN)
     $ yarn install --pure-lockfile
+    # Need to set a domain name and unable to change.
     $ RAILS_ENV=production bundle exec rake mastodon:setup
     # config stored .env.production
-    $ exit
+    
 
 nginx Setup
 ------------
@@ -59,9 +60,9 @@ nginx Setup
     $ cp /home/mastodon/live/dist/nginx.conf /etc/nginx/sites-available/mastodon
     $ ln -s /etc/nginx/sites-available/mastodon /etc/nginx/sites-enabled/mastodon
     # Update domain name
-    $ sudo vim /etc/nginx/sites-available/mastodon
-    $ sudo systemctl deamon-reload 
-    $ sudo systemctl restart nginx
+    $ vim /etc/nginx/sites-available/mastodon
+    $ systemctl deamon-reload 
+    $ systemctl restart nginx
 
 Optional: Certbot SSL
 ---------------------
