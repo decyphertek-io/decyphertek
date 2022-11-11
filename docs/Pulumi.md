@@ -19,11 +19,18 @@ Install
     # Create Project - Name . Description, and Stack / Config Saved.
     $ pulumi up 
     # Creates an S3 bucket , yes to approve. 
+    $ pulumi stack output bucketName
+    # Pulumi example adds index.html to s3 bucket, useless example.
+    # Destroy stack, if needed
+    $ pulumi destroy
+
     
 Dashboard
 ----------
 
     https://app.pulumi.com
+    # View Stacks 
+    > Login > Stacks
 
 Integrations
 ------------
@@ -41,7 +48,6 @@ Integrations
     * Kubernetes Operator
     * Codefresh
     * Octopus
-
 
 References
 ----------
