@@ -78,6 +78,12 @@ Manually Manage
 
     $ terraform state list
 
+Terraform + YAML
+----------------
+
+    https://aws.plainenglish.io/terraform-yaml-%EF%B8%8F-3550a3642dd3
+    https://ascode.run/docs/
+
 
 References
 ----------
