@@ -81,9 +81,10 @@ Manually Manage
 Terraform + YAML
 ----------------
 
-    https://aws.plainenglish.io/terraform-yaml-%EF%B8%8F-3550a3642dd3
-    https://ascode.run/docs/
-
+    # https://ascode.run/docs/
+    $ wget https://github.com/mcuadros/ascode/releases/download/v1.3.0/ascode-v1.3.0-linux-amd64.tar.gz
+    $ tar -xvzf ascode-v1.3.0-linux-amd64.tar.gz
+    $ mv ascode /usr/local/bin/
 
 References
 ----------
