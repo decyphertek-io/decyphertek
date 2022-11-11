@@ -27,10 +27,11 @@ Install
      $ sudo systemctl daemon-reload
      $ sudo reboot
      # http://<your-instance-ip>:1880/
-     # Please change default username and password. 
-     User : adminotaur
-     Pass: decyphertek
-
+     # Change username & password
+     # Default username - admin
+     # Example username - adminotaur
+     # See Example below.
+     
 Secure Node Red - Enabling HTTPS Access and Setting Password
 ----------------------------------------
      
