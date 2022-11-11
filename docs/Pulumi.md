@@ -18,7 +18,8 @@ Install
     # Create a login, CLI is free , no worries.
     # Create Project - Name . Description, and Stack / Config Saved.
     $ pulumi up 
-
+    # Creates an S3 bucket , yes to approve. 
+    
 Dashboard
 ----------
 
@@ -40,7 +41,7 @@ Integrations
     * Kubernetes Operator
     * Codefresh
     * Octopus
-    
+
 
 References
 ----------
