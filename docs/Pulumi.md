@@ -6,7 +6,7 @@ Pulumi
 Install
 -------
 
-    # Linux
+    # Linux ( See Docs - Mac & Windows install )
     $ curl -fsSL https://get.pulumi.com | sh
     $ export PATH=$PATH:$HOME/.pulumi/bin
     # YAML - Support by default
