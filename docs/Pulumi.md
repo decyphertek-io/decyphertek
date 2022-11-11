@@ -19,6 +19,29 @@ Install
     # Create Project - Name . Description, and Stack / Config Saved.
     $ pulumi up 
 
+Dashboard
+----------
+
+    https://app.pulumi.com
+
+Integrations
+------------
+
+    * Github
+    * Gitlab
+    * Jenkins 
+    * Spinnaker
+    * CircleCi
+    * Travis CI
+    * Azure Devops
+    * JetBrains TeamCity
+    * AWS Code Services
+    * Google Code Builder
+    * Kubernetes Operator
+    * Codefresh
+    * Octopus
+    
+
 References
 ----------
 
