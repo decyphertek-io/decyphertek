@@ -4,6 +4,11 @@ Docker
 Docker is a containerization platform that simplifies configs and the deployemnt of 
 Enterprise or dev applications. 
 
+Quick Install
+-------------
+
+    $ curl -fsSL https://raw.githubusercontent.com/decyphertek-io/configs/main/bash-scripts/docker.sh | bash
+
 Install
 -------
 
