@@ -16,7 +16,8 @@ Install
     $ mkdir first-project && cd first-project
     $ pulumi new aws-yaml
     # Create a login, CLI is free , no worries.
-    # Create Project - Name . Description, and Stack . 
+    # Create Project - Name . Description, and Stack / Config Saved.
+    $ pulumi up 
 
 References
 ----------
