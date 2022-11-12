@@ -64,6 +64,11 @@ Optional: LinuxServers.io
     https://docs.linuxserver.io/
     https://fleet.linuxserver.io/
 
+Optional: DockStarter
+---------------------
+
+    https://dockstarter.com/
+
 Manage Docker
 -------------
 
