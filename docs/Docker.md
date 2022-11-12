@@ -56,6 +56,7 @@ Optional: Yacht
     $ docker run -d -p 8000:8000 -v /var/run/docker.sock:/var/run/docker.sock -v yacht:/config selfhostedpro/yacht
     # Replace localhost with your IP.
     # http://localhost:8000
+    # User: admin@yacht.local Pass: pass
 
 Optional: LinuxServers.io
 -------------------------
@@ -66,6 +67,10 @@ Optional: LinuxServers.io
 Manage Docker
 -------------
 
+    # Search a container - Example
+    $ docker search ubuntu
+    # Download the container
+    $ docker pull ubuntu
     # See Running Containers
     $ docker ps
     # See All Containers
