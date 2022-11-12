@@ -19,7 +19,8 @@ Install {Docker}
      $ wget https://github.com/mistio/mist-ce/releases/download/v4.6.2/docker-compose.yml
      $ docker-compose up -d &
      # Make an admin user
-     $ docker-compose exec api sh ./bin/adduser --admin admin@example.com
+     $ docker-compose exec api sh 
+     ./bin/adduser --admin admin@example.com
      # Any settings modifications require a restart
      $ sudo vim ./settings/settings.py
      $ docker-compose restart
