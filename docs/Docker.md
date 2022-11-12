@@ -41,12 +41,29 @@ Portainer
 
     $ docker volume create portainer_data
     $ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+    # Allow 9443 on host/network firewall & Security groups - Example
+    $ sudo ufw allow 9443
     # https://localhost:9443
     # Follow setup page instructions
+
+Manage Docker
+-------------
+
+    # See Running Containers
+    $ docker ps
+    # See All Containers
+    $ docker ps -a
+    # See All images
+    $ docker images
+    # Manage Containers
+    $ docker stop CONTAINER_ID
+    $ docker start CONTAINER_ID
+    $ docker rm CONTAINER_ID
 
 References
 ----------
 
-    https://docs.docker.com/engine/install/ubuntu/
     https://docs.docker.com/compose/install/compose-plugin/#install-the-plugin-manually
     https://docs.portainer.io/start/install/server/docker/linux
+    https://docs.docker.com/engine/reference/commandline/cli/
+    https://docs.docker.com/engine/install/ubuntu/
