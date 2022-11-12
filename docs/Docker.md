@@ -57,6 +57,7 @@ Optional: Yacht
     # Replace localhost with your IP.
     # http://localhost:8000
     # User: admin@yacht.local Pass: pass
+    # Add templates - https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Template/yacht.json 
 
 Optional: LinuxServers.io
 -------------------------
