@@ -45,6 +45,8 @@ Portainer
     $ sudo ufw allow 9443
     # https://localhost:9443
     # Follow setup page instructions
+    # If you get a timeout error run:
+    $ docker restart portainer
 
 Manage Docker
 -------------
