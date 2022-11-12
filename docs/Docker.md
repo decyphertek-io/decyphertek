@@ -36,8 +36,8 @@ Install
     $ docker compose version
     # May have to logout and back in to avoid docker error.
 
-Portainer
----------
+Optional: Portainer
+-------------------
 
     $ docker volume create portainer_data
     $ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
@@ -47,6 +47,20 @@ Portainer
     # Follow setup page instructions
     # If you get a timeout error run:
     $ docker restart portainer
+    # login
+
+Optional: Yacht
+---------------
+
+    $ docker volume create yacht
+    $ docker run -d -p 8000:8000 -v /var/run/docker.sock:/var/run/docker.sock -v yacht:/config selfhostedpro/yacht
+    # Replace localhost with your IP.
+    # http://localhost:8000
+
+Optional: LinuxServers.io
+-------------------------
+
+    https://docs.linuxserver.io/
 
 Manage Docker
 -------------
@@ -69,3 +83,4 @@ References
     https://docs.portainer.io/start/install/server/docker/linux
     https://docs.docker.com/engine/reference/commandline/cli/
     https://docs.docker.com/engine/install/ubuntu/
+    https://yacht.sh/docs/Installation/Getting_Started
