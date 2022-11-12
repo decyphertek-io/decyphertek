@@ -61,6 +61,7 @@ Optional: LinuxServers.io
 -------------------------
 
     https://docs.linuxserver.io/
+    https://fleet.linuxserver.io/
 
 Manage Docker
 -------------
