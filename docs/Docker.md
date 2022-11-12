@@ -36,24 +36,13 @@ Install
     $ docker compose version
     # May have to logout and back in to avoid docker error.
 
-Optional: Portainer
--------------------
-
-    $ docker volume create portainer_data
-    $ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
-    # Allow 9443 on host/network firewall & Security groups - Example
-    $ sudo ufw allow 9443
-    # https://localhost:9443
-    # Follow setup page instructions
-    # If you get a timeout error run:
-    $ docker restart portainer
-    # login
-
 Optional: Yacht
 ---------------
 
     $ docker volume create yacht
     $ docker run -d -p 8000:8000 -v /var/run/docker.sock:/var/run/docker.sock -v yacht:/config selfhostedpro/yacht
+    # Allow 8000 on host/network firewall & Security groups - Example
+    $ sudo ufw allow 8000
     # Replace localhost with your IP.
     # http://localhost:8000
     # User: admin@yacht.local Pass: pass
