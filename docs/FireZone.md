@@ -57,8 +57,8 @@ Security Configurations:
     # Except the following command - sudo firezone-ctl create-or-reset-admin - can regenerate a local login. 
     # This is why to prevent the local admin from being recreated, remove the option as stated above. 
     
-Adding Users
-------------
+Adding Users / VPN EX:
+----------------------
 
     Login > Users > add user > set email & password > add device > download config Or get QR code
     Client Instructions - https://docs.firezone.dev/user-guides/client-instructions/
@@ -114,7 +114,7 @@ Optional Security:
 
     # Once all vpn tunnels have been configured, you can set to only allow inbound traffic to port 51829/udp via 
     # AWS Security group or other network based firewall. If you need ssh or console access , allow those temporaily. 
-    # This secures the VPN server and returns not results when scanning via Nmap. 
+    # This secures the VPN server and returns no results when scanning via Nmap. 
 
 References
 ----------
