@@ -71,6 +71,11 @@ Optional: Lazy Docker
     # Logout and back in
     $ lazydocker
 
+Optional: RacherDesktop
+-----------------------
+
+    https://rancherdesktop.io/
+
 Optional: LinuxServers.io
 -------------------------
 
