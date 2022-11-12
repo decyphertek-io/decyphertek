@@ -30,10 +30,19 @@ Install
     $ sudo apt-get install docker-compose-plugin
     # Verify docker-compose plugin
     $ docker compose version
+    # May have to logout and back in to avoid docker error.
 
+Portainer
+---------
+
+    $ docker volume create portainer_data
+    $ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+    # https://localhost:9443
+    # Follow setup page instructions
 
 References
 ----------
 
     https://docs.docker.com/engine/install/ubuntu/
     https://docs.docker.com/compose/install/compose-plugin/#install-the-plugin-manually
+    https://docs.portainer.io/start/install/server/docker/linux
