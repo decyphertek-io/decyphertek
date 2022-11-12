@@ -6,7 +6,7 @@ Mist is an open source multicloud management platform.
 Install {Kubernetes/Helm}
 --------------------------
 
-     # Install Microk8s or use eks ( Lens IDE )
+     # Install Microk8s or use eks ( Lens IDE ) 
      $ helm repo add mist https://dl.mist.io/charts 
      $ helm repo update 
      $ helm install mist-ce mist/mist-ce
@@ -14,7 +14,8 @@ Install {Kubernetes/Helm}
 Install {Docker}
 ----------------
 
-     # Install Docker & Docker Compose
+     # Install Docker & Docker Compose ( Script works only on Ubuntu - Manually install if using another OS )
+     $ curl -fsSL https://raw.githubusercontent.com/decyphertek-io/configs/main/bash-scripts/docker.sh | bash
      $ wget https://github.com/mistio/mist-ce/releases/download/v4.6.2/docker-compose.yml
      $ docker-compose up -d &
      # Make an admin user
