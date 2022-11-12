@@ -7,7 +7,7 @@ Install
 -------
 
     # To install IIAB 8.0 Preview 3 from 2022-08-20: ( Requires Raspberry Pi & a computer to write SD card )
-    1. Install Raspberry Pi Imager onto your favorite Windows, macOS, or Linux computer.
+    1. Install Raspberry Pi Imager onto your favorite Windows, macOS, or Linux computer. - https://www.raspberrypi.com/software/
     # If your computer doesn't have a slot for SD cards, put your microSD card in a microSD card reader (typically $5-10).
     2. Run rpi-imager --repo http://iiab.io/fast.json
         Click CHOOSE OS to pick an IIAB image.
@@ -31,3 +31,4 @@ References
 ----------
 
     https://internet-in-a-box.org/
+    https://wiki.iiab.io/go/FAQ#What_services_.28IIAB_apps.29_are_suggested_during_installation.3F
