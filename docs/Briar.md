@@ -1,5 +1,5 @@
 Briar
-====
+=====
 
 Secure Messaging anywhere. Peer-to-peer encrypted messaging and forums. Messages are stored securely 
 on your device, not in the cloud. Connect directly with nearby contacts - no Internet access required. 
