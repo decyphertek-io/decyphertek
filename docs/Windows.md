@@ -19,5 +19,6 @@ Firewall Install
 
     # Download and install
     https://github.com/henrypp/simplewall/releases/download/v.3.6.7/simplewall-3.6.7-setup.exe
+    # Launch > Enable Filter > Allow/Deny applications as they pop up .
 
 
