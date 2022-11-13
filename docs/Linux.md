@@ -81,11 +81,8 @@ Enable AWS Workspace
 --------------------
 
      # To enable access for your Linux system, please follow these steps :
-     1. AWS Console > WorkSpaces > Directories 
-     2. Your directory > Actions > Update Details
-     3. Access Control Options > Check-Linux- platform > Update and Exit to save 
-     
-
+     1. AWS Console > WorkSpaces > Directories > Select your directory > Scroll down: Other Platforms > Edit > Select Linux
+   
 References
 ----------
 
