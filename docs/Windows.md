@@ -1,7 +1,7 @@
 Windows
 --------
 
-    Secure windows and install a package manager.
+Secure windows and install a package manager.
 
 Chocolately Install
 -------------------
