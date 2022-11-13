@@ -30,3 +30,12 @@ Crowdsec Install
     > cscli collections install crowdsecurity/windows
     # install Crowdsec firewall bouncer
     > choco install crowdsec-windows-firewall-bouncer
+
+References
+----------
+
+    https://chocolatey.org/install
+    https://community.chocolatey.org/packages/
+    https://www.henrypp.org/product/simplewall
+    https://www.crowdsec.net/
+    https://docs.crowdsec.net/docs/next/getting_started/install_windows/
