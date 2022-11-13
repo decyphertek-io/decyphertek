@@ -10,9 +10,65 @@ Chocolately Install
     > Set-ExecutionPolicy AllSigned
     > Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
     # Search Packages
-    > choco search pakagename 
-    # Install example
+    > choco search PackageName 
+    # Install Packages
+    > choco install PackageName
+
+Chocolately Recommened Packages
+-------------------------------
+
+    # Secure Firefox Fork
+    > Choco install librewolf
+    # Windows Privacy
+    > choco install blackbird
+    # SandBox Applications
+    > choco install sandboxie
+    # Authy Desktop
+    > choco install authy-desktop
+    # Remote Access ( Look at Ansible)
+    > choco install mobaxterm
+    # Free FTP
+    > choco install filezilla
+    # AntiVirus Option 1
+    > choco install immunet
+    # AntiVirus Option 2
+    > choco install f-secureav
+    # Password Manager
+    > choco install bitwarden
+    # DB Editor and Manager
+    > choco install dbeaver
+    # WebSite Scanner Option #1
+    > choco install burp-suite-free-edition
+    # WebSite Scanner Option #2
+    > choco install zap
+    # Malware Reverse Engineering
+    > choco install ghidra
+    # Steganography
+    > choco install openstego.install
+    # Privacy Cleaner
     > choco install bleachbit
+    # Modern VPN
+    > choco install wireguard
+    # Network Scanner
+    > choco install nmap
+    # Explore AD
+    > choco install adexplorer
+    # Hash Checker
+    > choco install gtkhash
+    # Encryption
+    > choco install veracrypt   
+    # Open Source VSCode
+    > choco install vscodium
+    # Backup Solution 
+    > choco install duplicati
+    # Burn USB & SD
+    > choco install etcher
+    # Open Source Office Suite
+    > choco install libreoffice-fresh
+    # Media Player
+    > choco install vlc
+    # Music Player
+    > choco install spotube
 
 Firewall Install
 ----------------
