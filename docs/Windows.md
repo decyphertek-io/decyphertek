@@ -21,4 +21,12 @@ Firewall Install
     https://github.com/henrypp/simplewall/releases/download/v.3.6.7/simplewall-3.6.7-setup.exe
     # Launch > Enable Filter > Allow/Deny applications as they pop up .
 
-
+Crowdsec Install
+-----------------
+  
+    # Download Crowdsec and install 
+    https://github.com/crowdsecurity/crowdsec/releases/download/v1.4.1/crowdsec_1.4.1.msi
+    # Install Windows Collection via Crowdsec
+    > cscli collections install crowdsecurity/windows
+    # install Crowdsec firewall bouncer
+    > choco install crowdsec-windows-firewall-bouncer
