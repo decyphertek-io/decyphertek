@@ -25,7 +25,7 @@ Chocolately Recommened Packages
     > choco install sandboxie
     # Authy Desktop
     > choco install authy-desktop
-    # Remote Access ( Look at Ansible)
+    # Remote Access
     > choco install mobaxterm
     # Free FTP
     > choco install filezilla
