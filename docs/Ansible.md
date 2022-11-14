@@ -25,38 +25,38 @@ Install
      # Upgrade
      $ python3 -m pip install --upgrade --user ansible
 
-     # Linux Install via Python
-     $ sudo apt install python3-pip
-     $ python3 --version
-     $ export PATH=$HOME/.local/bin:~/Library/Python/<version>/bin:$PATH
-     $ python3 -m pip install --upgrade pip
-     $ python3 -m pip install --user ansible
-     $ python3 -m pip install --user paramiko
-     # Upgrade
-     $ python3 -m pip install --upgrade --user ansible
-
      # Fedora Install
      $ sudo dnf update
      $ sudo dnf install ansible
  
-     ###Ansible - Config/Setup###
+     # Config/Setup
      # Ubuntu
      $ sudo vim /etc/ansible/ansible.cfg
-     $ vim ~/.ansible/ansible.cfg
- 
+     # Mac 
+     $ vim ~/.ansible.cfg
+
 AWS Cli Install/Setup
 ---------------------
 
-     $ sudo apt install -y python3-pip
-     $ pip3 install awscli --upgrade --user
-     $ aws configure
-     # Add AWS API Key, generate from AWS Console. 
-     # Stored here: ~/.aws
-     # update config and credentials from ansible
+     # Ubuntu
+     $ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+     $ unzip awscliv2.zip
+     $ sudo ./aws/install
+     $ sudo aws configure
+     # This saves aws creds under root user.
+     # Mac
+     $ python3 -m pip install --user awscli
+
  
 Collections - AWS Example
 --------------------------
 
+     # Ubuntu
+     $ sudo ansible-galaxy collection install amazon.aws
+     $ cd /etc/ansible/.ansible/collections/ansible_collections/amazon/aws
+     # Install Python requirements
+     $ sudo -H pip3 install -r requirements.txt
+     # Mac
      $ ansible-galaxy collection install amazon.aws
      $ cd ~/.ansible/collections/ansible_collections/amazon/aws
      # Install Python requirements
@@ -65,6 +65,8 @@ Collections - AWS Example
 Vault
 ------
 
+     # Ubuntu uses sudo and located at /etc/ansible/
+     # Mac doesnt use sudo and located at home directory ~ . 
      # Easy way , just encrypt the vars file
      $ ansible-vault encrypt variables.vault
      # Choose a password. 
@@ -87,10 +89,13 @@ Vault
 Decyphertek Ansible
 --------------------
 
-     # Choose a directory where you want ansible , ideally /etc/ansible
+     # Ubuntu
+     # mac no sudo and run from home directory
      $ cd /etc/ 
-     $ git clone https://github.com/decyphertek-io/ansible.git
-     # link the locations in ansible.cfg , see README.md in directories. 
+     $ sudo rm -rf ansible
+     $ sudo git clone https://github.com/decyphertek-io/ansible.git
+     $ cd ansible/config
+     $ sudo cp ansible.cfg /etc/ansible/
      # Run git fetch to recieve the newest updates to the repo. 
      $ cd /etc/ansible
      $ git fetch
