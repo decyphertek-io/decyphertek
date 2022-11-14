@@ -103,3 +103,5 @@ References
     https://www.henrypp.org/product/simplewall
     https://www.crowdsec.net/
     https://docs.crowdsec.net/docs/next/getting_started/install_windows/
+    https://medium.com/nerd-for-tech/upgrade-all-software-with-one-click-with-choco-and-total-commander-7752876f3f0d
+    
