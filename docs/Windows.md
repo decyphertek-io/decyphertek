@@ -9,10 +9,18 @@ Chocolately Install
     # Open Powershell as administrator > right click.
     > Set-ExecutionPolicy AllSigned
     > Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+    # Install Choco GUI
+    > choco install chocolateygui
     # Search Packages
     > choco search PackageName 
     # Install Packages
     > choco install PackageName
+    # Uninstall Packages
+    > choco uninstall PackageName
+    # Upgrade Packages
+    > choco upgrade PackageName
+    # Upgrade all Packages
+    > choco upgrade all
 
 Chocolately Recommened Packages
 -------------------------------
