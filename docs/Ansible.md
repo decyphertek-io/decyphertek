@@ -123,7 +123,9 @@ General guidance
 ----------------
 
      # AWS Cli Command via playbook
-     $ AWS_PROFILE=us-east-1 ansible-playbook -l local aws-gather-info.yaml
+     $ AWS_PROFILE=us-east-1 ansible-playbook aws-gather-info.yaml
+     # AWS Module Playbook
+     $ sudo ansible-playbook aws-ec2-launch.yml
      # Run a basic playbook command
      $ ansible-playbook -l test_server playbook.yaml
      # How to use Vault:( See Vault instructions for more details ) 
