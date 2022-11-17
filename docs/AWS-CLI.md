@@ -25,7 +25,7 @@ Basic Commands
     $ aws ec2 start-instances --instance-ids i-0000000000000
     $ aws ec2 stop-instances --instance-ids i-0000000000000
     $ aws ec2 terminate-instances --instance-ids i-0000000000000
-    # Create an AMU from an instance ID
+    # Create an AMI from an instance ID
     $ aws ec2 create-image \
     --instance-id i-1234567890abcdef0 \
     --name "My server" \
@@ -35,4 +35,3 @@ References
 ----------
 
     https://docs.aws.amazon.com/cli/latest/
-    
