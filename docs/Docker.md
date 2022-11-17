@@ -69,6 +69,7 @@ Optional: Lazy Docker
     $ curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
     # Logout and back in
     $ lazydocker
+    # Follow command prompts listed.
 
 Optional: RacherDesktop
 -----------------------
