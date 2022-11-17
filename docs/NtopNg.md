@@ -13,7 +13,13 @@ Install
     $ sudo dpkg -i apt-ntop-stable.deb 
     $ sudo apt update 
     $ sudo apt install -y pfring-dkms nprobe ntopng n2disk cento
-    $ wget https://github.com/ntop/ntopng/blob/dev/doc/README.md
+    # Change config - Not much here.
+    $ sudo ntopng-config
+    # Set to Https 
+    $ sudo systemctl stop ntopng
+    # This is temporary and isnt controlled by systemd
+    $ sudo ntopng --https=443 & 
+
     
 
 References
@@ -25,3 +31,4 @@ References
     https://packages.ntop.org/apt-stable/
     https://github.com/ntop/ntopng/blob/dev/doc/README.md
     https://www.ntop.org/guides/ntopng/faq.html#cannot-login-into-the-gui
+    https://www.ntop.org/ntopng/best-practices-to-secure-ntopng/
