@@ -7,10 +7,11 @@ that can help find vulnerabilites in your open source projects.
 Install
 -------
 
+     # Install Docker & Docker Compose - ubuntu script
+     $ curl -fsSL https://raw.githubusercontent.com/decyphertek-io/configs/main/bash-scripts/docker.sh | bash
+     $ mkdir dependencytrack && cd dependencytrack
      $ curl -LO https://dependencytrack.org/docker-compose.yml
-     # Install Docker & Docker Compose first.
      $ docker-compose up -d
-
 
 References
 ----------
