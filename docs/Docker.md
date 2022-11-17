@@ -64,8 +64,6 @@ Optional: Yacht
 Optional: Lazy Docker
 ---------------------
 
-    $ sudo snap install go --classic
-    $ go install github.com/jesseduffield/lazydocker@latest
     $ curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
     # Logout and back in
     $ lazydocker
