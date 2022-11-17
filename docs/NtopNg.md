@@ -21,7 +21,7 @@ Install
     $ sudo ntopng --https=443 & 
     # Edit the configuration so that systemd controls config. Unlcear what to change?
     $ sudo vim /etc/ntopng/ntopng.conf
-    # Solution is to create your own systemd service
+    # Solution is to create your own systemd service - I think this lauches Enterprise version, limited. 
     $ sudo vim /etc/systemd/system/ntopng-mod.service
     [Unit]
     Description=ntopng-mod
