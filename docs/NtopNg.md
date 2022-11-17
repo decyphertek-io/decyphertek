@@ -19,7 +19,7 @@ Install
     $ sudo systemctl stop ntopng
     # This is temporary test and isnt controlled by systemd
     $ sudo ntopng --https=443 & 
-    # Edit the configuration so that systemd controls config. 
+    # Edit the configuration so that systemd controls config. Unlcear what to change?
     $ sudo vim /etc/ntopng/ntopng.conf
 
     
