@@ -17,8 +17,10 @@ Install
     $ sudo ntopng-config
     # Set to Https 
     $ sudo systemctl stop ntopng
-    # This is temporary and isnt controlled by systemd
+    # This is temporary test and isnt controlled by systemd
     $ sudo ntopng --https=443 & 
+    # Edit the configuration so that systemd controls config. 
+    $ sudo vim /etc/ntopng/ntopng.conf
 
     
 References
