@@ -9,7 +9,6 @@ Install
     $ sudo snap install microk8s --classic --channel=1.24
     $ sudo usermod -a -G microk8s $USER
     $ sudo chown -f -R $USER ~/.kube 
-    $ su - $USER
 
 Commands
 --------
@@ -21,7 +20,7 @@ Commands
     $ microk8s kubectl get nodes
     $ microk8s kubectl get services
     $ microk8s kubectl get pods
-    $ microk8s enable dns storage
+    $ microk8s enable dns storage helm3
 
 Deploy Example
 ---------------
