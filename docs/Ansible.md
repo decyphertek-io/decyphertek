@@ -41,13 +41,13 @@ AWS Cli Install/Setup
      # Ubuntu
      $ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
      $ unzip awscliv2.zip
+     # This saves aws creds under root user.
+     # Beneficial if you have ansible installed via Linux at /etc/ansible/ 
      $ sudo ./aws/install
      $ sudo aws configure
-     # This saves aws creds under root user.
      # Mac
      $ python3 -m pip install --user awscli
 
- 
 Collections - AWS Example
 --------------------------
 
