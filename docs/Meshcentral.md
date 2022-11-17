@@ -14,8 +14,8 @@ Install
      $ sudo setcap cap_net_bind_service=+ep /usr/bin/node
      $ mkdir /home/$USER/meshcentral/
      $ cd /home/$USER/meshcentral/
-     $ npm install meshcentral
-     $ npm install pm2
+     $ npm install -g meshcentral
+     $ npm install -g pm2
      $ pm2 start /home/$USER/meshcentral/node_modules/meshcentral
      $ pm2 save 
      $ pm2 startup
