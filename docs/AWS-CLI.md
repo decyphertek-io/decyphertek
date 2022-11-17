@@ -22,9 +22,9 @@ Basic Commands
     # List EC2 instances
     $ aws ec2 describe-instances --query 'Reservations[].Instances[].[State.Name, InstanceId, ImageId, InstanceType, PublicIpAddress, SubnetId, VpcId,Tags[?Key==`Name`]| [0].Value]' --output table
     # Manage Ec2 state
-    $ aws ec2 start-instances --instance-ids i-0000000000000
-    $ aws ec2 stop-instances --instance-ids i-0000000000000
-    $ aws ec2 terminate-instances --instance-ids i-0000000000000
+    $ aws ec2 start-instances --instance-ids i-1234567890abcdef
+    $ aws ec2 stop-instances --instance-ids i-1234567890abcdef
+    $ aws ec2 terminate-instances --instance-ids i-1234567890abcdef
     # Create an AMI from an instance ID
     $ aws ec2 create-image \
     --instance-id i-1234567890abcdef0 \
