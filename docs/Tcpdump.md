@@ -7,8 +7,8 @@ Install
 -------
 
      $ sudo apt install tcpdump
-     $ sudo tcpdump -i any l grep 443
-
+     # Can set any port you wish , instead of 443. 
+     $ sudo tcpdump -i any | grep 443
 
 References
 ----------
