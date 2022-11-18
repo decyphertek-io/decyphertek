@@ -26,7 +26,6 @@ Install
 Commands
 --------
 
-   
     $ microk8s status --wait-ready
     $ microk8s stop
     $ microk8s start
@@ -45,7 +44,21 @@ Optional: Lens IDE
     # Desktop APP (Client Side) - Debian Package
     $ wget https://api.k8slens.dev/binaries/Lens-2022.11.101953-latest.amd64.deb
     $ sudo dpkg -i Lens-2022.11.101953-latest.amd64.deb
+    # Create an account to use
     
+Optional: K9
+------------
+
+    # Manage K8s via terminal - Install via Linuxbrew
+    $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    $ brew install derailed/k9s/k9s
+
+Optional: Ocatant
+-----------------
+
+    $ wget https://github.com/vmware-tanzu/octant/releases/download/v0.25.1/octant_0.25.1_Linux-64bit.deb
+    $ sudo dpkg -i octant_0.25.1_Linux-64bit.deb
+
 References
 ----------
 
