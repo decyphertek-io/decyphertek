@@ -2,7 +2,6 @@ MeshCentral
 =====
 
 "The open source, multi-platform, self-hosted, feature packed web site for remote device management."
-WORK IN PROGRESS.... Agents not checking in???
 
 Install
 --------
