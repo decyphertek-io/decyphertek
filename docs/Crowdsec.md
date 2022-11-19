@@ -19,6 +19,8 @@ Useful Commands
      $ sudo cscli collections list
      $ sudo cscli metrics
      $ sudo cscli alerts list
+     # Interactive config
+     $ sudo /usr/share/crowdsec/wizard.sh -c
   
   
   
