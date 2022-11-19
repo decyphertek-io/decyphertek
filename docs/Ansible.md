@@ -52,9 +52,12 @@ Collections - AWS Example
 --------------------------
 
      # Ubuntu
+     $ sudo vim /etc/ansible/ansible.cfg
+     collections_paths = /etc/ansible/.ansible/collections/ansible_collections/
      $ sudo ansible-galaxy collection install amazon.aws
      $ cd /etc/ansible/.ansible/collections/ansible_collections/amazon/aws
      # Install Python requirements
+     $ sudo apt install python3-pip
      $ sudo -H pip3 install -r requirements.txt
      # Mac
      $ ansible-galaxy collection install amazon.aws
