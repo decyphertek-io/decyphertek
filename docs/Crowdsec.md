@@ -22,8 +22,6 @@ Useful Commands
      # Interactive config
      $ sudo /usr/share/crowdsec/wizard.sh -c
   
-  
-  
 References
 ----------
 
