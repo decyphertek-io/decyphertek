@@ -107,7 +107,7 @@ Decyphertek Ansible
      $ sudo cp ansible.cfg /etc/ansible/
      # Run git fetch to recieve the newest updates to the repo. 
      $ cd /etc/ansible
-     $ git fetch
+     $ sudo git fetch
 
 Version Control
 ----------------
