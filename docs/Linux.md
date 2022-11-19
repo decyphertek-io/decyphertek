@@ -50,8 +50,8 @@ History
 System Info
 -----------
 
-     $ sudo apt install -y lsb-core
-     $ lsb_release -a
+     $ sudo apt install -y neofetch
+     $ neofetch
 
 Network Info
 -------------
