@@ -7,7 +7,6 @@ setup data integrations with the major cloud providers, databases and services c
 handling device data. ChirpStack provides a gRPC based API that can be used to integrate or extend 
 ChirpStack.
 
-
 Requirements
 --------------
 
@@ -73,6 +72,10 @@ Install
     $ sudo systemctl start chirpstack-application-server
     # Login https://ip-of-server
     # user - admin pass - admin
+    # Change admin password upon login.
+    > Login > All Users > admin > change password > Update password
+    # Create Additonal Users
+    > Login > All Users > Create > Add info > Create User
 
 Useful Commands
 ---------------
