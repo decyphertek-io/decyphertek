@@ -22,6 +22,8 @@ Basic Commands
     # May need to use sudo if install via sudo aws configure. 
     # List EC2 instances
     $ aws ec2 describe-instances --query 'Reservations[].Instances[].[State.Name, InstanceId, ImageId, InstanceType, PublicIpAddress, SubnetId, VpcId,Tags[?Key==`Name`]| [0].Value]' --output table
+    # List Security Groups
+    $ aws ec2 describe-security-groups --query "SecurityGroups[*].{Name:GroupName,ID:GroupId}"
     # Manage Ec2 state
     $ aws ec2 start-instances --instance-ids i-1234567890abcdef
     $ aws ec2 stop-instances --instance-ids i-1234567890abcdef
