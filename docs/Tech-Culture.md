@@ -22,7 +22,7 @@ Pop Culture
      Movies:
      - https://m.imdb.com/list/ls000957382/
      * War Games - https://www.youtube.com/watch?v=eekl1wwBsXM
-     * Hackers - https://www.youtube.com/watch?v=KEkrWRHCDQU
+     * Hackers - https://www.youtube.com/watch?v=pgl37R7hILE
      * Matrix - https://www.youtube.com/watch?v=IgYs_NDyaLs
      * Space Oddyssey 2001 - https://www.youtube.com/watch?v=Wy4EfdnMZ5g
   
