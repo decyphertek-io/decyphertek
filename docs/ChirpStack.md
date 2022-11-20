@@ -10,21 +10,25 @@ ChirpStack.
 Requirements
 --------------
 
+    # Install Requirements for Application, Gateway, and Network server.
     $ sudo apt install -y mosquitto postgresql redis-server
     $ sudo systemctl start postgresql@13-main
     $ sudo systemctl enable postgresql@13-main
     $ sudo -u postgres psql 
     create role chirpstack_as with login password 'dbpassword';
     create database chirpstack_as with owner chirpstack_as;
+    create role chirpstack_ns with login password 'dbpassword';
+    create database chirpstack_ns with owner chirpstack_ns;
     \c chirpstack_as
     create extension pg_trgm;
     create extension hstore;
     \q
     # Test login : password = dbpassword 
     $ psql -h localhost -U chirpstack_as -W chirpstack_as
+    $ psql -h localhost -U chirpstack_ns -W chirpstack_ns
 
-Install
--------
+Application Install
+--------------------
 
     $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1CE2AFD36DBCCA00
     $ sudo echo "deb https://artifacts.chirpstack.io/packages/3.x/deb stable main" | sudo tee /etc/apt/sources.list.d/chirpstack.list
@@ -88,6 +92,35 @@ Useful Commands
     $ sudo systemctl stop chirpstack-application-server
     # Display Logs
     $ sudo journalctl -f -n 100 -u chirpstack-application-server
+
+Network Server
+--------------
+
+    $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1CE2AFD36DBCCA00
+    $ sudo echo "deb https://artifacts.chirpstack.io/packages/3.x/deb stable main" | sudo tee /etc/apt/sources.list.d/chirpstack.list
+    $ sudo apt update
+    $ sudo apt install chirpstack-network-server
+    $ sudo vim /etc/chirpstack-network-server/chirpstack-network-server.toml
+    # Update paramaters
+    postgresql.dsn
+    postgresql.automigrate
+    network_server.net_id
+    network_server.band.name
+    metrics.timezone
+
+Gateway Bridge
+-------------
+
+    $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1CE2AFD36DBCCA00
+    $ sudo echo "deb https://artifacts.chirpstack.io/packages/3.x/deb stable main" | sudo tee /etc/apt/sources.list.d/chirpstack.list
+    $ sudo apt update
+    $ sudo apt install chirpstack-gateway-bridge
+    # Start / manage gateway Bridge
+    $ sudo systemctl [start|stop|restart|status|enable|disable] chirpstack-gateway-bridge
+    # Manage logs
+    $ journalctl -u chirpstack-gateway-bridge -f -n 50
+    # Config
+    $ sudo vim /etc/chirpstack-gateway-bridge/chirpstack-gateway-bridge.toml
 
 Gateway OS
 ----------
