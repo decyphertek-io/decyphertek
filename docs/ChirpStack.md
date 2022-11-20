@@ -80,16 +80,10 @@ Application Install
     > Login > All Users > admin > change password > Update password
     # Create Additonal Users
     > Login > All Users > Create > Add info > Create User
-
-Useful Commands
----------------
-
+    # manage server
+    $ sudo systemctl [start|stop|restart|status|enable|disable] chirpstack-application-server
     # Config
-    $ sudo vim  /etc/chirpstack-application-server/chirpstack-application-server.toml
-    # Manage Server
-    $ sudo systemctl start chirpstack-application-server
-    $ sudo systemctl restart chirpstack-application-server
-    $ sudo systemctl stop chirpstack-application-server
+    $ sudo vim /etc/nginx/sites-enabled/chirpstack.conf
     # Display Logs
     $ sudo journalctl -f -n 100 -u chirpstack-application-server
 
