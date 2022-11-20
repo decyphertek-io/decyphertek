@@ -27,7 +27,7 @@ Requirements
     $ psql -h localhost -U chirpstack_as -W chirpstack_as
     $ psql -h localhost -U chirpstack_ns -W chirpstack_ns
 
-Application Install
+Application Server
 --------------------
 
     $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1CE2AFD36DBCCA00
