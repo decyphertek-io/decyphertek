@@ -123,7 +123,7 @@ Gateway Bridge
 Gateway OS
 ----------
 
-    # Provides an OS to run on Raspberry pi that can connect to Chirpstack
+    # Raspberry pi OS that can connect to Chirpstack
     https://www.chirpstack.io/gateway-os/
 
 References
