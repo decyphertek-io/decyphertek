@@ -30,7 +30,7 @@ Pop Culture
 
      Mr. Robot:
      * About - https://en.m.wikipedia.org/wiki/Mr._Robot
-     * Trailer - https://m.youtube.com/watch?v=U94litUpZuc
+     * Trailer - https://www.youtube.com/watch?v=jhIpaOL35Sk
 
      Soundtracks/Game:
      * Hacknet - https://m.youtube.com/watch?v=HUd_ikEGPPM&list=PLmJS4rAJemEaN6k5S0g43vDlSib1qWudz
