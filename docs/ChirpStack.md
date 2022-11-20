@@ -120,6 +120,12 @@ Gateway Bridge
     # Config
     $ sudo vim /etc/chirpstack-gateway-bridge/chirpstack-gateway-bridge.toml
 
+Getting Started
+---------------
+
+    > Login > Network Servers > ADD > Local-Network-Server , localhost:8000 > Add Network Server
+    > Login > Gateway Profiles > Create > Local-Gateway , 30 , 0,1,2 ,  Local-Network-Server >  Create Gateway Profile
+
 Gateway OS
 ----------
 
