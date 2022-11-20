@@ -42,7 +42,7 @@ Application Server
     jwt_secret="HoptoEXT0oKmySPCinatorEYEisSEEnDOGs="
     # Need to change form port 8080 to something else, there is a port conflict 8080 alrady in use. 
     # ip:port to bind the (user facing) http server to (web-interface and REST / gRPC api)
-    bind="0.0.0.0:8000"
+    bind="0.0.0.0:8333"
     $ sudo systemctl enable chirpstack-application-server
     $ sudo apt -y install nginx
     $ sudo systemctl enable nginx
@@ -59,7 +59,7 @@ Application Server
 
         # WebSocket configuration
         location ~ ^/api/(gateways|devices)/(\w+)/(frames|events)$ {
-            proxy_pass http://localhost:8000/api/$1/$2/$3;
+            proxy_pass http://localhost:8333/api/$1/$2/$3;
             proxy_http_version 1.1;
             proxy_set_header Upgrade $http_upgrade;
             proxy_set_header Connection "Upgrade";
@@ -68,7 +68,7 @@ Application Server
         }
 
         location / {
-            proxy_pass http://localhost:8000/;
+            proxy_pass http://localhost:8333/;
         }
     }
     $ sudo systemctl daemon-reload
@@ -96,7 +96,7 @@ Network Server
     $ sudo apt install chirpstack-network-server
     $ sudo vim /etc/chirpstack-network-server/chirpstack-network-server.toml
     # Update paramaters
-    postgresql.dsn
+    dsn="postgres://chirpstack_ns:dbpassword@localhost/chirpstack_ns?sslmode=disable"
     postgresql.automigrate
     network_server.net_id
     network_server.band.name
