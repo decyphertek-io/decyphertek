@@ -101,6 +101,10 @@ Network Server
     network_server.net_id
     network_server.band.name
     metrics.timezone
+    # Manage server
+    $ sudo systemctl [start|stop|restart|status|enable|disable] chirpstack-network-server
+    # Display Logs
+    $ sudo journalctl -f -n 100 -u chirpstack-network-server
 
 Gateway Bridge
 -------------
@@ -112,7 +116,7 @@ Gateway Bridge
     # Start / manage gateway Bridge
     $ sudo systemctl [start|stop|restart|status|enable|disable] chirpstack-gateway-bridge
     # Manage logs
-    $ journalctl -u chirpstack-gateway-bridge -f -n 50
+    $ sudo journalctl -u chirpstack-gateway-bridge -f -n 50
     # Config
     $ sudo vim /etc/chirpstack-gateway-bridge/chirpstack-gateway-bridge.toml
 
