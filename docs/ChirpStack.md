@@ -95,6 +95,6 @@ Gateway OS
 References
 ----------
 
-    https://www.chirpstack.io/application-server/downloads/
+    https://www.chirpstack.io/project/guides/debian-ubuntu/
     https://pycom.io/chirpstack-a-lorawan-network-server-to-make-you-sing/
     https://phoenixnap.com/kb/nginx-reverse-proxy
