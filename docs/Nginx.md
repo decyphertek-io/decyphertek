@@ -13,8 +13,8 @@ Install
     $ sudo vim /etc/nginx/sites-enabled/custom-ssl.conf
     server {
         listen       443 ssl;
-        ssl_certificate      /home/cert.pem;
-        ssl_certificate_key  /home/cert.key;
+        ssl_certificate      /etc/ssl/certs/self-signed-crt.pem;
+        ssl_certificate_key  /etc/ssl/private/self-signed-key.pem;
         ssl_session_cache    shared:SSL:1m;
         ssl_session_timeout  5m;
         ssl_protocols        TLSV1.1 TLSV1.2 TLSV1.3;
