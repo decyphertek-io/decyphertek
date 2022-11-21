@@ -42,7 +42,7 @@ History
 
      # Manually Change History
      $ vim ~/.bash_history
-     # add your doc commands, so you dont have to type them
+     # dd or change / add 
      $ exit
      # log back in
      $ history
