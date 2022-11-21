@@ -105,6 +105,13 @@ Network Server
     dsn="postgres://chirpstack_ns:dbpassword@localhost/chirpstack_ns?sslmode=disable"
     automigrate=true
     [network_server]
+    # Class C Networks , The first three octets (24 bits / 3 bytes) represent the network ID and the last octet (8 bits / 1 bytes) is the host ID.
+    # Example: Private IP = 172.31.26.66 ; Network ID = 172.31.26.0 ; Host ID = 0.0.0.66
+    # Encode as Hex - https://convertstring.com/EncodeDecode/HexEncode  = 3137322E33312E32362E30
+    # For Class A first octet represents network ID as the prefix of the first octet is 0, it uses the remaining 7 bits for network ID, 
+    # Example: Public IP = 107.23.169.36 ; Network ID = 107.0.0.0 ; Host ID = 0.23.169.36
+    # Encode as Hex - https://convertstring.com/EncodeDecode/HexEncode = 3130372E302E302E30
+    # Github Opened to Clarify this parameter: 
     # Network identifier (NetID, 3 bytes) encoded as HEX (e.g. 010203)
     net_id="000000"
     # Choose from AS923 , AS923-2 , AS923-3 , AS923-4 , AU915 , CN470 , CN779 , EU433 , EU868 
@@ -161,3 +168,4 @@ References
     https://www.chirpstack.io/project/guides/debian-ubuntu/
     https://phoenixnap.com/kb/nginx-reverse-proxy
     https://www.hackster.io/sidikalamini/full-stack-rpi-chirpstack-lorawan-environment-dashboard-f51bd0
+    https://www.geeksforgeeks.org/what-is-network-id-and-host-id-in-ip-addresses/
