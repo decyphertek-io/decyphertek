@@ -153,11 +153,11 @@ Gateway Bridge
 Getting Started
 ---------------
 
+    # Example - Customixe to your own needs. 
     > Login > Network Servers > ADD > Local-Network-Server , localhost:8000 > Add Network Server
     > Login > Gateway Profiles > Create > Local-Gateway , 30 , 0,1,2 ,  Local-Network-Server >  Create Gateway Profile
-    # Can customize data rate limits, set to 0 for now. 
     > Login > Service Profiles > Create > Local-Service-Profile , Local-Network-Server , 0 , 0 , 0  > Create Service Profile
-    > Login > Gateways > Create > 
+    > Login > Gateways > Create > Local-Gateway , description , Gateway ID , Local-Network-Server  , Local-Service-Profile , Local-Gateway , 0 > Create Gateway
 
 Gateway OS
 ----------
