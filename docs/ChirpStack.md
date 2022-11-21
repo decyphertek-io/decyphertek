@@ -38,6 +38,7 @@ Application Server
     $ sudo apt install -y chirpstack-application-server
     # Run openssl command to generate api key - save to jwt_secret = 
     $ openssl rand -base64 32
+    # Example Config - https://www.chirpstack.io/application-server/install/config/
     $ sudo vim /etc/chirpstack-application-server/chirpstack-application-server.toml
     dsn="postgres://chirpstack_as:dbpassword@localhost/chirpstack_as?sslmode=disable"
     # Need to change form port 8080 to something else, there is a port conflict 8080 alrady in use. 
