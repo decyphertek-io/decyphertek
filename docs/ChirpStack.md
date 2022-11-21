@@ -111,7 +111,7 @@ Network Server
     # For Class A first octet represents network ID as the prefix of the first octet is 0, it uses the remaining 7 bits for network ID, 
     # Example: Public IP = 107.23.169.36 ; Network ID = 107.0.0.0 ; Host ID = 0.23.169.36
     # Encode as Hex - https://convertstring.com/EncodeDecode/HexEncode = 3130372E302E302E30
-    # Github Opened to Clarify this parameter: 
+    # Github Opened to Clarify this parameter: https://github.com/chirpstack/chirpstack-docs/issues/5
     # Network identifier (NetID, 3 bytes) encoded as HEX (e.g. 010203)
     net_id="000000"
     # Choose from AS923 , AS923-2 , AS923-3 , AS923-4 , AU915 , CN470 , CN779 , EU433 , EU868 
