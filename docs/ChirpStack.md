@@ -98,13 +98,22 @@ Network Server
     $ sudo echo "deb https://artifacts.chirpstack.io/packages/3.x/deb stable main" | sudo tee /etc/apt/sources.list.d/chirpstack.list
     $ sudo apt update
     $ sudo apt install chirpstack-network-server
+    # Example Config - https://www.chirpstack.io/network-server/install/config/
     $ sudo vim /etc/chirpstack-network-server/chirpstack-network-server.toml
-    # Update paramaters
+    # Update paramaters / variables
     dsn="postgres://chirpstack_ns:dbpassword@localhost/chirpstack_ns?sslmode=disable"
-    postgresql.automigrate
-    network_server.net_id
-    network_server.band.name
-    metrics.timezone
+    automigrate=true
+    [network_server]
+    # Network identifier (NetID, 3 bytes) encoded as HEX (e.g. 010203)
+    net_id="000000"
+    # Choose from AS923 , AS923-2 , AS923-3 , AS923-4 , AU915 , CN470 , CN779 , EU433 , EU868 
+    # IN865 , KR920 , RU864 , US915 , ISM2400 -  https://www.lora-alliance.org/lorawan-for-developers
+    [network_server.band]
+    name="EU868"
+    [metrics]
+    # Timezone
+    # Example: "Europe/Amsterdam" or "Local" for the the system's local time zone.
+    timezone="Local"
     $ sudo systemctl enable chirpstack-network-server
     $ sudo systemctl start chirpstack-network-server
     # Manage Network Server - Config 
@@ -124,13 +133,14 @@ Gateway Bridge
     $ sudo apt install chirpstack-gateway-bridge
     $ sudo systemctl enable chirpstack-gateway-bridge
     $ sudo systemctl start chirpstack-gateway-bridge
+    # Reboot system to test that all systems start together at reboot
+    $ sudo reboot
     # Manage Gateway bridge - Config
     $ sudo vim /etc/chirpstack-gateway-bridge/chirpstack-gateway-bridge.toml
     # Manage Gateway bridge - systemctl 
     $ sudo systemctl [start|stop|restart|status|enable|disable] chirpstack-gateway-bridge
     # Manage Gateway bridge - Logs
     $ sudo journalctl -u chirpstack-gateway-bridge -f -n 50
-   
 
 Getting Started
 ---------------
