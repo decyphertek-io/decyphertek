@@ -153,7 +153,7 @@ Gateway Bridge
 Getting Started
 ---------------
 
-    # Example - Customixe to your own needs. 
+    # Example - Customize to your own needs. 
     > Login > Network Servers > ADD > Local-Network-Server , localhost:8000 > Add Network Server
     > Login > Gateway Profiles > Create > Local-Gateway , 30 , 0,1,2 ,  Local-Network-Server >  Create Gateway Profile
     > Login > Service Profiles > Create > Local-Service-Profile , Local-Network-Server , 0 , 0 , 0  > Create Service Profile
