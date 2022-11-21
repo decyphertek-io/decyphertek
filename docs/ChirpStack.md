@@ -76,6 +76,7 @@ Application Server
     $ sudo systemctl daemon-reload
     $ sudo systemctl start nginx
     $ sudo systemctl start chirpstack-application-server
+    $ sudo reboot
     # Login https://ip-of-server
     # user - admin pass - admin
     # Change admin password upon login.
@@ -92,6 +93,7 @@ Application Server
 Network Server
 --------------
 
+    # Can skip adding key if already added from application server install.
     $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1CE2AFD36DBCCA00
     $ sudo echo "deb https://artifacts.chirpstack.io/packages/3.x/deb stable main" | sudo tee /etc/apt/sources.list.d/chirpstack.list
     $ sudo apt update
@@ -111,6 +113,7 @@ Network Server
 Gateway Bridge
 -------------
 
+    # Can skip adding key if already added from application server install.
     $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1CE2AFD36DBCCA00
     $ sudo echo "deb https://artifacts.chirpstack.io/packages/3.x/deb stable main" | sudo tee /etc/apt/sources.list.d/chirpstack.list
     $ sudo apt update
