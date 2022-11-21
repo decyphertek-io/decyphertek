@@ -122,12 +122,15 @@ Gateway Bridge
     $ sudo echo "deb https://artifacts.chirpstack.io/packages/3.x/deb stable main" | sudo tee /etc/apt/sources.list.d/chirpstack.list
     $ sudo apt update
     $ sudo apt install chirpstack-gateway-bridge
-    # Start / manage gateway Bridge
-    $ sudo systemctl [start|stop|restart|status|enable|disable] chirpstack-gateway-bridge
-    # Manage logs
-    $ sudo journalctl -u chirpstack-gateway-bridge -f -n 50
-    # Config
+    $ sudo systemctl enable chirpstack-gateway-bridge
+    $ sudo systemctl start chirpstack-gateway-bridge
+    # Manage Gateway bridge - Config
     $ sudo vim /etc/chirpstack-gateway-bridge/chirpstack-gateway-bridge.toml
+    # Manage Gateway bridge - systemctl 
+    $ sudo systemctl [start|stop|restart|status|enable|disable] chirpstack-gateway-bridge
+    # Manage Gateway bridge - Logs
+    $ sudo journalctl -u chirpstack-gateway-bridge -f -n 50
+   
 
 Getting Started
 ---------------
