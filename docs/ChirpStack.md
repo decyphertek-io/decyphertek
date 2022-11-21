@@ -40,11 +40,11 @@ Application Server
     $ openssl rand -base64 32
     $ sudo vim /etc/chirpstack-application-server/chirpstack-application-server.toml
     dsn="postgres://chirpstack_as:dbpassword@localhost/chirpstack_as?sslmode=disable"
-    # Example of openssl output to add to jwt_secret
-    jwt_secret="HoptoEXT0oKmySPCinatorEYEisSEEnDOGs="
     # Need to change form port 8080 to something else, there is a port conflict 8080 alrady in use. 
     # ip:port to bind the (user facing) http server to (web-interface and REST / gRPC api)
     bind="0.0.0.0:8333"
+    # Example of openssl output to add to jwt_secret
+    jwt_secret="HoptoEXT0oKmySPCinatorEYEisSEEnDOGs="
     $ sudo systemctl enable chirpstack-application-server
     $ sudo apt -y install nginx
     $ sudo systemctl enable nginx
