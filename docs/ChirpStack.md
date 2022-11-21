@@ -12,8 +12,10 @@ Requirements
 
     # Install Requirements for Application, Gateway, and Network server.
     $ sudo apt install -y mosquitto postgresql redis-server
-    $ sudo systemctl start postgresql@13-main
+    $ sudo systemctl enable redis-server
+    $ sudo systemctl start redis-server
     $ sudo systemctl enable postgresql@13-main
+    $ sudo systemctl start postgresql@13-main
     $ sudo -u postgres psql 
     create role chirpstack_as with login password 'dbpassword';
     create database chirpstack_as with owner chirpstack_as;
