@@ -39,6 +39,8 @@ Basic Commands
     --instance-id i-1234567890abcdef0 \
     --name "My server" \
     --description "An AMI for my server"
+    # List AMI owned by account #
+    $ aws ec2 describe-images --owners 000000000 --query 'Images[*].[ImageId]'
 
 References
 ----------
