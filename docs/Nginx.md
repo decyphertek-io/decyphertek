@@ -11,12 +11,6 @@ Install
     deb-src https://nginx.org/packages/ubuntu/ jammy nginx
     $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ABF5BD827BD9BF62
     $ sudo apt update && sudo apt -y install nginx 
-    ### Optional: Modsec ####
-    $ sudo mkdir /usr/local/src/nginx && cd /usr/local/src/nginx
-    $ sudo su -c "apt source nginx"
-    $ ls 
-    $ nginx -v
-    ### Optional: Modesc - End ###
     $ sudo systemctl enable nginx
     $ sudo unlink /etc/nginx/conf.d/default.conf
     $ sudo openssl req -x509 -nodes -days 1095 -newkey rsa:2048 -keyout /etc/ssl/private/self-signed-key.pem -out /etc/ssl/certs/self-signed-crt.pem -subj "/C=US/ST=Any/L=Anytown/O=decyphertek-io/OU=adminotaur/CN=decyphertek"
@@ -44,6 +38,11 @@ Optional: ModSecurity
 -----------
 
     $ sudo apt update && sudo apt install -y git gcc make build-essential autoconf automake libtool libcurl4-openssl-dev liblua5.3-dev libfuzzy-dev ssdeep gettext pkg-config libpcre3 libpcre3-dev libxml2 libxml2-dev libcurl4 libgeoip-dev libyajl-dev doxygen libpcre++-dev libpcre2-16-0 libpcre2-dev libpcre2-posix3 
+    $ sudo mkdir /usr/local/src/nginx && cd /usr/local/src/nginx
+    # May have to run twice if you get an error. 
+    $ sudo su -c "apt source nginx"
+    $ ls 
+    $ nginx -v
     $ sudo git clone --depth 1 -b v3/master --single-branch https://github.com/SpiderLabs/ModSecurity /usr/local/src/ModSecurity/
     $ cd /usr/local/src/ModSecurity/
     $ sudo git submodule init
