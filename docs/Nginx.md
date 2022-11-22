@@ -53,44 +53,45 @@ Optional: ModSecurity
     $ sudo make install
     $ sudo git clone --depth 1 https://github.com/SpiderLabs/ModSecurity-nginx.git /usr/local/src/ModSecurity-nginx/
     $ cd /usr/local/src/nginx/nginx-1.*.*
-    $ sudo apt build-dep nginx && sudo apt install uuid-dev
+    $ sudo apt build-dep nginx && sudo apt install -y uuid-dev
     $ sudo ./configure --with-compat --add-dynamic-module=/usr/local/src/ModSecurity-nginx
     $ sudo make modules
-    $ sudo cp objs/ngx_http_modsecurity_module.so /usr/share/nginx/modules/
-    $ sudo nano /etc/nginx/nginx.conf
+    $ sudo cp /usr/local/src/nginx/nginx-1.22.1/objs/ngx_http_modsecurity_module.so /etc/nginx/modules/
+    $ sudo vim /etc/nginx/nginx.conf
     load_module modules/ngx_http_modsecurity_module.so;
     http{
     modsecurity on;
     modsecurity_rules_file /etc/nginx/modsec/modsec-config.conf;
     $ sudo mkdir /etc/nginx/modsec/
     $ sudo cp /usr/local/src/ModSecurity/modsecurity.conf-recommended /etc/nginx/modsec/modsecurity.conf
-    $ sudo nano /etc/nginx/modsec/modsecurity.conf
+    $ sudo vim /etc/nginx/modsec/modsecurity.conf
     # Change SecRuleEngine DetectionOnly 
     SecRuleEngine On
     # Change SecAuditLogParts ABIJDEFHZ
-    SecAuditLogParts ABCEFHJKZ
-    $ sudo nano /etc/nginx/modsec/modsec-config.conf
+    SecAuditLogParts 
+    $ sudo vim /etc/nginx/modsec/modsec-config.conf
     Include /etc/nginx/modsec/modsecurity.conf
     $ sudo cp /usr/local/src/ModSecurity/unicode.mapping /etc/nginx/modsec/
     $ sudo nginx -t
     $ sudo systemctl restart nginx
     $ cd /etc/nginx/modsec
-    $ wget https://github.com/coreruleset/coreruleset/archive/refs/tags/v3.3.2.zip
+    $ sudo su -c "wget https://github.com/coreruleset/coreruleset/archive/refs/tags/v3.3.2.zip"
     $ sudo apt install unzip -y
-    $ sudo unzip v3.3.2.zip -d /etc/nginx/modsec
+    $ sudo unzip v3.3.2.zip 
     $ sudo cp /etc/nginx/modsec/coreruleset-3.3.2/crs-setup.conf.example /etc/nginx/modsec/coreruleset-3.3.2/crs-setup.conf
-    $ sudo nano /etc/nginx/modsec/modsec-config.conf
+    $ sudo vim /etc/nginx/modsec/modsec-config.conf
     Include /etc/nginx/modsec/coreruleset-3.3.2/crs-setup.conf
     Include /etc/nginx/modsec/coreruleset-3.3.2/rules/*.conf
     $ sudo nginx -t
     $ sudo systemctl restart nginx
-    $ sudo nano /etc/nginx/modsec/coreruleset-3.3.2/crs-setup.conf
+    $ sudo vim /etc/nginx/modsec/coreruleset-3.3.2/crs-setup.conf
+    # No need to change these are the defaults. 
     Anomaly Scoring Mode 
     Paranoia Level 1 
-    # Test - should get forbidden
+    # Test - should get 403 forbidden
     $ https://www.yourdomain.com/index.html?exec=/bin/bash
     # Read Reference regarding false postives and whitelisting
-    $ sudo nano /etc/logrotate.d/modsec
+    $ sudo vim /etc/logrotate.d/modsec
 
 References
 ----------
