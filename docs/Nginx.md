@@ -10,7 +10,7 @@ Install
     $ sudo systemctl enable nginx
     $ sudo unlink /etc/nginx/sites-enabled/default
     $ sudo openssl req -x509 -nodes -days 1095 -newkey rsa:2048 -keyout /etc/ssl/private/self-signed-key.pem -out /etc/ssl/certs/self-signed-crt.pem -subj "/C=US/ST=Any/L=Anytown/O=decyphertek-io/OU=adminotaur/CN=decyphertek"
-    $ sudo vim /etc/nginx/sites-enabled/custom-ssl.conf
+    $ sudo vim /etc/nginx/sites-enabled/custom.conf
     server {
         listen       443 ssl;
         server_name localhost;
