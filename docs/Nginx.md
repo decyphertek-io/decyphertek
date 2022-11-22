@@ -13,6 +13,7 @@ Install
     $ sudo vim /etc/nginx/sites-enabled/custom-ssl.conf
     server {
         listen       443 ssl;
+        server_name localhost;
         ssl_certificate      /etc/ssl/certs/self-signed-crt.pem;
         ssl_certificate_key  /etc/ssl/private/self-signed-key.pem;
         ssl_session_cache    shared:SSL:1m;
@@ -23,7 +24,7 @@ Install
         ssl_prefer_server_ciphers  on;
 
     location / {
-        proxy_pass https://localhost:63443;
+        proxy_pass http://localhost:63443;
         proxy_ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
     }
     $ sudo systemctl daemon-reload
