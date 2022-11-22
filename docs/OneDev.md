@@ -1,7 +1,7 @@
 OneDev
 ======
 
-All in one CI/CD Platform with a git repo, kanban boards, a code editor, and even integrates email tickets.
+All in one Self-hosted Git Server with Kanban and CI/CD . 
 
 Install
 -------
