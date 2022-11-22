@@ -8,7 +8,7 @@ Install
 
     # ubuntu 22.04
     $ sudo apt install -y openjdk-19-jre-headless openjdk-19-jre git curl unzip
-    # Install dependencies if install fails.
+    # Install dependencies if it fails.
     $ sudo apt install -f 
     $ export JAVA_HOME=/usr/lib/jvm/java-19-openjdk-amd6
     $ echo $JAVA_HOME
