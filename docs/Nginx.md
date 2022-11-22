@@ -33,6 +33,7 @@ Optional: ModSecurity
 -----------
 
     https://www.linuxcapable.com/how-to-install-nginx-with-modsecurity-3-on-ubuntu-22-04-lts/
+    https://www.techlear.com/blog/2022/10/30/how-to-install-modsecurity-3-with-nginx-on-ubuntu-22-04/
 
 References
 ----------
