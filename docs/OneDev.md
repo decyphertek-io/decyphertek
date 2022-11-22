@@ -26,5 +26,5 @@ Install
 References
 ----------
 
-    https://code.onedev.io/projects/160/files
+    https://github.com/theonedev/onedev
     https://code.onedev.io/projects/162/files/main/pages/installation-guide.md
