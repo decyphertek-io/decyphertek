@@ -78,6 +78,10 @@ Optional: ModSecurity
     $ sudo nano /etc/nginx/modsec/coreruleset-3.3.2/crs-setup.conf
     Anomaly Scoring Mode 
     Paranoia Level 1 
+    # Test - should get forbidden
+    $ https://www.yourdomain.com/index.html?exec=/bin/bash
+    # Read Reference regarding false postives and whitelisting
+    $ sudo nano /etc/logrotate.d/modsec
 
 References
 ----------
