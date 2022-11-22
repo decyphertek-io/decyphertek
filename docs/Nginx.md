@@ -96,7 +96,7 @@ Optional: ModSecurity
 References
 ----------
 
-    https://phoenixnap.com/kb/nginx-reverse-proxy
+    https://www.nginx.com/resources/wiki/start/topics/tutorials/install/
     https://www.ibm.com/support/pages/how-configure-nginx-ssl-reverse-proxy
     https://www.linuxcapable.com/how-to-install-nginx-with-modsecurity-3-on-ubuntu-22-04-lts/
     
