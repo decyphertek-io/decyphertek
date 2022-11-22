@@ -8,6 +8,8 @@ Install
 
     # ubuntu 22.04
     $ sudo apt install -y openjdk-19-jre-headless openjdk-19-jre git curl unzip
+    # Install dependencies if install fails.
+    $ sudo apt install -f 
     $ export JAVA_HOME=/usr/lib/jvm/java-19-openjdk-amd6
     $ echo $JAVA_HOME
     $ wget https://code.onedev.io/downloads/projects/160/builds/3112/artifacts/onedev-7.7.11.zip
