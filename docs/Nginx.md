@@ -32,12 +32,57 @@ Install
 Optional: ModSecurity 
 -----------
 
-    https://www.linuxcapable.com/how-to-install-nginx-with-modsecurity-3-on-ubuntu-22-04-lts/
-    https://www.techlear.com/blog/2022/10/30/how-to-install-modsecurity-3-with-nginx-on-ubuntu-22-04/
+    $ sudo apt update && sudo apt install -y git
+    $ sudo git clone --depth 1 -b v3/master --single-branch https://github.com/SpiderLabs/ModSecurity /usr/local/src/ModSecurity/
+    $ cd /usr/local/src/ModSecurity/
+    $ sudo apt install gcc make build-essential autoconf automake libtool libcurl4-openssl-dev liblua5.3-dev libfuzzy-dev ssdeep gettext pkg-config libpcre3 libpcre3-dev libxml2 libxml2-dev libcurl4 libgeoip-dev libyajl-dev doxygen libpcre++-dev libpcre2-16-0 libpcre2-dev libpcre2-posix3 -y
+    $ sudo git submodule init
+    $ sudo git submodule update
+    $ sudo ./build.sh
+    $ sudo ./configure
+    $ sudo make
+    $ sudo make install
+    $ sudo git clone --depth 1 https://github.com/SpiderLabs/ModSecurity-nginx.git /usr/local/src/ModSecurity-nginx/
+    $ cd /usr/local/src/nginx/nginx-1.*.*
+    $ sudo apt build-dep nginx && sudo apt install uuid-dev
+    $ sudo ./configure --with-compat --add-dynamic-module=/usr/local/src/ModSecurity-nginx
+    $ sudo make modules
+    $ sudo cp objs/ngx_http_modsecurity_module.so /usr/share/nginx/modules/
+    $ sudo nano /etc/nginx/nginx.conf
+    load_module modules/ngx_http_modsecurity_module.so;
+    http{
+    modsecurity on;
+    modsecurity_rules_file /etc/nginx/modsec/modsec-config.conf;
+    $ sudo mkdir /etc/nginx/modsec/
+    $ sudo cp /usr/local/src/ModSecurity/modsecurity.conf-recommended /etc/nginx/modsec/modsecurity.conf
+    $ sudo nano /etc/nginx/modsec/modsecurity.conf
+    # Change SecRuleEngine DetectionOnly 
+    SecRuleEngine On
+    # Change SecAuditLogParts ABIJDEFHZ
+    SecAuditLogParts ABCEFHJKZ
+    $ sudo nano /etc/nginx/modsec/modsec-config.conf
+    Include /etc/nginx/modsec/modsecurity.conf
+    $ sudo cp /usr/local/src/ModSecurity/unicode.mapping /etc/nginx/modsec/
+    $ sudo nginx -t
+    $ sudo systemctl restart nginx
+    $ cd /etc/nginx/modsec
+    $ wget https://github.com/coreruleset/coreruleset/archive/refs/tags/v3.3.2.zip
+    $ sudo apt install unzip -y
+    $ sudo unzip v3.3.2.zip -d /etc/nginx/modsec
+    $ sudo cp /etc/nginx/modsec/coreruleset-3.3.2/crs-setup.conf.example /etc/nginx/modsec/coreruleset-3.3.2/crs-setup.conf
+    $ sudo nano /etc/nginx/modsec/modsec-config.conf
+    Include /etc/nginx/modsec/coreruleset-3.3.2/crs-setup.conf
+    Include /etc/nginx/modsec/coreruleset-3.3.2/rules/*.conf
+    $ sudo nginx -t
+    $ sudo systemctl restart nginx
+    $ sudo nano /etc/nginx/modsec/coreruleset-3.3.2/crs-setup.conf
+    Anomaly Scoring Mode 
+    Paranoia Level 1 
 
 References
 ----------
 
     https://phoenixnap.com/kb/nginx-reverse-proxy
     https://www.ibm.com/support/pages/how-configure-nginx-ssl-reverse-proxy
+    https://www.linuxcapable.com/how-to-install-nginx-with-modsecurity-3-on-ubuntu-22-04-lts/
     
