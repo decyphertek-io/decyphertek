@@ -4,15 +4,25 @@ Nginx
 Nginx reverse proxy can be used to encrypt web traffic. 
 
 Install
---------
+-------
 
-    $ sudo apt -y install nginx
+    $ sudo vim /etc/apt/sources.list.d/nginx.list
+    deb https://nginx.org/packages/ubuntu/ jammy nginx
+    deb-src https://nginx.org/packages/ubuntu/ jammy nginx
+    $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ABF5BD827BD9BF62
+    $ sudo apt update && sudo apt -y install nginx 
+    ### Optional: Modsec ####
+    $ sudo mkdir /usr/local/src/nginx && cd /usr/local/src/nginx
+    $ sudo su -c "apt source nginx"
+    $ ls 
+    $ nginx -v
+    ### Optional: Modesc - End ###
     $ sudo systemctl enable nginx
-    $ sudo unlink /etc/nginx/sites-enabled/default
+    $ sudo unlink /etc/nginx/conf.d/default.conf
     $ sudo openssl req -x509 -nodes -days 1095 -newkey rsa:2048 -keyout /etc/ssl/private/self-signed-key.pem -out /etc/ssl/certs/self-signed-crt.pem -subj "/C=US/ST=Any/L=Anytown/O=decyphertek-io/OU=adminotaur/CN=decyphertek"
-    $ sudo vim /etc/nginx/sites-enabled/custom.conf
+    $ sudo vim /etc/nginx/conf.d/custom.conf
     server {
-        listen       443 ssl;
+        listen 443 ssl;
         server_name localhost;
         ssl_certificate      /etc/ssl/certs/self-signed-crt.pem;
         ssl_certificate_key  /etc/ssl/private/self-signed-key.pem;
@@ -26,6 +36,7 @@ Install
         proxy_ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
         }
     }
+    $ sudo nginx -t
     $ sudo systemctl daemon-reload
     $ sudo systemctl start nginx
 
