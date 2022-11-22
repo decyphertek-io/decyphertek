@@ -88,8 +88,6 @@ Optional: ModSecurity
     # No need to change these are the defaults. 
     Anomaly Scoring Mode 
     Paranoia Level 1 
-    # Test - should get 403 forbidden
-    $ https://www.yourdomain.com/index.html?exec=/bin/bash
     # Read Reference regarding false postives and whitelisting
     $ sudo vim /etc/logrotate.d/modsec
     /var/log/modsec_audit.log
@@ -101,6 +99,11 @@ Optional: ModSecurity
         delaycompress
         notifempty
     }
+    # Test - should get 403 forbidden
+    $ sudo tail -f /var/log/modsec_audit.log
+    # Open up a web browser and test to see if the log shows up. 
+    $ https://www.yourdomain.com/index.html?exec=/bin/bash
+
 
 References
 ----------
