@@ -21,8 +21,9 @@ Install
     $ sudo bash bin/server.sh installstart
     $ sudo systemctl status onedev
     # allow inbound access via firewall and security group if required port 6610 
-    # https://localhost:6610
+    # http://localhost:6610
     # setup account info 
+    # Enable MFA > Click on account name > Two Factor Authentication > scan QR with MFA APP 
     # Optional: Setup Nginx Reverse Proxy to route to port 443, see decyphertek nginx docs. 
 
 Terminology
