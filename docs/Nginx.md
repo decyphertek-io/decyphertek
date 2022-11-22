@@ -91,7 +91,16 @@ Optional: ModSecurity
     # Test - should get 403 forbidden
     $ https://www.yourdomain.com/index.html?exec=/bin/bash
     # Read Reference regarding false postives and whitelisting
-    $ sudo touch /etc/logrotate.d/modsec
+    $ sudo vim /etc/logrotate.d/modsec
+    /var/log/modsec_audit.log
+    {
+        rotate 31
+        daily
+        missingok
+        compress
+        delaycompress
+        notifempty
+    }
 
 References
 ----------
