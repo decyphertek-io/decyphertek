@@ -29,6 +29,11 @@ Install
     $ sudo systemctl daemon-reload
     $ sudo systemctl start nginx
 
+Optional: ModSecurity 
+-----------
+
+    https://www.linuxcapable.com/how-to-install-nginx-with-modsecurity-3-on-ubuntu-22-04-lts/
+
 References
 ----------
 
