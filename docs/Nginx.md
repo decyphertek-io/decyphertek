@@ -68,7 +68,7 @@ Optional: ModSecurity
     # Change SecRuleEngine DetectionOnly 
     SecRuleEngine On
     # Change SecAuditLogParts ABIJDEFHZ
-    SecAuditLogParts 
+    SecAuditLogParts ABCEFHJKZ
     $ sudo vim /etc/nginx/modsec/modsec-config.conf
     Include /etc/nginx/modsec/modsecurity.conf
     $ sudo cp /usr/local/src/ModSecurity/unicode.mapping /etc/nginx/modsec/
