@@ -13,27 +13,12 @@ Install
     $ sudo dpkg -i apt-ntop-stable.deb 
     $ sudo apt update 
     $ sudo apt install -y pfring-dkms nprobe ntopng n2disk cento
-    # Change config - Not much here.
+    # Manage NtopNG
+    $ sudo systemctl [start|stop|restart|status|enable|disable] ntopng
+    # Config
     $ sudo ntopng-config
-    # Set to Https 
-    $ sudo systemctl stop ntopng
-    # This is temporary test and isnt controlled by systemd
-    $ sudo ntopng --https=443 & 
-    # Edit the configuration so that systemd controls config. Unlcear what to change?
     $ sudo vim /etc/ntopng/ntopng.conf
-    # Solution is to create your own systemd service - I think this lauches Enterprise version, limited. 
-    $ sudo vim /etc/systemd/system/ntopng-mod.service
-    [Unit]
-    Description=ntopng-mod
-    After=syslog.target network.target
-    [Service]
-    User=root
-    ExecStart=/usr/bin/ntopng --https=443
-    [Install]
-    WantedBy=multi-user.target
-    $ sudo systemctl stop ntopng
-    $ sudo sysemctl start ntopng-mod
-
+    # Login: Setup Account - https://localhost:3000
     
 References
 -----------
