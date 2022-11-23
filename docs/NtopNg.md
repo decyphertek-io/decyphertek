@@ -19,6 +19,7 @@ Install
     $ sudo ntopng-config
     $ sudo vim /etc/ntopng/ntopng.conf
     # Login: Setup Account - https://localhost:3000
+    # Optional: Sertup Nginx Reverse Proxy to rout traffic to port 443. See Decyphertek nginx docs. 
     
 References
 -----------
