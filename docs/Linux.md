@@ -67,24 +67,22 @@ Bluetooth
 
      # Minimal ubuntu 22.04 install doesnt have Bluetooth software installed.
      # PulseAudio Option 
-     $ sudo apt install blueman bluez* pulseaudio pulseaudio-module-bluetooth ubuntu-restricted-extras linux-firmware firmware-sof-signed
+     $ sudo apt install -y blueman bluez* pulseaudio pulseaudio-module-bluetooth ubuntu-restricted-extras linux-firmware firmware-sof-signed
+     $ sudo systemctl enable bluetooth
+     $ sudo systemctl start bluetooth
      # Either use Pulse Audio or Pipewire, they can conflict. 
-     $ sudo apt purge pipewire* libspa-0.2-bluetooth
+     $ sudo apt purge -y pipewire* libspa-0.2-bluetooth
      # reboot system, should resolve bluetooth issues.
 
      # PipeWire Option
      $ sudo add-apt-repository ppa:pipewire-debian/pipewire-upstream
-     $ sudo apt update && sudo apt install pipewire libspa-0.2-bluetooth pipewire-audio-client-libraries 
+     $ sudo apt update && sudo apt install -y pipewire libspa-0.2-bluetooth pipewire-audio-client-libraries pulseaudio-module-bluetooth
      # You still may need the right firmware 
      $ sudo apt install ubuntu-restricted-extras linux-firmware firmware-sof-signed
      $ sudo systemctl daemon-reload
      # To test Pipewire without completely removing Pulseaudio.
-     $ sudo systemctl disable pulseaudio.service pulseaudio.socket
-     $ sudo systemctl stop pulseaudio.service pulseaudio.socket
-     $ sudo systemctl mask pulseaudio
-     $ sudo systemctl enable pipewire-media-session.service
-     $ sudo systemctl start pipewire-media-session.service
-     $ sudo apt purge ofono ofono-phonesim
+     $ sudo apt purge pulseaudio
+     # Reboot system
      $ pactl info
      # Reboot system
      # If this solution didnt work and you want to revert back. 
