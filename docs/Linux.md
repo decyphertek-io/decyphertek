@@ -65,11 +65,33 @@ Network Info
 Bluetooth
 ---------
 
-     # Minimal ubuntu 22.04 install doesnt have Bluetooth software installed. 
+     # Minimal ubuntu 22.04 install doesnt have Bluetooth software installed.
+     # PulseAudio Option 
      $ sudo apt install blueman bluez* pulseaudio pulseaudio-module-bluetooth ubuntu-restricted-extras linux-firmware firmware-sof-signed
      # Either use Pulse Audio or Pipewire, they can conflict. 
      $ sudo apt purge pipewire* libspa-0.2-bluetooth
-     # reboot system, should resolve bluetooth issues. 
+     # reboot system, should resolve bluetooth issues.
+
+     # PipeWire Option
+     $ sudo add-apt-repository ppa:pipewire-debian/pipewire-upstream
+     $ sudo apt update && sudo apt install pipewire libspa-0.2-bluetooth pipewire-audio-client-libraries 
+     $ sudo systemctl daemon-reload
+     # To test Pipewire without completely removing Pulseaudio.
+     $ sudo systemctl disable pulseaudio.service pulseaudio.socket
+     $ sudo systemctl stop pulseaudio.service pulseaudio.socket
+     $ sudo systemctl mask pulseaudio
+     $ sudo systemctl enable pipewire-media-session.service
+     $ sudo systemctl start pipewire-media-session.service
+     $ sudo apt purge ofono ofono-phonesim
+     $ pactl info
+     # Reboot system
+     # If this solution didnt work and you want to revert back. 
+     $ sudo systemctl unmask pulseaudio
+     $ sudo systemctl disable pipewire{,-pulse}.{socket,service}  
+     $ sudo systemctl stop pipewire{,-pulse}.{socket,service}   
+     $ sudo systemctl enable pulseaudio.service pulseaudio.socket
+     $ sudo systemctl start pulseaudio.service pulseaudio.socket
+     
 
 ACL
 ----
@@ -102,5 +124,6 @@ References
      https://www.howtogeek.com/197934/how-to-change-your-hostname-computer-name-on-ubuntu-linux/
      https://linoxide.com/linux-set-access-control-list-using-setfacl-and-getfacl-commands/
      https://linuxhint.com/change-hostname-ubuntu-permanently/
+     https://askubuntu.com/questions/1339765/replacing-pulseaudio-with-pipewire-in-ubuntu-20-04
 
 
