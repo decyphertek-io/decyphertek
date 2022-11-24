@@ -66,13 +66,7 @@ Bluetooth
 ---------
 
      # Minimal ubuntu 22.04 install doesnt have Bluetooth software installed. 
-     $ sudo apt install bluetooth
-     $ sudo apt install blueman
-     $ sudo apt install bluez*
-     $ sudo apt install pulseaudio-module-bluetooth
-     $ sudo apt install libspa-0.2-bluetooth
-     $ sudo apt install pipewire-pulse
-     $ sudo apt install ubuntu-restricted-extras
+     $ sudo apt install bluetooth blueman bluez* pulseaudio-module-bluetooth libspa-0.2-bluetooth pipewire-pulse ubuntu-restricted-extras
      # Install output of the following command
      $ sudo apt install linux-firmware/jammy-proposed
      # Intel bluetooth firmware output
