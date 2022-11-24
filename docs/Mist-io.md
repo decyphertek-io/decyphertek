@@ -6,7 +6,7 @@ Mist is an open source multicloud management platform.
 Install {Kubernetes/Helm}
 --------------------------
 
-     # Install Microk8s or use eks ( Lens IDE ) 
+     # Install Microk8s or use eks
      $ helm repo add mist https://dl.mist.io/charts 
      $ helm repo update 
      $ helm install mist-ce mist/mist-ce
