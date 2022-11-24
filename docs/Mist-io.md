@@ -16,8 +16,10 @@ Install {Docker}
 
      # Install Docker & Docker Compose ( Script works only on Ubuntu - Manually install if using another OS )
      $ curl -fsSL https://raw.githubusercontent.com/decyphertek-io/configs/main/bash-scripts/docker.sh | bash
+     # Logout and back in , so changes take effect. 
+     $ mkdir mist-io && cd mist-io
      $ wget https://github.com/mistio/mist-ce/releases/download/v4.6.2/docker-compose.yml
-     $ docker-compose up -d &
+     $ docker compose up -d &
      # Make an admin user
      $ docker-compose exec api sh 
      ./bin/adduser --admin admin@example.com
