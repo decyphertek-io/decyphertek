@@ -56,11 +56,16 @@ Optional: K9
 Optional: Ocatant
 -----------------
 
+    # Limitations , Yaml read only in gui. 
     $ wget https://github.com/vmware-tanzu/octant/releases/download/v0.25.1/octant_0.25.1_Linux-64bit.deb
     $ sudo dpkg -i octant_0.25.1_Linux-64bit.deb
+    <OR>
+    # Desktop App Mac / Linux
+    $ brew install octant
 
 References
 ----------
 
     https://microk8s.io/docs/getting-started
     https://devopscube.com/install-configure-helm-kubernetes/
+    https://medium.com/dictcp/kubernetes-gui-clients-in-2020-kube-dashboard-lens-octant-and-kubenav-ce28df9bb0f0
