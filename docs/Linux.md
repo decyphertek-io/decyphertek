@@ -75,6 +75,8 @@ Bluetooth
      # PipeWire Option
      $ sudo add-apt-repository ppa:pipewire-debian/pipewire-upstream
      $ sudo apt update && sudo apt install pipewire libspa-0.2-bluetooth pipewire-audio-client-libraries 
+     # You still may need the right firmware 
+     $ sudo apt install ubuntu-restricted-extras linux-firmware firmware-sof-signed
      $ sudo systemctl daemon-reload
      # To test Pipewire without completely removing Pulseaudio.
      $ sudo systemctl disable pulseaudio.service pulseaudio.socket
