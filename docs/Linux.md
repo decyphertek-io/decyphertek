@@ -66,7 +66,7 @@ Bluetooth
 ---------
 
      # Minimal ubuntu 22.04 install doesnt have Bluetooth software installed. 
-     $ sudo apt install blueman bluez* pulseaudio-module-bluetooth libspa-0.2-bluetooth ubuntu-restricted-extras linux-firmware firmware-sof-signed
+     $ sudo apt install blueman bluez* pulseaudio pulseaudio-module-bluetooth ubuntu-restricted-extras linux-firmware firmware-sof-signed
      # Either use Pulse Audio or Pipewire, they can conflict. 
      $ sudo apt purge pipewire*
      # reboot system, should resolve bluetooth issues. 
