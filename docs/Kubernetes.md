@@ -1,5 +1,12 @@
+Kubernetes
+==========
+
+There is a few different ways to run Kubernetes, which can be viewed as a networking solution to containers. 
+Setuping clusters and nodes via a yaml configuration can simplify infrastructure deployment. Some of the 
+kubernetes options is AWS Eks , Microka8s , CoreOS , Rancher , Minikube , OpenShift, OKD, etc. 
+
 Microk8s
-=====
+========
 
 Microk8s is Canonical's Kubernetes. Easy to install via snap. Enterprise ready or can experiment locally. Crossplatform. 
 
