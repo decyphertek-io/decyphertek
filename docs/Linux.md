@@ -68,7 +68,7 @@ Bluetooth
      # Minimal ubuntu 22.04 install doesnt have Bluetooth software installed.
      # PulseAudio Option 
      $ sudo apt install -y blueman bluez* pulseaudio pulseaudio-module-bluetooth pulseaudio-equalizer ubuntu-restricted-extras linux-firmware 
-     # Issue with Bluetooth Headset not working, when i install firmware fixe it, breaks A2DP sink
+     # Issue with Bluetooth Headset not working, when I install firmware fixes it, breaks A2DP sink
      $ sudo apt install/purge firmware-sof-signed
      $ sudo systemctl enable bluetooth
      $ sudo systemctl start bluetooth
