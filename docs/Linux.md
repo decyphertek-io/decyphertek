@@ -67,14 +67,17 @@ Bluetooth
 
      # Minimal ubuntu 22.04 install doesnt have Bluetooth software installed.
      # PulseAudio Option 
-     $ sudo apt install -y blueman bluez* pulseaudio pulseaudio-module-bluetooth ubuntu-restricted-extras linux-firmware firmware-sof-signed
+     $ sudo apt install -y blueman bluez* pulseaudio pulseaudio-module-bluetooth pulseaudio-equalizer ubuntu-restricted-extras linux-firmware firmware-sof-signed
      $ sudo systemctl enable bluetooth
      $ sudo systemctl start bluetooth
      # Either use Pulse Audio or Pipewire, they can conflict. 
      $ sudo apt purge -y pipewire* libspa-0.2-bluetooth
      # reboot system, should resolve bluetooth issues.
+     # Issue where bluetooth not working with pulse audio
+     $ pulseaudio -k
+     $ pulseaudio --start
 
-     # PipeWire Option
+     # PipeWire Option - Xfce desktop bluetooth issues . 
      $ sudo add-apt-repository ppa:pipewire-debian/pipewire-upstream
      $ sudo apt update && sudo apt install -y pipewire libspa-0.2-bluetooth pipewire-audio-client-libraries pulseaudio-module-bluetooth
      # You still may need the right firmware 
