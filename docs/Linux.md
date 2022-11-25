@@ -72,8 +72,9 @@ Bluetooth
      $ sudo systemctl enable bluetooth
      $ sudo systemctl start bluetooth
      $ sudo apt purge -y pipewire* libspa-0.2-bluetooth
-     $ pactl info
+     $ sudo apt autoremove
      # reboot system
+     $ pactl info
      $ pulseaudio -k
      $ pulseaudio --start
 
