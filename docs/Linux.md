@@ -68,32 +68,22 @@ Bluetooth
      # Minimal Xubuntu 22.04 install doesnt have Bluetooth software installed.
      # PulseAudio Option 
      $ sudo apt install -y blueman bluez* pulseaudio pulseaudio-module-bluetooth pulseaudio-equalizer xfce4-pulseaudio-plugin ubuntu-restricted-extras linux-firmware firmware-sof-signed
+     $ sudo systemctl daemon-reload
      $ sudo systemctl enable bluetooth
      $ sudo systemctl start bluetooth
      $ sudo apt purge -y pipewire* libspa-0.2-bluetooth
+     $ pactl info
      # reboot system
      $ pulseaudio -k
      $ pulseaudio --start
 
      # PipeWire Option - Xfce desktop bluetooth issues . 
      $ sudo add-apt-repository ppa:pipewire-debian/pipewire-upstream
-     $ sudo apt update && sudo apt install -y pipewire libspa-0.2-bluetooth pipewire-audio-client-libraries pulseaudio-module-bluetooth
-     # You still may need the right firmware 
-     $ sudo apt install ubuntu-restricted-extras linux-firmware firmware-sof-signed
-     $ sudo systemctl daemon-reload
-     # To test Pipewire without completely removing Pulseaudio.
-     $ sudo apt purge pulseaudio
+     $ sudo apt update && sudo apt install -y pipewire libspa-0.2-bluetooth pipewire-audio-client-libraries pulseaudio-module-bluetooth ubuntu-restricted-extras linux-firmware firmware-sof-signed
+     $ sudo apt purge pulseaudio*
      # Reboot system
      $ pactl info
-     # Reboot system
-     # If this solution didnt work and you want to revert back. 
-     $ sudo systemctl unmask pulseaudio
-     $ sudo systemctl disable pipewire{,-pulse}.{socket,service}  
-     $ sudo systemctl stop pipewire{,-pulse}.{socket,service}   
-     $ sudo systemctl enable pulseaudio.service pulseaudio.socket
-     $ sudo systemctl start pulseaudio.service pulseaudio.socket
-     
-
+    
 ACL
 ----
 
