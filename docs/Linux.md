@@ -65,7 +65,7 @@ Network Info
 Bluetooth
 ---------
 
-     # Minimal Xubuntu 22.04 install doesnt have Bluetooth software installed.
+     # Minimal Xubuntu 22.04 Minimal Desktop install doesnt have Bluetooth software installed.
      # PulseAudio Option 
      $ sudo apt install -y blueman bluez* pulseaudio pulseaudio-module-bluetooth pulseaudio-equalizer xfce4-pulseaudio-plugin ubuntu-restricted-extras linux-firmware firmware-sof-signed
      $ sudo systemctl daemon-reload
