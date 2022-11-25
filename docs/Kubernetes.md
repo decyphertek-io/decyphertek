@@ -6,12 +6,11 @@ Setuping clusters and nodes via a yaml configuration can simplify infrastructure
 kubernetes options is AWS Eks , Microka8s , CoreOS , Rancher , Minikube , OpenShift, OKD, etc. 
 
 Microk8s
-========
-
+---------
 Microk8s is Canonical's Kubernetes. Easy to install via snap. Enterprise ready or can experiment locally. Crossplatform. 
 
-Install
--------
+MicroK8s - Install
+------------------
 
     $ sudo snap install microk8s --classic 
     $ sudo usermod -a -G microk8s $USER
@@ -30,8 +29,8 @@ Install
     $ helm ls
     $ kubectl get deployments
 
-Commands
---------
+MicroK8s - Commands
+------------------
 
     $ microk8s status --wait-ready
     $ microk8s stop
@@ -40,8 +39,8 @@ Commands
     $ microk8s kubectl get services
     $ microk8s kubectl get pods
     
-Deploy Example
----------------
+Microk8s - Deploy Example
+------------------------
 
     $ microk8s kubectl create deployment nginx --image=nginx
 
