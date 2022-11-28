@@ -44,6 +44,11 @@ Microk8s - Deploy Example
 
     $ microk8s kubectl create deployment nginx --image=nginx
 
+Optional: karpenter
+-------------------
+
+    https://karpenter.sh/
+
 Optional: Lens IDE
 ------------------
 
