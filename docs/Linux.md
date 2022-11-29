@@ -90,16 +90,14 @@ ACL
 
      $ sudo apt-get install nfs4-acl-tools acl
      # Read , Write , & Execute access to a single user
-     $ setfacl -m u:username:rwx folder/
+     $ sudo setfacl -m u:username:rwx folder/
      # Read , Write , & Execute access to All Users in a group
-     $ setfacl -m g:groupname:rwx folder/
+     $ sudo setfacl -m g:groupname:rwx folder/
      # You can set which permisisons you want the user or group to have.
-     $ getfacl folder/
-     # Revoke user access
-     $ setfacl -x u:username,g:groupname folder/
-     # Revoke group access
-  
-
+     $ sudo getfacl folder/
+     # Revoke user & group access
+     $ sudo setfacl -x u:username,g:groupname folder/
+     
 Enable AWS Workspace
 --------------------
 
