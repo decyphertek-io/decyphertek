@@ -14,14 +14,16 @@ Install
     https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
     /etc/apt/sources.list.d/jenkins.list > /dev/null
     $ sudo apt-get update && sudo apt-get install -y jenkins
-    # If a port conflict,  change HTTP_PORT=8080 to HTTP_PORT=8081
+    # Random port conflict on ubuntu,  change HTTP_PORT=8080 to HTTP_PORT=8081
     # If using a proxy  set PREFIX=/jenkins
     $ sudo vim  /etc/default/jenkins
     $ sudo systemctl enable jenkins
     $ sudo systemctl daemon-reload
     # Reboot  system
     # Make sure if you changed the config it loaded.
-    $ sudo systemctl status
+    $ sudo systemctl status jenkins
+    # If change never loads, try $ sudo apt remove jenkins $ sudo apt install jenkins
+    # This will keep you config change and upon reinstall load the right to the right port. 
     # Log stored here if any - /var/log/jenkins/jenkins.log
     # http://localhost:8081 or http://localhost:8080
     # Login with admin password and run thru setup. 
