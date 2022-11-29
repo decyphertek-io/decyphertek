@@ -37,8 +37,10 @@ Install
     # Setup pam Authentication module to login:
     > Login > manage jenkins > Configure Global Security > Security Realm = Unix user/group database > Save
     # jenkins needs read access on /etc/shadow 
-    $ sudo apt-get install nfs4-acl-tools acl
-    $ sudo setfacl -m u:jenkins:r /etc/shadow
+    # The shadow group should already exist and be owner. 
+    $ sudo chown root:shadow /etc/shadow
+    # Add Jenkins to Shadow group and reboot system.
+    $ sudo usermod -aG shadow jenkins
     # Test out by creating a testuser
     $ sudo useraddd testuser
     $ sudo passwd testuser
