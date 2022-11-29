@@ -43,6 +43,8 @@ Install
     $ sudo useraddd testuser
     $ sudo passwd testuser
     # Login to Jenkins and see if it works.
+    # delete the user if you wish
+    $ sudo userdel testuser
 
 References
 ----------
