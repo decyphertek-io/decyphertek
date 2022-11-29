@@ -34,7 +34,15 @@ Install
     - https://www.jenkins.io/doc/book/system-administration/reverse-proxy-configuration-nginx/
     # After the config is set  and customized, avoid errors
     $ sudo usermod -aG jenkins nginx
-
+    # Setup pam Authentication module to login:
+    > Login > manage jenkins > Configure Global Security > Security Realm = Unix user/group database > Save
+    # jenkins needs read access on /etc/shadow 
+    $ sudo apt-get install nfs4-acl-tools acl
+    $ sudo setfacl -m u:jenkins:r /etc/shadow
+    # Test out by creating a testuser
+    $ sudo useraddd testuser
+    $ sudo passwd testuser
+    # Login to Jenkins and see if it works.
 
 References
 ----------
