@@ -44,10 +44,15 @@ Microk8s - Deploy Example
 
     $ microk8s kubectl create deployment nginx --image=nginx
 
-Optional: karpenter
+Optional: Karpenter
 -------------------
 
     https://karpenter.sh/
+
+Optional: Kompose
+------------------
+
+    https://kompose.io/
 
 Optional: Lens IDE
 ------------------
