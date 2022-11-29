@@ -23,8 +23,8 @@ Install
     # Make sure if you changed the config it loaded.
     $ sudo systemctl status jenkins
     # If change never loads, try $ sudo apt remove jenkins $ sudo apt install jenkins
-    # This will keep you config change and upon reinstall load the right to the right port. 
-    # This should make this conf /etc/systemd/system/jenkins.service.d/override.conf
+    # This will keep the config change and upon reinstall load the right port and create the override.conf
+    # This override.conf location -  /etc/systemd/system/jenkins.service.d/override.conf
     # This can be edited  $ sudo systemctl edit jenkins
     # Log stored here if any - /var/log/jenkins/jenkins.log
     # http://localhost:8081 or http://localhost:8080
