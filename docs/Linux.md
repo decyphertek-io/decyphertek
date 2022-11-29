@@ -91,6 +91,8 @@ ACL
      $ sudo apt-get install nfs4-acl-tools acl
      # Read , Write , & Execute access to a single user
      $ sudo setfacl -m u:username:rwx folder/
+     # Add recursive permissions 
+     $ sudo setfacl -m u:username:rwx -R folder/ 
      # Read , Write , & Execute access to All Users in a group
      $ sudo setfacl -m g:groupname:rwx folder/
      # You can set which permisisons you want the user or group to have.
