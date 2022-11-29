@@ -40,7 +40,7 @@ Basic Commands
     --name "My server" \
     --description "An AMI for my server"
     # List AMI owned by account #
-    $ aws ec2 describe-images --owners 000000000 --query 'Images[*].[ImageId]'
+    $ aws ec2 describe-images --owners 123123123123 --query 'Images[].[ImageId,Name]' | grep "ami-"
 
 References
 ----------
