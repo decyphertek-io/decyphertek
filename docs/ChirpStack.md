@@ -37,7 +37,8 @@ Requirements
     # - https://github.com/brocaar/chirpstack-application-server/blob/master/internal/storage/user.go#L214
     # "PBKDF2$" + "sha512$" + "1000$" + "base64.salt" + "$" + "base64.hash"
     # Example Password - PBKDF2$sha512$100000$4u3hL8krvlMIS0KnCYXeMw==$G7c7tuUYq2zSJaUeruvNL/KF30d3TVDORVD56wzvJYmc3muWjoaozH8bHJ7r8zY8dW6Pts2bWyhFfkb/ubQZsA==
-    $ sudo -u postgres psql -d chirpstack_as -c "UPDATE public."user" SET password_hash= 'wrong-way-to-update' WHERE email='admin'"
+    # Uses this Go package - https://cs.opensource.google/go/x/crypto/+/v0.3.0:pbkdf2/pbkdf2.go
+    # $ sudo -u postgres psql -d chirpstack_as -c "UPDATE public."user" SET password_hash= 'wrong-way-to-update' WHERE email='admin'"
 
 Application Server
 --------------------
