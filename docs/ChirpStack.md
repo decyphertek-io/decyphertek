@@ -33,8 +33,11 @@ Requirements
     chirpstack_as=> \dt
     chirpstack_as=> select * from "user";
     # Hashing details -  PBKDF2$sha512$100000
-    # Update password via one command - Need to hash password correctly , right is an example. 
-    $ sudo -u postgres psql -d chirpstack_as -c "UPDATE public."user" SET password_hash= 'right' WHERE email='admin'"
+    # Update password via one command - Doesnt Work complex the way they store the password
+    # - https://github.com/brocaar/chirpstack-application-server/blob/master/internal/storage/user.go#L214
+    # "PBKDF2$" + "sha512$" + "1000$" + "base64.salt" + "$" + "base64.hash"
+    # Example Password - PBKDF2$sha512$100000$4u3hL8krvlMIS0KnCYXeMw==$G7c7tuUYq2zSJaUeruvNL/KF30d3TVDORVD56wzvJYmc3muWjoaozH8bHJ7r8zY8dW6Pts2bWyhFfkb/ubQZsA==
+    $ sudo -u postgres psql -d chirpstack_as -c "UPDATE public."user" SET password_hash= 'wrong-way-to-update' WHERE email='admin'"
 
 Application Server
 --------------------
