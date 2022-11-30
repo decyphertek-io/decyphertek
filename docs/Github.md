@@ -53,6 +53,22 @@ IDE Version Control
      # Add folder to workspace
      # Commit and push changes 
 
+Github Pages
+------------
+
+     # Create a github repo
+     /username.github.io
+     $ git clone https://github.com/username/username.github.io
+     $ cd username.github.io
+     $ echo "Hello World" > index.html
+     $ git add --all
+     $ git commit -m "Initial commit"
+     $ git push -u origin main
+     # Optional: Using Jekyll
+     $ gem install bundler jekyll
+     $ jekyll new my-awesome-site
+     $ cd my-awesome-site
+     $ bundle exec jekyll serve
 
 References
 -----------
@@ -62,3 +78,6 @@ References
      https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/sudo-mode
      https://medium.com/@michael.rhema/how-to-use-specific-ssh-keys-for-git-push-4ecf3b31eeb4
      https://gist.github.com/xirixiz/b6b0c6f4917ce17a90e00f9b60566278
+     https://pages.github.com/
+     https://jekyllrb.com/
+     https://jekyllrb.com/docs/liquid/
