@@ -28,6 +28,13 @@ Requirements
     # Test login : password = dbpassword 
     $ psql -h localhost -U chirpstack_as -W chirpstack_as
     $ psql -h localhost -U chirpstack_ns -W chirpstack_ns
+    # Users are stored here:
+    $ psql -h localhost -U chirpstack_as -W chirpstack_as
+    chirpstack_as=> \dt
+    chirpstack_as=> select * from "user";
+    # Hashing details -  PBKDF2$sha512$100000
+    # Update password via one command - Need to hash password correctly , right is an example. 
+    $ sudo -u postgres psql -d chirpstack_as -c "UPDATE public."user" SET password_hash= 'right' WHERE email='admin'"
 
 Application Server
 --------------------
