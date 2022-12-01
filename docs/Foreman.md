@@ -3,7 +3,7 @@ Foreman
 
 Foreman is a lifecycle managment platform that can be used to automate managing physical or virtual servers. 
 
-Install {Centos 8 / Fedora 28+}
+Install {Fedora 28+ / Rocky Linux 9}
 -------------------------------
 
      $ sudo dnf clean all
