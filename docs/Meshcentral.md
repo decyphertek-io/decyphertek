@@ -9,7 +9,11 @@ Install
      $ sudo apt update
      $ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - 
      $ sudo apt-get install -y nodejs 
-     $ sudo npm install -g npm@latest
+     $ mkdir ~/.npm
+     $ npm config set prefix ~/.npm
+     $ export PATH="$PATH:$HOME/.npm/bin"
+     $ source ~/.bashrc
+     $ npm install -g npm@latest
      $ sudo setcap cap_net_bind_service=+ep /usr/bin/node
      $ mkdir /home/$USER/meshcentral/
      $ cd /home/$USER/meshcentral/

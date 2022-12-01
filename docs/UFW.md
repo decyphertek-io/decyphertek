@@ -56,7 +56,7 @@ Troubleshooting
     # on, low, medium , high, or full 
     $ sudo ufw logging on
     $ sudo ufw logging low
-    $ sudo ls /var/log/ufw*;
+    $ sudo ls /var/log/ufw*
     # Read all the logs
     $ sudo less /var/log/ufw* 
     # Search an issue. 
