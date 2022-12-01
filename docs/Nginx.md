@@ -28,6 +28,9 @@ Install
     location / {
         proxy_pass http://localhost:63443;
         proxy_ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection upgrade;
+        proxy_set_header Accept-Encoding gzip;
         }
     }
     $ sudo nginx -t
