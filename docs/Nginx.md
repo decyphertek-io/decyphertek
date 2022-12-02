@@ -119,6 +119,8 @@ Optional: ModSecurity
     SecRule REMOTE_ADDR "^195\.151\.128\.96" "id:987987987987,phase:1,nolog,allow,ctl:ruleEngine=off"
     ## or ###
     SecRule REMOTE_ADDR "@ipMatch 195.151.128.96" "phase:1,id:987987987987,allow,ctl:ruleEngine=off"
+    # Find additonal rules to add
+    $ sudo tail -f /var/log/modsec_audit.log | grep name
 
 References
 ----------
