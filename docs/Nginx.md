@@ -23,10 +23,10 @@ Install
         ssl_session_cache    shared:SSL:1m;
         ssl_session_timeout  5m;
         ssl_protocols        TLSV1.1 TLSV1.2 TLSV1.3;
-        ssl_ciphers  HIGH:!aNULL:!MD5;
+        ssl_ciphers          HIGH:!aNULL:!MD5;
         ssl_prefer_server_ciphers on;
     location / {
-        proxy_pass http://localhost:63443;
+        proxy_pass http://localhost:8080;
         proxy_ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection upgrade;
