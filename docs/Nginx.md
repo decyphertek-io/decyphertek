@@ -62,9 +62,14 @@ Optional: ModSecurity
     $ sudo cp /usr/local/src/nginx/nginx-1.22.1/objs/ngx_http_modsecurity_module.so /etc/nginx/modules/
     $ sudo vim /etc/nginx/nginx.conf
     load_module modules/ngx_http_modsecurity_module.so;
-    http{
-    modsecurity on;
-    modsecurity_rules_file /etc/nginx/modsec/modsec-config.conf;
+    events {
+        worker_connections  1024;
+    }
+
+    http {
+        modsecurity on;
+        modsecurity_rules_file /etc/nginx/modsec/modsec-config.conf;
+        include       /etc/nginx/mime.types;
     $ sudo mkdir /etc/nginx/modsec/
     $ sudo cp /usr/local/src/ModSecurity/modsecurity.conf-recommended /etc/nginx/modsec/modsecurity.conf
     $ sudo vim /etc/nginx/modsec/modsecurity.conf
