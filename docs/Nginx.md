@@ -121,12 +121,10 @@ Optional: ModSecurity
     SecRule REMOTE_ADDR "@ipMatch 195.151.128.96" "phase:1,id:987987987987,allow,ctl:ruleEngine=off"
     # Find additonal rules to add
     $ sudo cat /var/log/modsec_audit.log | grep unique_id
-    # I also found a way to disable the rule entirely , example
+    # I also found a way to disable the rule entirely , example - this rule blocks odoo webstire builder , can re-eanble when site built. 
     $ cd /etc/nginx/modsec/coreruleset-3.3.2/rules
     $ sudo mv REQUEST-941-APPLICATION-ATTACK-XSS.conf REQUEST-941-APPLICATION-ATTACK-XSS.conf.disable
-    # Not sure why OWASP is not smart enough to not block itselfs and unable to differentiate from legitmate traffic
-    # Security is useless without availablity. 
-
+    
 References
 ----------
 
