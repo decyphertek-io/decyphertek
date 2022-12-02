@@ -124,6 +124,8 @@ Optional: ModSecurity
     # I also found a way to disable the rule entirely , example
     $ cd /etc/nginx/modsec/coreruleset-3.3.2/rules
     $ sudo mv REQUEST-941-APPLICATION-ATTACK-XSS.conf REQUEST-941-APPLICATION-ATTACK-XSS.conf.disable
+    # Not sure why OWASP is not smart enough to not block itselfs and unable to differentiate from legitmate traffic
+    # Security is useless without availablity. 
 
 References
 ----------
