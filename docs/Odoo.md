@@ -14,9 +14,10 @@ Install
      $ echo 'deb [signed-by=/usr/share/keyrings/odoo-archive-keyring.gpg] https://nightly.odoo.com/16.0/nightly/deb/ ./' | sudo tee /etc/apt/sources.list.d/odoo.list
      $ sudo apt-get update && sudo apt-get -y install odoo
      $ sudo systemctl status odoo
-     $ sudo vim /etc/odoo/odoo.conf
-     # change admin password to be able to create a database on first login	
+     # First login, set masterpassword , DB name , and user login	
      # http://localhost:8069
+     # Can mod masterpassword latter from here
+     $ sudo vim /etc/odoo/odoo.conf
      # Optional: Setup Nginx reverse proxy. See docs . 
 
 
