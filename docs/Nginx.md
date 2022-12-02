@@ -56,7 +56,7 @@ Optional: ModSecurity
     $ sudo make install
     $ sudo git clone --depth 1 https://github.com/SpiderLabs/ModSecurity-nginx.git /usr/local/src/ModSecurity-nginx/
     $ cd /usr/local/src/nginx/nginx-1.*.*
-    $ sudo apt build-dep nginx && sudo apt install -y uuid-dev
+    $ sudo apt build-dep nginx -y && sudo apt install -y uuid-dev
     $ sudo ./configure --with-compat --add-dynamic-module=/usr/local/src/ModSecurity-nginx
     $ sudo make modules
     $ sudo cp /usr/local/src/nginx/nginx-1.22.1/objs/ngx_http_modsecurity_module.so /etc/nginx/modules/
