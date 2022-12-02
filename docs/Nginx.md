@@ -111,14 +111,14 @@ Optional: ModSecurity
     # Open up a web browser and test to see if the log shows up. 
     $ https://www.yourdomain.com/index.html?exec=/bin/bash
     # Whitelisting an errors regarding legitmate traffic
-    # Currently Getting an error , troubleshooting modesc whitelist issue. 
+    # Id eqauls unique_id = first twelve numbers , 
+    # using id produces error and the full unique id produces an error
+    # adding multiple ips to @ipmatch also procues an error. 
     $ sudo cp /etc/nginx/modsec/coreruleset-3.3.2/rules/REQUEST-900-EXCLUSION-RULES-BEFORE-CRS.conf.example /etc/nginx/modsec/coreruleset-3.3.2/rules/REQUEST-900-EXCLUSION-RULES-BEFORE-CRS.conf
     $ sudo vim /etc/nginx/modsec/coreruleset-3.3.2/rules/REQUEST-900-EXCLUSION-RULES-BEFORE-CRS.conf
-    SecRule REMOTE_ADDR "^195\.151\.128\.96" 
-    "id:1004,phase:1,nolog,allow,ctl:ruleEngine=off"
+    SecRule REMOTE_ADDR "^195\.151\.128\.96" "id:987987987987,phase:1,nolog,allow,ctl:ruleEngine=off"
     ## or ###
-    SecRule REMOTE_ADDR "@ipMatch 127.0.0.1/8, 195.151.0.0/24, 196.159.11.13" 
-    "phase:1,id:1313413,allow,ctl:ruleEngine=off"
+    SecRule REMOTE_ADDR "@ipMatch 195.151.128.96" "phase:1,id:987987987987,allow,ctl:ruleEngine=off"
 
 References
 ----------
