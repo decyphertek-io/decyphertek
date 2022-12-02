@@ -124,6 +124,7 @@ Optional: ModSecurity
     # I also found a way to disable the rule entirely , example - this rule blocks odoo webstire builder , can re-eanble when site built. 
     $ cd /etc/nginx/modsec/coreruleset-3.3.2/rules
     $ sudo mv REQUEST-941-APPLICATION-ATTACK-XSS.conf REQUEST-941-APPLICATION-ATTACK-XSS.conf.disable
+    $ sudo mv REQUEST-949-BLOCKING-EVALUATION.conf REQUEST-949-BLOCKING-EVALUATION.conf.disable
     
 References
 ----------
