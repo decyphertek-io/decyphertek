@@ -6,16 +6,18 @@ Odoo is an open source Ecommerce and business management platform.
 Install
 -------
 
-     $ sudo apt install -y postgresq postgresql-client
-     $ sudo -u postgres createuser -s $USER 
-     $ createdb $USER
-     $ wget -O - https://nightly.odoo.com/odoo.key | suo apt-key add - 
-     $ sudo  echo "deb http://nightly.odoo.com/15.0/nightly/deb/ ./" >> 
-     /etc/apt/sources.list.d/odoo.list 
-     $ sudo apt-get update && apt-get install -y odoo
-     # Setup postgres create another user, required.
-     $ odoo-bin
+     $ sudo apt update
+     $ sudo apt install -y python3-pip  
+     $ sudo -H python3 -m pip install  xlwt num2words wkhtmltopdf
+     $ sudo apt install postgresql -y
+     $ wget -q -O - https://nightly.odoo.com/odoo.key | sudo gpg --dearmor -o /usr/share/keyrings/odoo-archive-keyring.gpg
+     $ echo 'deb [signed-by=/usr/share/keyrings/odoo-archive-keyring.gpg] https://nightly.odoo.com/16.0/nightly/deb/ ./' | sudo tee /etc/apt/sources.list.d/odoo.list
+     $ sudo apt-get update && sudo apt-get -y install odoo
+     $ sudo systemctl status odoo
+     $ sudo vim /etc/odoo/odoo.conf
+     # change admin password to be able to create a database on first login	
      # http://localhost:8069
+     # Optional: Setup Nginx reverse proxy. See docs . 
 
 
 References
