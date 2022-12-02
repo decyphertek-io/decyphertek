@@ -120,7 +120,10 @@ Optional: ModSecurity
     ## or ###
     SecRule REMOTE_ADDR "@ipMatch 195.151.128.96" "phase:1,id:987987987987,allow,ctl:ruleEngine=off"
     # Find additonal rules to add
-    $ sudo tail -f /var/log/modsec_audit.log | grep name
+    $ sudo cat /var/log/modsec_audit.log | grep unique_id
+    # I also found a way to disable the rule entirely , example
+    $ cd /etc/nginx/modsec/coreruleset-3.3.2/rules
+    $ sudo mv REQUEST-941-APPLICATION-ATTACK-XSS.conf REQUEST-941-APPLICATION-ATTACK-XSS.conf.disable
 
 References
 ----------
