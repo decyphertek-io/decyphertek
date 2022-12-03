@@ -7,6 +7,7 @@ Install
 --------
 
      $ sudo apt update
+     $ sudo su -c "curl -fsSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -"
      $ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - 
      $ sudo apt-get install -y nodejs 
      $ mkdir ~/.npm
