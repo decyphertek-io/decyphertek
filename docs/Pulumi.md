@@ -14,6 +14,9 @@ Install
     $ export AWS_ACCESS_KEY_ID=<YOUR_ACCESS_KEY_ID> 
     $ export AWS_SECRET_ACCESS_KEY=<YOUR_SECRET_ACCESS_KEY>
     $ mkdir pulumi && cd pulumi
+    # You can run Pulumi Locally and avoid the complex setup
+    $ pulumi login --local
+    # OR login to Pulumi if you have a complex team to manage
     $ pulumi new aws-yaml
     # Create a login, CLI is free , no worries.
     # Create Project - Name . Description, and Stack / Config Saved.
