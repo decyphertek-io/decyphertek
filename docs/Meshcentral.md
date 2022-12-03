@@ -18,13 +18,8 @@ Install
      $ sudo setcap cap_net_bind_service=+ep /usr/bin/node
      $ mkdir meshcentral && cd meshcentral
      $ npm install meshcentral
-     $ sudo npm install -g pm2
-     $ pm2 start /home/$USER/meshcentral/node_modules/meshcentral
-     $ pm2 save 
-     $ pm2 startup
-     # Notice output command, run from terminal, then reboot. 
-     $ sudo reboot
-     $ sudo systemctl status pm2-$USER
+     $ node /home/$USER/meshcentral/node_modules/meshcentral --install
+     $ sudo systemctl status meshcentral
      # https://ip-of-server
      # Login > Create a new account 
      > Add a device Group > Download agent
