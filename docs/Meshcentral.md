@@ -29,6 +29,7 @@ Install
      # Login > Create a new account 
      > Add a device Group > Download agent
      # Linux - run generated script as root.
+     $ sudo systemctl status meshagent
      # Verify the agent checks into the console
 
      # Ports & Protocols
