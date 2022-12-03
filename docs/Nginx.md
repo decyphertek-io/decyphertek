@@ -31,6 +31,7 @@ Install
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection upgrade;
         proxy_set_header Accept-Encoding gzip;
+        proxy_set_header X-Forwarded-Host $host:$server_port;
         }
     }
     $ sudo nginx -t
