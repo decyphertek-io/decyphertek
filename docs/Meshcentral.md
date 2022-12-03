@@ -26,6 +26,9 @@ Install
      # Linux - run generated script as root.
      $ sudo systemctl status meshagent
      # Verify the agent checks into the console
+     # Trouble shooting , stop meshcentral and run the following
+     $ node /home/$USER/meshcentral/node_modules/meshcentral --debug web,webrequest,agent,cert
+     # SHould see all outputs
 
      # Ports & Protocols
      # Meshagent - Linux listeners
