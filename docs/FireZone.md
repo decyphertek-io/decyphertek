@@ -28,6 +28,9 @@ Docker Install - Fails currently
 Firewall 
 --------
 
+    # Make sure to add an Egress Rule for your VPN users
+    > Login > Rules > Set parametes > Add
+    # Make sure that you allow inbound traffic 51820/udp ( Security Group AWS )
     $ sudo ufw disable
     $ sudo apt install nftables
     $ sudo su -c "curl 'https://raw.githubusercontent.com/decyphertek-io/configs/main/nftables.conf' >> /etc/nftables.conf"
@@ -89,6 +92,9 @@ Enable MFA
 TroubleShoot
 ------------
 
+    # Make sure to add an Egress Rule for your VPN users
+    > Login > Rules > Set parametes > Add
+    # Make sure that you allow inbound traffic 51280/udp
     $ sudo firezone-ctl help
     $ sudo firezone-ctl tail 
     # UFW Firewall - VPN Traffic no passing
