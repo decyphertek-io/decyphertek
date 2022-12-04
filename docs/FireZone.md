@@ -9,8 +9,10 @@ Install - Ubuntu 22.04 / Debian 11
     $ sudo apt update && sudo apt upgrade
     $ curl -1sLf 'https://dl.cloudsmith.io/public/firezone/firezone/setup.deb.sh' | sudo -E bash
     $ sudo apt install -y firezone
+    # Required to get the server working at first boot.
     $ sudo firezone-ctl reconfigure
     $ sudo firezone-ctl restart
+    # This will print out a random password for firezone@localhost
     $ sudo firezone-ctl create-or-reset-admin
     access public IP - https://ip-of-server
     Email: firezone@localhost
