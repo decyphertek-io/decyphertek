@@ -56,19 +56,26 @@ IDE Version Control
 Github Pages
 ------------
 
+
      # Create a github repo
      /username.github.io
+     # Set repo pages to include docs/
+     > login > repo > Settings > Pages > Branch > set folder to docs/ 
      $ git clone https://github.com/username/username.github.io
      $ cd username.github.io
-     $ echo "Hello World" > index.html
-     $ git add --all
-     $ git commit -m "Initial commit"
-     $ git push -u origin main
-     # Optional: Using Jekyll
-     $ gem install bundler jekyll
-     $ jekyll new my-awesome-site
-     $ cd my-awesome-site
-     $ bundle exec jekyll serve
+     # Find a template , Can start here. https://pages.github.com/themes/ - Example
+     $ git clone https://github.com/pages-themes/architect.git
+     $ mv architect/ docs/
+     $ cd docs/
+     $ sudo apt install jekyll ruby-dev
+     $ vim _config.yml
+     # update parameters to match your website.
+     $ bundle install
+     $ git add .
+     $ git commit -m "commit-messsage"
+     $ git push 
+     # https://username.github.io
+     # Continue to mod and make changes to the site. 
 
 References
 -----------
