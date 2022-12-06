@@ -67,9 +67,11 @@ Github Pages
      $ git clone https://github.com/pages-themes/architect.git
      $ mv architect/ docs/
      $ cd docs/
+     # Only install if you want to test out locally. 
      $ sudo apt install jekyll ruby-dev
      $ vim _config.yml
      # update parameters to match your website.
+     # Only run if you want to test out locally. 
      $ bundle install
      $ git add .
      $ git commit -m "commit-messsage"
