@@ -69,8 +69,15 @@ Bluetooth
      # PulseAudio Option 
      $ sudo apt install -y blueman bluez* pulseaudio pulseaudio-module-bluetooth pulseaudio-equalizer xfce4-pulseaudio-plugin ubuntu-restricted-extras linux-firmware firmware-sof-signed
      $ sudo systemctl daemon-reload
+     $ sudo systemctl stop bluetooth. service
+     $ sudo systemctl unmask bluetooth.service
+     $ sudo systemctl start bluetooth.service
      $ sudo systemctl enable bluetooth
-     $ sudo systemctl start bluetooth
+     $ sudo systemctl mask bluetooth.service 
+     $ sudo rmmod btusb
+     $ sudo modprobe btusb
+     $ sudo rfkill unblock all
+     # Purge Pipewire Conflicts , if any with pulsewire
      $ sudo apt purge -y pipewire* libspa-0.2-bluetooth
      $ sudo apt autoremove
      # reboot system
