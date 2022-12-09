@@ -63,7 +63,7 @@ Github Pages
      > login > repo > Settings > Pages > Branch > set folder to docs/ 
      $ git clone https://github.com/username/username.github.io
      $ cd username.github.io
-     # Find a template , Can start here. https://pages.github.com/themes/ - Example
+     # Find a template , Can start here. https://pages.github.com/themes/ or https://jekyll-themes.com/free/ - Example
      $ git clone https://github.com/pages-themes/architect.git
      $ mv architect/ docs/
      $ cd docs/
