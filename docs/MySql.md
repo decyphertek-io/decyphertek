@@ -80,9 +80,10 @@ Manage Database
 ---------------
 
      * debeaver-ce
-     * CloudBeaver-cw
+     * CloudBeaver
      * Beekeper Studio
      * myPHPadmin
+     * pgAdmin
      * mysql editor
 
 
