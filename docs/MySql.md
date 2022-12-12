@@ -53,8 +53,8 @@ Mysql Queries
 -------------
 
     mysql> USE my_table;
-    mysql>  SELECT * FROM my_table WHERE product = 'Electronics';
-    mysql>  SELECT * FROM my_table WHERE product = 'Electronics' AND price < 100;
+    mysql> SELECT * FROM my_table WHERE product = 'Electronics';
+    mysql> SELECT * FROM my_table WHERE product = 'Electronics' AND price < 100;
     mysql> SELECT * FROM my_table WHERE price < 100;
     mysql> SELECT * FROM my_table WHERE rrice <= 0 OR price > 100; 
 
