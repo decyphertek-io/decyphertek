@@ -64,7 +64,7 @@ UFW host Firewall
     $ sudo ufw allow 445/tcp
     $ sudo ufw allow 464/tcp
     # If you install additonal modules, need to allow them as well.
-    # If you install the firewall , it disable ufw and allows all traffic. 
+    # If you install the firewall , it disables ufw and allows all traffic. 
     
 References
 ----------
