@@ -24,6 +24,7 @@ Basic Commands
     $ aws ec2 describe-instances --query 'Reservations[].Instances[].[State.Name, InstanceId, ImageId, InstanceType, PublicIpAddress, SubnetId, VpcId,Tags[?Key==`Name`]| [0].Value]' 
     # List Security Groups
     $ aws ec2 describe-security-groups --query "SecurityGroups[*].{Name:GroupName,ID:GroupId}"
+    $ aws ec2 describe-security-group-rules --filter Name="group-id",Values="sg-1234567890abcdef0"
     # Add an inbound rule to security group (cidr range optional)
     $ aws ec2 authorize-security-group-ingress \
     --group-id sg-1234567890abcdef0 \
