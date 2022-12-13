@@ -49,7 +49,23 @@ Ports & Protocols
     49153/tcp dynamic applications
     49154/tcp dynamic applications
 
+UFW host Firewall
+-----------------
 
+    # Basic configuration to get Active Directory working
+    # Please dont forget about Security Groups - AWS or any netowrk firewalls , VPCs, Subnets, Etc. 
+    $ sudo ufw allow ssh
+    $ sudo ufw enable
+    $ sudo ufw status numbered
+    $ sudo ufw allow 8443/tcp
+    $ sudo ufw allow 88/tcp
+    $ sudo ufw allow 135/tcp
+    $ sudo ufw allow 139/tcp
+    $ sudo ufw allow 445/tcp
+    $ sudo ufw allow 464/tcp
+    # If you install additonal modules, need to allow them as well.
+    # If you install the firewall , it disable ufw and allows all traffic. 
+    
 References
 ----------
 
