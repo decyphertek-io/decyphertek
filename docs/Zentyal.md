@@ -1,0 +1,59 @@
+Zentyal
+=======
+
+Linux Active Directory alternative and can act as a secondary domain controller. It has many mdoules 
+to choose from , including AD , DNS , Email , Firewall, Jabber, and Intrusion Preventation System. 
+
+Install 
+--------
+
+    # Zentyal Development Edition 7.0.5
+    $ sudo vim /etc/apt/sources.list.d/zentyal.list
+    $ deb http://packages.zentyal.org/zentyal 7.0 main extra
+    $ wget -q http://keys.zentyal.org/zentyal-7.0-packages-org.asc -O- | sudo apt-key add -
+    $ sudo apt update && sudo apt install zentyal
+    # Select port 8443 
+    $ sudo passwd $USER
+    # https://ip-of-server:8443
+    Follow setup instructions
+    # If you want select Intrusion Prevention system, you need the following repo. 
+    $ sudo add-apt-repository ppa:oisf/suricata-stable && sudo apt update
+    # The save changes screen when done doesnt change to another screen, it stops at  Saving webadmin module
+    # Open up a new window and manually save, when 2/2 100% , then refresh the page.  The original page will reflect the save. 
+    $ sudo reboot
+
+Ports & Protocols
+-----------------
+    
+    # The following port list is an example if you install every module that Zentyal has, from firewall, to email, to Jabber. 
+    # Make sure to allow ports and protocols via UFW or if you installed the firewall , via that. 
+    # If you install Zentyal Firewall , it disables UFW . There disables firewall security , until you set it on Zentyal. Nmap scan confirms. 
+    21/tcp ftp
+    22/tcp ssh
+    25/tcp smtp
+    88/tcp kerberos-sec # Kerberos authentication
+    110/tcp pop3
+    135/tcp msrpc # domain controllers-to-domain controller and client to domain controller operations.
+    139/tcp netbios-ssn # File Replication Service between domain controllers.
+    143/tcp imap
+    443/tcp https
+    445/tcp microsoft-ds # File Replication Service
+    464/tcp kpasswd5 # Kerberos Password Change
+    465/tcp smtps
+    587/tcp submission
+    993/tcp imaps
+    995/tcp pop3s
+    5222/tcp xmpp-client # Jabber
+    8443/tcp https-alt
+    49152/tcp dynamic applications
+    49153/tcp dynamic applications
+    49154/tcp dynamic applications
+
+
+References
+----------
+
+    https://doc.zentyal.org/en/installation.html#installation-on-top-of-ubuntu-20-04-lts-server-or-desktop
+    https://wiki.zentyal.org/wiki/Installation_Guide
+    https://doc.zentyal.org/en/
+    https://learn.microsoft.com/en-us/answers/questions/268557/active-directory-domain-controler-to-client-requir.html
