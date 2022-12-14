@@ -68,6 +68,11 @@ UFW host Firewall
     # If you install additonal modules, need to allow them as well.
     # If you install the firewall , it disables ufw and allows all traffic. 
 
+How to Add Linux 
+---------------
+
+    https://wiki.zentyal.org/wiki/Authenticating_Linux_client_against_Samba
+
 References
 ----------
 
