@@ -75,7 +75,7 @@ Join a Linux System
     # Find the Private IP of the Zentyal AD server via ifconfig or ip addr
     $ sudo vim /etc/hosts
     172.31.27.20 ad01.decyphertek.com
-    $ sudo apt install sssd-ad sssd-tools realmd adcli
+    $ sudo apt install sssd sssd-ad sssd-tools libnss-sss libpam-sss samba-common-bin realmd adcli
     $ sudo realm -v discover ad01.decyphertek.com
     # Server Side Zentyal, you need to set Administrator password or create a new admin. 
     # Login > Users & Computers > Users > Administrator > set names > Password > Change > Save Top Right
