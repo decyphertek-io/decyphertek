@@ -86,6 +86,11 @@ Join a Linux System
     $ sudo pam-auth-update --enable mkhomedir
     # If you want Ldap users to have system accounts, enable PAM.
     # Login > users and Computers > LDAP Settings > PAM Settings > Enable PAM
+    # Setting Allowed groups from SSSD , add to end of the config. 
+    $ sudo /etc/sssd/sssd.conf
+    # Simple Allow groups
+    simple_allow_groups = groupname1 , groupname2 
+
     
 References
 ----------
