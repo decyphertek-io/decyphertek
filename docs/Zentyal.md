@@ -68,30 +68,6 @@ UFW host Firewall
     # If you install additonal modules, need to allow them as well.
     # If you install the firewall , it disables ufw and allows all traffic. 
 
-Join a Linux System
---------------------
-
-    # Add AD to /etc/hosts so it can be found by the linux system
-    # There are other ways to achive this, the example is a simple solution.
-    # Client side, the Linux server you want to connect to Zentyal AD.
-    # Find the Private IP of the Zentyal AD server via ifconfig or ip addr
-    $ sudo vim /etc/hosts
-    172.31.27.20 ad01.decyphertek
-    $ sudo apt install sssd sssd-ad sssd-tools libnss-sss libpam-sss samba-common-bin realmd adcli
-    $ sudo realm -v discover ad01.decyphertek
-    # Server Side Zentyal, you need to set Administrator password or create a new admin. 
-    # Login > Users & Computers > Users > Administrator > set names > Password > Change > Save Top Right
-    $ sudo realm join -v ad01.decyphertek -U AdminName
-    Password for Administrator: 
-    $ sudo pam-auth-update --enable mkhomedir
-    # If you want Ldap users to have system accounts, enable PAM.
-    # Login > users and Computers > LDAP Settings > PAM Settings > Enable PAM
-    # Setting Allowed groups from SSSD , add to end of the config. 
-    $ sudo /etc/sssd/sssd.conf
-    # Simple Allow groups
-    simple_allow_groups = groupname1 , groupname2 
-  
-
 References
 ----------
 
