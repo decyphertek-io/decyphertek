@@ -72,6 +72,7 @@ How to Add Linux
 ---------------
 
     https://wiki.zentyal.org/wiki/Authenticating_Linux_client_against_Samba
+    https://forum.zentyal.org/index.php/topic,31662.0.html
 
 References
 ----------
