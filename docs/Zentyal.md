@@ -77,9 +77,13 @@ Join a Linux System
     172.31.27.20 ad01.decyphertek.com
     $ sudo apt install sssd-ad sssd-tools realmd adcli
     $ sudo realm -v discover ad01.decyphertek.com
-    $ sudo realm join -v ad01.decyphertek.com
+    # Server Side Zentyal, you need to set Administrator password or create a new admin. 
+    # Login > Users & Computers > Users > Administrator > set names > Password > Change > Save Top Right
+    $ sudo realm join -v ad01.decyphertek.com -U AdminName
     Password for Administrator: 
     $ sudo pam-auth-update --enable mkhomedir
+    # If you want Ldap users to have system accounts, enable PAM.
+    # Login > users and Computers > LDAP Settings > PAM Settings > Enable PAM
     
 References
 ----------
