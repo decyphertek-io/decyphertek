@@ -65,6 +65,21 @@ UFW host Firewall
     $ sudo ufw allow 464/tcp
     # If you install additonal modules, need to allow them as well.
     # If you install the firewall , it disables ufw and allows all traffic. 
+
+Join a Linux System
+--------------------
+
+    # Add AD to /etc/hosts so it can be found by the linux system
+    # There are other ways to achive this, the example is a simple solution.
+    # Client side, the Linux server you want to connect to Zentyal AD.
+    # Find the Private IP of the Zentyal AD server via ifconfig or ip addr
+    $ sudo vim /etc/hosts
+    172.31.27.20 ad01.decyphertek.com
+    $ sudo apt install sssd-ad sssd-tools realmd adcli
+    $ sudo realm -v discover ad01.decyphertek.com
+    $ sudo realm join -v ad01.decyphertek.com
+    Password for Administrator: 
+    $ sudo pam-auth-update --enable mkhomedir
     
 References
 ----------
