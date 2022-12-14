@@ -36,6 +36,7 @@ Ports & Protocols
     135/tcp msrpc # domain controllers-to-domain controller and client to domain controller operations.
     139/tcp netbios-ssn # File Replication Service between domain controllers.
     143/tcp imap
+    389/tcp LDAP
     443/tcp https
     445/tcp microsoft-ds # File Replication Service
     464/tcp kpasswd5 # Kerberos Password Change
@@ -63,6 +64,7 @@ UFW host Firewall
     $ sudo ufw allow 139/tcp
     $ sudo ufw allow 445/tcp
     $ sudo ufw allow 464/tcp
+    $ sudo ufw allow 389/tcp 
     # If you install additonal modules, need to allow them as well.
     # If you install the firewall , it disables ufw and allows all traffic. 
 
