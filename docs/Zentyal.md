@@ -73,15 +73,16 @@ How to Add Linux
 
     # How to find your AD name
     # Login > Domain > Realm > ad01.decyphertek
+    # Set the Administrator Password
+    # Login > Users & Computers > Users > Adminotrator > Set password.
     # Server side, find the private IP
     $ ifconfig
     # On the client side , set hosts to reference AD IP
     $ sudo vim /etc/hosts
     172.31.27.20 ad01.adminotaur
-    # Follow the instructions, remove .LAN , no applicable here. 
-    https://wiki.zentyal.org/wiki/Authenticating_Linux_client_against_Samba
-    https://forum.zentyal.org/index.php/topic,31662.0.html
+    # Follow instructions
     https://ubuntu.com/server/docs/service-sssd-ad
+    https://www.server-world.info/en/note?os=Ubuntu_22.04&p=realmd
 
 References
 ----------
