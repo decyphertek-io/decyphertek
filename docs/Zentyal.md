@@ -77,9 +77,9 @@ How to Add Linux
     # Login > Users & Computers > Users > Adminotrator > Set password.
     # Server side, find the private IP
     $ ifconfig
-    # On the client side , set hosts to reference AD IP
+    # On the client side , set hosts to reference AD IP - EXAMPLE
     $ sudo vim /etc/hosts
-    172.31.27.20 ad01.adminotaur
+    172.31.27.20 ad01.decyphertek
     # Follow instructions
     https://ubuntu.com/server/docs/service-sssd-ad
     https://www.server-world.info/en/note?os=Ubuntu_22.04&p=realmd
