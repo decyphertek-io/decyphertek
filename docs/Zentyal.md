@@ -83,7 +83,7 @@ How to Add Linux
     # Install required software to join to AD.
     $ sudo apt install -y sssd sssd-ad sssd-tools realmd libnss-sss libpam-sss adcli samba-common-bin
     $ sudo realm -v discover ad01.decyphertek
-    $ sudo join ad01.decyphertek
+    $ sudo join -v ad01.decyphertek
     
 References
 ----------
