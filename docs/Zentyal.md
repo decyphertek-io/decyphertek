@@ -71,6 +71,8 @@ UFW host Firewall
 How to Add Linux 
 ---------------
 
+    # There is a bug here opened up a github issue
+    # https://github.com/zentyal/zentyal/issues/2115
     # How to find your AD name
     # Login > Domain > Realm > ad01.decyphertek
     # Set the Administrator Password
@@ -85,8 +87,10 @@ How to Add Linux
     $ sudo realm -v discover ad01.decyphertek
     $ sudo join -v ad01.decyphertek
     $ sudo pam-auth-update --enable mkhomedir
-    $ sudo apt install krb5-user smbclient
-    
+    # Optional: If you want to utilize Kerberos Tickets.
+    $ sudo apt install krb5-user smbclient cifs-utils winbind
+    $ smbclient -L ad01.decyphertek
+
 References
 ----------
 
