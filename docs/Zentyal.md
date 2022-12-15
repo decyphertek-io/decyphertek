@@ -71,6 +71,14 @@ UFW host Firewall
 How to Add Linux 
 ---------------
 
+    # How to find your AD name
+    # Login > Domain > Realm > ad01.decyphertek
+    # Server side, find the private IP
+    $ ifconfig
+    # On the client side , set hosts to reference AD IP
+    $ sudo vim /etc/hosts
+    172.31.27.20 ad01.adminotaur
+    # Follow the instructions, remove .LAN , no applicable here. 
     https://wiki.zentyal.org/wiki/Authenticating_Linux_client_against_Samba
     https://forum.zentyal.org/index.php/topic,31662.0.html
     https://ubuntu.com/server/docs/service-sssd-ad
