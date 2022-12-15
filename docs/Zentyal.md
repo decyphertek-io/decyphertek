@@ -81,9 +81,11 @@ How to Add Linux
     $ sudo vim /etc/hosts
     172.31.27.20 ad01.decyphertek
     # Install required software to join to AD.
-    $ sudo apt install -y sssd sssd-ad sssd-tools realmd libnss-sss libpam-sss adcli samba-common-bin
+    $ sudo apt install -y sssd sssd-ad sssd-tools realmd libnss-sss libpam-sss adcli samba-common-bin 
     $ sudo realm -v discover ad01.decyphertek
     $ sudo join -v ad01.decyphertek
+    $ sudo pam-auth-update --enable mkhomedir
+    $ sudo apt install krb5-user smbclient
     
 References
 ----------
@@ -94,3 +96,4 @@ References
     https://learn.microsoft.com/en-us/answers/questions/268557/active-directory-domain-controler-to-client-requir.html
      https://ubuntu.com/server/docs/service-sssd-ad
     https://www.server-world.info/en/note?os=Ubuntu_22.04&p=realmd
+    https://ubuntu.com/server/docs/service-kerberos
