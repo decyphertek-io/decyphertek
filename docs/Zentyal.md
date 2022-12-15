@@ -80,10 +80,11 @@ How to Add Linux
     # On the client side , set hosts to reference AD IP - EXAMPLE
     $ sudo vim /etc/hosts
     172.31.27.20 ad01.decyphertek
-    # Follow instructions
-    https://ubuntu.com/server/docs/service-sssd-ad
-    https://www.server-world.info/en/note?os=Ubuntu_22.04&p=realmd
-
+    # Install required software to join to AD.
+    $ sudo apt install -y sssd sssd-ad sssd-tools realmd libnss-sss libpam-sss adcli samba-common-bin
+    $ sudo realm -v discover ad01.decyphertek
+    $ sudo join ad01.decyphertek
+    
 References
 ----------
 
@@ -91,3 +92,5 @@ References
     https://wiki.zentyal.org/wiki/Installation_Guide
     https://doc.zentyal.org/en/
     https://learn.microsoft.com/en-us/answers/questions/268557/active-directory-domain-controler-to-client-requir.html
+     https://ubuntu.com/server/docs/service-sssd-ad
+    https://www.server-world.info/en/note?os=Ubuntu_22.04&p=realmd
