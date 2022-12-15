@@ -74,7 +74,7 @@ How to Add Linux
     # How to find your AD name
     # Login > Domain > Realm > ad01.decyphertek
     # Set the Administrator Password
-    # Login > Users & Computers > Users > Adminotrator > Set password.
+    # Login > Users & Computers > Manage > Users > Adminotrator > Set password.
     # Server side, find the private IP
     $ ifconfig
     # On the client side , set hosts to reference AD IP - EXAMPLE
