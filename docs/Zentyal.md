@@ -94,6 +94,6 @@ References
     https://wiki.zentyal.org/wiki/Installation_Guide
     https://doc.zentyal.org/en/
     https://learn.microsoft.com/en-us/answers/questions/268557/active-directory-domain-controler-to-client-requir.html
-     https://ubuntu.com/server/docs/service-sssd-ad
+    https://ubuntu.com/server/docs/service-sssd-ad
     https://www.server-world.info/en/note?os=Ubuntu_22.04&p=realmd
     https://ubuntu.com/server/docs/service-kerberos
