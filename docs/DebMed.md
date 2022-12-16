@@ -4,6 +4,7 @@ towards the medical industry.
 Install
 -------
 
+    # Debian 11 Server
     $ sudo apt update
     $ sudo apt install med-all task-xfce-desktop xrdp
     $ sudo systemctl get-default
