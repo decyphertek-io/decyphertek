@@ -10,12 +10,19 @@ Install
     $ sudo systemctl get-default
     $ sudo systemctl set-default graphical.target
     # Use the true color setting , if avaialble or issues aris with Reminna or RDP toolset. 
-    $ sudo vim sudo vim /etc/polkit-1/localauthority/50-local.d/color.pkla
+    $ sudo vim /etc/polkit-1/localauthority/50-local.d/allow-color.pkla
     [Allow Colord all Users]
     Identity=unix-user:*
     Action=org.freedesktop.color-manager.create-device;org.freedesktop.color-manager.create-profile;org.freedesktop.color-manager.delete-device;org.freedesktop.color-manager.delete-profile;org.freedesktop.color-manager.modify-device;org.freedesktop.color-manager.modify-profile
     ResultAny=no
     ResultInactive=no
+    ResultActive=yes
+    $ sudo vim /etc/polkit-1/localauthority/50-local.d/update-color.pkla
+    [Allow Package Management all Users]
+    Identity=unix-user:*
+    Action=org.freedesktop.packagekit.system-sources-refresh
+    ResultAny=yes
+    ResultInactive=yes
     ResultActive=yes
     # Need to have a passwd set to be able to RDP into system
     $ sudo passwd $USER
