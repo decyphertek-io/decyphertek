@@ -9,6 +9,7 @@ Install
     $ sudo apt install med-all task-xfce-desktop xrdp
     $ sudo systemctl get-default
     $ sudo systemctl set-default graphical.target
+    # Use the true color setting , if avaialble or issues aris with Reminna or RDP toolset. 
     $ sudo vim sudo vim /etc/polkit-1/localauthority/50-local.d/color.pkla
     [Allow Colord all Users]
     Identity=unix-user:*
