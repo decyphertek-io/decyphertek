@@ -9,7 +9,8 @@ Install
     $ sudo apt install med-all task-xfce-desktop xrdp
     $ sudo systemctl get-default
     $ sudo systemctl set-default graphical.target
-    # Adjust RDP color settings and resolution settings if needed via your chosen RDP application. 
+    # Adjust RDP color settings and resolution settings if needed via your chosen RDP application.
+    # The color quality setting can slow down or speed up the RDP connection. 
     $ sudo vim /etc/polkit-1/localauthority/50-local.d/allow-color.pkla
     [Allow Colord all Users]
     Identity=unix-user:*
