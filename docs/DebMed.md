@@ -30,7 +30,7 @@ Install
     # Allow RDP access to firewall and Security group
     $ sudo ufw allow 3389/tcp 
     $ sudo reboot
-    # Use Mobaxterm , Reminna , or Whatever Mac uses to RDP. 
+    # Use Mobaxterm , Remmina , or Royal TS
 
 References
 ----------
