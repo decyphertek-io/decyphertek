@@ -2,7 +2,7 @@ LEMP Stack
 ==========
 
 LEMP Stack stands for Linux , Nginx , Mysql, and Php. The instructions here go further
-and add myphpadmin, composer and on the nginx docs page , modsecuirty waf. 
+and add myphpadmin, composer and on the nginx docs page , Modsecurity WAF. 
 
 Install
 -------
