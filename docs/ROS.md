@@ -10,6 +10,7 @@ Set Locale
      $ sudo locale-gen en_US en_US.UTF-8
      $ sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
      $ export LANG=en_US.UTF-8
+     $ locale
 
 Install
 -------
@@ -18,24 +19,19 @@ Install
      $ sudo add-apt-repository universe
      $ sudo apt update && sudo apt install curl gnupg lsb-release
      $ sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
-     $ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(source 
-     /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
-     $ sudo apt update
-     $ sudo apt upgrade
-     $ sudo apt install ros-galactic-desktop
-     <OR>
-     $ sudo apt install ros-galactic-ros-base
-     $ source /opt/ros/galactic/setup.bash
+     $ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+     $ sudo apt update && sudo apt upgrade
+     $ sudo apt install ros-humble-desktop ros-humble-ros-base ros-dev-tools 
 
 Test
 ----
 
-     $ source /opt/ros/galactic/setup.bash
+     $ source /opt/ros/humble/setup.bash
      $ ros2 run demo_nodes_cpp talker
      In another terminal source the setup file and then run a Python listener:
-     $ source /opt/ros/galactic/setup.bash
+     $ source /opt/ros/humble/setup.bash
      $ ros2 run demo_nodes_py listener
-
+    
 Notes
 -----
 
@@ -49,12 +45,13 @@ Notes
 Optional: Uninstall
 -------------------
 
-     $ sudo apt remove ~nros-galactic-* && sudo apt autoremove
+     $ sudo apt remove ~nros-humble-* && sudo apt autoremove
      $ sudo rm /etc/apt/sources.list.d/ros2.list
+     $ sudo apt autoremove && sudo apt autoclean
   
   
 References
 ----------
 
-     https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html
+     https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html
 
