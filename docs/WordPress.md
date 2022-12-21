@@ -27,9 +27,10 @@ Install
             log_not_found off;
         }
         . . .
-}
-    $ sudo nano /etc/nginx/sites-available/wordpress
+    }
     
+    $ sudo nano /etc/nginx/sites-available/wordpress
+
     server {
         . . .
         location / {
