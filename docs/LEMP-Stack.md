@@ -11,7 +11,6 @@ Install
     # See Decyphertek - nginx docs how how to install nginx with Modsecurity WAF. 
     # Install mysql - See Decyphertek - mysql docs on how to manage mysql 
     $ sudo apt install mysql-server
-    $ sudo mysql_secure_installation
     $ sudo mysql
     mysql>  exit
     # Install PHP
