@@ -20,6 +20,8 @@ Install
     Dec 21 08:15:19 decyphertek authelia[33039]: time="2022-12-21T08:15:19Z" level=fatal msg="Can't continue due to the errors loading the configuration"
     # Work in progress, please reference the docs to complete the configs. 
     # Getting Started - https://www.authelia.com/integration/prologue/get-started/
+    # Authelia Config Example - https://gist.github.com/userdocs/7634b8a57e803e378b09c18225edd446
+    <script src="https://gist.github.com/userdocs/7634b8a57e803e378b09c18225edd446.js"></script>
     $ sudo systemctl enable authelia
     $ sudo systemctl start authelia
     $ sudo systemctl status authelia
