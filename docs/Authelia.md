@@ -20,6 +20,7 @@ Install
     level=fatal msg="Can't continue due to the errors loading the configuration"
     # Work in progress, please reference the docs to complete the configs. 
     # Getting Started - https://www.authelia.com/integration/prologue/get-started/
+    # Authelia Configuration Template - https://github.com/authelia/authelia/blob/master/config.template.yml
     # Authelia Config Example - https://gist.github.com/userdocs/7634b8a57e803e378b09c18225edd446
     $ sudo systemctl enable authelia
     $ sudo systemctl start authelia
