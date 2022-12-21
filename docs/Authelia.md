@@ -12,16 +12,15 @@ Install
     $ sudo apt-get update && sudo apt-get install authelia=4.37.4-1
     # Need to configure the system or it will not load properly
     # Example errors
-    Dec 21 08:15:19 decyphertek authelia[33039]: time="2022-12-21T08:15:19Z" level=error msg="Configuration: authentication_backend: you must ensure either the 'file' or 'ldap'>
-    Dec 21 08:15:19 decyphertek authelia[33039]: time="2022-12-21T08:15:19Z" level=error msg="Configuration: access control: 'default_policy' option 'deny' is invalid: when no >
-    Dec 21 08:15:19 decyphertek authelia[33039]: time="2022-12-21T08:15:19Z" level=error msg="Configuration: storage: configuration for a 'local', 'mysql' or 'postgres' databas>
-    Dec 21 08:15:19 decyphertek authelia[33039]: time="2022-12-21T08:15:19Z" level=error msg="Configuration: storage: option 'encryption_key' is required"
-    Dec 21 08:15:19 decyphertek authelia[33039]: time="2022-12-21T08:15:19Z" level=error msg="Configuration: notifier: you must ensure either the 'smtp' or 'filesystem' notifie>
-    Dec 21 08:15:19 decyphertek authelia[33039]: time="2022-12-21T08:15:19Z" level=fatal msg="Can't continue due to the errors loading the configuration"
+    level=error msg="Configuration: authentication_backend: you must ensure either the 'file' or 'ldap'>
+    level=error msg="Configuration: access control: 'default_policy' option 'deny' is invalid: when no >
+    level=error msg="Configuration: storage: configuration for a 'local', 'mysql' or 'postgres' databas>
+    level=error msg="Configuration: storage: option 'encryption_key' is required"
+    level=error msg="Configuration: notifier: you must ensure either the 'smtp' or 'filesystem' notifie>
+    level=fatal msg="Can't continue due to the errors loading the configuration"
     # Work in progress, please reference the docs to complete the configs. 
     # Getting Started - https://www.authelia.com/integration/prologue/get-started/
     # Authelia Config Example - https://gist.github.com/userdocs/7634b8a57e803e378b09c18225edd446
-    <script src="https://gist.github.com/userdocs/7634b8a57e803e378b09c18225edd446.js"></script>
     $ sudo systemctl enable authelia
     $ sudo systemctl start authelia
     $ sudo systemctl status authelia
