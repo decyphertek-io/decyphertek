@@ -1,7 +1,7 @@
 Authelia
 ========
 
-Open Source Web Auth , Way better than Keycloak. This is awesome. Can add as a security feature, to secure those servers that do not comply with AWS. 
+"Authelia is a 2FA & SSO authentication server which is dedicated to the security of applications and users. It can be considered an extension of reverse proxies by providing features specific to authentication."
 
 Install
 -------
