@@ -3,7 +3,6 @@ WordPress
 
 Wordpress is the most popular way to build and host a website. 
 
-
 Install
 --------
 
@@ -17,6 +16,7 @@ Install
     $ sudo apt install php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip
     $ sudo systemctl restart php*fpm
     $ sudo nano /etc/nginx/sites-available/wordpress
+
     server {
         . . .
 
@@ -29,6 +29,7 @@ Install
         . . .
 }
     $ sudo nano /etc/nginx/sites-available/wordpress
+    
     server {
         . . .
         location / {
@@ -37,6 +38,7 @@ Install
         }
         . . .
     }
+
     $ sudo nginx -t
     $ cd /tmp
     $ curl -LO https://wordpress.org/latest.tar.gz
