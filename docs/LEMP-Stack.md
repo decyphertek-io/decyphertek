@@ -21,6 +21,11 @@ Install
     # Update the password in the debian.cnf as well. 
     $ sudo vim /etc/mysql/debian.cnf
     $ sudo mysql_secure_installation
+    # Verify your passwords work
+    $ mysql -u root -p 
+    mysql>exit
+    $ mysql -u debian-sys-maint -p
+    mysql>exit 
     # Install PHP
     $ sudo apt install php-mysql php-fpm php-curl php-gd php-mbstring php-xml php-xmlrpc php-cli
     # Optional: Install myphpadmin
