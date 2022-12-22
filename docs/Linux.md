@@ -62,6 +62,12 @@ Network Info
      # See listening ports 
      $ netstat -tuna
 
+apt-key deprecated
+-------------------
+
+     $ sudo apt-key list
+     $ sudo mv /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d/trusted.gpg
+
 Bluetooth
 ---------
 
