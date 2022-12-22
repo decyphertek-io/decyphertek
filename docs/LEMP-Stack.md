@@ -17,7 +17,7 @@ Install
     mysql> exit
     # Debian generates a nonsecure password stored here - /etc/mysql/debian.cnf
     $ sudo cat /etc/mysql/debian.cnf
-    $ sudo mysqladmin -u debian-sys-maint -p'oldPassword' 'newPassword'
+    $ sudo mysqladmin -u debian-sys-maint -p'oldPassword' password 'newPassword'
     # Update the password in the debian.cnf as well. 
     $ sudo vim /etc/mysql/debian.cnf
     $ sudo mysql_secure_installation
