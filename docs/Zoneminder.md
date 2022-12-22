@@ -212,7 +212,7 @@ Optional: Change Default DB
     # The root password has been set by you from the above command, optional to change. 
     $ sudo mysqladmin -u root -p'oldPassword' password 'newPassword'
     # The debian-sys-maint password is found here - /etc/mysql/debian.cnf
-    $ sudo mysqladmin -u debian-sys-maint -p'oldPassword' 'newPassword'
+    $ sudo mysqladmin -u debian-sys-maint -p'oldPassword' password 'newPassword'
     # The zmuser password is found here - /etc/zm/zm.conf
     $ sudo mysqladmin -u zmuser -p'oldPassword' password 'newPassword'
     $ sudo sed -i -r "s#^(ZM_DB_PASS=).*#\1newPassword#" /etc/zm/zm.conf
