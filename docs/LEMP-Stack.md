@@ -14,12 +14,13 @@ Install
     $ sudo mysql
     # set a root mysql password
     mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
-    # Debian generates a nonsecure password stored here - /etc/mysql/debian.cnf
-    mysql> SET PASSWORD FOR 'debian-sys-maint'@'localhost' = PASSWORD('password');
     mysql> exit
-    $ sudo mysql_secure_installation
+    # Debian generates a nonsecure password stored here - /etc/mysql/debian.cnf
+    $ sudo cat /etc/mysql/debian.cnf
+    $ sudo mysqladmin -u debian-sys-maint -p'oldPassword' 'newPassword'
     # Update the password in the debian.cnf as well. 
     $ sudo vim /etc/mysql/debian.cnf
+    $ sudo mysql_secure_installation
     # Install PHP
     $ sudo apt install php-mysql php-fpm php-curl php-gd php-mbstring php-xml php-xmlrpc php-cli
     # Optional: Install myphpadmin
