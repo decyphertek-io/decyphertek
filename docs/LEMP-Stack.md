@@ -12,7 +12,11 @@ Install
     # Install mysql - See Decyphertek - mysql docs on how to manage mysql 
     $ sudo apt install mysql-server
     $ sudo mysql
-    mysql>  exit
+    # Debian generates a nonsecure password stored here - /etc/mysql/debian.cnf
+    mysql> SET PASSWORD FOR 'debian-sys-maint'@'localhost' = PASSWORD('password');
+    mysql> exit
+    # Update the password in the debian.cnf as well. 
+    $ sudo vim /etc/mysql/debian.cnf
     # Install PHP
     $ sudo apt install php-mysql php-fpm php-curl php-gd php-mbstring php-xml php-xmlrpc php-cli
     # Optional: Install myphpadmin
