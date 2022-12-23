@@ -77,7 +77,7 @@ Install
     define( 'FS_METHOD', 'direct' );
 
     # Go to new webpage and setup. 
-    http://server_domain_or_IP/wordpress
+    https://server_domain_or_IP/wordpress
 
 References
 ----------
