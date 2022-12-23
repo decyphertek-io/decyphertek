@@ -111,6 +111,19 @@ Optional: ModSecurity
     $ sudo tail -f /var/log/modsec_audit.log
     # Open up a web browser and test to see if the log shows up. 
     $ https://www.yourdomain.com/index.html?exec=/bin/bash
+   
+Troubleshooting Modsecurity 
+---------------------------
+
+    # Modesecurity WAF is set to automatically block traffic on a Ruleset.
+    # If you are having issues , you can always change the setting to detect , instead of block. 
+    # Using this method will allow you to debug or set a whitelist or disable rules, to help troubleshoot.
+    # Modsecurity troubleshooting example
+    $ sudo vim /etc/nginx/modsec/modsecurity.conf
+    # Change - SecRuleEngine on
+    SecRuleEngine DetectionOnly 
+    # You should be able to see the specific error , you can whitelist or disable the rule, then check again.
+    $ sudo tail -f /var/log/modsec_audit.log
     # Whitelisting an errors regarding legitmate traffic
     # Id eqauls unique_id = first twelve numbers , 
     # using id produces error and the full unique id produces an error
@@ -122,7 +135,7 @@ Optional: ModSecurity
     SecRule REMOTE_ADDR "@ipMatch 195.151.128.96" "phase:1,id:987987987987,allow,ctl:ruleEngine=off"
     # Find additonal rules to add
     $ sudo cat /var/log/modsec_audit.log | grep unique_id
-    # I also found a way to disable the rule entirely , example - this rule blocks odoo webstire builder , can re-eanble when site built. 
+    # I also found a way to disable the rule entirely. 
     $ cd /etc/nginx/modsec/coreruleset-3.3.2/rules
     $ sudo mv REQUEST-941-APPLICATION-ATTACK-XSS.conf REQUEST-941-APPLICATION-ATTACK-XSS.conf.disable
     $ sudo mv REQUEST-949-BLOCKING-EVALUATION.conf REQUEST-949-BLOCKING-EVALUATION.conf.disable
