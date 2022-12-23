@@ -16,22 +16,8 @@ Install
     mysql> exit
     $ sudo apt update && sudo apt install -y php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip
     $ sudo systemctl restart php*fpm
-    $ sudo vim  /etc/nginx/nginx.conf
-
-    brotli on;
-    brotli_comp_level 6;
-    brotli_static on;
-    brotli_types application/atom+xml application/javascript application/json 
-    application/rss+xml
-        application/vnd.ms-fontobject application/x-font-opentype application/x-font-
-    truetype
-        application/x-font-ttf application/x-javascript application/xhtml+xml 
-    application/xml
-        font/eot font/opentype font/otf font/truetype image/svg+xml 
-    image/vnd.microsoft.icon
-        image/x-icon image/x-win-bitmap text/css text/javascript text/plain text/xml;
-        
-    $ sudo vim /etc/nginx/conf.d/custom.conf
+    # Not working, troubleshooting
+    $ sudo vim /etc/nginx/conf.d/wordpress.conf
 
     server {
         listen 443 ssl;
@@ -98,5 +84,6 @@ References
 
     https://wordpress.org/download/
     https://wordpress.org/support/article/how-to-install-wordpress/
+    https://www.linuxcapable.com/install-wordpress-with-nginx-mariadb-php-on-ubuntu-22-04-lts/
     https://www.linode.com/docs/guides/how-to-install-a-lemp-stack-on-ubuntu-22-04/
     https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-lemp-on-ubuntu-20-04
