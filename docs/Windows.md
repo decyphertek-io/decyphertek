@@ -51,8 +51,6 @@ Chocolately Recommened Packages
     > choco install zap
     # Malware Reverse Engineering
     > choco install ghidra
-    # Steganography
-    > choco install openstego.install
     # Privacy Cleaner
     > choco install bleachbit
     # Modern VPN
