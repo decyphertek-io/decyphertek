@@ -16,6 +16,8 @@ QuickStart
     $ npm install
     $ npm run dev
     # http://localhost:3000/
+    # mod generate config
+    $ vim ~/openai-quickstart-node/pages/api/generate.js
 
 References
 -----------
