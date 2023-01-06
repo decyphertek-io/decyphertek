@@ -12,7 +12,7 @@ QuickStart
     $ sudo apt-get install -y nodejs 
     $ git clone https://github.com/openai/openai-quickstart-node.git
     # Get API key
-    https://beta.openai.com/signup
+    # https://beta.openai.com/signup
     $ npm install
     $ npm run dev
     # http://localhost:3000/
