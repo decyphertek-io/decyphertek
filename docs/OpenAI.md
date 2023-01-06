@@ -23,3 +23,4 @@ References
 -----------
 
     https://beta.openai.com/docs/quickstart/build-your-application
+    https://beta.openai.com/docs/guides/completion/prompt-design
