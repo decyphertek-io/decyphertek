@@ -29,7 +29,7 @@ AWS Basics
 4. Troubelshoot: Select Instance > Actions > Monitor & Troubleshoot > Get Instance Screenshot .
 
 * AWS Health Dashboard - https://docs.aws.amazon.com/health/latest/ug/aws-health-dashboard-status.html
-Find out if there is any issues in your region, outages , etc. 
+* Find out if there is any issues in your region, outages , etc. 
 1. AWS Console Login > AWS Health Dashboard 
     
 * AWS EC2 / Networking Topics 
