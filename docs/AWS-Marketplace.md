@@ -1,14 +1,14 @@
 AWS Marketplace - Decyphertek
 ==============================
 
-Decyphertek has secured your AWS with one or more of the following open source software. Please reference the specific softare stack your server has. As a courteousy to AWS Subscribers this section can be used as a quick reference. 
+Decyphertek has secured your AWS AMI with one or more of the following open source software. Please reference the specific softare stack your server has. As a courteousy to AWS Subscribers this section can be used as a quick reference. 
 
-* Crowdsec IPS : An open source Intrusion prevntion system , that maintains a global IP blacklist. 
-* UFW Host Firewall : A host based firewall that adds an addtional layer of security to limit access to your server. 
-* Unattended Upgrades : Provides automated security patching & upgrades via crontab at 3am UTC every morning. 
-* Auditd Logging : Provides additional security logging based of security aduitd rules set. 
-* Quad9 DNS : Secure encrypted DNS that also blocks malicious queries and domains by default. 
-* Modsecurity WAF : A Web Application firewall that block known malicous attacks against NGINX. 
+* Crowdsec IPS - An open source Intrusion prevntion system , that maintains a global IP blacklist. 
+* UFW Host Firewall - A host based firewall that adds an addtional layer of security to limit access to your server. 
+* Unattended Upgrades - Provides automated security patching & upgrades via crontab at 3am UTC every morning. 
+* Auditd Logging - Provides additional security logging based of security aduitd rules set. 
+* Quad9 DNS - Secure encrypted DNS that also blocks malicious queries and domains by default. 
+* Modsecurity WAF - A Web Application firewall that block known malicous attacks against NGINX. 
 
 AWS Basics
 -----------
