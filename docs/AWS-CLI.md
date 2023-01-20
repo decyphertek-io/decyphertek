@@ -40,6 +40,8 @@ Basic Commands
     --instance-id i-1234567890abcdef0 \
     --name "My server" \
     --description "An AMI for my server"
+    # Get account number
+    $ aws sts get-caller-identity --query "Account"
     # List AMI owned by account #
     $ aws ec2 describe-images --owners 123123123123 --query 'Images[].[ImageId,Name]' | grep "ami-"
 
