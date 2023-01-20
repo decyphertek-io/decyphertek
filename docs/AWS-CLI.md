@@ -43,7 +43,7 @@ Basic Commands
     # Get account number
     $ aws sts get-caller-identity --query "Account"
     # List AMI owned by account #
-    $ aws ec2 describe-images --owners 123123123123 --query 'Images[].[ImageId,Name]' | grep "ami-"
+    $ aws ec2 describe-images --owners 123123123123 --query 'Images[].[ImageId,Name]' | grep "-"
 
 References
 ----------
