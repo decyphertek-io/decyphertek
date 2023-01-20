@@ -22,6 +22,10 @@ Basic Commands
     # May need to use sudo if install via sudo aws configure. 
     # List EC2 instances
     $ aws ec2 describe-instances --query 'Reservations[].Instances[].[State.Name, InstanceId, ImageId, InstanceType, PublicIpAddress, SubnetId, VpcId,Tags[?Key==`Name`]| [0].Value]' 
+    # List Vpcs
+    $ aws ec2 describe-vpcs
+    # List Subnets
+    $ aws ec2 describe-subnets
     # List Security Groups
     $ aws ec2 describe-security-groups --query "SecurityGroups[*].{Name:GroupName,ID:GroupId}"
     $ aws ec2 describe-security-group-rules --filter Name="group-id",Values="sg-1234567890abcdef0"
