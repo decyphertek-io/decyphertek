@@ -1,9 +1,8 @@
 AWS Marketplace - Decyphertek
 ==============================
 
-Decyphertek has secured your AWS AMI with one or more of the following open source software. Please reference the specific softare stack your server has. As a courteousy to AWS Subscribers this section can be used as a quick reference.
+Decyphertek has secured your AWS AMI with one or more of the following open source software. Please reference the specific softare stack your server has. As a courteousy to AWS Subscribers this section can be used as a quick reference. [AWSMP: Decyphertek ](https://aws.amazon.com/marketplace/seller-profile?id=851968a2-7d3c-4a0b-8c33-5351d91aaef1)
 
-[AWSMP: Decyphertek ](https://aws.amazon.com/marketplace/seller-profile?id=851968a2-7d3c-4a0b-8c33-5351d91aaef1)
 * Crowdsec IPS - An open source Intrusion prevntion system , that maintains a global IP blacklist. 
 * UFW Host Firewall - A host based firewall that adds an addtional layer of security to limit access to your server. 
 * Unattended Upgrades - Provides automated security patching & upgrades via crontab at 3am UTC every morning. 
@@ -45,33 +44,33 @@ AWS Basics
 Crowdsec IPS
 ------------
 
-working progress......
+https://decyphertek.readthedocs.io/en/latest/#Crowdsec/
 
 
 UFW Host Firewall
 -----------------
 
-working progress......
+https://decyphertek.readthedocs.io/en/latest/#UFW/
 
 Unattended Upgrades
 -------------------
 
-working progress......
+https://decyphertek.readthedocs.io/en/latest/#Unattended-Upgrades/
 
 Auditd Logging
 --------------
 
-working progress......
+https://decyphertek.readthedocs.io/en/latest/#Auditd/
 
 Quad9 DNS
 ----------
 
-working progress......
+https://decyphertek.readthedocs.io/en/latest/#Quad9/
 
 Modsecurity WAF 
 ----------------
 
-working progress......
+https://decyphertek.readthedocs.io/en/latest/#Nginx/
     
 
 
