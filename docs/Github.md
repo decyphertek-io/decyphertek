@@ -34,7 +34,7 @@ Setup
      # If it is a private repo , need an access token OR ssh setup. 
      > Profile > Settings > Developer Settings > Personal Access Tokens > Generate New Token > Name it > Set Expiration > Select repos. 
      <OR>
-     $ git clone git@github.com:account-name/repo-name.git --config core.sshCommand="ssh -i /home/$USER/.ssh/id_ed25519"
+     $ git clone git@github.com:account-name/repo-name.git --config core.sshCommand="ssh -i /home/$USER/.ssh/id_ed25519.pem"
      <OR>
      $ git clone https://github.com/acount-name/repo-name
      $ cd repo-name
