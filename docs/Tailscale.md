@@ -18,3 +18,4 @@ References
 
     https://tailscale.com
     https://tailscale.com/download/
+    https://tailscale.com/kb/
