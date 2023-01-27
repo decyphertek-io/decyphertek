@@ -13,9 +13,13 @@ Getting Started
     # Open the authorization link in a browser and login to github.
     # Easy install instructions provided by tailscale , all operating systems. 
 
+    # Optional: Uninstall
+    $ sudo apt purge tailscale
+
 References
 -----------
 
     https://tailscale.com
     https://tailscale.com/download/
     https://tailscale.com/kb/
+    https://tailscale.com/kb/1069/uninstall/
