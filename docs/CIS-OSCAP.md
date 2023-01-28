@@ -16,17 +16,17 @@ secure Linux servers.
 CAUTION: CIS Level1 - Ubuntu 20.04 Server
 -----------------------------------------
 
-     $ curl -sSL https://raw.githubusercontent.com/decyphertek-io/configs/main/ubuntu2004-script-cis_level1_server.sh | sudo bash
+     $ curl -sSL https://raw.githubusercontent.com/decyphertek-io/configs/main/bash-scripts/ubuntu2004-script-cis_level1_server.sh | sudo bash
 
 CAUTION: CIS Level2 - Ubuntu 20.04 Server
 -----------------------------------------
 
-     $ curl -sSL https://raw.githubusercontent.com/decyphertek-io/configs/main/ubuntu2004-script-cis_level2_server.sh | sudo bash
+     $ curl -sSL https://raw.githubusercontent.com/decyphertek-io/configs/main/bash-scripts/ubuntu2004-script-cis_level2_server.sh | sudo bash
 
 CAUTION: CIS Level3/Stig V1R1 - Ubuntu 20.04 Server
 ---------------------------------------------------
 
-     $ curl -sSL https://raw.githubusercontent.com/decyphertek-io/configs/main/ubuntu2004-script-stig-cis_level3_server.sh | sudo bash
+     $ curl -sSL https://raw.githubusercontent.com/decyphertek-io/configs/main/bash-scripts/ubuntu2004-script-stig-cis_level3_server.sh | sudo bash
 
 Oscap - Install
 ----------------
