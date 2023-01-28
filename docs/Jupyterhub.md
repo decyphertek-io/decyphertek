@@ -17,7 +17,7 @@ Install
      $ sudo mkdir /etc/jupyterhub/
      $ cd /etc/jupyterhub/
      $ sudo jupyterhub --generate-config
-     $ sudo su -c "curl 'https://raw.githubusercontent.com/decyphertek-io/configs/main/jupyterhub_config.py' >> /etc/jupyterhub/jupyterhub_config.py"
+     $ sudo su -c "curl 'https://raw.githubusercontent.com/decyphertek-io/ansible/main/roles/Jupyterhub/files/jupyterhub_config.py' >> /etc/jupyterhub/jupyterhub_config.py"
      $ sudo chmod 700 /etc/ssl/private
      $ sudo openssl req -x509 -nodes -days 1095 -newkey rsa:2048 -keyout /etc/ssl/private/private-ssl.key -out /etc/ssl/certs/private-ssl.crt -subj "/C=US/ST=Any/L=Anytown/O=decyphertek-io/OU=adminotaur/CN=decyphertek"
 
@@ -41,7 +41,7 @@ New User/Hostname
 Systemd Managed Jupyterhub
 --------------------------
 
-     $ sudo su -c "curl 'https://raw.githubusercontent.com/decyphertek-io/configs/main/jupyterhub.service' >> /etc/systemd/system/jupyterhub.service"
+     $ sudo su -c "curl 'https://raw.githubusercontent.com/decyphertek-io/ansible/main/roles/Jupyterhub/files/jupyterhub.service' >> /etc/systemd/system/jupyterhub.service"
   
 Config - Azure MFA Setup
 ------------------------
@@ -92,7 +92,7 @@ SSSD Install
 -------------
 
      $ sudo apt install sssd sssd-tools libnss-sss libpam-sss samba-common-bin packagekit python3-sss realmd
-     $ sudo su -c "curl 'https://raw.githubusercontent.com/decyphertek-io/configs/main/sssd.conf' >> /etc/sssd/sssd.conf"
+     $ sudo su -c "curl 'https://raw.githubusercontent.com/decyphertek-io/ansible/main/roles/sssd/files/sssd.conf' >> /etc/sssd/sssd.conf"
      # Use realmd to add to AD, if issues with sssd on certain OS versions. 
      $ sudo systemctl restart sssd 
      # SSH into server - yourusername@ip-of-server
