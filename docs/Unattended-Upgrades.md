@@ -11,7 +11,7 @@ Install
      $ sudo systemctl start unattended-upgrades
      $ sudo systemctl status unattended-upgrades
      $ sudo dpkg-reconfigure -plow unattended-upgrades | echo "yes"
-     $ sudo su -c "curl 'https://raw.githubusercontent.com/decyphertek-io/configs/main/50unattended-upgrades' >> /etc/apt/apt.conf.d/50unattended-upgrades"
+     $ sudo su -c "curl 'https://raw.githubusercontent.com/decyphertek-io/ansible/main/roles/unattended-upgrades/files/50unattended-upgrades' >> /etc/apt/apt.conf.d/50unattended-upgrades"
      $ sudo systemctl enable cron
      $ sudo systemctl start cron
      $ sudo systemctl status cron
