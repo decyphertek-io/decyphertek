@@ -104,7 +104,7 @@ Optional:How to setup and install R on JupyterHub
      $ sudo apt install r-base
      $ jupyter kernelspec list
      $ sudo mkdir /usr/local/share/jupyter/kernels/R/
-     $ sudo su -c "curl 'https://raw.githubusercontent.com/decyphertek-io/configs/main/kernel.json' >> /usr/local/share/jupyter/kernels/R/kernel.json"
+     $ sudo su -c "curl 'https://raw.githubusercontent.com/decyphertek-io/ansible/main/roles/Jupyterhub/files/kernel.json' >> /usr/local/share/jupyter/kernels/R/kernel.json"
      # Login as your user in Jupyterhub and openup a terminal
      $ which R
      $ /usr/bin/R
