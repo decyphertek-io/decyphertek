@@ -13,4 +13,4 @@ Qigong-02:
 ![Qigong-02](https://github.com/decyphertek-io/instructional_gifs/raw/main/qigong/Shaolin_Qi_Gong_02.gif)
 
 Qigong-03:
-![Qigong-02](https://github.com/decyphertek-io/instructional_gifs/raw/main/qigong/Shaolin_Qi_Gong_03.gif)
+![Qigong-03](https://github.com/decyphertek-io/instructional_gifs/raw/main/qigong/Shaolin_Qi_Gong_03.gif)
