@@ -48,6 +48,9 @@ Gifs can be used to instruct any set of tasks. This is an experiment in testing 
 * Yoga-01
 ![Yoga-01](https://github.com/decyphertek-io/instructional_gifs/raw/main/Yoga/Yoga-01.gif)
 
+* Yoga-02
+![Yoga-02](https://github.com/decyphertek-io/instructional_gifs/raw/main/Yoga/Yoga-02.gif)
+
 [Calisthenics](https://www.youtube.com/watch?v=SEm3RtZF9SQ 'Calisthenics')
 ---------------------------------------------------------------------------
 
