@@ -30,5 +30,11 @@ These are the emerging advanced technologies that are interesting.
 [3d printing manufacturing](https://markforged.com/3d-printers '3D Printing Manufacturing')
 -------------------------------------------------------------------------------------------
 
+[Crisper](https://www.nytimes.com/2022/06/27/science/crispr-science-medical-research.html 'Crisper')
+-----------------------------------------------------------------------------------------------------
+
+[CAR-T](https://www.mayoclinic.org/departments-centers/car-t-cell-therapy-program/sections/gnc-20405215 'CAR-T')
+----------------------------------------------------------------------------------------------------------------
+
 
 
