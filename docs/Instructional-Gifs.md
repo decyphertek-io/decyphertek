@@ -25,3 +25,9 @@ Gifs can be used to instruct any set of tasks. This is an experiment in testing 
 
 * Qigong-06:
 ![Qigong-06](https://github.com/decyphertek-io/instructional_gifs/raw/main/qigong/Shaolin_Qi_Gong_06.gif)
+
+[Kung Fu & Tai Chi Center](https://www.youtube.com/@RealKungFu 'Tai Chi')
+--------------------------------------------------------------------------
+
+* Taichi-01:
+![Taichi-01](https://github.com/decyphertek-io/instructional_gifs/raw/main/taichi/Taichi-01.gif)
