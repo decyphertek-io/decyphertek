@@ -61,3 +61,6 @@ Gifs can be used to instruct any set of tasks. This is an experiment in testing 
 
 * Calisthenics-01
 ![Calisthenics-01](https://github.com/decyphertek-io/instructional_gifs/raw/main/Calisthenics/Calisthenics-01.gif)
+
+* Calisthenics-02
+![Calisthenics-02](https://github.com/decyphertek-io/instructional_gifs/raw/main/Calisthenics/Calisthenics-02.gif)
