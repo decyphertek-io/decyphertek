@@ -3,7 +3,7 @@ Instructional GIFS
 
 Gifs can be used to instruct any set of tasks. This is an experiment in testing out the ability to teach a new skill using instructional gifs. A work in progress. ( Tip: Crtl+Scroll = Zoom. )
 
-[Qigong](https://www.youtube.com/@ShaolinTempleEurope 'Qigong')
+[Qigong](https://www.youtube.com/watch?v=UpN3AcXLSSk 'Qigong')
 -----------------------------------------------------------------------------------------------
 
 "Qigong is a system of coordinated body-posture and movement, breathing, and meditation used for the purposes of health, spirituality, and martial-arts training. With roots in Chinese medicine, philosophy, and martial arts, qigong is traditionally viewed by the Chinese and throughout Asia as a practice to cultivate and balance qi, translated as "life energy"" [Wikipedia-Qigong](https://en.wikipedia.org/wiki/Qigong 'Wikipedia-Qigong')
@@ -26,7 +26,7 @@ Gifs can be used to instruct any set of tasks. This is an experiment in testing 
 * Qigong-06:
 ![Qigong-06](https://github.com/decyphertek-io/instructional_gifs/raw/main/qigong/Shaolin_Qi_Gong_06.gif)
 
-[Tai Chi](https://www.youtube.com/@RealKungFu 'Tai Chi')
+[Tai Chi](https://www.youtube.com/watch?v=DmlsB_KOGtM 'Tai Chi')
 --------------------------------------------------------------------------
 
 "Tai chi, short for Tai chi ch'üan, sometimes called "shadowboxing",is an internal Chinese martial art practiced for defense training, health benefits and meditation. Tai chi has practitioners worldwide from Asia to the Americas." [Wikipedia-Tai_chi](https://en.wikipedia.org/wiki/Tai_chi 'Wikipedia-Tai_chi')
