@@ -41,3 +41,11 @@ Gifs can be used to instruct any set of tasks. This is an experiment in testing 
 
 * Yoga-01
 ![Yoga-01](https://github.com/decyphertek-io/instructional_gifs/raw/main/Yoga/Yoga-01.gif)
+
+[Calisthenics](https://www.youtube.com/watch?v=SEm3RtZF9SQ 'Calisthenics')
+---------------------------------------------------------------------------
+
+"Calisthenics is a form of strength training consisting of a variety of movements that exercise large muscle groups (gross motor movements), such as standing, grasping, pushing, etc. These exercises are often performed rhythmically and with minimal equipment, as bodyweight exercises. They are intended to increase strength, fitness, and flexibility, through movements such as pulling, pushing, bending, jumping, or swinging, using one's body weight for resistance in pull-ups, push-ups, squats, etc. Calisthenics can provide the benefits of muscular and aerobic conditioning, in addition to improving psychomotor skills such as balance, agility, and coordination." [Wikipedia-Calisthenics](https://en.wikipedia.org/wiki/Calisthenics 'Wikipedia-Calisthenics')
+
+* Calisthenics-01
+![Calisthenics-01](https://github.com/decyphertek-io/instructional_gifs/raw/main/Calisthenics/Calisthenics-01.gif)
