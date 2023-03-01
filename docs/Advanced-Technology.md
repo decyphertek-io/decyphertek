@@ -24,9 +24,6 @@ These are the emerging advanced technologies that are interesting.
 [Modern Cities](https://architizer.com/blog/inspiration/collections/mixed-use-design/ 'Modern Cities')
 ------------------------------------------------------------------------------------------------------
 
-[3d printing manufacturing](https://markforged.com/3d-printers '3D Printing Manufacturing')
--------------------------------------------------------------------------------------------
-
 [Crisper](https://www.nytimes.com/2022/06/27/science/crispr-science-medical-research.html 'Crisper')
 -----------------------------------------------------------------------------------------------------
 
@@ -35,6 +32,9 @@ These are the emerging advanced technologies that are interesting.
 
 [Stem Cell Therapy](https://stemcellres.biomedcentral.com/ 'Stem Cell Therapy')
 -------------------------------------------------------------------------------
+
+[3d printing manufacturing](https://markforged.com/3d-printers '3D Printing Manufacturing')
+-------------------------------------------------------------------------------------------
 
 
 
