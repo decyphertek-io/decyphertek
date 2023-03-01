@@ -25,6 +25,10 @@ These are the emerging advanced technologies that are interesting.
 ------------------------------------------------------------------------------------------------------------------------------------
 
 [Modern Cities](https://architizer.com/blog/inspiration/collections/mixed-use-design/ 'Modern Cities')
+------------------------------------------------------------------------------------------------------
+
+[3d printing manufacturing](https://markforged.com/3d-printers '3D Printing Manufacturing')
+-------------------------------------------------------------------------------------------
 
 
 
