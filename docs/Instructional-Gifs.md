@@ -1,7 +1,7 @@
 Instructional GIFS
 ===================
 
-Gifs can be used to instruct any set of tasks. This is an experiment in testing out the ability to teach most tasks. A work in progress. ( Tip: Crtl+Scroll = Zoom. )
+Gifs can be used to instruct any set of tasks. This is an experiment in testing out the ability to teach a new skill using instructional gifs. A work in progress. ( Tip: Crtl+Scroll = Zoom. )
 
 [Shaolin Temple Europe](https://www.youtube.com/@ShaolinTempleEurope 'Shaolin Temple Europe')
 -----------------------------------------------------------------------------------------------
