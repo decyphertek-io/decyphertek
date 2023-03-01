@@ -4,6 +4,7 @@ Advanced Technology
 These are the emerging advanced technologies that are interesting. 
 
 [Quantum Entanglement Communication](https://www.nature.com/articles/s41534-022-00520-8 'Quantum Entanglement Communication' )
+-------------------------------------------------------------------------------------------------------------------------------
 
 [Graphene Quantum Computers](https://www.graphenea.com/blogs/graphene-news/graphene-for-quantum-computing 'Graphene Quantum Computers')
 ---------------------------------------------------------------------------------------------------------------------------------------
