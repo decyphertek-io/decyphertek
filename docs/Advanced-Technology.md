@@ -27,8 +27,14 @@ These are the emerging advanced technologies that are interesting.
 [Modern Cities](https://architizer.com/blog/inspiration/collections/mixed-use-design/ 'Modern Cities')
 ------------------------------------------------------------------------------------------------------
 
+[Helium Network](https://www.helium.com/ 'Helium Network')
+----------------------------------------------------------
+
 [Neuralink](https://neuralink.com/ 'Neuralink')
 -----------------------------------------------
+
+[Augmented Reality](https://spectrum.ieee.org/looking-through-mojo-visions-newest-ar-contact-lens 'Augmented Reality')
+----------------------------------------------------------------------------------------------------------------------
 
 [Crisper](https://www.nytimes.com/2022/06/27/science/crispr-science-medical-research.html 'Crisper')
 -----------------------------------------------------------------------------------------------------
