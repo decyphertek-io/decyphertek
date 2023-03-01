@@ -27,6 +27,9 @@ These are the emerging advanced technologies that are interesting.
 [Modern Cities](https://architizer.com/blog/inspiration/collections/mixed-use-design/ 'Modern Cities')
 ------------------------------------------------------------------------------------------------------
 
+[Neuralink](https://neuralink.com/ 'Neuralink')
+-----------------------------------------------
+
 [Crisper](https://www.nytimes.com/2022/06/27/science/crispr-science-medical-research.html 'Crisper')
 -----------------------------------------------------------------------------------------------------
 
