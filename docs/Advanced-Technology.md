@@ -18,4 +18,13 @@ These are the emerging advanced technologies that are interesting.
 [Solar Desalination](https://wired.me/science/environment/desalination-solar-dome-saudi-arabia-neom/ 'Solar Desalination')
 ---------------------------------------------------------------------------------------------------------------------------
 
+[Direct Air Capture](https://carbonengineering.com/our-technology/ 'Direct Air Capture')
+----------------------------------------------------------------------------------------
+
+[Roman Concrete](https://www.scientificamerican.com/article/ancient-roman-concrete-has-self-healing-capabilities/ 'Roman Concrete')
+------------------------------------------------------------------------------------------------------------------------------------
+
+[Modern Cities](https://architizer.com/blog/inspiration/collections/mixed-use-design/ 'Modern Cities')
+
+
 
