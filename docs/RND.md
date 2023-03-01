@@ -1,4 +1,4 @@
-R&D
+RND
 ====
 
 These are the emerging advanced technologies that are interesting. 
