@@ -33,6 +33,9 @@ These are the emerging advanced technologies that are interesting.
 [Neuralink](https://neuralink.com/ 'Neuralink')
 -----------------------------------------------
 
+[Reverse Aging](https://time.com/6246864/reverse-aging-scientists-discover-milestone/ 'Reverse Aging')
+-------------------------------------------------------------------------------------------------------
+
 [Augmented Reality](https://spectrum.ieee.org/looking-through-mojo-visions-newest-ar-contact-lens 'Augmented Reality')
 ----------------------------------------------------------------------------------------------------------------------
 
