@@ -39,5 +39,8 @@ These are the emerging advanced technologies that are interesting.
 [3d printing manufacturing](https://markforged.com/3d-printers '3D Printing Manufacturing')
 -------------------------------------------------------------------------------------------
 
+[Worm Hole Simulation](https://www.sciencefocus.com/news/simulation-wormhole-unite-gravity-quantum-theory-physics/ 'Worm Hole Simulation')
+-------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
