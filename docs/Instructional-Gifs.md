@@ -37,6 +37,9 @@ Gifs can be used to instruct any set of tasks. This is an experiment in testing 
 * Taichi-02:
 ![Taichi-02](https://github.com/decyphertek-io/instructional_gifs/raw/main/Taichi/Taichi-02.gif)
 
+* Taichi-03:
+![Taichi-03](https://github.com/decyphertek-io/instructional_gifs/raw/main/Taichi/Taichi-03.gif)
+
 [Yoga](https://www.youtube.com/watch?v=gVcWuNsblg4 'Yoga')
 ----------------------------------------------------------
 
