@@ -57,3 +57,6 @@ These are the emerging advanced technologies that are interesting.
 [Asteroid Mining](https://www.space.com/space-mining-grinding-into-reality 'Asteroid Mining')
 ---------------------------------------------------------------------------------------------
 
+[Micro UAV Swarms](https://ieeexplore.ieee.org/document/9491655 'Micro UAV Swarms')
+-----------------------------------------------------------------------------------
+
