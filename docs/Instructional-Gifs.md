@@ -29,11 +29,15 @@ Gifs can be used to instruct any set of tasks. This is an experiment in testing 
 [Kung Fu & Tai Chi Center](https://www.youtube.com/@RealKungFu 'Tai Chi')
 --------------------------------------------------------------------------
 
+"Tai chi, short for Tai chi ch'üan, sometimes called "shadowboxing",is an internal Chinese martial art practiced for defense training, health benefits and meditation. Tai chi has practitioners worldwide from Asia to the Americas." [Wikipedia-Taichi](https://en.wikipedia.org/wiki/Tai_chi 'Wikipedia-Taichi')
+
 * Taichi-01:
 ![Taichi-01](https://github.com/decyphertek-io/instructional_gifs/raw/main/Taichi/Taichi-01.gif)
 
 [Yoga](https://www.youtube.com/watch?v=gVcWuNsblg4 'Yoga')
 ----------------------------------------------------------
+
+"Yoga is a group of physical, mental, and spiritual practices or disciplines which originated in ancient India and aim to control (yoke) and still the mind, recognizing a detached witness-consciousness untouched by the mind (Chitta) and mundane suffering (Duḥkha). There is a wide variety of schools of yoga, practices, and goals in Hinduism, Buddhism, and Jainism, and traditional and modern yoga is practiced worldwide." [Wikipedia-Yoga](https://en.wikipedia.org/wiki/Yoga 'Wikipedia-Yoga')
 
 * Yoga-01
 ![Yoga-01](https://github.com/decyphertek-io/instructional_gifs/raw/main/Yoga/Yoga-01.gif)
