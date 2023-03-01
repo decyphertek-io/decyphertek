@@ -33,5 +33,8 @@ These are the emerging advanced technologies that are interesting.
 [CAR-T](https://www.mayoclinic.org/departments-centers/car-t-cell-therapy-program/sections/gnc-20405215 'CAR-T')
 ----------------------------------------------------------------------------------------------------------------
 
+[Stem Cell Therapy](https://stemcellres.biomedcentral.com/ 'Stem Cell Therapy')
+-------------------------------------------------------------------------------
+
 
 
