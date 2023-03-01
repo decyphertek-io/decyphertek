@@ -42,5 +42,6 @@ These are the emerging advanced technologies that are interesting.
 [Worm Hole Simulation](https://www.sciencefocus.com/news/simulation-wormhole-unite-gravity-quantum-theory-physics/ 'Worm Hole Simulation')
 -------------------------------------------------------------------------------------------------------------------------------------------
 
-
+[Asteroid Mining](https://www.space.com/space-mining-grinding-into-reality 'Asteroid Mining')
+---------------------------------------------------------------------------------------------
 
