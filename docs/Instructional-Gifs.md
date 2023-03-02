@@ -58,3 +58,12 @@ Gifs can be used to instruct any set of tasks. This is an experiment in testing 
 
 * Calisthenics-03
 ![Calisthenics-03](https://github.com/decyphertek-io/instructional_gifs/raw/main/Calisthenics/Calisthenics-03.gif)
+
+[Cooking](https://www.youtube.com/watch?v=vXbfVPyoYZk 'Cooking')
+---------------------------------------------------------------------------
+
+"Cooking, cookery, or culinary arts is the art, science and craft of using heat to prepare food for consumption. Cooking techniques and ingredients vary widely, from grilling food over an open fire to using electric stoves, to baking in various types of ovens, reflecting local conditions." [Wikipedia-Cooking](https://en.wikipedia.org/wiki/Cooking 'Wikipedia-Cooking')
+
+
+* Cooking-01
+![Cooking-01](https://github.com/decyphertek-io/instructional_gifs/raw/main/Cooking/Cooking.gif)
