@@ -67,3 +67,6 @@ Gifs can be used to instruct any set of tasks. This is an experiment in testing 
 
 * Cooking-Cutting_Techniques-01
 ![Cooking-Cutting_Techniques-01](https://github.com/decyphertek-io/instructional_gifs/raw/main/Cooking/Cooking-01.gif)
+
+* Cooking-Cutting_Techniques-02
+![Cooking-Cutting_Techniques-02](https://github.com/decyphertek-io/instructional_gifs/raw/main/Cooking/Cooking-02.gif)
