@@ -86,6 +86,12 @@ Docker Compose Commands
     $ docker compose up 	    Create and start containers
     $ docker compose version 	Show the Docker Compose version information
 
+Optional: UFW & Docker
+----------------------
+
+    # Docker bypasses UFW host firewall. There is a fix as mentioned in the following article.
+    https://www.howtogeek.com/devops/how-to-use-docker-with-a-ufw-firewall/
+
 Optional: Portainer
 -------------------
 
