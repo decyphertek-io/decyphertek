@@ -66,7 +66,8 @@ apt-key deprecated
 -------------------
 
      $ sudo apt-key list
-     $ sudo mv /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d/trusted.gpg
+     # Replace 3213339E with the last x4 of the pub. You can rename the .gpg if using trusted.gpg to something relevant. 
+     $ sudo apt-key export 3213339E | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/namehere.gpg
 
 Bluetooth
 ---------
