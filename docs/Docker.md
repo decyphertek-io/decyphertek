@@ -96,7 +96,9 @@ Optional: UFW & Docker
     $ sudo systemctl restart ufw
     # May have to restart Docker or machine as well if issues occur. 
     # Allow port to docker
-    $ ufw-docker allow httpd 80
+    $ sudo ufw-docker allow httpd 80/tcp
+    # Remove the rule
+    $ sudo ufw-docker delete allow httpd 80/tcp
     # Advanced: Whitelisting
     $ ufw route allow proto tcp from 1.2.3.4 to any port 9443
 
