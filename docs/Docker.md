@@ -89,8 +89,16 @@ Docker Compose Commands
 Optional: UFW & Docker
 ----------------------
 
-    # Docker bypasses UFW host firewall. There is a fix as mentioned in the following article.
-    https://www.howtogeek.com/devops/how-to-use-docker-with-a-ufw-firewall/
+    # Docker bypasses UFW host firewall. 
+    $ sudo wget -O /usr/local/bin/ufw-docker https://github.com/chaifeng/ufw-docker/raw/master/ufw-docker
+    $ sudo chmod +x /usr/local/bin/ufw-docker
+    $ ufw-docker install
+    $ sudo systemctl restart ufw
+    # May have to restart Docker or machine as well if issues occur. 
+    # Allow port to docker
+    $ ufw-docker allow httpd 80
+    # Advanced: Whitelisting
+    $ ufw route allow proto tcp from 1.2.3.4 to any port 9443
 
 Optional: Portainer
 -------------------
@@ -165,3 +173,5 @@ References
     https://docs.docker.com/engine/reference/commandline/cli/
     https://docs.docker.com/engine/install/ubuntu/
     https://yacht.sh/docs/Installation/Getting_Started
+    https://www.howtogeek.com/devops/how-to-use-docker-with-a-ufw-firewall/
+
