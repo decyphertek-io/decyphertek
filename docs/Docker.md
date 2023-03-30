@@ -92,7 +92,7 @@ Optional: UFW & Docker
     # Docker bypasses UFW host firewall. 
     $ sudo wget -O /usr/local/bin/ufw-docker https://github.com/chaifeng/ufw-docker/raw/master/ufw-docker
     $ sudo chmod +x /usr/local/bin/ufw-docker
-    $ ufw-docker install
+    $ sudo ufw-docker install
     $ sudo systemctl restart ufw
     # May have to restart Docker or machine as well if issues occur. 
     # Allow port to docker
