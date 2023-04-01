@@ -132,21 +132,22 @@ General guidance
 ----------------
 
      # AWS Cli Command via playbook
-     $ AWS_PROFILE=us-east-1 ansible-playbook aws-gather-info.yaml
+     # Aws uses the default profile, add AWS_PROFILE=profilename before ansible-playbook command to use another.  
+     $ sudo ansible-playbook aws-gather-info.yaml
      # AWS Module Playbook
-     $ ansible-playbook aws-ec2-launch.yml
+     $ sudo ansible-playbook aws-ec2-launch.yml
      # Run a basic playbook command
-     $ ansible-playbook -l test_server playbook.yaml
+     $ sudo ansible-playbook -l test_server playbook.yaml
      # How to use Vault:( See Vault instructions for more details ) 
-     $ ansible-playbook -l test_server playbook.yml --ask-vault-pass 
+     $ sudo ansible-playbook -l test_server playbook.yml --ask-vault-pass 
      # How to run Windows Playbooks
-     $ ansible-playbook -l win template.yml --ask-vault-pass
+     $ sudo ansible-playbook -l windows template.yml --ask-vault-pass
      # Modify the ansible.cfg to point to your right directories
-     $ vim ~/.ansible.cfg
+     $ sudo vim ~/.ansible.cfg
      # Modify the hosts 
-     $ vim ~/ansible/inventory/hosts
+     $ sudo vim ~/ansible/inventory/hosts
      # have to setup ~.aws/config & ~.aws/credentials
-     $ aws configure
+     $ sudo aws configure
  
 Docs
 -----
