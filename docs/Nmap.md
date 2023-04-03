@@ -54,6 +54,11 @@ Nmap Commands
      https://nmap.org/presentations/BHDC10/
 
      # Time Reduction of scans
+     * Skip the port scan (-sn) 
+     * Limit the number of ports scanned. --top-ports
+     * Skip advanced scan types (-sC, -sV, -O, --traceroute, and -A)
+     * Remember to turn off DNS resolution when it isn't necessary.  --system-dns 
+     * Optimize Timing Parameters -T
      https://nmap.org/book/reduce-scantime.html
 
      # OS misidentification
