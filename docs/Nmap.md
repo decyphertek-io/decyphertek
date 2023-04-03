@@ -13,7 +13,7 @@ Nmap Commands
      $ sudo nmap -sn 192.168.0.0/24
 
      # Scan for specific open ports
-     $ sudo nmap -sV -p 22,443 192.168.0.0/24
+     $ sudo nmap -p 22,443 192.168.0.0/24
 
      # Scan for OS
      $ sudo nmap -O 192.168.0.0/24
