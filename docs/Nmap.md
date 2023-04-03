@@ -61,6 +61,7 @@ Nmap Commands
      * Optimize Timing Parameters. -T
      * Separate and Optimize UDP Scans. -sSU
      * Upgrade Nmap. nmap -V
+     * Execute Concurrent Nmap Instances. nmap-services and nmap-os-db
      https://nmap.org/book/reduce-scantime.html
 
      # OS misidentification
