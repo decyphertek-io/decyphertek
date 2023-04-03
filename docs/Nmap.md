@@ -59,7 +59,7 @@ Nmap Scripting Engine (NSE) (LUA)
 Nmap Troubleshooting
 --------------------
 
-     # Time Reduction of scans
+     # Time Reduction of scans - solutions. 
      * Skip the port scan (-sn) 
      * Limit the number of ports scanned. --top-ports
      * Skip advanced scan types (-sC, -sV, -O, --traceroute, and -A)
@@ -70,7 +70,7 @@ Nmap Troubleshooting
      * Execute Concurrent Nmap Instances. nmap-services and nmap-os-db
      https://nmap.org/book/reduce-scantime.html
 
-     # OS misidentification
+     # OS misidentification - solutions
      * Upgrade to the latest Nmap
      * Scan all ports
      * Try a more aggressive guess
