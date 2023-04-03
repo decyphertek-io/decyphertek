@@ -51,6 +51,7 @@ Nmap Commands
 Nmap Scripting Engine (NSE) (LUA)
 ---------------------------------
 
+     Complete Script List - https://github.com/topics/nmap-scripts?l=lua
      Roll your own NSE - https://null-byte.wonderhowto.com/how-to/get-started-writing-your-own-nse-scripts-for-nmap-0187403/
      https://www.tecmint.com/use-nmap-script-engine-nse-scripts-in-linux/
      https://nmap.org/book/nse.html
