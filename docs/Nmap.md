@@ -16,7 +16,7 @@ Nmap Debian Install
 Nmap Commands
 -------------
 
-     # Download the newest version
+     # Download the newest version. nmap -V
      https://nmap.org/download.html
 
      # Basic scan & multiple networks:
@@ -58,7 +58,9 @@ Nmap Commands
      * Limit the number of ports scanned. --top-ports
      * Skip advanced scan types (-sC, -sV, -O, --traceroute, and -A)
      * Remember to turn off DNS resolution when it isn't necessary.  --system-dns 
-     * Optimize Timing Parameters -T
+     * Optimize Timing Parameters. -T
+     * Separate and Optimize UDP Scans. -sSU
+     * Upgrade Nmap. nmap -V
      https://nmap.org/book/reduce-scantime.html
 
      # OS misidentification
