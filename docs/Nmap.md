@@ -35,14 +35,17 @@ Nmap Commands
      # XML output can be converted to HTML, easily parsed by programs such as Nmap graphical user interfaces, or imported into databases.
      # Can import xml to zenmap , scan, then view topology. 
 
-     # Optional: Get additonal functionality out of nmap by enabling script engine.
+     # Additional Functionality -  Scripting engine.
      https://www.tecmint.com/use-nmap-script-engine-nse-scripts-in-linux/
      https://nmap.org/book/nse.html
      https://nmap.org/presentations/BHDC10/
 
-     # Optional: Time Reduction of scans
+     # Time Reduction of scans
      https://nmap.org/book/reduce-scantime.html
-     
+
+     # OS misidentification
+     https://nmap.org/book/osdetect-unidentified.html
+
 
 Networking Models
 -----------------
