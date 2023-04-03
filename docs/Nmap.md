@@ -57,6 +57,14 @@ Nmap Commands
      https://nmap.org/book/reduce-scantime.html
 
      # OS misidentification
+     * Upgrade to the latest Nmap
+     * Scan all ports
+     * Try a more aggressive guess
+     * Scan from a different location
+     # Submit Nmap OS DB fix. ( Excluding JUST GUESSING results)
+     # verify output against similar systems.
+     $ sudo nmap -O -sV -T4 -d <target>
+     # Submit results here - https://insecure.org/cgi-bin/submit.cgi?corr-os
      https://nmap.org/book/osdetect-unidentified.html
 
 
