@@ -6,6 +6,9 @@ Nmap is widely used by network administrators, security professionals, and ethic
 Nmap Commands
 -------------
 
+     # Download the newest version
+     https://nmap.org/download.html
+
      # Basic scan & multiple networks:
      $ sudo nmap 192.168.0.0/24 10.10.10.0/24
 
