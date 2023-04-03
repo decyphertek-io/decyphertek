@@ -40,6 +40,10 @@ Nmap Commands
      https://nmap.org/book/nse.html
      https://nmap.org/presentations/BHDC10/
 
+     # Optional: Time Reduction of scans
+     https://nmap.org/book/reduce-scantime.html
+     
+
 Networking Models
 -----------------
 
