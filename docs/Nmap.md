@@ -37,6 +37,7 @@ Nmap Commands
 
      # Optional: Get additonal functionality out of nmap by enabling script engine.
      https://www.tecmint.com/use-nmap-script-engine-nse-scripts-in-linux/
+     https://nmap.org/book/nse.html
 
 Networking Models
 -----------------
