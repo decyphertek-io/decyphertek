@@ -3,6 +3,16 @@ Nmap
 
 Nmap is widely used by network administrators, security professionals, and ethical hackers to scan networks, identify open ports, detect running services and their versions, and determine the operating system of hosts within a network.
 
+Nmap Debian Install
+-------------------
+
+      # To get the newest version of nmap on Debian based systems
+      1. Download the Nmap RPMs for your platform (x86 or x86-64) from https://nmap.org/download.html
+      2. sudo apt install alien
+      3. sudo alien nmap-5.21-1.x86_64.rpm
+      4. sudo dpkg --install nmap_5.21-2_amd64.deb
+      # Steps 2–5 can be repeated for the other Nmap RPMs such as Zenmap, Ncat, and Nping.
+
 Nmap Commands
 -------------
 
