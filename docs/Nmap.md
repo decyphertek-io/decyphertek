@@ -60,7 +60,7 @@ Networking Models
 Network Mapping Alternatives
 ----------------------------
 
-     * Zenmap / Nmap - https://www.redhat.com/sysadmin/quick-nmap-inventory
+     * Zenmap ( Nmap GUI ) - https://www.redhat.com/sysadmin/quick-nmap-inventory
 
      * Spice Works - https://www.spiceworks.com/free-pc-network-inventory-software/
 
