@@ -49,6 +49,7 @@ Nmap Commands
      # Can import xml to zenmap , scan, then view topology. 
 
      # Additional Functionality -  Nmap Scripting Engine (NSE) (Written in Lua)
+     Roll your own NSE - https://null-byte.wonderhowto.com/how-to/get-started-writing-your-own-nse-scripts-for-nmap-0187403/
      https://www.tecmint.com/use-nmap-script-engine-nse-scripts-in-linux/
      https://nmap.org/book/nse.html
      https://nmap.org/presentations/BHDC10/
