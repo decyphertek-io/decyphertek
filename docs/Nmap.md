@@ -176,7 +176,36 @@ Nmap Advanced Scans
 	
      # Send IP packets 
      $ sudo nmap --send-ip [target]
+
+Nmap Firewall Evasion 
+---------------------
+
+     # Fragment packets
+     $ sudo nmap -f [target]
 	
+     # Specify a specific MTU
+     $ sudo nmap --mtu [MTU] [target]
+	
+     # Use a decoy
+     $ sudo nmap -D RND:[number] [target]
+	
+     # Idle zombie scan
+     $ sudo nmap -sI [zombie] [target]
+	
+     # Manually specify a source port
+     $ sudo nmap --source-port [port] [target]
+	
+     # Append random data
+     $ sudo nmap --data-length [size] [target]
+	
+     # Randomize target scan order
+     $ sudo nmap --randomize-hosts [target]
+	
+     # Spoof MAC address
+     $ sudo nmap --spoof-mac [MAC|0|vendor] [target]
+	
+     # Send bad checksums 
+     $ sudo nmap --badsum [target]
 	 
 Nmap Scripting Engine (NSE) (LUA)
 ---------------------------------
