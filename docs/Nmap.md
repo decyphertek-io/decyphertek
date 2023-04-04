@@ -429,7 +429,7 @@ Optional: Ansible Nmap
 Optional: Real World Scenarios
 ------------------------------
 
-     # Host Discovery on unknown subnets ( Scanning multiple large subnets 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16 , make sure you have network access)
+     # Scanning multiple large subnets 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16, confirm network access to those subnets. 
      # Scanning multiple large subnets can take a lot of try some of the mentioned solutions:
      #  --min-rate, --max-parallelism, and --host-timeout
 
