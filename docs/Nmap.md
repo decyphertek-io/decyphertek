@@ -365,8 +365,10 @@ Nmap Troubleshooting
      # Specify a network interface
      $ sudo nmap -e [interface] [target]
 
-Optional: Nmap Infosec
+Optional: Nmap Infosec NSE 
 ----------------------
+
+     # https://resources.infosecinstitute.com/topic/nmap-cheat-sheet-discovery-exploits-part-3-gathering-additional-information-host-network-2/
 
      # whois
      $ nmap --script whois [target]
@@ -385,9 +387,10 @@ Optional: Nmap Infosec
      $ sudo mv http-google-email.nse  /usr/share/nmap/scripts/http-google-email.nse 
      $ sudo nmap -p80 --script http-google-email [target]
 
-Optional: Ansible:
+Optional: Ansible Nmap
 ------------------
 
+     # https://docs.ansible.com/ansible/latest/collections/community/general/nmap_inventory.html
      # Requirement: Install ansible galaxy community general
      $ sudo ansible-galaxy collection install community.general
      # Reference community.general.nmap in the Ansible Playbook
