@@ -214,6 +214,7 @@ Nmap Output
      $ sudo nmap -oN [scan.txt] [target]
 	
      # Save output to a XML file
+     #  --webxml Makes it readable in web browser.
      $ sudo nmap -oX [scan.xml] [target]
 	
      # Grepable output
