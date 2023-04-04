@@ -441,12 +441,15 @@ Optional: Real World Scenarios
      $ bash nmap.sh
      # Read results in web browser or lynx . 
 
-     # Consider masscan if you have to scan an entire unknown private subnet, its takes a while. 
+     # Consider masscan to scan large subnets, suppose to be faster, nmap was faster on 192.168.0.0/24 using -sn -Pn and masscan would kick me off my VPN. 
      $ sudo apt install masscan
      $ sudo masscan -p0-65535 --rate=50000 10.0.0.0/8,192.168.0.0/16,172.16.0.0/12 | awk '/Nmap scan/{gsub(/[()]/,"",$NF); print $NF > "livehosts.txt"}'
      # Then use nmap
      $ sudo nmap -O --osscan-limit -iL livehosts.txt -oX livehosts-OS.xml 
      $ xsltproc livehosts-OS.xml -o livehosts-OS.html
+
+     # Get a second Opinion on namp OS results. 
+     $ sudo xprobe2 192.168.0.1
 
 Networking Models
 -----------------
