@@ -15,7 +15,7 @@ Nmap Install
       $ wget https://nmap.org/dist/nmap-7.93-1.src.rpm
       $ sudo apt install alien
       $ sudo alien nmap-7.93-1.src.rpm
-      $ sudo dpkg --install nmap_5.21-2_amd64.deb
+      $ sudo dpkg --install nmap_7.93-2_amd64.deb
       # Can also be used to install other Nmap RPMs such as Zenmap, Ncat, and Nping.
 
 Nmap Basics
