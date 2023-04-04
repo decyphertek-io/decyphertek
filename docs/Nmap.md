@@ -11,11 +11,11 @@ Nmap Install
       regarding OS mapping accuracy and other glitches. 
 
       # To get the newest version of nmap on Debian based systems ( apt repo doesnt have newest version )
-      1. Download the Nmap RPMs for your platform (x86 or x86-64) from https://nmap.org/download.html
-      2. sudo apt install alien
-      3. sudo alien nmap-5.21-1.x86_64.rpm
-      4. sudo dpkg --install nmap_5.21-2_amd64.deb
-      # Steps 2–5 can be repeated for the other Nmap RPMs such as Zenmap, Ncat, and Nping.
+      # Download the Nmap RPMs for your platform (x86 or x86-64) from https://nmap.org/download.html
+      $ sudo apt install alien
+      $ sudo alien nmap-5.21-1.x86_64.rpm
+      $ sudo dpkg --install nmap_5.21-2_amd64.deb
+      # Can also be used to install other Nmap RPMs such as Zenmap, Ncat, and Nping.
 
 Nmap Basics
 -------------
@@ -206,6 +206,28 @@ Nmap Firewall Evasion
 	
      # Send bad checksums 
      $ sudo nmap --badsum [target]
+
+Nmap Output
+------------
+
+     # Save output to a text file
+     $ sudo nmap -oN [scan.txt] [target]
+	
+     # Save output to a XML file
+     $ sudo nmap -oX [scan.xml] [target]
+	
+     # Grepable output
+     $ sudo nmap -oG [scan.txt] [target]
+	
+     # Output all supported file types
+     $ sudo nmap -oA [path/filename] [target]
+	
+     # Periodically display statistics
+     $ sudo nmap --stats-every [time] [target]
+	
+     # 333 output 
+     $ sudo nmap -oS [scan.txt] [target]
+	
 	 
 Nmap Scripting Engine (NSE) (LUA)
 ---------------------------------
