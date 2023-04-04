@@ -451,6 +451,11 @@ Optional: Real World Scenarios
      # Get a second Opinion on namp OS results. 
      $ sudo xprobe2 192.168.0.1
 
+     # Netdiscover can also map an unknown network easily
+     $ sudo apt install netdiscover
+     $ sudo netdiscover
+     # Then run nmap against those findings ( Working on a programatic script )
+
 Networking Models
 -----------------
 
