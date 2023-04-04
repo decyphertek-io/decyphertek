@@ -242,6 +242,54 @@ Ndiff nmap scans
 	
      # XML output mode 
      $ sudo ndiff --xml [scan1.xml] [scan2.xml]
+
+Nmap Timing 
+-----------
+
+     # Timing templates
+     $ sudo nmap -T[0-5] [target]
+	
+     # Set the packet TTL
+     $ sudo nmap --ttl [time] [target]
+	
+     # Minimum number of parallel operations
+     $ sudo nmap --min-parallelism [number] [target]
+	
+     # Maximum number of parallel operations
+     $ sudo nmap --max-parallelism [number] [target]
+
+     # Minimum host group size	
+     $ sudo nmap --min-hostgroup [number] [targets]
+
+     # Maximum host group size	
+     $ sudo nmap --max-hostgroup [number] [targets]
+
+     # Maximum RTT timeout
+     $ sudo nmap --initial-rtt-timeout [time] [target]
+
+     # Initial RTT timeout
+     $ sudo nmap --max-rtt-timeout [TTL] [target]
+	
+     # Maximum number of retries
+     $ sudo nmap --max-retries [number] [target]
+	
+     # Host timeout
+     $ sudo nmap --host-timeout [time] [target]
+	
+     # Minimum scan delay
+     $ sudo nmap --scan-delay [time] [target]
+	
+     # Maximum scan delay
+     $ sudo nmap --max-scan-delay [time] [target]
+	
+     # Minimum packet rate   
+     $ sudo nmap --min-rate [number] [target]
+	
+     # Maximum packet rate
+     $ sudo nmap --max-rate [number] [target]
+	
+     # Defeat reset rate limits 
+     $ sudo nmap --defeat-rst-ratelimit [target
 	
 Nmap Scripting Engine (NSE) (LUA)
 ---------------------------------
