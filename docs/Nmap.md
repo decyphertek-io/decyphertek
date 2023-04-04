@@ -3,50 +3,108 @@ Nmap
 
 Nmap is widely used by network administrators, security professionals, and ethical hackers to scan networks, identify open ports, detect running services and their versions, and determine the operating system of hosts within a network.
 
-Nmap Debian Install
+Nmap Install
 -------------------
 
-      # To get the newest version of nmap on Debian based systems
+      # Nmap for all Operating Systems. - https://nmap.org/download.html
+      Best practice is to use the newest version of nmap. The newest version can solves previous issues
+      regarding OS mapping accuracy and other glitches. 
+
+      # To get the newest version of nmap on Debian based systems ( apt repo doesnt have newest version )
       1. Download the Nmap RPMs for your platform (x86 or x86-64) from https://nmap.org/download.html
       2. sudo apt install alien
       3. sudo alien nmap-5.21-1.x86_64.rpm
       4. sudo dpkg --install nmap_5.21-2_amd64.deb
       # Steps 2–5 can be repeated for the other Nmap RPMs such as Zenmap, Ncat, and Nping.
 
-Nmap Commands
+Nmap Basics
 -------------
 
-     # Download the newest version. nmap -V
-     https://nmap.org/download.html
+     # replace all [name] with a variable without brackets. 
+     # Replace [target] with IP or CIDR range. EX: 192.168.0.1 or 192.168.0.0/24 . 
+     # You can find the subnet from a system on the network. $ ifconfig OR $ ip addr
 
-     # Basic scan & multiple networks:
-     $ sudo nmap 192.168.0.0/24 10.10.10.0/24
+     # Scan a single target
+     $ sudo nmap [target]
+     
+     # Scan multiple targets
+     $ sudo nmap [target1], [target2], [target3]
 
-     # Quick scan no port check New 
-     $ sudo nmap -sn 192.168.0.0/24
+     # Scan a list of targets
+     $ nmap -iL [list.txt]
 
-     # Scan for specific open ports
-     $ sudo nmap -p 22,443 192.168.0.0/24
+     # Scan an entire subnet
+     $ sudo nmap [target]
 
-     # Scan for OS
-     $ sudo nmap -O 192.168.0.0/24
+     # Scan random hosts
+     $ sudo nmap -iR [number]
 
-     # OS and service Info
-     $ sudo nmap -A 192.168.0.0/24
+     # Excluding targets from a scan
+     $ sudo nmap [target] --exclude [target1]
 
-     # Identify Hostnames
-     $ sudo nmap -sL 192.168.0.0/24
+     # Excluding targets using a list
+     $ sudo nmap [target] --excludefile [list.txt]
 
-     # Agressive Quick Scan
-     $ sudo nmap -T5 192.168.0.0/24
+     # Perform an agressive scan
+     $ sudo nmap -A [target]
 
-     # Perform a stealth scan:
-     $ sudo nmap -sS 192.168.0.0/24
+     # Scan an IPv6 target
+     $ sudo nmap -6 [target]
 
-     # Output to xml
-     $ sudo nmap -oX results.xml 192.168.0.0/24
-     # XML output can be converted to HTML, easily parsed by programs such as Nmap graphical user interfaces, or imported into databases.
-     # Can import xml to zenmap , scan, then view topology. 
+Nmap Discovery 
+--------------
+
+     # Perform a ping-only scan
+     $ sudo nmap -sn [target]
+	
+     # Don't ping
+     $ sudo nmap -Pn [target]
+	
+     # TCP SYN ping
+     $ sudo nmap -PS [target]
+	
+     # TCP ACK ping
+     $ sudo nmap -PA [target]
+	
+     # UDP ping
+     $ sudo nmap -PU [target]
+	
+     # SCTP INIT ping
+     $ sudo nmap -PY [target]
+	
+     # ICMP echo ping
+     $ sudo nmap -PE [target]
+	
+     # ICMP timestamp ping
+     $ sudo nmap -PP [target]
+	
+     # ICMP address mask ping
+     $ sudo nmap -PM [target]
+	
+     # IP protocol ping
+     $ sudo nmap -PO [target]
+	
+     # ARP ping
+     $ sudo nmap -PR [target]
+	
+     # Traceroute
+     $ sudo nmap --traceroute [target]
+	
+     # Force reverse DNS resolution
+     $ sudo nmap -R [target]
+	
+     # Disable reverse DNS resolution
+     $ sudo nmap -n [target]
+	
+     $ Alternative DNS lookup
+     $ sudo nmap --system-dns [target]
+	
+     # Manually specify DNS server(s)
+     $ nmap --dns-servers [servers] [target]
+	
+     # Create a host list 
+     $ sudo nmap -sL [targets]
+	
 
 Nmap Scripting Engine (NSE) (LUA)
 ---------------------------------
@@ -116,4 +174,7 @@ References
 
      https://nmap.org/book/output-formats-commandline-flags.html
      https://www.redhat.com/sysadmin/quick-nmap-inventory
+     https://duckduckgo.com/?t=ffab&q=nmap+cheat+sheet&ia=cheatsheet&iax=1
      https://www.secureideas.com/blog/2021/01/converting-nmap-xml-files-to-html-with-xsltproc.html
+     https://resources.infosecinstitute.com/topic/nmap-cheat-sheet-discovery-exploits-part-3-gathering-additional-information-host-network-2/
+
