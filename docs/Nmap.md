@@ -392,6 +392,8 @@ Network Mapping Alternatives
      * Cacti ( Server ) https://www.cacti.net/info/downloads ; https://www.howtoforge.com/how-to-install-cacti-monitoring-on-ubuntu-22-04/
      * Zmap - https://zmap.io/
      * Angry Ip Scanner - https://angryip.org/
+     * OpenNMS ( Server) - https://www.opennms.com/distributions/
+     * Nagios ( Server ) https://www.nagios.org/projects/nagios-core/
 
 References
 -----------
