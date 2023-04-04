@@ -432,7 +432,10 @@ Optional: Real World Scenarios
 ------------------------------
 
      # Host Discovery on unknown subnets ( Scanning multiple large subnets 10.0.0.0/8, 192.0.0.0/8, 172.0.0.0/8 , make sure you have network access)
-     # Try the --max-parallelism [number] setting to get nmap to scan more networks simultaneously.
+     # Scanning multiple large subnets can take a lot of try some of the mentioned solutions:
+     #  --min-rate, --max-parallelism, and --host-timeout
+
+     # Quick inventory, OS , Ports . 
      $ sudo vim nmap.sh
      sudo nmap -sn -Pn 192.168.0.0/24 | awk '/Nmap scan/{gsub(/[()]/,"",$NF); print $NF > "livehosts.txt"}'
      sudo nmap -O --osscan-limit -iL livehosts.txt -oX livehosts-OS.xml 
