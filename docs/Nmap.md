@@ -433,9 +433,7 @@ Optional: Real World Scenarios
 
      # Host Discovery on unknown subnets ( Scanning multiple large subnets 10.0.0.0/8, 192.0.0.0/8, 172.0.0.0/8 , make sure you have network access)
      # Try the --max-parallelism [number] setting to get nmap to scan more networks simultaneously.
-     $ sudo nmap -sn 192.168.0.0/24 -oN scanlist.txt
-     # Parse the nmap inventory data
-     $ grep 'Nmap scan report for' scanlist.txt | awk '{gsub(/\(|\)/, "", $NF); print $NF}' > livehosts.txt
+     $ sudo nmap -sn 192.168.0.0/24 | awk '/Nmap scan/{gsub(/[()]/,"",$NF); print $NF > "livehosts.txt"}'
      # Scan the output of discovery to find the operating systems.
      $ sudo nmap -O --osscan-limit -iL livehosts.txt -oX livehosts-OS.xml 
      $ xsltproc livehosts-OS.xml -o livehosts-OS.html
