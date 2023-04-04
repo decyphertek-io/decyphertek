@@ -365,6 +365,26 @@ Nmap Troubleshooting
      # Specify a network interface
      $ sudo nmap -e [interface] [target]
 
+Optional: Nmap Infosec
+----------------------
+
+     # whois
+     $ nmap --script whois [target]
+
+     # Geolocation
+     $ Wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
+     $ sudo mv GeoLiteCity.dat.gz /usr/local/share/nmap/nselib/data/GeoLiteCity.dat.gz
+     $ sudo nmap --script ip-geolocation-* [target]
+
+     # Google Safe Browsing
+     # Get API Key - http://code.google.com/apis/safebrowsing/key_signup.html
+     $ sudo nmap -p80 --script http-google-malware –script-args http-google-malware.api=<API> [target]
+
+     # Email
+     $ wget http://seclists.org/nmap-dev/2011/q3/att-401/http-google-email.nse 
+     $ sudo mv http-google-email.nse  /usr/share/nmap/scripts/http-google-email.nse 
+     $ sudo nmap -p80 --script http-google-email [target]
+
 Optional: Ansible:
 ------------------
 
