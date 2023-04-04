@@ -253,6 +253,7 @@ Nmap Timing
      # Set the packet TTL
      $ sudo nmap --ttl [time] [target]
 	
+     # Setting the --min-parallelism option may increase scan performance, setting it too high may produce inaccurate results.
      # Minimum number of parallel operations
      $ sudo nmap --min-parallelism [number] [target]
 	
