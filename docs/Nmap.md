@@ -21,7 +21,7 @@ Nmap Basics
 -------------
 
      # replace all [name] with a variable without brackets. 
-     # Replace [target] with IP or CIDR range. EX: 192.168.0.1 or 192.168.0.0/24 . 
+     # EX: Replace [target] with IP or CIDR range. 192.168.0.1 or 192.168.0.0/24 . 
      # You can find the subnet from a system on the network. $ ifconfig OR $ ip addr
 
      # Scan a single target
@@ -104,8 +104,43 @@ Nmap Discovery
 	
      # Create a host list 
      $ sudo nmap -sL [targets]
-	
 
+Nmap Port Scanning
+------------------
+
+     # Perform a fast scan
+     $ sudo nmap -F [target]
+	
+     # Scan specific ports
+     $ sudo nmap -p [port(s)] [target]
+	
+     # Scan ports by name
+     $ sudo nmap -p [port name(s)] [target]
+	
+     # Scan ports by protocol
+     $ sudo nmap -sU -sT -p U:[ports],T:[ports] [target]
+	
+     # Scan all ports
+     $ sudo nmap -p 1-65535 [target]
+	
+     # Scan top ports
+     $ sudo nmap --top-ports [number] [target]
+	
+     # Perform a sequential port scan
+     $ sudo nmap -r [target]
+	
+     # Attempt to guess an unknown OS
+     $ sudo nmap -O --osscan-guess [target]
+	
+     # Service version detection
+     $ sudo nmap -sV [target]
+	
+     # Troubleshooting version scans
+     $ sudo nmap -sV --version-trace [target]
+	
+     # Perform a RPC scan
+     $ sudo nmap -sR [target]
+	 
 Nmap Scripting Engine (NSE) (LUA)
 ---------------------------------
 
