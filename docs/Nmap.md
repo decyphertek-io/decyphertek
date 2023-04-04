@@ -466,7 +466,7 @@ Network Mapping Alternatives
      * Zenmap ( Nmap GUI ) - https://www.redhat.com/sysadmin/quick-nmap-inventory
      * Spice Works - https://www.spiceworks.com/free-pc-network-inventory-software/
      * Cacti ( Server ) https://www.cacti.net/info/downloads ; https://www.howtoforge.com/how-to-install-cacti-monitoring-on-ubuntu-22-04/
-     * Zmap - https://zmap.io/
+     * Zmap ( Public Networks ) - https://zmap.io/
      * Angry Ip Scanner - https://angryip.org/
      * OpenNMS ( Server) - https://www.opennms.com/distributions/
      * Nagios ( Server ) https://www.nagios.org/projects/nagios-core/
