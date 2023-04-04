@@ -318,7 +318,7 @@ Nmap NSE - Scripting Engine
 Nmap Troubleshooting
 --------------------
 
-     # Time Reduction of scans - solutions. 
+     # Time Reduction of scans - https://nmap.org/book/reduce-scantime.html
      * Skip the port scan (-sn) 
      * Limit the number of ports scanned. --top-ports
      * Skip advanced scan types (-sC, -sV, -O, --traceroute, and -A)
@@ -327,9 +327,8 @@ Nmap Troubleshooting
      * Separate and Optimize UDP Scans. -sSU
      * Upgrade Nmap. nmap -V
      * Execute Concurrent Nmap Instances. nmap-services and nmap-os-db
-     https://nmap.org/book/reduce-scantime.html
-
-     # OS misidentification - solutions
+     
+     # OS misidentification - https://nmap.org/book/osdetect-unidentified.html
      * Upgrade to the latest Nmap
      * Scan all ports
      * Try a more aggressive guess
@@ -338,9 +337,34 @@ Nmap Troubleshooting
      # verify output against similar systems.
      $ sudo nmap -O -sV -T4 -d <target>
      # Submit results here - https://insecure.org/cgi-bin/submit.cgi?corr-os
-     https://nmap.org/book/osdetect-unidentified.html
+     
+     # Getting help
+     $ sudo nmap -h
+	
+     # Display nmap version
+     $ sudo nmap -V
 
-
+     # Verbose output	
+     $ sudo nmap -v [target]
+	
+     # Debugging
+     $ sudo nmap -d [target]
+	
+     # Display port state reason
+     $ sudo nmap --reason [target]
+	
+     # Only display open ports
+     $ sudo nmap --open [target]
+	
+     # Trace packets
+     $ sudo nmap --packet-trace [target]
+	
+     # Display host networking
+     $ sudo nmap --iflist
+	
+     # Specify a network interface
+     $ sudo nmap -e [interface] [target]
+	 
 Networking Models
 -----------------
 
