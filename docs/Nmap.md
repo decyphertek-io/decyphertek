@@ -441,7 +441,7 @@ Optional: Real World Scenarios
      $ xsltproc livehosts-OS.xml -o livehosts-OS.html
      # view via web browser or lynx from terminal. 
 
-     # A quciker way, one less step. Can make a bash script as well. 
+     # A quicker way, one less step. Can make a bash script as well. 
      $ sudo nmap -sn 192.168.0.0/24 | awk '/Nmap scan/{gsub(/[()]/,"",$NF); print $NF > "livehosts.txt"}'
      $ sudo nmap -O --osscan-limit -iL livehosts.txt -oX livehosts-OS.xml 
      $ xsltproc livehosts-OS.xml -o livehosts-OS.html
