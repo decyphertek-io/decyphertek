@@ -316,6 +316,9 @@ Nmap NSE - Scripting Engine
 	
      # Update the script database 
      $ sudo nmap --script-updatedb
+
+     # Example Script snmp-info - https://nmap.org/nsedoc/scripts/snmp-info.html
+     $ sudo nmap --script snmp-info.nse [target]
 	
 Nmap Troubleshooting
 --------------------
@@ -424,7 +427,22 @@ Optional: Ansible Nmap
      exclude: 192.168.0.1, web.example.com
      port: 22, 443
      groups: web_servers: "ports | selectattr('port', 'equalto', '443')"
-	 
+
+Optional: Real World Scenarios
+------------------------------
+
+     # Host Discovery on unknown subnets ( Scanning multiple large subnets 10.0.0.0/8, 192.0.0.0/8, 172.0.0.0/8 , make sure you have network access)
+     # Try the --max-parallelism [number] setting to get nmap to scan more networks simultaneously.
+     $ sudo nmap -sn 192.168.0.0/24 -oN scanlist.txt
+     # Parse the nmap inventory data
+     $ grep 'Nmap scan report for' scanlist.txt | awk '{gsub(/\(|\)/, "", $NF); print $NF}' > livehosts.txt
+     # Scan the output of didcovery to find the operating systems.
+     $ sudo nmap -O --osscan-limit -iL livehosts.txt -oX livehosts-OS.xml
+     # Convert report to html using xsltproc (if not installed - $ sudo apt install xsltproc)
+     $ xsltproc -o livehosts-OS.html /usr/share/nmap/nmap.xsl livehosts-OS.xml
+     # view nmap report in your browser or via lynx in your terminal. 
+
+
 Networking Models
 -----------------
 
