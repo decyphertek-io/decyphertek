@@ -12,8 +12,9 @@ Nmap Install
 
       # To get the newest version of nmap on Debian based systems ( apt repo doesnt have newest version )
       # Download the Nmap RPMs for your platform (x86 or x86-64) from https://nmap.org/download.html
+      $ wget https://nmap.org/dist/nmap-7.93-1.src.rpm
       $ sudo apt install alien
-      $ sudo alien nmap-5.21-1.x86_64.rpm
+      $ sudo alien nmap-7.93-1.src.rpm
       $ sudo dpkg --install nmap_5.21-2_amd64.deb
       # Can also be used to install other Nmap RPMs such as Zenmap, Ncat, and Nping.
 
@@ -470,6 +471,7 @@ Network Mapping Alternatives
      * Cacti ( Server ) https://www.cacti.net/info/downloads ; https://www.howtoforge.com/how-to-install-cacti-monitoring-on-ubuntu-22-04/
      * Zmap ( Public Networks ) - https://zmap.io/
      * Angry Ip Scanner - https://angryip.org/
+     * LibreNMS ( Server ) - https://www.librenms.org/
      * OpenNMS ( Server) - https://www.opennms.com/distributions/
      * Nagios ( Server ) https://www.nagios.org/projects/nagios-core/
 
