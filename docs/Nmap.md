@@ -7,16 +7,14 @@ Nmap Install
 -------------------
 
       # Nmap for all Operating Systems. - https://nmap.org/download.html
-      Best practice is to use the newest version of nmap. The newest version can solves previous issues
-      regarding OS mapping accuracy and other glitches. 
+      # Best practice is to use the newest version of nmap, provides fixes.
 
-      # To get the newest version of nmap on Debian based systems ( apt repo doesnt have newest version )
-      # Download the Nmap RPMs for your platform (x86 or x86-64) from https://nmap.org/download.html
-      $ wget https://nmap.org/dist/nmap-7.93-1.src.rpm
-      $ sudo apt install alien
-      $ sudo alien nmap-7.93-1.src.rpm
-      $ sudo dpkg --install nmap_7.93-2_amd64.deb
-      # Can also be used to install other Nmap RPMs such as Zenmap, Ncat, and Nping.
+      # The suggested debian method doesnt work well using alien. Use apt instead.
+      $ sudo apt install nmap
+      # Install zenmap 
+      $ wget http://archive.ubuntu.com/ubuntu/pool/universe/n/nmap/zenmap_7.60-1ubuntu5_all.deb
+      $ sudo dpkg -i zenmap_7.60-1ubuntu5_all.deb
+  
 
 Nmap Basics
 -------------
