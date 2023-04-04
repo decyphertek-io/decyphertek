@@ -454,7 +454,10 @@ Optional: Real World Scenarios
      # Netdiscover can also map an unknown network easily
      $ sudo apt install netdiscover
      $ sudo netdiscover
-     # Then run nmap against those findings ( Working on a programatic script )
+     # Scan a specific subnet and save output
+     $ sudo netdiscover -r 192.168.0.0/24 -PN | awk '{print $1}' > livehosts.txt
+     # Can feed this to nmap.
+     # I found that it didnt pick up my system? Maybe the firewall is blocking the probe?
 
 Networking Models
 -----------------
