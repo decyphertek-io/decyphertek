@@ -376,7 +376,7 @@ Optional: Nmap Infosec
      $ sudo nmap --script-updatedb
 
      # whois
-     $ sduo nmap --script whois [target]
+     $ sudo nmap --script whois [target]
 
      # Geolocation
      $ Wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
