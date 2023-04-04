@@ -364,6 +364,31 @@ Nmap Troubleshooting
 	
      # Specify a network interface
      $ sudo nmap -e [interface] [target]
+
+Optional: Ansible:
+------------------
+
+     # Requirement: Install ansible galaxy community general
+     $ sudo ansible-galaxy collection install community.general
+     # Reference community.general.nmap in the Ansible Playbook
+     # inventory.config file in YAML format
+
+     plugin: community.general.nmap
+     strict: false
+     address: 192.168.0.0/24
+
+     # a sudo nmap scan to fully use nmap scan power.
+     plugin: community.general.nmap
+     sudo: true
+     strict: false
+     address: 192.168.0.0/24
+
+     # an nmap scan specifying ports and classifying results to an inventory group
+     plugin: community.general.nmap
+     address: 192.168.0.0/24
+     exclude: 192.168.0.1, web.example.com
+     port: 22, 443
+     groups: web_servers: "ports | selectattr('port', 'equalto', '443')"
 	 
 Networking Models
 -----------------
@@ -404,6 +429,7 @@ References
      https://www.tecmint.com/use-nmap-script-engine-nse-scripts-in-linux/
      https://nmap.org/book/nse.html
      https://nmap.org/presentations/BHDC10/
+     https://docs.ansible.com/ansible/latest/collections/community/general/nmap_inventory.html
      https://www.secureideas.com/blog/2021/01/converting-nmap-xml-files-to-html-with-xsltproc.html
      https://resources.infosecinstitute.com/topic/nmap-cheat-sheet-discovery-exploits-part-3-gathering-additional-information-host-network-2/
 
