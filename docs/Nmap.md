@@ -140,6 +140,43 @@ Nmap Port Scanning
 	
      # Perform a RPC scan
      $ sudo nmap -sR [target]
+
+Nmap Advanced Scans
+-------------------
+
+     # TCP SYN scan
+     $ sudo nmap -sS [target]
+	
+     # TCP connect scan
+     $ sudo nmap -sT [target]
+	
+     # UDP scan
+     $ sudo nmap -sU [target]
+	
+     # TCP NULL scan
+     $ sudo nmap -sN [target]
+	
+     # TCP FIN scan
+     $ sudo nmap -sF [target]
+	
+     # Xmas scan
+     $ sudo nmap -sA [target]
+	
+     # TCP ACK scan
+     $ sudo nmap -sA [target]
+	
+     # Custom TCP scan
+     $ sudo nmap --scanflags [flags] [target]
+	
+     # IP protocol scan
+     $ sudo nmap -sO [target]
+	
+     # Send raw ethernet packets
+     $ sudo nmap --send-eth [target]
+	
+     # Send IP packets 
+     $ sudo nmap --send-ip [target]
+	
 	 
 Nmap Scripting Engine (NSE) (LUA)
 ---------------------------------
