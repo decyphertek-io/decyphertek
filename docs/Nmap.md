@@ -437,11 +437,7 @@ Optional: Real World Scenarios
      # Parse the nmap inventory data
      $ grep 'Nmap scan report for' scanlist.txt | awk '{gsub(/\(|\)/, "", $NF); print $NF}' > livehosts.txt
      # Scan the output of didcovery to find the operating systems.
-     $ sudo nmap -O --osscan-limit -iL livehosts.txt -oX livehosts-OS.xml
-     # Convert report to html using xsltproc (if not installed - $ sudo apt install xsltproc)
-     $ xsltproc -o livehosts-OS.html /usr/share/nmap/nmap.xsl livehosts-OS.xml
-     # view nmap report in your browser or via lynx in your terminal. 
-
+     $ sudo nmap -O --osscan-limit -iL livehosts.txt -oX livehosts-OS.xml 
 
 Networking Models
 -----------------
