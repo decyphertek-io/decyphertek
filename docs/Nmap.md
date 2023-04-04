@@ -14,7 +14,6 @@ Nmap Install
       # Install zenmap 
       $ wget http://archive.ubuntu.com/ubuntu/pool/universe/n/nmap/zenmap_7.60-1ubuntu5_all.deb
       $ sudo dpkg -i zenmap_7.60-1ubuntu5_all.deb
-  
 
 Nmap Basics
 -------------
@@ -430,7 +429,7 @@ Optional: Ansible Nmap
 Optional: Real World Scenarios
 ------------------------------
 
-     # Host Discovery on unknown subnets ( Scanning multiple large subnets 10.0.0.0/8, 192.0.0.0/8, 172.0.0.0/8 , make sure you have network access)
+     # Host Discovery on unknown subnets ( Scanning multiple large subnets 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16 , make sure you have network access)
      # Scanning multiple large subnets can take a lot of try some of the mentioned solutions:
      #  --min-rate, --max-parallelism, and --host-timeout
 
@@ -441,6 +440,13 @@ Optional: Real World Scenarios
      xsltproc livehosts-OS.xml -o livehosts-OS.html
      $ bash nmap.sh
      # Read results in web browser or lynx . 
+
+     # Consider masscan if you have to scan an entire unknown private subnet, its takes a while. 
+     $ sudo apt install masscan
+     $ sudo masscan -p0-65535 --rate=50000 10.0.0.0/8,192.168.0.0/16,172.16.0.0/12 | awk '/Nmap scan/{gsub(/[()]/,"",$NF); print $NF > "livehosts.txt"}'
+     # Then use nmap
+     $ sudo nmap -O --osscan-limit -iL livehosts.txt -oX livehosts-OS.xml 
+     $ xsltproc livehosts-OS.xml -o livehosts-OS.html
 
 Networking Models
 -----------------
