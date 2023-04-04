@@ -227,8 +227,22 @@ Nmap Output
 	
      # 333 output 
      $ sudo nmap -oS [scan.txt] [target]
+
+Ndiff nmap scans
+----------
+
+     # Install ndiff on debian sysyems
+     $ sudo apt install ndiff
+
+     # Comparison using Ndiff
+     $ sudo ndiff [scan1.xml] [scan2.xml]
+
+     # Ndiff verbose mode	
+     $ sudo ndiff -v [scan1.xml] [scan2.xml]
 	
-	 
+     # XML output mode 
+     $ sudo ndiff --xml [scan1.xml] [scan2.xml]
+	
 Nmap Scripting Engine (NSE) (LUA)
 ---------------------------------
 
