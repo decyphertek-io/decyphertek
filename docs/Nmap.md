@@ -436,8 +436,10 @@ Optional: Real World Scenarios
      $ sudo nmap -sn 192.168.0.0/24 -oN scanlist.txt
      # Parse the nmap inventory data
      $ grep 'Nmap scan report for' scanlist.txt | awk '{gsub(/\(|\)/, "", $NF); print $NF}' > livehosts.txt
-     # Scan the output of didcovery to find the operating systems.
+     # Scan the output of discovery to find the operating systems.
      $ sudo nmap -O --osscan-limit -iL livehosts.txt -oX livehosts-OS.xml 
+     $ xsltproc livehosts-OS.xml -o livehosts-OS.html
+     # view via web browser or lynx from terminal. 
 
 Networking Models
 -----------------
