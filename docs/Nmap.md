@@ -365,10 +365,12 @@ Nmap Troubleshooting
      # Specify a network interface
      $ sudo nmap -e [interface] [target]
 
-Optional: Nmap Infosec NSE 
+Optional: Nmap Infosec 
 ----------------------
 
      # https://resources.infosecinstitute.com/topic/nmap-cheat-sheet-discovery-exploits-part-3-gathering-additional-information-host-network-2/
+     # If you add scripts, update the DB
+     $ sudo nmap --script-updatedb
 
      # whois
      $ nmap --script whois [target]
@@ -386,6 +388,14 @@ Optional: Nmap Infosec NSE
      $ wget http://seclists.org/nmap-dev/2011/q3/att-401/http-google-email.nse 
      $ sudo mv http-google-email.nse  /usr/share/nmap/scripts/http-google-email.nse 
      $ sudo nmap -p80 --script http-google-email [target]
+
+     # OS Scans - Flag Options
+     # --osscan-limit (Limit OS detection to promising targets)
+     # --osscan-guess ( If no OS results found, take a guess)
+     # --max-os-tries (Set the maximum number of OS detection tries against a target)
+     # Example
+     $ sudo nmap -O --osscan-limit [target]
+
 
 Optional: Ansible Nmap
 ------------------
