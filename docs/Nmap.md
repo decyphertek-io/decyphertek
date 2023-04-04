@@ -289,7 +289,7 @@ Nmap Timing
      $ sudo nmap --max-rate [number] [target]
 	
      # Defeat reset rate limits 
-     $ sudo nmap --defeat-rst-ratelimit [target
+     $ sudo nmap --defeat-rst-ratelimit [target]
 	
 Nmap NSE - Scripting Engine
 ---------------------------------
