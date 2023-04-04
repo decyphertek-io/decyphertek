@@ -370,13 +370,18 @@ Nmap Troubleshooting
 
 Optional: Nmap Infosec 
 ----------------------
-
-     # https://resources.infosecinstitute.com/topic/nmap-cheat-sheet-discovery-exploits-part-3-gathering-additional-information-host-network-2/
+     
      # If you add scripts, update the DB
      $ sudo nmap --script-updatedb
 
      # whois
-     $ sudo nmap --script whois [target]
+     $ sudo nmap --script whois-ip [target]
+
+     # Vulners
+     $ sudo nmap -Pn -sV --script vulners [target]
+
+     # Check SSL
+     $ sudo nmap --script ssl-cert -p 443 [target]
 
      # Geolocation
      $ Wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
@@ -455,7 +460,7 @@ Optional: Real World Scenarios
      $ sudo apt install netdiscover
      $ sudo netdiscover
      # Scan a specific subnet and save output
-     $ sudo netdiscover -r 192.168.0.0/24 -PN | awk '{print $1}' > livehosts.txt
+     $ sudo netdiscover -f -r 192.168.0.0/24 -PN | awk '{print $1}' > livehosts.txt
      # Can feed this to nmap.
      # I found that it didnt pick up my system? Maybe the firewall is blocking the probe?
 
