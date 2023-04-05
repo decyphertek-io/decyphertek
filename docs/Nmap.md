@@ -296,6 +296,9 @@ Nmap NSE - Scripting Engine
 
      # NSE Scripts - https://nmap.org/nsedoc/scripts/
      # Roll your own NSE - https://null-byte.wonderhowto.com/how-to/get-started-writing-your-own-nse-scripts-for-nmap-0187403/
+
+     # Find script using locate
+     $ locate *.nse
  
      # Execute individual scripts
      $ sudo nmap --script [script.nse] [target]
@@ -374,15 +377,17 @@ Optional: Nmap Infosec
      # If you add scripts, update the DB
      $ sudo nmap --script-updatedb
 
-     # whois
-     $ sudo nmap --script whois-ip [target]
-
-     # Vulners
+     # Vulners scan
      $ sudo nmap -Pn -sV --script vulners [target]
 
-     # Check SSL
-     $ sudo nmap --script ssl-cert -p 443 [target]
+     # Check SSL cert
+     $ sudo nmap --script ssl-cert -p 443 -v [target]
 
+     # Whois-domain
+     $ sudo nmap --script whois-domain.nse [target]
+
+     # 
+    
      # Geolocation
      $ Wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
      $ sudo mv GeoLiteCity.dat.gz /usr/local/share/nmap/nselib/data/GeoLiteCity.dat.gz
@@ -396,14 +401,6 @@ Optional: Nmap Infosec
      $ wget http://seclists.org/nmap-dev/2011/q3/att-401/http-google-email.nse 
      $ sudo mv http-google-email.nse  /usr/share/nmap/scripts/http-google-email.nse 
      $ sudo nmap -p80 --script http-google-email [target]
-
-     # OS Scans - Flag Options
-     # --osscan-limit (Limit OS detection to promising targets)
-     # --osscan-guess ( If no OS results found, take a guess)
-     # --max-os-tries (Set the maximum number of OS detection tries against a target)
-     # Example
-     $ sudo nmap -O --osscan-limit [target]
-
 
 Optional: Ansible Nmap
 ------------------
@@ -438,9 +435,9 @@ Optional: Real World Scenarios
      # Scanning multiple large subnets can take a lot of try some of the mentioned solutions:
      #  --min-rate, --max-parallelism, and --host-timeout
 
-     # Quick inventory, OS , Ports . 
+     # Quick inventory, OS , Ports, across all private subnets. 
      $ sudo vim nmap.sh
-     sudo nmap -sn -Pn 192.168.0.0/24 | awk '/Nmap scan/{gsub(/[()]/,"",$NF); print $NF > "livehosts.txt"}'
+     sudo nmap -sn 10.0.0.0/8 , 192.168.0.0/16 , 172.16.0.0/12 | awk '/Nmap scan/{gsub(/[()]/,"",$NF); print $NF > "livehosts.txt"}'
      sudo nmap -O --osscan-limit -iL livehosts.txt -oX livehosts-OS.xml 
      xsltproc livehosts-OS.xml -o livehosts-OS.html
      $ bash nmap.sh
