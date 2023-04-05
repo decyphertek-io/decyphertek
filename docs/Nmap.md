@@ -435,10 +435,12 @@ Optional: Real World Scenarios
      # Scanning multiple large subnets can take a lot of try some of the mentioned solutions:
      #  --min-rate, --max-parallelism, and --host-timeout
 
-     # Quick inventory, OS , Ports, across all private subnets. 
-     # You can also just scan one subnet at a time. 
+     # Its faster to scan one subnet at a time, if you want to scan then all, then:
+     $ sudo nmap -sn 10.0.0.0/8 , 192.168.0.0/16 , 172.16.0.0/12
+
+     # Quick inventory, OS , Ports. 
      $ sudo vim nmap.sh
-     sudo nmap -sn 10.0.0.0/8 , 192.168.0.0/16 , 172.16.0.0/12 | awk '/Nmap scan/{gsub(/[()]/,"",$NF); print $NF > "livehosts.txt"}'
+     sudo nmap -sn 192.168.0.0/24 | awk '/Nmap scan/{gsub(/[()]/,"",$NF); print $NF > "livehosts.txt"}'
      sudo nmap -O --osscan-limit -iL livehosts.txt -oX livehosts-OS.xml 
      xsltproc livehosts-OS.xml -o livehosts-OS.html
      $ bash nmap.sh
