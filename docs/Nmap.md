@@ -436,6 +436,7 @@ Optional: Real World Scenarios
      #  --min-rate, --max-parallelism, and --host-timeout
 
      # Quick inventory, OS , Ports, across all private subnets. 
+     # You can also just scan one subnet at a time. 
      $ sudo vim nmap.sh
      sudo nmap -sn 10.0.0.0/8 , 192.168.0.0/16 , 172.16.0.0/12 | awk '/Nmap scan/{gsub(/[()]/,"",$NF); print $NF > "livehosts.txt"}'
      sudo nmap -O --osscan-limit -iL livehosts.txt -oX livehosts-OS.xml 
