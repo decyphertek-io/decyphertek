@@ -453,7 +453,7 @@ Optional: Real World Scenarios
      $ sudo nmap -O --osscan-limit -iL livehosts.txt -oX livehosts-OS.xml 
      $ xsltproc livehosts-OS.xml -o livehosts-OS.html
 
-     # Get a second Opinion on namp OS results. 
+     # Get a second Opinion on nmap OS results. 
      $ sudo xprobe2 192.168.0.1
 
      # Netdiscover can also map an unknown network easily
