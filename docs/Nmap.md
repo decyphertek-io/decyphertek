@@ -386,8 +386,6 @@ Optional: Nmap Infosec
      # Whois-domain
      $ sudo nmap --script whois-domain.nse [target]
 
-     # 
-    
      # Geolocation
      $ Wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
      $ sudo mv GeoLiteCity.dat.gz /usr/local/share/nmap/nselib/data/GeoLiteCity.dat.gz
@@ -489,7 +487,10 @@ Network Mapping Alternatives
      * Zenmap ( Nmap GUI ) - https://www.redhat.com/sysadmin/quick-nmap-inventory
      * Spice Works - https://www.spiceworks.com/free-pc-network-inventory-software/
      * Cacti ( Server ) https://www.cacti.net/info/downloads ; https://www.howtoforge.com/how-to-install-cacti-monitoring-on-ubuntu-22-04/
-     * Zmap ( Public Networks ) - https://zmap.io/
+     * Zmap  - https://zmap.io/
+     * RustScan - https://rustscan.github.io/RustScan/
+     * Masscan - https://www.kali.org/tools/masscan/
+     * Netdiscover - https://www.kali.org/tools/netdiscover/
      * Angry Ip Scanner - https://angryip.org/
      * LibreNMS ( Server ) - https://www.librenms.org/
      * OpenNMS ( Server) - https://www.opennms.com/distributions/
