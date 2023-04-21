@@ -15,6 +15,12 @@ Nmap Install
       $ wget http://archive.ubuntu.com/ubuntu/pool/universe/n/nmap/zenmap_7.60-1ubuntu5_all.deb
       $ sudo dpkg -i zenmap_7.60-1ubuntu5_all.deb
 
+Nmap Script
+------------
+
+      # Requires sudo , nmap , xmlstarlet , xsltproc , and Lynx
+      $ curl -fsSL https://raw.githubusercontent.com/decyphertek-io/configs/main/bash-scripts/nmap.sh | bash
+
 Nmap Basics
 -------------
 
