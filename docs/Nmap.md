@@ -19,8 +19,8 @@ Nmap Script
 ------------
 
       # Requires sudo , nmap , xmlstarlet , xsltproc , and Lynx
-      $ wget https://raw.githubusercontent.com/decyphertek-io/configs/main/bash-scripts/nmap.sh 
-      $ bash nmap.sh
+      # ip addr or ifconfig to get your network info.
+      $ wget https://raw.githubusercontent.com/decyphertek-io/configs/main/bash-scripts/nmap.sh && bash nmap.sh
 
 Nmap Basics
 -------------
