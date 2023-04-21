@@ -21,7 +21,7 @@ Nmap Script
       # Requires sudo , nmap , xsltproc , and Lynx
       # ip addr or ifconfig to get your network info.
       $ wget https://raw.githubusercontent.com/decyphertek-io/configs/main/bash-scripts/nmap.sh && bash nmap.sh
-      # If you do not run the script form the home directry lynx will fail, can edit 
+      # If you do not run the script from the home directry lynx will fail, it can be edited. 
 
 Nmap Basics
 -------------
