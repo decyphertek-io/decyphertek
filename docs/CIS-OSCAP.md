@@ -32,12 +32,12 @@ Oscap - Install
 ----------------
 
      $ sudo apt install -y libopenscap8 ssg-base ssg-debderived ssg-debian ssg-nondebian ssg-applications unzip
-     $ wget https://github.com/ComplianceAsCode/content/releases/download/v0.1.63/scap-security-guide-0.1.63.zip 
-     $ unzip -q scap-security-guide-0.1.63.zip
+     $ wget https://github.com/ComplianceAsCode/content/releases/download/v0.1.67/scap-security-guide-0.1.67.zip
+     $ unzip -q scap-security-guide-0.1.67.zip
      $ sudo mkdir /opt/ssg/
      $ mkdir ~/ssg-reports/
-     $ sudo mv scap-security-guide-0.1.63 /opt/ssg/
-     $ sudo rm -rf scap-security-guide-0.1.63.zip
+     $ sudo mv scap-security-guide-0.1.67 /opt/ssg/
+     $ sudo rm -rf scap-security-guide-0.1.67.zip
   
 CAUTION: Oscap - Quick Remediation
 ----------------------------------
