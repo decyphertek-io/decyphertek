@@ -11,17 +11,16 @@ Microk8s is Canonical's Kubernetes. Easy to install via snap. Enterprise ready o
 
 MicroK8s - Install
 ------------------
-
+  
     $ sudo snap install microk8s --classic 
     $ sudo usermod -a -G microk8s $USER
-    # If directory doesnt exist
-    $ sudo mkdir .kube
     $ sudo chown -f -R $USER ~/.kube 
+    $ sudo microk8s config > ~/.kube/config
     $ alias kubectl='microk8s kubectl'
     # Logout and back in
-    # Please use hostpath-storage instead warning
-    $ microk8s enable dns storage helm3
+    $ microk8s enable dns storage helm3 ingress registry
     $ alias helm='microk8s helm3'
+    # if it fails - microk8s helm3 repo add stable https://charts.helm.sh/stable
     $ helm repo add stable https://charts.helm.sh/stable
     # Example 1
     $ helm search repo jenkins
