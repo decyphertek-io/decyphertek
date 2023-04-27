@@ -16,11 +16,11 @@ MicroK8s - Install
     $ sudo usermod -a -G microk8s $USER
     $ sudo chown -f -R $USER ~/.kube 
     $ sudo microk8s config > ~/.kube/config
-    $ alias kubectl='microk8s kubectl'
+    $ echo "alias kubectl='microk8s kubectl'" >> ~/.bashrc
     # Logout and back in
     $ microk8s enable dns storage helm3 ingress registry
-    $ alias helm='microk8s helm3'
-    # if it fails - microk8s helm3 repo add stable https://charts.helm.sh/stable
+    $ echo "alias helm='microk8s helm3'" >> ~/.bashrc
+    # Logout and back in . 
     $ helm repo add stable https://charts.helm.sh/stable
     # Example 1
     $ helm search repo jenkins
