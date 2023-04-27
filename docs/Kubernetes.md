@@ -23,7 +23,7 @@ MicroK8s - Install
     # Logout and back in . 
     $ helm repo add stable https://charts.helm.sh/stable
     # Example 1
-    $ helm search repo jenkins
+    $ helm search repo ingress-nginx
     # Example 2
     $ helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
     $ helm repo update
