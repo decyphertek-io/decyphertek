@@ -14,6 +14,9 @@ Install
     $ kubectl get svc/ks-console -n kubesphere-system
     # Allow Inbound 30880 , host firewall and security group.  ( If using nginx , not required. ) 
     $ sudo ufw allow 30880/tcp 
+    # Login 
+    # http://ip-of-server:30880
+    user:admin pass:P@88w0rd
 
 
 References
