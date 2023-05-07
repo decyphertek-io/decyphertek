@@ -60,7 +60,7 @@ Optional: ModSecurity
     $ sudo apt build-dep nginx -y && sudo apt install -y uuid-dev
     $ sudo ./configure --with-compat --add-dynamic-module=/usr/local/src/ModSecurity-nginx
     $ sudo make modules
-    $ sudo cp /usr/local/src/nginx/nginx-1.22.1/objs/ngx_http_modsecurity_module.so /etc/nginx/modules/
+    $ sudo cp /usr/local/src/nginx/nginx-1.24.0/objs/ngx_http_modsecurity_module.so /etc/nginx/modules/
     $ sudo vim /etc/nginx/nginx.conf
     load_module modules/ngx_http_modsecurity_module.so;
     events {
