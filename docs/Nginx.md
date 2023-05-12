@@ -10,6 +10,7 @@ Install
     deb https://nginx.org/packages/ubuntu/ jammy nginx
     deb-src https://nginx.org/packages/ubuntu/ jammy nginx
     $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ABF5BD827BD9BF62
+    $ sudo mv /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d/nginx.gpg
     $ sudo apt update && sudo apt -y install nginx 
     $ sudo systemctl enable nginx
     $ sudo unlink /etc/nginx/conf.d/default.conf
