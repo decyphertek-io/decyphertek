@@ -13,6 +13,10 @@ Linux Install
     OPENAPI Key = your api key
     $ sudo pip3 install -r requirements.txt
     $ sudo python3 -m autogpt 
+    # Optional: Runs nonstop to solve the problem. 
+    $ sudo python3 -m autogpt --continuous 
+    # Optional: Text to speech. Still troubleshooting Elevenlabs TTS API . 
+    $ sudo python3 -m autogpt --speak 
 
 References
 -----------
