@@ -9,6 +9,7 @@ Install
 
      # Install Docker & Docker Compose - ubuntu script
      $ curl -fsSL https://raw.githubusercontent.com/decyphertek-io/configs/main/bash-scripts/docker.sh | bash
+     # Logout & back in for docker group permissions to work. 
      $ mkdir dependencytrack && cd dependencytrack
      $ wget https://dependencytrack.org/docker-compose.yml
      $ docker compose up -d
