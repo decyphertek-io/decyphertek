@@ -10,7 +10,7 @@ Install
      # Install Docker & Docker Compose - ubuntu script
      $ curl -fsSL https://raw.githubusercontent.com/decyphertek-io/configs/main/bash-scripts/docker.sh | bash
      $ mkdir dependencytrack && cd dependencytrack
-     $ curl -LO https://dependencytrack.org/docker-compose.yml
+     $ wget https://dependencytrack.org/docker-compose.yml
      $ docker compose up -d
 
 References
