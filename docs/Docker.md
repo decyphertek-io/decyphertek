@@ -8,7 +8,7 @@ Quick Install
 -------------
 
     # Ubuntu ( Will Fail on Debian or other distros )
-    $ curl -fsSL https://raw.githubusercontent.com/decyphertek-io/configs/main/bash-scripts/docker.sh | bash
+    $ curl -fsSL https://raw.githubusercontent.com/decyphertek-io/bash/main/docker.sh | bash
     <OR>
     # Docker's Convience Script Debian
     $ curl -fsSL https://get.docker.com -o get-docker.sh
