@@ -5,8 +5,8 @@ Cloudpanel
 Run PHP, Node.js, Static Websites, Reverse Proxies and Python applications in no time on a High-Performance Technology Stack."
 
 
-Install - Debain based.
-------------------------
+Install - Debain based Ec2
+-------------------------
 
     $ curl -sS https://installer.cloudpanel.io/ce/v2/install.sh -o install.sh; \
       echo "3c30168958264ced81ca9b58dbc55b4d28585d9066b9da085f2b130ae91c50f6 install.sh" | \
