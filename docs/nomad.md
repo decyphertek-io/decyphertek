@@ -18,4 +18,5 @@ References
 ----------
 
     https://developer.hashicorp.com/nomad/tutorials/get-started/gs-install
-
+    https://www.hashicorp.com/resources/nomad-flatcar-harmonious-marriage-of-lightweights
+    
