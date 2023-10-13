@@ -76,3 +76,10 @@ Install
     sudo /usr/share/opensearch/plugins/opensearch-security/tools/securityadmin.sh -f /etc/opensearch/opensearch-security 
     /internal_users.yml -t internalusers  -icl -nhnv -cacert /etc/opensearch/root-ca.pem -cert /etc/opensearch/kirk.pem -key 
     /etc/opensearch/kirk-key.pem
+
+References
+----------
+
+    https://opensearch.org/docs/latest/install-and-configure/install-opensearch/debian/
+    https://opensearch.org/docs/latest/security/configuration/generate-certificates/
+    
