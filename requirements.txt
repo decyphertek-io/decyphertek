@@ -1,3 +1,5 @@
-mkdocs-windmill-dark
+#mkdocs-windmill-dark
+mkdocs-risonia-theme
 markdown-include
 mkdocstrings
+
