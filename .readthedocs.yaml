@@ -6,9 +6,9 @@ build:
 mkdocs:
   configuration: mkdocs.yml
 python:
-  version: "3.11"
   install:
     - requirements: requirements.txt
+
 
 
 
