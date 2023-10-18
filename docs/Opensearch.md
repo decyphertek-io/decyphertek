@@ -1,7 +1,7 @@
 Opensearch
 ==========
 
-Opensearch is a fork of Elasticsearch / Kibana 7.10 . Is a a free and opensource alternative Elastic, with some security by default features. 
+Opensearch is a fork of Elasticsearch / Kibana 7.10 . Is a a free and opensource alternative to Elastic.co , with some security by default features. 
 
 Install
 -------
