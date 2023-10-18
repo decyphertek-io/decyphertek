@@ -5,5 +5,10 @@ build:
     python: "3.11"
 mkdocs:
   configuration: mkdocs.yml
+python:
+  version: "3.11"
+  install:
+    - pip install mkdocs-windmill-dark markdown-include mkdocstrings
+
 
 
