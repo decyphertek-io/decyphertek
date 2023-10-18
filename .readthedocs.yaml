@@ -3,7 +3,7 @@ build:
   os: ubuntu-20.04  
 mkdocs:
   configuration: mkdocs.yml
-python:
-  version: 3.8
+#python:
+  #version: 3.8
 
 
