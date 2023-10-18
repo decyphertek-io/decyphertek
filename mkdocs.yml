@@ -1,33 +1,18 @@
+site_name: Decyphertek-io
 theme:
-    name: risonia
-    #custom_dir: theme_override/ # add static files or overrides
-    logo: decyphertek-logo.png # if undefined a burger symbol is displayed on mobile devices
-    #favicon: img/logo.ico # if undefined img/favicon.ico is used
-    #manifest: manifest.json # manifest for installable webapp
-    #serviceworker: service-worker.js # for webapp an empty file is sufficient
-    #extlink: true # mark external links with symbol
-    #extblank: true # send external links to new browser tab
-    #toc_sidebar: true # If display is wide enough, then display TOC on the right side
-    #zoom_img: true # click on images to view them bigger
-    
+  name: windmill-dark
+  highlightjs: true
 plugins:
-    - search: {}
-
-    #- i18n: {...} # mkdocs-static-i18n
-
-    - color-theme: # optional
-        theme_color: '#ff6600' # primary color
-        secondary_color: 'complementary' # can be a color or scheme
-        light_text_color: '#000' # black
-        dark_text_color: '#fff' # white
-        extra_css_light: # list of extra CSS for light mode
-            - 'css/additional-light.css'
-        extra_css_dark:  # list of extra CSS for dark mode
-            - 'css/additional-dark.css'
-        additional: # build these themes also
-          - theme_color: '#44bb4f'
-            secondary_color: 'complementary'
-
-    - w3css-classes: {} # mandatory
-
-    #- encryptcontent: {...} # mkdocs-encryptcontent-plugin
+  - search
+  - mkdocstrings:
+      handlers:
+        # See: https://mkdocstrings.github.io/python/usage/
+        python:
+          options:
+            docstring_style: sphinx
+markdown_extensions:
+  - markdown_include.include:
+      base_path: .
+  - admonition
+  - attr_list
+  - md_in_html
