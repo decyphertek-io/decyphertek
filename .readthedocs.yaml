@@ -8,7 +8,11 @@ mkdocs:
 python:
   version: "3.11"
   install:
-    - pip install mkdocs-windmill-dark markdown-include mkdocstrings
+    - requirements: pip:
+        - mkdocs-windmill-dark
+        - markdown-include
+        - mkdocstrings
+
 
 
 
