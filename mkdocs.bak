@@ -1,6 +1,6 @@
 site_name: Decyphertek-io
 theme:
-  name: material
+  name: windmill-dark
   highlightjs: true
 plugins:
   - search
