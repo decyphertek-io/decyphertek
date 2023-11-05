@@ -21,7 +21,7 @@ nav:
     - Products:
         - AWS MarketPlace: products/aws-marketplace.md
         #- Product Two: products/product_two.md
-    - Tech-Notes:
+    - Tech Notes:
         - Aide: technotes/Aide.md 
         - Android Roms: technotes/Android-Roms.md 
         - Ansible: technotes/Ansible.md 
@@ -33,6 +33,17 @@ nav:
         - AWS CLI: technotes/AWS-CLI.md 
         - Balena Etcher: technotes/Balena-Etcher.md 
         - Beekeeper Studio: technotes/Beekeeper-Studio.md 
-        #technotes/Bespoke-Synth.md technotes/Briar.md technotes/Caldera.md technotes/Cap-Analysis.md technotes/CheckMK.md technotes/ChirpStack.md technotes/CIS-Controls.md technotes/CIS-OSCAP.md technotes/ClamAV.md technotes/Cloud-Init.md technotes/Cloud-query.md technotes/Cloudpanel.md technotes/Crowdsec.md technotes/DebMed.md technotes/Deja-Dup.md technotes/Dependency-Track.md technotes/Docker.md technotes/EFF.md technotes/ESIM.md technotes/Exodus-Privacy.md technotes/FireZone.md technotes/Flutter.md technotes/Fog-Project.md technotes/Foreman.md technotes/FreedomBox.md technotes/FreedomFi.md technotes/FreeIPA.md technotes/FreeScout.md technotes/GIS-Workstation.md technotes/Github.md technotes/Gitpod.md technotes/GNS3.md technotes/Greylog.md technotes/IdsTower.md technotes/index.md technotes/Instructional-Gifs.md technotes/Internet-In-A-Box.md technotes/Jenkins.md technotes/Jupyterhub.md technotes/Keycloak.md technotes/Kubernetes.md technotes/KubeSphere.md technotes/LEMP-Stack.md technotes/LibreWolf.md technotes/Linux.md technotes/Manage-iq.md technotes/Mastadon.md technotes/Meshcentral.md technotes/Misp.md technotes/Mist-io.md technotes/Mycroft-ai.md technotes/MySql.md technotes/Nginx.md technotes/Nmap.md technotes/NodeRed.md technotes/nomad.md technotes/NtopNg.md technotes/Odoo.md technotes/OneDev.md technotes/OpenAI.md technotes/Openhab.md technotes/Opensearch.md technotes/OSSEC.md technotes/Packer.md technotes/Pulumi.md technotes/Quad9.md technotes/Read-The-Docs.md technotes/RescueZilla.md technotes/RND.md technotes/ROS.md technotes/Rport.md technotes/Secure-Delete.md technotes/Signal-Desktop.md technotes/SSSD.md technotes/Stackstorm.md technotes/Syslinux.md technotes/System-Rescue.md technotes/Tailscale.md technotes/Tasksel.md technotes/Tcpdump.md technotes/Tech-Culture.md technotes/Technitium.md technotes/Terraform.md technotes/UFW.md technotes/Unattended-Upgrades.md technotes/WebGoat.md technotes/Whonix.md technotes/Windows.md technotes/WordPress.md technotes/Zentyal.md technotes/Zoneminder.md
-        #- Service Two: services/service_two.md
+        - Bespoke: technotes/Bespoke-Synth.md 
+        - Briar: technotes/Briar.md 
+        - Caldera: technotes/Caldera.md 
+        - Cap Analysis: technotes/Cap-Analysis.md 
+        - CheckMK: technotes/CheckMK.md 
+        - ChirpStack: technotes/ChirpStack.md 
+        - CIS Controls: technotes/CIS-Controls.md 
+        - CIS / OSCAP: technotes/CIS-OSCAP.md 
+        - ClamAV: technotes/ClamAV.md 
+        - Cloudinit: technotes/Cloud-Init.md 
+        - CloudQuery: technotes/Cloud-query.md 
+        - CloudPanel: technotes/Cloudpanel.md 
+        # technotes/Crowdsec.md technotes/DebMed.md technotes/Deja-Dup.md technotes/Dependency-Track.md technotes/Docker.md technotes/EFF.md technotes/ESIM.md technotes/Exodus-Privacy.md technotes/FireZone.md technotes/Flutter.md technotes/Fog-Project.md technotes/Foreman.md technotes/FreedomBox.md technotes/FreedomFi.md technotes/FreeIPA.md technotes/FreeScout.md technotes/GIS-Workstation.md technotes/Github.md technotes/Gitpod.md technotes/GNS3.md technotes/Greylog.md technotes/IdsTower.md technotes/index.md technotes/Instructional-Gifs.md technotes/Internet-In-A-Box.md technotes/Jenkins.md technotes/Jupyterhub.md technotes/Keycloak.md technotes/Kubernetes.md technotes/KubeSphere.md technotes/LEMP-Stack.md technotes/LibreWolf.md technotes/Linux.md technotes/Manage-iq.md technotes/Mastadon.md technotes/Meshcentral.md technotes/Misp.md technotes/Mist-io.md technotes/Mycroft-ai.md technotes/MySql.md technotes/Nginx.md technotes/Nmap.md technotes/NodeRed.md technotes/nomad.md technotes/NtopNg.md technotes/Odoo.md technotes/OneDev.md technotes/OpenAI.md technotes/Openhab.md technotes/Opensearch.md technotes/OSSEC.md technotes/Packer.md technotes/Pulumi.md technotes/Quad9.md technotes/Read-The-Docs.md technotes/RescueZilla.md technotes/RND.md technotes/ROS.md technotes/Rport.md technotes/Secure-Delete.md technotes/Signal-Desktop.md technotes/SSSD.md technotes/Stackstorm.md technotes/Syslinux.md technotes/System-Rescue.md technotes/Tailscale.md technotes/Tasksel.md technotes/Tcpdump.md technotes/Tech-Culture.md technotes/Technitium.md technotes/Terraform.md technotes/UFW.md technotes/Unattended-Upgrades.md technotes/WebGoat.md technotes/Whonix.md technotes/Windows.md technotes/WordPress.md technotes/Zentyal.md technotes/Zoneminder.md
     - Contact: contact.md
