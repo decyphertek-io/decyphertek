@@ -18,8 +18,9 @@ markdown_extensions:
 
 nav:
     - Home: index.md
-    - Products:
-        - AWS MarketPlace: products/aws-marketplace.md
+    - AWS Marketplace:
+        - Debian Instructions: products/debian-security.md
+        - Flatcar Instructions: products/flatcar-security.md
         #- Product Two: products/product_two.md
     - Tech Notes:
         - Aide: technotes/Aide.md 
