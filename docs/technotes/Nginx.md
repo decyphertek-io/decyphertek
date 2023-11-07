@@ -44,7 +44,7 @@ Optional: Nginx W/Certbot
 ---------------------------
 
     $ sudo apt install certbot
-    $ sudo certbot --nginx -d Domain-Name
+    $ sudo certbot --nginx -d DomainName
     $ sudo vim 
     server {
         listen 443 ssl;
