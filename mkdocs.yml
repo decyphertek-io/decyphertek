@@ -21,7 +21,7 @@ nav:
     - AWS Marketplace:
         - Debian Basics: products/debian-security.md
         - Flatcar Basics: products/flatcar-security.md
-        - Firezone : products/firezone.md
+        - Firezone: products/firezone.md
         - Uptime Kuma: products/uptime-kuma.md
         #- Product Two: products/product_two.md
     - Tech Notes:
