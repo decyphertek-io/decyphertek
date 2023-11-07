@@ -43,8 +43,7 @@ Install
 Optional: Nginx W/Certbot
 ---------------------------
 
-    $ sudo apt install certbot-nginx
-    $ sudo apt install python3-certbot-nginx
+    $ sudo apt install certbot
     $ sudo certbot --nginx -d Domain-Name
     $ sudo vim 
     server {
