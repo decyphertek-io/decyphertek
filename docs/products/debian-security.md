@@ -45,13 +45,12 @@ AWS Basics
 Crowdsec IPS
 ------------
 
+https://decyphertek.readthedocs.io/en/latest/technotes/Crowdsec/
+
 * Crowdsec recently updated their repo and when updating Debian 11 based systems , it produces a crowdsec error. The way to fix this is to run the following:
 * curl -s https://packagecloud.io/install/repositories/crowdsec/crowdsec/script.deb.sh | sudo bash
 * sudo apt update
 * I will be updating the base Debian 11 image, it may have an impact on past customers. 
-
-https://decyphertek.readthedocs.io/en/latest/technotes/Crowdsec/
-
 
 UFW Host Firewall:
 -----------------
