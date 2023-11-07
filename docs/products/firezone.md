@@ -1,8 +1,4 @@
-
-Firezone:
----------
 Firezone is an opensource Wirguard VPN server , that provides an easy to use User Interface.
-
 
 Instructions:
 --------------
