@@ -19,7 +19,8 @@ Passwords - DB AND/OR User:
 
 Server Purchased:
 ----------------
-* We are working on providing specific server instructions in Read The Docs
+* We are working on providing specific server instructions in Read The Docs.
+* Some instrucitons exist in read the docs and some do not. Work in progress...
 * Please reference your instructions on AWS Marketplace for your purchased server.
 * Your welcome to provide any feedback , see contact.
 
