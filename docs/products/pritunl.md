@@ -45,9 +45,18 @@ Pritunl VPN Setup:
 * Note: Wiregaurd needs to also be installed on the client to use Wireguard.
 * https://www.wireguard.com/install/
 
-Refernces:
+NOTE: Routing on AWS:
+--------------------
+Many Pritunl configurations will require the instances to route traffic to different networks. By default this will be blocked by the source/dest check (AWS) or fowarding option (Google) and should be disabled (AWS) or enabled (Google) to avoid issues. This can be done on AWS in the Network Interfaces panel in the EC2 dashboard. For Google Cloud the forwarding option can be found in the network options when creating the instance.
+
+NOTE: Configuring Server Routes:
+-------------------------------
+Server routes control what traffic will be tunneled over the vpn server. By default a server will include the 0.0.0.0/0 route. This route will tunnel all internet traffic over the vpn server. To only route a local network on the vpn server first remove the 0.0.0.0/0 route and click Add Route to add the local network route such as 192.168.0.0/24.
+
+References:
 -----------
-https://www.wireguard.com/install/
 https://client.pritunl.com/
+https://www.wireguard.com/install/
+https://docs.pritunl.com/docs/wireguard
 https://docs.pritunl.com/docs/getting-started
 
