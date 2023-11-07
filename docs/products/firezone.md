@@ -1,6 +1,11 @@
+
+Firezone:
+---------
+Firezone is an opensource Wirguard VPN server , that provides an easy to use User Interface.
+
+
 Instructions:
 --------------
-
 * Note: Startup script takes a couple of minutes to configure the system , if https://ip-of-server is not available , please wait a few minutes. 
 * SSH Into Server
 * ssh adminotaur@ip-of-server
@@ -29,6 +34,6 @@ Information: Ports & Protocols.
 Nginx 443/tcp - all Public HTTPS port for administering Firezone and facilitating authentication. 
 ssh  22/tcp - ssh into your server . 
 WireGuard 51820/udp - all Public WireGuard port used for VPN sessions.
-# Not required to set on AWS firewall. 
+* Not required to set on AWS Security Group/Firewall. 
 Postgresql 15432/tcp - 127.0.0.1 Local-only port used for bundled Postgresql server.
 Phoenix 13000/tcp - 127.0.0.1 Local-only port used by upstream elixir app server.
