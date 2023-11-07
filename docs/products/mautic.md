@@ -1,4 +1,4 @@
-Uptime Kuma is an opensource Web monitoring tool. 
+Mautic is an open source marketing automation platform.
 
 Note:
 -----
@@ -17,18 +17,11 @@ Passwords - DB AND/OR User:
 * cat ~/.docker/.env
 * This will display the randomly generated passwords for DB AND/OR User. 
 
-Uptime Kuma:
--------------
-* How to ssh into your server > ssh core@ip-of-server
-* How to access Portainer to manage your containers > https://ip-of-server:9443
-* Follow the instructions to create a new admin account. 
-* Caution - Portainer can timeout if you dont create an account fast enough
-* if this happenes you need to restart the container, ssh into the server, then run. > docker restart portainer
-* Once logged into portainer, click get started and select local. You can manage docker from here. 
-* How to access Uptime-Kuma > https://ip-of-server
-* Follow instrucitons to create a new account. 
-* Optional: Troubleshooting - If for some reason the startup script didnt run on first boot, please enable startup and reboot.
-* Optional: Troubleshooting - sudo systemctl enable startup && sudo reboot
+Mautic:
+--------
+* How to access Mautic > https://ip-of-server
+* This requires entering the database password found in .env > ssh into server > cat .docker/.env > copy and paste password.
+* Then following the instructions , create a new admin account, and select your mail settings. You can now login.
 
 Portainer - Manage Docker:
 --------------------------
@@ -61,5 +54,7 @@ References:
 -----------
 https://docs.docker.com/
 https://docs.portainer.io/
+https://docs.mautic.org/en
 https://www.flatcar.org/docs/latest
-https://github.com/louislam/uptime-kuma
+
+

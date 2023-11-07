@@ -23,6 +23,7 @@ nav:
         - Flatcar Basics: products/flatcar-security.md
         - Firezone: products/firezone.md
         - Uptime Kuma: products/uptime-kuma.md
+        - Mautic: products/mautic.md
     - Tech Notes:
         - Aide: technotes/Aide.md 
         - Android Roms: technotes/Android-Roms.md 
