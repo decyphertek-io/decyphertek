@@ -7,8 +7,8 @@ Install
 --------
 
      # Install Docker first:
-     $ docker pull manageiq/manageiq:lasker-1-beta1 
-     $ docker run -d --name manageiq -p 8443:443 manageiq/manageiq:lasker-1-beta1 
+     $ docker pull manageiq/manageiq:latest
+     $ docker run -d --name manageiq -p 8443:443 manageiq/manageiq:latest
 
 Login Info
 ----------
