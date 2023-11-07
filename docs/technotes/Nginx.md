@@ -39,6 +39,34 @@ Install
     $ sudo systemctl daemon-reload
     $ sudo systemctl start nginx
 
+Optional: Nginx W/Certbot
+---------------------------
+
+    $ sudo apt install certbot-nginx
+    $ sudo apt install python3-certbot-nginx
+    $ sudo certbot --nginx -d Domain-Name
+    $ sudo vim 
+    server {
+        listen 443 ssl;
+        server_name DomainName;
+        ssl_certificate      /etc/ssl/certs/certbot-crt.pem;
+        ssl_certificate_key  /etc/ssl/private/certbot-key.pem;
+        ssl_session_cache    shared:SSL:1m;
+        ssl_session_timeout  5m;
+        ssl_protocols        TLSV1.1 TLSV1.2 TLSV1.3;
+        ssl_ciphers          HIGH:!aNULL:!MD5;
+        ssl_prefer_server_ciphers on;
+    location / {
+        proxy_pass http://localhost:8080;
+        proxy_set_header   X-Real-IP $remote_addr;
+        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header   Host $host;
+        proxy_http_version 1.1;
+        proxy_set_header   Upgrade $http_upgrade;
+        proxy_set_header   Connection "upgrade";
+        }
+    }
+
 Optional: ModSecurity 
 -----------
 
