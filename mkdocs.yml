@@ -21,6 +21,7 @@ nav:
     - AWS Marketplace:
         - Debian Basics: products/debian-security.md
         - Flatcar Basics: products/flatcar-security.md
+        - Gitea: products/gitea.md
         - Firezone: products/firezone.md
         - Mautic: products/mautic.md
         - Pritunl: products/pritunl.md
