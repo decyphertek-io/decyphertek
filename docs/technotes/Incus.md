@@ -29,12 +29,13 @@ Incus basics:
     $ incus admin init --minimal
     $ incus image list images: | grep "debian"
     # Copy the Image ID you want to launch
-    $ incus launch images:3858a9f6415f debian-12-Container
+    $ incus launch images:3858a9f6415f debian-12-container
     $ incus list
-    $ incus start debian-12-Container
-    $ incus info debian-12-Container
-    $ incus copy debian-12-Container COPY-OF-debian-12-Container
-    $ incus stop debian-12-Container
+    $ incus start debian-12-container
+    $ incus info debian-12-container
+    $ incus copy debian-12-container COPY-OF-debian-12-container
+    $ incus stop debian-12-container
+    $ incus delete debian-12-container
 
 
 References:
