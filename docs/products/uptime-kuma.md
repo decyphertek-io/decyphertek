@@ -59,7 +59,8 @@ Manage Flatcar Linux:
 
 References:
 -----------
-https://docs.docker.com/
-https://docs.portainer.io/
-https://www.flatcar.org/docs/latest
-https://github.com/louislam/uptime-kuma
+
+    https://docs.docker.com/
+    https://docs.portainer.io/
+    https://www.flatcar.org/docs/latest
+    https://github.com/louislam/uptime-kuma

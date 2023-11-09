@@ -55,8 +55,9 @@ Server routes control what traffic will be tunneled over the vpn server. By defa
 
 References:
 -----------
-https://client.pritunl.com/
-https://www.wireguard.com/install/
-https://docs.pritunl.com/docs/wireguard
-https://docs.pritunl.com/docs/getting-started
+
+    https://client.pritunl.com/
+    https://www.wireguard.com/install/
+    https://docs.pritunl.com/docs/wireguard
+    https://docs.pritunl.com/docs/getting-started
 

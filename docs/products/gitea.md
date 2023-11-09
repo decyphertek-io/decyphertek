@@ -49,7 +49,8 @@ Manage Flatcar Linux:
 
 References:
 -------------
-https://docs.gitea.com/
-https://docs.docker.com/
-https://docs.portainer.io/
-https://www.flatcar.org/docs/latest
+
+    https://docs.gitea.com/
+    https://docs.docker.com/
+    https://docs.portainer.io/
+    https://www.flatcar.org/docs/latest

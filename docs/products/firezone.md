@@ -33,3 +33,11 @@ Information: Ports & Protocols.
 * Not required to set on AWS Security Group/Firewall - Postgresql & Phoenix. 
 * Postgresql 15432/tcp - 127.0.0.1 Local-only port used for bundled Postgresql server.
 * Phoenix 13000/tcp - 127.0.0.1 Local-only port used by upstream elixir app server.
+
+References:
+-----------
+
+    https://www.wireguard.com/install/#installation
+    https://docs.firezone.dev/user-guides/client-instructions/
+    https://docs.firezone.dev/authenticate/
+
