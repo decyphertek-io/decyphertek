@@ -21,6 +21,8 @@ Install lxc Web Panel:
 lxc Terminal Commands:
 ----------------------
 
+On debian 12 , it doesnt work with just an LXC install, troubleshooting. 
+
     * create a new Debian container
     $ sudo lxc-create -n decyphertek-debian -t debian
 
