@@ -27,13 +27,14 @@ Incus basics:
     $ sudo adduser $USER incus-admin
     $ newgrp incus-admin
     $ incus admin init --minimal
-    $ incus image list images:
-    $ incus launch images:ubuntu/22.04 NAMEHERE
+    $ incus image list images: | grep "debian"
+    # Copy the Image ID you want to launch
+    $ incus launch images:3858a9f6415f debian-12-Container
     $ incus list
-    $ incus start NAMEHERE
-    $ incus info NAMEHERE
-    $ incus copy NAMHERE COPYOFNAMEHERE
-    $ incus stop NAMHERE
+    $ incus start debian-12-Container
+    $ incus info debian-12-Container
+    $ incus copy debian-12-Container COPY-OF-debian-12-Container
+    $ incus stop debian-12-Container
 
 
 References:
