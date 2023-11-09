@@ -1,14 +1,14 @@
-LXC - Linux Containers
+sudo lxc - Linux Containers
 =======================
 
-"LXC is a userspace interface for the Linux kernel containment features. Through a powerful API and simple tools, it lets Linux users easily create and manage system or application containers."
+"sudo lxc is a userspace interface for the Linux kernel containment features. Through a powerful API and simple tools, it lets Linux users easily create and manage system or application containers."
 
-Install LXC:
+Install sudo lxc:
 -----------
 
-    $ sudo apt install lxc
+    $ sudo apt install sudo lxc
 
-Install LXC Web Panel:
+Install lxc Web Panel:
 -----------------------
 
     #Debian Install script
@@ -18,89 +18,89 @@ Install LXC Web Panel:
     Connect you on http://your_ip_address:5000/
     Login with user admin and password admin
 
-LXC Terminal Commands:
+lxc Terminal Commands:
 ----------------------
 
     * create a new Debian container
-    $ lxc-create -n decyphertek-debian -t debian
+    $ sudo lxc-create -n decyphertek-debian -t debian
 
     * start the Debian container
-    $ lxc-start -n decyphertek-debian
+    $ sudo lxc-start -n decyphertek-debian
 
     * attach to the Debian container
-    $ lxc-attach -n decyphertek-debian
+    $ sudo lxc-attach -n decyphertek-debian
 
     * create a new Ubuntu container
-    $ lxc-create -n decyphertek-ubuntu -t ubuntu
+    $ sudo lxc-create -n decyphertek-ubuntu -t ubuntu
 
     * start the Ubuntu container
-    $ lxc-start -n decyphertek-ubuntu
+    $ sudo lxc-start -n decyphertek-ubuntu
 
     * attach to the Ubuntu container
-    $ lxc-attach -n decyphertek-ubuntu
+    $ sudo lxc-attach -n decyphertek-ubuntu
 
     * copy or clone containers
-    $ lxc-copy
+    $ sudo lxc-copy
 
     * destroy a container
-    $ lxc-destroy
+    $ sudo lxc-destroy
 
     * stop a running container
-    $ lxc-stop
+    $ sudo lxc-stop
 
     * freeze all the container's processes
-    $ lxc-freeze
+    $ sudo lxc-freeze
 
     * unfreeze all the container's processes
-    $ lxc-unfreeze
+    $ sudo lxc-unfreeze
 
     * display information about a container
-    $ lxc-info
+    $ sudo lxc-info
 
     * list containers
-    $ lxc-ls
+    $ sudo lxc-ls
 
     * attach to the console of a container
-    $ lxc-console
+    $ sudo lxc-console
 
     * monitor container events
-    $ lxc-monitor
+    $ sudo lxc-monitor
 
     * wait for a specific container state
-    $ lxc-wait
+    $ sudo lxc-wait
 
     * get or set the cgroup attributes of a container
-    $ lxc-cgroup
+    $ sudo lxc-cgroup
 
     * autostart containers
-    $ lxc-autostart
+    $ sudo lxc-autostart
 
-    * check the current kernel for LXC support
-    $ lxc-checkconfig
+    * check the current kernel for sudo lxc support
+    $ sudo lxc-checkconfig
 
     * update container configuration to the latest version
-    $ lxc-update-config
+    $ sudo lxc-update-config
 
     * snapshot a container
-    $ lxc-snapshot
+    $ sudo lxc-snapshot
 
     * restore a container snapshot
-    $ lxc-restore
+    $ sudo lxc-restore
 
-    * query LXC system configuration
-    $ lxc-config
+    * query sudo lxc system configuration
+    $ sudo lxc-config
 
     * execute a command in a temporary container
-    $ lxc-execute
+    $ sudo lxc-execute
 
     * run a command inside an existing container
-    $ lxc-attach
+    $ sudo lxc-attach
 
     * execute a process with a new user namespace
-    $ lxc-usernsexec
+    $ sudo lxc-usernsexec
 
     * query or set configuration values for the container or the host
-    $ lxc-config
+    $ sudo lxc-config
 
 References:
 -----------
