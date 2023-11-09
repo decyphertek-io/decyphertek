@@ -21,17 +21,29 @@ Install LXC Web Panel:
 LXC Terminal Commands:
 ----------------------
 
-    * create a new container
-    $ lxc-create
+    * create a new Debian container
+    $ lxc-create -n decyphertek-debian -t debian
+
+    * start the Debian container
+    $ lxc-start -n decyphertek-debian
+
+    * attach to the Debian container
+    $ lxc-attach -n decyphertek-debian
+
+    * create a new Ubuntu container
+    $ lxc-create -n decyphertek-ubuntu -t ubuntu
+
+    * start the Ubuntu container
+    $ lxc-start -n decyphertek-ubuntu
+
+    * attach to the Ubuntu container
+    $ lxc-attach -n decyphertek-ubuntu
 
     * copy or clone containers
     $ lxc-copy
 
     * destroy a container
     $ lxc-destroy
-
-    * start a container
-    $ lxc-start
 
     * stop a running container
     $ lxc-stop
