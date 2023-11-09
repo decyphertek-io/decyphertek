@@ -14,9 +14,9 @@ Incus install
     Enabled: yes
     Types: deb
     URIs: https://pkgs.zabbly.com/incus/stable
-    Suites: $(. /etc/os-release && echo ${bookworm})
+    Suites: bookworm
     Components: main
-    Architectures: $(dpkg --print-architecture)
+    Architectures: amd64
     Signed-By: /etc/apt/keyrings/zabbly.asc
 
     $ sudo apt update && sudo apt install incus
