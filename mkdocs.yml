@@ -82,6 +82,7 @@ nav:
         - LEMP Stack: technotes/LEMP-Stack.md 
         - Libre Wolf: technotes/LibreWolf.md 
         - Linux: technotes/Linux.md 
+        - LXC: technotes/LXC.md
         - manageIQ: technotes/Manage-iq.md 
         - Mastadon: technotes/Mastadon.md 
         - Meshcentral: technotes/Meshcentral.md 
