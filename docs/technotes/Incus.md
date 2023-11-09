@@ -1,9 +1,9 @@
-Inucs - Linux Containers
+Incus - Linux Containers
 =========================
 
 Incus is a fork of Canonical's LXD . 
 
-Incus install
+Incus install:
 --------------
 
     $ curl -fsSL https://pkgs.zabbly.com/key.asc | gpg --show-keys --fingerprint
@@ -20,6 +20,18 @@ Incus install
     Signed-By: /etc/apt/keyrings/zabbly.asc
 
     $ sudo apt update && sudo apt install incus
+
+Incus basics:
+-------------
+
+$ sudo adduser $USER incus-admin
+$ newgrp incus-admin
+$ incus admin init --minimal
+$ incus image list images:
+$ incus launch images:ubuntu/22.04 NAMEHERE
+$ incus list
+$ incus start NAMEHERE
+
 
 References:
 ------------
