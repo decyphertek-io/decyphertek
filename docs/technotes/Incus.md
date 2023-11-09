@@ -24,13 +24,16 @@ Incus install:
 Incus basics:
 -------------
 
-$ sudo adduser $USER incus-admin
-$ newgrp incus-admin
-$ incus admin init --minimal
-$ incus image list images:
-$ incus launch images:ubuntu/22.04 NAMEHERE
-$ incus list
-$ incus start NAMEHERE
+    $ sudo adduser $USER incus-admin
+    $ newgrp incus-admin
+    $ incus admin init --minimal
+    $ incus image list images:
+    $ incus launch images:ubuntu/22.04 NAMEHERE
+    $ incus list
+    $ incus start NAMEHERE
+    $ incus info NAMEHERE
+    $ incus copy NAMHERE COPYOFNAMEHERE
+    $ incus stop NAMHERE
 
 
 References:
