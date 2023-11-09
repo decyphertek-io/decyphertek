@@ -89,3 +89,9 @@ LXC Terminal Commands:
 
     * query or set configuration values for the container or the host
     $ lxc-config
+
+References:
+-----------
+
+https://linuxcontainers.org/lxc/introduction/
+https://lxc-webpanel.github.io/install.html
