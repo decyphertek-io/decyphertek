@@ -34,3 +34,8 @@ Security Features:
 * Unattended Upgrades - https://decyphertek.readthedocs.io/en/latest/technotes/Unattended-Upgrades/
 * Quad9 DNS - https://decyphertek.readthedocs.io/en/latest/technotes/Quad9/
 * Nginx/Modsec - https://decyphertek.readthedocs.io/en/latest/technotes/Nginx/ 
+
+Additonal Resources:
+-------------------
+
+* Odoo 17 Docs - https://www.odoo.com/documentation/17.0/
