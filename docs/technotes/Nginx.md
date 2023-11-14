@@ -37,7 +37,6 @@ Install
         }
     }
     $ sudo nginx -t
-    $ sudo systemctl daemon-reload
     $ sudo systemctl reload nginx
     $ sudo systemctl start nginx
 
