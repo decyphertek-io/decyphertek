@@ -25,6 +25,12 @@ View Modsec logs:
 * Test if modsec works
 * https://IP-OR-Domain/index.html?exec=/bin/bash
 
+Renew Self signed certs:
+------------------------
+
+* sudo systemctl enable generate-cert.service
+* sudo reboot
+
 Security Features:
 ------------------
 
