@@ -24,7 +24,7 @@ nav:
         - Gitea: products/gitea.md
         - Firezone: products/firezone.md
         - Mautic: products/mautic.md
-        - Odoo.md: products/odoo.md
+        - Odoo: products/odoo.md
         - Pritunl: products/pritunl.md
         - Uptime Kuma: products/uptime-kuma.md
     - Tech Notes:
