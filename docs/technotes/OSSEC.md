@@ -7,6 +7,7 @@ Install
 -------
 
      $ wget -q -O - https://updates.atomicorp.com/installers/atomic | sudo bash 
+     $ sudo mv /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d/ossec.gpg
      $ sudo apt-get update 
      # Agent Install
      $ sudo apt-get install ossec-hids-agent
