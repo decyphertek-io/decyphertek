@@ -100,7 +100,7 @@ Optional: Local install Desktop Notifications:
      $ sudo systemctl enable ossec-alerts.service
      $ sudo systemctl start ossec-alerts.service
 
-     # Test the ossec alert notification.
+     # Test the ossec alert notification - wait up to one minute. 
      $ sudo apt install htop -y && sudo apt purge htop -y && sudo apt install htop -y
 
 
