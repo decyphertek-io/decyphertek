@@ -25,6 +25,27 @@ Install from Github
      # choose: local, agent, server, or hybrid. See help for descriptions. 
      $ sudo /var/ossec/bin/ossec-control start
      $ sudo /var/ossec/bin/ossec-control status
+     # Create an ossec service , so it starts at reboot.
+     $ sudo vim /etc/systemd/system/ossec.service
+
+     [Unit]
+     Description=OSSEC Host-Based Intrusion Detection System
+     After=network.target
+
+     [Service]
+     Type=forking
+     ExecStart=/var/ossec/bin/ossec-control start
+     ExecStop=/var/ossec/bin/ossec-control stop
+     Restart=always
+     User=root
+
+     [Install]
+     WantedBy=multi-user.target
+
+     $ sudo systemctl daemon-reload
+     $ sudo systemctl enable ossec.service
+     $ sudo systemctl start ossec.service
+     $ sudo systemctl status ossec.service
 
 Example 1: Show Successful Logins
 ---------------------------------
