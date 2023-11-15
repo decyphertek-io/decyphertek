@@ -7,7 +7,7 @@ Install
 -------
 
      $ wget -q -O - https://updates.atomicorp.com/installers/atomic | sudo bash 
-     $  sudo apt-get update 
+     $ sudo apt-get update 
      # Agent Install
      $ sudo apt-get install ossec-hids-agent
      # And/OR - Server Install
