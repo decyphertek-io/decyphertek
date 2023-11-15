@@ -59,7 +59,7 @@ Example 2: Show Alerts Level 10 and Greater
 
      # cat /var/ossec/logs/alerts/alerts.log | /var/ossec/bin/ossec-reportd -f level 10 
 
-Example 3: Show the srcip for all users
+Example 3: Show the src-ip for all users
 ---------------------------------------
 
      # cat /var/ossec/logs/alerts/alerts.log | var/ossec/bin/ossec-reportd -f group authentication -r user srcip
