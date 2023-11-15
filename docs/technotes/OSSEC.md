@@ -92,7 +92,7 @@ Optional: Local install Desktop Notifications:
      WantedBy=multi-user.target
 
      #Replace $user with your desktop user. 
-     $ sudo chown -R root:$USER /var/ossec/logs/alerts/
+     $ sudo chown -R ossec:$USER /var/ossec/logs/alerts/
      $ sudo chown -R root:$USER /usr/bin/tail
 
      # Enable the service
