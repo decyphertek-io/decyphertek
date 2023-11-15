@@ -49,6 +49,38 @@ Example 4: Show Changed files as reported by Syscheck
      # cat /var/ossec/logs/alerts/alerts.log | /var/ossec/bin/ossec-reportd -f group
      # cat /var/ossec/logs/alerts/alerts.log | /var/ossec/bin/ossec-reportd 2>&1 | more
 
+Optional: Local install Desktop Notifications:
+-----------------------------------------------
+
+     $ sudo vim /etc/systemd/system/ossec-alerts.service
+     #Replace $user with your desktop user. 
+
+     [Unit]
+     Description=OSSEC Alert Check Service
+     After=network.target
+
+     [Service]
+     Type=simple
+     User=$USER
+     Environment="DISPLAY=:0"
+     Environment="DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus"
+     ExecStart=/bin/bash -c 'while true; do logs=$(timeout 60 /usr/bin/tail -n0 -F /var/ossec/logs/alerts/alerts.log); if [ -n "$logs" ]; then /usr/bin/notify-send "OSSEC Alerts" "$logs"; fi; sleep 1; done'
+
+     [Install]
+     WantedBy=multi-user.target
+
+     #Replace $user with your desktop user. 
+     $ sudo chown -R root:$USER /var/ossec/logs/alerts/
+     $ sudo chown -R root:$USER /usr/bin/tail
+
+     # Enable the service
+     $ sudo systemctl daemon-reload
+     $ sudo systemctl enable ossec-alerts.service
+     $ sudo systemctl start ossec-alerts.service
+
+     # Test the ossec alert notification.
+     $ sudo apt install htop -y && sudo apt purge htop -y && sudo apt install htop -y
+
 
 References
 ----------
