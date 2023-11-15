@@ -3,7 +3,7 @@ OSSEC
 
 An open source host Instrusion detection system.
 
-Install
+Simple Install
 -------
 
      $ wget -q -O - https://updates.atomicorp.com/installers/atomic | sudo bash 
@@ -13,6 +13,16 @@ Install
      $ sudo apt-get install ossec-hids-agent
      # And/OR - Server Install
      $ sudo apt-get install ossec-hids-server 
+
+Install from Github
+-------------------
+
+     $ git clone https://github.com/ossec/ossec-hids.git
+     $ cd ossec-hids
+     $ sudo su -c "./install.sh"
+     # choose: local, agent, server, or hybrid. See help for descriptions. 
+     $ sudo /var/ossec/bin/ossec-control start
+     $ sudo /var/ossec/bin/ossec-control status
 
 Example 1: Show Successful Logins
 ---------------------------------
