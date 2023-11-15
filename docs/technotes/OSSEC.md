@@ -52,6 +52,7 @@ Example 4: Show Changed files as reported by Syscheck
 Optional: Local install Desktop Notifications:
 -----------------------------------------------
 
+     # Limitations, only alerts you when you have an active session. 
      $ sudo vim /etc/systemd/system/ossec-alerts.service
      #Replace $user with your desktop user. 
 
