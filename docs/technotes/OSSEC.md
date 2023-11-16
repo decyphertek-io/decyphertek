@@ -73,7 +73,10 @@ Example 4: Show Changed files as reported by Syscheck
 Optional: Local install Desktop Notifications:
 -----------------------------------------------
 
-     # Limitations, only alerts you when you have an active session. 
+     # Limitations, only alerts you when you have an active desktop session. 
+     # Works on Debian 12 XFCE , issues with Ubuntu 22.04 Gnome, troubleshooting.
+     # Dependcies Required
+     $ sudo apt install libnotify-bin
      $ sudo vim /etc/systemd/system/ossec-alerts.service
      #Replace $user with your desktop user. 
 
