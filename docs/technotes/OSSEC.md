@@ -74,8 +74,7 @@ Optional: Local install Desktop Notifications:
 -----------------------------------------------
 
      # Limitations, only alerts you when you have an active desktop session. 
-     # Works on Debian 12 XFCE , issues with Ubuntu 22.04 Gnome, troubleshooting.
-     # Dependcies Required
+     # Dependencies Required
      $ sudo apt install libnotify-bin
      $ sudo vim /etc/systemd/system/ossec-alerts.service
      #Replace $user with your desktop user. 
@@ -88,6 +87,7 @@ Optional: Local install Desktop Notifications:
      Type=simple
      User=$USER
      Environment="DISPLAY=:0"
+     # Please run this command to find right data - printenv DBUS_SESSION_BUS_ADDRESS
      Environment="DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus"
      ExecStart=/bin/bash -c 'while true; do logs=$(timeout 60 /usr/bin/tail -n0 -F /var/ossec/logs/alerts/alerts.log); if [ -n "$logs" ]; then /usr/bin/notify-send "OSSEC Alerts" "$logs"; fi; sleep 1; done'
 
@@ -95,7 +95,7 @@ Optional: Local install Desktop Notifications:
      WantedBy=multi-user.target
 
      # Replace $user with your desktop user. 
-     $ sudo chown -R $USER:ossec /var/ossec/logs/alerts/
+     $ sudo chown -R $USER:ossec /var/ossec/logs/alerts/alerts.log
      $ sudo chown -R $USER:root /usr/bin/tail
 
      # Enable the service
