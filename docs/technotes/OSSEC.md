@@ -92,15 +92,15 @@ Optional: Local install Desktop Notifications:
      WantedBy=multi-user.target
 
      # Replace $user with your desktop user. 
-     $ sudo chown -R ossec:$USER /var/ossec/logs/alerts/
-     $ sudo chown -R root:$USER /usr/bin/tail
+     $ sudo chown -R $USER:ossec /var/ossec/logs/alerts/
+     $ sudo chown -R $USER:root /usr/bin/tail
 
      # Enable the service
      $ sudo systemctl daemon-reload
      $ sudo systemctl enable ossec-alerts.service
      $ sudo systemctl start ossec-alerts.service
 
-     # Test the ossec alert notification - wait up to one minute. 
+     # Test the ossec alert notification - wait up to one minute. ( Integrity Check must be enabled . )
      $ sudo apt install htop -y && sudo apt purge htop -y && sudo apt install htop -y
 
 
