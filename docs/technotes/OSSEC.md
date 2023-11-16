@@ -18,7 +18,7 @@ Install from Github
 -------------------
 
      # Install dependencies : ( View any errors and install additonal dependices if needed. )
-     $ sudo apt install git libpcre2-dev openssl libssl-dev libsystemd-dev
+     $ sudo apt install git libpcre2-dev openssl libssl-dev libsystemd-dev zlib1g-dev
      $ git clone https://github.com/ossec/ossec-hids.git
      $ cd ossec-hids
      $ sudo su -c "./install.sh"
