@@ -48,13 +48,6 @@ Docker Desktop
     $ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
     $ wget -O docker-desktop-4.25.2-amd64.deb "https://desktop.docker.com/linux/main/amd64/docker-desktop-4.25.2-amd64.deb?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64&_gl=1*16ingr4*_ga*MTk5MTE5MjYyMS4xNzAwNjc1MDM4*_ga_XJWPQMJYHQ*MTcwMDY3NTAzOC4xLjEuMTcwMDY3NTIxNi42MC4wLjA."
     $ sudo dpkg -i docker-desktop-4.25.2-amd64.deb
-    
-# Add the repository to Apt sources:
-echo \
-  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
-  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
-  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-sudo apt-get update
 
 Manage Docker
 -------------
