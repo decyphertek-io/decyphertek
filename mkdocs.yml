@@ -120,6 +120,7 @@ nav:
         - SSSD: technotes/SSSD.md 
         - Stack Storm: technotes/Stackstorm.md 
         - Syslinux: technotes/Syslinux.md 
+        - Syslog-ng: technotes/Syslog-ng.md
         - System Rescue: technotes/System-Rescue.md 
         - Tailscale: technotes/Tailscale.md 
         - Taskel: technotes/Tasksel.md 
