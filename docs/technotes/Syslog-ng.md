@@ -43,3 +43,9 @@ Install & Setup Instructions:
 
     $ sudo systemctl enable syslog-ng
     $ sudo systemctl start syslog-ng
+
+References:
+-----------
+
+    https://www.syslog-ng.com/technical-documents/list/syslog-ng-open-source-edition/3.38
+    
