@@ -40,9 +40,11 @@ Install & Setup Instructions:
         <log_format>syslog</log_format>
         <location>/var/log/syslog-ng.log</location>
     </localfile>
-
+  
+    $ sudo systemctl daemon-reload
     $ sudo systemctl enable syslog-ng
     $ sudo systemctl start syslog-ng
+    $ sudo systemctl restart wazuh manager
 
 References:
 -----------
