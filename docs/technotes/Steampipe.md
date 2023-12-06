@@ -11,6 +11,12 @@ Linux Install:
     $ steampipe plugin install aws
     # AWS Plugin configuratiion  - https://hub.steampipe.io/plugins/turbot/aws
     # Make sure AWS CLI is installed and setup. https://aws.amazon.com/cli/
+    # AWS CLI Linux Install - https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#cliv2-linux-install
+    $ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+    $ unzip awscliv2.zip
+    $ sudo ./aws/install
+    $ aws --version
+    $ aws configure
 
     [account_a]
     aws_access_key_id = AKIA4YFAKEKEYXTDS252
