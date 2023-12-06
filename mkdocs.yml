@@ -120,6 +120,7 @@ nav:
         - Signal Desktop: technotes/Signal-Desktop.md 
         - SSSD: technotes/SSSD.md 
         - Stack Storm: technotes/Stackstorm.md 
+        - Steampipe: technotes/Steampipe.md
         - Syslinux: technotes/Syslinux.md 
         - Syslog-ng: technotes/Syslog-ng.md
         - System Rescue: technotes/System-Rescue.md 
