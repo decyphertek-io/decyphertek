@@ -41,10 +41,9 @@ Linux Install:
       regions = ["ap-southeast-1", "ap-southeast-2"]
     }
 
-    # Steampipe Query example:
-    $ steampipe query "select name from AWS;"
-
-    # AWS Example:
+    # AWS Query example:
+    $ steampipe query 
+    >
     select
       title,
       create_date,
