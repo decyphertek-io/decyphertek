@@ -16,7 +16,11 @@ Linux Install:
     $ steampipe plugin update aws
     $ git clone https://github.com/turbot/steampipe-mod-aws-compliance
     $ cd steampipe-mod-aws-compliance
-    $ steampipe dashboard <OR> steampipe check list <OR> steampipe check benchmark.{name_from_list}
+    $ steampipe dashboard 
+    # http://localhost:9194
+    <OR> 
+    $ steampipe check list
+    $ steampipe check benchmark.{name_from_list}
 
 Optional: Turbot
 -----------------
