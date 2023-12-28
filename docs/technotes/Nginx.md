@@ -37,8 +37,9 @@ Install
         }
     }
     $ sudo nginx -t
-    $ sudo systemctl reload nginx
     $ sudo systemctl start nginx
+    $ sudo systemctl reload nginx
+    
 
 Optional: Nginx W/Certbot
 ---------------------------
