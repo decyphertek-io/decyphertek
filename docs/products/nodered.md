@@ -3,7 +3,7 @@ Node Red is an event driven automation platform written in Java Script.
 Nodered AWS Setup:
 -----------------
 
-    * SSH into your server ( Please read AWS docs on ssh keys if you are lost )
+    * SSH into your server ( Please read AWS Basics mentioned below if you are stuck . )
     * ssh adminotaur@ip-of-server
     * Login to Node Red Dashboard
     * https://ip-of-server:1880
