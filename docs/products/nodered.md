@@ -27,6 +27,7 @@ Node Red Configuration:
     # EX: allow a firewall rule ( Port=1883 Protocol=tcp )
     $ sudo ufw allow 1883/tcp 
     # https://nodered.org/docs/user-guide/editor/workspace/nodes#configuration-nodes
+    # Troubleshooting: Check if ufw is blocking traffic : sudo less /var/log/ufw* | grep 'BLOCK'
 
 NodeRed Security Features:
 --------------------------
