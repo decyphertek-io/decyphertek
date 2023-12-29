@@ -13,8 +13,28 @@ Nodered AWS Setup:
     $ node -e "console.log(require('bcryptjs').hashSync(process.argv[1], 8));" your-password-here
     add  password hash to settings.js
     $ vim /home/$USER/.node-red/settings.js
-  
-  
+
+Node Red Configuration:
+------------------------
+
+    Be aware that ufw host firewall is enable. When adding configuration nodes or any connections, you may need 
+    to open firewall ports via ufw and AWS security group.
+    # To see current firewall rules - ssh into your server ssh adminotaur@ip-of-server and run the following
+    $ sudo ufw status numbered
+    # EX: allow a firewall rule ( Port=1883 Protocol=tcp )
+    $ sudo ufw allow 1883/tcp 
+    # https://nodered.org/docs/user-guide/editor/workspace/nodes#configuration-nodes
+
+NodeRed Security Features:
+--------------------------
+
+https://decyphertek.readthedocs.io/en/latest/products/debian-security/
+
+AWS Basics:
+-----------
+
+https://decyphertek.readthedocs.io/en/latest/products/aws-basics/
+
 References:
 ------------
 
