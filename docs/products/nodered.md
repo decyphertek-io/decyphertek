@@ -28,12 +28,12 @@ Node Red Configuration:
 NodeRed Security Features:
 --------------------------
 
-https://decyphertek.readthedocs.io/en/latest/products/debian-security/
+    https://decyphertek.readthedocs.io/en/latest/products/debian-security/
 
 AWS Basics:
 -----------
 
-https://decyphertek.readthedocs.io/en/latest/products/aws-basics/
+    https://decyphertek.readthedocs.io/en/latest/products/aws-basics/
 
 References:
 ------------
