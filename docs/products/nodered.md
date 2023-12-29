@@ -13,6 +13,8 @@ Nodered AWS Setup:
     * node -e "console.log(require('bcryptjs').hashSync(process.argv[1], 8));" your-password-here
     * add  password hash to settings.js
     * vim /home/$USER/.node-red/settings.js
+    * sudo systemctl daemon-reload
+    * sudo systemctl restart pm2-adminotaur.service
 
 Node Red Configuration:
 ------------------------
