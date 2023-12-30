@@ -34,6 +34,16 @@ NodeRed - Configuration:
 * Troubleshooting: Check if ufw is blocking traffic : sudo less /var/log/ufw* | grep 'BLOCK'
 * Troubleshooting: If all fails temporarily disable firewall - sudo ufw disable ( re-enable : sudo ufw enable )
 
+Nodered - Upgrade:
+------------------
+
+* Run the following commands to update Node-red
+* sudo systemctl stop pm2-adminotaur
+* sudo npm install -g --unsafe-perm node-red
+* cd .nodered/
+* npm update
+* sudo systemctl start pm2-adminotaur
+
 NodeRed - Security Features:
 --------------------------
 
