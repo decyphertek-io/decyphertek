@@ -10,6 +10,7 @@ NodeRed - AWS Setup:
 * user: adminotaur
 * V3.0 pass: decyphertek
 * V3.1.3 Pass: instanceID
+* Find the instance Id from Ec2 dashboard or from terminal - curl -s http://169.254.169.254/latest/meta-data/instance-id
 
 NodeRed - Change Password
 -------------------
