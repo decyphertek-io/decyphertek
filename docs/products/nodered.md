@@ -1,6 +1,6 @@
 Node Red is an event driven automation platform written in Java Script. 
 
-Nodered AWS Setup:
+NodeRed - AWS Setup:
 -----------------
 
 * SSH into your server ( Please read AWS Basics mentioned below if you are stuck . )
@@ -8,8 +8,13 @@ Nodered AWS Setup:
 * Login to Node Red Dashboard
 * https://ip-of-server:1880
 * user: adminotaur
-* pass: decyphertek
-* Change Password and update users
+* V3.0 pass: decyphertek
+* V3.1.3 Pass: instanceID
+
+NodeRed - Change Password
+-------------------
+
+* Run the following command to generate a password hash
 * node -e "console.log(require('bcryptjs').hashSync(process.argv[1], 8));" your-password-here
 * add password hash to settings.js under adminAuth:  ( Line 618 )
 * vim /home/adminotaur/.node-red/settings.js
@@ -17,7 +22,7 @@ Nodered AWS Setup:
 * sudo systemctl daemon-reload
 * sudo systemctl restart pm2-adminotaur.service
 
-Node Red Configuration:
+NodeRed - Configuration:
 ------------------------
 
 * When adding configuration nodes or any connections, you may need to open firewall ports via ufw and AWS security group.
@@ -29,7 +34,7 @@ Node Red Configuration:
 * Troubleshooting: Check if ufw is blocking traffic : sudo less /var/log/ufw* | grep 'BLOCK'
 * Troubleshooting: If all fails temporarily disable firewall - sudo ufw disable ( re-enable : sudo ufw enable )
 
-NodeRed Security Features:
+NodeRed - Security Features:
 --------------------------
 
 * https://decyphertek.readthedocs.io/en/latest/products/debian-security/
