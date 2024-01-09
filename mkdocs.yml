@@ -61,6 +61,7 @@ nav:
         - EFF: technotes/EFF.md 
         - ESIM: technotes/ESIM.md 
         - Exodus Privacy: technotes/Exodus-Privacy.md 
+        - Falco: technotes/Falco.md
         - Firezone: technotes/FireZone.md 
         - Flutter: technotes/Flutter.md 
         - Fog Project: technotes/Fog-Project.md 
