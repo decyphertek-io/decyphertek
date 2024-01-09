@@ -3,8 +3,8 @@ Free IPA
 
 Open Source Active Directory Alternative. 
 
-Install - Rocky Linux 8.6
---------------------------
+Install - Rocky Linux 
+----------------------
 
     $ sudo hostname set-hostnamectl ad1.decyphertek.io
     $ sudo ip addr
