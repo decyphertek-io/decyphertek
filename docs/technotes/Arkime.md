@@ -6,8 +6,8 @@ Open Source full network packet capture, with visual dashboard.
 Install
 --------
 
-     $ wget https://s3.amazonaws.com/files.molo.ch/builds/ubuntu-20.04/arkime_3.4.2-1_amd64.deb
-     $ sudo dpkg -i arkime_3.4.2-1_amd64.deb
+     $ wget https://github.com/arkime/arkime/releases/download/v4.6.0/arkime_4.6.0-1.ubuntu2204_amd64.deb
+     $ sudo dpkg -i arkime_4.6.0-1.ubuntu2204_amd64.deb
      # Have Configure script install ElasticSearch
      $ sudo /opt/arkime/bin/Configure
      $ sudo systemctl enable elasticsearch
