@@ -13,8 +13,8 @@ Install
      $ sudo /opt/arkime/bin/Configure
      $ sudo systemctl enable elasticsearch
      $ sudo systemctl start elasticsearch
-     # http://ESHOST:9200
-     # delete all data - /opt/arkime/db/db.pl
+     $ sudo /opt/arkime/db/db.pl http://127.0.0.1:9200 init
+     $ sudo /opt/arkime/db/db.pl http://127.0.0.1:9200 upgrade
      $ sudo init /opt/arkime/bin/arkime_add_user.sh admin "Admin User" THEPASSWORD --admin
      $ sudo systemctl enable arkimecapture
      $ sudo systemctl start arkimecapture
