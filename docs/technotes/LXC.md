@@ -7,6 +7,7 @@ Install sudo lxc:
 -----------
 
     $ sudo apt install lxc
+    $ lxc-checkconfig
 
 Install lxc Web Panel:
 -----------------------
