@@ -8,7 +8,7 @@ Install:
 
     $ sudo apt update
     $ sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virt-manager -y
-    # launch qemu > create new machine > Select local install media ( ISO ) > Set memory, CPU , & Storage > Finish
+    # Virtual machine manager > create new machine > Select local install media ( ISO ) > Set memory, CPU , & Storage > Finish
 
 References:
 -----------
