@@ -6,7 +6,7 @@ sudo lxc - Linux Containers
 Install sudo lxc:
 -----------
 
-    $ sudo apt install sudo lxc
+    $ sudo apt install lxc
 
 Install lxc Web Panel:
 -----------------------
