@@ -110,6 +110,7 @@ nav:
         - OSSEC: technotes/OSSEC.md 
         - Packer: technotes/Packer.md 
         - Pulumi: technotes/Pulumi.md 
+        - Qemu: technotes/Qemu.md
         - Qgis: technotes/Qgis.md
         - Quad9: technotes/Quad9.md 
         - Read The Docs: technotes/Read-The-Docs.md 
