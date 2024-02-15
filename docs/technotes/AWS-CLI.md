@@ -19,7 +19,8 @@ Install
 Basic Commands
 --------------
 
-    # May need to use sudo if install via sudo aws configure. 
+    # configure AWS - May need to use sudo if installed via sudo 
+    $ aws configure
     # List EC2 instances
     $ aws ec2 describe-instances --query 'Reservations[].Instances[].[State.Name, InstanceId, ImageId, InstanceType, PublicIpAddress, SubnetId, VpcId,Tags[?Key==`Name`]| [0].Value]' 
     # List Vpcs
