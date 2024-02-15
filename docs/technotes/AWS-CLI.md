@@ -16,7 +16,7 @@ Install
      # Mac
      $ python3 -m pip install --user awscli
 
-Basic Commands
+EC2 Commands
 --------------
 
     # configure AWS - May need to use sudo if installed via sudo 
@@ -49,6 +49,18 @@ Basic Commands
     $ aws sts get-caller-identity --query "Account"
     # List AMI owned by account #
     $ aws ec2 describe-images --owners 123123123123 --query 'Images[].[ImageId,Name]' | grep "-"
+
+ECS Commands:
+-------------
+
+    $ aws ecs list-clusters
+    $ aws ecs describe-clusters --clusters your_cluster_name_or_arn
+    $ aws ecs list-services --cluster your_cluster_name_or_arn
+    $ aws ecs describe-services --cluster your_cluster_name_or_arn --services your_service_name
+    $ aws ecs list-tasks --cluster your_cluster_name_or_arn
+    $ aws ecs describe-tasks --cluster your_cluster_name_or_arn --tasks your_task_id
+    $ aws ecs list-container-instances --cluster your_cluster_name_or_arn
+    $ aws ecs describe-container-instances --cluster your_cluster_name_or_arn --container-instances your_container_instance_id
 
 References
 ----------
