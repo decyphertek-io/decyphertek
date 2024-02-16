@@ -67,7 +67,6 @@ Docker compose to ECS
 
     # Make sure docker and docker compose is installed
     # Install AWS CLI and configure AWS
-    $ aws configure
 
     # Create ECS Cluster
     $ aws ecs create-cluster --cluster-name misp-cluster
