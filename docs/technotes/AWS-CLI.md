@@ -62,6 +62,25 @@ ECS Commands:
     $ aws ecs list-container-instances --cluster your_cluster_name_or_arn
     $ aws ecs describe-container-instances --cluster your_cluster_name_or_arn --container-instances your_container_instance_id
 
+Docker compose to ECS
+---------------------
+
+    # Make sure docker and docker compose is installed
+    # Install AWS CLI and configure AWS
+    $ aws configure
+
+    # Create ECS Cluster
+    $ aws ecs create-cluster --cluster-name misp-cluster
+
+    # Create Docker Context for ECS (Follow interactive prompt)
+    $ docker context create ecs misp
+
+    # Use the created Docker context
+    $ docker context use misp
+
+    # Deploy using Docker Compose
+    $ docker compose up
+
 References
 ----------
 
