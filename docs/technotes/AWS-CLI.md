@@ -65,17 +65,18 @@ ECS Commands:
 Docker compose to ECS
 ---------------------
 
-    # Make sure docker and docker compose is installed
+    # Make sure docker and docker compose is installed.
+    # Have an exisitng working docker-compose.yml in that directory.
     # Install AWS CLI and configure AWS
 
     # Create ECS Cluster
-    $ aws ecs create-cluster --cluster-name misp-cluster
+    $ aws ecs create-cluster --cluster-name NAMEHERE-cluster
 
     # Create Docker Context for ECS (Follow interactive prompt)
-    $ docker context create ecs misp
+    $ docker context create ecs NAMEHERE
 
     # Use the created Docker context
-    $ docker context use misp
+    $ docker context use NAMEHERE
 
     # Deploy using Docker Compose
     $ docker compose up
