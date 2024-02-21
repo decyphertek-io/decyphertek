@@ -73,13 +73,13 @@ Docker compose to ECS
     $ aws ecs create-cluster --cluster-name NAMEHERE-cluster
 
     # Create Docker Context for ECS (Follow interactive prompt)
-    $ docker context create ecs NAMEHERE
+    $ docker context create NAMEHERE
 
     # Use the created Docker context
     $ docker context use NAMEHERE
 
     # Deploy using Docker Compose
-    $ docker compose up
+    $ docker compose up -d
 
 References
 ----------
