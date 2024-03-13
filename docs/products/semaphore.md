@@ -24,7 +24,7 @@ Setup Ansible in Semaphore:
 ---------------------------
 
 * Create a project: Can be accessed on the main page when you first log in.
-* Create an Environment {}: On the left side, select Environment > Select New Environment (can be empty `{}` or have env variables).
+* Create an Environment {}: On the left side, select Environment > Select New Environment (can be empty {} or have env variables).
 * Add an ssh key/Password to keystore: On the left side, select Key Store > Select New Key > enter name key & select ssh key or password.
 * Create an Inventory: On the left side, select Inventory > Enter name, select saved credentials, select Static (Hosts).
 
