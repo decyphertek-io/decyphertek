@@ -53,7 +53,6 @@ ssh username@ip-of-server
 
 * Run a Task/playbook : Left side Task Templates > Select RUN next to the task.
 
-
 Troubleshooting:
 -----------------
 
