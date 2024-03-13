@@ -28,10 +28,10 @@ Setup Ansible in Semaphore:
 * Add an ssh key/Password to keystore: On the left side, select Key Store > Select New Key > enter name key & select ssh key or password.
 * Create an Inventory: On the left side, select Inventory > Enter name, select saved credentials, select Static (Hosts).
 
-      ```
+      \```
       [test_server]
       172.31.95.4 ansible_host=172.31.95.4 ansible_user=admin
-      ```
+      \```
 
 * Create a repository : Left side, Select Repositories > Select New Repository > Enter name , URL or Path = /home/semaphore/.ansible/playbooks/ , select key . 
 * Create a Task Template : Runs an Ansible playbook
