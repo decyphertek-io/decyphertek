@@ -38,19 +38,19 @@ Setup Ansible in Semaphore:
 * Create a Task Template : Runs an Ansible playbook
 
 \```
-EX:
-Name: decyphertek
-Playbook Filename: /home/semaphore/.ansible/playbooks/ufw/ufw_install.yml
-Select established : Inventory , Repository , Environment . 
+    EX:
+    Name: decyphertek
+    Playbook Filename: /home/semaphore/.ansible/playbooks/ufw/ufw_install.yml
+    Select established : Inventory , Repository , Environment . 
 \```
 
 * Before you run a task playbook, you need to ssh into the target server from semaphore via terminal. 
 * Login Semaphore terminal > add your private key > ssh into target server, so it gets added to known_hosts.
 
 \```
-vim ~/.ssh/id_rsa 
-chmod 400 id_rsa 
-ssh username@ip-of-server
+    vim ~/.ssh/id_rsa 
+    chmod 400 id_rsa 
+    ssh username@ip-of-server
 \```
 
 * Run a Task/playbook : Left side Task Templates > Select RUN next to the task.
