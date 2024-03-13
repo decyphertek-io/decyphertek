@@ -32,7 +32,7 @@ Setup Ansible in Semaphore:
     [test_server]
     172.31.95.4 ansible_host=172.31.95.4 ansible_user=admin
 
-* Create a repository : Left side, Select Repositories > Select New Repository > Enter name , URL or Path = /home/semaphore/.ansible/playbooks/ , select access key.
+* Create a repository : Left side, Select Repositories > Select New Repository > Enter name , URL or Path = /home/semaphore/.ansible/playbooks/ , select key . 
 * Create a Task Template : Runs an Ansible playbook
 
     EX:
