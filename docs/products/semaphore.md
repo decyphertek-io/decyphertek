@@ -18,6 +18,7 @@ Semaphore login & password:
 * Login to semaphore gui - username: semaphore password: SEMAPHORE_USER_PASS listed in passwords.txt
 * Optional: Change Semaphore Password - Bottom left > Click on semaphore > Edit Accounts > Enter your new password . 
 * Login to mariadb from terminal : sudo mysql -u root -p  - Password: SEMAPHORE_DB_PASS listed in passwords.txt
+* Change mariadb password : Login to terminal > sudo mysqladmin -u root -p'your_password' password "new_password"
 * Ansible playooks/roles : cd /home/semaphore/.ansible - you can list the files in this directory - ls 
 
 Setup Ansible in Semaphore: 
@@ -76,5 +77,5 @@ Additonal Security Features:
 References:
 ------------
 
-https://www.semui.co/
-https://docs.semui.co/
+* https://www.semui.co/
+* https://docs.semui.co/
