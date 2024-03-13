@@ -23,17 +23,17 @@ Semaphore login & password:
 Setup Ansible in Semaphore: 
 ---------------------------
 
-* Create a project:  Can be accessed on the main page when you first login.
-* Create an Environment {} : Left side , Select Environment > Select New Environment ( Can be empty {} or have env variables )
-* Add an ssh key/ Password to keystore : Left side , Select Key Store > Select New Key > enter name key & select ssh key or password
-* Create an Inventory : Left side , select Inventory > Enter name , select saved credentials, select Static ( Hosts ).
+1. Create a project:  Can be accessed on the main page when you first login.
+2. Create an Environment {} : Left side , Select Environment > Select New Environment ( Can be empty {} or have env variables )
+3. Add an ssh key/ Password to keystore : Left side , Select Key Store > Select New Key > enter name key & select ssh key or password
+4. Create an Inventory : Left side , select Inventory > Enter name , select saved credentials, select Static ( Hosts ).
 
     Ex:
     [test_server]
     172.31.95.4 ansible_host=172.31.95.4 ansible_user=admin
 
-* Create a repository : Left side, Select Repositories > Select New Repository > Enter name , URL or Path = /home/semaphore/.ansible/playbooks/ , select key . 
-* Create a Task Template : Runs an Ansible playbook
+5. Create a repository : Left side, Select Repositories > Select New Repository > Enter name , URL or Path = /home/semaphore/.ansible/playbooks/ , select key . 
+6. Create a Task Template : Runs an Ansible playbook
 
     EX:
     Name: decyphertek
