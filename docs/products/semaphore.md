@@ -29,9 +29,9 @@ Setup Ansible in Semaphore:
 * Create an Inventory : Left side , select Inventory > Enter name , select saved credentials, select Static ( Hosts ).
 
 \```
-Ex:
-[test_server]
-172.31.95.4 ansible_host=172.31.95.4 ansible_user=admin
+    Ex:
+    [test_server]
+    172.31.95.4 ansible_host=172.31.95.4 ansible_user=admin
 \```
 
 * Create a repository : Left side, Select Repositories > Select New Repository > Enter name , URL or Path = /home/semaphore/.ansible/playbooks/ , select access key.
