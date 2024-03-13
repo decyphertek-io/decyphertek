@@ -28,7 +28,7 @@ nav:
         - Nodered: products/nodered.md
         - Odoo: products/odoo.md
         - Pritunl: products/pritunl.md
-        - Ansible Semaphore: products/semaphore.md
+        - Semaphore: products/semaphore.md
         - Uptime Kuma: products/uptime-kuma.md
     - Tech Notes:
         - Aide: technotes/Aide.md 
