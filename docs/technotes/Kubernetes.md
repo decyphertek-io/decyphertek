@@ -86,11 +86,17 @@ Optional: Ocatant
     # Desktop App Mac / Linux
     $ brew install octant
 
-Optinal: KubeNav
+Optional: KubeNav
 ----------------
 
     # One of the only currently available Android Kubernetes management apps. 
     https://play.google.com/store/apps/details?id=io.kubenav.kubenav&gl=US
+
+Optional: Kubevious
+--------------------
+
+    # manage Kubernetes remotely form the desktop and get insights into security configurations.
+    https://kubevious.io/open-source
 
 References
 ----------
