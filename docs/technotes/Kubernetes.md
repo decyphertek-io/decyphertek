@@ -5,6 +5,10 @@ There is a few different ways to run Kubernetes, which can be viewed as a networ
 Setuping clusters and nodes via a yaml configuration can simplify infrastructure deployment. Some of the 
 kubernetes options is AWS Eks , Microk8s , CoreOS , Rancher , Minikube , OpenShift, OKD, etc. 
 
+Recomendation:
+--------------
+If you are running kubernetes locally, K3s & Headlamp are an easy way yo get up an running on Linux.
+
 K3s
 ----
 Rancher provides a lightwieght Kubernetes that is easy to install
@@ -18,6 +22,10 @@ AWS EKS
 Amazon provides a way to run Kubernetes locally then push to the cloud. ( Not updated since 2021 )
 
     sudo snap install eks --classic --edge
+
+Deploy existing local kubernetes , what ever version, to AWS EKS
+
+    https://blog.devops.dev/deploying-kubernetes-pods-configs-into-aws-eks-cluster-using-github-actions-ff6f5b8adf47
 
 Microk8s
 ---------
@@ -59,6 +67,11 @@ Microk8s - Deploy Example
 ------------------------
 
     $ microk8s kubectl create deployment nginx --image=nginx
+
+Optional: Headlamp
+-------------------
+
+    https://headlamp.dev/
 
 Optional: Karpenter
 -------------------
