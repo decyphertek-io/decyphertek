@@ -72,6 +72,7 @@ Optional: Machine learning Projects:
 -----------------------------------
 
     https://www.kubeflow.org/
+    https://www.kubeflow.org/docs/started/installing-kubeflow/
 
 Optional: Headlamp
 -------------------
