@@ -73,6 +73,7 @@ Optional: Machine learning Projects:
 
     https://www.kubeflow.org/
     https://www.kubeflow.org/docs/components/pipelines/v1/installation/localcluster-deployment/
+    https://www.youtube.com/watch?v=cTZArDgbIWw
 
 Optional: Headlamp
 -------------------
