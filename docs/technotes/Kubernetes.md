@@ -27,6 +27,10 @@ Deploy existing local kubernetes , what ever version, to AWS EKS
 
     https://blog.devops.dev/deploying-kubernetes-pods-configs-into-aws-eks-cluster-using-github-actions-ff6f5b8adf47
 
+Localstack EKS:
+
+    https://docs.localstack.cloud/user-guide/aws/eks/
+
 Microk8s
 ---------
 Microk8s is Canonical's Kubernetes. Easy to install via snap. Enterprise ready or can experiment locally. Crossplatform. 
