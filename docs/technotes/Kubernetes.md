@@ -2,7 +2,7 @@ Kubernetes
 ==========
 
 There is a few different ways to run Kubernetes, which can be viewed as a networking solution to containers. 
-Setuping clusters and nodes via a yaml configuration can simplify infrastructure deployment. Some of the 
+Settting up clusters and nodes via a yaml configuration can simplify infrastructure deployment. Some of the 
 kubernetes options is AWS Eks , Microk8s , CoreOS , Rancher , Minikube , OpenShift, OKD, etc. 
 
 Recomendation:
