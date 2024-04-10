@@ -71,6 +71,17 @@ Microk8s - Deploy Example
 Optional: Machine learning Projects:
 -----------------------------------
 
+    Install with a single command:
+    You can install all Kubeflow official components (residing under apps) and all common services (residing under common) using the following command:
+    Once, everything is installed successfully, you can access the Kubeflow Central Dashboard by logging in to your cluster.
+    Congratulations! You can now start experimenting and running your end-to-end ML workflows with Kubeflow.
+
+    $ git clone https://github.com/kubeflow/manifests.git
+    $ cd manifests/apps/
+    $ while ! kustomize build example | kubectl apply -f -; do echo "Retrying to apply resources"; sleep 10; done
+    $ cd .. && cd common/
+    $ while ! kustomize build example | kubectl apply -f -; do echo "Retrying to apply resources"; sleep 10; done
+
     https://www.kubeflow.org/
     https://www.kubeflow.org/docs/started/installing-kubeflow/
 
