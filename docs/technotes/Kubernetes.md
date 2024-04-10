@@ -68,6 +68,11 @@ Microk8s - Deploy Example
 
     $ microk8s kubectl create deployment nginx --image=nginx
 
+Optional: Machine learning Projects:
+-----------------------------------
+
+    https://www.kubeflow.org/
+
 Optional: Headlamp
 -------------------
 
@@ -124,6 +129,7 @@ Optional: Kubevious
 
     # manage Kubernetes remotely form the desktop and get insights into security configurations.
     https://kubevious.io/open-source
+
 
 References
 ----------
