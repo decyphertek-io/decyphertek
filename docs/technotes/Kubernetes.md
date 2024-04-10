@@ -88,6 +88,7 @@ Optional: Machine learning Projects:
 Optional: Headlamp
 -------------------
 
+    flatpak install flathub io.kinvolk.Headlamp
     https://headlamp.dev/
 
 Optional: Karpenter
