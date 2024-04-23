@@ -141,5 +141,7 @@ nav:
         - Zentyal: technotes/Zentyal.md 
         - Zoneminder: technotes/Zoneminder.md
     - Lanuage: 
-        - Spanish/README.md
+        - Spanish: language/spanish/README.md
+            - Books: language/spanish/books/
+            - Grammar: language/spanish/grammar/
     - Contact: contact.md
