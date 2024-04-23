@@ -140,8 +140,4 @@ nav:
         - Wordpress: technotes/WordPress.md 
         - Zentyal: technotes/Zentyal.md 
         - Zoneminder: technotes/Zoneminder.md
-    - Spanish: 
-        - Spanish: language/spanish/README.md
-        - Books: language/spanish/books/
-        - Grammar: language/spanish/grammar/
     - Contact: contact.md
