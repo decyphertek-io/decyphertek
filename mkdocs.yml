@@ -22,7 +22,6 @@ nav:
         - AWS Basics: products/aws-basics.md
         - Debian Basics: products/debian-security.md
         - Flatcar Basics: products/flatcar-security.md
-        - Gitea: products/gitea.md
         - Firezone: products/firezone.md
         - Mautic: products/mautic.md
         - Misp: products/misp.md
