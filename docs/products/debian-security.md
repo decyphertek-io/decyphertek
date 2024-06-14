@@ -1,5 +1,5 @@
 
-Decyphertek has secured your AWS AMI with one or more of the following open source software. Please reference the specific softare stack your server has. As a courteousy to AWS Subscribers this section can be used as a quick reference. [AWSMP: Decyphertek ](https://aws.amazon.com/marketplace/seller-profile?id=851968a2-7d3c-4a0b-8c33-5351d91aaef1)
+Decyphertek has secured your AWS AMI with one or more of the following open source software. Please reference the specific softare stack your server has. As a courteousy to AWS Subscribers this section can be used as a quick reference. [AWS Marketplace: Decyphertek ](https://aws.amazon.com/marketplace/seller-profile?id=851968a2-7d3c-4a0b-8c33-5351d91aaef1)
 
 Security Features
 -----------------

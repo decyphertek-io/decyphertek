@@ -1,7 +1,7 @@
 AWS Basics
 -----------
 
-If your new to AWS and need a quick reference guide, this is a good place to start. [AWSMP: Decyphertek ](https://aws.amazon.com/marketplace/seller-profile?id=851968a2-7d3c-4a0b-8c33-5351d91aaef1)
+If your new to AWS and need a quick reference guide, this is a good place to start. [AWS Marketplace: Decyphertek ](https://aws.amazon.com/marketplace/seller-profile?id=851968a2-7d3c-4a0b-8c33-5351d91aaef1)
 
 * SSH Keys - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-key-pairs.html
 * AWS Console Login > EC2 > Network & Security > Key Pairs > Create Key Pairs
