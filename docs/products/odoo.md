@@ -1,4 +1,4 @@
-Odoo is an open source ERP & CRM server. Manage all aspects of your business with Odoo, including Wordpress, Ecommerce, Inventroy managment, POS, etc. 
+Odoo is an open source ERP & CRM server. Manage all aspects of your business with Odoo, including Wordpress, Ecommerce, Inventroy managment, POS, etc. [AWS Marketplace: Odoo ](https://aws.amazon.com/marketplace/pp/prodview-rq7r2an4ojrtw?sr=0-9&ref_=beagle&applicationId=AWSMPContessa)
 
 SSH Into Your Server:
 ---------------------

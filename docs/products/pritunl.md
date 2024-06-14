@@ -1,4 +1,4 @@
-Pritunl is an open source VPN server that supports Wireguard & Openvpn. 
+Pritunl is an open source VPN server that supports Wireguard & Openvpn. [AWS Marketplace: Pritunl VPN ](https://aws.amazon.com/marketplace/pp/prodview-7xzrxyg2s3yas?sr=0-2&ref_=beagle&applicationId=AWSMPContessa)
 
 Pritunl Login:
 ----------------

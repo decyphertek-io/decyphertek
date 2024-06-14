@@ -1,4 +1,4 @@
-Node Red is an event driven automation platform written in Java Script. 
+Node Red is an event driven automation platform written in Java Script.[AWS Marketplace: Nodered ](https://aws.amazon.com/marketplace/pp/prodview-pkaxmirrhshze?sr=0-3&ref_=beagle&applicationId=AWSMPContessa)
 
 NodeRed - AWS Setup:
 -----------------

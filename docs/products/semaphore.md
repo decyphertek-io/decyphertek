@@ -1,6 +1,6 @@
 Ansible Semaphore is a modern way to run ansible with an easy to use GUI. Its a good alternative to Ansible Tower
 or AWX. You can store your vault secrets and run playbooks on a schedule. Decyphertek has also setup ansible with 
-some basic playbooks to help you get started. 
+some basic playbooks to help you get started. [AWS Marketplace: Ansible Semaphore ](https://aws.amazon.com/marketplace/pp/prodview-5noeat2jipwca?sr=0-1&ref_=beagle&applicationId=AWSMPContessa)
 
 SSH into the Semaphore server:
 ------------------------------

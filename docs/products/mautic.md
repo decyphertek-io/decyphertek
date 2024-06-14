@@ -1,4 +1,5 @@
-Mautic is an open source marketing automation platform.
+Mautic is an open source marketing automation platform. [AWS Marketplace: Mautic ](https://aws.amazon.com/marketplace/pp/prodview-cykzx7o3md2mw?sr=0-4&ref_=beagle&applicationId=AWSMPContessa)
+
 
 Note:
 -----
