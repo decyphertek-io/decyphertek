@@ -134,6 +134,7 @@ nav:
         - Terraform: technotes/Terraform.md 
         - UFW: technotes/UFW.md 
         - Unattended Upgrades: technotes/Unattended-Upgrades.md 
+        - Ventoy: technotes/Ventoy.md
         - Web Goat: technotes/WebGoat.md 
         - Whonix: technotes/Whonix.md 
         - Windows: technotes/Windows.md 
