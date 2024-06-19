@@ -6,10 +6,10 @@ Taskel can easily install server requirements, including a web server, db server
 Example
 -------
 
-    $ sudo  tasksel --task-packages web-server 
+    sudo  tasksel --task-packages web-server 
     # EX: Packages Installed
     # libapache2-mod-python apache2-doc libapache2-mod-php5 libapache2-mod-perl2 apache2-mpm-prefork analog
-    $ sudo sudo  tasksel --task-packages package-name-here
+    sudo sudo  tasksel --task-packages package-name-here
     # Package Options
     * desktop
     * web-server 

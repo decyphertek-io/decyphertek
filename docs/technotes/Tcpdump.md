@@ -6,9 +6,9 @@ Tcpdump is an open source Linux native packet capture tool , useful in troublesh
 Install
 -------
 
-     $ sudo apt install tcpdump
+     sudo apt install tcpdump
      # Can set any port you wish , instead of 443. 
-     $ sudo tcpdump -i any | grep 443
+     sudo tcpdump -i any | grep 443
 
 References
 ----------

@@ -6,7 +6,7 @@ System Rescue is a multi-use utility live usb , built on Arch Linux.
 Live USB
 ---------
 
-     $ wget https://sourceforge.net/projects/systemrescuecd/files/sysresccd-x86/9.04/systemrescue-9.04-amd64.iso/download
+     $ wget https://fastly-cdn.system-rescue.org/releases/11.01/systemrescue-11.01-amd64.iso
      # Use Balena Etcher to make a live USB
      # Boot from computer - Research, models vary ( F2 or F12 ) 
      # Boot default : loads to terminal 
