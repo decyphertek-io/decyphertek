@@ -1,6 +1,6 @@
-Ansible Semaphore is a modern way to run ansible with an easy to use GUI. Its a good alternative to Ansible Tower
+Semaphore UI is a modern way to run ansible with an easy to use GUI. Its a good alternative to Ansible Tower
 or AWX. You can store your vault secrets and run playbooks on a schedule. Decyphertek has also setup ansible with 
-some basic playbooks to help you get started. [AWS Marketplace: Ansible Semaphore ](https://aws.amazon.com/marketplace/pp/prodview-5noeat2jipwca?sr=0-1&ref_=beagle&applicationId=AWSMPContessa)
+some basic playbooks to help you get started. [AWS Marketplace: Semaphore UI ](https://aws.amazon.com/marketplace/pp/prodview-5noeat2jipwca?sr=0-1&ref_=beagle&applicationId=AWSMPContessa)
 
 SSH into the Semaphore server:
 ------------------------------
@@ -21,7 +21,7 @@ Semaphore login & password:
 * Change mariadb password : Login to terminal > sudo mysqladmin -u root -p'your_password' password "new_password"
 * Ansible playooks/roles : cd /home/semaphore/.ansible - you can list the files in this directory - ls 
 
-Setup Ansible in Semaphore: 
+Setup Ansible / OpenTofu in Semaphore: 
 ---------------------------
 
 * Create a project: Can be accessed on the main page when you first log in.
@@ -53,6 +53,8 @@ ssh username@ip-of-server
 ```
 
 * Run a Task/playbook : Left side Task Templates > Select RUN next to the task.
+* Follow similar steps for Terraform / OpenTofu - https://docs.semui.co/user-guide/task-templates/terraform
+* Opentofu Docs - https://opentofu.org/docs/
 
 Troubleshooting:
 -----------------
