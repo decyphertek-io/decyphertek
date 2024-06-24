@@ -6,10 +6,10 @@ Authelia
 Install
 -------
 
-    $ curl https://apt.authelia.com/organization/signing.asc | sudo apt-key add -
-    $ sudo apt install -y apt-transport-https --yes
-    $ echo "deb https://apt.authelia.com/stable/debian/debian/ all main" | sudo tee /etc/apt/sources.list.d/authelia-stable-debian.list
-    $ sudo apt update && sudo apt -y install authelia=4.37.4-1
+    curl https://apt.authelia.com/organization/signing.asc | sudo apt-key add -
+    sudo apt install -y apt-transport-https --yes
+    echo "deb https://apt.authelia.com/stable/debian/debian/ all main" | sudo tee /etc/apt/sources.list.d/authelia-stable-debian.list
+    sudo apt update && sudo apt -y install authelia=4.37.4-1
     # Need to configure the system or it will not load properly
     # Example errors
     level=error msg="Configuration: authentication_backend: you must ensure either the 'file' or 'ldap'>
@@ -22,9 +22,9 @@ Install
     # Getting Started - https://www.authelia.com/integration/prologue/get-started/
     # Authelia Configuration Template - https://github.com/authelia/authelia/blob/master/config.template.yml
     # Authelia Config Example - https://gist.github.com/userdocs/7634b8a57e803e378b09c18225edd446
-    $ sudo systemctl enable authelia
-    $ sudo systemctl start authelia
-    $ sudo systemctl status authelia
+    sudo systemctl enable authelia
+    sudo systemctl start authelia
+    sudo systemctl status authelia
 
 References
 ----------

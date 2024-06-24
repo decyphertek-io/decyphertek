@@ -6,35 +6,35 @@ Auditd is an open source auditing tool that can increase security and generate r
 Install
 --------
 
-     $ sudo apt install -y auditd audispd-plugins
-     $ sudo su -c "curl 'https://raw.githubusercontent.com/decyphertek-io/ansible/main/roles/auditd/files/audit.rules' >> /etc/audit/rules.d/audit.rules"
-     $ sudo su -c "curl 'https://raw.githubusercontent.com/decyphertek-io/ansible/main/roles/auditd/files/audit.rules' >> /etc/audit/audit.rules"
-     $ sudo systemctl enable auditd
-     $ sudo systemctl restart auditd
-     $ sudo systemctl status auditd
+     sudo apt install -y auditd audispd-plugins
+     sudo su -c "curl 'https://raw.githubusercontent.com/decyphertek-io/ansible/main/roles/auditd/files/audit.rules' >> /etc/audit/rules.d/audit.rules"
+     sudo su -c "curl 'https://raw.githubusercontent.com/decyphertek-io/ansible/main/roles/auditd/files/audit.rules' >> /etc/audit/audit.rules"
+     sudo systemctl enable auditd
+     sudo systemctl restart auditd
+     sudo systemctl status auditd
   
 Watch a directory
 -----------------
 
-     $ sudo auditctl -w /home/[your_user_name]/test_dir/ -k test_watch
+     sudo auditctl -w /home/[your_user_name]/test_dir/ -k test_watch
   
 Search Auditd logs
 ------------------
 
-     $ sudo ausearch -k test_watch
+     sudo ausearch -k test_watch
   
 Create a report
 ----------------
 
-     $ sudo ausearch -k test_watch | aureport -f -I 
-     $ sudo aureport
+     sudo ausearch -k test_watch | aureport -f -I 
+     sudo aureport
   
 Manage
 -------
 
-     $ sudo systemctl enable auditd
-     $ sudo systemctl start auditd
-     $ sudo systemctl restart auditd
+     sudo systemctl enable auditd
+     sudo systemctl start auditd
+     sudo systemctl restart auditd
 
 
 References

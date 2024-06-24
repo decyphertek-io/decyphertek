@@ -6,8 +6,8 @@ Bespoke is a software modular synthesizer , a DAW that is crossplatform.
 Install
 --------
 
-     $ wget https://download.opensuse.org/repositories/home:/bespokesynth/xUbuntu_20.04/amd64/bespokesynth_1.1.0-0_amd64.deb
-     $ sudo dpkg -i bespokesynth_1.1.0-0_amd64.deb
+     wget https://download.opensuse.org/repositories/home:/bespokesynth/xUbuntu_20.04/amd64/bespokesynth_1.1.0-0_amd64.deb
+     sudo dpkg -i bespokesynth_1.1.0-0_amd64.deb
 
 
 References

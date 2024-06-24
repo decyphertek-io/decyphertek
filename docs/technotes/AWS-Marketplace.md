@@ -1,7 +1,7 @@
 AWS Marketplace 
 ==============================
 
-Decyphertek has secured your AWS AMI with one or more of the following open source software. Please reference the specific softare stack your server has. As a courteousy to AWS Subscribers this section can be used as a quick reference. [AWSMP: Decyphertek ](https://aws.amazon.com/marketplace/seller-profile?id=851968a2-7d3c-4a0b-8c33-5351d91aaef1)
+Decyphertek has secured your AWS AMI with one or more of the following open source software. Please reference the specific softare stack your server has. As a courteousy to AWS Subscribers this section can be used as a quick reference. [AWS Market Place: Decyphertek ](https://aws.amazon.com/marketplace/seller-profile?id=851968a2-7d3c-4a0b-8c33-5351d91aaef1)
 
 Security Features
 -----------------
@@ -50,7 +50,6 @@ Crowdsec IPS
 * Crowdsec recently updated their repo and when updating Debian 11 based systems , it produces a crowdsec error. The way to fix this is to run the following:
 $ curl -s https://packagecloud.io/install/repositories/crowdsec/crowdsec/script.deb.sh | sudo bash
 $ sudo apt update
-* I will be updating the base Debian 11 image, it may have an impact on past customers. 
 
 https://decyphertek.readthedocs.io/en/latest/#Crowdsec/
 
