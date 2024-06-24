@@ -7,11 +7,12 @@ Install + Utilize
 -----------------
 
      # Interactive
-    $ sudo apt install cloud-init
-    $ sudo dpkg-reconfigure cloud-init
+    sudo apt install cloud-init
+    sudo dpkg-reconfigure cloud-init
     <OR>
     # Debian systems
-    $ sudo vim 01_debian_cloud.cfg
+    sudo vim 01_debian_cloud.cfg
+    
     apt_preserve_sources_list: true
     manage_etc_hosts: true
     system_info:
@@ -26,7 +27,7 @@ Install + Utilize
         shell: /bin/bash
 
     # Ubuntu Systems
-    $ sudo vim /etc/cloud/cloud.cfg
+    sudo vim /etc/cloud/cloud.cfg
     # Change ubuntu to the username you want. 
     system_info:
      # This will affect which distro class gets used
@@ -37,15 +38,15 @@ Install + Utilize
        lock_passwd: True
        gecos: Ubuntu
 
-    $ sudo cloud-init clean --logs
-    $ sudo cloud-init init --local
-    $ sudo cloud-init init
-    $ sudo cloud-init modules --mode=config
-    $ sudo cloud-init modules --mode=final
+    sudo cloud-init clean --logs
+    sudo cloud-init init --local
+    sudo cloud-init init
+    sudo cloud-init modules --mode=config
+    sudo cloud-init modules --mode=final
     # On a server build , the ubuntu user still exists. Lets change that
-    $ sudo pkill -KILL -u ubuntu
-    $ sudo deluser ubuntu
-    $ sudo rm -rf /home/ubuntu
+    sudo pkill -KILL -u ubuntu
+    sudo deluser ubuntu
+    sudo rm -rf /home/ubuntu
 
 
 References
