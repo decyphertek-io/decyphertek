@@ -8,13 +8,13 @@ Install
 -------
 
      # Install OpenJDK  
-     $ sudo apt install default-jre  
+     sudo apt install default-jre  
      # Download and Run Keycloak 
-     $ wget https://github.com/keycloak/keycloak/releases/download/17.0.1/keycloak-17.0.1.zip 
-     $ unzip keycloak-17.0.1.zip 
-     $ cd keycloak-17.0.1 
-     $ bin/kc.sh start-dev &  
-     $ ssh -L 9999:localhost:8080 user@ip-of-server 
+     wget https://github.com/keycloak/keycloak/releases/download/17.0.1/keycloak-17.0.1.zip 
+     unzip keycloak-17.0.1.zip 
+     cd keycloak-17.0.1 
+     bin/kc.sh start-dev &  
+     ssh -L 9999:localhost:8080 user@ip-of-server 
      # Create Admin user- http://localhost:9999/ 
      # AWS Security group allow inbound 8080  
      # Login: http://ip-of-server:8080 
