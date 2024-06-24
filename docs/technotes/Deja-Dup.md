@@ -6,7 +6,7 @@ Deja Dup is an easy to use cloud backup utility that encrypts your info and sets
 Install:
 -------
 
-     $ sudo apt install deja-dup python3-pydrive
+     sudo apt install deja-dup python3-pydrive
      # setup location preferences , Backup Now, Grant access
 
 
