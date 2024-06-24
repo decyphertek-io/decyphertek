@@ -12,8 +12,8 @@ Install
      # Kubernetes Cluster
      # Cert-Manager installed on the cluster
      # DNS and TLS configured
-     $ curl https://kots.io/install | bash
-     $ kubectl kots install gitpod
+     curl https://kots.io/install | bash
+     kubectl kots install gitpod
      # Admin Console - http://localhost:8800
      # Follow Repo instructions, OAuth, etc. The Book. 
 

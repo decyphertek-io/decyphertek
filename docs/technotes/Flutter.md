@@ -7,26 +7,26 @@ Install
 -------
 
      # if command fails, run as sudo
-     $ sudo snap install flutter --classic
-     $ sudo snap alias flutter.dart dart
-     $ sudo snap install android-studio --classic
-     $ android-studio
-     $ flutter config --android-studio-dir /snap/android-studio/current/android-studio
-     $ flutter config --android-sdk ~/Android/Sdk
+     sudo snap install flutter --classic
+     sudo snap alias flutter.dart dart
+     sudo snap install android-studio --classic
+     android-studio
+     flutter config --android-studio-dir /snap/android-studio/current/android-studio
+     flutter config --android-sdk ~/Android/Sdk
      # Android SDK Command line tools
      > Android Studio > File > Settings > System Settings > Android SDK > SDK Tools > Select: Android SDK Command-Line Tools > Apply
      # You may need to restart any open editors for them to read new settings.
-     $ flutter doctor --android-licenses
-     $ flutter channel 
+     flutter doctor --android-licenses
+     flutter channel 
      # update Flutter to the latest dev branch revision
-     $ flutter upgrade
+     flutter upgrade
      # enable Linux toolchain
-     $ flutter config --enable-linux-desktop
+     flutter config --enable-linux-desktop
      # enable macOS toolchain
-     $ flutter config --enable-macos-desktop
+     flutter config --enable-macos-desktop
      # enable Windows toolchain
-     $ flutter config --enable-windows-desktop
-     $ flutter doctor
+     flutter config --enable-windows-desktop
+     flutter doctor
 
 Flutter Plugin
 --------------
@@ -54,8 +54,8 @@ Run the Android app
 External Flutter Packages 
 -------------------------
 
-     $ flutter pub add english_words
-     $ flutter pub get
+     flutter pub add english_words
+     flutter pub get
      # add this line of code to /lib/main.dart
      import 'package:english_words/english_words.dart';
 

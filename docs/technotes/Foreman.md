@@ -6,23 +6,23 @@ Foreman is a lifecycle managment platform that can be used to automate managing 
 Install {Fedora 28+ / Rocky Linux 9}
 -------------------------------
 
-     $ sudo dnf clean all
-     $ sudo dnf localinstall https://yum.theforeman.org/releases/3.3/el8/x86_64/foreman-release.rpm
-     $ sudo dnf localinstall https://yum.theforeman.org/katello/4.5/katello/el8/x86_64/katello-repos-latest.rpm
-     $ sudo dnf install centos-release-ansible-29
-     $ sudo dnf localinstall https://yum.puppet.com/puppet7-release-el-8.noarch.rpm
-     $ sudo dnf config-manager --set-enabled powertools
-     $ sudo dnf module enable katello:el8 pulpcore:el8
-     $ sudo dnf update
-     $ sudo dnf install foreman-installer-katello
-     $ sudo foreman-installer --scenario katello
+     sudo dnf clean all
+     sudo dnf localinstall https://yum.theforeman.org/releases/3.3/el8/x86_64/foreman-release.rpm
+     sudo dnf localinstall https://yum.theforeman.org/katello/4.5/katello/el8/x86_64/katello-repos-latest.rpm
+     sudo dnf install centos-release-ansible-29
+     sudo dnf localinstall https://yum.puppet.com/puppet7-release-el-8.noarch.rpm
+     sudo dnf config-manager --set-enabled powertools
+     sudo dnf module enable katello:el8 pulpcore:el8
+     sudo dnf update
+     sudo dnf install foreman-installer-katello
+     sudo foreman-installer --scenario katello
      # See details from terminal output on where to login.
 
 Ansible Plugin
 --------------
 
      # Enable Ansible plugin  
-     $ sudo foreman-installer --enable-foreman-plugin-remote-execution \  
+     sudo foreman-installer --enable-foreman-plugin-remote-execution \  
      > --enable-foreman-proxy-plugin-remote-execution-ssh --enable-foreman-plugin-ansible \ 
      > --enable-foreman-proxy-plugin-ansible --foreman-plugin-version latest 
      # Add Ansible Callbacks to ansible.cfg 

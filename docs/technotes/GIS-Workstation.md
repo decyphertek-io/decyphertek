@@ -6,11 +6,11 @@ Debian 11 GIS  Workstation is a collection of Geographic information system soft
 Install Debian-gis
 -------------------
 
-    $ sudo apt-get install gis-data gis-devel gis-gps gis-osm gis-remotesensing gis-statistics gis-web gis-workstation
-    $ sudo apt install task-xfce-desktop xrdp
-    $ sudo systemctl get-default
-    $ sudo systemctl set-default graphical.target
-    $ sudo reboot
+    sudo apt-get install gis-data gis-devel gis-gps gis-osm gis-remotesensing gis-statistics gis-web gis-workstation
+    sudo apt install task-xfce-desktop xrdp
+    sudo systemctl get-default
+    sudo systemctl set-default graphical.target
+    sudo reboot
 
 GIS Desktop Software
 ---------------------

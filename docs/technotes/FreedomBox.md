@@ -6,11 +6,11 @@ Take back your online freedom. Has a multitude of applications as a one click in
 Install
 --------
 
-    $ sudo apt update
-    $ sudo DEBIAN_FRONTEND=noninteractive apt-get install freedombox
+    sudo apt update
+    sudo DEBIAN_FRONTEND=noninteractive apt-get install freedombox
     # Secret Key 
-    $ cat /var/lib/plinth/firstboot-wizard-secret
-    $ sudo vim /etc/network/interfaces
+    cat /var/lib/plinth/firstboot-wizard-secret
+    sudo vim /etc/network/interfaces
     auto lo 
     iface lo inet loopback
 

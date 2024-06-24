@@ -6,23 +6,23 @@ Open Source Active Directory Alternative.
 Install - Rocky Linux 
 ----------------------
 
-    $ sudo hostname set-hostnamectl ad1.decyphertek.io
-    $ sudo ip addr
-    $ sudo vi /etc/hosts
+    sudo hostname set-hostnamectl ad1.decyphertek.io
+    sudo ip addr
+    sudo vi /etc/hosts
     ip-of-server ad1.decyphertek.io
-    $ sudo dnf module enable idm:DL1
-    $ sudo dnf install ipa-server ipa-server-dns firewalld -y
-    $ sudo systemctl unmask firewalld
-    $ sudo systemctl start firewalld
-    $ sudo systemctl enable firewalld
-    $ sudo firewall-cmd --add-service={http,https,dns,ntp,freeipa-ldap,freeipa-ldaps} --permanent
-    $ sudo firewall-cmd --reload
-    $ sudo firewall-cmd --list-all
+    sudo dnf module enable idm:DL1
+    sudo dnf install ipa-server ipa-server-dns firewalld -y
+    sudo systemctl unmask firewalld
+    sudo systemctl start firewalld
+    sudo systemctl enable firewalld
+    sudo firewall-cmd --add-service={http,https,dns,ntp,freeipa-ldap,freeipa-ldaps} --permanent
+    sudo firewall-cmd --reload
+    sudo firewall-cmd --list-all
     # Confirm you see inet6
-    $ sudo ip a
+    sudo ip a
     # Enter hostname created above was an example. 
     # Warning - single label domains are not supported
-    $ sudo ipa-server-install --setup-dns --allow-zone-overlap
+    sudo ipa-server-install --setup-dns --allow-zone-overlap
 
     The IPA Master Server will be configured with:
     Hostname:       ad1.decyphertek.io
@@ -42,13 +42,13 @@ Install - Rocky Linux
 
     Continue to configure the system with these values? [no]: yes
 
-    $ kinit admin
-    $ klist
+    kinit admin
+    klist
     # Need to make sure your system can point to the domain.
     # Ip redirects to domain, I use linux , so added it to my /etc/hosts 
     # This may differ in Windows or Mac . 
     # Client side
-    $ sudo vim /etc/hosts
+    sudo vim /etc/hosts
     ip-of-server ad1.decyphertek.io
     # https://ip-or-domain/ipa/ui/
 
