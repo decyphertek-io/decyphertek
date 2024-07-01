@@ -59,7 +59,7 @@ Add an OpenCTI connector:
 
 Enabled Rss Feeds:
 ------------------
-* > Data > Ingestion > Rss Feeds > Add your rss feed > Once created > Click on right side , three buttons > Start
+* Login > Data > Ingestion > Rss Feeds > Add your rss feed > Once created > Click on right side , three buttons > Start
 
 Portainer - Manage Docker:
 --------------------------
