@@ -45,13 +45,13 @@ Add an OpenCTI connector:
 
 * Make sure to Add it to the Network > Opencti-net:
 
-        restart: always
-        networks:
-          docker_opencti-net:
+          restart: always
+          networks:
+            docker_opencti-net:
 
-    networks:
-      docker_opencti-net:
-        external: true
+      networks:
+        docker_opencti-net:
+          external: true
 
 * Once those parameters are changed and added run > docker-compose up -d
 * Check Connector > Login > Data > Ingestion > Connectors > look for the new connector
