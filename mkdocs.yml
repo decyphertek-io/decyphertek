@@ -26,6 +26,7 @@ nav:
         - Misp: products/misp.md
         - Nodered: products/nodered.md
         - Odoo: products/odoo.md
+        - OpenCTI: products/opencti.md
         - Pritunl: products/pritunl.md
         - Semaphore: products/semaphore.md
         - Uptime Kuma: products/uptime-kuma.md
