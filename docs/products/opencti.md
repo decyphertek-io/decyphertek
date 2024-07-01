@@ -1,7 +1,7 @@
 OpenCTI is an open-source platform designed to facilitate the collection, storage, and dissemination of cyber threat intelligence. 
 It offers a structured environment for the analysis and sharing of technical and non-technical information, enhancing an organization's 
 ability to understand and respond to cybersecurity threats. With its user-friendly interface and robust integrations, OpenCTI is an 
-essential tool for cybersecurity professionals seeking to streamline their intelligence operations. [AWS Marketplace: OpenCTI ](https://aws.amazon.com/marketplace/pp/prodview-b7mspbvmjlnj2?sr=0-1&ref_=beagle&applicationId=AWSMPContessa)
+essential tool for cybersecurity professionals seeking to streamline their security operations. [AWS Marketplace: OpenCTI ](https://aws.amazon.com/marketplace/pp/prodview-b7mspbvmjlnj2?sr=0-1&ref_=beagle&applicationId=AWSMPContessa)
 
 Note:
 -----
