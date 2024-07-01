@@ -76,8 +76,9 @@ Manage Flatcar Linux:
 
 
 References:
-https://docs.docker.com/
-https://docs.portainer.io/
-https://docs.opencti.io/latest/
-https://www.flatcar.org/docs/latest
+-----------
+    https://docs.docker.com/
+    https://docs.portainer.io/
+    https://docs.opencti.io/latest/
+    https://www.flatcar.org/docs/latest
 
