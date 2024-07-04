@@ -30,6 +30,10 @@ nav:
         - Pritunl: products/pritunl.md
         - Semaphore: products/semaphore.md
         - Uptime Kuma: products/uptime-kuma.md
+    - Google Marketplace:
+        - Misp: 
+            - Instructions: products/gcp-misp-instructions.md
+            - EULA: products/gcp-misp-eula.md
     - Tech Notes:
         - Aide: technotes/Aide.md 
         - Android Roms: technotes/Android-Roms.md 
