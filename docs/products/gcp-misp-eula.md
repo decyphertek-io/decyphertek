@@ -20,3 +20,14 @@ The product is provided "as is" without any warranties. The provider is not liab
 Governing Law:
 -------------- 
 This agreement is governed by the laws of [Your Country/State].
+
+Google Cloud Marketplace Policies for this Product
+==================================================
+
+Plan Change and Cancellation Policies:
+-------------------------------------
+Plans are billed for one day minimum.
+
+Free Trial:
+------------
+Free trial is available upon request. The free trial will be processed after your product is launched on Google Cloud Marketplace.
