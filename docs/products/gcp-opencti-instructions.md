@@ -17,8 +17,10 @@ SSH Into the server:
 
 Passwords - DB AND/OR User:
 ----------------------------
-* ssh into server
-* sudo cat /home/adminotaur/.docker/.env
+* ssh into server:
+```
+sudo cat /home/adminotaur/.docker/.env
+```
 * This will display the randomly generated passwords for DB AND/OR User. 
 
 OpenCTI CE:
@@ -29,11 +31,21 @@ OpenCTI CE:
 Add an OpenCTI connector:
 ------------------------
 * You can add a connector without bringing down Opencti and can just add to it. 
-* cd ~/.docker/connectors-6.1.12/external-import/{Connector-Name-HERE}
-* vim docker-compose.yml
+```
+sudo su adminotaur
+cd ~/.docker/connectors-6.1.12/external-import/{Connector-Name-HERE}
+vim docker-compose.yml
+```
 * Change the following in Environment and add API Key / User / Password if required ( Add Container Name to easily manage / Troubleshoot . )
-* Get Opencti Admin Token > cat ~/.docker/.env | grep OPENCTI_ADMIN_TOKEN
-* Generate a UUID > cat /proc/sys/kernel/random/uuid
+* Get Opencti Admin Token:
+```
+cat ~/.docker/.env | grep OPENCTI_ADMIN_TOKEN
+```
+* Generate a UUID:
+```
+cat /proc/sys/kernel/random/uuid
+```
+* Example docker-compose.yml:
 ```
 container_name: CUSTOM-NAME-HERE
 environment:
@@ -53,9 +65,15 @@ networks:
   docker_opencti-net:
     external: true
 ```
-* Once those parameters are changed and added run > docker-compose up -d
+* Once those parameters are changed and added run:
+```
+docker compose up -d
+```
 * Check Connector > Login > Data > Ingestion > Connectors > look for the new connector
-* From Terminal: If you have issues run > docker logs CUSTOM-NAME-HERE 
+* From Terminal: If you have issues run:
+```
+docker logs CUSTOM-NAME-HERE 
+```
 
 Enabled Rss Feeds:
 ------------------
