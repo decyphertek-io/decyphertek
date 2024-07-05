@@ -25,7 +25,12 @@ sudo cat /home/adminotaur/.docker/.env
 
 OpenCTI CE:
 -----------
-* Login > https://ip-of-server   username: admin@opencti.io  Password: ( From terminal run : sudo cat /home/adminotaur/.docker/.env | grep OPENCTI_ADMIN_PASSWORD )
+* Login > https://ip-of-server   
+```
+username: admin@opencti.io  
+Password: (From terminal run the following command):
+sudo cat /home/adminotaur/.docker/.env | grep OPENCTI_ADMIN_PASSWORD
+```
 * Please be patient, If you access too early you may get a 502 gateway error, since OpenCTI isnt ready yet.
 
 Add an OpenCTI connector:
