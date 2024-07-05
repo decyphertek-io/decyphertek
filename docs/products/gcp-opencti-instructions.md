@@ -35,23 +35,23 @@ Add an OpenCTI connector:
 * Get Opencti Admin Token > cat ~/.docker/.env | grep OPENCTI_ADMIN_TOKEN
 * Generate a UUID > cat /proc/sys/kernel/random/uuid
 
-    container_name: CUSTOM-NAME-HERE
-    environment:
-      - OPENCTI_URL=http://opencti:8080
-      - OPENCTI_TOKEN=Run_Command_above_to_Get_Token
-      - CONNECTOR_ID=GENERATE_A_RANDOM_UUID
+      container_name: CUSTOM-NAME-HERE
+      environment:
+        - OPENCTI_URL=http://opencti:8080
+        - OPENCTI_TOKEN=Run_Command_above_to_Get_Token
+        - CONNECTOR_ID=GENERATE_A_RANDOM_UUID
 
 * Make sure to Add it to the Network > Opencti-net:
 
-    restart: always
-    networks:
-      docker_opencti-net:
+      restart: always
+      networks:
+        docker_opencti-net:
 
 * Alos, add networks at the end of the docker-compose.yml
 
-    networks:
-      docker_opencti-net:
-        external: true
+      networks:
+        docker_opencti-net:
+          external: true
 
 * Once those parameters are changed and added run > docker-compose up -d
 * Check Connector > Login > Data > Ingestion > Connectors > look for the new connector
@@ -59,7 +59,7 @@ Add an OpenCTI connector:
 
 Enabled Rss Feeds:
 ------------------
-* > Data > Ingestion > Rss Feeds > Add your rss feed > Once created > Click on right side , three buttons > Start
+* Data > Ingestion > Rss Feeds > Add your rss feed > Once created > Click on right side , three buttons > Start
 
 Portainer - Manage Docker:
 --------------------------
