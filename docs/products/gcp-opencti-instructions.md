@@ -66,7 +66,11 @@ Portainer - Manage Docker:
 * How to access Portainer to manage your containers > https://ip-of-server:9443
 * Follow the instructions to create a new admin account. 
 * Caution - Portainer can timeout if you dont create an account fast enough
-* If this happens you need to restart the container, ssh into the server, then run. > docker restart portainer
+* If this happens you need to restart the container, ssh into the server:
+```
+sudo su adminotaur
+docker restart portainer
+```
 * Once logged into portainer, click get started and select local. You can manage docker from here. 
 
 References:
