@@ -34,25 +34,25 @@ Add an OpenCTI connector:
 * Change the following in Environment and add API Key / User / Password if required ( Add Container Name to easily manage / Troubleshoot . )
 * Get Opencti Admin Token > cat ~/.docker/.env | grep OPENCTI_ADMIN_TOKEN
 * Generate a UUID > cat /proc/sys/kernel/random/uuid
-
+```
       container_name: CUSTOM-NAME-HERE
       environment:
         - OPENCTI_URL=http://opencti:8080
         - OPENCTI_TOKEN=Run_Command_above_to_Get_Token
         - CONNECTOR_ID=GENERATE_A_RANDOM_UUID
-
+```
 * Make sure to Add it to the Network > Opencti-net:
-
+```
       restart: always
       networks:
         docker_opencti-net:
-
-* Alos, add networks at the end of the docker-compose.yml
-
+```
+* Also, add networks at the end of the docker-compose.yml
+```
       networks:
         docker_opencti-net:
           external: true
-
+```
 * Once those parameters are changed and added run > docker-compose up -d
 * Check Connector > Login > Data > Ingestion > Connectors > look for the new connector
 * From Terminal: If you have issues run > docker logs CUSTOM-NAME-HERE 
