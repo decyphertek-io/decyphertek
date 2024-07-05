@@ -34,6 +34,9 @@ nav:
         - Misp: 
             - Instructions: products/gcp-misp-instructions.md
             - EULA: products/gcp-misp-eula.md
+        - OpenCTI:
+            - Instructions: products/gcp-opencti-instructions.md
+            - EULA: products/gcp-opencti-eula.md
     - Tech Notes:
         - Aide: technotes/Aide.md 
         - Android Roms: technotes/Android-Roms.md 
