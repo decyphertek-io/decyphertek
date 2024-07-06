@@ -39,7 +39,7 @@ nav:
             - EULA: products/gcp-opencti-eula.md
         - Uptime Kuma:
             - Instructions: products/gcp-uptime-kuma-instructions.md
-            - EULA: products/gcp-opencti-uptime-kuma-eula.md
+            - EULA: products/gcp-uptime-kuma-eula.md
     - Tech Notes:
         - Aide: technotes/Aide.md 
         - Android Roms: technotes/Android-Roms.md 
