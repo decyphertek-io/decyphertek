@@ -44,6 +44,8 @@ nav:
         - Uptime Kuma:
             - Instructions: products/gcp-uptime-kuma-instructions.md
             - EULA: products/gcp-uptime-kuma-eula.md
+    - Digital Ocean Marketplace:
+        - Uptime Kuma: products/digital-ocean/uptime-kuma.md
     - Tech Notes:
         - Aide: technotes/Aide.md 
         - Android Roms: technotes/Android-Roms.md 
