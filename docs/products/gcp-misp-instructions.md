@@ -1,5 +1,5 @@
 MISP (Malware Information Sharing Platform & Threat Sharing) is an open source threat intelligence platform designed to improve the sharing 
-of structured threat information among organizations.
+of structured threat information among organizations. [GCP Marketplace: Misp ](https://console.cloud.google.com/marketplace/product/server-build-415714/misp?project=server-build-415714)
 
 
 SSH Into the server:
