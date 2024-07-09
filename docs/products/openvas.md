@@ -1,5 +1,5 @@
 The OpenVAS GVM Vulnerability Scanner is an advanced, open-source security tool designed for comprehensive vulnerability assessment and management. 
-It efficiently scans and identifies potential security weaknesses in network services and software systems. 
+It efficiently scans and identifies potential security weaknesses in network services and software systems. [AWS Marketplace: Openvas ](https://aws.amazon.com/marketplace/pp/prodview-cu6eq35jv7tek?sr=0-3&ref_=beagle&applicationId=AWSMPContessa)
 
 OpenVAS GVM Login:
 ------------------------------
