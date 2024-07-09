@@ -28,6 +28,7 @@ nav:
         - Nodered: products/nodered.md
         - Odoo: products/odoo.md
         - OpenCTI: products/opencti.md
+        - OpenVas: products/openvas.md
         - Pritunl: products/pritunl.md
         - Semaphore: products/semaphore.md
         - Uptime Kuma: products/uptime-kuma.md
