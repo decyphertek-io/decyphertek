@@ -21,6 +21,7 @@ nav:
     - AWS Marketplace:
         - AWS Basics: products/aws-basics.md
         - Debian Basics: products/debian-security.md
+        - DFIR IRIS: products/dfir-iris.md
         - Flatcar Basics: products/flatcar-security.md
         - Mautic: products/mautic.md
         - Misp: products/misp.md
