@@ -42,6 +42,9 @@ nav:
         - OpenVas:
             - Instructions: products/gcp-openvas-instructions.md
             - EULA: products/gcp-openvas-eula.md
+        - Pritunl:
+            - Instructions: products/gcp-pritunl-instructions.md
+            - EULA: products/gcp-pritunl-eula.md
         - Uptime Kuma:
             - Instructions: products/gcp-uptime-kuma-instructions.md
             - EULA: products/gcp-uptime-kuma-eula.md
