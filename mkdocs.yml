@@ -48,6 +48,7 @@ nav:
         - Uptime Kuma:
             - Instructions: products/gcp-uptime-kuma-instructions.md
             - EULA: products/gcp-uptime-kuma-eula.md
+        - Privacy Policy: products/gcp-privacy-policy.md
     - Digital Ocean Marketplace:
         - Uptime Kuma: products/digital-ocean/uptime-kuma.md
     - Tech Notes:
