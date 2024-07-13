@@ -45,7 +45,7 @@ nav:
         - Pritunl:
             - Instructions: products/gcp-pritunl-instructions.md
             - EULA: products/gcp-pritunl-eula.md
-        - Pritunl:
+        - Semaphore UI:
             - Instructions: products/gcp-semaphore-instructions.md
             - EULA: products/gcp-semaphore-eula.md
         - Uptime Kuma:
