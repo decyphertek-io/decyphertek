@@ -1,6 +1,6 @@
 Uptime Kuma is a self-hosted monitoring tool designed to track the availability and performance of websites and services. 
 It provides real-time status updates, customizable alerts, and a user-friendly dashboard to help users ensure their sites 
-and services remain operational. 
+and services remain operational. [GCP Marketplace: Uptime Kuma ](https://console.cloud.google.com/marketplace/product/server-build-415714/uptime-kuma)
 
 Note:
 ------

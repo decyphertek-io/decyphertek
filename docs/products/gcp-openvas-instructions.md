@@ -1,5 +1,5 @@
 OpenVAS Vulnerability Scanner is an advanced, open-source security tool designed for comprehensive vulnerability assessment and management. 
-It efficiently scans and identifies potential security weaknesses in network services and software systems. 
+It efficiently scans and identifies potential security weaknesses in network services and software systems. [GCP Marketplace: OpenVas ](https://console.cloud.google.com/marketplace/product/server-build-415714/openvas)
 
 Note:
 ------
