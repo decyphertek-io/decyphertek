@@ -36,6 +36,9 @@ nav:
         - Misp: 
             - Instructions: products/gcp-misp-instructions.md
             - EULA: products/gcp-misp-eula.md
+        - Node-RED:
+            - Instructions: products/gcp-nodered-instructions.md
+            - EULA: products/gcp-nodered-eula.md
         - OpenCTI:
             - Instructions: products/gcp-opencti-instructions.md
             - EULA: products/gcp-opencti-eula.md
