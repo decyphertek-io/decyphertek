@@ -43,8 +43,6 @@ adminAuth: {
 
 httpNodeAuth: {user:"adminotaur",pass:"PASSWORD-HASH-HERE"},
 httpStaticAuth: {user:"adminotaur",pass:"PASSWORD-HASH-HERE"},
-
-
 ```
 * Apply the changes:
 ```
