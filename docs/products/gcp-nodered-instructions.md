@@ -44,8 +44,11 @@ httpStaticAuth: {user:"adminotaur",pass:"PASSWORD-HASH-HERE"},
 
 
 ```
-* sudo systemctl daemon-reload
-* sudo systemctl restart pm2-adminotaur.service
+* Apply the changes:
+```
+sudo systemctl daemon-reload
+sudo systemctl restart pm2-adminotaur.service
+```
 
 NodeRed - Configuration:
 ------------------------
