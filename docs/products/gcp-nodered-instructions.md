@@ -4,7 +4,9 @@ NodeRed - Login:
 -----------------
 * SSH into your server 
 * Retrieve your password:
-* sudo cat /home/adminotaur/password.txt
+```
+sudo cat /home/adminotaur/password.txt
+```
 * Login to Node Red Dashboard:
 ```
 https://ip-of-server:1880
