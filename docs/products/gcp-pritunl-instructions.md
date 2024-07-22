@@ -1,6 +1,6 @@
 Pritunl is an open-source VPN server software that provides secure and scalable VPN solutions. 
 It supports OpenVPN and Wiregaurd protocols.It is designed for simplicity, reliability, and 
-flexibility, making it suitable for both small businesses and large enterprises.
+flexibility, making it suitable for both small businesses and large enterprises.[GCP Marketplace: Pritunl VPN Server ](https://console.cloud.google.com/marketplace/product/server-build-415714/pritunl-vpn-server)
 
 Note:
 ------
