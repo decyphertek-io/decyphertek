@@ -46,6 +46,21 @@ Examples
     sudo ufw limit 22/tcp
     sudo ufw limit 3389/tcp
 
+UFW-Docker:
+----------
+
+    # Docker bypasses UFW host firewall. There is a fix. 
+    sudo wget -O /usr/local/bin/ufw-docker https://github.com/chaifeng/ufw-docker/raw/master/ufw-docker
+    sudo chmod +x /usr/local/bin/ufw-docker
+    sudo ufw-docker install
+    sudo systemctl restart ufw
+    docker ps
+    # Reference the container name in the docker firewall rule.
+    sudo ufw-docker allow nginx-reverse-proxy 443/tcp
+    sudo ufw-docker allow portainer 9443/tcp
+    sudo systemctl start ufw
+    sudo systemctl enable ufw
+
 Troubleshooting
 ----------------
 
