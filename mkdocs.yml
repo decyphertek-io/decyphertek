@@ -56,7 +56,7 @@ nav:
             - EULA: products/gcp-uptime-kuma-eula.md
         - VaultWarden:
             - Instructions: products/gcp-vaultwarden-instructions.md
-            - EULA: products/gcp-uptime-vaultwarden-eula.md
+            - EULA: products/gcp-vaultwarden-eula.md
         - Privacy Policy: products/gcp-privacy-policy.md
     - Digital Ocean Marketplace:
         - Uptime Kuma: products/digital-ocean/uptime-kuma.md
