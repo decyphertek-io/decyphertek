@@ -1,4 +1,4 @@
-Node Red is an event driven automation platform written in Java Script.[Google Cloud Marketplace: Nodered ](https://console.cloud.google.com/marketplace/product/server-build-415714/node-red)
+Node Red is an event driven automation platform written in Java Script.[GCP Marketplace: Nodered ](https://console.cloud.google.com/marketplace/product/server-build-415714/node-red)
 
 NodeRed - Login:
 -----------------

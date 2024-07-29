@@ -2,7 +2,8 @@ Vaultwarden is a lightweight, self-hosted password manager that provides a more 
 to the official Bitwarden server. It offers full compatibility with Bitwarden client applications, enabling 
 users to manage their passwords securely across different platforms. Vaultwarden ensures strong encryption 
 and security for user data. It is community-driven, customizable, and ideal for those seeking full control 
-over their password management system.
+over their password management system. [GCP Marketplace: Vaultwarden ](https://console.cloud.google.com/marketplace/product/server-build-415714/vaultwarden)
+
 
 Note:
 -------
