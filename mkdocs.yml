@@ -39,6 +39,9 @@ nav:
         - Node-RED:
             - Instructions: products/gcp-nodered-instructions.md
             - EULA: products/gcp-nodered-eula.md
+        - OneDev:
+            - Instructions: products/gcp-onedev-instructions.md
+            - EULA: products/gcp-onedev-eula.md
         - OpenCTI:
             - Instructions: products/gcp-opencti-instructions.md
             - EULA: products/gcp-opencti-eula.md
