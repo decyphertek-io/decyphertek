@@ -41,11 +41,11 @@ Nginx:
 ```
 sudo su adminotaur
 cd ~
-cd .docker/.conf/
+cd .docker/.config/
 ```
 * You can modify these nginx configs , then restart the container:
 ```
-docker restart ninx-reverse-proxy
+docker restart nginx-reverse-proxy
 ```
 
 Portainer:
