@@ -33,6 +33,9 @@ nav:
         - Semaphore: products/semaphore.md
         - Uptime Kuma: products/uptime-kuma.md
     - Google Marketplace:
+        - Debian 12 Web Desktop: 
+            - Instructions: products/gcp-debian-12-web-desktop-instructions.md
+            - EULA: products/gcp-debian-12-web-desktop-eula.md
         - Misp: 
             - Instructions: products/gcp-misp-instructions.md
             - EULA: products/gcp-misp-eula.md
