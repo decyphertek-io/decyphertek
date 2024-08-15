@@ -22,15 +22,18 @@ http --pretty=format POST https://example.com "Authorization:Bearer $API_KEY" "A
 
 # PUT Request with JSON Data to example.com
 http --pretty=format PUT https://example.com "Authorization:Bearer $API_KEY" "Accept:application/json"  >> example.json
+```
 
-# POST Request to Opensearch with Authentication
+HTTPIE OpenSeach Ex:
+---------------------
+```
 http --auth your_username:your_password POST https://IP-OR-Domain:9200/your-index/ Content-Type:application/json < example.json
 ```
 
 HTTPIE MISP EX:
 ---------------
 ```
-http --verify=no --pretty=format GET "https://IP-OF-Server/events/index" "Authorization: MISP-API-KEY" "Accept:application/json"
+http --verify=no --pretty=format GET "https://IP-OF-Server/events/index" "Authorization: MISP-API-KEY" "Accept:application/json" >> misp.json
 ```
 
 HTTPIE Meraki EX:
