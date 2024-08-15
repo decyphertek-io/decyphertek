@@ -116,6 +116,7 @@ nav:
         - Gitpod: technotes/Gitpod.md 
         - GNS3: technotes/GNS3.md 
         - Greylog: technotes/Greylog.md 
+        - HTTPIE: technotes/Httpie.md
         - IDS Tower: technotes/IdsTower.md 
         - Incus: technotes/Incus.md
         - Internet in A Box: technotes/Internet-In-A-Box.md 
