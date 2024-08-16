@@ -2,6 +2,8 @@ LAMP stack is setup on Ubuntu 24.04, that includes Apache with ModSecurity WAF, 
 for database management, and PHP with Composer for dependency management. Webmin is included for easy 
 server administration. The system is secured with UFW as the host firewall, CrowdSec for intrusion prevention, 
 Auditd for detailed logging, and automated updates to ensure the server remains secure and up-to-date.
+[GCP Marketplace: Lamp Stack + Modsec + Webmin ](https://console.cloud.google.com/marketplace/product/server-build-415714/lamp-stack-modsecurity-webmin)
+
 
 Webmin:
 -------
