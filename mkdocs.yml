@@ -36,6 +36,9 @@ nav:
         - Debian 12 Web Desktop: 
             - Instructions: products/gcp-debian-12-web-desktop-instructions.md
             - EULA: products/gcp-debian-12-web-desktop-eula.md
+        - Kali Linux Web Desktop: 
+            - Instructions: products/gcp-kali-web-desktop-instructions.md
+            - EULA: products/gcp-kali-web-desktop-eula.md
         - Lamp Stack + Modsec + Webmin: 
             - Instructions: products/gcp-lamp-stack-instructions.md
             - EULA: products/gcp-lamp-stack-eula.md
