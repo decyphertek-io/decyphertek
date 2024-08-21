@@ -18,8 +18,6 @@ markdown_extensions:
 
 nav:
     - Home: index.md
-    - Azure Marketplace:
-        - Privacy Policy: products/azure/privacy-policy.md
     - AWS Marketplace:
         - AWS Basics: products/aws-basics.md
         - Debian Basics: products/debian-security.md
@@ -34,6 +32,8 @@ nav:
         - Pritunl: products/pritunl.md
         - Semaphore: products/semaphore.md
         - Uptime Kuma: products/uptime-kuma.md
+    - Azure Marketplace:
+        - Privacy Policy: products/azure/privacy-policy.md
     - Google Marketplace:
         - Debian 12 Web Desktop: 
             - Instructions: products/gcp-debian-12-web-desktop-instructions.md
