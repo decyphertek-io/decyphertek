@@ -10,7 +10,7 @@ sudo cat /home/kali/password.txt
 * Go to your browser - https://ip-of-server:6080/vnc.html
 * Login with your password retrieved in the previous step.
 * Left side tab - Select full screen + see additonal options. 
-* Note: By default there is no security tools installed , due to GCP apporval policies. 
+* Note: By default there is no security tools installed , due to GCP approval policies. 
 * Default Toolset: 
 ```
 sudo apt install kali-linux-default
