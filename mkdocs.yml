@@ -33,6 +33,7 @@ nav:
         - Semaphore: products/semaphore.md
         - Uptime Kuma: products/uptime-kuma.md
     - Azure Marketplace:
+        - Pritunl VPN Server: products/azure/pritunl-instructions.md
         - Privacy Policy: products/azure/privacy-policy.md
     - Google Marketplace:
         - Debian 12 Web Desktop: 
