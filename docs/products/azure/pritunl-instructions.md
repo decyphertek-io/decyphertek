@@ -16,6 +16,7 @@ Pritunl Login:
 sudo pritunl setup-key
 ```
 * Add the key to the new VPN server ( Takes a few minutes to be accessible )
+* Make sure your network security group in Azure that is assigned to your VM allows inbound 443/tcp , 1194/udp , and 51820/udp.
 ```
 https://ip-of-server
 ```
