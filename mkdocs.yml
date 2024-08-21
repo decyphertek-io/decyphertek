@@ -18,6 +18,8 @@ markdown_extensions:
 
 nav:
     - Home: index.md
+    - Azure Marketplace:
+        - Privacy Policy: products/azure/privacy-policy.md
     - AWS Marketplace:
         - AWS Basics: products/aws-basics.md
         - Debian Basics: products/debian-security.md
