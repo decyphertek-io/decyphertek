@@ -1,5 +1,9 @@
 MISP (Malware Information Sharing Platform & Threat Sharing) is an open-source platform designed to enhance cybersecurity by improving the sharing of structured threat information among organizations. MISP is typically used to bolster threat intelligence for SIEM systems or during the triage of security incidents.
 
+Note:
+-----
+* Please wait a few minutes, upon first login system maybe undergoing an update. 
+
 SSH Into the server:
 --------------------
 * Utilize Azure SSH settings to set your ssh keys AND/OR Password to ssh in. 
@@ -15,7 +19,11 @@ sudo cat /root/.docker/.env
 MISP - Access The Server:
 -------------------------
 * Login > https://ip-of-server
-* Username: admin@misp Password: ( ADMIN_PASSWORD found at /root/.docker/.env )
+```
+Username: admin@misp 
+Password: ( To find the admin password run the following command )
+sudo cat /root/.docker/.env | grep ADMIN_PASSWORD
+```
 * Get data feeds > Dashboard > Sync Actions > Feeds > Load Default feed metadata > select pencil indicator, enable , submit > Fetch & store all Feed Data
 * Change Password > Dashboard > Administration > List users > select user > Set Password > Save: Edit User - Confirm with old password
 * Troubleshooting > IF IP changes or no Public IP > Edit .env :
@@ -31,10 +39,13 @@ vim .env
 
 Portainer - Manage Docker:
 ---------------------------
-* How to access Portainer to manage your containers > https://ip-of-server:9443
+* How to access Portainer to manage your containers:
+```
+https://ip-of-server:9443
+```
 * Follow the instructions to create a new admin account. 
 * Caution - Portainer can timeout if you dont create an account fast enough
-* If this happens you need to restart the container, ssh into the server, then run: 
+* If this happens you need to restart the container, ssh into the server, then run:
 ```
 sudo docker restart portainer
 ```
