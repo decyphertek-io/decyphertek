@@ -34,6 +34,7 @@ nav:
         - Uptime Kuma: products/uptime-kuma.md
     - Azure Marketplace:
         - MISP: products/azure/misp.md
+        - OpenCTI: products/azure/opencti.md
         - Pritunl VPN Server: products/azure/pritunl-instructions.md
         - Privacy Policy: products/azure/privacy-policy.md
     - Google Marketplace:
