@@ -43,7 +43,10 @@ sudo docker restart portainer
 Manage Flatcar Linux: 
 --------------------
 * Optional: Manaully update Flatcar. Updates will happen automatically. 
-* If you want to manually check for updates run this command: update_engine_client -update
+* If you want to manually check for updates run this command: 
+```
+sudo update_engine_client -update
+```
 
 References:
 -----------
