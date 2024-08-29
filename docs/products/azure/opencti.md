@@ -6,7 +6,8 @@ essential tool for cybersecurity professionals seeking to streamline their intel
 Note:
 -----
 * Opencti Requires at least 4cpu + 16GB RAM + 20GB storage. 
-* Please wait a few minutes for OpenCTI to be accessible. 
+* Please wait 10 minutes for OpenCTI to be accessible. 
+* If Opencti is not avaialable yet, you will get a 502 error, please be patient. 
 * Dashboards takes up to 30-60 minutes to pull in data and populate the visuals.
 * I have set basic connectors - Mitre, CISA , Threafox , and some internal enrichment.
 * To see the data ingestion progress > Data > Ingestion > Connectors 
@@ -102,3 +103,5 @@ References:
 * https://docs.docker.com/
 * https://docs.portainer.io/
 * https://docs.opencti.io/latest/
+
+
