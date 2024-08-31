@@ -75,7 +75,7 @@ networks:
 ```
 * Once those parameters are changed and added run:
 ```
-docker compose up -d
+/opt/bin/docker-compose up -d
 ```
 * Check Connector > Login > Data > Ingestion > Connectors > look for the new connector
 * From Terminal: If you have issues run:
