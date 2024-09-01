@@ -4,7 +4,7 @@ Note:
 -----
 * Please be patient , it takes 5-10 minutes for Mitre Caldera to be accessible. 
 
-SSH Into the server:
+SSH:
 --------------------
 * Utilize Google SSH Console or setup ssh keys or password.
 
@@ -14,3 +14,20 @@ Passwords:
 ```
 sudo cat /home/adminotaur/caldera/conf/local.yml
 ```
+
+Login:
+------
+* login to your Mitre Caldera V5:
+````
+https://IP-OF-YOUR-VM:8443
+````
+* Note: It is set to use a public IP , please see troublehsooting to customize to a private IP.
+* How to login as the Red or blue user:
+````
+username: red
+password: ( sudo cat /home/adminotaur/caldera/conf/local.yml | grep red )
+
+username: blue
+password: ( sudo cat /home/adminotaur/caldera/conf/local.yml | grep blue )
+````
+
