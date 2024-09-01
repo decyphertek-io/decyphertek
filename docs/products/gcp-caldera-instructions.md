@@ -85,7 +85,6 @@ sudo ufw delete 99
 - Test: Log in and perform basic operations.
 - Expected Outcome: Full functionality with no errors.
 
-
 Troubleshooting:
 ----------------
 * If you need update the IP or other data in local.yml
@@ -122,7 +121,6 @@ sudo ufw status numbered
 # Delete a rule, select a numbered from the above command:
 sudo ufw delete 99
 ```
-
 Security Features:
 -------------------
 * Crowdsec IPS - https://decyphertek.readthedocs.io/en/latest/technotes/Crowdsec/
