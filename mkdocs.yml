@@ -50,7 +50,7 @@ nav:
         - Misp: 
             - Instructions: products/gcp-misp-instructions.md
             - EULA: products/gcp-misp-eula.md
-        - Mitre Calder V5: 
+        - Mitre Caldera V5: 
             - Instructions: products/gcp-caldera-instructions.md
             - EULA: products/gcp-caldera-eula.md
         - N8N:
