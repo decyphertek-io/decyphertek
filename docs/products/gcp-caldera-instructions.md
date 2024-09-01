@@ -30,6 +30,61 @@ password: ( sudo cat /home/adminotaur/caldera/conf/local.yml | grep red )
 username: blue
 password: ( sudo cat /home/adminotaur/caldera/conf/local.yml | grep blue )
 ````
+Plugin Ports:
+-------------
+* Note: UFW Host firewall is only set to allow port 22 & 8443 by default.
+```
+# To allow access to any of the ports mentioned , add a rule.
+EX:
+sudo ufw allow 8853/tcp
+sudo ufw allow 8853/udp
+
+# Check the current firewall rules:
+sudo ufw status numbered
+
+# Delete a rule, select a numbered from the above command:
+sudo ufw delete 99
+```
+* DNS Contact Plugin (Port 8853)
+- Description: Handles agent communication via DNS.
+- Test: Configure an agent to use DNS and verify it registers successfully.
+- Expected Outcome: Agent should appear in the Caldera interface.
+
+* FTP Contact Plugin (Port 2222)
+- Description: Handles agent communication via FTP.
+- Test: Use an FTP client to connect, upload, and download files.
+- Expected Outcome: Successful file transfers.
+
+* TCP Contact Plugin (Port 7010)
+- Description: Handles agent communication via TCP.
+- Test: Deploy an agent over TCP and monitor the connection.
+- Expected Outcome: Stable TCP connection and communication.
+
+* UDP Contact Plugin (Port 7011)
+- Description: Handles agent communication via UDP.
+- Test: Deploy an agent over UDP and verify packet exchange.
+- Expected Outcome: Successful data transmission with minimal packet loss.
+
+* WebSocket Contact Plugin (Port 7012)
+- Description: Handles agent communication via WebSocket.
+- Test: Deploy an agent over WebSocket and confirm the connection.
+- Expected Outcome: Real-time communication via WebSocket.
+
+* SSH Tunnel Plugin (Port 8022)
+- Description: Enables agent communication through SSH tunnels.
+- Test: Establish an SSH tunnel and deploy an agent.
+- Expected Outcome: Secure communication through the tunnel.
+
+* HTTP/HTTPS Contact Plugin (Port 8443)
+- Description: Facilitates agent communication via HTTP/HTTPS.
+- Test: Access the web interface and deploy an agent.
+- Expected Outcome: Secure agent registration via HTTPS.
+
+* Main Web Interface (Port 8888)
+- Description: Central interface for Caldera operations.
+- Test: Log in and perform basic operations.
+- Expected Outcome: Full functionality with no errors.
+
 
 Troubleshooting:
 ----------------
@@ -54,6 +109,18 @@ sudo systemctl stop caldera-build
 # Now you can start Caldera.
 sudo systemctl start caldera
 
+```
+* To get the plugins to work, you need to allow them via UFW host firewall:
+```
+# Check the plugin ports section, EX:
+sudo ufw allow 8853/tcp
+sudo ufw allow 8853/udp
+
+# Check the current firewall rules:
+sudo ufw status numbered
+
+# Delete a rule, select a numbered from the above command:
+sudo ufw delete 99
 ```
 
 Security Features:
