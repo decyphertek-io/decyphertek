@@ -22,7 +22,7 @@ nav:
         - AWS Basics: products/aws-basics.md
         - Debian Basics: products/debian-security.md
         - Flatcar Basics: products/flatcar-security.md
-        - Mitre Caldera: V5 products/caldera.md
+        - Mitre Caldera V5: products/caldera.md
         - DFIR IRIS: products/dfir-iris.md
         - Mautic: products/mautic.md
         - Misp: products/misp.md
