@@ -2,7 +2,8 @@ MISP (Malware Information Sharing Platform & Threat Sharing) is an open-source p
 
 Note:
 -----
-* Please wait a few minutes, upon first login system maybe undergoing an update. 
+* Please wait 5-10 minutes for MISP to be accesible.
+* Upon first login system may be undergoing an update and disclose a warning message. Please wait.
 
 SSH Into the server:
 --------------------
