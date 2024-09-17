@@ -45,6 +45,7 @@ sudo timedatectl set-timezone America/New_York
 # From Odoo UI
 Dashboard > Top Right Icon > Preferences > Select Timezone > EX: (America/New_York) > Save 
 ```
+* MFA: Dashboard > Top Right Icon > Preferences > Account Security > Toggle 2FA 
 
 View Modsec logs:
 -----------------
