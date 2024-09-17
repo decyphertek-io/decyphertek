@@ -33,6 +33,19 @@ Password: ( Your Password)
 * Once Logged in , you will be taken to the apps page, select which ones to activate.
 * Please be patient, after clicking activate , take a few minutes to install . 
 
+Settings:
+---------
+* Email Signature: Dashboard > Top Right Icon > Preferences > Can customize Email Signature > Save
+* Time Zone: Dashboard > Top Right Icon > Preferences > 1st - Set time zone from Linux Terminal:
+```
+timedatectl list-timezones
+# Ex:
+timedatectl list-timezones | grep New_York
+sudo timedatectl set-timezone America/New_York
+# From Odoo UI
+Dashboard > Top Right Icon > Preferences > Select Timezone > EX: (America/New_York) > Save 
+```
+
 View Modsec logs:
 -----------------
 * Test Modsec:
