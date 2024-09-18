@@ -13,8 +13,8 @@ SSH Into the server:
 --------------------
 * Utilize Google SSH Console or setup ssh keys or password.
 
-Wazuh:
--------
+Wazuh Basics:
+-------------
 * System - Ubuntu24LTS 
 * How to Login:
 ```
@@ -34,6 +34,22 @@ Password: (wazuh-passwords.txt)
 ```
 
 
+Ports & Protocols:
+------------------
+# Agent connection service
+1514 TCP (default) - Agent connection service
+1515 TCP - Agent enrollment service
+
+# Wazuh Syslog collector
+514 UDP (default) - Wazuh Syslog collector (disabled by default)
+514 TCP (optional) - Wazuh Syslog collector (disabled by default)
+OPTIONAL: Install syslog-ng 
+
+# Wazuh server RESTful API
+55000 TCP - Wazuh server RESTful API
+
+# Wazuh dashboard
+443 TCP - Wazuh web user interface
 
 OPTIONAL: Syslog-ng:
 ---------------------
