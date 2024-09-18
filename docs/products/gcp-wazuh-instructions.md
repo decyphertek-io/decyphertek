@@ -107,6 +107,30 @@ sudo systemctl start syslog-ng
 sudo systemctl restart wazuh manager
 ```
 
+OPTIONAL: Dev API:
+------------------
+```
+# Retrieve the password for Wazuh api user from the wazuh terminal.
+sudo cat /opt/wazuh-install-files/wazuh-passwords.txt
+# Now, switch to your desktop. Run Locally from your own computer. ( Linux OS EX: )
+sudo vim wazuh-api.sh
+
+#!/bin/bash
+USER="wazuh"
+PASSWORD="wazuh-passwords.txt"
+IP="$(curl -s ifconfig.me):55000"
+echo -e "\n- Getting token...\n"
+TOKEN=$(curl -u "$USER:$PASSWORD" -k -X POST "https://$IP/security/user/authenticate?raw=true")
+echo -e "\n- API calls with TOKEN environment variable ...\n"
+echo -e "Getting default information:\n"
+curl -k -X GET "https://$IP/?pretty=true" -H "Authorization: Bearer $TOKEN"
+echo -e "\n\nGetting /agents/summary/os:\n"
+curl -k -X GET "https://$IP/agents/summary/os?pretty=true" -H "Authorization: Bearer $TOKEN"
+echo -e "\n\nEnd of the script.\n"
+
+sudo chmod +x wazuh-api.sh
+bash wazuh-api.sh
+```
 
 References:
 -----------
