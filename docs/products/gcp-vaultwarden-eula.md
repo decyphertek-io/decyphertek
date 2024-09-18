@@ -3,7 +3,7 @@ End User License Agreement (EULA)
 
 License Grant:
 ----------------- 
-You are granted a non-exclusive, non-transferable license to use the MISP VM product built on Docker.
+You are granted a non-exclusive, non-transferable license to use Decyphertek Secured VM on Google Cloud Marketplace.
 
 Usage:
 ------ 
