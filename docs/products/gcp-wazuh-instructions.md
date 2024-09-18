@@ -7,7 +7,8 @@ and actionable insights. [GCP Marketplace: Wazuh ]()
 
 Note:
 -------
-* Please be aware that it takes a few minutes for the system to be up and running. 
+* Please be aware that it takes 10-15 minutes before the system is up and running. 
+* Please be patient , you can check uptime from terminal. 
 
 SSH Into the server:
 --------------------
