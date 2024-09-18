@@ -101,3 +101,9 @@ sudo systemctl enable syslog-ng
 sudo systemctl start syslog-ng
 sudo systemctl restart wazuh manager
 ```
+
+
+References:
+-----------
+https://documentation.wazuh.com/current/index.html
+https://decyphertek.readthedocs.io/en/latest/products/gcp-wazuh-instructions/
