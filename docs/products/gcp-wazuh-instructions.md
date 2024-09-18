@@ -30,13 +30,17 @@ Password: (wazuh-passwords.txt)
 ```
 * Install Wazuh agent from the Wazuh Dashboard.
 ```
-
-
+Dashboard > Server Management > Endpoints Summary > Deploy New Agent
+1. Select Your OS.
+2. Add your Wazuh Public IP or Domain.
+3. Optional
+4. Run Commands
+5. Start Agent
 ```
-
 
 Ports & Protocols:
 ------------------
+```
 # Agent connection service
 1514 TCP (default) - Agent connection service
 1515 TCP - Agent enrollment service
@@ -51,6 +55,7 @@ OPTIONAL: Install syslog-ng
 
 # Wazuh dashboard
 443 TCP - Wazuh web user interface
+```
 
 OPTIONAL: Syslog-ng:
 ---------------------
