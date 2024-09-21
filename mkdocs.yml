@@ -81,6 +81,9 @@ nav:
         - Semaphore UI:
             - Instructions: products/gcp-semaphore-instructions.md
             - EULA: products/gcp-semaphore-eula.md
+        - SonarQube CE:
+            - Instructions: products/gcp-sonarqube-instructions.md
+            - EULA: products/gcp-sonarqube-eula.md
         - Uptime Kuma:
             - Instructions: products/gcp-uptime-kuma-instructions.md
             - EULA: products/gcp-uptime-kuma-eula.md
