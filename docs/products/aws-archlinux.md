@@ -1,7 +1,7 @@
 Arch Linux is a versatile and lightweight Linux distribution designed for advanced users who value simplicity and customization. When paired with noVNC, it provides users the ability to access a full desktop environment directly from a web browser, making it convenient for remote management. Arch prioritizes security with features such as the UFW (Uncomplicated Firewall) for robust host protection, CrowdSec for real-time intrusion prevention, and Auditd for comprehensive logging. Additionally, automated updates ensure that the system remains current and secure, allowing users to focus on their tasks without worrying about maintenance. [AWS Marketplace: Arch Linux Web Desktop ](https://aws.amazon.com/marketplace/pp/prodview-m33yk2ncmkkea?sr=0-1&ref_=beagle&applicationId=AWSMPContessa)
 
 
-Usage instructions:
+Instructions:
 ---------------------
 * Arch Linux is an open source linux distro. You can access Arch Linux from your web browser.
 * Arch Linux Web Desktop Login:
