@@ -28,7 +28,10 @@ sudo apt install kali-linux-default
 sudo apt install kali-linux-everything
 ```
 * Note: Avoid installing any of the desktop meta packages as it modifies grub and breaks the system. You already have xfc4 desktop.
-* Note: If your desktop locks when logged into nvnc, you will need to create a kali password: sudo passwd kali
+* Note: If your desktop locks when logged into nvnc, you will need to create a kali password: 
+```
+sudo passwd kali
+```
 * Optional: Update vnc password: 
 ```
 vnpasswd 
