@@ -23,10 +23,11 @@ nav:
         - Debian Basics: products/debian-security.md
         - Flatcar Basics: products/flatcar-security.md
         - Arch Linux Web Desktop: products/aws-archlinux.md
-        - Mitre Caldera V5: products/caldera.md
         - DFIR IRIS: products/dfir-iris.md
+        - Kali Linux Web Desktop: products/aws-kali.md
         - Mautic: products/mautic.md
         - Misp: products/misp.md
+        - Mitre Caldera V5: products/caldera.md
         - Nodered: products/nodered.md
         - Odoo: products/odoo.md
         - OpenCTI: products/opencti.md
