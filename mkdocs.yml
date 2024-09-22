@@ -34,6 +34,7 @@ nav:
         - Pritunl: products/pritunl.md
         - Semaphore: products/semaphore.md
         - Uptime Kuma: products/uptime-kuma.md
+        - VaultWarden: products/aws-vaultwarden.md
     - Azure Marketplace:
         - MISP: products/azure/misp.md
         - OpenCTI: products/azure/opencti.md
