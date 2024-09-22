@@ -24,6 +24,7 @@ nav:
         - Flatcar Basics: products/flatcar-security.md
         - Arch Linux Web Desktop: products/aws-archlinux.md
         - Kali Linux Web Desktop: products/aws-kali.md
+        - ParootOS Web Desktop: products/aws-parrotos.md
         - DFIR IRIS: products/dfir-iris.md
         - Mautic: products/mautic.md
         - Misp: products/misp.md
