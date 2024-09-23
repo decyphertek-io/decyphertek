@@ -19,29 +19,29 @@ markdown_extensions:
 nav:
     - Home: index.md
     - AWS Marketplace:
-        - AWS Basics: products/aws-basics.md
-        - Debian Basics: products/debian-security.md
-        - Flatcar Basics: products/flatcar-security.md
-        - Arch Linux Web Desktop: products/aws-archlinux.md
-        - Debian 12 Sysadmin Web Desktop: products/aws-debian12-sysadmin.md
-        - Debian 12 Web Desktop: products/aws-debian12-wd.md
-        - Kali Linux Web Desktop: products/aws-kali.md
+        - AWS Basics: products/aws/basics.md
+        - Debian Basics: products/aws/debian-security.md
+        - Flatcar Basics: products/aws/flatcar-security.md
+        - Arch Linux Web Desktop: products/aws/archlinux.md
+        - Debian 12 Sysadmin Web Desktop: products/aws/debian12-sysadmin.md
+        - Debian 12 Web Desktop: products/aws/debian12-wd.md
+        - Kali Linux Web Desktop: products/aws/kali.md
         - ParrotOS Web Desktop: products/aws-parrotos.md
-        - Rocky Linux Web Desktop: products/aws-rockylinux.md
-        - CloudBeaver: products/aws-cloudbeaver.md
-        - DFIR IRIS: products/aws-dfir-iris.md
-        - Mautic: products/mautic.md
-        - Misp: products/misp.md
-        - Mitre Caldera V5: products/caldera.md
-        - N8N: products/aws-n8n.md
-        - Nodered: products/nodered.md
-        - Odoo: products/odoo.md
-        - OpenCTI: products/opencti.md
-        - OpenVas: products/openvas.md
-        - Pritunl: products/pritunl.md
-        - Semaphore: products/semaphore.md
-        - Uptime Kuma: products/uptime-kuma.md
-        - VaultWarden: products/aws-vaultwarden.md
+        - Rocky Linux Web Desktop: products/aws/rockylinux.md
+        - CloudBeaver: products/aws/cloudbeaver.md
+        - DFIR IRIS: products/aws/dfir-iris.md
+        - Mautic: products/aws/mautic.md
+        - Misp: products/aws/misp.md
+        - Mitre Caldera V5: products/aws/caldera.md
+        - N8N: products/aws/n8n.md
+        - Nodered: products/aws/nodered.md
+        - Odoo: products/aws/odoo.md
+        - OpenCTI: products/aws/opencti.md
+        - OpenVas: products/aws/openvas.md
+        - Pritunl: products/aws/pritunl.md
+        - Semaphore: products/aws/semaphore.md
+        - Uptime Kuma: products/aws/uptime-kuma.md
+        - VaultWarden: products/aws/vaultwarden.md
     - Azure Marketplace:
         - MISP: products/azure/misp.md
         - OpenCTI: products/azure/opencti.md
