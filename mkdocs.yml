@@ -27,6 +27,7 @@ nav:
         - Kali Linux Web Desktop: products/aws-kali.md
         - ParrotOS Web Desktop: products/aws-parrotos.md
         - Rocky Linux Web Desktop: products/aws-rockylinux.md
+        - CloudBeaver: products/aws-cloudbeaver.md
         - DFIR IRIS: products/aws-dfir-iris.md
         - Mautic: products/mautic.md
         - Misp: products/misp.md
