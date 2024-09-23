@@ -23,6 +23,7 @@ nav:
         - Debian Basics: products/debian-security.md
         - Flatcar Basics: products/flatcar-security.md
         - Arch Linux Web Desktop: products/aws-archlinux.md
+        - Debian 12 Sysadmin Web Desktop: products/aws-debian12-sysadmin.md
         - Kali Linux Web Desktop: products/aws-kali.md
         - ParrotOS Web Desktop: products/aws-parrotos.md
         - Rocky Linux Web Desktop: products/aws-rockylinux.md
