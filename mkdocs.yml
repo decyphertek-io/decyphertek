@@ -31,6 +31,7 @@ nav:
         - Mautic: products/mautic.md
         - Misp: products/misp.md
         - Mitre Caldera V5: products/caldera.md
+        - N8N: products/aws-n8n.md
         - Nodered: products/nodered.md
         - Odoo: products/odoo.md
         - OpenCTI: products/opencti.md
