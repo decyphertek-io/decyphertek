@@ -2,7 +2,7 @@ Wazuh is an open-source security monitoring and compliance tool that provides co
 and incident response capabilities. It offers log analysis, file integrity monitoring, and vulnerability detection by collecting 
 and analyzing data from various sources across an organization’s IT infrastructure. Wazuh helps organizations identify potential 
 security threats, comply with regulatory requirements, and improve their overall security posture by providing real-time alerts 
-and actionable insights. [GCP Marketplace: Wazuh ]()
+and actionable insights. [GCP Marketplace: Wazuh ](https://console.cloud.google.com/marketplace/product/server-build-415714/wazuh)
 
 
 Note:
