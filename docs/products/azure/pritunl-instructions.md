@@ -1,5 +1,4 @@
-Pritunl is an Enterprise VPN Server that supports OpenVPN & WireGuard. .It is designed for simplicity, 
-reliability, and flexibility, making it suitable for both small businesses and large enterprises.
+Pritunl is an Enterprise VPN Server that supports OpenVPN & WireGuard. .It is designed for simplicity, reliability, and flexibility, making it suitable for both small businesses and large enterprises. [Azure Marketplace: Pritunl VPN Server ]( )
 
 Note:
 ------
