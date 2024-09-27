@@ -1,0 +1,219 @@
+site_name: Decyphertek.io
+theme:
+  name: material
+  highlightjs: true
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: sphinx
+markdown_extensions:
+  - markdown_include.include:
+      base_path: .
+  - admonition
+  - attr_list
+  - md_in_html
+
+nav:
+    - Home: index.md
+    - AWS Marketplace:
+        - AWS Basics: products/aws/basics.md
+        - Debian Basics: products/aws/debian-security.md
+        - Flatcar Basics: products/aws/flatcar-security.md
+        - Arch Linux Web Desktop: products/aws/archlinux.md
+        - Debian 12 Sysadmin Web Desktop: products/aws/debian12-sysadmin.md
+        - Debian 12 Web Desktop: products/aws/debian12-wd.md
+        - Kali Linux Web Desktop: products/aws/kali.md
+        - ParrotOS Web Desktop: products/aws-parrotos.md
+        - Rocky Linux Web Desktop: products/aws/rockylinux.md
+        - CloudBeaver: products/aws/cloudbeaver.md
+        - DFIR IRIS: products/aws/dfir-iris.md
+        - Mautic: products/aws/mautic.md
+        - Misp: products/aws/misp.md
+        - Mitre Caldera V5: products/aws/caldera.md
+        - N8N: products/aws/n8n.md
+        - Nodered: products/aws/nodered.md
+        - Odoo: products/aws/odoo.md
+        - OpenCTI: products/aws/opencti.md
+        - OpenVas: products/aws/openvas.md
+        - Pritunl: products/aws/pritunl.md
+        - Semaphore: products/aws/semaphore.md
+        - Uptime Kuma: products/aws/uptime-kuma.md
+        - VaultWarden: products/aws/vaultwarden.md
+    - Azure Marketplace:
+        - MISP: products/azure/misp.md
+        - OpenCTI: products/azure/opencti.md
+        - Pritunl VPN Server: products/azure/pritunl-instructions.md
+        - Privacy Policy: products/azure/privacy-policy.md
+    - Google Marketplace:
+        - Debian 12 Web Desktop: 
+            - Instructions: products/gcp-debian-12-web-desktop-instructions.md
+            - EULA: products/gcp-debian-12-web-desktop-eula.md
+        - Kali Linux Web Desktop: 
+            - Instructions: products/gcp-kali-web-desktop-instructions.md
+            - EULA: products/gcp-kali-web-desktop-eula.md
+        - Lamp Stack + Modsec + Webmin: 
+            - Instructions: products/gcp-lamp-stack-instructions.md
+            - EULA: products/gcp-lamp-stack-eula.md
+        - Misp: 
+            - Instructions: products/gcp-misp-instructions.md
+            - EULA: products/gcp-misp-eula.md
+        - Mitre Caldera V5: 
+            - Instructions: products/gcp-caldera-instructions.md
+            - EULA: products/gcp-caldera-eula.md
+        - N8N:
+            - Instructions: products/gcp-n8n-instructions.md
+            - EULA: products/gcp-n8n-eula.md
+        - Node-RED:
+            - Instructions: products/gcp-nodered-instructions.md
+            - EULA: products/gcp-nodered-eula.md
+        - Odoo 17 CE:
+            - Instructions: products/gcp-odoo-instructions.md
+            - EULA: products/gcp-odoo-eula.md
+        - OneDev:
+            - Instructions: products/gcp-onedev-instructions.md
+            - EULA: products/gcp-onedev-eula.md
+        - OpenCTI:
+            - Instructions: products/gcp-opencti-instructions.md
+            - EULA: products/gcp-opencti-eula.md
+        - OpenSearch:
+            - Instructions: products/gcp-opensearch-instructions.md
+            - EULA: products/gcp-opensearch-eula.md
+        - OpenVas:
+            - Instructions: products/gcp-openvas-instructions.md
+            - EULA: products/gcp-openvas-eula.md
+        - Pritunl:
+            - Instructions: products/gcp-pritunl-instructions.md
+            - EULA: products/gcp-pritunl-eula.md
+        - Semaphore UI:
+            - Instructions: products/gcp-semaphore-instructions.md
+            - EULA: products/gcp-semaphore-eula.md
+        - SonarQube CE:
+            - Instructions: products/gcp-sonarqube-instructions.md
+            - EULA: products/gcp-sonarqube-eula.md
+        - Uptime Kuma:
+            - Instructions: products/gcp-uptime-kuma-instructions.md
+            - EULA: products/gcp-uptime-kuma-eula.md
+        - VaultWarden:
+            - Instructions: products/gcp-vaultwarden-instructions.md
+            - EULA: products/gcp-vaultwarden-eula.md
+        - Wazuh:
+            - Instructions: products/gcp-wazuh-instructions.md
+            - EULA: products/gcp-wazuh-eula.md
+        - Privacy Policy: products/gcp-privacy-policy.md
+    - Digital Ocean Marketplace:
+        - Uptime Kuma: products/digital-ocean/uptime-kuma.md
+    - Tech Notes:
+        - Aide: technotes/Aide.md 
+        - Android Roms: technotes/Android-Roms.md 
+        - Ansible: technotes/Ansible.md 
+        - App Write: technotes/App-Write.md 
+        - Arkime: technotes/Arkime.md 
+        - Auditd: technotes/Auditd.md 
+        - Authelia: technotes/Authelia.md 
+        - Autogpt: technotes/Autogpt.md 
+        - AWS CLI: technotes/AWS-CLI.md 
+        - Balena Etcher: technotes/Balena-Etcher.md 
+        - Beekeeper Studio: technotes/Beekeeper-Studio.md 
+        - Bespoke: technotes/Bespoke-Synth.md 
+        - Briar: technotes/Briar.md 
+        - Caldera: technotes/Caldera.md 
+        - Cap Analysis: technotes/Cap-Analysis.md 
+        - CheckMK: technotes/CheckMK.md 
+        - ChirpStack: technotes/ChirpStack.md 
+        - CIS Controls: technotes/CIS-Controls.md 
+        - CIS / OSCAP: technotes/CIS-OSCAP.md 
+        - ClamAV: technotes/ClamAV.md 
+        - Cloudinit: technotes/Cloud-Init.md 
+        - CloudQuery: technotes/Cloud-query.md 
+        - CloudPanel: technotes/Cloudpanel.md 
+        - Crowdsec: technotes/Crowdsec.md 
+        - Debian Medical: technotes/DebMed.md 
+        - Deja Dup: technotes/Deja-Dup.md 
+        - Dependency Track: technotes/Dependency-Track.md 
+        - Docker: technotes/Docker.md 
+        - EFF: technotes/EFF.md 
+        - ESIM: technotes/ESIM.md 
+        - Exodus Privacy: technotes/Exodus-Privacy.md 
+        - Falco: technotes/Falco.md
+        - Firezone: technotes/FireZone.md 
+        - Flutter: technotes/Flutter.md 
+        - Fog Project: technotes/Fog-Project.md 
+        - Foreman: technotes/Foreman.md 
+        - FreedomBox: technotes/FreedomBox.md 
+        - FreedomFI: technotes/FreedomFi.md 
+        - FreeIPA: technotes/FreeIPA.md 
+        - FreeLan: technotes/Freelan.md
+        - FreeScout: technotes/FreeScout.md 
+        - GIS Workstation: technotes/GIS-Workstation.md 
+        - Github: technotes/Github.md 
+        - Gitpod: technotes/Gitpod.md 
+        - GNS3: technotes/GNS3.md 
+        - Greylog: technotes/Greylog.md 
+        - HTTPIE: technotes/Httpie.md
+        - IDS Tower: technotes/IdsTower.md 
+        - Incus: technotes/Incus.md
+        - Internet in A Box: technotes/Internet-In-A-Box.md 
+        - Jenkins: technotes/Jenkins.md 
+        - Jupyterhub: technotes/Jupyterhub.md 
+        - Keycloak: technotes/Keycloak.md 
+        - Kubernetes: technotes/Kubernetes.md 
+        - Kubesphere: technotes/KubeSphere.md 
+        - LEMP Stack: technotes/LEMP-Stack.md 
+        - Libre Wolf: technotes/LibreWolf.md 
+        - Linux: technotes/Linux.md 
+        - LXC: technotes/LXC.md
+        - LXD: technotes/LXD.md
+        - ManageIQ: technotes/Manage-iq.md 
+        - Mastadon: technotes/Mastadon.md 
+        - Meshcentral: technotes/Meshcentral.md 
+        - MISP: technotes/Misp.md 
+        - MIST-IO: technotes/Mist-io.md 
+        - MyCroft: technotes/Mycroft-ai.md 
+        - MySQL: technotes/MySql.md 
+        - Nginx: technotes/Nginx.md 
+        - Nmap: technotes/Nmap.md 
+        - NodeRed: technotes/NodeRed.md 
+        - Nomad: technotes/nomad.md 
+        - NtopNG: technotes/NtopNg.md 
+        - Odoo: technotes/Odoo.md 
+        - OneDev: technotes/OneDev.md 
+        - OpenAI: technotes/OpenAI.md 
+        - OpenHab: technotes/Openhab.md 
+        - OpenSearch: technotes/Opensearch.md 
+        - OSSEC: technotes/OSSEC.md 
+        - Packer: technotes/Packer.md 
+        - Pulumi: technotes/Pulumi.md 
+        - Qemu: technotes/Qemu.md
+        - Qgis: technotes/Qgis.md
+        - Quad9: technotes/Quad9.md 
+        - Read The Docs: technotes/Read-The-Docs.md 
+        - RescueZilla: technotes/RescueZilla.md 
+        - RND: technotes/RND.md 
+        - ROS: technotes/ROS.md 
+        - Rport: technotes/Rport.md 
+        - Secure Delete: technotes/Secure-Delete.md 
+        - Signal Desktop: technotes/Signal-Desktop.md 
+        - SSSD: technotes/SSSD.md 
+        - Stack Storm: technotes/Stackstorm.md 
+        - Steampipe: technotes/Steampipe.md
+        - Syslinux: technotes/Syslinux.md 
+        - Syslog-ng: technotes/Syslog-ng.md
+        - System Rescue: technotes/System-Rescue.md 
+        - Tailscale: technotes/Tailscale.md 
+        - Taskel: technotes/Tasksel.md 
+        - TCPdump: technotes/Tcpdump.md 
+        - Technitium: technotes/Technitium.md 
+        - Terraform: technotes/Terraform.md 
+        - UFW: technotes/UFW.md 
+        - Unattended Upgrades: technotes/Unattended-Upgrades.md 
+        - Ventoy: technotes/Ventoy.md
+        - Web Goat: technotes/WebGoat.md 
+        - Whonix: technotes/Whonix.md 
+        - Windows: technotes/Windows.md 
+        - Wordpress: technotes/WordPress.md 
+        - Zentyal: technotes/Zentyal.md 
+        - Zoneminder: technotes/Zoneminder.md
+    - Contact: contact.md
