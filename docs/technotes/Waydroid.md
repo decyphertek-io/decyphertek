@@ -3,7 +3,20 @@ Waydroid
 
 Waydroid is a container-based solution that enables users to run a full Android system on Linux, offering a seamless experience by integrating Android apps directly into the Linux desktop / Phone . 
 
-Debian Install:
+Devices:
+--------
+* Arch Linux
+* Ubuntu/Debian
+* Postmarket OS
+* Zorin OS
+* Sailfish OS
+* Fedora
+* Opensuse
+* Kiss Linux
+* Void Linux
+* NixOS
+
+Ubuntu/Debian Install:
 ---------------
 ```
 sudo apt install curl ca-certificates -y
