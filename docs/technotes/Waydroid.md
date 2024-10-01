@@ -23,7 +23,7 @@ waydroid app install appname.apk
 
 Issues:
 -------
-* Debian 12 uses x11 and not wayland , getting this error.
+* Debian 12 XFCE uses x11 and not wayland , getting this error.
 ```
 waydroid session start
 [15:53:09] WAYLAND_DISPLAY is not set, defaulting to "wayland-0"
