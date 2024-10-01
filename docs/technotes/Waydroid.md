@@ -21,6 +21,15 @@ waydroid show-full-ui
 waydroid app install appname.apk
 ```
 
+Issues:
+-------
+* Debian 12 uses x11 and not wayland , getting this error.
+```
+waydroid session start
+[15:53:09] WAYLAND_DISPLAY is not set, defaulting to "wayland-0"
+[15:53:09] Wayland socket '/run/user/1000/wayland-0' doesn't exist; are you running a Wayland compositor?
+```
+
 References:
 -----------
 * https://docs.waydro.id/usage/install-on-desktops
