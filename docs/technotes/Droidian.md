@@ -10,7 +10,7 @@ Devices:
 
 Plasma Mobile:
 --------------
-Mobian contains the plasma-mobile package that can be installed to turn Droidan Mobian to run Plasma-Moble, similar to customizing the desktop them on regular linux. 
+Mobian contains the plasma-mobile package that can be installed to turn Droidan Mobian to run Plasma-Moble, similar to customizing the desktop theme on regular linux. 
 
 Android Emulator:
 -----------------
