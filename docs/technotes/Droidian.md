@@ -38,6 +38,7 @@ LXC:
 Can install kubernetes / docker on LXC and run lite dev applications.
 
 * Can it run lxc , install qemu , then install BlissOS ? 
+* Build LXC images from your computer, save to github repo , and pull custom LXC continer to phone in one command. 
 
 Steam:
 -----
