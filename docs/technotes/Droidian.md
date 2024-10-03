@@ -37,6 +37,8 @@ LXC:
 ---
 Can install kubernetes / docker on LXC and run lite dev applications.
 
+* Can it run lxc , install qemu , then install BlissOS ? 
+
 Steam:
 -----
 Can steam run on Drodian Mobian and if so , what games work?
