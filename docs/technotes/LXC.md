@@ -5,13 +5,14 @@ sudo lxc - Linux Containers
 
 Install sudo lxc:
 -----------
-
-     sudo apt install lxc
-     lxc-checkconfig
+```
+sudo apt install lxc
+lxc-checkconfig
+```
 
 lxc Terminal Commands:
 ----------------------
-# On debian 12 , it doesnt work with just an LXC install, troubleshooting. 
+* On debian 12 , it doesnt work with just an LXC install, troubleshooting. 
 ```
 # create a new Debian container
 sudo lxc-create -n decyphertek-debian -t debian
