@@ -17,6 +17,7 @@ Android Emulator:
 "The AVD contains the full Android software stack, and it runs as if it were on a physical device." Could be utilized to develop android applications from the phone directly. 
 
 * Issues: Experiemntal using as an emulated Android device.  
+* Does it support Bliss OS? 
 
 Waydorid:
 ---------
