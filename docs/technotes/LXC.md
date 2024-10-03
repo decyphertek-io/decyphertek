@@ -1,9 +1,9 @@
-sudo lxc - Linux Containers
+LXC - Linux Containers
 =======================
 
-"sudo lxc is a userspace interface for the Linux kernel containment features. Through a powerful API and simple tools, it lets Linux users easily create and manage system or application containers."
+"LXC is a userspace interface for the Linux kernel containment features. Through a powerful API and simple tools, it lets Linux users easily create and manage system or application containers."
 
-Install sudo lxc:
+Install LXC:
 -----------
 ```
 sudo apt install lxc
