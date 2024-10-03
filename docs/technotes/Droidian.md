@@ -22,7 +22,7 @@ Waydorid:
 ---------
 "A container-based approach to boot a full Android system on regular GNU/Linux systems running Wayland based desktop environments." 
 
-* Issues: Uses older verison og Lineage, need to find out how to Upgrade the version to 21.
+* Issues: Uses older verison of Lineage, need to find out how to Upgrade the version to 21.
 
 Qemu:
 -----
