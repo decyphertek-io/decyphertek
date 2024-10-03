@@ -23,8 +23,8 @@ Waydorid:
 "A container-based approach to boot a full Android system on regular GNU/Linux systems running Wayland based desktop environments." 
 
 * Issues: Uses older verison of Lineage, need to find out how to Upgrade the the latest version. 
-* Does eSIM work? 
 * How do I install MicroG ? Do I instead use Lineage OS for MicroG?
+* Does eSIM work? 
 
 Qemu:
 -----
