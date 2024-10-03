@@ -32,6 +32,9 @@ LXC:
 ---
 Can install kubernetes / docker on LXC and run lite dev applications.
 
+Steam:
+-----
+Can steam run on Drodian Mobian and if so , what games work?
 
 References:
 -----------
