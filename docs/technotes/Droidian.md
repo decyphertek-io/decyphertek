@@ -22,7 +22,9 @@ Waydorid:
 ---------
 "A container-based approach to boot a full Android system on regular GNU/Linux systems running Wayland based desktop environments." 
 
-* Issues: Uses older verison of Lineage, need to find out how to Upgrade the the latest version.
+* Issues: Uses older verison of Lineage, need to find out how to Upgrade the the latest version. 
+* Does eSIM work? 
+* How do I install MicroG ? Do I instead use Lineage OS for MicroG?
 
 Qemu:
 -----
@@ -43,4 +45,5 @@ References:
 * https://mobian-project.org/
 * https://plasma-mobile.org/get/
 * https://source.android.com/docs/setup/create/avd
+* https://lineage.microg.org/
 * https://waydro.id/
