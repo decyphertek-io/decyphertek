@@ -32,6 +32,7 @@ Qemu:
 Qemu can emulate ISOs , not sure the hardware capacity is enough . 
 
 * Does it support BlissOS and how fast does it run?
+* https://docs.blissos.org/installation/install-in-a-virtual-machine/install-in-qemu/
 
 LXC:
 ---
