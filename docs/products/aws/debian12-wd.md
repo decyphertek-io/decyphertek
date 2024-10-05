@@ -1,5 +1,8 @@
 Debian 12 Linux is an open source linux distribution that is well trusted to do system administration , penetration testing, and general IT work. [AWS Marketplace: Debian 12 Web Desktop ](https://aws.amazon.com/marketplace/pp/prodview-lly7zq5e5xixy?sr=0-2&ref_=beagle&applicationId=AWSMPContessa)
 
+Note:
+-----
+* Please be patient , it can take 5-10 minutes for noVNC to be up and running. 
 
 Debian 12 Linux Web Desktop Login:
 ----------------------------------
