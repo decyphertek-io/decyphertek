@@ -6,8 +6,7 @@ LXC - Linux Containers
 Install LXC:
 -----------
 ```
-sudo apt install lxc
-lxc-checkconfig
+sudo apt install -y lxc
 ```
 
 lxc Terminal Commands:
@@ -15,7 +14,7 @@ lxc Terminal Commands:
 * On debian 12 , it doesnt work with just an LXC install, troubleshooting. 
 ```
 # create a new Debian container
-sudo lxc-create -n decyphertek-debian -t debian
+sudo lxc-create -n decyphertek-debian -t debian -- -r bookworm
 # start the Debian container
 sudo lxc-start -n decyphertek-debian
 # attach to the Debian container
