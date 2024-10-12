@@ -26,7 +26,7 @@ sudo lxc launch decyphertek-prod decyphertek-prod-live
 # To route traffic from LXC to localhost, need to get the image IP
 sudo lxc image list
 # Then you can add it to this command
-sudo lxc config device add decyphertek-prod APPNAME proxy listen=tcp:127.0.0.1:443 connect=tcp:YOUR_LXC_IP:443
+sudo lxc config device add decyphertek-prod APPNAME proxy listen=tcp:127.0.0.1:9999 connect=tcp:YOUR_LXC_IP:9999
 ```
 
 References:
