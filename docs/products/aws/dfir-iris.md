@@ -1,5 +1,9 @@
 DFIR IRIS is a digital forensics and incident response software tool designed to assist cybersecurity professionals in managing and analyzing digital evidence from information security incidents. It offers features for evidence collection, timeline analysis, and reporting, streamlining the process of investigating and responding to cybersecurity threats. [AWS Marketplace: DFIR IRIS ](https://aws.amazon.com/marketplace/pp/prodview-jbgytgbtdymze?sr=0-17&ref_=beagle&applicationId=AWSMPContessa)
 
+Note:
+-----
+* It takes 5-10 minutes for DFIR IRIS to be accesible, please be patient.
+
 SSH Into the server:
 --------------------
 * Linux + MAC - add .pem key to 
