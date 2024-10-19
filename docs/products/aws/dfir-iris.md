@@ -15,15 +15,19 @@ Passwords - DB AND/OR User:
 ---------------------------
 * ssh into server
 ```
-cat ~/.iris-web/.env
+cat .docker/.env
 ```
 * This will display the randomly generated passwords for DB AND/OR User.
+* To find just the DFIR IRIS login username and password:
+```
+cat .docker/.env | grep -E 'IRIS_ADM_PASSWORD|IRIS_ADM_USERNAME'
+```
 
 DFIR IRIS:
 ----------
 ```
 https://ip-of-server 
-username: administrator Password: Instance ID
+username: administrator Password: ( see .env mentioned above )
 Wazuh-IRIS Integration - https://github.com/nateuribe/Wazuh-IRIS-integration 
 ```
 
