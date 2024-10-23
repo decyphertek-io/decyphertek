@@ -24,18 +24,14 @@ https://ip-of-server:9443
 * Caution - Portainer can timeout if you dont create an account fast enough
 * If this happens you need to restart the container, ssh into the server, then run:  
 ```
-sudo su adminotaur
-cd ~
-docker restart portainer
+sudo docker restart portainer
 ```
 * Once logged into portainer, click get started and select local. You can manage docker from here. 
 
 Security Features:
 ------------------
-* Crowdsec IPS - https://decyphertek.readthedocs.io/en/latest/technotes/Crowdsec/
-* UFW Host Firewall - https://decyphertek.readthedocs.io/en/latest/technotes/UFW/
-* Auditd Logging - https://decyphertek.readthedocs.io/en/latest/technotes/Auditd/
-* Automated Updates - Update script upon first boot and at 3am daily.
+* Immutable Flatcar Linux
+* Nginx Reverse Proxy 
 
 References:
 -------------
