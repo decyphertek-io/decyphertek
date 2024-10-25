@@ -19,8 +19,7 @@ adb devices
 adb reboot bootloader
 fastboot flashing unlock
 # Except Unluck Bootloader from Phone
-# See Android 9 Stick Image 
-cd sargo-pd2a.190115.029
+wget https://dl.google.com/dl/android/aosp/sargo-pd2a.190115.029-factory-b05c97da.zip
 unzip image-sargo-pd2a.190115.029.zip
 cd  sargo-pd2a.190115.029
 bash flash-all.sh
