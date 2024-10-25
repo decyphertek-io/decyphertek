@@ -23,6 +23,9 @@ fastboot flashing unlock
 # See Android 9 Stick Image 
 cd sargo-pd2a.190115.029
 fastboot --slot=other flash bootloader bootloader-sargo-b4s4-0.1-5262905.img
+fastboot flash system system.img  
+fastboot flash recovery recovery.img  
+fastboot flash userdata userdata.img  
 fastboot set_active other
 fastboot reboot bootloader
 fastboot set_active other
