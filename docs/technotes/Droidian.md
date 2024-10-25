@@ -22,19 +22,19 @@ fastboot flashing unlock
 # Except Unluck Bootloader from Phone
 # See Android 9 Stick Image 
 cd sargo-pd2a.190115.029
-unzip image-sargo-pd2a.190115.029.zip 
-fastboot --slot=a flash bootloader bootloader-sargo-b4s4-0.1-5262905.img
+unzip image-sargo-pd2a.190115.029.zip
+fastboot --slot=other flash bootloader bootloader-sargo-b4s4-0.1-5262905.img
 fastboot reboot fastboot
-fastboot --slot=a flash vbmeta vbmeta.img
-fastboot --slot=a flash system system.img
-fastboot --slot=a flash vendor vendor.img
-fastboot --slot=a flash boot boot.img
-#fastboot set_active a
-fastboot set_active a
+fastboot --slot=other flash vbmeta vbmeta.img
+fastboot --slot=other flash system system.img
+fastboot --slot=other flash vendor vendor.img
+fastboot --slot=other flash boot boot.img
+fastboot set_active other
 fastboot reboot bootloader
-fastboot set_active a
+fastboot set_active other
 fastboot reboot bootloader
 fastboot reboot
+
 ```
 * Save your APN - https://devices.droidian.org/#/devices/sargo ; https://apn.how/specs/google-pixel-3a
 * Andoroid 9 Stock Image - https://developers.google.com/android/images
