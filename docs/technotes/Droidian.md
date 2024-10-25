@@ -31,7 +31,8 @@ fastboot erase vendor_a
 fastboot flash system system.img
 fastboot flash boot boot.img
 fastboot flash vendor_b vendor.img
-fastboot set_active other
+fastboot set_active a
+#fastboot set_active other
 fastboot reboot bootloader
 fastboot set_active other
 fastboot reboot bootloader
