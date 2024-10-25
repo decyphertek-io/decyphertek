@@ -19,7 +19,6 @@ sudo apt-get install -y android-tools-adb android-tools-fastboot
 adb devices
 adb reboot bootloader
 fastboot flashing unlock
-fastboot oem unlock
 # Except Unluck Bootloader from Phone
 # See Android 9 Stick Image 
 cd sargo-pd2a.190115.029
