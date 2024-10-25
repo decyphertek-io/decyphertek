@@ -28,7 +28,7 @@ bash flash-all.sh
 * Save your APN - https://devices.droidian.org/#/devices/sargo ; https://apn.how/specs/google-pixel-3a
 * Andoroid 9 Stock Image - https://developers.google.com/android/images
 * Drodian Install Guide - https://devices.droidian.org/#/devices/sargo ; https://github.com/droidian-images/droidian 
-* Drodian installer - https://github.com/droidian-releng/droidian-installer/releases/tag/0.0.5
+* Drodian installer - https://github.com/droidian-releng/droidian-installer/releases/tag/0.0.5 ( Not working? )
 * Droidian 99 - https://github.com/droidian-images/droidian/releases/tag/droidian%2F99
 
 ```
