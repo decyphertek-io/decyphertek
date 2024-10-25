@@ -26,7 +26,7 @@ unzip image-sargo-pd2a.190115.029.zip
 fastboot --slot=other flash bootloader bootloader-sargo-b4s4-0.1-5262905.img
 fastboot reboot fastboot
 fastboot delete-logical-partition product_a
-fastboot flash system_a system.img
+fastboot flash system system.img
 fastboot flash recovery recovery.img  
 fastboot flash userdata userdata.img  
 fastboot set_active other
