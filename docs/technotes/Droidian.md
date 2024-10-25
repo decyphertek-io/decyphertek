@@ -8,6 +8,17 @@ Devices:
 * Pixel 3a
 * Many More
 
+Pixel 3a Droidian Install:
+--------------------------
+```
+* Install adb + Fastboot on Debian - https://dl.google.com/android/repository/platform-tools-latest-linux.zip
+* Save your APN - https://devices.droidian.org/#/devices/sargo
+* Andoroid 9 Stock Image - https://developers.google.com/android/images
+* Drodian Install Guide - https://devices.droidian.org/#/devices/sargo ; https://github.com/droidian-images/droidian 
+* Droidian 99 - https://github.com/droidian-images/droidian/releases/tag/droidian%2F99
+* Drodian installer - https://github.com/droidian-releng/droidian-installer/releases/tag/0.0.5
+```
+
 Plasma Mobile:
 --------------
 Mobian contains the plasma-mobile package that can be installed to turn Droidan Mobian to run Plasma-Moble, similar to customizing the desktop theme on regular linux. 
