@@ -31,6 +31,16 @@ bash flash-all.sh
 * Drodian installer - https://github.com/droidian-releng/droidian-installer/releases/tag/0.0.5
 * Droidian 99 - https://github.com/droidian-images/droidian/releases/tag/droidian%2F99
 
+```
+# Enable , dev , usb debugging, and oem ublick again.
+# Need to accept via phone 
+# Enter fastboot
+wget https://images.droidian.org/droidian/nightly/arm64/google/image-fastboot-sargo.zip
+unzip image-fastboot-sargo.zip
+cd image-fastboot-sargo
+bash flash_all.sh
+```
+
 Plasma Mobile:
 --------------
 Mobian contains the plasma-mobile package that can be installed to turn Droidan Mobian to run Plasma-Moble, similar to customizing the desktop theme on regular linux. 
