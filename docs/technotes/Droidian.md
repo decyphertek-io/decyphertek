@@ -12,7 +12,7 @@ Pixel 3a Droidian Install:
 --------------------------
 ```
 * Install adb + Fastboot on Debian - https://dl.google.com/android/repository/platform-tools-latest-linux.zip
-* Save your APN - https://devices.droidian.org/#/devices/sargo
+* Save your APN - https://devices.droidian.org/#/devices/sargo ; https://apn.how/
 * Andoroid 9 Stock Image - https://developers.google.com/android/images
 * Drodian Install Guide - https://devices.droidian.org/#/devices/sargo ; https://github.com/droidian-images/droidian 
 * Drodian installer - https://github.com/droidian-releng/droidian-installer/releases/tag/0.0.5
