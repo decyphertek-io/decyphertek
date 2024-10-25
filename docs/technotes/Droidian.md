@@ -29,7 +29,7 @@ wget https://images.droidian.org/droidian/nightly/arm64/google/image-fastboot-sa
 unzip image-fastboot-sargo.zip
 bash flash_all.sh
 login: 1234
-# Set encyrption > Settings > Encryption > Reboot > Be patitient screen turns black after login 
+# Set encyrption > Settings > Encryption > Reboot > Be patient screen turns black after login 30 sec.
 # Change login password from 1234 , Open terminal:
 sudo passwd droidian 
 # Number pin code is the easiest way, so you can login via pin.
