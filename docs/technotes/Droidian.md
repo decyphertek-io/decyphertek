@@ -37,7 +37,6 @@ bash flash-all.sh
 # Enter fastboot
 wget https://images.droidian.org/droidian/nightly/arm64/google/image-fastboot-sargo.zip
 unzip image-fastboot-sargo.zip
-cd image-fastboot-sargo
 bash flash_all.sh
 ```
 
