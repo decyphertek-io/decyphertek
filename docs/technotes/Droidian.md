@@ -14,9 +14,11 @@ Pixel 3a Droidian Install:
 ```
 # Phone: About tap x7 > Enable useb debugging + OEM Unlock
 # From your Debian device insta adb + Fastboot
-sudo apt-get install android-tools-adb
+sudo apt-get install -y android-tools-adb android-tools-fastboot
 # Plug in device & Allow USB Debugging prompt
 adb devices
+adb reboot bootloader
+fastboot oem unlock
 ```
 * Save your APN - https://devices.droidian.org/#/devices/sargo ; https://apn.how/specs/google-pixel-3a
 * Andoroid 9 Stock Image - https://developers.google.com/android/images
