@@ -26,6 +26,7 @@ unzip image-sargo-pd2a.190115.029.zip
 # From phone enter recovery mode > Wipe Factory Data Reset > Reboot to bootloader
 fastboot --slot=other flash bootloader bootloader-sargo-b4s4-0.1-5262905.img
 fastboot reboot fastboot
+fastboot erase system
 fastboot flash system system.img  
 fastboot flash recovery recovery.img  
 fastboot flash userdata userdata.img  
