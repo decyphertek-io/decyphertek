@@ -18,6 +18,8 @@ sudo apt-get install -y android-tools-adb android-tools-fastboot
 # Plug in device & Allow USB Debugging prompt
 adb devices
 adb reboot bootloader
+fastboot flashing unlock
+# Except Unluck Bootloader from Phone
 # See Android 9 Stick Image 
 cd sargo-pd2a.190115.029
 fastboot --slot=other flash bootloader bootloader-sargo-b4s4-0.1-5262905.img
