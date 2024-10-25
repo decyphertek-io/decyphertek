@@ -23,15 +23,8 @@ fastboot flashing unlock
 # See Android 9 Stick Image 
 cd sargo-pd2a.190115.029
 unzip image-sargo-pd2a.190115.029.zip
+cd  sargo-pd2a.190115.029
 bash flash-all.sh
-```
-* Save your APN - https://devices.droidian.org/#/devices/sargo ; https://apn.how/specs/google-pixel-3a
-* Andoroid 9 Stock Image - https://developers.google.com/android/images
-* Drodian Install Guide - https://devices.droidian.org/#/devices/sargo ; https://github.com/droidian-images/droidian 
-* Drodian installer - https://github.com/droidian-releng/droidian-installer/releases/tag/0.0.5 ( Not working? )
-* Droidian 99 - https://github.com/droidian-images/droidian/releases/tag/droidian%2F99
-
-```
 # Enable , dev , usb debugging, and oem ublick again.
 # Need to accept via phone 
 # Enter fastboot
@@ -86,3 +79,8 @@ References:
 * https://source.android.com/docs/setup/create/avd
 * https://lineage.microg.org/
 * https://waydro.id/
+* Save your APN - https://devices.droidian.org/#/devices/sargo ; https://apn.how/specs/google-pixel-3a
+* Andoroid 9 Stock Image - https://developers.google.com/android/images
+* Drodian Install Guide - https://devices.droidian.org/#/devices/sargo ; https://github.com/droidian-images/droidian 
+* Drodian installer - https://github.com/droidian-releng/droidian-installer/releases/tag/0.0.5 ( Not working? )
+* Droidian 99 - https://github.com/droidian-images/droidian/releases/tag/droidian%2F99
