@@ -23,18 +23,15 @@ fastboot flashing unlock
 # See Android 9 Stick Image 
 cd sargo-pd2a.190115.029
 unzip image-sargo-pd2a.190115.029.zip 
-fastboot --slot=other flash bootloader bootloader-sargo-b4s4-0.1-5262905.img
-fastboot reboot fastboot
-fastboot getvar all
-fastboot delete-logical-partition product_a
-fastboot erase vendor_a
-fastboot flash system system.img
-fastboot flash boot boot.img
-fastboot flash vendor_b vendor.img
+fastboot --slot=a flash bootloader bootloader-sargo-b4s4-0.1-5262905.img
+fastboot --slot=a flash vbmeta vbmeta.img
+fastboot --slot=a flash system system.img
+fastboot --slot=a flash vendor vendor.img
+fastboot --slot=a flash boot boot.img
+#fastboot set_active a
 fastboot set_active a
-#fastboot set_active other
 fastboot reboot bootloader
-fastboot set_active other
+fastboot set_active a
 fastboot reboot bootloader
 fastboot reboot
 ```
