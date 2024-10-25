@@ -24,6 +24,7 @@ fastboot flashing unlock
 cd sargo-pd2a.190115.029
 unzip image-sargo-pd2a.190115.029.zip 
 fastboot --slot=a flash bootloader bootloader-sargo-b4s4-0.1-5262905.img
+fastboot reboot fastboot
 fastboot --slot=a flash vbmeta vbmeta.img
 fastboot --slot=a flash system system.img
 fastboot --slot=a flash vendor vendor.img
