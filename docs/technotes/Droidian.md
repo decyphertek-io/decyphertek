@@ -10,10 +10,9 @@ Devices:
 
 Pixel 3a Droidian Install:
 --------------------------
-* Install adb + Fastboot on Debian - https://dl.google.com/android/repository/platform-tools-latest-linux.zip
 ```
 # Phone: About tap x7 > Enable useb debugging + OEM Unlock
-# From your Debian device insta adb + Fastboot
+# From your Debian device install adb + Fastboot
 sudo apt-get install -y android-tools-adb android-tools-fastboot
 # Plug in device & Allow USB Debugging prompt
 adb devices
@@ -31,6 +30,7 @@ bash flash-all.sh
 wget https://images.droidian.org/droidian/nightly/arm64/google/image-fastboot-sargo.zip
 unzip image-fastboot-sargo.zip
 bash flash_all.sh
+login: 1234
 ```
 
 Plasma Mobile:
