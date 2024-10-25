@@ -15,8 +15,8 @@ Pixel 3a Droidian Install:
 * Save your APN - https://devices.droidian.org/#/devices/sargo
 * Andoroid 9 Stock Image - https://developers.google.com/android/images
 * Drodian Install Guide - https://devices.droidian.org/#/devices/sargo ; https://github.com/droidian-images/droidian 
-* Droidian 99 - https://github.com/droidian-images/droidian/releases/tag/droidian%2F99
 * Drodian installer - https://github.com/droidian-releng/droidian-installer/releases/tag/0.0.5
+* Droidian 99 - https://github.com/droidian-images/droidian/releases/tag/droidian%2F99
 ```
 
 Plasma Mobile:
