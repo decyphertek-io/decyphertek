@@ -23,7 +23,7 @@ wget https://dl.google.com/dl/android/aosp/sargo-pd2a.190115.029-factory-b05c97d
 unzip image-sargo-pd2a.190115.029.zip
 cd  sargo-pd2a.190115.029
 bash flash-all.sh
-# Enable , dev , usb debugging, and oem unlock again. Need to accept via phone aagin
+# Enable , dev , usb debugging, and oem unlock again. Need to accept via phone again.
 # Enter fastboot
 wget https://images.droidian.org/droidian/nightly/arm64/google/image-fastboot-sargo.zip
 unzip image-fastboot-sargo.zip
