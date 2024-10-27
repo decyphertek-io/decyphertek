@@ -2,7 +2,6 @@ Droidian
 ========
 "Droidian is a GNU/Linux distribution based on Debian for mobile devices. The goal of Droidian is to be able to run Debian on Android phones."
 
-
 Devices:
 --------
 * Pixel 3a
