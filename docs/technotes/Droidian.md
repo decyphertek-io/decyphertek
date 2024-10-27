@@ -38,41 +38,27 @@ sudo passwd droidian
 
 Plasma Mobile:
 --------------
-Mobian contains the plasma-mobile package that can be installed to turn Droidan Mobian to run Plasma-Moble, similar to customizing the desktop theme on regular linux. 
-
-Android Emulator:
------------------
-"The AVD contains the full Android software stack, and it runs as if it were on a physical device." Could be utilized to develop android applications from the phone directly. 
-
-* Issues: Experiemntal using as an emulated Android device.  
-* Does it support Bliss OS? 
+* Open Terminal in Droidian
+```
+sudo apt update 
+sudo apt install plasma-mobile
+```
+* Issues - Its installed, no how do I set Plasma Mobile instead of Gnome?
 
 Waydorid:
 ---------
 "A container-based approach to boot a full Android system on regular GNU/Linux systems running Wayland based desktop environments." 
 
 * Issues: Uses older verison of Lineage, need to find out how to Upgrade the the latest version. 
+* Drodian Waydroid app crashes, never installs waydroid?
 * How do I install MicroG ? Do I instead use Lineage OS for MicroG?
 * Does eSIM work? 
-
-Qemu:
------
-Qemu can emulate ISOs , not sure the hardware capacity is enough . 
-
-* Does it support BlissOS and how fast does it run?
-* https://docs.blissos.org/installation/install-in-a-virtual-machine/install-in-qemu/
 
 LXC:
 ---
 Can install kubernetes / docker on LXC and run lite dev applications.
-
 * Can it run lxc , install qemu , then install BlissOS ? 
-* Build LXC images from your computer, save to github repo , and pull custom LXC continer to phone in one command. 
-
-Steam:
------
-Can steam run on Drodian Mobian and if so , what games work?
-
+* Distrobuilder & github , custom LXC apps. 
 
 References:
 -----------
