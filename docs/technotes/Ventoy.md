@@ -21,6 +21,7 @@ sudo ./Ventoy2Disk.sh -i /dev/sdc
 sudo mkdir -p /media/$USER/Ventoy
 sudo mount /dev/sdc1 /media/$USER/Ventoy
 sudo cp /Downloads/*.iso /media/$USER/Ventoy/
+# Can now test the multiboot USB device 
 ```
 
 References:
