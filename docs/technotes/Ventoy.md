@@ -7,9 +7,9 @@ Install:
 -------
 
     # Download ventoy.
-    wget https://sourceforge.net/projects/ventoy/files/v1.0.99/ventoy-1.0.99-linux.tar.gz/download
+    wget https://sourceforge.net/projects/ventoy/files/v1.0.99/ventoy-1.0.99-linux.tar.gz
     # Extract it.
-    tar -xzf ventoy.tar.gz
+    tar -xzf ventoy-1.0.99-linux.tar.gz
     cd ventoy-1.0.99
     # find your usb
     lsblk
@@ -18,7 +18,9 @@ Install:
     # Install ventoy to USb ( Caution make sure you use your usb path )
     sudo ./Ventoy2Disk.sh -i /dev/sdc
     # Copy over your ISO
-    cp /Downloads/debian.iso /media/$USER/Ventoy/
+    mkdir -p /media/$USER/Ventoy
+    sudo mount /dev/sdc1 /media/$USER/Ventoy
+    cp /Downloads/*.iso /media/$USER/Ventoy/
 
 References:
 -----------
