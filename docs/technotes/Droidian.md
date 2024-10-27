@@ -60,6 +60,11 @@ Can install kubernetes / docker on LXC and run lite dev applications.
 * Can it run lxc , install qemu , then install BlissOS ? 
 * Distrobuilder & github , custom LXC apps. 
 
+Other Issues:
+-------------
+* Many Flatpak apps and desktop apps never launch, they are looking for x86 architecture or dekstop utlitiy that doesnt exist.
+* Need a specialized repo for aptitude and Flatpaks that are modified to work on Mobian. 
+
 References:
 -----------
 * https://droidian.org/
