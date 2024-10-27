@@ -16,9 +16,10 @@ Pixel 3a Droidian Install:
 sudo apt-get install -y android-tools-adb android-tools-fastboot
 # Plug in device & Allow USB Debugging prompt
 adb devices
+# Allow USB connect from phone
 adb reboot bootloader
 fastboot flashing unlock
-# Except Unluck Bootloader from Phone
+# Except Unlock Bootloader from Phone
 wget https://dl.google.com/dl/android/aosp/sargo-pd2a.190115.029-factory-b05c97da.zip
 unzip image-sargo-pd2a.190115.029.zip
 cd  sargo-pd2a.190115.029
