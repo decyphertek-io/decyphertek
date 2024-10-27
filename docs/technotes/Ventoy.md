@@ -25,5 +25,4 @@ cp /Downloads/*.iso /media/$USER/Ventoy/
 
 References:
 -----------
-
-    https://www.ventoy.net/en/index.html
+* https://www.ventoy.net/en/index.html
