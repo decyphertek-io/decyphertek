@@ -18,7 +18,7 @@ chmod +x Ventoy2Disk.sh
 # Install ventoy to USb ( Caution make sure you use your usb path )
 sudo ./Ventoy2Disk.sh -i /dev/sdc
 # Copy over your ISO
-mkdir -p /media/$USER/Ventoy
+sudo mkdir -p /media/$USER/Ventoy
 sudo mount /dev/sdc1 /media/$USER/Ventoy
 cp /Downloads/*.iso /media/$USER/Ventoy/
 ```
