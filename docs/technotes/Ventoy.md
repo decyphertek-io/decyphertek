@@ -7,7 +7,7 @@ Install:
 -------
 
     # Download ventoy.
-    wget https://sourceforge.net/projects/ventoy/files/v1.0.99
+    wget https://sourceforge.net/projects/ventoy/files/v1.0.99/ventoy-1.0.99-linux.tar.gz/download
     # Extract it.
     tar -xzf ventoy.tar.gz
     cd ventoy-1.0.99
