@@ -20,7 +20,7 @@ sudo ./Ventoy2Disk.sh -i /dev/sdc
 # Copy over your ISO
 sudo mkdir -p /media/$USER/Ventoy
 sudo mount /dev/sdc1 /media/$USER/Ventoy
-cp /Downloads/*.iso /media/$USER/Ventoy/
+sudo cp /Downloads/*.iso /media/$USER/Ventoy/
 ```
 
 References:
