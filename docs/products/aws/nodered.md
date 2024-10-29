@@ -47,8 +47,10 @@ Nodered - Upgrade:
 
 NodeRed - Security Features:
 --------------------------
-
-* https://decyphertek.readthedocs.io/en/latest/products/debian-security/
+* Crowdsec IPS - https://decyphertek.readthedocs.io/en/latest/technotes/Crowdsec/
+* UFW Host Firewall - https://decyphertek.readthedocs.io/en/latest/technotes/UFW/
+* Auditd Logging - https://decyphertek.readthedocs.io/en/latest/technotes/Auditd/
+* Automated Updates - Update script upon first boot and at 1am daily.
 
 AWS Basics:
 -----------
