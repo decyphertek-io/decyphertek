@@ -15,17 +15,17 @@ OpenVAS GVM Login:
 * ssh into your server.
 * Password:
 ```
-sudo cat /home/adminotaur/password.txt 
+sudo cat /root/password.txt 
 ```
 * Recommended: Update gvm feeds ( Takes a while ):
 ```
-sudo gvm-feed-update
+sudo greenbone-feed-sync
 ```
 * Go to your browser - https://ip-of-server
 * Login:
 ```
 username: admin 
-password: ( Output of password.txt in adminotaur directory)
+password: ( Output of password.txt )
 ```
 
 OpenVas Basics:
@@ -59,4 +59,4 @@ Additonal Security Features:
 References:
 ------------
 
-https://openvas.org/
+* https://openvas.org/
