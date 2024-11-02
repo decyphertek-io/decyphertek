@@ -15,6 +15,5 @@ sudo apt install -y librewolf
 
 References
 ----------
-
-    https://librewolf.net/
-    https://librewolf.net/installation/debian/
+* https://librewolf.net/
+* https://librewolf.net/installation/debian/
