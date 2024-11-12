@@ -1,6 +1,6 @@
 Uptime Kuma is a self-hosted monitoring tool designed to track the availability and performance of websites and services. 
 It provides real-time status updates, customizable alerts, and a user-friendly dashboard to help users ensure their sites 
-and services remain operational. [GCP Marketplace: Uptime Kuma ](https://console.cloud.google.com/marketplace/product/server-build-415714/uptime-kuma)
+and services remain operational. [Azure Marketplace: Uptime Kuma ]( )
 
 Note:
 ------
@@ -8,7 +8,15 @@ Note:
 
 SSH Into the server:
 --------------------
-* Utilize Google SSH Console or setup ssh keys or password.
+* Utilize Azure SSH settings to set your ssh keys AND/OR Password to ssh in. 
+
+Passwords - DB AND/OR User:
+---------------------------
+* ssh into server
+```
+sudo cat /root/.docker/.env
+```
+* This will display the randomly generated passwords for DB AND/OR User. 
 
 Uptime Kuma:
 -------------
