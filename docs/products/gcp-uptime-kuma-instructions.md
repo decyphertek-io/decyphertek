@@ -23,8 +23,7 @@ Portainer - Manage Docker:
 * Caution - Portainer can timeout if you dont create an account fast enough
 * If this happens you need to restart the container, ssh into the server, from terminal:
 ```
-sudo su adminotaur
-docker restart portainer
+sudo docker restart portainer
 ```
 * Once logged into portainer, click get started and select local. You can manage docker from here. 
 
