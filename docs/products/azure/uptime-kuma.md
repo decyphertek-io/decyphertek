@@ -27,7 +27,6 @@ sudo docker restart portainer
 ```
 * Once logged into portainer, click get started and select local. You can manage docker from here. 
 
-
 References:
 ------------
 * https://docs.docker.com/

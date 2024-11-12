@@ -47,6 +47,7 @@ nav:
         - OpenCTI: products/azure/opencti.md
         - Pritunl VPN Server: products/azure/pritunl-instructions.md
         - SonarQube CE: products/azure/sonarqube-ce.md
+        - Uptime Kuma: products/azure/uptime-kuma.md
         - Privacy Policy: products/azure/privacy-policy.md
     - Google Marketplace:
         - Debian 12 Web Desktop: 
