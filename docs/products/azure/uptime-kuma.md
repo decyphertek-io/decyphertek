@@ -1,6 +1,6 @@
 Uptime Kuma is a self-hosted monitoring tool designed to track the availability and performance of websites and services. 
 It provides real-time status updates, customizable alerts, and a user-friendly dashboard to help users ensure their sites 
-and services remain operational. [Azure Marketplace: Uptime Kuma ]( )
+and services remain operational. [Azure Marketplace: Uptime Kuma ](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/decyphertek.uptime-kuma?tab=Overview)
 
 Note:
 ------
