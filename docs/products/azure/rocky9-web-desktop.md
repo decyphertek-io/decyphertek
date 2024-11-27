@@ -1,4 +1,4 @@
-Rocky 9 Enterprise Linux is an open source linux distribution built as a one for one replacement for Red Hat 9 Enterprise and the End Of Life Centos. [Azure Marketplace: Rocky 9 Web Desktop ]()
+Rocky 9 Enterprise Linux is an open source linux distribution built as a one for one replacement for Red Hat 9 Enterprise and the End Of Life Centos. [Azure Marketplace: Rocky 9 Web Desktop ](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/decyphertek.rocky9-web-desktop?tab=Overview)
 
 
 SSH Into the server:
