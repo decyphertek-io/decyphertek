@@ -43,6 +43,7 @@ nav:
         - Uptime Kuma: products/aws/uptime-kuma.md
         - VaultWarden: products/aws/vaultwarden.md
     - Azure Marketplace:
+        - Debian 12 Web Desktop: products/azure/debian12-web-desktop.md
         - MISP: products/azure/misp.md
         - OpenCTI: products/azure/opencti.md
         - OpenVas: products/azure/openvas.md
