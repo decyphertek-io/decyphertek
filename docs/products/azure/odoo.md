@@ -1,9 +1,9 @@
-Odoo is an open source ERP & CRM server. Manage all aspects of your business with Odoo, including Website, Ecommerce, Inventory managment, POS, etc. [GCP Marketplace: Odoo 17 CE ](https://console.cloud.google.com/marketplace/product/server-build-415714/odoo-17-ce)
-
+Odoo is an open source ERP & CRM server. Manage all aspects of your business with Odoo, including Website, Ecommerce, Inventory managment, POS, etc. [Azure Marketplace: Odoo 17 CE ]()
 
 SSH Into the server:
 --------------------
-* Utilize Google SSH Console or setup ssh keys or password.
+* Utilize Azure to setup user and ssh keys. 
+* Make sure to allow ssh, https via network security group.
 
 Login to Odoo:
 ---------------
