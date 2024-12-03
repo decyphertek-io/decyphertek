@@ -1,6 +1,6 @@
 Debian 12 Web Desktop utlizes noVNC to make Linux accessible from your web browser. Debian 12 Linux is an open source 
 linux distribution that is well trusted to do system administration , penetration testing, and general IT work. 
-[Azure Marketplace: Debian 12 Web Desktop ]()
+[Azure Marketplace: Debian 12 Web Desktop ](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/decyphertek.debian12-web-desktop)
 
 SSH Into the server:
 --------------------
