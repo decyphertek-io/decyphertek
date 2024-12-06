@@ -1,5 +1,6 @@
 Pritunl is an Enterprise VPN Server that supports OpenVPN & WireGuard. .It is designed for simplicity, reliability, and flexibility, making it suitable for both small businesses and large enterprises. [Azure Marketplace: Pritunl VPN Server ](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/decyphertek.pritunl_vpn?tab=Overview)
 
+
 Note:
 ------
 * Please be aware that it takes a few minutes for Pritunl VPN Server to be up and running.

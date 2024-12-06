@@ -1,6 +1,7 @@
 Vaultwarden is a lightweight, self-hosted password manager that provides a more resource-efficient alternative to the official Bitwarden server. It offers full compatibility with Bitwarden client applications, enabling users to manage their passwords securely across different platforms. Vaultwarden ensures strong encryption 
 and security for user data. It is community-driven, customizable, and ideal for those seeking full control over their password management system. [Azure Marketplace: Vaultwarden ](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/decyphertek.vaultwarden?tab=Overview)
 
+
 Note:
 -------
 * Please be aware that it takes a few minutes for the system to be up and running. 

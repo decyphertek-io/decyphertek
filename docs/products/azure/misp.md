@@ -1,5 +1,6 @@
 MISP (Malware Information Sharing Platform & Threat Sharing) is an open-source platform designed to enhance cybersecurity by improving the sharing of structured threat information among organizations. MISP is typically used to bolster threat intelligence for SIEM systems or during the triage of security incidents. [Azure Marketplace: MISP ](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/decyphertek.misp?tab=Overview )
 
+
 Note:
 -----
 * Please wait 5-10 minutes for MISP to be accesible.
