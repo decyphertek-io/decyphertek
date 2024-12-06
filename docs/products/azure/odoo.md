@@ -1,4 +1,4 @@
-Odoo is an open source ERP & CRM server. Manage all aspects of your business with Odoo, including Website, Ecommerce, Inventory managment, POS, etc. [Azure Marketplace: Odoo 17 CE ]()
+Odoo is an open source ERP & CRM server. Manage all aspects of your business with Odoo, including Website, Ecommerce, Inventory managment, POS, etc. [Azure Marketplace: Odoo 17 CE ](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/decyphertek.odoo17-ce?tab=Overview)
 
 SSH Into the server:
 --------------------

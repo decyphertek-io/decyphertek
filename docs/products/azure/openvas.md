@@ -1,6 +1,5 @@
 OpenVAS Vulnerability Scanner is an advanced, open-source security tool designed for comprehensive vulnerability assessment and management. 
-It efficiently scans and identifies potential security weaknesses in network services and software systems. [Azure Marketplace: OpenVas ]( )
-
+It efficiently scans and identifies potential security weaknesses in network services and software systems. [Azure Marketplace: OpenVas ](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/decyphertek.openvas?tab=Overview)
 Note:
 ------
 * Please be aware that it takes a few minutes for Openvas to be up and running.
