@@ -1,4 +1,4 @@
-OpenSearch is an adaptable, scalable open-source platform designed for creating solutions for data-heavy applications. It provides features like search, security, and observability, coupled with robust performance, developer-friendly tools, and strong integration capabilities. [GCP Marketplace: OpenSearch ](https://console.cloud.google.com/marketplace/product/server-build-415714/opensearch)
+OpenSearch is an adaptable, scalable open-source platform designed for creating solutions for data-heavy applications. OpenSearch provides features that include search, security, observability, robust performance, developer-friendly tools, and strong integration capabilities. [GCP Marketplace: OpenSearch ](https://console.cloud.google.com/marketplace/product/server-build-415714/opensearch)
 
 Note:
 -----
