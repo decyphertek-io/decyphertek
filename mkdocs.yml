@@ -49,6 +49,7 @@ nav:
         - MISP: products/azure/misp.md
         - Odoo 17 CE: products/azure/odoo.md
         - OpenCTI: products/azure/opencti.md
+        - OpenSearch: products/azure/opensearch.md
         - OpenVas: products/azure/openvas.md
         - Pritunl VPN Server: products/azure/pritunl-instructions.md
         - Rocky 9 Web Desktop: products/azure/rocky9-web-desktop.md

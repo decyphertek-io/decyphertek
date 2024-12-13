@@ -1,18 +1,19 @@
-OpenSearch is an adaptable, scalable open-source platform designed for creating solutions for data-heavy applications. It provides features like search, security, and observability, coupled with robust performance, developer-friendly tools, and strong integration capabilities. [GCP Marketplace: OpenSearch ](https://console.cloud.google.com/marketplace/product/server-build-415714/opensearch)
+OpenSearch is an adaptable, scalable open-source platform designed for creating solutions for data-heavy applications. It provides features like search, security, and observability, coupled with robust performance, developer-friendly tools, and strong integration capabilities. [Azure Marketplace: OpenSearch ]()
 
 Note:
 -----
 * Please be patient , it takes 5-10 minutes for OpenSearch to be accessible. 
 
-SSH:
-----
-* Utilize Google SSH Console or setup ssh keys or password.
+SSH Into the server:
+--------------------
+* Utilize Azure to setup user and ssh keys. 
+* Make sure to allow ssh, https, & 9443 via network security group.
 
 Passwords:
 ----------
 * To Get the OpenSearch admin Password , run the follwoing command from terminal:
 ```
-sudo cat /home/adminotaur/opensearch_admin_password.txt
+sudo cat /root/opensearch_admin_password.txt
 ```
 
 Login:
