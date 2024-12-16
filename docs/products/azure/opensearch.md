@@ -1,4 +1,4 @@
-OpenSearch is an adaptable, scalable open-source platform designed for creating solutions for data-heavy applications. OpenSearch provides features that include search, security, observability, robust performance, developer-friendly tools, and strong integration capabilities.  [Azure Marketplace: OpenSearch ]()
+OpenSearch is an adaptable, scalable open-source platform designed for creating solutions for data-heavy applications. OpenSearch provides features that include search, security, observability, robust performance, developer-friendly tools, and strong integration capabilities.  [Azure Marketplace: OpenSearch ](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/decyphertek.opensearch?tab=Overview)
 
 Note:
 -----

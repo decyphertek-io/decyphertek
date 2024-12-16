@@ -1,4 +1,4 @@
-LibreChat is an open-source AI chat platform that provides users with a versatile interface for engaging with various AI models. It is enhanced with MeiliSearch for efficient data retrieval and Ollama for advanced conversational capabilities. Additionally, it incorporates robust security features to ensure a safe and secure user experience. [Azure Marketplace: Librechat ]( )
+LibreChat is an open-source AI chat platform that provides users with a versatile interface for engaging with various AI models. It is enhanced with MeiliSearch for efficient data retrieval and Ollama for advanced conversational capabilities. Additionally, it incorporates robust security features to ensure a safe and secure user experience. [Azure Marketplace: Librechat ](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/decyphertek.librechat?tab=Overview)
 
 
 Note:
