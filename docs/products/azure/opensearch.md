@@ -46,6 +46,15 @@ sudo systemctl reload nginx
 sudo systemctl restart nginx
 ```
 
+Troubleshooting:
+----------------
+* If you are getting a 502 bad gateway , please wait, opensearch isnt ready yet.
+* You can check to see if there are any errors by running systemctl status. 
+```
+sudo systemctl status opensearch opensearch-dashboards
+sudo systemctl start opensearch opensearch-dashboards
+```
+
 Security Features:
 ------------------
 * Crowdsec IPS - https://decyphertek.readthedocs.io/en/latest/technotes/Crowdsec/
