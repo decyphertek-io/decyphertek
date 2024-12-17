@@ -22,12 +22,14 @@ Login:
 ```
 https://IP-OF-SERVER
 Username: admin
-Password: (sudo cat /home/adminotaur/opensearch_admin_password.txt )
+Password: (sudo cat /root/opensearch_admin_password.txt )
 ```
 
 OpenSearch GET/POST:
 --------------------
+```
 curl -X GET https://IP-OF-SERVER:9443 -u 'admin:YOUR_PASSWORD' --insecure
+```
 
 Optional - Nginx:
 ------
