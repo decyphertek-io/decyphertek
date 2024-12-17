@@ -30,7 +30,7 @@ OpenSearch GET/POST:
 * Install httpie terminal or Desktop  - https://httpie.io/cli ; https://httpie.io/desktop
 * HTTPIE Linux Terminal Example:
 ```
-# GET/POST/PUT Example using HTTPIE & health.json
+# GET/POST Example using HTTPIE & health.json
 # Basic GET no auth example ( https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/)
 http --pretty=format GET "https://api.crossref.org/journals?query=pharmacy+health" "Accept:application/json"  >> health.json
 # If using auth for an API > http --pretty=format GET "https://example.com" "Authorization:Bearer $API_KEY" "Accept:application/json"  >> example.json
@@ -39,9 +39,10 @@ http --pretty=format GET "https://api.crossref.org/journals?query=pharmacy+healt
 http --verify=no --auth admin:your_password GET https://IP-OR-DOMAIN:9443/health/
 http --verify=no --auth admin:your_password POST https://IP-OR-DOMAIN:9443/health/_doc/ Content-Type:application/json < health.json
 # Create Index Pattern > Dashboard > Managment > Dashboard Managment > Create Index Pattern > health*
-# You can now discover th data & Create Dashboards
+# You can now discover the data & Create Dashboards.
 ```
 * Note this is just an example, please utilize your own API or json data to get customized results. 
+* Can be useful if you need to pull in data from multiple APIs and crossreference the data. 
 
 Optional - Nginx:
 ------
