@@ -29,7 +29,7 @@ Manage Librechat:
 ```
 # pm2-root manages librechat
 sudo systemctl status pm2-root meilisearch ollama
-# By default ollama is not running, since it requires a GPU to run effiecntly.
+# By default ollama is not running, since it requires a GPU to run efficiently.
 # Ollama can be up and running with a simple command. 
 sudo systemctl start ollama
 sudo systemctl enable ollama
