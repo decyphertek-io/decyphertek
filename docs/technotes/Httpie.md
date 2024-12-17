@@ -27,7 +27,7 @@ http --pretty=format PUT https://example.com "Authorization:Bearer $API_KEY" "Ac
 HTTPIE OpenSeach Ex:
 ---------------------
 ```
-http --auth your_username:your_password POST https://IP-OR-Domain:9200/your-index/ Content-Type:application/json < example.json
+http --auth admin:your_password POST https://IP-OR-Domain:9200/your-index/ Content-Type:application/json < example.json
 ```
 
 HTTPIE MISP EX:
