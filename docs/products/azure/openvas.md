@@ -75,3 +75,4 @@ References:
 ------------
 
 * https://openvas.org/
+* https://docs.greenbone.net/GSM-Manual/gos-22.04/en/web-interface.html
