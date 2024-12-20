@@ -229,3 +229,6 @@ nav:
         - Zentyal: technotes/Zentyal.md 
         - Zoneminder: technotes/Zoneminder.md
     - Contact: contact.md
+
+extra:
+  generator: false 
