@@ -9,7 +9,9 @@ customers.We also provide technical notes on open source projects. These notes c
 used for Enterprise, educational purposes, or DIY projects. 
 [Decyphertek.io](https://decyphertek.io/ 'Decyphertek.io')
 
-![Decyphertek.io](https://github.com/decyphertek-io/configs/raw/main/Logos/decyphertek-logo.png)
+<p align="center">
+    <img src="https://github.com/decyphertek-io/configs/raw/main/Logos/decyphertek-logo.png" alt="Decyphertek.io" width="200" height="100">
+</p>
 
 
 
