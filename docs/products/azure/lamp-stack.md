@@ -9,10 +9,10 @@ Webmin:
 -------
 * Set password and login to Webmin:
 ```
-sudo adduser username
-sudo passwd username
+sudo passwd root
+sudo systemctl restart webmin
 https://<Your-Server-IP>:10000
-user: username
+user: root
 pass: YOURPASSWORDHERE
 ```
 * You can now manage your webserver from Webmin.
