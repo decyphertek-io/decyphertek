@@ -45,6 +45,7 @@ nav:
     - Azure Marketplace:
         - Mitre Caldera V5: products/azure/caldera.md
         - Debian 12 Web Desktop: products/azure/debian12-web-desktop.md
+        - Lamp Stack + ModSec + Webmin: products/azure/lamp-stack.md
         - Librechat AI: products/azure/librechat.md
         - MISP: products/azure/misp.md
         - Odoo 17 CE: products/azure/odoo.md
