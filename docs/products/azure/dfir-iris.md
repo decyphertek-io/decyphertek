@@ -6,25 +6,18 @@ Note:
 
 SSH Into the server:
 --------------------
-* Linux + MAC - add .pem key to 
-```
-~/.ssh/id_rsa
-# change permisisons
-chmod 400 id_rsa
-ssh core@ip-of-server
-```
-* If using putty or mobaxterm make sure to convert .pem using puttygen.
+* Utilize Azure SSH settings to set your ssh keys AND/OR Password to ssh in. 
 
 Passwords - DB AND/OR User:
 ---------------------------
 * ssh into server
 ```
-cat .docker/.env
+sudo cat /root/.docker/.env
 ```
 * This will display the randomly generated passwords for DB AND/OR User.
 * To find just the DFIR IRIS login username and password:
 ```
-cat .docker/.env | grep -E 'IRIS_ADM_PASSWORD|IRIS_ADM_USERNAME'
+sudo cat /root/.docker/.env | grep -E 'IRIS_ADM_PASSWORD|IRIS_ADM_USERNAME'
 ```
 
 DFIR IRIS:
@@ -33,6 +26,7 @@ DFIR IRIS:
 https://ip-of-server 
 username: administrator Password: ( see .env mentioned above )
 Wazuh-IRIS Integration - https://github.com/nateuribe/Wazuh-IRIS-integration 
+MISP Integration - https://docs.dfir-iris.org/latest/operations/modules/natives/IrisMISP/
 ```
 
 Portainer - Manage Docker:
@@ -45,7 +39,7 @@ https://ip-of-server:9443
 * Caution - Portainer can timeout if you dont create an account fast enough
 * If this happens you need to restart the container, ssh into the server, then run : 
 ```
-docker restart portainer
+sudo docker restart portainer
 ```
 * Once logged into portainer, click get started and select local. You can manage docker from here.
 
