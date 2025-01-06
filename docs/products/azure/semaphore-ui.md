@@ -9,7 +9,7 @@ Note:
 
 SSH Into the server:
 --------------------
-* Utilize Google SSH Console or setup ssh keys or password.
+* Utilize Azure SSH settings to set your ssh keys AND/OR Password to ssh in. 
 
 Semaphore login & password:
 ------------------------------
@@ -86,27 +86,17 @@ Setup Opentofu in Semaphore:
 ```
 sudo su semaphore
 cd ~
-gcloud init
+# Install and setup AzureCLI
+curl -sL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
+echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ noble main" | sudo tee /etc/apt/sources.list.d/azure-cli.list
+sudo apt update
+sudo apt install azure-cli
+az login --use-device-code
 ```
 * Login via provided URL Link in terminal. It will generate an auth code, Copy and enter that auth code into the terminal.
 # To reauthenticate in the future , run:
 ```
-gcloud auth login --no-launch-browser
-```
-* To find some information useful for terraform / Opentofu:
-```
-gcloud projects list
-gcloud compute zones list
-```
-* I provided an example to get started and terraform-docs-samples:
-```
-sudo su semaphore
-cd ~
-cd .opentofu/gcp/
-ls
-cd compute
-# OR
-cd terraform-dodcs-samples
+az login --use-device-code
 ```
 * Setup Opentofu repo: Semaphore UI > Repositories > New Repository :
 ```
@@ -116,8 +106,8 @@ Access Key: NONE
 ```
 * Create a Task Template : Semaphore UI > Task Template > New Template > Select OpenTofu Code: ( EX:)
 '''
-Name: GCP Create VM
-Subdirectory Path: gcp/compute-dev/create_vm/
+Name: Azure Example
+Subdirectory Path: yourpath/
 Repository: Opentofu
 Environment: Empty
 ```
@@ -154,6 +144,5 @@ References:
 * https://docs.semaphoreui.com/
 * https://docs.ansible.com/
 * https://opentofu.org/docs/
-* https://cloud.google.com/docs/terraform/samples
-* https://github.com/terraform-google-modules/terraform-docs-samples
+
 

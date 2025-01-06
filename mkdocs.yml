@@ -55,6 +55,7 @@ nav:
         - OpenVas: products/azure/openvas.md
         - Pritunl VPN Server: products/azure/pritunl-instructions.md
         - Rocky 9 Web Desktop: products/azure/rocky9-web-desktop.md
+        - Semaphore UI: products/azure/semaphore-ui.md
         - SonarQube CE: products/azure/sonarqube-ce.md
         - Uptime Kuma: products/azure/uptime-kuma.md
         - Vaultwarden: products/azure/vaultwarden.md
