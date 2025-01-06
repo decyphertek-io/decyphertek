@@ -1,7 +1,7 @@
 Semaphore UI is an open-source platform designed to manage Ansible, OpenTofu, Terraform and bash scripts via a web browser. 
 It provides a user-friendly interface for orchestrating and automating infrastructure tasks, making it easier for 
 developers and teams to streamline workflows and reduce manual errors. With its integration capabilities and scalable 
-design, Semaphore UI offers a centralized and efficient solution for infrastructure management. [GCP Marketplace: Semaphore UI ](https://console.cloud.google.com/marketplace/product/server-build-415714/semaphore-ui-ansible-opentofu)
+design, Semaphore UI offers a centralized and efficient solution for infrastructure management. [Azure Marketplace: Semaphore UI ]()
 
 Note:
 ------
