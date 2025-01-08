@@ -1,4 +1,4 @@
-Debian 12 Linux is an open source linux distribution that is well trusted to do system administration and this build has a set of ultimate sysadmin toolsets. [AWS Marketplace: Debian 12 Sysadmin Web Desktop ](https://aws.amazon.com/marketplace/pp/prodview-r2juwnhaqmp5i?sr=0-1&ref_=beagle&applicationId=AWSMPContessa)
+Debian 12 Linux is an open source linux distribution that is well trusted to complete system administration tasks and this build has an ultimate sysadmin toolset. [AWS Marketplace: Debian 12 Sysadmin Web Desktop ](https://aws.amazon.com/marketplace/pp/prodview-r2juwnhaqmp5i?sr=0-1&ref_=beagle&applicationId=AWSMPContessa)
 
 
 Note:
