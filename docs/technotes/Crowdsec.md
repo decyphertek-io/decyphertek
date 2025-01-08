@@ -28,6 +28,13 @@ sudo /usr/share/crowdsec/wizard.sh -c
 sudo vim /etc/crowdsec/bouncers/crowdsec-firewall-bouncer.yaml
 ```
 
+Firewall Bouncer Remediation:
+-----------------------------
+```
+https://docs.crowdsec.net/u/bouncers/blocklist-mirror
+sudo apt install crowdsec-blocklist-mirror
+```
+
 References
 ----------
 * https://docs.crowdsec.net/docs/getting_started/install_crowdsec/
