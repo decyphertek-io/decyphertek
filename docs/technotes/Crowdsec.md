@@ -30,6 +30,16 @@ sudo /usr/share/crowdsec/wizard.sh -c
 sudo vim /etc/crowdsec/bouncers/crowdsec-firewall-bouncer.yaml
 ```
 
+Install Collections:
+-------------------
+```
+sudo cscli collections install crowdsecurity/linux
+sudo cscli collections install crowdsecurity/auditd
+sudo cscli collections install crowdsecurity/iptables
+sudo cscli collections install crowdsecurity/sshd
+sudo cscli collections install crowdsecurity/nginx
+```
+
 Firewall Bouncer Remediation:
 -----------------------------
 ```
