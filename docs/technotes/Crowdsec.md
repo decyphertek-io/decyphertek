@@ -22,7 +22,7 @@ sudo cscli collections list
 sudo cscli metrics
 sudo cscli alerts list
 sudo cscli bouncers list
-sudo cscli decison list
+sudo cscli decisions list
 sudo cscli metrics show bouncers
 # Interactive config
 sudo /usr/share/crowdsec/wizard.sh -c
@@ -34,7 +34,6 @@ Firewall Bouncer Remediation:
 -----------------------------
 ```
 sudo apt install crowdsec-blocklist-mirror
-sudo cscli -oraw bouncers add blocklistMirror
 sudo systemctl enable crowdsec-blocklist-mirror
 sudo systemctl start crowdsec-blocklist-mirror
 ```
