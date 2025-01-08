@@ -31,12 +31,46 @@ sudo /usr/share/crowdsec/wizard.sh -c
 Install Collections:
 -------------------
 ```
+sudo apt install -y syslog-ng
+sudo vim /etc/syslog-ng/syslog-ng.conf
+
+# Add the following lines:
+# Source for kernel logs
+source s_kernel {
+    kernel();
+};
+
+# Destination for iptables logs
+destination d_iptables {
+    file("/var/log/iptables.log");
+};
+
+# Log rule for iptables
+log {
+    source(s_kernel);
+    filter(f_iptables);
+    destination(d_iptables);
+};
+
+sudo systemctl enable syslog-ng
+sudo systemctl start syslog-ng
 sudo cscli collections install crowdsecurity/linux
 sudo cscli collections install crowdsecurity/auditd
 sudo cscli collections install crowdsecurity/iptables
 sudo cscli collections install crowdsecurity/sshd
 sudo cscli collections install crowdsecurity/nginx
-# Make sure to make a yaml under crowdsec/acquis.d to collect the logs: EX
+sudo ls /var/log/
+# Make sure to make a yaml under crowdsec/acquis.d to collect the logs:
+sudo vim /etc/crowdsec/acquis.d/linux.yaml
+
+filenames:
+  - /var/log/messages
+labels:
+  type: linux
+
+# Save and exit
+esc > :wq!
+
 sudo vim /etc/crowdsec/acquis.d/auditd.yaml
 
 filenames:
@@ -47,7 +81,18 @@ labels:
 # Save and exit
 esc > :wq!
 
+sudo vim /etc/crowdsec/acquis.d/iptables.yaml
+
+filenames:
+  - /var/log/iptables.log
+labels:
+  type: iptables
+
+# Save and exit
+esc > :wq!
+
 sudo systemctl reload crowdsec
+sudo cscli collections list
 # Use the same logic for the rest. 
 
 ```
