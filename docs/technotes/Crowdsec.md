@@ -1,7 +1,7 @@
 Crowdsec
 =====
 
-Crowdsec is an open source Intrusion Prevention System that maintains a global IP blacklist. 
+Crowdsec is an open source Intrusion Prevention System , with an optional firewall bouncer. 
 
 Install:
 -------
