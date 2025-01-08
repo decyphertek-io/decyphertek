@@ -37,6 +37,19 @@ sudo cscli collections install crowdsecurity/iptables
 sudo cscli collections install crowdsecurity/sshd
 sudo cscli collections install crowdsecurity/nginx
 sudo systemctl reload crowdsec
+# Make sure to make a yaml under crowdsec/acquis.d to collect the logs: EX
+sudo vim /etc/crowdsec/acquis.d/auditd.yaml
+
+filenames:
+  - /var/log/audit/audit.log
+labels:
+  type: auditd
+
+# Save and exit
+esc > :wq!
+
+# Use the same logic for the rest. 
+
 ```
 
 Firewall Bouncer Remediation:
