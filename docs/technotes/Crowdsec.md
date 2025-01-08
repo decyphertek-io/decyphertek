@@ -50,5 +50,6 @@ References
 ----------
 * https://docs.crowdsec.net/docs/getting_started/install_crowdsec/
 * https://doc.crowdsec.net/u/bouncers/firewall/
+* https://docs.crowdsec.net/u/bouncers/blocklist-mirror
 
 
