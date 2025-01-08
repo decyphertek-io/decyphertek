@@ -35,6 +35,13 @@ https://docs.crowdsec.net/u/bouncers/blocklist-mirror
 sudo apt install crowdsec-blocklist-mirror
 ```
 
+Register API:
+-------------
+```
+sudo cscli capi register
+sudo cscli capi status
+```
+
 References
 ----------
 * https://docs.crowdsec.net/docs/getting_started/install_crowdsec/
