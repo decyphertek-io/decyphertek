@@ -3,7 +3,7 @@ Crowdsec
 
 Crowdsec is an open source Intrusion Prevention System that maintains a global IP blacklist. 
 
-Install
+Install:
 -------
 ```
 curl -s https://packagecloud.io/install/repositories/crowdsec/crowdsec/script.deb.sh | sudo bash
@@ -15,7 +15,7 @@ sudo systemctl reload crowdsec
 sudo systemctl status crowdsec
 ```
 
-Useful Commands
+Useful Commands:
 ---------------
 ```
 sudo cscli collections list
