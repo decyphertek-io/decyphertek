@@ -36,7 +36,6 @@ sudo cscli collections install crowdsecurity/auditd
 sudo cscli collections install crowdsecurity/iptables
 sudo cscli collections install crowdsecurity/sshd
 sudo cscli collections install crowdsecurity/nginx
-sudo systemctl reload crowdsec
 # Make sure to make a yaml under crowdsec/acquis.d to collect the logs: EX
 sudo vim /etc/crowdsec/acquis.d/auditd.yaml
 
@@ -48,6 +47,7 @@ labels:
 # Save and exit
 esc > :wq!
 
+sudo systemctl reload crowdsec
 # Use the same logic for the rest. 
 
 ```
