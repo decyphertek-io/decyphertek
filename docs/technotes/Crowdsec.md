@@ -37,55 +37,49 @@ Install Collections:
 -------------------
 ```
 sudo apt install -y syslog-ng
+# Edit syslog-ng.conf , not required. 
 sudo vim /etc/syslog-ng/syslog-ng.conf
-
-# Add the following lines:
-# Source for kernel logs
-source s_kernel {
-    kernel();
-};
-
-# Destination for iptables logs
-destination d_iptables {
-    file("/var/log/iptables.log");
-};
-
-# Log rule for iptables
-log {
-    source(s_kernel);
-    filter(f_iptables);
-    destination(d_iptables);
-};
-
 sudo systemctl enable syslog-ng
 sudo systemctl start syslog-ng
 sudo cscli collections install crowdsecurity/linux
 sudo cscli collections install crowdsecurity/auditd
-sudo cscli collections install crowdsecurity/iptables
-sudo cscli collections install crowdsecurity/sshd
-sudo cscli collections install crowdsecurity/nginx
 sudo ls /var/log/
 # Make sure to make a yaml under crowdsec to collect the logs:
 sudo vim /etc/crowdsec/acquis.yaml
-# The Collections should install them , if not, can add to here:
 # This line was modifed to work with syslog-ng: /var/log/messages ( was > syslog )
+# I added adutid log 
 
+# Nginx logs
 filenames:
   - /var/log/nginx/*.log
   - ./tests/nginx/nginx.log
-#this is not a syslog log, indicate which kind of logs it is
 labels:
   type: nginx
+
 ---
+
+# Authentication and syslog-ng logs
 filenames:
- - /var/log/auth.log
- - /var/log/messages
+  - /var/log/auth.log
+  - /var/log/messages
 labels:
   type: syslog
+
 ---
+
+# Auditd logs
+filenames:
+  - /var/log/audit/audit.log
+labels:
+  type: auditd
+
+---
+
+# Apache logs
 filename: /var/log/apache2/*.log
 labels:
   type: apache2
+
 
 sudo systemctl reload crowdsec
 sudo cscli collections list
