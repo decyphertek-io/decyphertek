@@ -47,16 +47,7 @@ sudo ls /var/log/
 # Make sure to make a yaml under crowdsec to collect the logs:
 sudo vim /etc/crowdsec/acquis.yaml
 # This line was modifed to work with syslog-ng: /var/log/messages ( was > syslog )
-# I added adutid log 
-
-# Nginx logs
-filenames:
-  - /var/log/nginx/*.log
-  - ./tests/nginx/nginx.log
-labels:
-  type: nginx
-
----
+# I added adutid log & Removed the unused ones.
 
 # Authentication and syslog-ng logs
 filenames:
@@ -72,13 +63,6 @@ filenames:
   - /var/log/audit/audit.log
 labels:
   type: auditd
-
----
-
-# Apache logs
-filename: /var/log/apache2/*.log
-labels:
-  type: apache2
 
 
 sudo systemctl reload crowdsec
