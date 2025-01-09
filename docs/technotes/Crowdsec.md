@@ -36,7 +36,7 @@ sudo /usr/share/crowdsec/wizard.sh -c
 Install Collections:
 -------------------
 ```
-sudo apt install -y rsyslog
+sudo apt install -y syslog-ng
 sudo vim /etc/syslog-ng/syslog-ng.conf
 
 # Add the following lines:
