@@ -86,7 +86,6 @@ sudo systemctl daemon-reload
 sudo systemctl enable rsyslog
 sudo systemctl start rsyslog
 sudo cscli collections install crowdsecurity/linux
-sudo cscli collections install crowdsecurity/sshd
 sudo cscli collections install crowdsecurity/auditd
 # Check your log paths
 sudo ls /var/log/
