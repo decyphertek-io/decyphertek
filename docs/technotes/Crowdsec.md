@@ -68,6 +68,7 @@ sudo ls /var/log/
 # Make sure to make a yaml under crowdsec to collect the logs:
 sudo vim /etc/crowdsec/acquis.yaml
 # The Collections should install them , if not, can add to here:
+# This line was modifed to work with syslog-ng: /var/log/messages ( was > syslog )
 
 filenames:
   - /var/log/nginx/*.log
@@ -78,7 +79,7 @@ labels:
 ---
 filenames:
  - /var/log/auth.log
- - /var/log/syslog
+ - /var/log/messages
 labels:
   type: syslog
 ---
