@@ -36,23 +36,20 @@ sudo /usr/share/crowdsec/wizard.sh -c
 Install Collections:
 -------------------
 ```
-sudo apt install -y syslog-ng
-# Edit syslog-ng.conf , not required. 
-sudo vim /etc/syslog-ng/syslog-ng.conf
-sudo systemctl enable syslog-ng
-sudo systemctl start syslog-ng
+sudo apt install -y rsyslog
+sudo systemctl enable rsyslog
+sudo systemctl start rsyslog
 sudo cscli collections install crowdsecurity/linux
 sudo cscli collections install crowdsecurity/auditd
 sudo ls /var/log/
 # Make sure to make a yaml under crowdsec to collect the logs:
 sudo vim /etc/crowdsec/acquis.yaml
-# This line was modifed to work with syslog-ng: /var/log/messages ( was > syslog )
 # I added adutid log & Removed the unused ones.
 
 # Authentication and syslog-ng logs
 filenames:
   - /var/log/auth.log
-  - /var/log/messages
+  - /var/log/syslog
 labels:
   type: syslog
 
