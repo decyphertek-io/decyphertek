@@ -24,6 +24,11 @@ sudo cscli alerts list
 sudo cscli bouncers list
 sudo cscli decisions list
 sudo cscli metrics show bouncers
+# Setup 
+sudo cscli setup
+sudo cscli setup detect
+sudo cscli setup install-hub
+sudo cscli setup datasources
 # Interactive config
 sudo /usr/share/crowdsec/wizard.sh -c
 ```
@@ -31,7 +36,7 @@ sudo /usr/share/crowdsec/wizard.sh -c
 Install Collections:
 -------------------
 ```
-sudo apt install -y syslog-ng
+sudo apt install -y rsyslog
 sudo vim /etc/syslog-ng/syslog-ng.conf
 
 # Add the following lines:
@@ -60,36 +65,26 @@ sudo cscli collections install crowdsecurity/iptables
 sudo cscli collections install crowdsecurity/sshd
 sudo cscli collections install crowdsecurity/nginx
 sudo ls /var/log/
-# Make sure to make a yaml under crowdsec/acquis.d to collect the logs:
-sudo vim /etc/crowdsec/acquis.d/linux.yaml
+# Make sure to make a yaml under crowdsec to collect the logs:
+sudo vim /etc/crowdsec/acquis.yaml
+# The Collections should install them , if not, can add to here:
 
 filenames:
-  - /var/log/messages
+  - /var/log/nginx/*.log
+  - ./tests/nginx/nginx.log
+#this is not a syslog log, indicate which kind of logs it is
 labels:
-  type: linux
-
-# Save and exit
-esc > :wq!
-
-sudo vim /etc/crowdsec/acquis.d/auditd.yaml
-
+  type: nginx
+---
 filenames:
-  - /var/log/audit/audit.log
+ - /var/log/auth.log
+ - /var/log/syslog
 labels:
-  type: auditd
-
-# Save and exit
-esc > :wq!
-
-sudo vim /etc/crowdsec/acquis.d/iptables.yaml
-
-filenames:
-  - /var/log/iptables.log
+  type: syslog
+---
+filename: /var/log/apache2/*.log
 labels:
-  type: iptables
-
-# Save and exit
-esc > :wq!
+  type: apache2
 
 sudo systemctl reload crowdsec
 sudo cscli collections list
