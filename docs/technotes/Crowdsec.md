@@ -37,6 +37,8 @@ Install Collections:
 -------------------
 ```
 sudo apt install -y rsyslog
+# Optional: Rsyslog config ( Can leave as default)
+sudo vim /etc/rsyslog.conf
 sudo systemctl enable rsyslog
 sudo systemctl start rsyslog
 sudo cscli collections install crowdsecurity/linux
