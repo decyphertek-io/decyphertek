@@ -41,6 +41,7 @@ sudo systemctl enable rsyslog
 sudo systemctl start rsyslog
 sudo cscli collections install crowdsecurity/linux
 sudo cscli collections install crowdsecurity/auditd
+# Check your log paths
 sudo ls /var/log/
 # Make sure to make a yaml under crowdsec to collect the logs:
 sudo vim /etc/crowdsec/acquis.yaml
