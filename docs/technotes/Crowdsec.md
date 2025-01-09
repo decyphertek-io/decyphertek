@@ -24,11 +24,6 @@ sudo cscli alerts list
 sudo cscli bouncers list
 sudo cscli decisions list
 sudo cscli metrics show bouncers
-# Setup 
-sudo cscli setup
-sudo cscli setup detect
-sudo cscli setup install-hub
-sudo cscli setup datasources
 # Interactive config
 sudo /usr/share/crowdsec/wizard.sh -c
 ```
