@@ -59,7 +59,6 @@ sudo systemctl reload crowdsec
 sudo cscli collections list
 # Testing Crowdsec Log ingestion:
 logger "This is a test log entry for rsyslog."
-echo "Test log entry for audit.log" | sudo tee -a /var/log/audit/audit.log
 sudo cscli metrics show acquisition
 # Troubleshooting syslog parser issues:
 sudo su -c "tail -n 10 /var/log/syslog | cscli explain -f- --type syslog"
