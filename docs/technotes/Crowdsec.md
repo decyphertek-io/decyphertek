@@ -32,91 +32,36 @@ Install Collections:
 -------------------
 ```
 sudo apt install -y rsyslog
-sudo cp /etc/rsyslog.conf /etc/rsyslog.conf.bak
-# Rsyslog config ( Crowdsec supports: RFC3164 or RFC5424 & up to 2048 bytes )
-sudo vim /etc/rsyslog.conf
-
-$ModLoad imuxsock
-$ModLoad imklog
-
-$FileOwner root
-$FileGroup root
-$FileCreateMode 0640
-$DirCreateMode 0755
-$Umask 0022
-$WorkDirectory /var/spool/rsyslog
-$IncludeConfig /etc/rsyslog.d/*.conf
-
-$MaxMessageSize 2048
-
-auth,authpriv.*                 /var/log/auth.log
-*.*;auth,authpriv.none          -/var/log/syslog
-#cron.*                         /var/log/cron.log
-daemon.*                        -/var/log/daemon.log
-kern.*                          -/var/log/kern.log
-lpr.*                           -/var/log/lpr.log
-mail.*                          -/var/log/mail.log
-user.*                          -/var/log/user.log
-
-mail.info                       -/var/log/mail.info
-mail.warn                       -/var/log/mail.warn
-mail.err                        /var/log/mail.err
-
-news.crit                       /var/log/news/news.crit
-news.err                        /var/log/news/news.err
-news.notice                     -/var/log/news/news.notice
-
-*.=debug;\
-        auth,authpriv.none;\
-        news.none;mail.none     -/var/log/debug
-*.=info;*.=notice;*.=warn;\
-        auth,authpriv.none;\
-        cron,daemon.none;\
-        mail,news.none          -/var/log/messages
-
-*.emerg                         :omusrmsg:*
-
-daemon.*;mail.*;\
-        news.err;\
-        *.=debug;*.=info;\
-        *.=notice;*.=warn       |/dev/console
-
-
-sudo systemctl daemon-reload
 sudo systemctl enable rsyslog
 sudo systemctl start rsyslog
 sudo cscli hub update
-sudo cscli collections install crowdsecurity/linux
-sudo cscli collections install crowdsecurity/auditd
+sudo cscli collections install crowdsecurity/linux --force
+# Upgrade all collections
+sudo cscli collections upgrade --all
+# Remove unused ones EX:
+sudo cscli collections remove crowdsecurity/nginx --force
+sudo cscli collections remove crowdsecurity/apache2 --force
 # Check your log paths
 sudo ls /var/log/
 # Make sure to make a yaml under crowdsec to collect the logs:
 sudo vim /etc/crowdsec/acquis.yaml
-# I added adutid log & Removed the unused ones.
+# I Removed the unused ones.
 
-# Authentication and syslog-ng logs
+# Authentication and syslog logs
 filenames:
   - /var/log/auth.log
   - /var/log/syslog
 labels:
   type: syslog
 
----
-
-# Auditd logs
-filenames:
-  - /var/log/audit/audit.log
-labels:
-  type: auditd
-
+sudo systemctl start crowdsec
 sudo systemctl reload crowdsec
 sudo cscli collections list
-# Use the same logic for the rest. 
 # Testing Crowdsec Log ingestion:
 logger "This is a test log entry for rsyslog."
 echo "Test log entry for audit.log" | sudo tee -a /var/log/audit/audit.log
 sudo cscli metrics show acquisition
-# Troubelshooting syslog parser issues:
+# Troubleshooting syslog parser issues:
 sudo su -c "tail -n 10 /var/log/syslog | cscli explain -f- --type syslog"
 ```
 
