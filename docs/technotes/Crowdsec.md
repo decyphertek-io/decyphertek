@@ -85,6 +85,7 @@ daemon.*;mail.*;\
 sudo systemctl daemon-reload
 sudo systemctl enable rsyslog
 sudo systemctl start rsyslog
+sudo cscli hub update
 sudo cscli collections install crowdsecurity/linux
 sudo cscli collections install crowdsecurity/auditd
 # Check your log paths
