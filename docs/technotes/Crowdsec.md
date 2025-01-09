@@ -38,18 +38,12 @@ Install Collections:
 ```
 sudo apt install -y rsyslog
 sudo cp /etc/rsyslog.conf /etc/rsyslog.conf.bak
-# Rsyslog config 
+# Rsyslog config ( Crowdsec supports: RFC3164 or RFC5424 & up to 2048 bytes )
 sudo vim /etc/rsyslog.conf
 
-# Minimal config
+$ModLoad imuxsock
+$ModLoad imklog
 
-$ModLoad imuxsock  # provides support for local system logging
-$ModLoad imklog    # provides kernel logging support
-
-# Define a JSON template
-template(name="JsonFormat" type="string" string="{\"timestamp\":\"%TIMESTAMP:::date-rfc3339%\", \"hostname\":\"%HOSTNAME%\", \"programname\":\"%PROGRAMNAME%\", \"msg\":\"%msg%\"}\n")
-
-# Set default file permissions and other settings
 $FileOwner root
 $FileGroup root
 $FileCreateMode 0640
@@ -58,9 +52,10 @@ $Umask 0022
 $WorkDirectory /var/spool/rsyslog
 $IncludeConfig /etc/rsyslog.d/*.conf
 
-# Log configurations
+$MaxMessageSize 2048
+
 auth,authpriv.*                 /var/log/auth.log
-*.*;auth,authpriv.none          -/var/log/syslog;JsonFormat  # Log all messages to syslog in JSON format
+*.*;auth,authpriv.none          -/var/log/syslog
 #cron.*                         /var/log/cron.log
 daemon.*                        -/var/log/daemon.log
 kern.*                          -/var/log/kern.log
@@ -91,10 +86,12 @@ daemon.*;mail.*;\
         *.=debug;*.=info;\
         *.=notice;*.=warn       |/dev/console
 
+
 sudo systemctl daemon-reload
 sudo systemctl enable rsyslog
 sudo systemctl start rsyslog
 sudo cscli collections install crowdsecurity/linux
+sudo cscli collections install crowdsecurity/sshd
 sudo cscli collections install crowdsecurity/auditd
 # Check your log paths
 sudo ls /var/log/
