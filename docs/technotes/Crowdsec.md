@@ -6,7 +6,7 @@ Crowdsec is an open source Intrusion Prevention System , with an optional firewa
 Install:
 -------
 ```
-curl -s https://packagecloud.io/install/repositories/crowdsec/crowdsec/script.deb.sh | sudo bash
+curl -s https://install.crowdsec.net | sudo sh
 sudo apt install -y crowdsec 
 sudo apt update
 sudo systemctl enable crowdsec
