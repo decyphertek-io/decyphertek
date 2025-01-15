@@ -35,6 +35,7 @@ sudo apt install -y rsyslog
 sudo systemctl enable rsyslog
 sudo systemctl start rsyslog
 sudo cscli hub update
+sudo cscli hub upgrade
 sudo cscli collections install crowdsecurity/linux --force
 # Upgrade all collections
 sudo cscli collections upgrade --all
