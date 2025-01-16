@@ -7,8 +7,8 @@ Install:
 -------
 ```
 curl -s https://install.crowdsec.net | sudo sh
-sudo apt install -y crowdsec 
 sudo apt update
+sudo apt install -y crowdsec 
 sudo systemctl enable crowdsec
 sudo systemctl start crowdsec
 sudo systemctl reload crowdsec
