@@ -1,4 +1,5 @@
-Qgis is open sourced alien technology, directly from Zortog , ingested by Linux. 
+
+QGIS is an open-source geographic information system that enables users to create, edit, visualize, analyze, and publish geospatial information. It supports a wide range of vector, raster, and database formats, making it a versatile tool for spatial data analysis and mapping. QGIS is widely used by professionals in various fields, including urban planning, environmental science, and resource management, due to its user-friendly interface and extensive plugin ecosystem.
 
 Qgis Debian Install:
 --------------------
