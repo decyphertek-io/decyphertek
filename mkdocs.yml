@@ -117,8 +117,6 @@ nav:
             - Instructions: products/gcp-wazuh-instructions.md
             - EULA: products/gcp-wazuh-eula.md
         - Privacy Policy: products/gcp-privacy-policy.md
-    - Digital Ocean Marketplace:
-        - Uptime Kuma: products/digital-ocean/uptime-kuma.md
     - Tech Notes:
         - Aide: technotes/Aide.md 
         - Android Roms: technotes/Android-Roms.md 
