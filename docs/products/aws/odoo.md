@@ -18,6 +18,31 @@ Login to Odoo:
 * Please fill in all the fields that it is asking
 * Please be patient , it takes a few minutes to initialize your chosen settings.
 
+Fix Reporting issue: ( Will be updated on next release):
+--------------------------------------------------------
+```
+# From the terminal
+
+sudo nano /etc/odoo/odoo.conf
+
+# I added this line to the odoo.conf
+
+wkhtmltopdf_path = /usr/local/bin/wkhtmltopdf
+
+# Save an exit
+
+sudo chown odoo:odoo /usr/local/bin/wkhtmltopdf
+
+# From the Odoo Dashboard >  Enable System parameter report.url
+* Settings > General Settings > Scroll Down > Developer tools > Activate Develope Mode >
+* Settings > Technical > Paramaters > System Paramaters > new > Key: report.url value: http://127.0.0.1:8069 > manually save
+
+# From the terminal
+
+sudo systemctl restart odoo 
+
+```
+
 View Modsec logs:
 -----------------
 
