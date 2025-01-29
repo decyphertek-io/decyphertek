@@ -39,30 +39,6 @@ sudo passwd droidian
 fastboot flashing lock
 ```
 
-Plasma Mobile:
---------------
-* Open Terminal in Droidian
-```
-sudo apt update 
-sudo apt install plasma-mobile
-```
-* Issues - Its installed, no how do I set Plasma Mobile instead of Gnome?
-
-Waydorid:
----------
-"A container-based approach to boot a full Android system on regular GNU/Linux systems running Wayland based desktop environments." 
-
-* Issues: Uses older verison of Lineage, need to find out how to Upgrade the the latest version. 
-* Drodian Waydroid app crashes, never installs waydroid?
-* How do I install MicroG ? Do I instead use Lineage OS for MicroG?
-* Does eSIM work? 
-
-LXC:
----
-Can install kubernetes / docker on LXC and run lite dev applications.
-* Can it run lxc , install qemu , then install BlissOS ? 
-* Distrobuilder & github , custom LXC apps. 
-
 Flatpak Mobile Apps:
 -------------------
 * https://flathub.org/apps/collection/mobile/1
@@ -76,6 +52,7 @@ flatpak --supported-arches
 flatpak search --columns=name,description,application "" | grep -i mobile
 flatpak install --arch=aarch64 org.appname
 ```
+
 References:
 -----------
 * https://droidian.org/
