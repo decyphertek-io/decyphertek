@@ -5,7 +5,8 @@ Droidian
 Devices:
 --------
 * Pixel 3a
-* Many More
+* Pinephone
+* Fairphone
 
 Pixel 3a Droidian Install:
 --------------------------
