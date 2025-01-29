@@ -10,7 +10,7 @@ Devices:
 Pixel 3a Droidian Install:
 --------------------------
 ```
-# Phone: About tap x7 > Enable useb debugging + OEM Unlock
+# Phone: About tap x7 > Enable usb debugging + OEM Unlock
 # From your Debian device install adb + Fastboot
 sudo apt-get install -y android-tools-adb android-tools-fastboot
 # Plug in device & Allow USB Debugging prompt
