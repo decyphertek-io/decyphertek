@@ -15,8 +15,6 @@ Pixel 3a Droidian Install:
 # From your Debian device install adb + Fastboot
 sudo apt-get install -y android-tools-adb android-tools-fastboot
 # Plug in device & Allow USB Debugging prompt
-sudo udevadm control --reload
-sudo udevadm trigger
 adb kill-server && adb start-server
 adb devices
 adb reboot bootloader
