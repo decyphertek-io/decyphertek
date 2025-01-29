@@ -66,7 +66,16 @@ Can install kubernetes / docker on LXC and run lite dev applications.
 Flatpak Mobile Apps:
 -------------------
 * https://flathub.org/apps/collection/mobile/1
-
+```
+# Install Flatpak 
+sudo apt update
+sudo apt install flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+# Search for support arm architecture
+flatpak --supported-arches
+flatpak search --columns=name,description,application "" | grep -i mobile
+flatpak install --arch=aarch64 org.appname
+```
 References:
 -----------
 * https://droidian.org/
