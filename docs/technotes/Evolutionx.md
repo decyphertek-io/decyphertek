@@ -39,3 +39,7 @@ wget https://github.com/Universal-Debloater-Alliance/universal-android-debloater
 chmod + x uad-ng-linux
 ./uad-ng-linux
 ```
+
+References:
+----------
+* https://evolution-x.org/downloads
