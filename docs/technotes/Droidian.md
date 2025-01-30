@@ -30,7 +30,7 @@ wget https://github.com/droidian-images/droidian/releases/download/nightly/droid
 unzip droidian-OFFICIAL-phosh-phone-google_sargo-api28-arm64-next_20250129.zip
 bash flash_all.sh
 login: 1234
-# Set encyrption > Settings > Encryption > Reboot > Be patient screen turns black after login 30 sec.
+# Set encyrption > Settings > Encryption > Reboot > Be patient screen turns black after login 30-90 sec.
 # Change login password from 1234 , Open terminal:
 sudo passwd droidian 
 # Number pin code is the easiest way, so you can login via pin.
