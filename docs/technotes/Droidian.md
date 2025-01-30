@@ -43,6 +43,7 @@ Flatpak Mobile Apps:
 # Flatpak is already installed
 # This will make it easier to install Flatpaks
 flatpak install warehouse
+# Flatpaks is tied to the gnome store, except found it slow. 
 ```
 
 Waydroid:
