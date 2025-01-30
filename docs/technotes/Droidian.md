@@ -34,6 +34,7 @@ login: 1234
 # Change login password from 1234 , Open terminal:
 sudo passwd droidian 
 # Number pin code is the easiest way, so you can login via pin.
+# USB Settings: Settings > USB > None , File Transfer , Networking ( If enabled can access droidian with no authentication )
 ```
 
 Flatpak Mobile Apps:
