@@ -57,17 +57,10 @@ flatpak install --arch=aarch64 org.appname
 Dev in Progress: Fixing arm apps that are not mobile friendly:
 --------------------------------------------------
 ```
-#!/bin/bash
-# Full mobile installation for Droidian (Wayland version)
-
-# 1. Install dependencies (keep original)
-sudo apt update && sudo apt install -y flatpak gnome-software-plugin-flatpak
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
-# 2. Install Organic Maps (keep original)
+#Organic Map example
 flatpak install -y flathub org.organicmaps.Desktop
 
-# 3. Mobile optimization (Wayland changes ONLY)
+# 3. Mobile optimization
 flatpak override --user org.organicmaps.Desktop \
   --env=GDK_BACKEND=wayland \
   --env=QT_QPA_PLATFORM=wayland \
@@ -76,7 +69,7 @@ flatpak override --user org.organicmaps.Desktop \
   --env=GDK_DPI_SCALE=0.8 \  # Keep original
   --env=QT_SCALE_FACTOR=1.5  # Keep original
 
-# 4. Create launcher (keep original)
+# 4. Create launcher 
 cat > ~/.local/share/applications/org.organicmaps.Desktop.desktop << 'EOL'
 [Desktop Entry]
 Name=Organic Maps
@@ -91,6 +84,36 @@ EOL
 # 5. Finalize (keep original)
 update-desktop-database ~/.local/share/applications
 systemctl --user restart phosh 
+
+# PIA Example
+# 1. Download and install
+wget https://installers.privateinternetaccess.com/download/pia-linux-3.6.1-08339.run
+chmod +x pia-linux-*.run
+sudo ./pia-linux-*.run
+
+# 2. Create mobile-friendly launcher
+cat > ~/.local/share/applications/pia.desktop << 'EOL'
+[Desktop Entry]
+Name=PIA VPN
+Exec=env GDK_DPI_SCALE=0.8 QT_SCALE_FACTOR=1.5 /opt/pia/pia-client
+Icon=/opt/pia/pia.png
+Categories=Network;Mobile;
+Terminal=false
+Type=Application
+X-Purism-FormFactor=Mobile
+StartupWMClass=pia-ui
+EOL
+
+# 3. Set permissions
+sudo chmod 644 ~/.local/share/applications/pia.desktop
+
+# 4. Mobile environment
+echo "export GDK_DPI_SCALE=0.8" >> ~/.profile
+echo "export QT_SCALE_FACTOR=1.5" >> ~/.profile
+
+# 5. Finalize
+update-desktop-database ~/.local/share/applications
+systemctl --user restart phosh
 ```
 
 References:
