@@ -35,7 +35,7 @@ login: 1234
 # Change login password from 1234 , Open terminal:
 sudo passwd droidian 
 # Number pin code is the easiest way, so you can login via pin.
-# To relock the bootloader
+# To relock the bootloader ( Erases all data , be careful)
 * Power off > Power + Volume down buttons
 fastboot flashing lock
 ```
