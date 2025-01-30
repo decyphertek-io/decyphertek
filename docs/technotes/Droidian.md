@@ -53,6 +53,45 @@ flatpak search --columns=name,description,application "" | grep -i mobile
 flatpak install --arch=aarch64 org.appname
 ```
 
+Dev in Progress: Fixing arm apps that are not mobile friendly:
+--------------------------------------------------
+```
+#!/bin/bash
+# Full mobile installation for Droidian (Wayland version)
+
+# 1. Install dependencies (keep original)
+sudo apt update && sudo apt install -y flatpak gnome-software-plugin-flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+# 2. Install Organic Maps (keep original)
+flatpak install -y flathub org.organicmaps.Desktop
+
+# 3. Mobile optimization (Wayland changes ONLY)
+flatpak override --user org.organicmaps.Desktop \
+  --env=GDK_BACKEND=wayland \
+  --env=QT_QPA_PLATFORM=wayland \
+  --socket=wayland \          # Changed from --socket=x11
+  --device=input \            # Keep original
+  --env=GDK_DPI_SCALE=0.8 \  # Keep original
+  --env=QT_SCALE_FACTOR=1.5  # Keep original
+
+# 4. Create launcher (keep original)
+cat > ~/.local/share/applications/org.organicmaps.Desktop.desktop << 'EOL'
+[Desktop Entry]
+Name=Organic Maps
+Exec=flatpak run org.organicmaps.Desktop
+Icon=org.organicmaps.Desktop
+Categories=Navigation;Mobile;
+Terminal=false
+Type=Application
+X-GNOME-UsesNotifications=true
+EOL
+
+# 5. Finalize (keep original)
+update-desktop-database ~/.local/share/applications
+systemctl --user restart phosh 
+```
+
 References:
 -----------
 * https://droidian.org/
