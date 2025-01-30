@@ -64,10 +64,10 @@ flatpak install -y flathub org.organicmaps.Desktop
 flatpak override --user org.organicmaps.Desktop \
   --env=GDK_BACKEND=wayland \
   --env=QT_QPA_PLATFORM=wayland \
-  --socket=wayland \          # Changed from --socket=x11
-  --device=input \            # Keep original
-  --env=GDK_DPI_SCALE=0.8 \  # Keep original
-  --env=QT_SCALE_FACTOR=1.5  # Keep original
+  --socket=wayland \          
+  --device=input \            
+  --env=GDK_DPI_SCALE=0.8 \  
+  --env=QT_SCALE_FACTOR=1.5  
 
 # 4. Create launcher 
 cat > ~/.local/share/applications/org.organicmaps.Desktop.desktop << 'EOL'
