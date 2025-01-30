@@ -47,39 +47,12 @@ Waydroid:
 ---------
 * Settings > Waydroid > install 
 
-Dev in Progress: Fixing arm apps that are not mobile friendly:
---------------------------------------------------
-```
-# PIA Example
-# 1. Download and install
-wget https://installers.privateinternetaccess.com/download/pia-linux-3.6.1-08339.run
-chmod +x pia-linux-*.run
-sudo ./pia-linux-*.run
-
-# 2. Create mobile-friendly launcher
-cat > ~/.local/share/applications/pia.desktop << 'EOL'
-[Desktop Entry]
-Name=PIA VPN
-Exec=env GDK_DPI_SCALE=0.8 QT_SCALE_FACTOR=1.5 /opt/pia/pia-client
-Icon=/opt/pia/pia.png
-Categories=Network;Mobile;
-Terminal=false
-Type=Application
-X-Purism-FormFactor=Mobile
-StartupWMClass=pia-ui
-EOL
-
-# 3. Set permissions
-sudo chmod 644 ~/.local/share/applications/pia.desktop
-
-# 4. Mobile environment
-echo "export GDK_DPI_SCALE=0.8" >> ~/.profile
-echo "export QT_SCALE_FACTOR=1.5" >> ~/.profile
-
-# 5. Finalize
-update-desktop-database ~/.local/share/applications
-systemctl --user restart phosh
-```
+Issues:
+-------
+* GPS Not working
+* Esim not working
+* Waydroid doesnt work with VPN on Drodian
+* Flatpak apps even suppose to work on mobile, are glitchy. 
 
 References:
 -----------
