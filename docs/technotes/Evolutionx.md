@@ -17,6 +17,9 @@ fastboot flashing unlock
 adb reboot bootloader
 # Download the boot.img and rom.zip from EvolutionX downloads page for your device
 https://evolution-x.org/downloads
+# Pixel 3a Sargo Example:
+wget https://pilotfiber.dl.sourceforge.net/project/evolution-x/sargo/15/EvolutionX-15.0-20250127-sargo-10.2-Official.zip?viasf=1
+unzip EvolutionX-15.0-20250127-sargo-10.2-Official.zip
 # Flash the Boot Image
 fastboot flash boot boot.img
 # Reboot to Recovery
