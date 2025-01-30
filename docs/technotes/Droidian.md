@@ -28,7 +28,6 @@ bash flash-all.sh
 # Enter fastboot
 wget https://github.com/droidian-images/droidian/releases/download/nightly/droidian-OFFICIAL-phosh-phone-google_sargo-api28-arm64-next_20250129.zip
 unzip droidian-OFFICIAL-phosh-phone-google_sargo-api28-arm64-next_20250129.zip
-cd droidian-OFFICIAL-phosh-phone-google_sargo-api28-arm64-next_20250129
 bash flash_all.sh
 login: 1234
 # Set encyrption > Settings > Encryption > Reboot > Be patient screen turns black after login 30 sec.
