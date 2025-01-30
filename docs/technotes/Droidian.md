@@ -81,7 +81,7 @@ Type=Application
 X-GNOME-UsesNotifications=true
 EOL
 
-# 5. Finalize (keep original)
+# 5. Finalize 
 update-desktop-database ~/.local/share/applications
 systemctl --user restart phosh 
 
