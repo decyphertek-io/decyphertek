@@ -48,7 +48,7 @@ flatpak install warehouse
 
 Waydroid:
 ---------
-
+* Settings > Waydroid > install 
 
 Dev in Progress: Fixing arm apps that are not mobile friendly:
 --------------------------------------------------
