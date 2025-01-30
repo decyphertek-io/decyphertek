@@ -15,15 +15,17 @@ adb reboot bootloader
 fastboot flashing unlock
 # Reboot to Bootloader
 adb reboot bootloader
+# Download the boot.img and rom.zip from EvolutionX downloads page for your device
+https://evolution-x.org/downloads
 # Flash the Boot Image
 fastboot flash boot boot.img
 # Reboot to Recovery
 fastboot reboot recovery
 # Factory Reset (navigate in recovery)
-# Select: Factory Reset → Format Data/Factory Reset and confirm
+# Select: Factory Reset > Format Data/Factory Reset and confirm
 # Apply Update from ADB
 # (navigate in recovery)
-# Select: Apply Update → Apply from ADB
+# Select: Apply Update > Apply from ADB
 # Sideload the ROM
 adb sideload rom.zip  # Replace "rom.zip" with the actual filename
 # Optional: Reboot to Recovery for Add-ons (if needed)
