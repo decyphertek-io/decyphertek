@@ -22,6 +22,7 @@ wget https://master.dl.sourceforge.net/project/evolution-x/sargo/15/boot/boot.im
 wget https://pilotfiber.dl.sourceforge.net/project/evolution-x/sargo/15/EvolutionX-15.0-20250127-sargo-10.2-Official.zip
 # Flash the Boot Image
 fastboot flash boot boot.img
+fastboot reboot
 # Reboot to Recovery
 fastboot reboot recovery
 # Select: Factory Reset > Format Data/Factory Reset and confirm
