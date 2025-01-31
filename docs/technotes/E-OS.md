@@ -42,6 +42,7 @@ adb sideload e-2.7-u-20250111460593-community-sargo.zip
 # Optional: Relock Bootloader ( Will erase all data , may brick your device )
 * Follow same procedure to enbale usb and access fastboot
 fastboot flashing lock
+
 ```
 
 References:
