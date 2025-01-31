@@ -24,15 +24,9 @@ unzip EvolutionX-15.0-20250127-sargo-10.2-Official.zip
 fastboot flash boot boot.img
 # Reboot to Recovery
 fastboot reboot recovery
-# Factory Reset (navigate in recovery)
 # Select: Factory Reset > Format Data/Factory Reset and confirm
-# Apply Update from ADB
-# (navigate in recovery)
 # Select: Apply Update > Apply from ADB
-# Sideload the ROM
-adb sideload rom.zip  # Replace "rom.zip" with the actual filename
-# Optional: Reboot to Recovery for Add-ons (if needed)
-adb reboot recovery
+adb sideload rom.zip  
 # Reboot to System
 adb reboot system
 ```
