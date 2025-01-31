@@ -32,7 +32,7 @@ https://doc.e.foundation/devices/sargo/install
 wget https://images.ecloud.global/community/sargo/recovery-e-2.7-u-20250111460593-community-sargo.img
 # Download the Rom.zip ( make sure verison matches )
 wget https://images.ecloud.global/community/sargo/e-2.7-u-20250111460593-community-sargo.zip
-fastboot flash boot recoveryfilename.img
+fastboot flash boot recovery-e-2.7-u-20250111460593-community-sargo.img
 # Boot into Recovery
 * Power off device > hold Volume Down + Power > Choose Recovery Mode ( volume buttons cycle & power button selects ) 
 * Select > Factory reset > Format data / Factory reset option
