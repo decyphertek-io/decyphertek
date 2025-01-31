@@ -37,6 +37,7 @@ fastboot flash boot recovery-e-2.7-u-20250111460593-community-sargo.img
 * Select > Factory reset > Format data / Factory reset w/ power button > format data
 * Back a screen > Apply Update > Apply from ADB 
 adb sideload e-2.7-u-20250111460593-community-sargo.zip 
+# Note: Pauses at 47% , this is normal. Be patient. 
 # Reboot when finished
 # Optional: Relock Bootloader ( Will erase all data , may brick your device )
 * Follow same procedure to enable usb and access fastboot
