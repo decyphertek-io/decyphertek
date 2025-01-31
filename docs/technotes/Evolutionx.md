@@ -18,15 +18,15 @@ adb reboot bootloader
 # Download the boot.img and rom.zip from EvolutionX downloads page for your device
 https://evolution-x.org/downloads
 # Pixel 3a Sargo Example:
+wget https://master.dl.sourceforge.net/project/evolution-x/sargo/15/boot/boot.img
 wget https://pilotfiber.dl.sourceforge.net/project/evolution-x/sargo/15/EvolutionX-15.0-20250127-sargo-10.2-Official.zip
-unzip EvolutionX-15.0-20250127-sargo-10.2-Official.zip
 # Flash the Boot Image
 fastboot flash boot boot.img
 # Reboot to Recovery
 fastboot reboot recovery
 # Select: Factory Reset > Format Data/Factory Reset and confirm
 # Select: Apply Update > Apply from ADB
-adb sideload rom.zip  
+adb sideload EvolutionX-15.0-20250127-sargo-10.2-Official.zip
 # Reboot to System
 adb reboot system
 ```
