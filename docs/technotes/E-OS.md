@@ -7,7 +7,9 @@ Install:
 ```
 # From your Debian device install adb + Fastboot
 sudo apt-get install -y android-tools-adb android-tools-fastboot
-# Plug in device & Allow USB Debugging prompt
+# From phone > Settings > About Phone > Tap Build number x7 times 
+# From Phone > Settings > System > Advanced > Select Developer Options > Enable OEM Unlocking and USB Debugging
+# Plug in device to the computer & Allow USB Debugging prompt
 adb kill-server && adb start-server
 adb devices
 adb reboot bootloader
