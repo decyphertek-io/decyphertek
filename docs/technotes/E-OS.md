@@ -33,10 +33,9 @@ wget https://images.ecloud.global/community/sargo/recovery-e-2.7-u-2025011146059
 # Download the Rom.zip ( make sure verison matches )
 wget https://images.ecloud.global/community/sargo/e-2.7-u-20250111460593-community-sargo.zip
 fastboot flash boot recovery-e-2.7-u-20250111460593-community-sargo.img
-# Boot into Recovery
-* Power off device > hold Volume Down + Power > Choose Recovery Mode ( volume buttons cycle & power button selects ) 
-* Select > Factory reset > Format data / Factory reset option
-* Back a screen > Apply Update > Apply update form adb 
+* Use volume buttons > Select Recovery mode w/ power button
+* Select > Factory reset > Format data / Factory reset w/ power button > format data
+* Back a screen > Apply Update > Apply from ADB 
 adb sideload e-2.7-u-20250111460593-community-sargo.zip 
 # Reboot when finished
 # Optional: Relock Bootloader ( Will erase all data , may brick your device )
