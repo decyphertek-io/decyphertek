@@ -39,7 +39,9 @@ fastboot flash boot recovery-e-2.7-u-20250111460593-community-sargo.img
 adb sideload e-2.7-u-20250111460593-community-sargo.zip 
 # Note: Pauses at 47% , this is normal. Be patient. { serving: 'e-2.7-u-20250111460593-community-sargo.zip'  (~47%) }
 # Select > Reboot system now ( When install finished )
-# Optional: Relock Bootloader ( Will erase all data , may brick your device )
+# You should now see the dancing e . First loading screen takes a while. Be patient. 
+# Optional: Relock Bootloader ( Will erase all data , may brick your device . Pixel 3a not supported ) 
+https://community.e.foundation/t/list-devices-where-bootloader-can-be-relocked/48424
 * Follow same procedure to enable usb and access fastboot
 fastboot flashing lock
 ```
