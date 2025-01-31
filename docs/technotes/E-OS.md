@@ -1,6 +1,6 @@
 e/OS:
 ====
-De-googled Android with MicroG and provacy features. Supports legacy and modern devices. 
+De-googled Android with MicroG and privacy features. Supports legacy and modern devices. 
 
 Install:
 --------
