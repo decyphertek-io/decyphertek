@@ -38,7 +38,7 @@ fastboot flash boot recovery-e-2.7-u-20250111460593-community-sargo.img
 * Back a screen > Apply Update > Apply from ADB 
 adb sideload e-2.7-u-20250111460593-community-sargo.zip 
 # Note: Pauses at 47% , this is normal. Be patient. { serving: 'e-2.7-u-20250111460593-community-sargo.zip'  (~47%) }
-# Reboot when finished
+# Select > Reboot system now ( When install finished )
 # Optional: Relock Bootloader ( Will erase all data , may brick your device )
 * Follow same procedure to enable usb and access fastboot
 fastboot flashing lock
