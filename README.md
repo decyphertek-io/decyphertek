@@ -1,6 +1,6 @@
 
 Decyphertek Read The Docs
-===============================================
+==========================
 
 Open source technologies can be time consuming to research and difficult to implement. 
 We do the research and boil down the notes , so that its easy to understand and use. We
