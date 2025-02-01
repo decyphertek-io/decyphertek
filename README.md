@@ -11,7 +11,7 @@ used for Enterprise, educational purposes, or DIY projects.
 
 
 <p align="center">
-    <img src="https://github.com/decyphertek-io/configs/raw/main/Logos/decyphertek-logo.png" alt="Decyphertek.io" width="350" height="350">
+    <img src="https://github.com/decyphertek-io/configs/blob/main/Logos/decyphertek-logo-512x512.png" alt="Decyphertek.io" width="350" height="350">
 </p>
 
 
