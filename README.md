@@ -4,7 +4,7 @@ Decyphertek Read The Docs
 
 Open source technologies can be time consuming to research and difficult to implement. 
 We do the research and boil down the notes , so that its easy to understand and use. We
-provide instructions for AWS Marketplace, GCP Marketplace, and Digital Ocean marketplace
+provide instructions for AWS Marketplace, GCP Marketplace, and Azure Marketplace
 customers.We also provide technical notes on open source projects. These notes can be 
 used for Enterprise, educational purposes, or DIY projects. 
 
