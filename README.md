@@ -11,8 +11,13 @@ used for Enterprise, educational purposes, or DIY projects.
 
 
 <p align="center">
-    <img src="https://github.com/decyphertek-io/configs/raw/main/Logos/decyphertek-new-logo-512x512.png" alt="Decyphertek.io" width="350" height="350">
+    <img src="https://github.com/decyphertek-io/configs/raw/main/Logos/decyphertek-new-logo-512x512.png" 
+         alt="Decyphertek.io" 
+         width="350" 
+         height="350" 
+         style="border-radius: 50%; object-fit: cover;">
 </p>
+
 
 
 
