@@ -1,5 +1,6 @@
 Uptime Kuma is an opensource Web monitoring tool. [AWS Marketplace: Uptime Kuma ](https://aws.amazon.com/marketplace/pp/prodview-6ny3xloslkmh2?sr=0-1&ref_=beagle&applicationId=AWSMPContessa)
 
+
 Note:
 -----
 Please be aware that it takes a few minutes for the system to be up and running. The best way to check is to 
