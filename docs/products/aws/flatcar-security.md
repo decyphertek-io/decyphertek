@@ -1,4 +1,4 @@
-Decyphertek has secured your AWS AMI with one or more of the following open source software. Please reference the specific softare stack your server has. As a courteousy to AWS Subscribers this section can be used as a quick reference. [AWS Marketplace: Decyphertek ](https://aws.amazon.com/marketplace/seller-profile?id=851968a2-7d3c-4a0b-8c33-5351d91aaef1)
+Decyphertek has secured your AWS AMI with one or more of the following open source software. Please reference the specific software stack your server has. As a courteousy to AWS Subscribers this section can be used as a quick reference. [AWS Marketplace: Decyphertek ](https://aws.amazon.com/marketplace/seller-profile?id=851968a2-7d3c-4a0b-8c33-5351d91aaef1)
 
 Note:
 ------
@@ -14,6 +14,8 @@ SSH Into the server:
 Passwords - DB AND/OR User:
 ---------------------------
 * ssh into server
+* Some allow creating user/pass on first login
+* If no then you can find your passwords here:
 * cat ~/.docker/.env
 * This will display the randomly generated passwords for DB AND/OR User. 
 
@@ -33,15 +35,12 @@ Docker - Update Containers:
 ---------------------------
 * Caution: Make sure to back up any data and test the update in a staging environment before running these commands on a production server.
 * ssh into the server 
-* cd .docker
-* docker-compose down
-* docker-compose pull
-* docker-compose up -d
-
-Docker - Redeploy: 
-------------------
-* Optional: Troubleshooting - If you have issues and want to rebuild, delete via portainer.
-* Enable startup and reboot: sudo systemctl enable startup && sudo reboot
+```
+cd .docker
+/opt/bin/docker-compose down
+/opt/bin/docker-compose pull
+/opt/bin/docker-compose up -d
+```
 
 Manage Flatcar Linux: 
 ----------------------
