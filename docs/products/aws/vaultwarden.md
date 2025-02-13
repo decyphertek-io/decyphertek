@@ -5,9 +5,14 @@ Note:
 Please be aware that it can take 5-10 minutes for the system to be accessible. 
 
 SSH Into the server:
-----------------------
-* Linux + MAC - add .pem key to ~/.ssh/id_rsa > change permisisons > chmod 400 id_rsa
-* ssh core@ip-of-server 
+--------------------
+* Linux + MAC - add .pem key to 
+```
+~/.ssh/id_rsa
+# change permisisons
+chmod 400 id_rsa
+ssh core@ip-of-server
+```
 * If using putty or mobaxterm make sure to convert .pem using puttygen.
 
 Vaultwarden:

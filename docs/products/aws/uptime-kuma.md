@@ -3,13 +3,17 @@ Uptime Kuma is a powerful open source web monitoring tool designed to track the 
 
 Note:
 -----
-Please be aware that it takes a few minutes for the system to be up and running. The best way to check is to 
-view the status check from the ec2 / instances / dashboard. If it says intializing, it is not ready yet. 
+Please be aware that it can take 5-10 minutes for the system to be accessible. 
 
 SSH Into the server:
-----------------------
-* Linux + MAC - add .pem key to ~/.ssh/id_rsa > change permisisons > chmod 400 id_rsa
-* ssh core@ip-of-server 
+--------------------
+* Linux + MAC - add .pem key to 
+```
+~/.ssh/id_rsa
+# change permisisons
+chmod 400 id_rsa
+ssh core@ip-of-server
+```
 * If using putty or mobaxterm make sure to convert .pem using puttygen.
 
 Uptime Kuma:

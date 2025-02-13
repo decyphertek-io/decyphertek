@@ -2,7 +2,7 @@ DFIR IRIS is an incident response platform designed to assist cybersecurity prof
 
 Note:
 -----
-* It takes 5-10 minutes for DFIR IRIS to be accesible, please be patient.
+Please be aware that it can take 5-10 minutes for the system to be accessible. 
 
 SSH Into the server:
 --------------------

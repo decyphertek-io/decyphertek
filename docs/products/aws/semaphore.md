@@ -1,16 +1,22 @@
 Semaphore UI is a modern automation platform with an intuitive GUI, supporting Ansible, Terraform, OpenTofu, Bash, Python, and PowerShell. It’s a robust alternative to Ansible Tower or AWX, offering features like secure vault storage, scheduled playbook execution, and centralized task management. Decyphertek provides pre-configured playbooks and templates to help you get started quickly. [AWS Marketplace: Semaphore UI ](https://aws.amazon.com/marketplace/pp/prodview-5noeat2jipwca?sr=0-1&ref_=beagle&applicationId=AWSMPContessa)
 
-SSH into the Semaphore server:
-------------------------------
+Note:
+-----
+Please be aware that it can take 5-10 minutes for the system to be accessible. 
 
-* Linux + Mac - add .pem key to ~/.ssh/id_rsa > change permisisons > chmod 400 id_rsa
-* If using putty or mobaxterm make sure to convert .pem to .ppk using puttygen.
-* Linux + Mac - ssh semaphore@ip-of-server
-* Windows - utilize putty or mobaxterm
+SSH Into the server:
+--------------------
+* Linux + MAC - add .pem key to 
+```
+~/.ssh/id_rsa
+# change permisisons
+chmod 400 id_rsa
+ssh semaphore@ip-of-server
+```
+* If using putty or mobaxterm make sure to convert .pem using puttygen.
 
 Semaphore login & password:
 ------------------------------
-
 * Run from Terminal to find your password - cat passwords.txt
 * Go to your browser - https://ip-of-server
 * Login to semaphore gui - username: semaphore password: SEMAPHORE_USER_PASS listed in passwords.txt
@@ -21,7 +27,6 @@ Semaphore login & password:
 
 Setup Ansible / OpenTofu in Semaphore: 
 ---------------------------
-
 * Create a project: Can be accessed on the main page when you first log in.
 * Create an Environment {}: On the left side, select Environment > Select New Environment (can be empty {} or have env variables).
 * Add an ssh key/Password to keystore: On the left side, select Key Store > Select New Key > enter name key & select ssh key or password.
@@ -56,7 +61,6 @@ ssh username@ip-of-server
 
 Troubleshooting:
 -----------------
-
 * AWS Basics - https://decyphertek.readthedocs.io/en/latest/products/aws-basics/
 * Make sure you are accessing https://ip-of-server
 * Your passwords are in /home/semaphore/passwords.txt - cat /home/semaphore/passwords.txt
@@ -66,8 +70,7 @@ Troubleshooting:
 * Manage nginx from systemd - sudo systemctl status nginx
 
 Additonal Security Features:
-----------------------------
-
+---------------------------
 * Ossec Hids - https://decyphertek.readthedocs.io/en/latest/technotes/OSSEC/
 * UFW Host Firewall - https://decyphertek.readthedocs.io/en/latest/technotes/UFW/
 * Auditd Logging - https://decyphertek.readthedocs.io/en/latest/technotes/Auditd/
@@ -76,5 +79,4 @@ Additonal Security Features:
 
 References:
 ------------
-
 * https://docs.semaphoreui.com/
