@@ -1,6 +1,4 @@
-Semaphore UI is a modern way to run ansible with an easy to use GUI. Its a good alternative to Ansible Tower
-or AWX. You can store your vault secrets and run playbooks on a schedule. Decyphertek has also setup ansible with 
-some basic playbooks to help you get started. [AWS Marketplace: Semaphore UI ](https://aws.amazon.com/marketplace/pp/prodview-5noeat2jipwca?sr=0-1&ref_=beagle&applicationId=AWSMPContessa)
+Semaphore UI is a modern automation platform with an intuitive GUI, supporting Ansible, Terraform, OpenTofu, Bash, Python, and PowerShell. It’s a robust alternative to Ansible Tower or AWX, offering features like secure vault storage, scheduled playbook execution, and centralized task management. Decyphertek provides pre-configured playbooks and templates to help you get started quickly. [AWS Marketplace: Semaphore UI ](https://aws.amazon.com/marketplace/pp/prodview-5noeat2jipwca?sr=0-1&ref_=beagle&applicationId=AWSMPContessa)
 
 SSH into the Semaphore server:
 ------------------------------
@@ -71,13 +69,12 @@ Additonal Security Features:
 ----------------------------
 
 * Ossec Hids - https://decyphertek.readthedocs.io/en/latest/technotes/OSSEC/
-* Crowdsec IPS - https://decyphertek.readthedocs.io/en/latest/technotes/Crowdsec/
 * UFW Host Firewall - https://decyphertek.readthedocs.io/en/latest/technotes/UFW/
 * Auditd Logging - https://decyphertek.readthedocs.io/en/latest/technotes/Auditd/
+* Rsyslog - https://www.rsyslog.com/doc/index.html
 * Automated Updates - Update script upon first boot and at 3am daily.
 
 References:
 ------------
 
-* https://www.semui.co/
-* https://docs.semui.co/
+* https://docs.semaphoreui.com/
