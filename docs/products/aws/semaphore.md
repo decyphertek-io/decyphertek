@@ -66,8 +66,14 @@ Troubleshooting:
 * Your passwords are in /home/semaphore/passwords.txt - cat /home/semaphore/passwords.txt
 * Make sure you setup , projects , Environment , ssh key , inventory , repository , and task . 
 * Ensure public ssh key is on the target server & there is a route, so Ansible Sempahore can run properly.
-* Manage semaphore from systemd - sudo systemctl status semaphore
-* Manage nginx from systemd - sudo systemctl status nginx
+* Manage semaphore from systemd:
+```
+sudo systemctl status semaphore
+```
+* Manage nginx from systemd:
+```
+sudo systemctl status nginx
+```
 
 Additonal Security Features:
 ---------------------------
