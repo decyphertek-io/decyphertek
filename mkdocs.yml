@@ -45,7 +45,6 @@ nav:
         - OpenCTI: products/azure/opencti.md
         - OpenSearch: products/azure/opensearch.md
         - OpenVas: products/azure/openvas.md
-        - Pritunl VPN Server: products/azure/pritunl-instructions.md
         - Rocky 9 Web Desktop: products/azure/rocky9-web-desktop.md
         - Semaphore UI: products/azure/semaphore-ui.md
         - SonarQube CE: products/azure/sonarqube-ce.md
