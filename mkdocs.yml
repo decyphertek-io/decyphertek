@@ -28,7 +28,7 @@ nav:
         - DFIR IRIS: products/aws/dfir-iris.md
         - Misp: products/aws/misp.md
         - Mitre Caldera V5: products/aws/caldera.md
-        - Odoo 17 CE: products/aws/odoo.md
+        - Odoo 18 CE: products/aws/odoo.md
         - OpenCTI: products/aws/opencti.md
         - OpenVas: products/aws/openvas.md
         - Semaphore: products/aws/semaphore.md

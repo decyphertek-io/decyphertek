@@ -75,7 +75,7 @@ sudo systemctl status semaphore
 sudo systemctl status nginx
 ```
 
-Additonal Security Features:
+Security Features:
 ---------------------------
 * Ossec Hids - https://decyphertek.readthedocs.io/en/latest/technotes/OSSEC/
 * UFW Host Firewall - https://decyphertek.readthedocs.io/en/latest/technotes/UFW/
