@@ -1,9 +1,19 @@
-Odoo is an open source ERP & CRM server. Manage all aspects of your business with Odoo, including Wordpress, Ecommerce, Inventroy managment, POS, etc. [AWS Marketplace: Odoo ](https://aws.amazon.com/marketplace/pp/prodview-rq7r2an4ojrtw?sr=0-9&ref_=beagle&applicationId=AWSMPContessa)
+Odoo is an open source ERP & CRM server. Manage all aspects of your business with Odoo, including Wordpress, Ecommerce, Inventroy managment, POS, elearning platform, and many business applications to choose from.[AWS Marketplace: Odoo 17 CE ](https://aws.amazon.com/marketplace/pp/prodview-rq7r2an4ojrtw?sr=0-9&ref_=beagle&applicationId=AWSMPContessa)
 
-SSH Into Your Server:
----------------------
-* Linux + MAC - add .pem key to ~/.ssh/id_rsa > change permisisons > chmod 400 id_rsa
-* ssh adminotaur@ip-of-server 
+
+Note:
+-----
+Please be aware that it can take 5-10 minutes for the system to be accessible. 
+
+SSH Into the server:
+--------------------
+* Linux + MAC - add .pem key to 
+```
+~/.ssh/id_rsa
+# change permisisons
+chmod 400 id_rsa
+ssh semaphore@ip-of-server
+```
 * If using putty or mobaxterm make sure to convert .pem using puttygen.
 
 Login to Odoo:
