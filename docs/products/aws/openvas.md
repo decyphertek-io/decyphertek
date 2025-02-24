@@ -3,8 +3,11 @@ The OpenVAS GVM Vulnerability Scanner is an advanced, open-source security tool 
 
 OpenVAS GVM Login:
 ------------------
-* ssh into your server: ssh kali@ip-of-server
-* Run from Terminal to find your instance id - curl -s http://169.254.169.254/latest/meta-data/instance-id
+* ssh into your server: ssh adminotaur@ip-of-server
+* Run from Terminal:
+```
+cat password.txt
+```
 * Recommended: Update gvm feeds ( Takes a while ) :
 ```
 sudo gvm-feed-update
@@ -13,7 +16,7 @@ sudo gvm-feed-update
 ```
 https://ip-of-server
 username: admin 
-paswword: instance id
+paswword: SSH > From Terminal > cat password.txt
 ```
 
 OpenVas Basics:
@@ -41,12 +44,12 @@ sudo gvm-start -h
 ```
 
 Security Features:
-------------------
+---------------------------
 * Ossec Hids - https://decyphertek.readthedocs.io/en/latest/technotes/OSSEC/
-* Crowdsec IPS - https://decyphertek.readthedocs.io/en/latest/technotes/Crowdsec/
 * UFW Host Firewall - https://decyphertek.readthedocs.io/en/latest/technotes/UFW/
 * Auditd Logging - https://decyphertek.readthedocs.io/en/latest/technotes/Auditd/
-* Automated Updates - Update script upon first boot and at 1am daily.
+* Rsyslog - https://www.rsyslog.com/doc/index.html
+* Automated Updates - Update script upon first boot and at 3am daily.
 
 References:
 ------------
