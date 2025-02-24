@@ -3,7 +3,10 @@ The OpenVAS GVM Vulnerability Scanner is an advanced, open-source security tool 
 
 OpenVAS GVM Login:
 ------------------
-* ssh into your server: ssh adminotaur@ip-of-server
+* ssh into your server: 
+```
+ssh adminotaur@ip-of-server
+```
 * Run from Terminal:
 ```
 cat password.txt
