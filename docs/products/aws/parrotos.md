@@ -4,16 +4,16 @@ Parrot OS is an open source penetration testing platform based on Debian, design
 ParrotOS Web Desktop Login:
 ---------------------------
 * ssh into your server: ssh parrot@ip-of-server
-* Run from Terminal to find your instance id:
+* Run from Terminal to retireve your password:
 ```
-curl -s http://169.254.169.254/latest/meta-data/instance-id 
+cat password.txt 
 ```
 * Go to your browser:
 ```
 https://ip-of-server:6080/vnc.html 
 ```
-* Login with your instance id
-* Left side tab > Select full screen + see additonal options.
+* Login with the password fund form password.txt
+* Left side tab > Select full screen > Also observe the toolbar options.
 * Note: By default there is no security tools installed , due to AWS AMI approval policies.
 * Everything Toolset: 
 ```
