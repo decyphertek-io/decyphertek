@@ -1,13 +1,19 @@
-Parrot OS is an open source Penetration testing platform based on debian. You can access Parrot OS from your web browser and begin to assess your environment. [AWS Marketplace: ParrotOS Web Desktop ](https://aws.amazon.com/marketplace/pp/prodview-q5skrk5xt3jpy?sr=0-8&ref_=beagle&applicationId=AWSMPContessa)
+Parrot OS is an open source penetration testing platform based on Debian, designed for security professionals and developers. It provides a comprehensive suite of tools for vulnerability assessment, digital forensics, and privacy protection. Parrot OS can be accessed directly from your web browser via noVNC. [AWS Marketplace: ParrotOS Web Desktop ](https://aws.amazon.com/marketplace/pp/prodview-q5skrk5xt3jpy?sr=0-8&ref_=beagle&applicationId=AWSMPContessa)
 
 
 ParrotOS Web Desktop Login:
 ---------------------------
 * ssh into your server: ssh parrot@ip-of-server
-* Run from Terminal to find your instance id - curl -s http://169.254.169.254/latest/meta-data/instance-id 
-* Go to your browser - https://ip-of-server:6080/vnc.html 
+* Run from Terminal to find your instance id:
+```
+curl -s http://169.254.169.254/latest/meta-data/instance-id 
+```
+* Go to your browser:
+```
+https://ip-of-server:6080/vnc.html 
+```
 * Login with your instance id
-* Left side tab - Select full screen + see additonal options.
+* Left side tab > Select full screen + see additonal options.
 * Note: By default there is no security tools installed , due to AWS AMI approval policies.
 * Everything Toolset: 
 ```
