@@ -160,6 +160,7 @@ nav:
         - Internet in A Box: technotes/Internet-In-A-Box.md 
         - Jenkins: technotes/Jenkins.md 
         - Jupyterhub: technotes/Jupyterhub.md 
+        - Kasm Workspaces CE technotes/kasm.md
         - Keycloak: technotes/Keycloak.md 
         - Kubernetes: technotes/Kubernetes.md 
         - Kubesphere: technotes/KubeSphere.md 
