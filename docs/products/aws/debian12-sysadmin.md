@@ -25,7 +25,6 @@ sudo passwd admin
 vnpasswd
 sudo systemctl daemon-reload 
 sudo systemctl restart tigervnc
-
 ```
 * Enjoy
 
