@@ -24,7 +24,7 @@ nav:
         - Flatcar Basics: products/aws/flatcar-security.md
         - Debian 12 Sysadmin Web Desktop: products/aws/debian12-sysadmin.md
         - Kali Linux Web Desktop: products/aws/kali.md
-        - ParrotOS Web Desktop: products/aws/parrotos.md
+        - ParrotSec Web Desktop: products/aws/parrotos.md
         - DFIR IRIS: products/aws/dfir-iris.md
         - Misp: products/aws/misp.md
         - Mitre Caldera V5: products/aws/caldera.md

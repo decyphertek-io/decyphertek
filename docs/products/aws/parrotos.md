@@ -1,4 +1,4 @@
-Parrot OS is an open source penetration testing platform based on Debian, designed for security professionals and developers. It provides a comprehensive suite of tools for vulnerability assessment, digital forensics, and privacy protection. Parrot OS can be accessed directly from your web browser via noVNC. [AWS Marketplace: ParrotOS Web Desktop ](https://aws.amazon.com/marketplace/pp/prodview-q5skrk5xt3jpy?sr=0-8&ref_=beagle&applicationId=AWSMPContessa)
+ParrotSec is an open source penetration testing platform based on Debian, designed for security professionals and developers. It provides a comprehensive suite of tools for vulnerability assessment, digital forensics, and privacy protection. Parrot OS can be accessed directly from your web browser via noVNC. [AWS Marketplace: ParrotOS Web Desktop ](https://aws.amazon.com/marketplace/pp/prodview-q5skrk5xt3jpy?sr=0-8&ref_=beagle&applicationId=AWSMPContessa)
 
 
 ParrotOS Web Desktop Login:
