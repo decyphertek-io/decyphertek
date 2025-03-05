@@ -34,9 +34,20 @@ Troubleshooting:
 ----------------
 * AWS Basics - https://decyphertek.readthedocs.io/en/latest/products/aws-basics/ 
 * Make sure you are accessing https://ip-of-server:6080/vnc.html 
-* Your password is you instance ID, from terminal run - curl -s http://169.254.169.254/latest/meta-data/instance-id 
-* Forgot your password, you can change it. run form terminal - vncpasswd , sudo systemctl daemon-reload , sudo systemctl restart tigervnc
-* If noVNC is not working, run from terminal - sudo systemctl restart novnc
+* Your password is found at /home/admin/password.txt :
+```
+cat /home/admin/password.txt
+```
+* Forgot your password, you can change it. run form terminal:
+```
+vncpasswd
+sudo systemctl daemon-reload
+sudo systemctl restart tigervnc
+```
+* If noVNC is not working, run from terminal:
+```
+sudo systemctl restart novnc
+```
 
 Security Features:
 ------------------
