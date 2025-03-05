@@ -12,7 +12,7 @@ cat password.txt
 ```
 https://ip-of-server:6080/vnc.html 
 ```
-* Login with the password fund form password.txt
+* Login with the password found at home/parrot/password.txt
 * Left side tab > Select full screen > Also observe the toolbar options.
 * Note: By default there is no security tools installed , due to AWS AMI approval policies.
 * Everything Toolset: 
