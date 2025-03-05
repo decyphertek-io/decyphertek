@@ -18,7 +18,7 @@ https://ip-of-server:6080/vnc.html
 ```
 * Login with your password found at /home/kali/password.txt
 * Left side tab - Select full screen + see additonal options.
-* Note: By defualt there is no security tools installed , due to AWS AMI apporval policies.
+* Note: By default there is no security tools installed , due to AWS AMI apporval policies.
 * Default Toolset: 
 ```
 sudo apt install kali-linux-default
