@@ -19,8 +19,7 @@ cat password.txt
 ```
 # to set admin password
 sudo passwd admin
-
-````
+```
 * Optional: Update vnc password: 
 ```
 vnpasswd
