@@ -10,13 +10,13 @@ ssh kali@ip-of-server
 ```
 * Run from Terminal to find your instance id : 
 ```
-curl -s http://169.254.169.254/latest/meta-data/instance-id 
+cat password.txt
 ```
 * Go to your browser: 
 ```
 https://ip-of-server:6080/vnc.html 
 ```
-* Login with your instance id
+* Login with your password found at /home/kali/password.txt
 * Left side tab - Select full screen + see additonal options.
 * Note: By defualt there is no security tools installed , due to AWS AMI apporval policies.
 * Default Toolset: 
@@ -27,7 +27,6 @@ sudo apt install kali-linux-default
 ```
 sudo apt install kali-linux-everything
 ```
-* Note: Avoid installing any of the desktop meta packages as it modifies grub and breaks the system. You already have xfc4 desktop.
 * Note: If your desktop locks when logged into nvnc, you will need to create a kali password: 
 ```
 sudo passwd kali
