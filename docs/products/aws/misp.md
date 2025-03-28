@@ -38,8 +38,8 @@ Password: cat ~/.docker/.env | grep ADMIN_PASSWORD
 vim ~/.docker/.env 
 BASE_URL=your-server-IP 
 cd .docker 
-docker-compose down 
-docker-compose up -d
+/opt/bin/docker-compose down 
+/opt/bin/docker-compose up -d
 ```
 
 Portainer - Manage Docker:
