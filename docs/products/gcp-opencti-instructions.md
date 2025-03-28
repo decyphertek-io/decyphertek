@@ -13,14 +13,20 @@ Note:
 
 SSH Into the server:
 --------------------
-* Utilize Google SSH Console or setup ssh keys or password.
+* Utilize OS-Login OR add ssh keys via security & Access > SSH Keys > ssh-rsa KEY core
+```
+ssh core@ip-of-server
+# OR: If using OS Login
+sudo su core
+cd ~
+```
 
 Passwords - DB AND/OR User:
 ----------------------------
 * ssh into server:
 ```
 ssh core@ip-of-server
-sudo cat /home/core/.docker/.env
+cat /home/core/.docker/.env
 ```
 * This will display the randomly generated passwords for DB AND/OR User. 
 
@@ -108,7 +114,6 @@ Security:
 References:
 ------------
 * https://docs.docker.com/
-* https://docs.portainer.io/
 * https://docs.opencti.io/latest/
 
 
