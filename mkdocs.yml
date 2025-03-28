@@ -68,9 +68,6 @@ nav:
         - Mitre Caldera V5: 
             - Instructions: products/gcp-caldera-instructions.md
             - EULA: products/gcp-caldera-eula.md
-        - N8N:
-            - Instructions: products/gcp-n8n-instructions.md
-            - EULA: products/gcp-n8n-eula.md
         - Node-RED:
             - Instructions: products/gcp-nodered-instructions.md
             - EULA: products/gcp-nodered-eula.md
@@ -89,9 +86,6 @@ nav:
         - OpenVas:
             - Instructions: products/gcp-openvas-instructions.md
             - EULA: products/gcp-openvas-eula.md
-        - Pritunl:
-            - Instructions: products/gcp-pritunl-instructions.md
-            - EULA: products/gcp-pritunl-eula.md
         - Semaphore UI:
             - Instructions: products/gcp-semaphore-instructions.md
             - EULA: products/gcp-semaphore-eula.md
