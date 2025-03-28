@@ -5,7 +5,7 @@ essential tool for cybersecurity professionals seeking to streamline their intel
 
 Note:
 -----
-* Opencti Requires at least 4cpu + 16GB RAM + 20GB storage. e2-standard-4 vm or larger is required. 
+* Opencti Requires at least 4cpu + 16GB RAM + 80GB storage. e2-standard-4 vm or larger is required. 
 * Please allow up to 10 minutes for OpenCTI to be accessible. 
 * Dashboards takes up to 30-60 minutes to pull in data and populate the visuals.
 * I have set basic connectors - Mitre, CISA , Threafox , and some internal enrichment.
@@ -19,7 +19,8 @@ Passwords - DB AND/OR User:
 ----------------------------
 * ssh into server:
 ```
-sudo cat /home/adminotaur/.docker/.env
+ssh core@ip-of-server
+sudo cat /home/core/.docker/.env
 ```
 * This will display the randomly generated passwords for DB AND/OR User. 
 
@@ -29,7 +30,7 @@ OpenCTI CE:
 ```
 username: admin@opencti.io  
 Password: (From terminal run the following command):
-sudo cat /home/adminotaur/.docker/.env | grep OPENCTI_ADMIN_PASSWORD
+sudo cat /home/core/.docker/.env | grep OPENCTI_ADMIN_PASSWORD
 ```
 * Please be patient, If you access too early you may get a 502 gateway error, since OpenCTI isnt ready yet.
 
@@ -37,8 +38,8 @@ Add an OpenCTI connector:
 ------------------------
 * You can add a connector without bringing down Opencti and can just add to it. 
 ```
-sudo su adminotaur
-cd ~/.docker/connectors-6.1.12/external-import/{Connector-Name-HERE}
+sudo su core
+cd ~/.docker/connectors-6.5.7/external-import/{Connector-Name-HERE}
 vim docker-compose.yml
 ```
 * Change the following in Environment and add API Key / User / Password if required ( Add Container Name to easily manage / Troubleshoot . )
@@ -72,7 +73,7 @@ networks:
 ```
 * Once those parameters are changed and added run:
 ```
-docker compose up -d
+/opt/bin/docker-compose up -d
 ```
 * Check Connector > Login > Data > Ingestion > Connectors > look for the new connector
 * From Terminal: If you have issues run:
@@ -91,10 +92,19 @@ Portainer - Manage Docker:
 * Caution - Portainer can timeout if you dont create an account fast enough
 * If this happens you need to restart the container, ssh into the server:
 ```
-sudo su adminotaur
+sudo su core
 docker restart portainer
 ```
 * Once logged into portainer, click get started and select local. You can manage docker from here. 
+
+Security:
+---------
+* Auditd
+* Nginx 
+* Continerized
+* Iptables
+* Immutable OS
+* AutoUpdates
 
 References:
 ------------
