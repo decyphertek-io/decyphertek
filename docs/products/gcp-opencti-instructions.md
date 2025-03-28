@@ -99,12 +99,11 @@ docker restart portainer
 
 Security:
 ---------
-* Auditd
-* Nginx 
-* Continerized
-* Iptables
-* Immutable OS
-* AutoUpdates
+* Flatcar Linux - Immutable OS : https://www.flatcar.org/docs/latest/
+* Auditd Logging : https://decyphertek.readthedocs.io/en/latest/technotes/Auditd/
+* Nginx: https://nginx.org/en/docs/
+* Iptables Firewall : https://linux.die.net/man/8/iptables
+* Portainer: https://docs.portainer.io/
 
 References:
 ------------
