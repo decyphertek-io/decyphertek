@@ -11,7 +11,13 @@ Note:
 
 SSH Into the server:
 --------------------
-* Utilize Google SSH Console or setup ssh keys or password.
+* Utilize OS-Login OR add ssh keys via security & Access > SSH Keys > ssh-rsa KEY core
+```
+ssh core@ip-of-server
+# OR: If using OS Login
+sudo su core
+cd ~
+```
 
 Vaultwarden:
 ------------
@@ -31,18 +37,19 @@ https://ip-of-server:9443
 * Follow the instructions to create a new admin account. 
 * Caution - Portainer can timeout if you dont create an account fast enough, if this happens ssh into your server & run:
 ```
-sudo su adminotaur
+sudo su core
 cd ~
 docker restart portainer
 ```
 * Once logged into portainer, click get started and select local. You can manage docker from here. 
 
-Security Features:
---------------------------
-* Crowdsec IPS - https://decyphertek.readthedocs.io/en/latest/technotes/Crowdsec/
-* UFW Host Firewall - https://decyphertek.readthedocs.io/en/latest/technotes/UFW/
-* Auditd Logging - https://decyphertek.readthedocs.io/en/latest/technotes/Auditd/
-* Automated Updates - Update script upon first boot and at 3am daily.
+Security:
+---------
+* Flatcar Linux - Immutable OS : https://www.flatcar.org/docs/latest/
+* Auditd Logging : https://decyphertek.readthedocs.io/en/latest/technotes/Auditd/
+* Nginx: https://nginx.org/en/docs/
+* Iptables Firewall : https://linux.die.net/man/8/iptables
+* Portainer: https://docs.portainer.io/
 
 References:
 -------------
