@@ -33,6 +33,17 @@ docker restart portainer
 ```
 * Once logged into portainer, click get started and select local. You can manage docker from here. 
 
+Docker - Update Containers: 
+---------------------------
+* Caution: Make sure to back up any data and test the update in a staging environment before running these commands on a production server.
+* ssh into the server 
+```
+cd .docker
+/opt/bin/docker-compose down
+/opt/bin/docker-compose pull
+/opt/bin/docker-compose up -d
+```
+
 Manage Flatcar Linux: 
 ---------------------
 * Optional: Manaully update Flatcar. Updates will happen automatically. 
