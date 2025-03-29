@@ -3,7 +3,13 @@ Odoo is an open source ERP & CRM server. Manage all aspects of your business wit
 
 SSH Into the server:
 --------------------
-* Utilize Google SSH Console or setup ssh keys or password.
+* Utilize OS-Login OR add ssh keys via security & Access > SSH Keys > ssh-rsa KEY core
+```
+ssh adminotaur@ip-of-server
+# OR: If using OS Login
+sudo su adminotaur
+cd ~
+```
 
 Login to Odoo:
 ---------------
@@ -95,12 +101,17 @@ sudo systemctl restart apache2
 Security Features:
 ------------------
 * Auditd - https://decyphertek.readthedocs.io/en/latest/technotes/Auditd/
-* Crowdsec - https://decyphertek.readthedocs.io/en/latest/technotes/Crowdsec/
+* OSSEC HIDS - https://decyphertek.readthedocs.io/en/latest/technotes/OSSEC/
 * UFW - https://decyphertek.readthedocs.io/en/latest/technotes/UFW/
 * Apache - https://httpd.apache.org/docs/
 * Modsecurity - https://github.com/owasp-modsecurity/ModSecurity/wiki/Reference-Manual-(v2.x)
 * Automated Updates - Crontab runs at reboot and at 3am every morning.
+* Security Reports:
+```
+# Daily Security report
+sudo cat /var/log/decyphertek/security-report-DATE
+```
 
 References:
 -----------
-* https://www.odoo.com/documentation/17.0/
+* https://www.odoo.com/documentation/18.0/
