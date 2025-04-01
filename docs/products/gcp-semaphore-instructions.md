@@ -9,7 +9,13 @@ Note:
 
 SSH Into the server:
 --------------------
-* Utilize Google SSH Console or setup ssh keys or password.
+* Utilize OS-Login OR add ssh keys via security & Access > SSH Keys > ssh-rsa KEY core
+```
+ssh adminotaur@ip-of-server
+# OR: If using OS Login
+sudo su adminotaur
+cd ~
+```
 
 Semaphore login & password:
 ------------------------------
@@ -142,12 +148,18 @@ sudo systemctl status semaphore
 sudo systemctl status nginx
 ```
 
-Additonal Security Features:
-----------------------------
-* Crowdsec IPS - https://decyphertek.readthedocs.io/en/latest/technotes/Crowdsec/
-* UFW Host Firewall - https://decyphertek.readthedocs.io/en/latest/technotes/UFW/
-* Auditd Logging - https://decyphertek.readthedocs.io/en/latest/technotes/Auditd/
-* Automated Updates - Update script upon first boot and at 3am daily.
+Security Features:
+------------------
+* Auditd - https://decyphertek.readthedocs.io/en/latest/technotes/Auditd/
+* OSSEC HIDS - https://decyphertek.readthedocs.io/en/latest/technotes/OSSEC/
+* UFW - https://decyphertek.readthedocs.io/en/latest/technotes/UFW/
+* nginx - https://nginx.org/en/docs/
+* Automated Updates - Crontab runs at 3am UTC every morning.
+* Security Reports:
+```
+# Daily Security report
+sudo cat /var/log/decyphertek/security-report-DATE
+```
 
 References:
 ------------
