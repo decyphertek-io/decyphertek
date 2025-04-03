@@ -11,9 +11,9 @@ SSH Into the server:
 --------------------
 * Utilize OS-Login OR add ssh keys via security & Access > SSH Keys > ssh-rsa KEY core
 ```
-ssh adminotaur@ip-of-server
+ssh semaphore@ip-of-server
 # OR: If using OS Login
-sudo su adminotaur
+sudo su semaphore
 cd ~
 ```
 
