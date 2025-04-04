@@ -1,9 +1,9 @@
-Odoo is an open source ERP & CRM server. Manage all aspects of your business with Odoo, including Website, Ecommerce, Inventory managment, POS, etc. [GCP Marketplace: Odoo 17 CE ](https://console.cloud.google.com/marketplace/product/server-build-415714/odoo-17-ce)
+Odoo is an open source ERP & CRM server. Manage all aspects of your business with Odoo, including Website, Ecommerce, Inventory managment, POS, etc. [GCP Marketplace: Odoo 18 CE ](https://console.cloud.google.com/marketplace/product/server-build-415714/odoo-18-ce)
 
 
 SSH Into the server:
 --------------------
-* Utilize OS-Login OR add ssh keys via security & Access > SSH Keys > ssh-rsa KEY core
+* Utilize OS-Login OR add ssh keys via security & Access > SSH Keys > ssh-rsa KEY adminotaur
 ```
 ssh adminotaur@ip-of-server
 # OR: If using OS Login
@@ -103,13 +103,14 @@ Security Features:
 * Auditd - https://decyphertek.readthedocs.io/en/latest/technotes/Auditd/
 * OSSEC HIDS - https://decyphertek.readthedocs.io/en/latest/technotes/OSSEC/
 * UFW - https://decyphertek.readthedocs.io/en/latest/technotes/UFW/
+* Rsyslog - https://www.rsyslog.com/doc/index.html
 * Apache - https://httpd.apache.org/docs/
 * Modsecurity - https://github.com/owasp-modsecurity/ModSecurity/wiki/Reference-Manual-(v2.x)
 * Automated Updates - Crontab runs at reboot and at 3am every morning.
 * Security Reports:
 ```
 # Daily Security report
-sudo cat /var/log/decyphertek/security-report-DATE
+sudo cat /var/log/decyphertek/security_report*
 ```
 
 References:

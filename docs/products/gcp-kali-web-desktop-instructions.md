@@ -1,5 +1,16 @@
 Kali Linux is an open source Penetration testing platform based on debian. You can access Kali Linux 
-from your web browser and begin to assess your environment.
+from your web browser and begin to test and secure your environment. [GCP Marketplace: Kali Linux Web Desktop ](https://console.cloud.google.com/marketplace/product/server-build-415714/kali-linux-web-desktop)
+
+
+SSH Into the server:
+--------------------
+* Utilize OS-Login OR add ssh keys via security & Access > SSH Keys > ssh-rsa KEY adminotaur
+```
+ssh adminotaur@ip-of-server
+# OR: If using OS Login
+sudo su adminotaur
+cd ~
+```
 
 Kali Linux Web Desktop Login:
 ------------------------------
@@ -54,12 +65,18 @@ sudo systemctl restart tigervnc
 sudo systemctl restart novnc
 ```
 
-Additonal Security Features:
-----------------------------
-* Crowdsec IPS - https://decyphertek.readthedocs.io/en/latest/technotes/Crowdsec/
-* UFW Host Firewall - https://decyphertek.readthedocs.io/en/latest/technotes/UFW/
-* Auditd Logging - https://decyphertek.readthedocs.io/en/latest/technotes/Auditd/
-* Automated Updates - Update script upon first boot and at 3am daily.
+Security Features:
+------------------
+* Auditd - https://decyphertek.readthedocs.io/en/latest/technotes/Auditd/
+* OSSEC HIDS - https://decyphertek.readthedocs.io/en/latest/technotes/OSSEC/
+* UFW - https://decyphertek.readthedocs.io/en/latest/technotes/UFW/
+* Rsyslog - https://www.rsyslog.com/doc/index.html
+* Automated Updates - Crontab runs at first boot and at 3am every morning.
+* Security Reports:
+```
+# Daily Security report
+sudo cat /var/log/decyphertek/security_report*
+```
 
 References:
 ------------
