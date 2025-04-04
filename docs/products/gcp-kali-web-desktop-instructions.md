@@ -1,14 +1,13 @@
-Kali Linux is an open source Penetration testing platform based on debian. You can access Kali Linux 
-from your web browser and begin to test and secure your environment. [GCP Marketplace: Kali Linux Web Desktop ](https://console.cloud.google.com/marketplace/product/server-build-415714/kali-linux-web-desktop)
+Kali Linux is an open source Penetration testing platform based on debian. You can access Kali Linux from your web browser and begin to test and secure your environment. [GCP Marketplace: Kali Linux Web Desktop ](https://console.cloud.google.com/marketplace/product/server-build-415714/kali-linux-web-desktop)
 
 
 SSH Into the server:
 --------------------
-* Utilize OS-Login OR add ssh keys via security & Access > SSH Keys > ssh-rsa KEY adminotaur
+* Utilize OS-Login OR add ssh keys via security & Access > SSH Keys > ssh-rsa KEY kali
 ```
-ssh adminotaur@ip-of-server
+ssh kali@ip-of-server
 # OR: If using OS Login
-sudo su adminotaur
+sudo su kali
 cd ~
 ```
 
