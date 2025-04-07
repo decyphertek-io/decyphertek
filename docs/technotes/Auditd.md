@@ -8,7 +8,9 @@ Install
 ```
 sudo apt install -y auditd audispd-plugins
 sudo su -c "curl 'https://raw.githubusercontent.com/decyphertek-io/ansible/main/roles/auditd/files/audit.rules' >> /etc/audit/rules.d/audit.rules"
+echo "kernel.audit_backlog_limit=8192" | sudo tee -a /etc/sysctl.conf
 sudo systemctl enable auditd
+sudo systemctl start auditd
 sudo systemctl restart auditd
 sudo systemctl status auditd
 ```
