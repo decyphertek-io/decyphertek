@@ -60,6 +60,10 @@ Optional > Wizard:
 * To customize your settings with help from the Wizard.
 * System > Wizard > next > Choose your desired Settings.
 
+Optional > Enable SSH Access:
+-----------------------------
+* Work In progress......
+
 Optional > Dedicated Admin User, no root:
 ---------------------------------------
 Work in progress....
