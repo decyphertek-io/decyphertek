@@ -48,8 +48,12 @@ https://IP-OF-SERVER
 Username: root
 Password: What you set in option 3.
 ```
-* Enable MFA > System > Access > Users > Edit > OTP Feed > Select Gear ICOn > Save OTP via QR Code or plain Text Code.
-* Enable SSH > 
+
+Enable MFA:
+-----------
+* Create a Local MFA Server: System > Servers > Add > Description = MFA > Type = Local + Timebased One Time Password > Save 
+* Generate USER OTP: System > Access > Users > Edit > OTP Feed > Select Gear ICOn > Save OTP via QR Code or plain Text Code.
+* Test MFA Access: System > Tester > Select : Authentocation Server = MFA > Enter username > Password = OTP CODE + Password ( EX:123pass )
 
 Optional: Dedicated Admin User, no root:
 ---------------------------------------
