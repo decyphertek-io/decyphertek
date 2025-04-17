@@ -15,8 +15,24 @@ Login: root
 Password:
 ```
 * Once in the serial console as root, there should be an opnsense-shell menu
-* Select Option 3: Set the root password 
-* Select Option 2: Setup IP , to regenerate new SSl certs
+* Select Option 3: Reset the root password 
+```
+Enter an option: 3
+The root user login behaviour will be restored to its defaults.
+Do you want to proceed? [y/N]: Y
+Type a new password: 
+Confirm new password: 
+```
+* Select Option 2: Set interface IP address 
+```
+# The purpose is to regenerate the HTTPS certs, to secure access. 
+Enter an option: 2
+Configure IPv4 address WAN interface via DHCP? [Y/n] Y
+Configure IPv6 address WAN interface via DHCP6? [Y/n] Y
+Do you want to change the web GUI protocol from HTTPS to HTTP? [y/N] N
+Do you want to generate a new self-signed web GUI certificate? [y/N] Y
+Restore web GUI access defaults? [y/N] N
+```
 * Select option 8: Enter the shell and run the following command:
 ```
 # This will enable the root acocunt for the WebGUI Login
