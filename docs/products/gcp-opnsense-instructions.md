@@ -33,7 +33,7 @@ Do you want to change the web GUI protocol from HTTPS to HTTP? [y/N] N
 Do you want to generate a new self-signed web GUI certificate? [y/N] Y
 Restore web GUI access defaults? [y/N] N
 ```
-* Select option 8: Enter the shell and run the following command:
+* Select option 8: Enter the shell to enable the root account to access the OPNsense Web Dashboard:
 ```
 Enter an option: 8
 root@OPNsense:~ # sed -i '' 's/<disabled>1<\/disabled>/<disabled>0<\/disabled>/' /conf/config.xml
