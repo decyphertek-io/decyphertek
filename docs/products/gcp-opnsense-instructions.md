@@ -71,6 +71,11 @@ Optional > Enable SSH Access:
 ```
 # If you need to generate an ssh key, Linux Example:
 ssh-keygen -t rsa -b 4096
+# To SSH In: ( root example )
+ssh -i keyname.pem root@IP-OF-SERVER
+# To OPNsense shel menu can only be luanched as root:
+# Bypass would be to add a dedicated admin to the wheel group, sudoers, and run sudo su. See next section.
+opnsense-shell
 ```
 
 Optional > Dedicated Admin User, no root:
