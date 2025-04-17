@@ -86,6 +86,9 @@ nav:
         - OpenVas:
             - Instructions: products/gcp-openvas-instructions.md
             - EULA: products/gcp-openvas-eula.md
+        - OPNsense:
+            - Instructions: products/gcp-opnsense-instructions.md
+            - EULA: products/gcp-opnsense-eula.md
         - Semaphore UI:
             - Instructions: products/gcp-semaphore-instructions.md
             - EULA: products/gcp-semaphore-eula.md
