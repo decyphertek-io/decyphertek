@@ -37,13 +37,19 @@ Restore web GUI access defaults? [y/N] N
 ```
 Enter an option: 8
 root@OPNsense:~ # sed -i '' 's/<disabled>1<\/disabled>/<disabled>0<\/disabled>/' /conf/config.xml
+root@OPNsense:~ # exit
 ```
+* Select Option 0 : To logout
 * You can now visit your IP address and login to the OPNsense Web Dashboard.
 ```
+# Can use Internal or External IP:
+# Accept Cert Warning
 https://IP-OF-SERVER
 Username: root
 Password: What you set in option 3.
 ```
+* Enable MFA > System > Access > Users > Edit > OTP Feed > Select Gear ICOn > Save OTP via QR Code or plain Text Code.
+* Enable SSH > 
 
 Optional: Dedicated Admin User, no root:
 ---------------------------------------
