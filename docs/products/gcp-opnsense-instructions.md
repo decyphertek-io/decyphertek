@@ -51,12 +51,13 @@ Password: What you set in option 3.
 
 Enable MFA:
 -----------
+* Proceed With CAUTION!! This can lock you out of the Webgui and the Serial Console, if done incorrectly. Please test.
+* To be safe , you can create a second Admin user to make sure your not locked out of the WebGUI & Can revert changes. 
 * Create a Local MFA Server: System > Servers > Add > Description = MFA > Type = Local + Timebased One Time Password > Save 
 * Generate USER OTP: System > Access > Users > Edit > OTP Feed > Select Gear ICOn > Save OTP via QR Code or plain Text Code.
 * Test MFA Access: System > Tester > Select : Authentocation Server = MFA > Enter username > Password = OTP CODE + Password ( EX:123pass )
 * Enable MFA Server: System > Settings > Administration > Scroll down to Authetnication > Server = MFA > Save 
 * Offical Test: Logout > Login again > username > Password: OTP+Password ( EX: 123pass )
-* If you get Locked out for some reason after setting up MFA, dont panic. You still have access to the serial console. 
 
 Optional > Wizard:
 ----------------
