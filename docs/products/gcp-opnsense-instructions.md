@@ -35,8 +35,8 @@ Restore web GUI access defaults? [y/N] N
 ```
 * Select option 8: Enter the shell and run the following command:
 ```
-# This will enable the root acocunt for the WebGUI Login
-sed -i '' 's/<disabled>1<\/disabled>/<disabled>0<\/disabled>/' /conf/config.xml
+Enter an option: 8
+root@OPNsense:~ # sed -i '' 's/<disabled>1<\/disabled>/<disabled>0<\/disabled>/' /conf/config.xml
 ```
 * You can now visit your IP address and login to the OPNsense Web Dashboard.
 ```
