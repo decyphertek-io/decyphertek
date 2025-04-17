@@ -55,7 +55,12 @@ Enable MFA:
 * Generate USER OTP: System > Access > Users > Edit > OTP Feed > Select Gear ICOn > Save OTP via QR Code or plain Text Code.
 * Test MFA Access: System > Tester > Select : Authentocation Server = MFA > Enter username > Password = OTP CODE + Password ( EX:123pass )
 
-Optional: Dedicated Admin User, no root:
+Optional > Wizard:
+----------------
+* To customize your settings with help from the Wizard.
+* System > Wizard > next > Choose your desired Settings.
+
+Optional > Dedicated Admin User, no root:
 ---------------------------------------
 Work in progress....
 
