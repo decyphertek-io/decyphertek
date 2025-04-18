@@ -65,6 +65,7 @@ Enable MFA:
 * Test MFA Access: System > Tester > Select : Authentocation Server = MFA > Enter username > Password = OTP CODE + Password ( EX:123pass )
 * Enable MFA Server: System > Settings > Administration > Scroll down to Authetnication > Server = MFA > Save 
 * Offical Test: Logout > Login again > username > Password: OTP+Password ( EX: 123pass )
+* When MFA is enable, the serial console requires the same password structure > Password: OTP+Password ( EX: 123pass )
 
 Optional > Wizard:
 ----------------
