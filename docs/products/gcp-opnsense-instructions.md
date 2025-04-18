@@ -80,7 +80,7 @@ Optional > Enable SSH Access:
 ssh-keygen -t rsa -b 4096
 # To SSH In: ( root example )
 ssh -i keyname.pem root@IP-OF-SERVER
-# To OPNsense shel menu can only be luanched as root:
+# To OPNsense shell menu can only be luanched as root:
 # Bypass would be to add a dedicated admin to the wheel group, sudoers, and run sudo su. See next section.
 opnsense-shell
 ```
