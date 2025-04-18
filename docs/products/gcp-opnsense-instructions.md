@@ -74,7 +74,7 @@ Optional > Wizard:
 Optional > Enable SSH Access:
 -----------------------------
 * Enable SSH : System > Settings > Secure Shell > Click Enable Secure Shell > If Using the root user click Permit root user login > save
-* Add SSH Keys: System > Access > Users > Edit User > Login Shell = /bin/csh/ > authroized keys ( .pub ) = rsa SSHKEY NAME > save 
+* Add SSH Keys: System > Access > Users > Edit User > Login Shell = /bin/csh > authroized keys ( .pub ) = rsa SSHKEY NAME > save 
 ```
 # If you need to generate an ssh key, Linux Example:
 ssh-keygen -t rsa -b 4096
@@ -87,7 +87,37 @@ opnsense-shell
 
 Optional > Dedicated Admin User, no root:
 ---------------------------------------
-Work in progress....
+* Create a new admin User: System > Access > Users > ADD New USER
+```
+# Example
+Username: adminotaur
+Password: Decyphertek_01123581321345589
+Full Name: System Administrator
+Login shell: /bin/csh
+Group membership: admins
+Privilges: Privileges
+OTP Seed: Show > Select Gear icon > Generates a new OTP Code > Save
+Authorized Keys: rsa SSHKEY NAME
+> SAVE
+```
+* Test Login : System > Tester > Select : Authentocation Server = MFA > Enter username > Password = OTP CODE + Password ( EX:123pass )
+* Test SSH: ssh -i keyname.pem adminotaur@IP-OF-SERVER
+* Enter root serial console > Select option 8 shell OR ssh in as root:
+```
+# Run this command to add user to the wheel group
+pw usermod adminotaur -G wheel
+# Run this command to add to the sudoers
+visudo
+# Add below the similar root account
+adminotaur ALL=(ALL) ALL
+```
+* Now test console access, once logged in run:
+```
+# This is bring up the interactive menu for the dedicated admin user.
+sudo su
+opnsense-shell
+```
+* Disable the root user: system > Access > users > Edit root > Check the Disabled box > Save
 
 References:
 -----------
