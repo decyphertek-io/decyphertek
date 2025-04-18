@@ -123,3 +123,4 @@ opnsense-shell
 References:
 -----------
 https://docs.opnsense.org/
+https://opnsense.org/legal-guidelines/
