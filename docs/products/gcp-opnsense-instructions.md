@@ -1,5 +1,12 @@
 OPNsense® Firewall/Router/VPN/IDPS is a powerful, open-source network security platform designed for comprehensive protection and management. It provides robust firewall capabilities, secure VPN connections, and advanced intrusion detection and prevention systems to safeguard your network infrastructure. [GCP Marketplace: OPNsense]()
 
+Note:
+-----
+* Serial Console Access is required.
+* Can securely access OPNsense from your account via Serial Console.
+* root doesnt have an inital password set. Requires setup. I have verbose instructions.
+* Please be patient and follow the instructions. 
+
 Remote Access:
 --------------
 * Please enable Serial Console > Launch VM > Click on VM > Edit > enable Remote Access: Enable connecting to serial ports > save
