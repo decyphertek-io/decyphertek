@@ -71,7 +71,7 @@ nav:
         - Node-RED:
             - Instructions: products/gcp-nodered-instructions.md
             - EULA: products/gcp-nodered-eula.md
-        - Odoo 17 CE:
+        - Odoo 18 CE:
             - Instructions: products/gcp-odoo-instructions.md
             - EULA: products/gcp-odoo-eula.md
         - OneDev:
