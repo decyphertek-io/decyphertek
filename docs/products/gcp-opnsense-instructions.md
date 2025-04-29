@@ -73,10 +73,15 @@ Do you want to proceed? [y/N]: Y
 * Select Option 3: Reset the root password 
 ```
 Enter an option: 3
+
 The root user login behaviour will be restored to its defaults.
+
 Do you want to proceed? [y/N]: Y
+
 Type a new password: 
 Confirm new password: 
+
+The root user has been reset successfully.
 ```
 * Select Option 2: Set interface IP address 
 ```
