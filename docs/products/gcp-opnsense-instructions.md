@@ -2,10 +2,26 @@ OPNsense® Firewall/Router/VPN/IDPS is a powerful, open-source network security 
 
 Note:
 -----
+* Two Network Interfaces are required.
 * Serial Console Access is required.
 * Can securely access OPNsense from your account via Serial Console.
 * root doesnt have an inital password set. Requires setup. I have verbose instructions.
 * Please be patient and follow the instructions. 
+
+Google VPC and Netwrok Interafce setup:
+---------------------------------------
+When using multiple network interfaces from an instance, each interface must attach to a subnet that is in a 
+different VPC network. You can't attach multiple network interfaces to the same subnet or to subnets that are 
+in the same VPC network.
+
+# Note: Subnets must be in the same region. 
+VPC Network > Create VPC Network > WAN-VPC & LAN-VPC ( OR use exisitng ones ) > create two subnets in the same region on both VPCs with different IP ranges. 
+* Enable Global Routing if you are communicating across multiple regions which uses Cloud VPN or Cloud Interconnect.
+* Note: select autosubnets will create 40+ subnets automaticly , custom subnets will not. 
+* Please use a different IP range for each subnet in each seperate VPC to avoid IP conflicts in the firewall. 
+* Also select Private Google Access for the LAN VPC to avoid it attaching public IPS. 
+* Optional: Hybrid Subnets allow you to communicate to an on premise subnet. 
+* When adding LAN, attached as the second network interface set external IP address to none. 
 
 Remote Access:
 --------------
@@ -22,6 +38,38 @@ Login: root
 Password:
 ```
 * Once in the serial console as root, there should be an opnsense-shell menu
+* Select Option 1: Assign Network Interfaces
+```
+Enter an option: 1
+
+Do you want to configure LAGGs now? [y/N]: N
+Do you want to configure VLANs now? [y/N]: N
+
+Valid interfaces are:
+
+vtnet0           xx:xx:xx:xx:xx:xx VirtIO Networking Adapter
+vtnet1           xx:xx:xx:xx:xx:xx VirtIO Networking Adapter
+
+If you do not know the names of your interfaces, you may choose to use
+auto-detection. In that case, disconnect all interfaces now before
+hitting 'a' to initiate auto detection.
+
+Enter the WAN interface name or 'a' for auto-detection: vtnet0
+
+Enter the LAN interface name or 'a' for auto-detection
+NOTE: this enables full Firewalling/NAT mode.
+(or nothing if finished): vtnet1
+
+Enter the Optional interface 1 name or 'a' for auto-detection
+(or nothing if finished): 
+
+The interfaces will be assigned as follows:
+
+WAN  -> vtnet0
+LAN  -> vtnet1
+
+Do you want to proceed? [y/N]: Y
+```
 * Select Option 3: Reset the root password 
 ```
 Enter an option: 3
@@ -119,6 +167,10 @@ sudo su
 opnsense-shell
 ```
 * Disable the root user: system > Access > users > Edit root > Check the Disabled box > Save
+
+Setup Firewall Rules:
+--------------------
+Work in Progress
 
 References:
 -----------
