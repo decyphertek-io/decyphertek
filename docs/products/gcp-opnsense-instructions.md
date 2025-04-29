@@ -80,10 +80,19 @@ Confirm new password:
 ```
 * Select Option 2: Set interface IP address 
 ```
-# The purpose is to regenerate the HTTPS certs, to secure access. 
 Enter an option: 2
+
+Available interfaces:
+
+1 - LAN (vtnet1 - static, track6)
+2 - WAN (vtnet0 - dhcp, dhcp6)
+
+Enter the number of the interface to configure: 2
+
 Configure IPv4 address WAN interface via DHCP? [Y/n] Y
+
 Configure IPv6 address WAN interface via DHCP6? [Y/n] Y
+
 Do you want to change the web GUI protocol from HTTPS to HTTP? [y/N] N
 Do you want to generate a new self-signed web GUI certificate? [y/N] Y
 Restore web GUI access defaults? [y/N] N
