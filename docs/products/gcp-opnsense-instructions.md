@@ -15,8 +15,7 @@ different VPC network. You can't attach multiple network interfaces to the same 
 in the same VPC network.
 
 # Note: Subnets must be in the same region. 
-VPC Network > Create VPC Network > WAN-VPC & LAN-VPC ( OR use exisitng ones ) > create two subnets in the same region on both VPCs with different IP ranges. 
-
+* VPC Network > Create VPC Network > WAN-VPC & LAN-VPC ( OR use exisitng ones ) > create two subnets in the same region on both VPCs with different IP ranges. 
 * Enable Global Routing if you are communicating across multiple regions which uses Cloud VPN or Cloud Interconnect.
 * Note: select autosubnets will create 40+ subnets automaticly , custom subnets will not. 
 * Please use a different IP range for each subnet in each seperate VPC to avoid IP conflicts in the firewall. 
