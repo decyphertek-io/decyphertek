@@ -70,19 +70,6 @@ LAN  -> vtnet1
 
 Do you want to proceed? [y/N]: Y
 ```
-* Select Option 3: Reset the root password 
-```
-Enter an option: 3
-
-The root user login behaviour will be restored to its defaults.
-
-Do you want to proceed? [y/N]: Y
-
-Type a new password: 
-Confirm new password: 
-
-The root user has been reset successfully.
-```
 * Select Option 2: Set interface IP address 
 ```
 Enter an option: 2
@@ -101,6 +88,19 @@ Configure IPv6 address WAN interface via DHCP6? [Y/n] Y
 Do you want to change the web GUI protocol from HTTPS to HTTP? [y/N] N
 Do you want to generate a new self-signed web GUI certificate? [y/N] Y
 Restore web GUI access defaults? [y/N] N
+```
+* Select Option 3: Reset the root password 
+```
+Enter an option: 3
+
+The root user login behaviour will be restored to its defaults.
+
+Do you want to proceed? [y/N]: Y
+
+Type a new password: 
+Confirm new password: 
+
+The root user has been reset successfully.
 ```
 * Select option 8: Enter the shell to enable the root account to access the OPNsense Web Dashboard:
 ```
