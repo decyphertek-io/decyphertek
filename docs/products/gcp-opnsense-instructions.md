@@ -62,7 +62,7 @@ Enable MFA:
 * To be safe , you can create a second Admin user to make sure your not locked out of the WebGUI & Can revert changes. 
 * Create a Local MFA Server: System > Servers > Add > Description = MFA > Type = Local + Timebased One Time Password > Save 
 * Generate USER OTP: System > Access > Users > Edit > OTP Feed > Select Gear ICOn > Save OTP via QR Code or plain Text Code.
-* Test MFA Access: System > Tester > Select : Authentocation Server = MFA > Enter username > Password = OTP CODE + Password ( EX:123pass )
+* Test MFA Access: System > Tester > Select : Authentication Server = MFA > Enter username > Password = OTP CODE + Password ( EX:123pass )
 * Enable MFA Server: System > Settings > Administration > Scroll down to Authetnication > Server = MFA > Save 
 * Offical Test: Logout > Login again > username > Password: OTP+Password ( EX: 123pass )
 * When MFA is enable, the serial console requires the same password structure > Password: OTP+Password ( EX: 123pass )
@@ -75,7 +75,7 @@ Optional > Wizard:
 Optional > Enable SSH Access:
 -----------------------------
 * Enable SSH : System > Settings > Secure Shell > Click Enable Secure Shell > If Using the root user click Permit root user login > save
-* Add SSH Keys: System > Access > Users > Edit User > Login Shell = /bin/csh > authroized keys ( .pub ) = rsa SSHKEY NAME > save 
+* Add SSH Keys: System > Access > Users > Edit User > Login Shell = /bin/csh > authorized keys ( .pub ) = rsa SSHKEY NAME > save 
 ```
 # If you need to generate an ssh key, Linux Example:
 ssh-keygen -t rsa -b 4096
