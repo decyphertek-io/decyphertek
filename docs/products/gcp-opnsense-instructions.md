@@ -271,9 +271,13 @@ Wireguard Roadwarrior Setup:
 * Create RFC1918 Networks Alias:
    - Firewall > Aliases > IP
    - Click Add (Red + button)
+   - Enabled : Checked
    - Name: RFC1918_Networks
    - Type: Network(s)
+   - Categories: VPN
+   # Make sure these are added seperatly and not saved as a block. Press Enter after adding each one. It will produce an error if not.
    - Content: 192.168.0.0/16 10.0.0.0/8 172.16.0.0/12
+   - Statistics: Optional
    - Description: Private IP ranges
    - Save
 
