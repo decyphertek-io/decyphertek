@@ -293,6 +293,7 @@ WireGuard Roadwarrior Setup:
    - Category: VPN
    - Description: Allow WireGuard VPN
    - Save
+   - Apply Changes
 
 * Create WireGuard Interface Rule (allows VPN to access LAN):
    - Firewall > Rules > WireGuardVPN
