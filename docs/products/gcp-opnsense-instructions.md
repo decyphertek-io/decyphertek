@@ -311,7 +311,7 @@ WireGuard Roadwarrior Setup:
 * Make sure you install wireguard-tools 
 - wireguard-tools - https://www.wireguard.com/install/
 
-* Troubleshooting :
+* Troubleshooting : ( From a Linux System )
 ```
 # Unable to access? Lets verify your not being blocked by a network or OPNsense firewall
 sudo nmap -Pn -sU -p 51820 PUBLIC-IP
@@ -324,7 +324,7 @@ Address = 10.10.10.2/32
 [Peer]
 PublicKey = xx+o3i0xx2HsoTeJ/TmvFwxxKX8mxxm/51Z92g58xxhE=
 Endpoint = 34.84.119.227:51820
-AllowedIPs = 10.0.1.0/24
+AllowedIPs = 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
 PersistentKeepalive = 27
 
 # Lets test the connection from the Linux Terminal
@@ -334,6 +334,15 @@ sudo wg-quick up test
 sudo wg show
 ping 10.10.10.1
 ping 10.0.1.1 (or your LAN gateway)
+
+# You can change Allowed IPS to 0.0.0.0/0, to pass all traffic through the VPN.
+sudo vim /etc/wireguard/test.conf
+AllowedIPs = 0.0.0.0/0
+# Save and exit
+sudo wg-quick down test
+sudo wg-quick up test
+# This should be the OPNsense server IP
+curl https://ifconfig.me
 ```
 
 Firewall Best Practice:
