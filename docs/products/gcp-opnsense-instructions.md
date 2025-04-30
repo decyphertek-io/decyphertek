@@ -288,7 +288,9 @@ WireGuard Roadwarrior Setup:
    - Protocol: UDP
    - Source: Any
    - Destination: WAN address
-   - Destination port: 51820
+   - Destination port: (other) 51820
+   - Log: Optional
+   - Category: VPN
    - Description: Allow WireGuard VPN
    - Save
 
