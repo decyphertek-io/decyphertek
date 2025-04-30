@@ -313,6 +313,7 @@ WireGuard Roadwarrior Setup:
 https://defguard.net/download/
 # If using Arch Linux
 yay -S defguard-client
+* Defguard App > Add Tunnel Wireguard > Import Config > Select: clientpeer.conf ( We made earlier and saved ).
 ```
 
 Firewall Best Practice:
