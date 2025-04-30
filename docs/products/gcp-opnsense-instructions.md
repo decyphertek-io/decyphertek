@@ -266,30 +266,28 @@ WireGuard Roadwarrior Setup:
   # EX: This allows all private IP traffic.
   - Allowed IPS: 10.10.10.0/24, 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
   - Keep Alive: 27 
+  - DNS Servers: 10.0.1.1 ( USE YOUR LAN DNS IP Gateway )
   - ( Copy and save the config locally as clientpeer.conf )
   - Select Apply 
 
 * Interface assignment:
    - Interfaces > Assignments
    - Select wg0 from dropdown, add description
-   - Click + to add it, then Save
+   - Click Red + to add it, then Save
    - Click on new interface under Interfaces menu
-   - Enable interface, check Lock
-   - Set IPv4/IPv6 Configuration Type to None
+      - Enable interface, Checkbox
+      - Set IPv4/IPv6 Configuration Type to None
    - Save and Apply changes
-   - Restart WireGuard: VPN > WireGuard > General (off/on)
 
 * MSS Clamping (normalization rules):
    - Firewall > Settings > Normalization
-   - Add rule for WireGuard Group
-   - Direction: Any, Protocol: any
-   - Source/Destination: any
-   - Max MSS: 1380 (40 bytes less than WireGuard MTU)
-   - Save
-
-* DNS settings:
-   - Add DNS server in client config:
-     DNS = 10.0.1.1 (or your LAN DNS server)
+   - Click Red + Button to add a new rule.
+      - Interface: Wireguard Group
+      - Direction: Any, Protocol: any
+      - Source/Destination: any
+      - Description: Wireguard Normalization
+      - Max MSS: 1380 (40 bytes less than WireGuard MTU)
+   - Save & Apply changes
 
 # WireGuard Firewll Rules
 * Create RFC1918 Networks Alias:
@@ -319,7 +317,7 @@ WireGuard Roadwarrior Setup:
    - Save
    - Apply Changes
 
-* Create WireGuard Interface Rule (allows VPN to access LAN):
+* Create WireGuard Interface Firewall Rule (allows VPN to access LAN):
    - Firewall > Rules > WireGuardVPN
    - Click Add (Red + button)
    - Action: Pass
