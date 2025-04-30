@@ -244,6 +244,7 @@ opnsense-shell
 
 WireGuard Roadwarrior Setup:
 ----------------------------
+```
 # https://docs.opnsense.org/manual/how-tos/wireguard-client.html
 * Create the WireGuard server on OPNsense
 - VPN > WireGuard > Instances > Add ( Red + Button ) :
@@ -329,7 +330,7 @@ WireGuard Roadwarrior Setup:
    - Description: Allow VPN to LAN
    - Save
    - Apply Changes
-
+```
 * Make sure you install wireguard-tools 
 - wireguard-tools - https://www.wireguard.com/install/
 
