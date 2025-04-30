@@ -254,11 +254,25 @@ Wireguard Roadwarrior Setup:
   # Make sure its different than the WAN & LAN Subnet CIDR Ranges.
   - Tunnel Address: 10.10.10.1/24
 
+
+# Requires a Linux terminal to generate the Wireguard private / public key
+# Can use the OPNsense terminal if you dont have access to linux. 
 * Create client peer configuration
 - VPN > WireGuard > Peers > Add ( Red Plus Button ) :
 - Configure with:
-  - Name: Client1
-  - Public Key: [Client's public key]
+  - Name: vpnclient
+  # To Generate a private / public key for the client
+  # OPNsense terminal EX:
+  ```
+root@OPNsense:~ # wg genkey | tee privatekey | wg pubkey > publickey
+root@OPNsense:~ # ls
+.cshrc          .login          .mailrc         .shrc           publickey
+.history        .login_conf     .profile        .vimrc
+.lesshst        .mail_aliases   .rnd            privatekey
+root@OPNsense:~ # cat publickey 
+  ```
+  - Public Key: ( Add output from the cat publickey output ) 
+  - Pre-shared Key: ( Click the gear ICON to generate one. )
   - Allowed IPs: 10.10.10.2/32
 
 * Set up interface assignment
