@@ -301,13 +301,17 @@ WireGuard Roadwarrior Setup:
    - Action: Pass
    - Protocol: Any
    - Source: Any
-   - Destination: LAN net 
+   - Destination: RFC1918_Networks,LAN net
    - Category: LAN
    - Description: Allow VPN to LAN
    - Save
-
-* Apply Changes (click Apply Changes button)
+   - Apply Changes
 ```
+
+Firewall Best Practice:
+----------------------
+
+
 
 TroubleShooting:
 ----------------
