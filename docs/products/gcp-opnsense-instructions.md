@@ -301,7 +301,8 @@ WireGuard Roadwarrior Setup:
    - Action: Pass
    - Protocol: Any
    - Source: Any
-   - Destination: LAN net (or your specific subnet: 10.0.1.0/24)
+   - Destination: LAN net 
+   - Category: LAN
    - Description: Allow VPN to LAN
    - Save
 
