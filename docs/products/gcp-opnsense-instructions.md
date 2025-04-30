@@ -314,6 +314,10 @@ https://defguard.net/download/
 # If using Arch Linux
 yay -S defguard-client
 * Defguard App > Add Tunnel Wireguard > Import Config > Select: clientpeer.conf ( We made earlier and saved ).
+* Once imported 
+- Tunnel Name: OPNsense WireGuard VPN
+- VPN Server Address:Port EX: > 33.77.119.284:51820
+- Add Tunnel
 ```
 
 Firewall Best Practice:
