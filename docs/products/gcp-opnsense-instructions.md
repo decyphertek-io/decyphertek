@@ -309,7 +309,7 @@ WireGuard Roadwarrior Setup:
 ```
 * Wireguard VPN Client GUI: I recommend Defguard, cross platform and open source, and supports Arch Linux as well. 
 ```
-# Can Download for Windows, MAC, and Debian Here. 
+# Can Download for Windows, MAC, and Debian Here. ( If using other linux distros, use the app image option. )
 https://defguard.net/download/
 # If using Arch Linux
 yay -S defguard-client
