@@ -41,6 +41,7 @@ Password:
 * Select option 8: Enter the shell to enable the root account to access the OPNsense Web Dashboard:
 ```
 Enter an option: 8
+# Make sure to copy the entire command >>>
 root@OPNsense:~ # sed -i '' 's/<disabled>1<\/disabled>/<disabled>0<\/disabled>/' /conf/config.xml
 root@OPNsense:~ # exit
 ```
