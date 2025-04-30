@@ -307,6 +307,10 @@ WireGuard Roadwarrior Setup:
    - Save
    - Apply Changes
 ```
+* Wireguard VPN Client GUI: I recommend Defguard, cross platform and open source. 
+```
+https://defguard.net/download/
+```
 
 Firewall Best Practice:
 ----------------------
