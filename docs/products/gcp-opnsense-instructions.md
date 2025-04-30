@@ -242,7 +242,46 @@ opnsense-shell
 ```
 * Disable the root user: system > Access > users > Edit root > Check the Disabled box > Save
 
-WireGuard Roadwarrior Setup:
+SSL VPN Road Warrior Setup:
+--------------------------
+```
+# https://docs.opnsense.org/manual/how-tos/sslvpn_client.html
+* Create Certificates:
+   - System > Trust > Authorities: Create CA (OPNsenseOpenVPNCA)
+   - System > Trust > Certificates: Create server certificate
+
+* Create VPN User:
+   - System > Access > Users: Add local user
+   - Generate user certificate with same CA
+
+* Add TOTP (Optional):
+   - System > Access > Servers: Add TOTP server
+   - Enable as authentication server
+
+* Configure OpenVPN:
+   - VPN > OpenVPN > Servers: Add server
+   - Use certificates created earlier
+   - Set VPN subnet (e.g., 192.168.10.0/24)
+   - Enable user authentication
+
+* Add Firewall Rules:
+   - WAN rule: Allow OpenVPN port (UDP 1194)
+   - OpenVPN rule: Allow VPN clients to internet
+   - Enable NAT for VPN clients
+
+* Export Client Config:
+   - VPN > OpenVPN > Client Export
+   - Select user and export for desired platform
+   - Install on client device (Windows/Android/etc.)
+
+* Connect:
+   - Use exported config in OpenVPN client
+   - Enter username/password (+ TOTP if enabled)
+   - Verify connection in OPNsense status page
+
+```
+
+WireGuard Road Warrior Setup:
 ----------------------------
 ```
 # https://docs.opnsense.org/manual/how-tos/wireguard-client.html
