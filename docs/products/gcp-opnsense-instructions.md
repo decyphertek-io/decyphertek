@@ -309,7 +309,8 @@ WireGuard Roadwarrior Setup:
 ```
 * Make sure you install wireguard-tools 
 - wireguard-tools - https://www.wireguard.com/install/
-* Troubelshooting :
+
+* Troubleshooting :
 ```
 # Unable to access? Lets verify your not being blocked by a network or OPNsense firewall
 sudo nmap -Pn -sU -p 51820 PUBLIC-IP
