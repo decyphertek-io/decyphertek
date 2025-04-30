@@ -241,20 +241,17 @@ opnsense-shell
 Wireguard Roadwarrior Setup:
 ----------------------------
 ```
-# WIREGUARD SPLIT TUNNELING SETUP
-
-# 1. Create the WireGuard server on OPNsense
-- Go to VPN → WireGuard → Instances
-- Click + to add new Instance
-- Configure with these settings:
-  - Name: WireGuardVPN
-  - Listen Port: 51820
-  - Tunnel Address: 10.10.10.1/24
-  - MTU: 1460 (Required for GCP)
+# Wireguard Split Tunneling Setup
+* Create the WireGuard server on OPNsense
+* VPN > WireGuard > Instances > Add ( Red Plus Button ) :
+  - Name: WireguardVPN
   - Generate keys with cogwheel icon
+  - Listen Port: 51820
+  # Make sure its different than the WAN & LAN Subnet CIDR Ranges.
+  - Tunnel Address: 10.10.10.1/24
 
-# 2. Create client peer configuration
-- Go to VPN → WireGuard → Peers
+* Create client peer configuration
+- VPN > WireGuard > Peers > Add ( Red Plus Button ) :
 - Click + to add new Peer
 - Configure with:
   - Name: Client1
