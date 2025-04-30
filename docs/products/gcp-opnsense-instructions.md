@@ -70,9 +70,26 @@ Password: What you set in option 3.
 * We need to set a firewall rule that allows WAN access before we enable the LAN feature.
 ```
 # Enable firewall so LAN can be enabled.
-Firewall > Rules > WAN > Add > Allow IN TCP 443 
-# Web Interface
-* Login > Dashboard > Interfaces > Assignment > Device vtnet1 > Description LAN > Add > Save 
+Login > Dashboard > Firewall > Rules > WAN > Add ( Red Plus Button ) :
+# Change the following ( Can also utilized Google Firewall to whitelist access to Web UI as well. )
+* Action = Pass
+* Protocol = TCP 
+* Source = Single Host or Network ( Select ANY if you do not want to whitelist access )
+  # EX: Add your IP ( Be Aware that ISPs can change your IP , may need to set a range via /24 )
+  155.18.184.119/32
+* Destination = This Firewall
+* Destination Port Range = HTTPS > HTTPS 
+* Category = WAN
+* Description = Firewall Web UI Admin Access 
+* Save 
+* Apply Changes 
+
+# Enable LAN vtnet1
+* Login > Dashboard > Interfaces > Assignment :
+* Device = vtnet1
+* Description = LAN 
+* Add 
+* Save 
 ```
 * Now lets go back to the serial console to finish setting up the WAN & LAN. 
 * Select Option 1: Assign Network Interfaces
@@ -145,6 +162,16 @@ Do you want to change the web GUI protocol from HTTPS to HTTP? [y/N] N
 Do you want to generate a new self-signed web GUI certificate? [y/N] Y
 Restore web GUI access defaults? [y/N] N
 ```
+* Go back to the Web UI and set the MTU on the LAN & WAN ( Google requires 1460 )
+```
+Login > Dashboard > Interfaces > LAN :
+* MTU = 1460 
+* Save
+Interfaces > WAN :
+* MTU = 1460 
+* Save
+* Apply Changes 
+```
 
 Enable MFA:
 -----------
@@ -210,9 +237,22 @@ opnsense-shell
 ```
 * Disable the root user: system > Access > users > Edit root > Check the Disabled box > Save
 
-Setup Firewall Rules:
---------------------
-Work in Progress
+TroubleShooting:
+----------------
+Caution: Changing the HTTPS web Interface options can break the web interface. 
+* If you have broken access to the Web UI by changing settings, please login to the serial console and add this.
+```
+# Select option 8 
+vi /conf/config.xml
+# After item , system , group user, Scroll a bit 
+<webgui>
+# Keep exisitng config
+<nohttpreferercheck>1</nohttpreferercheck>
+</webgui>
+# Save > ESC > :wq!
+# Then run the following command:
+service configd restart
+```
 
 References:
 -----------
