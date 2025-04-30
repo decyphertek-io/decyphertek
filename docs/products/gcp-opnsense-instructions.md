@@ -245,7 +245,6 @@ opnsense-shell
 Wireguard Roadwarrior Setup:
 ----------------------------
 ```
-# Wireguard Split Tunneling Setup
 * Create the WireGuard server on OPNsense
 - VPN > WireGuard > Instances > Add ( Red Plus Button ) :
   - Name: WireguardVPN
