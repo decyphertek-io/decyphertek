@@ -298,6 +298,6 @@ service configd restart
 
 References:
 -----------
-https://docs.opnsense.org/
-https://opnsense.org/legal-guidelines/
-https://docs.opnsense.org/manual/how-tos/wireguard-client.html
+* https://docs.opnsense.org/
+* https://opnsense.org/legal-guidelines/
+* https://docs.opnsense.org/manual/how-tos/wireguard-client.html
