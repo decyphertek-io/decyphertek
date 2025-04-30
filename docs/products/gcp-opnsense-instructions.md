@@ -252,25 +252,24 @@ Wireguard Roadwarrior Setup:
 
 * Create client peer configuration
 - VPN > WireGuard > Peers > Add ( Red Plus Button ) :
-- Click + to add new Peer
 - Configure with:
   - Name: Client1
   - Public Key: [Client's public key]
   - Allowed IPs: 10.10.10.2/32
 
-# 3. Set up interface assignment
+* Set up interface assignment
 - Go to Interfaces → Assignments
 - Select the WireGuard device (wg0)
 - Add description (WireGuardVPN)
 - Enable interface
 - Set IPv4/IPv6 Configuration Type to None
 
-# 4. Configure firewall rules
+* Configure firewall rules
 - Create Firewall → Aliases → RFC1918_Networks (192.168.0.0/16 10.0.0.0/8 172.16.0.0/12)
 - Add WAN rule to allow client connections to port 51820/UDP
 - Add WireGuard interface rule to allow VPN traffic with Destination set to LAN subnet
 
-# 5. Configure split tunneling on client
+* Configure split tunneling on client
 - Set AllowedIPs on client configuration to only include the LAN subnets
 - Example: AllowedIPs = 192.168.1.0/24, 10.0.0.0/8
 - This routes only LAN traffic through VPN, internet access uses client's regular connection
