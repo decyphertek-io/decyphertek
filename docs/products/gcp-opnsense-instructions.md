@@ -307,17 +307,31 @@ WireGuard Roadwarrior Setup:
    - Save
    - Apply Changes
 ```
-* Wireguard VPN Client GUI: I recommend Defguard, cross platform and open source, and supports Arch Linux as well. 
+* Make sure you install wireguard-tools 
+- wireguard-tools - https://www.wireguard.com/install/
+* Troubelshooting :
 ```
-# Can Download for Windows, MAC, and Debian Here. ( If using other linux distros, use the app image option. )
-https://defguard.net/download/
-# If using Arch Linux
-yay -S defguard-client
-* Defguard App > Add Tunnel Wireguard > Import Config > Select: clientpeer.conf ( We made earlier and saved ).
-* Once imported 
-- Tunnel Name: OPNsense WireGuard VPN
-- VPN Server Address:Port EX: > 33.77.119.284:51820
-- Add Tunnel
+# Unable to access? Lets verify your not being blocked by a network or OPNsense firewall
+sudo nmap -Pn -sU -p 51820 PUBLIC-IP
+# Make sure you clientpeer.conf is correct EX:
+
+[Interface]
+PrivateKey = 2Bfxxu+u8xx8qR/5sBtwQAxxPx7f5dexxbl4=
+Address = 10.10.10.2/32
+
+[Peer]
+PublicKey = xx+o3i0xx2HsoTeJ/TmvFwxxKX8mxxm/51Z92g58xxhE=
+Endpoint = 34.84.119.227:51820
+AllowedIPs = 10.0.1.0/24
+PersistentKeepalive = 27
+
+# Lets test the connection from the Linux Terminal
+sudo cp clientpeer.conf /etc/wireguard/test.conf
+sudo chmod 600 /etc/wireguard/test.conf
+sudo wg-quick up test
+sudo wg show
+ping 10.10.10.1
+ping 10.0.1.1 (or your LAN gateway)
 ```
 
 Firewall Best Practice:
