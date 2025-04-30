@@ -263,10 +263,32 @@ WireGuard Roadwarrior Setup:
   # For split tunneling, use the IP range of your LAN.
   # If you want all traffic to pass through the VPN, then keep the default 0.0.0.0/0,::/0
   # EX: This allows all private IP traffic.
-  - Allowed IPS: 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
+  - Allowed IPS: 10.10.10.0/24, 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
   - Keep Alive: 27 
   - ( Copy and save the config locally as clientpeer.conf )
   - Select Apply 
+
+* Interface assignment:
+   - Interfaces > Assignments
+   - Select wg0 from dropdown, add description
+   - Click + to add it, then Save
+   - Click on new interface under Interfaces menu
+   - Enable interface, check Lock
+   - Set IPv4/IPv6 Configuration Type to None
+   - Save and Apply changes
+   - Restart WireGuard: VPN > WireGuard > General (off/on)
+
+* MSS Clamping (normalization rules):
+   - Firewall > Settings > Normalization
+   - Add rule for WireGuard Group
+   - Direction: Any, Protocol: any
+   - Source/Destination: any
+   - Max MSS: 1380 (40 bytes less than WireGuard MTU)
+   - Save
+
+* DNS settings:
+   - Add DNS server in client config:
+     DNS = 10.0.1.1 (or your LAN DNS server)
 
 # WireGuard Firewll Rules
 * Create RFC1918 Networks Alias:
