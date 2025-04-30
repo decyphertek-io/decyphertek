@@ -246,7 +246,7 @@ Wireguard Roadwarrior Setup:
 ----------------------------
 ```
 * Create the WireGuard server on OPNsense
-- VPN > WireGuard > Instances > Add ( Red Plus Button ) :
+- VPN > WireGuard > Instances > Add ( Red + Button ) :
   - Name: WireguardVPN
   - Generate keys with cogwheel icon
   - Listen Port: 51820
@@ -267,26 +267,38 @@ Wireguard Roadwarrior Setup:
   - ( Copy and save the config locally as clientpeer.conf )
   - Select Apply 
 
-* Set up interface assignment
-- Interfaces > Assignments :
-# If you dont see this device , go back to VPN > Wireguard > Instances > make sure that its enabled > save
-- Select the WireGuard device (wg0)
-- Add description: (WireGuardVPN) 
-- Add > Save
-- Interfaces > WiregaurdVPN :
-  - Enable Interface
-  - Save
-  - Apply Changes
-  
-* Configure firewall rules
-- Create Firewall → Aliases → RFC1918_Networks (192.168.0.0/16 10.0.0.0/8 172.16.0.0/12)
-- Add WAN rule to allow client connections to port 51820/UDP
-- Add WireGuard interface rule to allow VPN traffic with Destination set to LAN subnet
+# Wiregaurd Firewll Rules
+* Create RFC1918 Networks Alias:
+   - Firewall > Aliases > IP
+   - Click Add (Red + button)
+   - Name: RFC1918_Networks
+   - Type: Network(s)
+   - Content: 192.168.0.0/16 10.0.0.0/8 172.16.0.0/12
+   - Description: Private IP ranges
+   - Save
 
-* Configure split tunneling on client
-- Set AllowedIPs on client configuration to only include the LAN subnets
-- Example: AllowedIPs = 192.168.1.0/24, 10.0.0.0/8
-- This routes only LAN traffic through VPN, internet access uses client's regular connection
+* Create WAN Firewall Rule (allows VPN connections):
+   - Firewall > Rules > WAN
+   - Click Add (Red + button )
+   - Action: Pass
+   - Protocol: UDP
+   - Source: Any
+   - Destination: WAN address
+   - Destination port: 51820
+   - Description: Allow WireGuard VPN
+   - Save
+
+* Create WireGuard Interface Rule (allows VPN to access LAN):
+   - Firewall > Rules > WireGuardVPN
+   - Click Add (Red + button)
+   - Action: Pass
+   - Protocol: Any
+   - Source: Any
+   - Destination: LAN net (or your specific subnet: 10.0.1.0/24)
+   - Description: Allow VPN to LAN
+   - Save
+
+* Apply Changes (click Apply Changes button)
 ```
 
 TroubleShooting:
