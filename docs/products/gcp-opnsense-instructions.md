@@ -186,6 +186,7 @@ Enable MFA:
 
 Optional > Wizard:
 ----------------
+* CAUTION: Changing some Web UI HTTPS settings can break access. Please see Troubleshooting section to fix. 
 * To customize your settings with help from the Wizard.
 * System > Wizard > next > Choose your desired Settings.
 
