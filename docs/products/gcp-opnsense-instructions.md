@@ -238,6 +238,10 @@ opnsense-shell
 ```
 * Disable the root user: system > Access > users > Edit root > Check the Disabled box > Save
 
+Wireguard Roadwarrior Setup:
+----------------------------
+Work In Progress....
+
 TroubleShooting:
 ----------------
 Caution: Changing the HTTPS web Interface options can break the web interface. 
