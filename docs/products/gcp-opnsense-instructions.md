@@ -268,12 +268,16 @@ Wireguard Roadwarrior Setup:
   - Select Apply 
 
 * Set up interface assignment
-- Go to Interfaces → Assignments
+- Interfaces > Assignments :
+# If you dont see this device , go back to VPN > Wireguard > Instances > make sure that its enabled > save
 - Select the WireGuard device (wg0)
-- Add description (WireGuardVPN)
-- Enable interface
-- Set IPv4/IPv6 Configuration Type to None
-
+- Add description: (WireGuardVPN) 
+- Add > Save
+- Interfaces > WiregaurdVPN :
+  - Enable Interface
+  - Save
+  - Apply Changes
+  
 * Configure firewall rules
 - Create Firewall → Aliases → RFC1918_Networks (192.168.0.0/16 10.0.0.0/8 172.16.0.0/12)
 - Add WAN rule to allow client connections to port 51820/UDP
