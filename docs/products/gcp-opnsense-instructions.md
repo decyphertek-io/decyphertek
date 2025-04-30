@@ -70,7 +70,7 @@ Password: What you set in option 3.
 * We need to set a firewall rule that allows WAN access before we enable the LAN feature.
 ```
 # Enable firewall so LAN can be enabled.
-Login > Dashboard > Firewall > Rules > WAN > Add ( Red Plus Button ) :
+* Firewall > Rules > WAN > Add ( Red + Button ) :
 # Change the following ( Can also utilized Google Firewall to whitelist access to Web UI as well. )
 * Action = Pass
 * Protocol = TCP 
@@ -85,7 +85,7 @@ Login > Dashboard > Firewall > Rules > WAN > Add ( Red Plus Button ) :
 * Apply Changes 
 
 # Enable LAN vtnet1
-* Login > Dashboard > Interfaces > Assignment :
+* Interfaces > Assignment :
 * Device = vtnet1
 * Description = LAN 
 * Add 
