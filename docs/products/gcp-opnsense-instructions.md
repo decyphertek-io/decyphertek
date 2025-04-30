@@ -350,7 +350,7 @@ Address = 10.10.10.2/32
 [Peer]
 PublicKey = xx+o3i0xx2HsoTeJ/TmvFwxxKX8mxxm/51Z92g58xxhE=
 Endpoint = 34.84.119.227:51820
-AllowedIPs = 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
+AllowedIPs = 10.10.10.0/24, 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
 PersistentKeepalive = 27
 
 # Lets test the connection from the Linux Terminal
