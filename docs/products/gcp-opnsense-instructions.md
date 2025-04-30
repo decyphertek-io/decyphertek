@@ -243,7 +243,7 @@ Wireguard Roadwarrior Setup:
 ```
 # Wireguard Split Tunneling Setup
 * Create the WireGuard server on OPNsense
-* VPN > WireGuard > Instances > Add ( Red Plus Button ) :
+- VPN > WireGuard > Instances > Add ( Red Plus Button ) :
   - Name: WireguardVPN
   - Generate keys with cogwheel icon
   - Listen Port: 51820
