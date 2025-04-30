@@ -162,6 +162,10 @@ Do you want to change the web GUI protocol from HTTPS to HTTP? [y/N] N
 Do you want to generate a new self-signed web GUI certificate? [y/N] Y
 Restore web GUI access defaults? [y/N] N
 ```
+* You can now log out of the serial console:
+```
+Enter an Option: 0
+```
 * Go back to the Web UI and set the MTU on the LAN & WAN ( Google requires 1460 )
 ```
 Login > Dashboard > Interfaces > LAN :
