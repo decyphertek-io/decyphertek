@@ -266,9 +266,15 @@ WireGuard Roadwarrior Setup:
   # EX: This allows all private IP traffic.
   - Allowed IPS: 10.10.10.0/24, 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
   - Keep Alive: 27 
-  - DNS Servers: 10.0.1.1 ( USE YOUR LAN DNS IP Gateway )
+  - DNS Servers: 10.0.1.1 ( Use your LAN Gateway IP )
   - ( Copy and save the config locally as clientpeer.conf )
   - Select Apply 
+
+* Unblock WAN Private & Bogon Networks
+   - Interfaces > WAN
+   - UNCHECK "Block private networks"
+   - UNCHECK "Block bogon networks"
+   - Save and Apply changes
 
 * Interface assignment:
    - Interfaces > Assignments
