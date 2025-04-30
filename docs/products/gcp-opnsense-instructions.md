@@ -322,7 +322,7 @@ WireGuard Roadwarrior Setup:
    - Save
    - Apply Changes
 
-* Create WireGuard Interface Firewall Rule (allows VPN to access LAN):
+* Allows VPN to access LAN:
    - Firewall > Rules > WireGuardVPN
    - Click Add (Red + button)
    - Action: Pass
@@ -331,6 +331,17 @@ WireGuard Roadwarrior Setup:
    - Destination: RFC1918_Networks,LAN net
    - Category: LAN
    - Description: Allow VPN to LAN
+   - Save
+   - Apply Changes
+
+* Allows VPN IP Internal Traffic:
+   - Go to Firewall > Rules > WireGuardVPN
+   - Edit the existing rule or add a new one:
+   - Action: Pass
+   - Protocol: Any
+   - Source: Any
+   - Destination: single host or network 10.10.10.0/24
+   - Description: Allow WireGuard internal traffic
    - Save
    - Apply Changes
 ```
