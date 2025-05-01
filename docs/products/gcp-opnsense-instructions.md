@@ -341,10 +341,38 @@ SSL VPN Road Warrior Setup:
       - Save
 
 * Configure OpenVPN:
-   - VPN > OpenVPN > Servers: Add server
-      - Use certificates created earlier
-      - Set VPN subnet (e.g., 192.168.10.0/24)
-      - Enable user authentication
+   - VPN > OpenVPN > Instances > Add (Red + Button):
+      - Role: Server (defines the instance as an OpenVPN server)
+      - Description: OpenVPN-Server (or any descriptive name)
+      - Enabled: Check this box to activate the instance
+      - Protocol: UDP (faster than TCP for VPN connections)
+      - Port number: 1194 (standard OpenVPN port)
+      - Bind address: Leave blank (binds to all interfaces)
+      - Type: tun (Layer 3 routing - most common choice)
+      - Server (IPv4): 10.10.0.0/24 (choose a subnet that doesn't conflict with LAN)
+      - Server (IPv6): Leave blank (unless IPv6 support needed)
+      - Topology: subnet (recommended for most configurations)
+      - Certificate: Select your server certificate created earlier
+      - Verify Remote Certificate: Check this box
+      - Certificate Revocation List: Leave blank
+      - Verify Client Certificate: Select "Require - X509"
+      - Use OCSP: Leave unchecked
+      - Certificate Depth: 1
+      - TLS static key: None
+      - Authentication: Check "Local Password Authentication"
+      - Enforce local group: Select "OpenVPN_Users"
+      - Strict User/CN Matching: Check this box
+      - Renegotiate time: 3600
+      - Auth Token Lifetime: 0 (never expires) or 86400 (1 day)
+      - Local Network: Your LAN subnet (e.g., 192.168.1.0/24)
+      - Remote Network: Leave blank
+      - Options: Select "Compression: Enabled for compatible clients"
+      - Push Options: Select "Compression: Enabled for compatible clients"
+      - Redirect gateway: Check "All traffic to VPN" if desired
+      - Register DNS: Check this box (helps Windows clients)
+      - DNS Default Domain: Your domain (e.g., local)
+      - DNS Servers: Your LAN DNS server or 8.8.8.8
+      - Save
 
 * Add Firewall Rules:
    - WAN rule: Allow OpenVPN port (UDP 1194)
