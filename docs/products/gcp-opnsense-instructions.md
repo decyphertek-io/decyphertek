@@ -279,7 +279,7 @@ SSL VPN Road Warrior Setup:
       - Description: OPNsense-OpenVPN-CA
       - Key Type: RSA-2048
       - Digest Algorithm: SHA256
-      - Issuer: Nothing Selected
+      - Issuer: Self-Signed
       - Lifetime: 3650 (10 yrs.)
       - County Code: YOUR COUNTRY 
       - State or Province: Your state or Province
