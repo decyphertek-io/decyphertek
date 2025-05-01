@@ -376,7 +376,7 @@ SSL VPN Road Warrior Setup:
          - NTP Servers: Optional
       - Save & Apply
 
-* Add Firewall Rules:
+* Add WAN Firewall Rule For OpenVPN:
    - Firewall > Rules > WAN > Add (Red + Button):
       - Action: Pass
       - Interface: WAN
@@ -388,7 +388,22 @@ SSL VPN Road Warrior Setup:
       - Destination Port Range: (Other) 1194 > 1194
       - Category: VPN
       - Description: Allow OpenVPN Access
-      - Save & Apply
+      - Save & Apply Changes
+
+* Add OpenVPN Firewall Rule to Access LAN:
+   - Firewall > Rules > OpenVPN > Add (Red + Button):
+      - Action: Pass
+      - Interface: OpenVPN
+      - Direciton: In
+      - TCP/IP Version: IPv4
+      - Protocol: Any
+      - Source: Any 
+      # Set Destinatin to Any If You want to pass all traffic thorugh the VPN
+      # For a split tunnel setup , where you only access LAN, Google Subnet, then.
+      - Destination: Single Host or Network ( EX: 10.0.1.0/24 > your LAN network)
+      - Category: VPN
+      - Description: Allow VPN clients to access LAN ( OR VPN Internet Access )
+      - Save & Apply Changes
 
 * Enable NAT for VPN clients
 
