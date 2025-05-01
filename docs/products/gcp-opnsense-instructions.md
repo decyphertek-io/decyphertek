@@ -247,8 +247,6 @@ SSL VPN Road Warrior Setup:
 ```
 # OPNsense OpenVPN Docs
 * https://docs.opnsense.org/manual/how-tos/sslvpn_client.html
-# OpenVPN Downloads
-* https://openvpn.net/community-downloads/
 
 # May need to create multiple groups if you want specific access for different users.
 # You can also utilize an exisitng user and add them to multiple groups. 
@@ -423,20 +421,20 @@ SSL VPN Road Warrior Setup:
 
 * Export Client Configuration:
    - VPN > OpenVPN > Client Export
-   - Remote Access Server: Select your OpenVPN server
-   - Client Certificate: USERNAME-OpenVPN-Client-Cert
-   - Host Name Resolution: Default 
+   - Remote Access Server: OpenVPN-Server udp:1194
+   - Export Type: Archive
+   - Hostname: public IP or domain
+   - Port: 1194
    - Use Random Local Port: Checked 
-   - Verify Server CN: Checked 
-   - Block Outside DNS: Checked
-   - Legacy Client Support: Unchecked
-   - Certificate Export Options:
-     - For Windows: Select "Windows Installer" for simple setup
-     - For Android/iOS: Select "File Only (.ovpn)" and scan the QR code
-     - For other platforms: Select appropriate format
-   - Click "Download Configuration" or "Download Installer"
+   - P12 Password/confirm: Optional
+   - Validate server subject: Checked
+   - Windows Certificate System Store: If Using Windows Check
+   - Disable password save: Optional
+   - Accounts / certificates: Download USERNAME-OpenVPN-Client-Cert
+   - unzip locally to extract the .ovpn
 
-* Distribute and Install Client Configuration:
+* OpenVPN Client App:
+* https://openvpn.net/community-downloads/
    - Windows: Run the downloaded installer (.exe file)
    - Android/iOS: 
      - Install OpenVPN Connect app from app store
