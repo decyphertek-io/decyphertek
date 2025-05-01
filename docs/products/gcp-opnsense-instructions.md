@@ -374,7 +374,7 @@ SSL VPN Road Warrior Setup:
          - DNS Default Domain: Your domain OR (EX: localdomain)
          - DNS Servers: LAN DNS gateway (EX: 10.0.1.1) or 8.8.8.8
          - NTP Servers: Optional
-      - Save
+      - Save & Apply
 
 * Add Firewall Rules:
    - WAN rule: Allow OpenVPN port (UDP 1194)
