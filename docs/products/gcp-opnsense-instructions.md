@@ -245,7 +245,11 @@ opnsense-shell
 SSL VPN Road Warrior Setup:
 --------------------------
 ```
-# https://docs.opnsense.org/manual/how-tos/sslvpn_client.html
+# OPNsense OpenVPN Docs
+* https://docs.opnsense.org/manual/how-tos/sslvpn_client.html
+# OpenVPN Downloads
+* https://openvpn.net/community-downloads/
+
 * Create Certificates:
    - System > Trust > Authorities: Create CA (OPNsenseOpenVPNCA)
    - System > Trust > Certificates: Create server certificate
@@ -278,7 +282,6 @@ SSL VPN Road Warrior Setup:
    - Use exported config in OpenVPN client
    - Enter username/password (+ TOTP if enabled)
    - Verify connection in OPNsense status page
-
 ```
 
 WireGuard Road Warrior Setup:
