@@ -322,8 +322,8 @@ SSL VPN Road Warrior Setup:
   * Create a User Trust Certificate
   - System > Trust > Certificates > Add (Red + Button)
       - Method: Create an internal Certificate
-      - Description: username-OpenVPN-Cert (use actual username)
-      - Type: Client Certificate (important - must be client type)
+      - Description: USERNAME-OpenVPN-Client-Cert
+      - Type: Client Certificate 
       - Private Key Location: Save On This Firewall
       - Key Type: RSA 2048
       - Digest Algorithm: SHA-256
@@ -335,7 +335,7 @@ SSL VPN Road Warrior Setup:
       - Organization: Same as CA certificate
       - Organizational Unit: Same as CA certificate
       - Email Address: User's email address
-      - Common Name: username (MUST match the username)
+      - Common Name: USERNAME
       - OCSP uri: Leave Blank
       - Alternative Names: Leave all blank
       - Save
