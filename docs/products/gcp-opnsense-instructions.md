@@ -338,9 +338,10 @@ SSL VPN Road Warrior Setup:
       - Alternative Names: Leave all blank
       - Save
 
-* Add TOTP (Optional): ( See MFA Section for verbose Instructions. ) 
+* Add TOTP (Optional): ( See Enable MFA Section for verbose Instructions. ) 
    - System > Access > Servers: Add TOTP server
    - Enable as authentication server
+   - Enable MFA for User and reference the TOTP server.
 
 * Configure OpenVPN:
    - VPN > OpenVPN > Servers: Add server
