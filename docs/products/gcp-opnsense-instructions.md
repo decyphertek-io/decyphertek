@@ -359,19 +359,21 @@ SSL VPN Road Warrior Setup:
       - Use OCSP: Leave unchecked
       - Certificate Depth: One (Client+Server)
       - TLS static key: None
-      - Authentication: Check "Local Password Authentication"
-      - Enforce local group: Select "OpenVPN_Users"
-      - Strict User/CN Matching: Check this box
+      - Authentication: Local Database
+      - Enforce local group: OpenVPN_Users
+      - Strict User/CN Matching: Yes
       - Renegotiate time: 3600
       - Auth Token Lifetime: 0 (never expires) or 86400 (1 day)
-      - Local Network: Your LAN subnet (e.g., 192.168.1.0/24)
+      - Local Network: LAN subnet (EX: 10.0.1.0/24) ( See the LAN you attached )
       - Remote Network: Leave blank
-      - Options: Select "Compression: Enabled for compatible clients"
-      - Push Options: Select "Compression: Enabled for compatible clients"
-      - Redirect gateway: Check "All traffic to VPN" if desired
-      - Register DNS: Check this box (helps Windows clients)
-      - DNS Default Domain: Your domain (e.g., local)
-      - DNS Servers: Your LAN DNS server or 8.8.8.8
+      - Misc.
+         - Options: Optional
+         - Push Options: Optional
+         - Redirect gateway: Optional
+         - Register DNS: Check this box (helps Windows clients)
+         - DNS Default Domain: Your domain OR (EX: localdomain)
+         - DNS Servers: LAN DNS gateway (EX: 10.0.1.1) or 8.8.8.8
+         - NTP Servers: Optional
       - Save
 
 * Add Firewall Rules:
