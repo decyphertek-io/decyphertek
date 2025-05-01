@@ -342,17 +342,17 @@ SSL VPN Road Warrior Setup:
 
 * Configure OpenVPN:
    - VPN > OpenVPN > Instances > Add (Red + Button):
-      - Role: Server (defines the instance as an OpenVPN server)
-      - Description: OpenVPN-Server (or any descriptive name)
-      - Enabled: Check this box to activate the instance
-      - Protocol: UDP (faster than TCP for VPN connections)
-      - Port number: 1194 (standard OpenVPN port)
-      - Bind address: Leave blank (binds to all interfaces)
-      - Type: tun (Layer 3 routing - most common choice)
+      - Role: Server 
+      - Description: OpenVPN-Server 
+      - Enabled: Check to Enable
+      - Protocol: UDP ( TCP More Secure , except slower )
+      - Port number: 1194 
+      - Bind address: Leave blank 
+      - Type: tun 
       - Server (IPv4): 10.10.0.0/24 (choose a subnet that doesn't conflict with LAN)
       - Server (IPv6): Leave blank (unless IPv6 support needed)
-      - Topology: subnet (recommended for most configurations)
-      - Certificate: Select your server certificate created earlier
+      - Topology: subnet 
+      - Certificate: OPNsense-OpenVPN-Server-Cert
       - Verify Remote Certificate: Check this box
       - Certificate Revocation List: Leave blank
       - Verify Client Certificate: Select "Require - X509"
