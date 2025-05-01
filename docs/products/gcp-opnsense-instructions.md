@@ -435,7 +435,7 @@ SSL VPN Road Warrior Setup:
    - Enter folder and find OpenVPN*.ovpn & OpenVPN*.p12 ( If using )
 
 * OpenVPN Client App:
-* https://openvpn.net/community-downloads/
+* https://openvpn.net/client/
    - Windows: Run the downloaded installer (.exe file)
    - Android/iOS: 
      - Install OpenVPN Connect app from app store
