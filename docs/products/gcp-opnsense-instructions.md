@@ -271,6 +271,8 @@ SSL VPN Road Warrior Setup:
       - Optional: The rest is optional
       - Save
 
+* Add TOTP (Optional): ( See Enable MFA Section for verbose Instructions. ) 
+
 * Create OpenVPN Trust Authorities/Certificates:
    # Create a Trust Authority
    - System > Trust > Authorities > Add (Red + Button)
@@ -337,11 +339,6 @@ SSL VPN Road Warrior Setup:
       - OCSP uri: Leave Blank
       - Alternative Names: Leave all blank
       - Save
-
-* Add TOTP (Optional): ( See Enable MFA Section for verbose Instructions. ) 
-   - System > Access > Servers: Add TOTP server
-   - Enable as authentication server
-   - Enable MFA for User and reference the TOTP server.
 
 * Configure OpenVPN:
    - VPN > OpenVPN > Servers: Add server
