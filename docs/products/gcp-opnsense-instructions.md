@@ -405,7 +405,7 @@ SSL VPN Road Warrior Setup:
       - Description: Allow VPN clients to access LAN ( OR VPN Internet Access )
       - Save & Apply Changes
 
-* Enable NAT for VPN clients
+* Optional: Enable NAT for VPN clients ( If Previous rule set to any and not LAN )
 
 * Export Client Config:
    - VPN > OpenVPN > Client Export
