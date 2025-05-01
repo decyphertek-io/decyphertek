@@ -403,6 +403,17 @@ SSL VPN Road Warrior Setup:
       - Description: Allow VPN clients to access LAN ( OR VPN Internet Access )
       - Save & Apply Changes
 
+* Add  LAN Interface Firewall Rules:
+   - Firewall > Rules > LAN > Add (Red + Button):
+     - Action: Pass
+     - Interface: LAN
+     - Protocol: Any
+     - Source: OpenVPN net
+     - Destination: LAN net
+     - Category: LAN
+     - Description: Allow VPN clients to LAN
+     - Save & Apply Changes
+
 * Enable NAT for VPN clients (Required if you want clients to access the internet through the VPN):
    - Firewall > NAT > Outbound
       - Mode: Select "Hybrid outbound NAT rule generation" or "Manual outbound NAT rule generation"
