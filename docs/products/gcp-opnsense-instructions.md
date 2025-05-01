@@ -253,8 +253,10 @@ SSL VPN Road Warrior Setup:
 # May need to create multiple groups if you want specific access for different users.
 * Create VPN Group:
    - System > Access > Groups > Add (Red + Button):
-   - Name: OpenVPN_Users
-   - Description: OpenVPN Remote Access Users
+   - Group Name: OpenVPN_Users
+   - Description: OPNsense OpenVPN Users ACL
+   - Privileges: Select privilges for user group
+   - Members: Can add user to group when making VPN User.
    - Save
 
 * Create VPN User:
