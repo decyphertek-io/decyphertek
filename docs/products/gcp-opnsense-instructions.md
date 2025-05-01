@@ -214,9 +214,9 @@ Optional > Dedicated Admin User, no root:
 ```
 # Example
 Username: adminotaur
-Password: Decyphertek_01123581321345589
+Password: DecyphertekPASSWORD!
 Full Name: System Administrator
-Login shell: /bin/csh
+Login shell: /bin/sh
 Group membership: admins
 Privilges: Privileges
 OTP Seed: Show > Select Gear icon > Generates a new OTP Code > Save
