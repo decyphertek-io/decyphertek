@@ -263,8 +263,8 @@ SSL VPN Road Warrior Setup:
       - Full Name: Your Name
       - E-mail: Your Email
       - Comment: OpenVPN user
-      - Expiration Date: Optional
       - Group Membership: OpenVPN_Users
+      - Optional: The rest is optional
       - Save
 
 * Create OpenVPN Trust Authorities/Certificates:
