@@ -405,17 +405,52 @@ SSL VPN Road Warrior Setup:
       - Description: Allow VPN clients to access LAN ( OR VPN Internet Access )
       - Save & Apply Changes
 
-* Optional: Enable NAT for VPN clients ( If Previous rule set to any and not LAN )
+* Enable NAT for VPN clients (Required if you want clients to access the internet through the VPN):
+   - Firewall > NAT > Outbound
+   - Ensure "Automatic outbound NAT rule generation" is selected
+   - If using Manual Outbound NAT:
+     - Click "Add" (Red + Button)
+     - Interface: WAN
+     - Source: OpenVPN subnet (e.g., 10.10.0.0/24)
+     - Description: "OpenVPN Client Internet Access"
+     - Save & Apply Changes
 
-* Export Client Config:
+* Export Client Configuration:
    - VPN > OpenVPN > Client Export
-   - Select user and export for desired platform
-   - Install on client device (Windows/Android/etc.)
+   - Remote Access Server: Select your OpenVPN server
+   - Client Certificate: Select the certificate you created for the user
+   - Host Name Resolution: Default (or choose appropriate option)
+   - Use Random Local Port: Checked (recommended)
+   - Verify Server CN: Checked (recommended)
+   - Block Outside DNS: Checked (prevents DNS leaks)
+   - Legacy Client Support: Unchecked (unless using very old clients)
+   - Certificate Export Options:
+     - For Windows: Select "Windows Installer" for simple setup
+     - For Android/iOS: Select "File Only (.ovpn)" and scan the QR code
+     - For other platforms: Select appropriate format
+   - Click "Download Configuration" or "Download Installer"
 
-* Connect:
-   - Use exported config in OpenVPN client
-   - Enter username/password (+ TOTP if enabled)
-   - Verify connection in OPNsense status page
+* Distribute and Install Client Configuration:
+   - Windows: Run the downloaded installer (.exe file)
+   - Android/iOS: 
+     - Install OpenVPN Connect app from app store
+     - Import profile by scanning QR code or importing .ovpn file
+   - macOS/Linux: 
+     - Install OpenVPN client software 
+     - Import the .ovpn configuration file
+
+* Connect to VPN:
+   - Launch OpenVPN client on device
+   - Select the imported profile
+   - Enter username and password when prompted
+   - If TOTP is enabled, enter password + TOTP code
+   - Wait for connection to establish
+
+* Verify Connection:
+   - VPN > OpenVPN > Connection Status
+   - Check that client appears in the connected clients list
+   - Verify client received proper IP address
+   - Test connectivity to resources on your LAN
 ```
 
 WireGuard Road Warrior Setup:
