@@ -407,23 +407,29 @@ SSL VPN Road Warrior Setup:
 
 * Enable NAT for VPN clients (Required if you want clients to access the internet through the VPN):
    - Firewall > NAT > Outbound
-   - Ensure "Automatic outbound NAT rule generation" is selected
-   - If using Manual Outbound NAT:
-     - Click "Add" (Red + Button)
-     - Interface: WAN
-     - Source: OpenVPN subnet (e.g., 10.10.0.0/24)
-     - Description: "OpenVPN Client Internet Access"
-     - Save & Apply Changes
+      - Mode: Select "Hybrid outbound NAT rule generation" or "Manual outbound NAT rule generation"
+      - Save 
+      - Click "Add" (Red + Button)
+      - Interface: WAN
+      - Protocol: any
+      - Source Address: OpenVPN Net
+      - Source port: any
+      - Destination: any
+      - Destination port: any
+      - Translation / target: Interface address
+      - Category: NAT
+      - Description: OpenVPN clients outbound NAT
+      - Save & Apply Changes
 
 * Export Client Configuration:
    - VPN > OpenVPN > Client Export
    - Remote Access Server: Select your OpenVPN server
-   - Client Certificate: Select the certificate you created for the user
-   - Host Name Resolution: Default (or choose appropriate option)
-   - Use Random Local Port: Checked (recommended)
-   - Verify Server CN: Checked (recommended)
-   - Block Outside DNS: Checked (prevents DNS leaks)
-   - Legacy Client Support: Unchecked (unless using very old clients)
+   - Client Certificate: USERNAME-OpenVPN-Client-Cert
+   - Host Name Resolution: Default 
+   - Use Random Local Port: Checked 
+   - Verify Server CN: Checked 
+   - Block Outside DNS: Checked
+   - Legacy Client Support: Unchecked
    - Certificate Export Options:
      - For Windows: Select "Windows Installer" for simple setup
      - For Android/iOS: Select "File Only (.ovpn)" and scan the QR code
