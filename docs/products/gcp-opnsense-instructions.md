@@ -296,8 +296,8 @@ SSL VPN Road Warrior Setup:
    * Create a Server Trust Certificate
    - System > Trust > Certificates > Add (Red + Button)
       - Method: Create an internal Certificate
-      - Description: OPNsense-OpenVPN-Cert
-      - Type: Client Certificate
+      - Description: OPNsense-OpenVPN-Server-Cert
+      - Type: Server Certificate
       - Private Key Location: Save On This Firewall
       - Key Type: RSA 2048 
       - Digest Algorithm: SHA-256
