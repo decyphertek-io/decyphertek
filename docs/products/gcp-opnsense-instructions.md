@@ -355,9 +355,9 @@ SSL VPN Road Warrior Setup:
       - Certificate: OPNsense-OpenVPN-Server-Cert
       - Verify Remote Certificate: Check this box
       - Certificate Revocation List: Leave blank
-      - Verify Client Certificate: Select "Require - X509"
+      - Verify Client Certificate: Required
       - Use OCSP: Leave unchecked
-      - Certificate Depth: 1
+      - Certificate Depth: One (Client+Server)
       - TLS static key: None
       - Authentication: Check "Local Password Authentication"
       - Enforce local group: Select "OpenVPN_Users"
