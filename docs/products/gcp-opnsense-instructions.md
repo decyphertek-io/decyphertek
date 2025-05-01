@@ -250,6 +250,7 @@ SSL VPN Road Warrior Setup:
 # OpenVPN Downloads
 * https://openvpn.net/community-downloads/
 
+# May need to create multiple groups if you want specific access for different users.
 * Create VPN Group:
    - System > Access > Groups > Add (Red + Button):
    - Name: OpenVPN_Users
