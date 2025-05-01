@@ -432,6 +432,7 @@ SSL VPN Road Warrior Setup:
    - Disable password save: Optional
    - Accounts / certificates: Download USERNAME-OpenVPN-Client-Cert
    - unzip locally to extract the .ovpn
+   - Enter folder and find OpenVPN*.ovpn & OpenVPN*.p12 ( If using )
 
 * OpenVPN Client App:
 * https://openvpn.net/community-downloads/
