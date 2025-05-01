@@ -262,10 +262,10 @@ SSL VPN Road Warrior Setup:
 
 * Create VPN User:
    - System > Access > Users > Red + Button:
-      - Username: Your username
-      - Password: Your password
-      - Full Name: Your Name
-      - E-mail: Your Email
+      - Username: USERNAME
+      - Password: PASSWORD
+      - Full Name: NAME
+      - E-mail: EMAIL
       - Comment: OpenVPN user
       - Group Membership: OpenVPN_Users
       - Optional: The rest is optional
