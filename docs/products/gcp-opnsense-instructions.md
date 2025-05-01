@@ -377,9 +377,20 @@ SSL VPN Road Warrior Setup:
       - Save & Apply
 
 * Add Firewall Rules:
-   - WAN rule: Allow OpenVPN port (UDP 1194)
-   - OpenVPN rule: Allow VPN clients to internet
-   - Enable NAT for VPN clients
+   - Firewall > Rules > WAN > Add (Red + Button):
+      - Action: Pass
+      - Interface: WAN
+      - Direction: In
+      - TCP/IP Version: IPv4
+      - Protocol: UDP ( OR TCP if you set that previously)
+      - Source: Any
+      - Destination: WAN Address
+      - Destination Port Range: (Other) 1194 > 1194
+      - Category: VPN
+      - Description: Allow OpenVPN Access
+      - Save & Apply
+
+* Enable NAT for VPN clients
 
 * Export Client Config:
    - VPN > OpenVPN > Client Export
