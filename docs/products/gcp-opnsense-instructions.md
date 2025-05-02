@@ -261,7 +261,7 @@ opnsense-shell
 
 # If you want to access the LAN from the VPN you need to setup VPC Peering:
 # From Google Cloud ( EX: decyphertek is just an example , use your own nomenclature)
-* Create First VPC Peering:
+* Create WAN to LAN VPC Peering:
    - VPC Network > VPC Network Peering > Create Connection
    - Name: wan-to-lan-peering
    - Your VPC: decyphertek-wan
@@ -269,7 +269,7 @@ opnsense-shell
    - Check all import/export route options
    - Click Create
 
-* Create Second VPC Peering:
+* Create LAN to WAN VPC Peering:
    - VPC Network > VPC Network Peering > Create Connection
    - Name: lan-to-wan-peering
    - Your VPC: lan-decyphertek
