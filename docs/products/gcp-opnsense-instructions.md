@@ -64,6 +64,7 @@ The root user has been reset successfully.
 ```
 * ( Keep the Serial console open , we be utilizing the Web UI and the Serial console. ) 
 * You can now visit your IP address and login to the OPNsense Web Dashboard.
+* Note: Sometimes takes time to sync changes. 
 ```
 # Can use Internal or External IP:
 # Accept Cert Warning
