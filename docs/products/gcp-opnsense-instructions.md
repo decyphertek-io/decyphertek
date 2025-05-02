@@ -321,7 +321,7 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
    - System > Access > Users > Red + Button:
       - Username: USERNAME
       - Password: PASSWORD
-      - Full Name: NAME
+      - Full Name: Description Field
       - E-mail: EMAIL
       - Comment: OpenVPN user
       - Group Membership: OpenVPN_Users
