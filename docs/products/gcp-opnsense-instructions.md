@@ -456,10 +456,10 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
       - Direction: In
       - TCP/IP Version: IPv4
       - Protocol: Any
-      - Source: Any 
+      - Source: OpenVPN Net 
       # Set Destinatin to Any If You want to pass all traffic thorugh the VPN
       # For a split tunnel setup , where you only access LAN, Google Subnet, then.
-      - Destination: Single Host or Network ( EX: 10.0.1.0/24 > your LAN network)
+      - Destination: LAN net
       - Category: VPN
       # If Passing all traffic then: Allow VPN clients Internet Access
       - Description: Allow VPN clients to access LAN 
