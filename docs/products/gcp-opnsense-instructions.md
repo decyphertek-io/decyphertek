@@ -2,7 +2,8 @@ OPNsense® Firewall/Router/VPN/IDPS is a powerful, open-source network security 
 
 Note:
 -----
-* Two Network Interfaces are required.
+* x2 Network Interfaces are required.
+* x3 Network Interfaces If Using HA ( Still Untested ) https://docs.opnsense.org/manual/hacarp.html
 * Serial Console Access is required.
 * Can securely access OPNsense from your account via Serial Console.
 * root doesnt have an inital password set. Requires setup. I have verbose instructions.
