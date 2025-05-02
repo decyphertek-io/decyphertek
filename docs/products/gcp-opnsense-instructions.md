@@ -493,6 +493,12 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
       - Description: OpenVPN clients outbound NAT
       - Save & Apply Changes
 
+* Unblock WAN Private & Bogon Networks
+   - Interfaces > WAN
+   - UNCHECK "Block private networks"
+   - UNCHECK "Block bogon networks"
+   - Save and Apply changes
+
 * Export Client Configuration:
    - VPN > OpenVPN > Client Export
    - Remote Access Server: OpenVPN-Server udp:1194
