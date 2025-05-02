@@ -515,7 +515,7 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
 * Enable and configure Unbound:
    - Services > Unbound DNS > Advanced:
       - Rebind protection networks: 10.10.0.0/24 ( add )
-   - Save & Apply
+   - Apply
 
 # If Passing all traffic through the VPN 
 * Services > Unbound DNS > General:
