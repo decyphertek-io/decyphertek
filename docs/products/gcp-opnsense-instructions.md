@@ -726,7 +726,7 @@ Caution: Changing the HTTPS web Interface options can break the web interface.
 vi /conf/config.xml
 # After item , system , group user, Scroll a bit 
 <webgui>
-# Keep exisitng config
+# Keep existing config
 <nohttpreferercheck>1</nohttpreferercheck>
 </webgui>
 # Save > ESC > :wq!
