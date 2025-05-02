@@ -17,7 +17,7 @@ in the same VPC network.
 # Note: Subnets must be in the same region. 
 * VPC Network > Create VPC Network > WAN-VPC & LAN-VPC ( OR use exisitng ones ) 
 - create two subnets in the same region on both VPCs with different IP ranges. 
-* Enable Global Routing 
+* Optional: Enable Global Routing 
 * Note: select autosubnets will create 40+ subnets automaticly , custom subnets will not. 
 * Please use a different IP range for each subnet in each seperate VPC to avoid IP conflicts in the firewall. 
 * In the WAN VPC Subnet select Standard OR Static not Ephmeral, if IPS changes will break domain VPN settings. 
