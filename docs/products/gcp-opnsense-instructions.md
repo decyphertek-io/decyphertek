@@ -14,7 +14,8 @@ When using multiple network interfaces from an instance, each interface must att
 different VPC network. You can't attach multiple network interfaces to the same subnet or to subnets that are 
 in the same VPC network.
 
-# Note: Subnets must be in the same region. 
+Note: Subnets must be in the same region. 
+-------------------------------------------
 * VPC Network > Create VPC Network > WAN-VPC & LAN-VPC ( OR use exisitng ones ) 
 - create two subnets in the same region on both VPCs with different IP ranges. 
 * Optional: Enable Global Routing 
