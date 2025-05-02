@@ -180,7 +180,7 @@ Interfaces > WAN :
 * Save & Apply Changes 
 ```
 
-Enable MFA:
+(Optional) Enable MFA:
 -----------
 ```
 * Proceed With CAUTION!! This can lock you out of the Webgui and the Serial Console, if done incorrectly. Please test.
@@ -199,7 +199,7 @@ Enable MFA:
 - Password: OTP+Password ( EX: 123pass )
 ```
 
-Optional > Wizard:
+( Optional) Wizard:
 ----------------
 * CAUTION: Changing some Web UI HTTPS settings can break access. Please see Troubleshooting section to fix. 
 * To customize your settings with help from the Wizard.
