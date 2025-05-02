@@ -174,11 +174,10 @@ Enter an Option: 0
 ```
 Login > Dashboard > Interfaces > LAN :
 * MTU = 1460 
-* Save
+* Save & Apply changes
 Interfaces > WAN :
 * MTU = 1460 
-* Save
-* Apply Changes 
+* Save & Apply Changes 
 ```
 
 Enable MFA:
