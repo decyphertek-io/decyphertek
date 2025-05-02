@@ -359,7 +359,7 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
       - Digest Algorithm: SHA-256
       - Issuer: OPNsense-OpenVPN-CA
       - Lifetime: 3650 (10 yrs.)
-      - County Code: YOUR COUNTRY 
+      - Country Code: YOUR COUNTRY 
       - State or Province: Your state or Province
       - City: Your city 
       - Organization: Your company name
