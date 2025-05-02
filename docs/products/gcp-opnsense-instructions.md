@@ -8,7 +8,7 @@ Note:
 * root doesnt have an inital password set. Requires setup. I have verbose instructions.
 * Please be patient and follow the instructions. 
 
-Google VPC and Network Interafce setup:
+Google VPC and Network Interface setup:
 ---------------------------------------
 When using multiple network interfaces from an instance, each interface must attach to a subnet that is in a 
 different VPC network. You can't attach multiple network interfaces to the same subnet or to subnets that are 
