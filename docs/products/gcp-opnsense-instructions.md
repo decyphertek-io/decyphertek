@@ -422,6 +422,7 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
       - Renegotiate time: 3600
       - Auth Token Lifetime: 0 (never expires) or 86400 (1 day)
       - Local Network: LAN subnet (EX: 10.0.1.0/24) ( See the LAN you attached )
+      # Leave Blank if using split tunnel to access LAN only. 
       - Remote Network: ( 0.0.0.0/0 If passing all traffic thu VPN )
       - Misc.
          - Options: Optional
