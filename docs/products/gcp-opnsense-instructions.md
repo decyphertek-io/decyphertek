@@ -461,6 +461,7 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
       # For a split tunnel setup , where you only access LAN, Google Subnet, then.
       - Destination: Single Host or Network ( EX: 10.0.1.0/24 > your LAN network)
       - Category: VPN
+      # If Passing all traffic the: Allow VPN clients Internet Access
       - Description: Allow VPN clients to access LAN 
       - Save & Apply Changes
 
