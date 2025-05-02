@@ -429,6 +429,7 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
       - Misc.
          - Options: Optional
          - Push Options: Optional - Windows Specific 
+         # If passing all traffic , then use default.
          - Redirect gateway: autolocal
          - Register DNS: Check this box (helps Windows clients)
          - DNS Default Domain: blank ( Optional )
