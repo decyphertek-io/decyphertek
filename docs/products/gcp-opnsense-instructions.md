@@ -84,18 +84,18 @@ Password: What you set in option 3.
   # EX: Add your IP ( Be Aware that ISPs can change your IP , may need to set a range via /24 )
   155.18.184.119/32
 * Destination = This Firewall
-* Destination Port Range = HTTPS > HTTPS 
 * Category = WAN
 * Description = Firewall Web UI Admin Access 
 * Save 
 * Apply Changes 
-
-# Enable LAN vtnet1
+```
+* Enable LAN vtnet1
+```
 * Interfaces > Assignment :
-* Device = vtnet1
-* Description = LAN 
-* Add 
-* Save 
+   - Device = vtnet1
+   - Description = LAN 
+   - Add 
+   - Save 
 ```
 * Now lets go back to the serial console to finish setting up the WAN & LAN. 
 * Select Option 1: Assign Network Interfaces
