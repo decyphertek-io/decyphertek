@@ -253,7 +253,7 @@ opnsense-shell
 ```
 * Disable the root user: system > Access > users > Edit root > Check the Disabled box > Save
 
-SSL VPN Road Warrior Setup:
+(Optional) SSL VPN Road Warrior Setup:
 --------------------------
 ```
 # OPNsense OpenVPN Docs
