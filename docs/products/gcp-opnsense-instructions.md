@@ -77,17 +77,14 @@ Password: What you set in option 3.
 ```
 # Enable firewall so LAN can be enabled.
 * Firewall > Rules > WAN > Add ( Red + Button ) :
-# Change the following ( Can also utilized Google Firewall to whitelist access to Web UI as well. )
-* Action = Pass
-* Protocol = TCP 
-* Source = Single Host or Network ( Select ANY if you do not want to whitelist access )
-  # EX: Add your IP ( Be Aware that ISPs can change your IP , may need to set a range via /24 )
-  155.18.184.119/32
-* Destination = This Firewall
-* Category = WAN
-* Description = Firewall Web UI Admin Access 
-* Save 
-* Apply Changes 
+   - Action = Pass
+   - Protocol = TCP 
+   - Source = Single Host or Network ( ANY if not whitelisting )
+              EX: 155.19.184.119/32
+   - Destination = This Firewall
+   - Category = WAN
+   - Description = Firewall Web UI Admin Access 
+   - Save & Apply Changes 
 ```
 * Enable LAN vtnet1
 ```
