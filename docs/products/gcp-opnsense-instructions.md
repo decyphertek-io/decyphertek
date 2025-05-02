@@ -578,7 +578,8 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
 WireGuard Road Warrior Setup:
 ----------------------------
 ```
-* See the above instructions for VPC Peering & Routing. 
+* See the above instructions for VPC Peering & Routing.
+* See Above Instructions regarding DNS + DNS Firewall Rules. 
 # https://docs.opnsense.org/manual/how-tos/wireguard-client.html
 * Create the WireGuard server on OPNsense
 - VPN > WireGuard > Instances > Add ( Red + Button ) :
