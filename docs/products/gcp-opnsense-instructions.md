@@ -678,11 +678,6 @@ sudo wg-quick up test
 curl https://ifconfig.me
 ```
 
-Firewall Best Practice:
-----------------------
-Work In progress....
-
-
 TroubleShooting:
 ----------------
 Caution: Changing the HTTPS web Interface options can break the web interface. 
@@ -699,6 +694,11 @@ vi /conf/config.xml
 # Then run the following command:
 service configd restart
 ```
+
+Questions:
+---------
+* Please let me know if the docs do not work properly. 
+* Please see the official docs for more advanced settings. 
 
 References:
 -----------
