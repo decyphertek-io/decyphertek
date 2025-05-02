@@ -572,7 +572,7 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
       - VPN > openVPN > Log File
 ```
 
-WireGuard Road Warrior Setup:
+(Optional) WireGuard Road Warrior Setup:
 ----------------------------
 ```
 * See the above instructions for VPC Peering & Routing.
