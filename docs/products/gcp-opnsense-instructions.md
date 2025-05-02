@@ -170,6 +170,7 @@ Restore web GUI access defaults? [y/N] N
 Enter an Option: 0
 ```
 * Go back to the Web UI and set the MTU on the LAN & WAN ( Google requires 1460 )
+* You will have to except the SSL Cert again, since we changed it. 
 ```
 Login > Dashboard > Interfaces > LAN :
 * MTU = 1460 
