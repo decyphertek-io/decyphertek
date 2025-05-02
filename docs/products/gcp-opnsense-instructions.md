@@ -393,10 +393,10 @@ SSL VPN Road Warrior Setup:
       - Remote Network: Leave blank
       - Misc.
          - Options: Optional
-         - Push Options: Optional
-         - Redirect gateway: Optional
+         - Push Options: register-dns AND block-outside-dns
+         - Redirect gateway: autolocal
          - Register DNS: Check this box (helps Windows clients)
-         - DNS Default Domain: Your domain OR (EX: localdomain)
+         - DNS Default Domain: blank ( Optional )
          - DNS Servers: LAN DNS gateway (EX: 10.0.1.1) or 8.8.8.8
          - NTP Servers: Optional
       - Save & Apply
