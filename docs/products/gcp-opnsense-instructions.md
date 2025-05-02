@@ -248,6 +248,25 @@ SSL VPN Road Warrior Setup:
 # OPNsense OpenVPN Docs
 * https://docs.opnsense.org/manual/how-tos/sslvpn_client.html
 
+# If you want to access the LAN from the VPN you need to setup VPC Peering:
+# From Google Cloud ( EX: decyphertek is just an example , use your own nomenclature)
+* Create First VPC Peering:
+   - VPC Network > VPC Network Peering > Create Connection
+   - Name: wan-to-lan-peering
+   - Your VPC: decyphertek-wan
+   - Peered VPC: lan-decyphertek
+   - Check all import/export route options
+   - Click Create
+
+* Create Second VPC Peering:
+   - VPC Network > VPC Network Peering > Create Connection
+   - Name: lan-to-wan-peering
+   - Your VPC: lan-decyphertek
+   - Peered VPC: decyphertek-wan
+   - Check all import/export route options
+   - Click Create
+
+# From OPNsense Firewall
 # May need to create multiple groups if you want specific access for different users.
 # You can also utilize an exisitng user and add them to multiple groups. 
 * Create VPN Group:
@@ -465,6 +484,10 @@ SSL VPN Road Warrior Setup:
    - Check that client appears in the connected clients list
    - Verify client received proper IP address
    - Test connectivity to resources on your LAN
+
+* Troubleshoot:
+  - Verify OpenVPN port is open:
+    
 ```
 
 WireGuard Road Warrior Setup:
