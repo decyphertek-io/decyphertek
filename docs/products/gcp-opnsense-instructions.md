@@ -24,7 +24,7 @@ Note: Subnets must be in the same region.
 * Also select Private Google Access for the LAN VPC to avoid it attaching public IPS. 
 * Optional: Hybrid Subnets allow you to communicate to an on premise subnet. 
 * When adding LAN, attached as the second network interface set external IP address to none. 
-* Make sure to enable IPForwarding.
+* Make sure to enable IPForwarding, when lauchning the instance. 
 
 Remote Access:
 --------------
