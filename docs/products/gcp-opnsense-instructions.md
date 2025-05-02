@@ -39,6 +39,7 @@ gcloud resource-manager org-policies disable-enforce compute.disableSerialPortAc
 Login: root 
 # Password is empty , hit enter
 Password:
+# Retry a few times if it fails to connect. 
 ```
 * Once in the serial console as root, there should be an opnsense-shell menu
 * Select option 8: Enter the shell to enable the root account to access the OPNsense Web Dashboard:
