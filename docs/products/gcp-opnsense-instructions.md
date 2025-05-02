@@ -699,6 +699,7 @@ Questions:
 ---------
 * Please let me know if the docs do not work properly. 
 * Please see the official docs for more advanced settings. 
+* I do not offer formal support. I will help in certain circumstances. 
 
 References:
 -----------
