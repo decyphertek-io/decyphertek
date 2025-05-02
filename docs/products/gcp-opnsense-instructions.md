@@ -530,7 +530,7 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
 * Export Client Configuration:
    - VPN > OpenVPN > Client Export
    - Remote Access Server: OpenVPN-Server udp:1194
-   - Export Type: File Type
+   - Export Type: File Only
    - Hostname: public IP or domain
    - Port: 1194
    - Use Random Local Port: Checked 
