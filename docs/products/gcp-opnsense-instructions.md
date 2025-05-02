@@ -591,6 +591,9 @@ vi /conf/config.xml
 # Then run the following command:
 service configd restart
 ```
+Updates:
+--------
+* https://docs.opnsense.org/manual/updates.html
 
 Questions:
 ---------
