@@ -455,7 +455,7 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
    - Firewall > Rules > OpenVPN > Add (Red + Button):
       - Action: Pass
       - Interface: OpenVPN
-      - Direciton: In
+      - Direction: In
       - TCP/IP Version: IPv4
       - Protocol: Any
       - Source: Any 
@@ -463,7 +463,20 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
       # For a split tunnel setup , where you only access LAN, Google Subnet, then.
       - Destination: Single Host or Network ( EX: 10.0.1.0/24 > your LAN network)
       - Category: VPN
-      - Description: Allow VPN clients to access LAN ( OR VPN Internet Access )
+      - Description: Allow VPN clients to access LAN 
+      - Save & Apply Changes
+
+# If passing all trafic Through the VPN 
+* Add OpenVPN firewall Rule to allow DNS:
+   - Firewall > Rules > OpenVPN > Add (Red + Button):
+      - Action: Pass
+      - Interface: OpenVPN
+      - Protocol: TCP/UDP
+      - Source: OpenVPN net
+      - Destination: This Firewall
+      - Destination port: DNS
+      - Category: DNS
+      - Description: Allow OpenVPN to use DNS.
       - Save & Apply Changes
 
 * Add  LAN Interface Firewall Rules:
@@ -499,6 +512,21 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
    - UNCHECK "Block bogon networks"
    - Save and Apply changes
 
+# If passing all traffic through the VPN
+* Enable and configure Unbound:
+   - Services > Unbound DNS > Advance:
+      - Rebind protection networks: 10.10.0.0/24 ( add )
+   - Save & Apply
+
+# If Passing all traffic through the VPN 
+* Services > Unbound DNS > General:
+   - Enable Unbound: Checked 
+   - Listen Port: 53 (default)
+   - Network Interfaces: Select ALL interfaces
+   - Enable DNSSEC Support: Checked 
+   - Register DHCP Leases: Checked 
+   - Register DHCP Static Mappings: Checked 
+
 * Export Client Configuration:
    - VPN > OpenVPN > Client Export
    - Remote Access Server: OpenVPN-Server udp:1194
@@ -528,6 +556,9 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
    - Enter username and password when prompted
    - If TOTP is enabled, enter password + TOTP code
    - Wait for connection to establish
+
+* Linux Glitch: To get all traffic passing through VPN
+   - sudo sh -c 'echo "nameserver 8.8.8.8" > /etc/resolv.conf'
 
 * Verify Connection:
    - VPN > OpenVPN > Connection Status
