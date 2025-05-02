@@ -13,7 +13,7 @@ Google VPC and Network Interafce setup:
 When using multiple network interfaces from an instance, each interface must attach to a subnet that is in a 
 different VPC network. You can't attach multiple network interfaces to the same subnet or to subnets that are 
 in the same VPC network.
-```
+
 # Note: Subnets must be in the same region. 
 * VPC Network > Create VPC Network > WAN-VPC & LAN-VPC ( OR use exisitng ones ) > create two subnets in the same region on both VPCs with different IP ranges. 
 * Enable Global Routing if you are communicating across multiple regions which uses Cloud VPN or Cloud Interconnect.
@@ -23,7 +23,7 @@ in the same VPC network.
 * Also select Private Google Access for the LAN VPC to avoid it attaching public IPS. 
 * Optional: Hybrid Subnets allow you to communicate to an on premise subnet. 
 * When adding LAN, attached as the second network interface set external IP address to none. 
-```
+
 
 Remote Access:
 --------------
