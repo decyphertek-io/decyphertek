@@ -418,7 +418,7 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
       - TLS static key: None
       - Authentication: Local Database
       - Enforce local group: OpenVPN_Users
-      - Strict User/CN Matching: yes
+      - Strict User/CN Matching: no
       - Renegotiate time: 3600
       - Auth Token Lifetime: 0 (never expires) or 86400 (1 day)
       - Local Network: LAN subnet (EX: 10.0.1.0/24) ( See the LAN you attached )
