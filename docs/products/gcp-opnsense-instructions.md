@@ -478,7 +478,7 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
       - Description: Allow OpenVPN to use DNS.
       - Save & Apply Changes
 
-* Add  LAN Interface Firewall Rules:
+* Add LAN Interface Firewall Rules:
    - Firewall > Rules > LAN > Add (Red + Button):
      - Action: Pass
      - Interface: LAN
