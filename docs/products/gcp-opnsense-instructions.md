@@ -280,6 +280,35 @@ SSL VPN Road Warrior Setup:
    - Check all import/export route options
    - Click Create
 
+# From Terminal
+# NOTE: Your source and destination VM instances must have canIpForward enabled. 
+# In my testing just enabling it on OPNsense, I was allowed to ssh into a LAN instance. 
+# If you forgot to enable it during launching OPNsense. 
+gcloud auth application-default login
+gcloud compute instances describe opnsense | grep canIpForward
+gcloud config list project
+gcloud compute instances list --filter="name=YOUR_INSTANCE"
+gcloud compute instances export YOUR_INSTANCE --project YOUR_PROJECT_ID --zone YOUR_ZONE --destination=config.txt
+# EX: Can use your own text editor.
+vim config.txt
+canIpForward: true
+esc + :wq!
+gcloud compute instances update-from-file YOUR_INSTANCE --project YOUR_PROJECT_ID --zone YOUR_ZONE --source=config.txt --most-disruptive-allowed-action=REFRESH
+gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
+# Should return : canIpForward: true
+
+# From Google Cloud Console
+* VPC Network > Routes > Route Mangement > Create Route
+   - Name: lan-to-openvpn
+   - Description: Allows a LAN route to OpenVPN Subnet. 
+   - Network: lan-decyphertek
+   - Route Type: Static Route  
+   - IP Version: IPv4
+   - Destination IP range: 10.10.0.0/24
+   - Next hop: Specify an Instance
+   - Next hop Instance: opnsense
+   - Priority: 900 
+
 # From OPNsense Firewall
 # May need to create multiple groups if you want specific access for different users.
 # You can also utilize an exisitng user and add them to multiple groups. 
