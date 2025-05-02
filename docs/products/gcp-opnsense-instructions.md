@@ -491,7 +491,7 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
 
 * Enable NAT for VPN clients (Required if you want clients to access the internet through the VPN):
    - Firewall > NAT > Outbound
-      - Mode: Select "Hybrid outbound NAT rule generation" or "Manual outbound NAT rule generation"
+      - Mode: Select Hybrid outbound NAT rule generation
       - Save 
       - Click "Add" (Red + Button)
       - Interface: WAN
@@ -513,7 +513,7 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
 
 # If passing all traffic through the VPN
 * Enable and configure Unbound:
-   - Services > Unbound DNS > Advance:
+   - Services > Unbound DNS > Advanced:
       - Rebind protection networks: 10.10.0.0/24 ( add )
    - Save & Apply
 
