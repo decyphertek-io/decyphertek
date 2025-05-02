@@ -523,8 +523,9 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
    - Listen Port: 53 (default)
    - Network Interfaces: Select ALL interfaces
    - Enable DNSSEC Support: Checked 
-   - Register DHCP Leases: Checked 
+   - Register ISC DHCP4 Leases: Checked 
    - Register DHCP Static Mappings: Checked 
+   - Apply
 
 * Export Client Configuration:
    - VPN > OpenVPN > Client Export
