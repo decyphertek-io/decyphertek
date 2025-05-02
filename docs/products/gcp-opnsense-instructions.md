@@ -29,7 +29,6 @@ in the same VPC network.
    - Network interfaces > advanced options > Check Enable IP forwarding
 ```
 
-
 Remote Access:
 --------------
 * Please enable Serial Console > Launch VM > Click on VM > Edit > enable Remote Access: Enable connecting to serial ports > save
