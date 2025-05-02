@@ -199,13 +199,13 @@ Interfaces > WAN :
 - Password: OTP+Password ( EX: 123pass )
 ```
 
-( Optional) Wizard:
+(Optional) Wizard:
 ----------------
 * CAUTION: Changing some Web UI HTTPS settings can break access. Please see Troubleshooting section to fix. 
 * To customize your settings with help from the Wizard.
 * System > Wizard > next > Choose your desired Settings.
 
-Optional > Enable SSH Access:
+(Optional) Enable SSH Access:
 -----------------------------
 * Enable SSH : System > Settings > Secure Shell > Click Enable Secure Shell > If Using the root user click Permit root user login > save
 * Add SSH Keys: System > Access > Users > Edit User > Login Shell = /bin/csh > authorized keys ( .pub ) = rsa SSHKEY NAME > save 
