@@ -487,6 +487,11 @@ SSL VPN Road Warrior Setup:
 
 * Troubleshoot:
   - Verify OpenVPN port is open:
+  - sudo nmap -Pn -sU -p 1194 PUBLIC-IP
+  - Check Firewall Logs:
+      - Firewall > Log Files > Live View
+  - Check OpenVPN Logs:
+      - VPN > openVPN > Log File
     
 ```
 
