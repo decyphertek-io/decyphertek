@@ -219,7 +219,7 @@ ssh -i keyname.pem root@IP-OF-SERVER
 opnsense-shell
 ```
 
-Optional > Dedicated Admin User, no root:
+(Optional) Dedicated Admin User, no root:
 ---------------------------------------
 * Create a new admin User: System > Access > Users > ADD New USER
 ```
