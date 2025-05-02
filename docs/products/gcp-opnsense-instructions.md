@@ -534,7 +534,6 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
    - Hostname: public IP or domain
    - Port: 1194
    - Use Random Local Port: Checked 
-   - P12 Password/confirm: Optional
    - Validate server subject: Checked
    - Windows Certificate System Store: If Using Windows Check
    - Disable password save: Optional
