@@ -465,7 +465,7 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
       - Description: Allow VPN clients to access LAN 
       - Save & Apply Changes
 
-# If passing all trafic Through the VPN 
+# Not required if Using destination any from above
 * Add OpenVPN firewall Rule to allow DNS:
    - Firewall > Rules > OpenVPN > Add (Red + Button):
       - Action: Pass
