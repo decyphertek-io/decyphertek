@@ -9,16 +9,10 @@ Note:
 * root doesnt have an inital password set. Requires setup. I have verbose instructions.
 * Please be patient and follow the instructions. 
 
-Google VPC and Network Interface setup:
----------------------------------------
-When using multiple network interfaces from an instance, each interface must attach to a subnet that is in a 
-different VPC network. You can't attach multiple network interfaces to the same subnet or to subnets that are 
-in the same VPC network.
-
 Note: X2 Subnets must be in the same region & In Different VPCs. 
 -----------------------------------------------------------------
 * VPC Network > Create VPC Network > WAN-VPC & LAN-VPC ( OR use exisitng ones ) 
-* Create x2 subnets, differnt VPCs, same region & different IP/CIDR Ranges.
+* Create x2 subnets, different VPCs, same region & different IP/CIDR Ranges.
 * Optional: Enable Global Routing 
 * Note: Autosubnets creates 40+ subnets automaticly , custom subnets will not. 
 * In the WAN VPC Subnet select Standard OR Static not Ephmeral, if IPS changes will break domain VPN settings. 
