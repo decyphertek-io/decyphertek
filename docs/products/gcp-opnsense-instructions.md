@@ -24,7 +24,7 @@ Note: X2 Subnets must be in the same region & In Different VPCs.
 * In the WAN VPC Subnet select Standard OR Static not Ephmeral, if IPS changes will break domain VPN settings. 
 * Optional: Hybrid Subnets allow you to communicate to an on premise subnet. 
 * LAN: attach as the second network interface & set external IP address to none. 
-* Make sure to enable IP Forwarding : enable checked, when launching the instance. 
+* Make sure to enable IP Forwarding : check to enable, when launching the instance. 
 
 Remote Access:
 --------------
