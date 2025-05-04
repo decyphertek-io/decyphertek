@@ -68,6 +68,9 @@ nav:
         - Mitre Caldera V5: 
             - Instructions: products/gcp-caldera-instructions.md
             - EULA: products/gcp-caldera-eula.md
+        - NethSecurity:
+            - Instructions: products/gcp-nethsecurity-instructions.md
+            - EULA: products/gcp-nethsecurity-eula.md
         - Node-RED:
             - Instructions: products/gcp-nodered-instructions.md
             - EULA: products/gcp-nodered-eula.md
