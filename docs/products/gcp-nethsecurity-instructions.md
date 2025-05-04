@@ -80,7 +80,7 @@ echo '{"name":"_lan"}' | /usr/libexec/rpcd/ns.reverseproxy call set-default-cert
         - Click Unsaved Changes > Apply Changes 
 
 * Serial Console Access:
-    - If you break SSH Access, can access via serial console.
+    - If you are unable to access SSH Access, can access via serial console.
     - GCP > Instance > Edit > Enable Serial Console access
     - Connect to Serial Console > Enter > Login as root
 
