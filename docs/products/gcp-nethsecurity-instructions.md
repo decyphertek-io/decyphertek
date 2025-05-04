@@ -61,11 +61,12 @@ echo '{"name":"_lan"}' | /usr/libexec/rpcd/ns.reverseproxy call set-default-cert
     - Extract & Upload
 
 * Create Dedicated Admin User:
-    - System > Users > Create User
-    - Username: USERNAME
-    - Password: PASSWORD
-    - Administrator Access: Enabled
-    - Save
+    - Users & Objects > User Databases > Add User
+        - Username: USERNAME
+        - Display Name: NAME
+        - User Password: PASSWORD
+        - Administrator User: Enabled
+        - Add User
 
 * Change SSH Script:
     - Easier to add ssh keys to GCP Console, then to add via Web UI.
@@ -75,12 +76,18 @@ echo '{"name":"_lan"}' | /usr/libexec/rpcd/ns.reverseproxy call set-default-cert
 # This changes the script to your admin user and clears the exisitng keys for root.
 # Delete existing SSH Keys via GCP > Instance > Edit > Security Access
 # make sure to replace USERNAME with your new admin user.
-sed -i 's/root:/USERNAME:/g' /opt/.aloe.sh && : > /etc/dropbear/authorized_keys
+sed -i 's/root:/USERNAME:/g' /opt/.aloe.sh
 # Now add your new SSH Keys
 # GCP > INstance > Edit > Security Access > ssh-rsa SSH-KEY.PUB USERANME > Save
 # Wait a few minutes and test. 
 # Alternatively , you can attach ssh keys from Users & Objects > User Database
+# After a minute test if you can ssh in
+ssh -i gcp.pem USERNAME@IP-OF-SERVER
 ```
+* Serial Console Access:
+    - If you break SSH Access, can access via serial console.
+    - GCP > Instance > Edit > Enable Serial Console access
+    - Connect to Serial Console > Enter > Login as root
 
 * Enable Multi-Factor Authentication:
     - Security > Authentication > MFA
