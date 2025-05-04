@@ -101,12 +101,6 @@ ssh -i gcp.pem USERNAME@IP-OF-SERVER
     - Uncheck "Enabled" or set "Shell Access" to disabled
     - Save
 
-* Update SSH Key Configuration:
-    - Security > Manage Access
-    - Remove root SSH key
-    - Add SSH key for admin user
-    - Format: ssh-rsa SSH-KEY.pub admin
-
 Network Configuration:
 ----------------------
 ```
