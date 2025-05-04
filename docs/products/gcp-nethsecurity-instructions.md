@@ -34,9 +34,19 @@ Security Hardening:
     - https://docs.nethsecurity.org/en/latest/reverse_proxy.html
     - System > Certificates > Import Certificate
     - Generate self-signed certificate or import existing certificate
-    - If changing the cert breaks access to the Web UI:
+    - Set as default
 ```
-# To fix broken Web UI access, from terminal run:
+# Generate Self Signed cert. Can run from firewall temrinal and copy to you system. Then upload.
+openssl req -x509 -nodes -days 3650 -newkey ec:<(openssl ecparam -name secp384r1) \
+-keyout self-signed-key.pem \
+-out self-signed-crt.pem \
+-subj "/C=US/ST=Any/L=Anytown/O=decyphertek/OU=adminotaur/CN=decyphertek"
+# After changing produces an error, copy command and run form terminal.
+echo '{"service":"hosts"}' | /usr/libexec/rpcd/ns.dashboard call counter
+```
+* If cert change unsuccesful, change back to original Cert. 
+```
+#To fix broken Web UI access, from terminal run:
 echo '{"name":"_lan"}' | /usr/libexec/rpcd/ns.reverseproxy call set-default-certificate
 ```
 
