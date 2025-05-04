@@ -3,12 +3,11 @@ NethSecurity CE UTM Firewall is a powerful, open-source network security platfor
 Note:
 -----
 * Requires x2 Network Interfaces.
-* Two VPCs, x2 subnets in each subnet.
-* Subnets have to be in the same region.
+* Two VPCs: x2 subnets in the same region.
 * WAN-VPC-Subent Should set external IP as static. 
 * LAN-VPC-Subnet should have External IP addresses as None.
 * Requires VPC Peering & Routes to access LAN from VPN. 
-* Attach network interfaces as: WAN-VPC-Subnet 1st & LAN-VPC-Subnet 2nd. 
+* Attach network interfaces: WAN-VPC-Subnet 1st & LAN-VPC-Subnet 2nd. 
 * Enable IPForwarding. Attach SSH Keys to ssh in as root. 
 
 Login:
