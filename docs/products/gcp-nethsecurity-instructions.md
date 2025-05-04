@@ -123,7 +123,7 @@ OpenVPN Setup:
     - Port: 1194
     - Encryption: AES-256-GCM
     - Authentication: Certificate + Username/Password
-    - Network: 10.8.0.0/24 (or preferred subnet)
+    - Network: 10.10.0.0/24 (or preferred subnet)
     - Save
 
 * Create VPN Users:
