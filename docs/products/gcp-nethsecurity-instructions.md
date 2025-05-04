@@ -41,6 +41,13 @@ Security Hardening:
 * Update System:
     - System > Updates > Check for Fixes
 
+* System Updates:
+    # Only required for a major verison Upgrade.
+    # Proceed with caution, backup before proceeding.
+    - System > Updates > System Updates
+    - https://nethsecurity.org/download
+    - 
+
 * Enable Multi-Factor Authentication:
     - Security > Authentication > MFA
     - Enable MFA
