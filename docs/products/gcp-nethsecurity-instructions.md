@@ -68,6 +68,7 @@ echo '{"name":"_lan"}' | /usr/libexec/rpcd/ns.reverseproxy call set-default-cert
     - Save
 
 * Change SSH Script:
+    - Easier to add ssh keys to GCP Console, then to add via Web UI.
     - A custom script attaches ssh keys to the root account.
     - To change this to your new admin account, run from terminal:
 ```
