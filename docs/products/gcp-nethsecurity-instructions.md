@@ -74,14 +74,13 @@ echo '{"name":"_lan"}' | /usr/libexec/rpcd/ns.reverseproxy call set-default-cert
     - To change this to your new admin account, run from terminal:
 ```
 # This changes the script to your admin user and clears the exisitng keys for root.
-# Delete existing SSH Keys via GCP > Instance > Edit > Security Access
 # make sure to replace USERNAME with your new admin user.
 sed -i 's/root:/USERNAME:/g' /opt/.aloe.sh
 # Now add your new SSH Keys
+# Delete your old keys and add the new ones. 
 # GCP > INstance > Edit > Security Access > ssh-rsa SSH-KEY.PUB USERANME > Save
 # Wait a few minutes and test. 
-# Alternatively , you can attach ssh keys from Users & Objects > User Database
-# After a minute test if you can ssh in
+# The new keys should show up in Users & Objects > User Database > Username
 ssh -i gcp.pem USERNAME@IP-OF-SERVER
 ```
 * Serial Console Access:
