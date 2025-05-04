@@ -5,6 +5,8 @@ Note:
 * Requires x2 Network Interfaces.
 * Two VPCs, x2 subnets in each subnet.
 * Subnets have to be in the same region.
+* WAN-VPC-Subent Should set external IP as static. 
+* LAN-VPC-Subnet should have External IP addresses as None.
 * Requires VPC Peering & Routes to access LAN from VPN. 
 * Attach network interfaces as: WAN-VPC-Subnet 1st & LAN-VPC-Subnet 2nd. 
 * Enable IPForwarding. Attach SSH Keys to ssh in as root. 
@@ -12,6 +14,7 @@ Note:
 Login:
 ------
 * Attach SSH Keys: 
+    - 
     - ssh -i gcp.pem root@IP-OF-SERVER
 * Retrieve Password: 
     - cat admin_password.txt
@@ -20,7 +23,7 @@ Login:
     - Username: root
     - Password: ( admin_password.txt )
 * Please change the password once you login.
-    - Top RIght: Click Profile Icon.
+    - Top Right: Click Profile Icon.
     - Enter Old Password &  new password > save.
 
 References:
