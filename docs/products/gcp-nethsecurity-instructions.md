@@ -25,11 +25,27 @@ Login:
     - Username: root
     - Password: ( admin_password.txt )
 * Please change the password once you login.
-    - Top Right: Click Profile Icon.
+    - Top Right: Account > Account Settings > Change Password
     - Enter Old Password & new password > save.
 
 Security Hardening:
 ------------------
+* Replace Default SSL Certificate:
+    - System > Certificates > Add
+    - Generate self-signed certificate or import existing certificate
+    - Name: NethSecurity-WebUI
+    - Common Name: [Your Server IP/Hostname]
+    - Save
+    - System > Administration > Set as Web GUI certificate
+    
+* Enable Multi-Factor Authentication:
+    - Security > Authentication > MFA
+    - Enable MFA
+    - Configure Authentication App
+    - Scan QR code with Google Authenticator or similar app
+    - Enter verification code to confirm
+    - Save
+
 * Create Dedicated Admin User:
     - System > Users > Create User
     - Username: admin
@@ -42,22 +58,6 @@ Security Hardening:
     - System > Users > Edit "root"
     - Uncheck "Enabled" or set "Shell Access" to disabled
     - Save
-
-* Enable Multi-Factor Authentication:
-    - Security > Authentication > MFA
-    - Enable MFA
-    - Configure Authentication App
-    - Scan QR code with Google Authenticator or similar app
-    - Enter verification code to confirm
-    - Save
-
-* Replace Default SSL Certificate:
-    - System > Certificates > Add
-    - Generate self-signed certificate or import existing certificate
-    - Name: NethSecurity-WebUI
-    - Common Name: [Your Server IP/Hostname]
-    - Save
-    - System > Administration > Set as Web GUI certificate
 
 * Update SSH Key Configuration:
     - Security > Manage Access
