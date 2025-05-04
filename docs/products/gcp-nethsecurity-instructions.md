@@ -34,7 +34,11 @@ Security Hardening:
     - https://docs.nethsecurity.org/en/latest/reverse_proxy.html
     - System > Certificates > Import Certificate
     - Generate self-signed certificate or import existing certificate
-    - 
+    - If changing the cert breaks access to the Web UI:
+```
+# To fix broken Web UI access, from terminal run:
+echo '{"name":"_lan"}' | /usr/libexec/rpcd/ns.reverseproxy call set-default-certificate
+```
 
 * Update System:
     - System > Updates > Check for Fixes
