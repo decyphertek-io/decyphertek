@@ -28,6 +28,14 @@ Login:
     - Top Right: Account > Account Settings > Change Password
     - Enter Old Password & New password > Save.
 
+Network MTU Settings:
+---------------------
+* Change MTU to 1460 to be compatible with GCP.
+    - Network > Interfaces & Devices > 
+        - LAN > Edit > Advanced > MTU = 1460 > Reconfigure Interface
+        - WAN > Edit > Advanced > MTU = 1460 > Reconfigure Interface
+    - Click Unsaved Changes > Apply Changes
+
 Security Hardening:
 ------------------
 * Replace Default SSL Certificate:
