@@ -31,12 +31,10 @@ Login:
 Security Hardening:
 ------------------
 * Replace Default SSL Certificate:
+    - https://docs.nethsecurity.org/en/latest/reverse_proxy.html
     - System > Certificates > Import Certificate
     - Generate self-signed certificate or import existing certificate
-    - Name: NethSecurity-WebUI
-    - Common Name: [Your Server IP/Hostname]
-    - Save
-    - System > Administration > Set as Web GUI certificate
+    - 
 
 * Update System:
     - System > Updates > Check for Fixes
@@ -154,5 +152,5 @@ OpenVPN Setup:
 
 References:
 -----------
-https://docs.nethsecurity.org/en/latest/
-https://cloud.google.com/vpc/docs/vpc-peering
+* https://docs.nethsecurity.org/en/latest/
+* https://cloud.google.com/vpc/docs/vpc-peering
