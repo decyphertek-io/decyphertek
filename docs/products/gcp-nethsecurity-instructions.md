@@ -36,7 +36,7 @@ Security Hardening:
     - Generate self-signed certificate or import existing certificate
     - Set as default
 ```
-# Generate Self Signed cert. Can run from firewall temrinal and copy to you system. Then upload.
+# Generate Self Signed cert. Can run from firewall temrinal and copy to your system. Then upload.
 openssl req -x509 -nodes -days 3650 -newkey ec:<(openssl ecparam -name secp384r1) \
 -keyout self-signed-key.pem \
 -out self-signed-crt.pem \
