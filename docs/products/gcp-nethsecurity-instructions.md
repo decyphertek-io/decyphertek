@@ -4,11 +4,11 @@ Note:
 -----
 * Requires x2 Network Interfaces.
 * Two VPCs: x1 subnet in each VPC & in the same region.
+* Attach network interfaces: WAN-VPC-Subnet 1st & LAN-VPC-Subnet 2nd. 
 * WAN-VPC-Subnet Should set external IP as static. 
 * LAN-VPC-Subnet should have External IP addresses as None.
-* Requires VPC Peering & Routes to access LAN from VPN. 
-* Attach network interfaces: WAN-VPC-Subnet 1st & LAN-VPC-Subnet 2nd. 
 * Enable IPForwarding. Attach SSH Keys to ssh in as root. 
+* Requires VPC Peering & Routes to access LAN from VPN. 
 
 Login:
 ------
