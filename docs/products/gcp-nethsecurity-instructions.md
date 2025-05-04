@@ -41,7 +41,7 @@ openssl req -x509 -nodes -days 3650 -newkey ec:<(openssl ecparam -name secp384r1
 -keyout self-signed-key.pem \
 -out self-signed-crt.pem \
 -subj "/C=US/ST=Any/L=Anytown/O=decyphertek/OU=adminotaur/CN=decyphertek"
-# After changing produces an error, copy command and run form terminal.
+# After changing produces an error, copy command and run from terminal.
 echo '{"service":"hosts"}' | /usr/libexec/rpcd/ns.dashboard call counter
 ```
 * If cert change unsuccesful, change back to original Cert. 
