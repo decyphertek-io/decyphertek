@@ -38,6 +38,9 @@ Security Hardening:
     - Save
     - System > Administration > Set as Web GUI certificate
 
+* Update System:
+    - System > Updates > Check for Fixes
+
 * Enable Multi-Factor Authentication:
     - Security > Authentication > MFA
     - Enable MFA
