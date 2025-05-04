@@ -28,6 +28,120 @@ Login:
     - Top Right: Click Profile Icon.
     - Enter Old Password & new password > save.
 
+Security Hardening:
+------------------
+* Create Dedicated Admin User:
+    - System > Users > Create User
+    - Username: admin
+    - Password: [Strong Password]
+    - SSH Public Keys: [Copy SSH keys from root]
+    - Administrator Access: Enabled
+    - Save
+
+* Disable Root Account:
+    - System > Users > Edit "root"
+    - Uncheck "Enabled" or set "Shell Access" to disabled
+    - Save
+
+* Enable Multi-Factor Authentication:
+    - Security > Authentication > MFA
+    - Enable MFA
+    - Configure Authentication App
+    - Scan QR code with Google Authenticator or similar app
+    - Enter verification code to confirm
+    - Save
+
+* Replace Default SSL Certificate:
+    - System > Certificates > Add
+    - Generate self-signed certificate or import existing certificate
+    - Name: NethSecurity-WebUI
+    - Common Name: [Your Server IP/Hostname]
+    - Save
+    - System > Administration > Set as Web GUI certificate
+
+* Update SSH Key Configuration:
+    - Security > Manage Access
+    - Remove root SSH key
+    - Add SSH key for admin user
+    - Format: ssh-rsa SSH-KEY.pub admin
+
+Network Configuration:
+----------------------
+# If you want to access the LAN from the VPN you need to setup VPC Peering:
+# From Google Cloud ( EX: decyphertek is just an example , use your own nomenclature)
+* Create WAN to LAN VPC Peering:
+   - VPC Network > VPC Network Peering > Create Connection
+   - Name: wan-to-lan-peering
+   - Your VPC: decyphertek-wan
+   - Peered VPC: lan-decyphertek
+   - Check all import/export route options
+   - Click Create
+
+* Create LAN to WAN VPC Peering:
+   - VPC Network > VPC Network Peering > Create Connection
+   - Name: lan-to-wan-peering
+   - Your VPC: lan-decyphertek
+   - Peered VPC: decyphertek-wan
+   - Check all import/export route options
+   - Click Create
+
+# From Terminal
+# NOTE: Your source and destination VM instances must have canIpForward enabled. 
+# In my testing just enabling it on NethSecurity, I was allowed to ssh into a LAN instance. 
+# If you forgot to enable it during launching NethSecurity. 
+gcloud auth application-default login
+gcloud compute instances describe opnsense | grep canIpForward
+gcloud config list project
+gcloud compute instances list --filter="name=YOUR_INSTANCE"
+gcloud compute instances export YOUR_INSTANCE --project YOUR_PROJECT_ID --zone YOUR_ZONE --destination=config.txt
+# EX: Can use your own text editor.
+vim config.txt
+canIpForward: true
+esc + :wq!
+gcloud compute instances update-from-file YOUR_INSTANCE --project YOUR_PROJECT_ID --zone YOUR_ZONE --source=config.txt --most-disruptive-allowed-action=REFRESH
+gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
+# Should return : canIpForward: true
+
+# From Google Cloud Console
+* VPC Network > Routes > Route Mangement > Create Route
+   - Name: lan-to-openvpn
+   - Description: Allows a LAN route to OpenVPN Subnet. 
+   - Network: lan-decyphertek
+   - Route Type: Static Route  
+   - IP Version: IPv4
+   - Destination IP range: 10.10.0.0/24
+   - Next hop: Specify an Instance
+   - Next hop Instance: nethsecurity
+   - Priority: 900 
+
+OpenVPN Setup:
+--------------
+* Setup OpenVPN Road Warrior:
+    - VPN > OpenVPN > Create Server
+    - Mode: Routed
+    - Protocol: UDP
+    - Port: 1194
+    - Encryption: AES-256-GCM
+    - Authentication: Certificate + Username/Password
+    - Network: 10.8.0.0/24 (or preferred subnet)
+    - Save
+
+* Create VPN Users:
+    - System > Users > Create User
+    - Username: vpnuser
+    - Set password
+    - Add to OpenVPN group
+    - Save
+
+* Generate Client Configuration:
+    - VPN > OpenVPN > Client Export
+    - Select User: vpnuser
+    - Download configuration file
+    - Distribute to end users
+
+
+
+
 References:
 -----------
 https://docs.nethsecurity.org/en/latest/
