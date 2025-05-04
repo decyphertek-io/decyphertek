@@ -54,11 +54,11 @@ echo '{"name":"_lan"}' | /usr/libexec/rpcd/ns.reverseproxy call set-default-cert
     - System > Updates > Check for Fixes
 
 * System Updates:
-    # Only required for a major verison Upgrade.
-    # Proceed with caution, backup before proceeding.
+    * Only required for a major verison Upgrade.
+    * Proceed with caution, backup before proceeding.
     - System > Updates > System Updates
     - https://nethsecurity.org/download
-    - 
+    - Extract & Upload
 
 * Enable Multi-Factor Authentication:
     - Security > Authentication > MFA
