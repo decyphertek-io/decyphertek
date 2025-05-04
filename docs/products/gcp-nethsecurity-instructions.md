@@ -40,9 +40,11 @@ Security Hardening:
 ------------------
 * Replace Default SSL Certificate:
     - https://docs.nethsecurity.org/en/latest/reverse_proxy.html
-    - System > Certificates > Import Certificate
     - Generate self-signed certificate or import existing certificate
+    - System > Certificates > Import Certificate
     - Set as default
+    - Click Unsaved Changes > Apply Changes
+    - Refresh Browser & Accept new cert warning ( If Self Signed )
 ```
 # Generate Self Signed cert. Can run from firewall terminal and copy to your system. Then upload.
 openssl req -x509 -nodes -days 3650 -newkey ec:<(openssl ecparam -name secp384r1) \
