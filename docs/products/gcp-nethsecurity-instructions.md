@@ -73,8 +73,11 @@ echo '{"name":"_lan"}' | /usr/libexec/rpcd/ns.reverseproxy call set-default-cert
     - To change this to your new admin account, run from terminal:
 ```
 # This changes the script to your admin user and clears the exisitng keys for root.
+# Delete existing SSH Keys via GCP > Instance > Edit > Security Access
 # make sure to replace USERNAME with your new admin user.
 sed -i 's/root:/USERNAME:/g' /opt/.aloe.sh && : > /etc/dropbear/authorized_keys
+# Now add your new SSH Keys
+# GCP > INstance > Edit > Security Access > ssh-rsa SSH.PUB KEY USERANME:
 ```
 
 * Enable Multi-Factor Authentication:
