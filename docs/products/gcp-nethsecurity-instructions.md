@@ -77,10 +77,12 @@ Security Hardening:
 
 Network Configuration:
 ----------------------
+```
 # If you want to access the LAN from the VPN you need to setup VPC Peering:
 # From Google Cloud ( EX: decyphertek is just an example , use your own nomenclature)
+```
 * Create WAN to LAN VPC Peering:
-   - VPC Network > VPC Network Peering > Create Connection
+   - GCP > VPC Network > VPC Network Peering > Create Connection
    - Name: wan-to-lan-peering
    - Your VPC: decyphertek-wan
    - Peered VPC: lan-decyphertek
@@ -88,13 +90,13 @@ Network Configuration:
    - Click Create
 
 * Create LAN to WAN VPC Peering:
-   - VPC Network > VPC Network Peering > Create Connection
+   - GCP > VPC Network > VPC Network Peering > Create Connection
    - Name: lan-to-wan-peering
    - Your VPC: lan-decyphertek
    - Peered VPC: decyphertek-wan
    - Check all import/export route options
    - Click Create
-
+```
 # From Terminal
 # NOTE: Your source and destination VM instances must have canIpForward enabled. 
 # In my testing just enabling it on NethSecurity, I was allowed to ssh into a LAN instance. 
@@ -111,9 +113,9 @@ esc + :wq!
 gcloud compute instances update-from-file YOUR_INSTANCE --project YOUR_PROJECT_ID --zone YOUR_ZONE --source=config.txt --most-disruptive-allowed-action=REFRESH
 gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
 # Should return : canIpForward: true
+```
 
-# From Google Cloud Console
-* VPC Network > Routes > Route Mangement > Create Route
+* GCP > VPC Network > Routes > Route Mangement > Create Route
    - Name: lan-to-openvpn
    - Description: Allows a LAN route to OpenVPN Subnet. 
    - Network: lan-decyphertek
@@ -123,6 +125,7 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
    - Next hop: Specify an Instance
    - Next hop Instance: nethsecurity
    - Priority: 900 
+
 
 OpenVPN Setup:
 --------------
