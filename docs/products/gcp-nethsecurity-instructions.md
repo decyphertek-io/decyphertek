@@ -60,20 +60,28 @@ echo '{"name":"_lan"}' | /usr/libexec/rpcd/ns.reverseproxy call set-default-cert
     - https://nethsecurity.org/download
     - Extract & Upload
 
+* Create Dedicated Admin User:
+    - System > Users > Create User
+    - Username: USERNAME
+    - Password: PASSWORD
+    - Administrator Access: Enabled
+    - Save
+
+* Change SSH Script:
+    - A custom script attaches ssh keys to the root account.
+    - To change this to your new admin account, run from terminal:
+```
+# This changes the script to your admin user and clears the exisitng keys for root.
+# make sure to replace USERNAME with your new admin user.
+sed -i 's/root:/USERNAME:/g' /opt/.aloe.sh && : > /etc/dropbear/authorized_keys
+```
+
 * Enable Multi-Factor Authentication:
     - Security > Authentication > MFA
     - Enable MFA
     - Configure Authentication App
     - Scan QR code with Google Authenticator or similar app
     - Enter verification code to confirm
-    - Save
-
-* Create Dedicated Admin User:
-    - System > Users > Create User
-    - Username: admin
-    - Password: [Strong Password]
-    - SSH Public Keys: [Copy SSH keys from root]
-    - Administrator Access: Enabled
     - Save
 
 * Disable Root Account:
