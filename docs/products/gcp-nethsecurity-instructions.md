@@ -26,7 +26,7 @@ Login:
     - Password: ( admin_password.txt )
 * Please change the password once you login.
     - Top Right: Click Profile Icon.
-    - Enter Old Password &  new password > save.
+    - Enter Old Password & new password > save.
 
 References:
 -----------
