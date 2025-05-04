@@ -31,7 +31,7 @@ Login:
 Security Hardening:
 ------------------
 * Replace Default SSL Certificate:
-    - System > Certificates > Add
+    - System > Certificates > Import Certificate
     - Generate self-signed certificate or import existing certificate
     - Name: NethSecurity-WebUI
     - Common Name: [Your Server IP/Hostname]
