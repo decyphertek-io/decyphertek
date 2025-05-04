@@ -70,29 +70,15 @@ echo '{"name":"_lan"}' | /usr/libexec/rpcd/ns.reverseproxy call set-default-cert
     - https://nethsecurity.org/download
     - Extract & Upload
 
-* Create Dedicated Admin User:
+* Create an Admin User:
     - Users & Objects > User Databases > Add User
         - Username: USERNAME
-        - Display Name: NAME
+        - Display Name: USERNAME
         - User Password: PASSWORD
         - Administrator User: Enabled
         - Add User
+        - Click Unsaved Changes > Apply Changes 
 
-* Change SSH Script:
-    - Easier to add ssh keys to GCP Console, then to add via Web UI.
-    - A custom script attaches ssh keys to the root account.
-    - To change this to your new admin account, run from terminal:
-```
-# This changes the script to your admin user and clears the exisitng keys for root.
-# make sure to replace USERNAME with your new admin user.
-sed -i 's/root:/USERNAME:/g' /opt/.aloe.sh
-# Now add your new SSH Keys
-# Delete your old keys and add the new ones. 
-# GCP > INstance > Edit > Security Access > ssh-rsa SSH-KEY.PUB USERANME > Save
-# Wait a few minutes and test. 
-# The new keys should show up in Users & Objects > User Database > Username
-ssh -i gcp.pem USERNAME@IP-OF-SERVER
-```
 * Serial Console Access:
     - If you break SSH Access, can access via serial console.
     - GCP > Instance > Edit > Enable Serial Console access
@@ -105,9 +91,6 @@ ssh -i gcp.pem USERNAME@IP-OF-SERVER
     - Scan QR code with Google Authenticator or similar app
     - Enter verification code to confirm
     - Save
-
-* Disable Root Account:
-    - Work in progress...
 
 Network Configuration:
 ----------------------
