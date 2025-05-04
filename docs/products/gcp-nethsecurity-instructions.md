@@ -97,9 +97,7 @@ ssh -i gcp.pem USERNAME@IP-OF-SERVER
     - Save
 
 * Disable Root Account:
-    - System > Users > Edit "root"
-    - Uncheck "Enabled" or set "Shell Access" to disabled
-    - Save
+    - Work in progress...
 
 Network Configuration:
 ----------------------
