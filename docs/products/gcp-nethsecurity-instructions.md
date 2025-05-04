@@ -18,7 +18,7 @@ Login:
     - SSH Key Format > ssh-rsa SSH-KEY.pub root
     - ssh -i SSH-KEY.pem root@IP-OF-SERVER
     - If using Putty or Mobaxterm: Convert pem key to PPK format. 
-* Retrieve Password: 
+* Retrieve Randomly generated Password: 
     - cat admin_password.txt
 * Login to the Web UI.
     - https://IP-OF-SERVER
