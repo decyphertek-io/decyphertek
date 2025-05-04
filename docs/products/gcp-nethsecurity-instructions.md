@@ -26,7 +26,7 @@ Login:
     - Password: ( admin_password.txt )
 * Please change the password once you login.
     - Top Right: Account > Account Settings > Change Password
-    - Enter Old Password & new password > save.
+    - Enter Old Password & New password > Save.
 
 Security Hardening:
 ------------------
@@ -37,7 +37,7 @@ Security Hardening:
     - Common Name: [Your Server IP/Hostname]
     - Save
     - System > Administration > Set as Web GUI certificate
-    
+
 * Enable Multi-Factor Authentication:
     - Security > Authentication > MFA
     - Enable MFA
