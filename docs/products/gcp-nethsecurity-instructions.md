@@ -139,9 +139,6 @@ OpenVPN Setup:
     - Download configuration file
     - Distribute to end users
 
-
-
-
 References:
 -----------
 https://docs.nethsecurity.org/en/latest/
