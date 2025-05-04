@@ -2,6 +2,7 @@ NethSecurity CE UTM Firewall is a powerful, open-source network security platfor
 
 Note:
 -----
+* Recommended VM: e2-standard-2 or larger. 
 * Requires x2 Network Interfaces.
 * Two VPCs: x1 subnet in each VPC & in the same region.
 * Attach network interfaces: WAN-VPC-Subnet 1st & LAN-VPC-Subnet 2nd. 
@@ -13,8 +14,10 @@ Note:
 Login:
 ------
 * Attach SSH Keys: 
-    - 
-    - ssh -i gcp.pem root@IP-OF-SERVER
+    - Security > Manage Access > Add Item
+    - SSH Key Format > ssh-rsa SSH-KEY.pub root
+    - ssh -i SSH-KEY.pem root@IP-OF-SERVER
+    - If using Putty or Mobaxterm: Convert pem key to PPK format. 
 * Retrieve Password: 
     - cat admin_password.txt
 * Login to the Web UI.
