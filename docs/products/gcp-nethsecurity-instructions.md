@@ -77,7 +77,9 @@ echo '{"name":"_lan"}' | /usr/libexec/rpcd/ns.reverseproxy call set-default-cert
 # make sure to replace USERNAME with your new admin user.
 sed -i 's/root:/USERNAME:/g' /opt/.aloe.sh && : > /etc/dropbear/authorized_keys
 # Now add your new SSH Keys
-# GCP > INstance > Edit > Security Access > ssh-rsa SSH.PUB KEY USERANME:
+# GCP > INstance > Edit > Security Access > ssh-rsa SSH-KEY.PUB USERANME > Save
+# Wait a few minutes and test. 
+# Alternatively , you can attach ssh keys from Users & Objects > User Database
 ```
 
 * Enable Multi-Factor Authentication:
