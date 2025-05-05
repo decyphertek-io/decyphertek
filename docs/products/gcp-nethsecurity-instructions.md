@@ -79,6 +79,8 @@ echo '{"name":"_lan"}' | /usr/libexec/rpcd/ns.reverseproxy call set-default-cert
         - Add User
         - Click Unsaved Changes > Apply Changes 
 
+* Note: You can only ssh in as the root user, not the new admin user. 
+
 * Serial Console Access:
     - If you are unable to access SSH Access, can access via serial console.
     - GCP > Instance > Edit > Enable Serial Console access
