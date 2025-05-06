@@ -58,6 +58,8 @@ openssl req -x509 -nodes -days 3650 -newkey ec:<(openssl ecparam -name secp384r1
 #To fix broken Web UI access, from terminal run:
 echo '{"name":"_lan"}' | /usr/libexec/rpcd/ns.reverseproxy call set-default-certificate
 ```
+* Disable Allow SSH Password auth:
+    - system > ssh > Uncheck Allow SSH password authentication > Save & Apply
 
 * Update System:
     - System > Updates > Check for Fixes
@@ -139,37 +141,86 @@ gcloud compute instances describe YOUR_INSTANCE | grep canIpForward
    - Network: lan-decyphertek
    - Route Type: Static Route  
    - IP Version: IPv4
-   - Destination IP range: 10.10.0.0/24
+   - Destination IP range: 10.134.85.0/24
    - Next hop: Specify an Instance
    - Next hop Instance: nethsecurity
    - Priority: 900 
 
 
-OpenVPN Setup:
---------------
+OpenVPN Road Warrior Setup:
+---------------------------
 * Setup OpenVPN Road Warrior:
     - VPN > OpenVPN > Create Server
+    - Server Name: OpenVPN-Server
+    - User Database: Local database
+    - Create an account for each user: Optional
+    - Authentication: Username + Passowrd + Certificate
     - Mode: Routed
-    - Protocol: UDP
-    - Port: 1194
-    - Encryption: AES-256-GCM
-    - Authentication: Certificate + Username/Password
-    - Network: 10.10.0.0/24 (or preferred subnet)
-    - Save
+    - VPN Network: 10.134.85.0/24
+    - Save & Apply
 
 * Create VPN Users:
     - System > Users > Create User
+    - Can use existing users or create a new one. 
     - Username: vpnuser
     - Set password
     - Add to OpenVPN group
     - Save
 
-* Generate Client Configuration:
-    - VPN > OpenVPN > Client Export
-    - Select User: vpnuser
-    - Download configuration file
-    - Distribute to end users
+* Add a VPN Account:
+    - VPN > OpenVPN Road Warrrior > Add VPN Account:
+        - User: Select your user
+        - Reserve IP: Optional
+        - Cert Expiration: 3650 ( 10 yrs. )
+        - add account & apply
 
+* Firewall Rules - Allow OpenVPN access via WAN:
+    - Firewall > Rules > WAN > Input Rules > Add Input rules:
+        - Rule Name: Allow-OpenVPN-from-WAN
+        - Source Type: Any Source Address
+        - Destination Service: openvpn
+        - Action: Accept
+        - Rule Position: Add to the Top.
+        - Save & Apply
+
+* Firewall Rules - Allow VPN clients to access LAN:
+    - Firewall > Rules > LAN > Forward Rules > Add Forward Rule:
+        - Rule Name: Allow-VPN-to-LAN
+        - Source Zone: openvpn
+        - Destination Zone: lan
+        - Source Type: Any Source Address
+        - Destination Type: Any Destination Address
+        - Action: Accept
+        - Rule Position: Add to the Top.
+        - Save & Apply
+
+* Firewall Rules - Allow VPN clients to access Internet:
+    - Firewall > Rules > WAN > Forward Rules > Add Forward Rule:
+        - Rule Name: Allow-VPN-to-WAN
+        - Source Zone: openvpn
+        - Destination Zone: wan
+        - Source Type: Any Source Address
+        - Destination Type: Any Destination Address
+        - Action: Accept
+        - Rule Position: Add to the Top.
+        - Save & Apply
+
+* Firewall Rules - Enable NAT for VPN clients:
+    - Firewall > NAT > Add Source NAT Rule:
+        - Rule Name: NAT-VPN-to-WAN
+        - Source Zone: openvpn
+        - Destination Zone: wan
+        - Source Address: 10.134.85.0/24
+        - Destination Address: Any
+        - Translation: Masquerade
+        - Rule Position: Add to the Top.
+        - Save & Apply
+
+* Download Client certificate:
+    - VPN > OpenVPN Road Warrior > VPN User > Click options next to edit:
+        - Download Certificate 
+    - Import to OpenVPN > Test VPn Connect & Routes. 
+    
 References:
 -----------
 * https://docs.nethsecurity.org/en/latest/
