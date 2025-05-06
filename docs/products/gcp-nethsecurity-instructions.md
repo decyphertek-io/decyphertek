@@ -193,9 +193,10 @@ OpenVPN Road Warrior Setup:
         - Save & Apply Changes
 
 * Zones & Policies:
-    - The correct forward routes enabled by default.
-    - LAN > RWOPENVPN 
-    - RWOPENVPN > LAN
+    - Firewall > Zones & Polices > Verify settings enabled by default:
+    - LAN: Allow Forwrds To: RWOPENVPN Allow Forwards From: RWOPENVPN
+    - RWOPENVPN: Allow Forwards To LAN: LAN Allow Forwards From: LAN
+    - WAN: Allow Forwards From: RWOPENVPN, LAN
 
 * Download Client certificate:
     - VPN > OpenVPN Road Warrior > VPN User > Click options next to edit:
