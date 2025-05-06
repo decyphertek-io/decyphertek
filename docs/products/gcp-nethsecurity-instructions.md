@@ -201,8 +201,8 @@ OpenVPN Road Warrior Setup:
 
 * Download Client certificate:
     - VPN > OpenVPN Road Warrior > VPN User > Click options next to edit:
-        - Download Certificate 
-    - Import to OpenVPN > Test VPn Connect & Routes. 
+        - Download Configuration
+    - Import to OpenVPN > Test VPN Connect & Routes. 
     
 References:
 -----------
