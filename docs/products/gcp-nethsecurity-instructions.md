@@ -172,7 +172,7 @@ OpenVPN Road Warrior Setup:
         - User: Select your user
         - Reserve IP: Optional
         - Cert Expiration: 3650 ( 10 yrs. )
-        - add account & apply
+        - Add Account & Apply Changes
 
 * Firewall Rules - Allow OpenVPN access via WAN:
     - Firewall > Rules > Input Rules > Add Input rules:
@@ -181,18 +181,16 @@ OpenVPN Road Warrior Setup:
         - Destination Service: openvpn
         - Action: Accept
         - Rule Position: Add to the Top.
-        - Save & Apply
+        - Add Nat Rule & Apply Changes
 
 * Firewall Rules - Enable NAT for VPN clients:
     - Firewall > NAT > Add NAT Rule:
         - Rule Name: NAT-VPN-to-WAN
-        - Source Zone: openvpn
-        - Destination Zone: wan
-        - Source Address: 10.134.85.0/24
-        - Destination Address: Any
+        - SOurce Adddress: 10.134.85.0/24
+        - Outbound Zone: WAN
+        - Destination Address: 0.0.0.0/0
         - Translation: Masquerade
-        - Rule Position: Add to the Top.
-        - Save & Apply
+        - Save & Apply Changes
 
 * Zones & Policies:
     - The correct forward routes enabled by default.
