@@ -175,7 +175,7 @@ OpenVPN Road Warrior Setup:
         - add account & apply
 
 * Firewall Rules - Allow OpenVPN access via WAN:
-    - Firewall > Rules > WAN > Input Rules > Add Input rules:
+    - Firewall > Rules > Input Rules > Add Input rules:
         - Rule Name: Allow-OpenVPN-from-WAN
         - Source Type: Any Source Address
         - Destination Service: openvpn
@@ -183,30 +183,8 @@ OpenVPN Road Warrior Setup:
         - Rule Position: Add to the Top.
         - Save & Apply
 
-* Firewall Rules - Allow VPN clients to access LAN:
-    - Firewall > Rules > LAN > Forward Rules > Add Forward Rule:
-        - Rule Name: Allow-VPN-to-LAN
-        - Source Zone: openvpn
-        - Destination Zone: lan
-        - Source Type: Any Source Address
-        - Destination Type: Any Destination Address
-        - Action: Accept
-        - Rule Position: Add to the Top.
-        - Save & Apply
-
-* Firewall Rules - Allow VPN clients to access Internet:
-    - Firewall > Rules > WAN > Forward Rules > Add Forward Rule:
-        - Rule Name: Allow-VPN-to-WAN
-        - Source Zone: openvpn
-        - Destination Zone: wan
-        - Source Type: Any Source Address
-        - Destination Type: Any Destination Address
-        - Action: Accept
-        - Rule Position: Add to the Top.
-        - Save & Apply
-
 * Firewall Rules - Enable NAT for VPN clients:
-    - Firewall > NAT > Add Source NAT Rule:
+    - Firewall > NAT > Add NAT Rule:
         - Rule Name: NAT-VPN-to-WAN
         - Source Zone: openvpn
         - Destination Zone: wan
@@ -215,6 +193,11 @@ OpenVPN Road Warrior Setup:
         - Translation: Masquerade
         - Rule Position: Add to the Top.
         - Save & Apply
+
+* Zones & Policies:
+    - The correct forward routes enabled by default.
+    - LAN > RWOPENVPN 
+    - RWOPENVPN > LAN
 
 * Download Client certificate:
     - VPN > OpenVPN Road Warrior > VPN User > Click options next to edit:
