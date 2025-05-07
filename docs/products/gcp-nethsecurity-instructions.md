@@ -192,6 +192,26 @@ OpenVPN Road Warrior Setup:
         - Translation: Masquerade
         - Save & Apply Changes
 
+* Firewall Rules - Add Forward Rule for VPN to WAN
+    - Firewall > Rules > WAN > Forward Rules:
+        - Rule Name: Allow-VPN-to-WAN
+        - Source Zone: rwopenvpn
+        - Destination Zone: wan
+        - Source Type: Any Source Address
+        - Destination Type: Any Destination Address
+        - Action: Accept
+        - Save & Apply Changes
+
+* Firewall Rules - Add Forward Rule for VPN to LAN
+    - Firewall > Rules > LAN > Forward Rules:
+        - Rule Name: Allow-VPN-to-LAN
+        - Source Zone: rwopenvpn
+        - Destination Zone: lan
+        - Source Type: Any Source Address
+        - Destination Type: Any Destination Address
+        - Action: Accept
+        - Save & Apply Changes
+
 * Zones & Policies:
     - Firewall > Zones & Polices > Verify settings enabled by default:
     - LAN: Allow Forwrds To: RWOPENVPN Allow Forwards From: RWOPENVPN
