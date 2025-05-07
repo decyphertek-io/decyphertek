@@ -218,7 +218,7 @@ OpenVPN Road Warrior Setup:
 
 * Zones & Policies:
     - Firewall > Zones & Polices > Verify settings enabled by default:
-    - LAN: Allow Forwrds To: RWOPENVPN Allow Forwards From: RWOPENVPN
+    - LAN: Allow Forwards To: RWOPENVPN Allow Forwards From: RWOPENVPN
     - RWOPENVPN: Allow Forwards To LAN: Allow Forwards From: LAN
         - Traffic to WAN > Enabled
     - WAN: Allow Forwards From: RWOPENVPN, LAN
