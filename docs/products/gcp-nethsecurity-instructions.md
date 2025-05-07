@@ -185,17 +185,6 @@ OpenVPN Road Warrior Setup:
         - Rule Position: Add to the Top.
         - Add Nat Rule & Apply Changes
 
-* Firewall Rules - Allow OpenVPN access via WAN:
-    - Firewall > Rules > Input Rules > Add Input rules:
-        - Rule Name: Allow-OpenVPN-from-WAN
-        - Source Type: Any Source Address
-        - Source Zone: WAN
-        - Destination: Firewall
-        - Destination Service: Openvpn
-        - Action: Accept
-        - Rule Position: Add to the Top.
-        - Save & Apply Changes
-
 * Firewall Rules - Allow OpenVPN to any:
     - Firewall > Rules > Input Rules > Add Input rules:
         - Rule Name: Allow-OpenVPN-to-Any
