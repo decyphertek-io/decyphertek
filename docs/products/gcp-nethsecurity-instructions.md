@@ -178,10 +178,34 @@ OpenVPN Road Warrior Setup:
     - Firewall > Rules > Input Rules > Add Input rules:
         - Rule Name: Allow-OpenVPN-from-WAN
         - Source Type: Any Source Address
-        - Destination Service: openvpn
+        - Source Zone: WAN
+        - Destination: Firewall
+        - Destination Service: Openvpn
         - Action: Accept
         - Rule Position: Add to the Top.
         - Add Nat Rule & Apply Changes
+
+* Firewall Rules - Allow OpenVPN access via WAN:
+    - Firewall > Rules > Input Rules > Add Input rules:
+        - Rule Name: Allow-OpenVPN-from-WAN
+        - Source Type: Any Source Address
+        - Source Zone: WAN
+        - Destination: Firewall
+        - Destination Service: Openvpn
+        - Action: Accept
+        - Rule Position: Add to the Top.
+        - Save & Apply Changes
+
+* Firewall Rules - Allow OpenVPN to any:
+    - Firewall > Rules > Input Rules > Add Input rules:
+        - Rule Name: Allow-OpenVPN-to-Any
+        - Source Type: Any Source Address
+        - Source Zone: openvpn
+        - Destination: Firewall
+        - Destination Service: any
+        - Action: Accept
+        - Rule Position: Add to the Top.
+        - Save & Apply Changes
 
 * Firewall Rules - Enable NAT for VPN clients:
     - Firewall > NAT > Add NAT Rule:
@@ -190,26 +214,6 @@ OpenVPN Road Warrior Setup:
         - Outbound Zone: WAN
         - Destination Address: 0.0.0.0/0
         - Translation: Masquerade
-        - Save & Apply Changes
-
-* Firewall Rules - Add Forward Rule for VPN to WAN
-    - Firewall > Rules > WAN > Forward Rules:
-        - Rule Name: Allow-VPN-to-WAN
-        - Source Zone: rwopenvpn
-        - Destination Zone: wan
-        - Source Type: Any Source Address
-        - Destination Type: Any Destination Address
-        - Action: Accept
-        - Save & Apply Changes
-
-* Firewall Rules - Add Forward Rule for VPN to LAN
-    - Firewall > Rules > LAN > Forward Rules:
-        - Rule Name: Allow-VPN-to-LAN
-        - Source Zone: rwopenvpn
-        - Destination Zone: lan
-        - Source Type: Any Source Address
-        - Destination Type: Any Destination Address
-        - Action: Accept
         - Save & Apply Changes
 
 * Zones & Policies:
