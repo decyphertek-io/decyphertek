@@ -4,9 +4,9 @@
 
 Welcome to Decyphertek's Google Cloud Platform Marketplace documentation. Here you'll find guides for all our GCP products.
 
-## GCP Marketplace Profile
+## GCP Marketplace
 
-Visit our [GCP Marketplace Profile](https://console.cloud.google.com/marketplace/browse?filter=partner:Decyphertek) to see all our available products.
+Visit our [GCP Marketplace](https://console.cloud.google.com/marketplace/browse?filter=partner:decyphertek.io&pli=1&inv=1&invt=AbxJAQ) to see all our available products.
 
 ## Table of Contents
 

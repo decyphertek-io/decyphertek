@@ -4,9 +4,9 @@
 
 Welcome to Decyphertek's Microsoft Azure Marketplace documentation. Here you'll find guides for all our Azure products.
 
-## Azure Marketplace Profile
+## Azure Marketplace
 
-Visit our [Azure Marketplace Profile](https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=decyphertek) to see all our available products.
+Visit our [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=decyphertek.io&page=1) to see all our available products.
 
 ## Table of Contents
 

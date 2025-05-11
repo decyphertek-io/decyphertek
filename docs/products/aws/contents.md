@@ -4,9 +4,9 @@
 
 Welcome to Decyphertek's AWS Marketplace documentation. Here you'll find guides for all our AWS products.
 
-## AWS Marketplace Profile
+## AWS Marketplace 
 
-Visit our [AWS Marketplace Profile](https://aws.amazon.com/marketplace/seller-profile?id=seller-id) to see all our available products.
+Visit our [AWS Marketplace](https://aws.amazon.com/marketplace/seller-profile?id=851968a2-7d3c-4a0b-8c33-5351d91aaef1&t=1683825611) to see all our available products.
 
 ## Table of Contents
 
