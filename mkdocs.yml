@@ -54,6 +54,7 @@ nav:
         - Wazuh: products/azure/wazuh.md
         - Privacy Policy: products/azure/privacy-policy.md
     - Google Marketplace:
+        - Table Of Contents: products/gcp-contents.md
         - Debian 12 Web Desktop: 
             - Instructions: products/gcp-debian-12-web-desktop-instructions.md
             - EULA: products/gcp-debian-12-web-desktop-eula.md
