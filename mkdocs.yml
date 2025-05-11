@@ -36,6 +36,7 @@ nav:
         - Uptime Kuma: products/aws/uptime-kuma.md
         - VaultWarden: products/aws/vaultwarden.md
     - Azure Marketplace:
+        - Table Of Contents: products/azure/contents.md
         - Mitre Caldera V5: products/azure/caldera.md
         - Debian 12 Web Desktop: products/azure/debian12-web-desktop.md
         - DFIR IRIS: products/azure/dfir-iris.md
