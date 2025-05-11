@@ -19,6 +19,7 @@ markdown_extensions:
 nav:
     - Home: index.md
     - AWS Marketplace:
+        - AWS Contents: products/aws/contents.md
         - AWS Basics: products/aws/basics.md
         - Debian Basics: products/aws/debian-security.md
         - Flatcar Basics: products/aws/flatcar-security.md
