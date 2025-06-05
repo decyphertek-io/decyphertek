@@ -12,13 +12,9 @@ Visit our [GCP Marketplace](https://console.cloud.google.com/marketplace/browse?
 
 - [Debian 12 Web Desktop](gcp-debian-12-web-desktop-instructions.md)
 - [Kali Linux Web Desktop](gcp-kali-web-desktop-instructions.md)
-- [Lamp Stack + Modsec + Webmin](gcp-lamp-stack-instructions.md)
 - [Misp](gcp-misp-instructions.md)
 - [Mitre Caldera V5](gcp-caldera-instructions.md)
-- [NethSecurity](gcp-nethsecurity-instructions.md)
-- [Node-RED](gcp-nodered-instructions.md)
 - [Odoo 18 CE](gcp-odoo-instructions.md)
-- [OneDev](gcp-onedev-instructions.md)
 - [OpenCTI](gcp-opencti-instructions.md)
 - [OpenSearch](gcp-opensearch-instructions.md)
 - [OpenVas](gcp-openvas-instructions.md)
