@@ -64,7 +64,7 @@ OPTIONAL: Syslog-ng:
 ```
 # Allow firewall access
 sudo ufw allow 514/tcp
-sudo yum install -y syslog-ng
+sudo apt install -y syslog-ng
 cd /etc/syslog-ng/
 # Generate certs
 sudo openssl req -newkey rsa:2048 -nodes -keyout key.pem -out request.csr -subj "/C=US/ST=Any/L=Anytown/O=decyphertek-io/OU=adminotaur/CN=decyphertek"
