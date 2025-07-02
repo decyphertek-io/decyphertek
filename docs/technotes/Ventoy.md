@@ -7,10 +7,10 @@ Install:
 -------
 ```
 # Download ventoy.
-wget https://sourceforge.net/projects/ventoy/files/v1.0.99/ventoy-1.0.99-linux.tar.gz
+wget https://sourceforge.net/projects/ventoy/files/v1.1.05/ventoy-1.1.05-linux.tar.gz
 # Extract it.
-tar -xzf ventoy-1.0.99-linux.tar.gz
-cd ventoy-1.0.99
+tar -xzf ventoy-1.1.05-linux.tar.gz
+cd ventoy-1.1.05
 # find your usb
 lsblk
 # Make the installation script executable
