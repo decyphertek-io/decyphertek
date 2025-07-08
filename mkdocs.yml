@@ -153,6 +153,7 @@ nav:
         - Jupyterhub: technotes/Jupyterhub.md 
         - Kasm Workspaces CE: technotes/kasm.md
         - Keycloak: technotes/Keycloak.md 
+        - KickSecure: technotes/KickSecure.md
         - Kubernetes: technotes/Kubernetes.md 
         - Kubesphere: technotes/KubeSphere.md 
         - LEMP Stack: technotes/LEMP-Stack.md 
