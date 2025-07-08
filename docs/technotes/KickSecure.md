@@ -11,6 +11,8 @@ sudo apt install -y console-data console-common kbd keyboard-configuration extre
 sudo extrepo enable kicksecure
 sudo apt update && sudo apt full-upgrade -y
 sudo apt install -y kicksecure-xfce-host security-misc
+sudo repository-dist --enable --repository stable
+# reboot
 ```
 
 References:
