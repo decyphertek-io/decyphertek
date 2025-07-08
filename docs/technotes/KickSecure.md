@@ -12,6 +12,9 @@ sudo extrepo enable kicksecure
 sudo apt update && sudo apt full-upgrade -y
 sudo apt install -y kicksecure-xfce-host security-misc
 sudo repository-dist --enable --repository stable
+# Want the security , not tor? You can remove tor.
+sudo apt purge tor torbrowser-launcher
+sudo apt autoremove && sudo apt autoclean
 # reboot
 ```
 
