@@ -1,13 +1,16 @@
 Kick Secure Install:
 --------------------
+
 ```
 # Exisiting Debian 12 instance
-sudo apt update
-sudo apt install extrepo 
-sudo extrepo enable kicksecure
-sudo apt update && sudo apt full-upgrade 
+sudo /usr/sbin/addgroup --system console
 sudo /usr/sbin/adduser $USER console
-sudo apt install --no-install-recommends kicksecure-xfce-host security-misc
+sudo apt update
+sudo apt remove plymouth
+sudo apt install -y console-data console-common kbd keyboard-configuration extrepo
+sudo extrepo enable kicksecure
+sudo apt update && sudo apt full-upgrade -y
+sudo apt install -y kicksecure-xfce-host security-misc
 ```
 
 References:
