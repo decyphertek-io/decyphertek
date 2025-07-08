@@ -5,8 +5,8 @@ Kick Secure Install:
 sudo apt update
 sudo apt install extrepo 
 sudo extrepo enable kicksecure
-sudo /usr/sbin/adduser $USER console
 sudo apt update && sudo apt full-upgrade 
+sudo /usr/sbin/adduser $USER console
 sudo apt install --no-install-recommends kicksecure-xfce-host security-misc
 ```
 
