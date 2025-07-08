@@ -13,8 +13,8 @@ sudo apt update && sudo apt full-upgrade -y
 sudo apt install -y kicksecure-xfce-host security-misc
 sudo repository-dist --enable --repository stable
 # Want the security , not tor? You can disable tor.
-sudo systemctl disable tor
-sudo systemctl stop tor
+sudo systemctl disable sdwdate tor
+sudo systemctl stop sdwdate tor
 # reboot
 ```
 
