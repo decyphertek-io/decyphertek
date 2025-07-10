@@ -15,8 +15,9 @@ sudo repository-dist --enable --repository stable
 # Want the security , not tor? You can disable tor.
 sudo systemctl disable tor
 sudo systemctl stop tor
-# reboot
 echo -e "[persistent-users]\nUser=$USER" | sudo tee /etc/privleap/conf.d/$USER.conf && sudo leapctl --reload && sudo leapctl --create $USER
+sudo dpkg-reconfigure security-misc
+# reboot
 ```
 
 References:
