@@ -16,6 +16,7 @@ sudo repository-dist --enable --repository stable
 sudo systemctl disable tor
 sudo systemctl stop tor
 # reboot
+echo -e "[persistent-users]\nUser=$USER" | sudo tee /etc/privleap/conf.d/$USER.conf && sudo leapctl --reload && sudo leapctl --create $USER
 ```
 
 References:
