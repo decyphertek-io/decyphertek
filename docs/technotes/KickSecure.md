@@ -18,6 +18,7 @@ sudo systemctl stop tor
 echo -e "[persistent-users]\nUser=$USER" | sudo tee /etc/privleap/conf.d/$USER.conf && sudo leapctl --reload && sudo leapctl --create $USER
 sudo dpkg-reconfigure security-misc
 # reboot
+# Kick secure blocks gcloud cli oauth2 and can block other processes.
 ```
 
 References:
