@@ -26,6 +26,11 @@ Password: (sudo cat /home/adminotaur/opensearch_admin_password.txt )
 
 OpenSearch GET/POST:
 --------------------
+* GET Using curl:
+```
+curl -X GET https://IP-OF-SERVER:9443 -u 'admin:PASSWORD' --insecure
+
+```
 * Install httpie terminal or Desktop 
     * https://httpie.io/cli
     * https://httpie.io/desktop
