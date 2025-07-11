@@ -26,7 +26,9 @@ Password: (sudo cat /home/adminotaur/opensearch_admin_password.txt )
 
 OpenSearch GET/POST:
 --------------------
-* Install httpie terminal or Desktop  - https://httpie.io/cli ; https://httpie.io/desktop
+* Install httpie terminal or Desktop 
+    * https://httpie.io/cli
+    * https://httpie.io/desktop
 * HTTPIE Linux Terminal Example:
 ```
 # GET/POST Example using HTTPIE & health.json
