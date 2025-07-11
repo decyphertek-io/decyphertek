@@ -24,6 +24,21 @@ Username: admin
 Password: (sudo cat /home/adminotaur/opensearch_admin_password.txt )
 ```
 
+(optional) Opensearch Settings:
+------------------------------
+* opensearch Config (Setup to use nginx, changes may break that)
+```
+sudo vim /etc/opensearch/opensearch.yml
+```
+* Sets java heap size (set to 4gb java limit ( 8gb RAM ) , recommneded to increase to 50% of RAM )
+```
+sudo vim /etc/opensearch/jvm.options
+# Limit to 4gb
+-Xms4g
+-Xmx4g
+```
+
+
 OpenSearch GET/POST:
 --------------------
 * GET Using curl:
