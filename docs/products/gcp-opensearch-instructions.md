@@ -30,12 +30,15 @@ Password: (sudo cat /home/adminotaur/opensearch_admin_password.txt )
 ```
 sudo vim /etc/opensearch/opensearch.yml
 ```
-* Sets java heap size (set to 4gb java limit ( 8gb RAM ) , recommneded to increase to 50% of RAM )
+* Sets java heap size. This can break Opensearch, please proceed with caution.
 ```
 sudo vim /etc/opensearch/jvm.options
 # Limit set to 4gb
 -Xms4g
 -Xmx4g
+
+sudo systemctl daemon-reload
+sudo systemctl restart opensearch
 ```
 
 
