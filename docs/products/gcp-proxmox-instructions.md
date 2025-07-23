@@ -1,4 +1,4 @@
-Proxmox Virtual Environment (VE) is an open-source server virtualization platform that combines KVM hypervisor and LXC container technologies for comprehensive virtualization management. [GCP Marketplace: Proxmox VE]( ) [GCP Marketplace: Proxmox VE ]( )
+Proxmox Virtual Environment is an open-source server virtualization platform that combines KVM hypervisor and LXC container technologies for comprehensive virtualization management. [GCP Marketplace: Proxmox VE]( ) 
 
 SSH Access:
 -----------
