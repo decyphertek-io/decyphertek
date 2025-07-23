@@ -83,6 +83,9 @@ nav:
         - OPNsense:
             - Instructions: products/gcp-opnsense-instructions.md
             - EULA: products/gcp-opnsense-eula.md
+        - Proxmox VE:
+            - Instructions: products/gcp-proxmox-instructions.md
+            - EULA: products/gcp-proxmox-eula.md
         - Semaphore UI:
             - Instructions: products/gcp-semaphore-instructions.md
             - EULA: products/gcp-semaphore-eula.md
