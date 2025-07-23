@@ -32,7 +32,6 @@ gcloud compute instances update-from-file proxmox-ve \
 cat /sys/module/kvm_intel/parameters/nested
 ```
 
-
 SSH Access:
 -----------
 * Utilize OS-Login OR add ssh keys via security & Access > SSH Keys > ssh-rsa KEY adminotaur
