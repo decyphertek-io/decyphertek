@@ -2,7 +2,7 @@ Proxmox Virtual Environment is an open-source server virtualization platform tha
 
 Note:
 ----
-* By default Nested Virtualization is disbaled in Google Cloud Platform. 
+* By default Nested Virtualization is disabled in Google Cloud Platform. 
 * Please enable nested virtaulization so KVM / ISO features work properly.
 * Modify VM settings via Google Cli on select VMs that support Nested Virtaulization:
 ```
