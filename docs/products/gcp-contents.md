@@ -10,7 +10,6 @@ Visit our [GCP Marketplace](https://console.cloud.google.com/marketplace/browse?
 
 ## Table of Contents
 
-- [Debian 12 Web Desktop](gcp-debian-12-web-desktop-instructions.md)
 - [Kali Linux Web Desktop](gcp-kali-web-desktop-instructions.md)
 - [Misp](gcp-misp-instructions.md)
 - [Mitre Caldera V5](gcp-caldera-instructions.md)
@@ -19,7 +18,7 @@ Visit our [GCP Marketplace](https://console.cloud.google.com/marketplace/browse?
 - [OpenSearch](gcp-opensearch-instructions.md)
 - [OpenVas](gcp-openvas-instructions.md)
 - [OPNsense](gcp-opnsense-instructions.md)
-- [Semaphore UI](gcp-semaphore-instructions.md)
+- [Proxmox VE](gcp-proxmox-instructions.md)
 - [SonarQube CE](gcp-sonarqube-instructions.md)
 - [Uptime Kuma](gcp-uptime-kuma-instructions.md)
 - [VaultWarden](gcp-vaultwarden-instructions.md)
