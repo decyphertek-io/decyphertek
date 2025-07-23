@@ -1,5 +1,38 @@
 Proxmox Virtual Environment is an open-source server virtualization platform that combines KVM hypervisor and LXC container technologies for comprehensive virtualization management. [GCP Marketplace: Proxmox VE]( ) 
 
+Note:
+----
+* By default Nested Virtualization is disbaled in Google Cloud Platform. 
+* Please enable nested virtaulization so KVM / ISO features work properly.
+* Modify VM settings via Google Cli on select VMs that support Nested Virtaulization:
+```
+Supported instance types for nested virtualization:
+- N1, N2, N2D, C2, and C2D series VMs
+- Recommended: n1-standard-32 or similar with 8+ vCPUs
+
+# GCP CLI
+gcloud compute instances list
+
+gcloud compute instances export proxmox-ve \
+  --destination=proxmox-config.yaml \
+  --zone=us-east1-b
+
+# can use any text editor, doesnt have to be vim. 
+vim proxmox-config.yaml
+# Add to top
+advancedMachineFeatures:
+  enableNestedVirtualization: true
+
+gcloud compute instances update-from-file proxmox-ve \
+  --source=proxmox-config.yaml \
+  --most-disruptive-allowed-action=RESTART \
+  --zone=us-east1-b
+
+# Run command from Proxmox terminal to Verify and should return Y .
+cat /sys/module/kvm_intel/parameters/nested
+```
+
+
 SSH Access:
 -----------
 * Utilize OS-Login OR add ssh keys via security & Access > SSH Keys > ssh-rsa KEY adminotaur
