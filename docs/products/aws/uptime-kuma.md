@@ -22,6 +22,16 @@ Uptime Kuma:
 * Follow instrucitons to create a new account. 
 * You now can easily add a website to monitor. 
 
+(Optional) API:
+--------------
+* Login > Click user Icon > Settings > Api Keys > Add APi Key > Copy Api key
+```
+# EX: using Curl
+curl -sk "https://IP-OR-DOMAIN/metrics" \
+  --user ":APIKEY" | \
+  grep -E 'monitor_(status|response_time)'
+```
+
 Portainer - Manage Docker:
 --------------------------
 * How to access Portainer to manage your containers > https://ip-of-server:9443
