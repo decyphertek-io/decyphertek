@@ -5,79 +5,99 @@ Github provides a cloud based git repo freely to those who open souece their cod
 
 Add ssh keys
 ------------
+```
+ssh-keygen -t ed25519 -C "email@domain"
+# select defaults with or without a passphrase.
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+# Add the SSH key to your account on GitHub. 
+cat ~/.ssh/id_ed25519.pub
+1. Select and copy the contents of the id_ed25519.pub file
+2. In the upper-right corner of any page, click your profile photo, then click Settings. 
+3. In the "Access" section of the sidebar, click SSH and GPG keys.
+4. Click New SSH key or Add SSH key. 
+5. In the "Title" field, add a descriptive label for the new key. 
+6. Paste your key into the "Key" field. 
+7. Click Add SSH key. 
+8. If prompted, confirm access to your account on GitHub. For more information, see "Sudo mode."
+# Verify it Works
+ssh -T git@github.com
 
-     ssh-keygen -t ed25519 -C "email@domain"
-     # select defaults with or without a passphrase.
-     eval "$(ssh-agent -s)"
-     ssh-add ~/.ssh/id_ed25519
-     # Add the SSH key to your account on GitHub. 
-     cat ~/.ssh/id_ed25519.pub
-     1. Select and copy the contents of the id_ed25519.pub file
-     2. In the upper-right corner of any page, click your profile photo, then click Settings. 
-     3. In the "Access" section of the sidebar, click SSH and GPG keys.
-     4. Click New SSH key or Add SSH key. 
-     5. In the "Title" field, add a descriptive label for the new key. 
-     6. Paste your key into the "Key" field. 
-     7. Click Add SSH key. 
-     8. If prompted, confirm access to your account on GitHub. For more information, see "Sudo mode."
-     # Verify it Works
-     ssh -T git@github.com
+# Optional:Troubleshooting
+# Check to see if key is loaded in agent.
+ssh-add -l
+# If no agent is loaded please run:
+eval "$(ssh-agent -s)"
+# Verify key Permissions
+ls -l ~/.ssh/id_ed25519*
+# If permissions not set correctly run:
+sudo chmod 400 ~/.ssh/id_ed25519.pem
+# Verify with verbose output
+ssh -Tv git@github.com
+```
 
 Setup
 -----
-
-     sudo apt install git 
-     git config --global user.email "email@domain"
-     git config --global user.name "username"
-     cd  ~/git/
-     # Need to run on each repo to commmit/push . 
-     # If it is a private repo , need an access token OR ssh setup. 
-     > Profile > Settings > Developer Settings > Personal Access Tokens > Generate New Token > Name it > Set Expiration > Select repos. 
-     <OR>
-     git clone git@github.com:account-name/repo-name.git --config core.sshCommand="ssh -i /home/$USER/.ssh/id_ed25519.pem"
-     <OR>
-     git clone https://github.com/acount-name/repo-name
-     cd repo-name
-     # Allow to push via ssh keys to cloned repo.
-     git remote set-url origin git@github.com:account-name/repo-name.git
-     # Make changes and commit. 
-     git add .
-     git commit -m "comment"
-     git push
+```
+sudo apt install git 
+git config --global user.email "email@domain"
+# If you dont want your email to be public
+git config --global user.email "username@users.noreply.github.com"
+git config --global user.name "username"
+cd  ~/git/
+# Need to run on each repo to commmit/push . 
+# If it is a private repo , need an access token OR ssh setup. 
+> Profile > Settings > Developer Settings > Personal Access Tokens > Generate New Token > Name it > Set Expiration > Select repos. 
+<OR>
+git clone git@github.com:account-name/repo-name.git --config core.sshCommand="ssh -i /home/$USER/.ssh/id_ed25519.pem"
+<OR>
+git clone https://github.com/acount-name/repo-name
+cd repo-name
+# Allow to push via ssh keys to cloned repo.
+git remote set-url origin git@github.com:account-name/repo-name.git
+# Make changes and commit. 
+git add .
+git commit -m "comment"
+git push
+```
 
 IDE Version Control
 --------------------
-
-     sudo snap install codium --classic
-     # Open or git clone your repo
-     # Add folder to workspace
-     # Commit and push changes 
+```
+# Flatpak Codium
+flatpak install flathub com.vscodium.codium
+# OR Snap codium
+sudo snap install codium --classic
+# Open or git clone your repo
+# Add folder to workspace
+# Commit and push changes 
+```
 
 Github Pages
 ------------
-
-
-     # Create a github repo
-     /username.github.io
-     # Set repo pages to include docs/
-     > login > repo > Settings > Pages > Branch > set folder to docs/ 
-     git clone https://github.com/username/username.github.io
-     cd username.github.io
-     # Find a template , Can start here. https://pages.github.com/themes/ or https://jekyll-themes.com/free/ - Example
-     git clone https://github.com/pages-themes/architect.git
-     mv architect/ docs/
-     cd docs/
-     # Only install if you want to test out locally. 
-     sudo apt install jekyll ruby-dev
-     vim _config.yml
-     # update parameters to match your website.
-     # Only run if you want to test out locally. 
-     bundle install
-     git add .
-     git commit -m "commit-messsage"
-     git push 
-     # https://username.github.io
-     # Continue to mod and make changes to the site. 
+```
+# Create a github repo
+/username.github.io
+# Set repo pages to include docs/
+> login > repo > Settings > Pages > Branch > set folder to docs/ 
+git clone https://github.com/username/username.github.io
+cd username.github.io
+# Find a template , Can start here. https://pages.github.com/themes/ or https://jekyll-themes.com/free/ - Example
+git clone https://github.com/pages-themes/architect.git
+mv architect/ docs/
+cd docs/
+# Only install if you want to test out locally. 
+sudo apt install jekyll ruby-dev
+vim _config.yml
+# update parameters to match your website.
+# Only run if you want to test out locally. 
+bundle install
+git add .
+git commit -m "commit-messsage"
+git push 
+# https://username.github.io
+# Continue to mod and make changes to the site. 
+```
 
 References
 -----------
