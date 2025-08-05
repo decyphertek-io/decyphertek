@@ -18,10 +18,10 @@ CalyxOS
 
     https://calyxos.org/
 
-Divest OS
+E/OS
 ---------
 
-    https://divestos.org/
+    https://e.foundation/e-os/
 
 References
 -----------
