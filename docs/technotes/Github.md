@@ -20,7 +20,7 @@ cat ~/.ssh/id_ed25519.pub
 6. Paste your key into the "Key" field. 
 7. Click Add SSH key. 
 8. If prompted, confirm access to your account on GitHub. For more information, see "Sudo mode."
-# Verify it Works
+# Verify it Works within a repo configured to use ssh keys as instructed.
 ssh -T git@github.com
 
 # Optional:Troubleshooting
@@ -32,8 +32,9 @@ eval "$(ssh-agent -s)"
 ls -l ~/.ssh/id_ed25519*
 # If permissions not set correctly run:
 sudo chmod 400 ~/.ssh/id_ed25519.pem
-# Verify with verbose output
+# Verify with verbose output on a repo configured to use ssh keys. 
 ssh -Tv git@github.com
+# In some cases you may need to skip ahead and set the username and email, then test again.
 ```
 
 Setup
