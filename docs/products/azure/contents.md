@@ -11,7 +11,6 @@ Visit our [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marke
 ## Table of Contents
 
 - [Mitre Caldera V5](caldera.md)
-- [DFIR IRIS](dfir-iris.md)
 - [Librechat AI](librechat.md)
 - [MISP](misp.md)
 - [OpenCTI](opencti.md)
