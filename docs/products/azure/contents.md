@@ -20,7 +20,6 @@ Visit our [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marke
 - [OpenSearch](opensearch.md)
 - [OpenVas](openvas.md)
 - [Rocky 9 Web Desktop](rocky9-web-desktop.md)
-- [Semaphore UI](semaphore-ui.md)
 - [SonarQube CE](sonarqube-ce.md)
 - [Uptime Kuma](uptime-kuma.md)
 - [Vaultwarden](vaultwarden.md)
