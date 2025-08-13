@@ -13,7 +13,6 @@ Visit our [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marke
 - [Mitre Caldera V5](caldera.md)
 - [Debian 12 Web Desktop](debian12-web-desktop.md)
 - [DFIR IRIS](dfir-iris.md)
-- [Lamp Stack + ModSec + Webmin](lamp-stack.md)
 - [Librechat AI](librechat.md)
 - [MISP](misp.md)
 - [Odoo 17 CE](odoo.md)
