@@ -11,7 +11,6 @@ Visit our [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marke
 ## Table of Contents
 
 - [Mitre Caldera V5](caldera.md)
-- [Debian 12 Web Desktop](debian12-web-desktop.md)
 - [DFIR IRIS](dfir-iris.md)
 - [Librechat AI](librechat.md)
 - [MISP](misp.md)
