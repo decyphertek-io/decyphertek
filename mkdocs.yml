@@ -135,7 +135,6 @@ nav:
         - LXD: technotes/LXD.md
         - MyCroft: technotes/Mycroft-ai.md 
         - MySQL: technotes/MySql.md 
-        - Nginx: technotes/Nginx.md 
         - Nmap: technotes/Nmap.md 
         - Nomad: technotes/Nomad.md 
         - OSSEC: technotes/OSSEC.md 
