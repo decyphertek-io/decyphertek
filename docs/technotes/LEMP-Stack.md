@@ -6,45 +6,45 @@ and add myphpadmin, composer and on the nginx docs page , Modsecurity WAF.
 
 Install
 -------
-
-    $ sudo apt update && sudo apt upgrade
-    # See Decyphertek - nginx docs how how to install nginx with Modsecurity WAF. 
-    # Install mysql - See Decyphertek - mysql docs on how to manage mysql 
-    $ sudo apt install mysql-server
-    $ sudo mysql
-    # set a root mysql password
-    mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
-    mysql> exit
-    # Debian generates a nonsecure password stored here - /etc/mysql/debian.cnf
-    $ sudo cat /etc/mysql/debian.cnf
-    $ sudo mysqladmin -u debian-sys-maint -p'oldPassword' password 'newPassword'
-    # Update the password in the debian.cnf as well. 
-    $ sudo vim /etc/mysql/debian.cnf
-    $ sudo mysql_secure_installation
-    # Verify your passwords work
-    $ mysql -u root -p 
-    mysql>exit
-    $ mysql -u debian-sys-maint -p
-    mysql>exit 
-    # Install PHP
-    $ sudo apt install php-mysql php-fpm php-curl php-gd php-mbstring php-xml php-xmlrpc php-cli
-    # Optional: Install myphpadmin
-    # Requires a lot of setup to secure an get working with nginx, see Digital Ocean docs referenced. 
-    $ sudo apt-get -y install apt-transport-https ca-certificates curl
-    $ curl -fsSL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x42636ff8dae547240e01a1ca2ea3055293cb3f45" | sudo gpg --dearmor -o /usr/share/keyrings/phpmyadmin-ppa.gpg
-    $ sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/phpmyadmin-ppa.gpg] https://ppa.launchpadcontent.net/phpmyadmin/ppa/ubuntu jammy main" > /etc/apt/sources.list.d/phpmyadmin-ubuntu-ppa-jammy.list'
-    $ sudo apt update
-    $ sudo apt install -y phpmyadmin
-    # install PHP Composer 
-    $ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-    $ php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') {echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-    $ php composer-setup.php
-    $ php -r "unlink('composer-setup.php');"
-    $ sudo mv composer.phar /usr/local/bin/composer
-    # start using composer
-    $ composer list
-    # Update Composer
-    $ composer self-update
+```
+sudo apt update && sudo apt upgrade
+# See Decyphertek - nginx docs how how to install nginx with Modsecurity WAF. 
+# Install mysql - See Decyphertek - mysql docs on how to manage mysql 
+sudo apt install mysql-server
+sudo mysql
+# set a root mysql password
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+mysql> exit
+# Debian generates a nonsecure password stored here - /etc/mysql/debian.cnf
+sudo cat /etc/mysql/debian.cnf
+sudo mysqladmin -u debian-sys-maint -p'oldPassword' password 'newPassword'
+# Update the password in the debian.cnf as well. 
+sudo vim /etc/mysql/debian.cnf
+sudo mysql_secure_installation
+# Verify your passwords work
+mysql -u root -p 
+mysql>exit
+mysql -u debian-sys-maint -p
+mysql>exit 
+# Install PHP
+sudo apt install php-mysql php-fpm php-curl php-gd php-mbstring php-xml php-xmlrpc php-cli
+# Optional: Install myphpadmin
+# Requires a lot of setup to secure an get working with nginx, see Digital Ocean docs referenced. 
+sudo apt-get -y install apt-transport-https ca-certificates curl
+curl -fsSL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x42636ff8dae547240e01a1ca2ea3055293cb3f45" | sudo gpg --dearmor -o /usr/share/keyrings/phpmyadmin-ppa.gpg
+sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/phpmyadmin-ppa.gpg] https://ppa.launchpadcontent.net/phpmyadmin/ppa/ubuntu jammy main" > /etc/apt/sources.list.d/phpmyadmin-ubuntu-ppa-jammy.list'
+sudo apt update
+sudo apt install -y phpmyadmin
+# install PHP Composer 
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') {echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+sudo mv composer.phar /usr/local/bin/composer
+# start using composer
+composer list
+# Update Composer
+composer self-update
 
 References
 ----------
