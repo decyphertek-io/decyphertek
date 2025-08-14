@@ -126,7 +126,6 @@ nav:
         - IDS Tower: technotes/IdsTower.md 
         - Incus: technotes/Incus.md
         - Internet in A Box: technotes/Internet-In-A-Box.md 
-        - Kasm Workspaces CE: technotes/Kasm.md
         - Keycloak: technotes/Keycloak.md 
         - Kubernetes: technotes/Kubernetes.md 
         - LEMP Stack: technotes/LEMP-Stack.md 
