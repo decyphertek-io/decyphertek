@@ -94,7 +94,6 @@ nav:
         - Aide: technotes/Aide.md 
         - Android Roms: technotes/Android-Roms.md 
         - Ansible: technotes/Ansible.md 
-        - App Write: technotes/App-Write.md 
         - Auditd: technotes/Auditd.md 
         - AWS CLI: technotes/AWS-CLI.md 
         - Balena Etcher: technotes/Balena-Etcher.md 
