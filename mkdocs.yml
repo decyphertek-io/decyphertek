@@ -126,7 +126,6 @@ nav:
         - Keycloak: technotes/Keycloak.md 
         - Kubernetes: technotes/Kubernetes.md 
         - LEMP Stack: technotes/LEMP-Stack.md 
-        - Libre Wolf: technotes/LibreWolf.md 
         - Linux: technotes/Linux.md 
         - LXC: technotes/LXC.md
         - LXD: technotes/LXD.md
