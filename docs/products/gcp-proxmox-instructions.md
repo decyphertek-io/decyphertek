@@ -65,6 +65,7 @@ Creating VMs:
 ------------
 * Optional: A few difffernt examples.
 * Upload an ISO > Datacenter > Proxmox-ve > local > ISO Images> Upload or Download from URL.
+* Now, when you create a VM or container, can select your iso or container template.
 ```
 # EX: Add to ISO URL in GUI. ( Best to get the newest link and checksum directly from a trusted website )
 Kali Linux: https://cdimage.kali.org/kali-2025.2/kali-linux-2025.2-installer-amd64.iso
