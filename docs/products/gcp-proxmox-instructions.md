@@ -61,6 +61,50 @@ Password: # SET PASSWORD AS MENTIONED
 https://www.proxmox.com/en/products/proxmox-virtual-environment/pricing
 ```
 
+Creating VMs:
+------------
+* Optional: A few difffernt examples.
+```
+# Add to ISO URL in GUI. 
+Xubuntu 25: https://mirror.us.leaseweb.net/ubuntu-cdimage/xubuntu/releases/24.04/release/xubuntu-24.04.2-desktop-amd64.iso
+sha256: ba76abf526b4c7ab22e8125cca69547f76559f703bd357c54bdf5d74be0bfd2b
+
+CT Templates : 
+
+# List available templates
+sudo pveam available
+
+# Download a template (example)
+sudo pveam download local debian-12-standard_12.7-1_amd64.tar.zst
+sudo pveam download local rockylinux-9-default_20240912_amd64.tar.xz
+sudo pveam download local almalinux-9-default_20240911_amd64.tar.xz
+sudo pveam download local ubuntu-25.04-standard_25.04-1.1_amd64.tar.zst
+sudo pveam download local archlinux-base_20240911-1_amd64.tar.zst
+sudo pveam download local fedora-42-default_20250428_amd64.tar.xz
+
+# Troubleshooting
+sudo cat /var/log/ufw.log | grep BLOCK
+sudo pct list
+sudo pct status 100
+dpkg -l | grep pve-container
+
+# ParrotOS EX: How to convert OVA to Qcow or just to use Qcow images. 
+wget https://deb.parrot.sh/parrot/iso/6.4/Parrot-home-6.4_amd64.ova
+tar -xvf Parrot-home-6.4_amd64.ova
+qemu-img convert -f vmdk -O qcow2 Parrot-home-mate-6.4_amd64-disk001.vmdk parrots-6.4-home-mate.qcow2
+sudo mkdir -p /var/lib/vz/template/qcow
+sudo mv parrots-6.4-home-mate.qcow2 /var/lib/vz/template/qcow/
+# Create a VM first:
+# OS: no media format 
+# Disk: Bus/Device - VirtIO
+# Import qcow to the vm 
+cd /var/lib/vz/template/qcow/
+sudo qm importdisk 100 parrots-6.4-home-mate.qcow2 local
+# Attach qcow to vm after importing. 
+# Select VM >  hardware > select unused disk > edit > add 
+# This is a good example of how to convert ova to qcow2 & import qcow2 to proxmox
+```
+
 Security Features:
 ------------------
 * OSSEC HIDS - https://decyphertek.readthedocs.io/en/latest/technotes/OSSEC/
