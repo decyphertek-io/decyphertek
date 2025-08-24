@@ -67,9 +67,9 @@ Creating VMs:
 * Upload an ISO > Datacenter > Proxmox-ve > local > ISO Images> Upload or Download from URL.
 ```
 # EX: Add to ISO URL in GUI. ( Best to get the newest link and checksum directly from a trusted website )
-Xubuntu 24: https://mirror.us.leaseweb.net/ubuntu-cdimage/xubuntu/releases/24.04/release/xubuntu-24.04.2-desktop-amd64.iso
-Name: xubuntu.iso
-sha256: ba76abf526b4c7ab22e8125cca69547f76559f703bd357c54bdf5d74be0bfd2b
+Kali Linux: https://cdimage.kali.org/kali-2025.2/kali-linux-2025.2-installer-amd64.iso
+Name: kali.iso
+sha256: 5723d46414b45575aa8e199740bbfde49e5b2501715ea999f0573e94d61e39d3
 
 # CT Templates : 
 # List available templates
