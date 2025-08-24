@@ -64,13 +64,13 @@ https://www.proxmox.com/en/products/proxmox-virtual-environment/pricing
 Creating VMs:
 ------------
 * Optional: A few difffernt examples.
+* Upload an ISO > Datacenter > Proxmox-ve > local > ISO Images> Upload or Download from URL.
 ```
-# Add to ISO URL in GUI. 
+# EX: Add to ISO URL in GUI. 
 Xubuntu 25: https://mirror.us.leaseweb.net/ubuntu-cdimage/xubuntu/releases/24.04/release/xubuntu-24.04.2-desktop-amd64.iso
 sha256: ba76abf526b4c7ab22e8125cca69547f76559f703bd357c54bdf5d74be0bfd2b
 
-CT Templates : 
-
+# CT Templates : 
 # List available templates
 sudo pveam available
 
