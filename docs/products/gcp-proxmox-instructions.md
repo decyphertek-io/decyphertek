@@ -68,6 +68,7 @@ Creating VMs:
 ```
 # EX: Add to ISO URL in GUI. 
 Xubuntu 24: https://mirror.us.leaseweb.net/ubuntu-cdimage/xubuntu/releases/24.04/release/xubuntu-24.04.2-desktop-amd64.iso
+Name: xubuntu.iso
 sha256: ba76abf526b4c7ab22e8125cca69547f76559f703bd357c54bdf5d74be0bfd2b
 
 # CT Templates : 
