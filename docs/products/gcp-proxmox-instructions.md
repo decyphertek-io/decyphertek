@@ -87,6 +87,9 @@ sudo pveam download local fedora-42-default_20250428_amd64.tar.xz
 # Create a Container
 Proxmox UI > Create CT > Template: Select the template you downloaded.
 
+# Please be Patient
+Sometimes the console window for the container can take up to 5 mins to load properly.
+
 # Troubleshooting
 sudo cat /var/log/ufw.log | grep BLOCK
 sudo pct list
