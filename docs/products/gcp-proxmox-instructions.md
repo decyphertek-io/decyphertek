@@ -76,13 +76,16 @@ sha256: 5723d46414b45575aa8e199740bbfde49e5b2501715ea999f0573e94d61e39d3
 # List available templates
 sudo pveam available
 
-# Download a template (example)
+# Download a template (example) ( From Terminal: SSH In )
 sudo pveam download local debian-12-standard_12.7-1_amd64.tar.zst
 sudo pveam download local rockylinux-9-default_20240912_amd64.tar.xz
 sudo pveam download local almalinux-9-default_20240911_amd64.tar.xz
 sudo pveam download local ubuntu-25.04-standard_25.04-1.1_amd64.tar.zst
 sudo pveam download local archlinux-base_20240911-1_amd64.tar.zst
 sudo pveam download local fedora-42-default_20250428_amd64.tar.xz
+
+# Create a Container
+Proxmox UI > Create CT > Template: Select the template you downloaded.
 
 # Troubleshooting
 sudo cat /var/log/ufw.log | grep BLOCK
