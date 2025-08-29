@@ -2,7 +2,7 @@
 Contact:
 ========
 
-While we do not offer formal support services, we do help with certain inquiries related to bugs, technical issues, misconfigurations, and general questions.
+While we do not offer formal support, we do help with certain inquiries related to bugs, technical issues, misconfigurations, and general questions.
 
 **Email:** `adminotaur@decyphertek.io`
 
