@@ -43,6 +43,7 @@ nav:
         - OpenCTI: products/azure/opencti.md
         - OpenSearch: products/azure/opensearch.md
         - OpenVas: products/azure/openvas.md
+        - Proxmox VE: products/azure/proxmox.md
         - SonarQube CE: products/azure/sonarqube-ce.md
         - Uptime Kuma: products/azure/uptime-kuma.md
         - Vaultwarden: products/azure/vaultwarden.md

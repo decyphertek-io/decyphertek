@@ -16,6 +16,7 @@ Visit our [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marke
 - [OpenCTI](opencti.md)
 - [OpenSearch](opensearch.md)
 - [OpenVas](openvas.md)
+- [Proxmox VE](proxmox.md)
 - [SonarQube CE](sonarqube-ce.md)
 - [Uptime Kuma](uptime-kuma.md)
 - [Vaultwarden](vaultwarden.md)
