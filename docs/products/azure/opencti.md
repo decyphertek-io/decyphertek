@@ -96,6 +96,17 @@ sudo docker restart portainer
 ```
 * Once logged into portainer, click get started and select local. You can manage docker from here. 
 
+Experiemntal - Update & Restore Opencti:
+----------------------------------------
+* CAUTION: This can break you system, please proceed with care. 
+* Versions are pinned in OpenCTI, running this script will update to the newest version.
+```
+# This will run a script to backup and change to a new version
+sudo /opt/.update.sh
+# Optional: This script will restore back to the version before the upgrade, if it failed.
+sudo /opt/.restore.sh
+```
+
 References:
 ------------
 * https://docs.docker.com/
