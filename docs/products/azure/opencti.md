@@ -98,7 +98,8 @@ sudo docker restart portainer
 
 Experiemntal - Update & Restore Opencti:
 ----------------------------------------
-* CAUTION: This can break you system, please proceed with care. 
+* CAUTION: This can break you system, please proceed with awareness. 
+* This only works on the newest version 6.7.17+
 * Versions are pinned in OpenCTI, running this script will update to the newest version.
 ```
 # This will run a script to backup and change to a new version
