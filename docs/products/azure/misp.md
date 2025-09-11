@@ -61,6 +61,16 @@ Manage Flatcar Linux:
 sudo update_engine_client -update
 ```
 
+Update to newest version:
+-------------------------
+* I created a script that outputs instructions from terminal on how to update MISP manually. 
+```
+# SSH & run from terminal
+sudo /opt/.update.sh
+# This will output instructions
+# Please proceed with caution. 
+```
+
 References:
 -----------
 * https://docs.docker.com/
