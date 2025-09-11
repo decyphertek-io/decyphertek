@@ -28,5 +28,7 @@ ipv6.method ignore
 
 References
 -----------
-* https://wiki.debian.org/FreedomBox
-* https://wiki.debian.org/FreedomBox/Manual#FreedomBox.2FHardware.2FDebian.Debian
+```
+https://wiki.debian.org/FreedomBox
+https://wiki.debian.org/FreedomBox/Manual#FreedomBox.2FHardware.2FDebian.Debian
+```
