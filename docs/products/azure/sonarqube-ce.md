@@ -1,4 +1,4 @@
-SonarQube is an open-source platform for continuous inspection of code quality, helping developers identify and fix bugs and vulnerabilities across multiple programming languages. It provides detailed reports on overall code health, ensuring high standards in software development. Running on Ubuntu 24 LTS with Docker, your SonarQube instance benefits from a containerized environment that simplifies deployment and scaling, while security features like Crowdsec IPS, Auditd Logging, Nginx Reverse Proxy, automated updates, and UFW Host Firewall enhance its protection and stability. [Azure Marketplace: SonarQube CE ](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/decyphertek.sonarqube-ce?tab=Overview)
+SonarQube is an open-source platform for continuous inspection of code quality, helping developers identify and fix bugs and vulnerabilities across multiple programming languages. It provides detailed reports on overall code health, ensuring high standards in software development. Running on Flatcar Linux with Docker, your SonarQube instance benefits from a secure, containerized environment that simplifies deployment and scaling, with security features like an immutable OS, automatic updates, and Nginx Reverse Proxy ensuring robust protection and stability. [Azure Marketplace: SonarQube CE](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/decyphertek.sonarqube-ce?tab=Overview)
 
 
 Note:
@@ -17,13 +17,6 @@ Sonarqube CE:
 username: admin
 password: admin
 ```
-
-Additonal Security Features:
-----------------------------
-* Crowdsec IPS - https://decyphertek.readthedocs.io/en/latest/technotes/Crowdsec/
-* UFW Host Firewall - https://decyphertek.readthedocs.io/en/latest/technotes/UFW/
-* Auditd Logging - https://decyphertek.readthedocs.io/en/latest/technotes/Auditd/
-* Automated Updates - Update script upon first boot and at 3am daily.
 
 References:
 -----------
