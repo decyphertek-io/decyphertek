@@ -12,7 +12,7 @@ SSH Into the server:
 # May take up to a minute or two to sync the changes. 
 ssh adminotaur@IP-OF-SERVER
 ```
-* If unable to use either ssh soltutions, please review your permisisons in GCP.
+* If unable to use either ssh solutions, please review your permisisons in GCP.
 
 OpenVAS GVM Login:
 ------------------
