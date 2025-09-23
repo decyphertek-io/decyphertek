@@ -71,6 +71,7 @@ Use a command like this: gvmd --migrate
 sudo systemctl stop gvmd gsad ospd-openvas
 sudo -u _gvm gvmd --migrate
 sudo systemctl start gvmd gsad ospd-openvas
+sudo greenbone-feed-sync --type all 
 ```
 * Optional: Update gvm feeds ( Takes a while ):
 * This is done via crontab automatically every sunday.
