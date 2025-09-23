@@ -34,9 +34,20 @@ OpenVas Basics:
 * Dashboard: Create a new Target > Configuration > Target > Select - Top Left: Paper W/ Star > New Target > Enter IP or Cidr range > Choose your options
 * Dashboard: Create a New Port List > Configuration > Port List > Select - Top Left: Paper W/ Star > New Port List 
 * Dashboard: Quick Scan > Scans > Tasks > Select - Top Left: Paper W/ Star  > New Task > Select Target > Set to once > Start 
-* Terminal: Update Password > sudo runuser -u _gvm -- gvmd --user=admin --new-password=decyphertek && sudo systemctl daemon-reload && sudo systemctl restart gvmd
-* Terminal: Update Feeds > sudo gvm-feed-update
-* Terminal: Add New user > sudo runuser -u _gvm -- gvmd --create-user=newuser --new-password=password
+* Terminal - Update Password:
+```
+sudo runuser -u _gvm -- gvmd --user=admin --new-password=PASSWORD
+sudo systemctl daemon-reload 
+sudo systemctl restart gvmd
+```
+* Terminal - Update Feeds: ( Optional )
+```
+sudo greenbone-feed-sync --type all 
+```
+* Terminal: Add New user:
+```
+sudo runuser -u _gvm -- gvmd --create-user=newuser --new-password=PASSWORD
+```
 * Getting Started W/ Openvas GVM > https://www.youtube.com/watch?v=LGh2SetiKaY
 
 Troubleshooting:
