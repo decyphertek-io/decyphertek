@@ -46,11 +46,18 @@ Troubleshooting:
 ```
 sudo systemctl status gvmd gsad ospd-openvas redis-server postgresql nginx
 ```
-* You can start or restart services if not working. 
+* You can stop,start, and restart services if not working. 
 ```
-sudo systemctl restart SERVICE
-OR
-sudo systemctl start SERVICE
+sudo systemctl stop gvmd gsad ospd-openvas redis-server postgresql nginx
+sudo systemctl start gvmd gsad ospd-openvas redis-server postgresql nginx
+sudo systemctl restart gvmd gsad ospd-openvas redis-server postgresql nginx
+```
+* If you get this error from the web browser login:
+```
+The Greenbone Vulnerability Manager service is not responding. This could be due to system maintenance. Please try again later, check the system status, or contact your system administrator.
+
+# Check for issues with the gvmd.service
+sudo journalctl -xeu gvmd.service
 ```
 * Optional: Update gvm feeds ( Takes a while ):
 * This is done via crontab automatically every sunday.
