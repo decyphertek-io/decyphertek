@@ -30,7 +30,6 @@ password: ( Output of password.txt )
 
 OpenVas Basics:
 ---------------
-
 * Dashboard: Check Feeds > Administration > Feed Status
 * Dashboard: Create a new Target > Configuration > Target > Select - Top Left: Paper W/ Star > New Target > Enter IP or Cidr range > Choose your options
 * Dashboard: Create a New Port List > Configuration > Port List > Select - Top Left: Paper W/ Star > New Port List 
