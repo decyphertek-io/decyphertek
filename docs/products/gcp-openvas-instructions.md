@@ -6,19 +6,18 @@ Note:
 
 SSH Into the server:
 --------------------
-* Utilize Google SSH Console or setup ssh keys or password.
+* Connect SSH > Utilize Google Cloud Shell ( SSH-in-browser ) 
+* OR setup ssh keys > Edit > SSH Keys > Add item > ssh-rsa SSH PUB KEY adminotaur
+```
+ssh adminotaur@IP-OF-SERVER
+```
 
 OpenVAS GVM Login:
 ------------------
-
 * ssh into your server.
 * Password:
 ```
-sudo cat /root/password.txt 
-```
-* Recommended: Update gvm feeds ( Takes a while ):
-```
-sudo greenbone-feed-sync
+sudo cat /home/adminotaur/password.txt 
 ```
 * Go to your browser - https://ip-of-server
 * Login:
@@ -26,6 +25,7 @@ sudo greenbone-feed-sync
 username: admin 
 password: ( Output of password.txt )
 ```
+* You may see feeds syncing or Error fetching the feed , please wait for feeds to update. 
 
 OpenVas Basics:
 ---------------
@@ -41,21 +41,36 @@ OpenVas Basics:
 
 Troubleshooting:
 -----------------
-
-* Check the status of GVM > sudo systemctl status gvmd
-* Stop GVM > sudo gvm-stop -h
-* Start FVM > sudo gvm-start -h
+* Check to see if all services are running correctly. 
+```
+sudo systemctl status gvmd gsad ospd-openvas redis-server postgresql nginx
+```
+* You can start or restart services if not working. 
+```
+sudo systemctl restart SERVICE
+OR
+sudo systemctl start SERVICE
+```
+* Optional: Update gvm feeds ( Takes a while ):
+* This is done via crontab automatically every sunday.
+```
+sudo greenbone-feed-sync --type all 
+```
 
 Additonal Security Features:
 ----------------------------
-
 * Crowdsec IPS - https://decyphertek.readthedocs.io/en/latest/technotes/Crowdsec/
 * UFW Host Firewall - https://decyphertek.readthedocs.io/en/latest/technotes/UFW/
 * Auditd Logging - https://decyphertek.readthedocs.io/en/latest/technotes/Auditd/
 * Automated Updates - Update script upon first boot and daily.
 * Nginx - https://nginx.org/en/docs/
+* Daily Security Report: ( Scheduled via crontab )
+```
+cd /var/log/decyphertek/
+ls
+sudo cat security_report_DATE-HERE.log
+```
 
 References:
 ------------
-
 * https://openvas.org/
