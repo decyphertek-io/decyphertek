@@ -31,9 +31,11 @@ password: ( Output of password.txt )
 OpenVas Basics:
 ---------------
 * Dashboard: Check Feeds > Administration > Feed Status
-* Dashboard: Create a new Target > Configuration > Target > Select - Top Left: Paper W/ Star > New Target > Enter IP or Cidr range > Choose your options
+* Dashboard: Create a new Target > Configuration > Target > Select - Top Left: Paper W/plus > New Target > Enter IP  
+  or Cidr range > Choose your options
 * Dashboard: Create a New Port List > Configuration > Port List > Select - Top Left: Paper W/ Star > New Port List 
-* Dashboard: Quick Scan > Scans > Tasks > Select - Top Left: Paper W/ Star  > New Task > Select Target > Set to once > Start 
+* Dashboard: Quick Scan > Scans > Tasks > Select - Top Left: Paper W/ Star  > New Task > Select Target > Set to once 
+  > Start 
 * Terminal - Update Password:
 ```
 sudo runuser -u _gvm -- gvmd --user=admin --new-password=PASSWORD
