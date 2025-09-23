@@ -9,6 +9,7 @@ SSH Into the server:
 * Connect SSH > Utilize Google Cloud Shell ( SSH-in-browser ) 
 * OR setup ssh keys > Edit > SSH Keys > Add item > ssh-rsa SSH PUB KEY adminotaur
 ```
+# May take up to a minute or two to sync the changes. 
 ssh adminotaur@IP-OF-SERVER
 ```
 
