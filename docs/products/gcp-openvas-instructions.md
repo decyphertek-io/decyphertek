@@ -59,6 +59,20 @@ The Greenbone Vulnerability Manager service is not responding. This could be due
 # Check for issues with the gvmd.service
 sudo journalctl -xeu gvmd.service
 ```
+* Check to see if you have an outdated Database:
+```
+sudo -u _gvm gvmd --get-scanners
+# If you get this message.
+Database is wrong version.
+Your database is too old for this version of gvmd.
+Please migrate to the current data model.
+Use a command like this: gvmd --migrate
+
+# Please run this command to fix it.
+sudo systemctl stop gvmd gsad ospd-openvas
+sudo -u _gvm gvmd --migrate
+sudo systemctl start gvmd gsad ospd-openvas
+```
 * Optional: Update gvm feeds ( Takes a while ):
 * This is done via crontab automatically every sunday.
 ```
