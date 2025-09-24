@@ -69,6 +69,7 @@ The Greenbone Vulnerability Manager service is not responding. This could be due
 # Check for issues with the gvmd.service
 sudo journalctl -xeu gvmd.service
 ```
+* One first boot a system update occurs, so this can update openvas and make the DB outdated in some cases. 
 * Check to see if you have an outdated Database:
 ```
 sudo -u _gvm gvmd --get-scanners
