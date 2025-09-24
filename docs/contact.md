@@ -5,6 +5,7 @@ Contact:
 While we do not offer formal support, we do help with certain inquiries related to bugs, technical issues, misconfigurations, and general questions.
 
 **Email:** `adminotaur@decyphertek.io`
+
 **Github Issues:** `https://github.com/decyphertek-io/decyphertek/issues`
 
 <p align="center">
