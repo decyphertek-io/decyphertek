@@ -80,6 +80,7 @@ Please migrate to the current data model.
 Use a command like this: gvmd --migrate
 
 # Please run this command to fix it.
+sudo apt update && sudo apt upgrade -y 
 sudo systemctl stop gvmd gsad ospd-openvas
 sudo -u _gvm gvmd --migrate
 sudo systemctl start gvmd gsad ospd-openvas
