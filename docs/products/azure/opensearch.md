@@ -27,22 +27,22 @@ Password: (sudo cat /root/opensearch_admin_password.txt )
 
 OpenSearch GET/POST:
 --------------------
-* Install httpie terminal or Desktop  - https://httpie.io/cli ; https://httpie.io/desktop
-* HTTPIE Linux Terminal Example:
+* Example: Check Index Health, cluster check, and post to _doc using curl .
 ```
-# GET/POST Example using HTTPIE & health.json
-# Basic GET no auth example ( https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/)
-http --pretty=format GET "https://api.crossref.org/journals?query=pharmacy+health" "Accept:application/json"  >> health.json
-# If using auth for an API > http --pretty=format GET "https://example.com" "Authorization:Bearer $API_KEY" "Accept:application/json"  >> example.json
-# Create an index > Opensearch Dashboard > Index Managment > Indexes > Create index > EX: health
-# Test the index 
-http --verify=no --auth admin:your_password GET https://IP-OR-DOMAIN:9443/health/
-http --verify=no --auth admin:your_password POST https://IP-OR-DOMAIN:9443/health/_doc/ Content-Type:application/json < health.json
-# Create Index Pattern > Dashboard > Managment > Dashboard Managment > Create Index Pattern > health*
-# You can now discover the data & Create Dashboards.
+# Basic health check
+curl -k -u 'admin:PASWORD' "https://IP-OR-DOMAIN:9443/"
+# Cluster check
+curl -k -u 'admin:PASWORD' "https://IP-OR-DOMAIN:9443/_cluster/health?pretty"
+# List all indices
+curl -k -u 'admin:PASWORD' "https://IP-OR-DOMAIN:9443/_cat/indices?v"
+# Create an index for the data
+curl -k -u 'admin:PASSWORD' -X PUT "https://IP-OR-DOMAIN:9443/data"
+# Get API data and Post json to _doc
+curl -s "https://api.crossref.org/journals?query=pharmacy+health" -H "Accept: application/json" -o health.json
+curl -k -u 'admin:PASWORD'  -X POST "https://IP-OR-DOMAIN:9443/data/_doc/" -H "Content-Type: application/json" -d @health.json
+# Verify posted data was indexed
+curl -k -u 'admin:PASSWORD' "https://IP-OR-DOMAIN:9443/data/_search?pretty"
 ```
-* Note this is just an example, please utilize your own API or json data to get customized results. 
-* Can be useful if you need to pull in data from multiple APIs and crossreference the data. 
 
 Optional - Nginx:
 ------
@@ -70,10 +70,18 @@ sudo systemctl start opensearch opensearch-dashboards
 
 Security Features:
 ------------------
-* Crowdsec IPS - https://decyphertek.readthedocs.io/en/latest/technotes/Crowdsec/
+* Rsyslog - https://www.rsyslog.com/doc/index.html
+* Ossec - https://decyphertek.readthedocs.io/en/latest/technotes/OSSEC/
 * UFW Host Firewall - https://decyphertek.readthedocs.io/en/latest/technotes/UFW/
 * Auditd Logging - https://decyphertek.readthedocs.io/en/latest/technotes/Auditd/
 * Automated Updates - Update script upon first boot and daily.
+* Nginx - https://nginx.org/en/docs/
+* Daily Security Report: ( Scheduled via crontab )
+```
+cd /var/log/decyphertek/
+ls
+sudo cat security_report_DATE-HERE.log
+```
 
 References:
 -----------
