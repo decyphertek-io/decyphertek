@@ -106,6 +106,7 @@ nav:
         - Cloudinit: technotes/Cloud-Init.md 
         - CloudPanel: technotes/Cloudpanel.md 
         - Crowdsec: technotes/Crowdsec.md 
+        - Decyphertek.ai: technotes/Decyphertek-ai.md
         - Deja Dup: technotes/Deja-Dup.md 
         - Docker: technotes/Docker.md 
         - Droidian: technotes/Droidian.md
