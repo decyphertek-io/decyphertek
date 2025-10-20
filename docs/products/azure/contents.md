@@ -10,6 +10,7 @@ Visit our [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marke
 
 ## Table of Contents
 
+- [Kali Linux Web Desktop](kali.md)
 - [Mitre Caldera V5](caldera.md)
 - [Librechat AI](librechat.md)
 - [MISP](misp.md)

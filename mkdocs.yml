@@ -37,6 +37,7 @@ nav:
         - VaultWarden: products/aws/vaultwarden.md
     - Azure Marketplace:
         - Table Of Contents: products/azure/contents.md
+        - Kali Linux Web Desktop: products/azure/kali.md
         - Mitre Caldera V5: products/azure/caldera.md
         - Librechat AI: products/azure/librechat.md
         - MISP: products/azure/misp.md
