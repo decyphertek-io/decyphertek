@@ -55,6 +55,9 @@ nav:
         - Kali Linux Web Desktop: 
             - Instructions: products/gcp-kali-web-desktop-instructions.md
             - EULA: products/gcp-kali-web-desktop-eula.md
+        - Librechat AI:
+            - Instructions: products/gcp-librechat-instructions.md
+            - EULA: products/gcp-librechat-eula.md
         - Misp: 
             - Instructions: products/gcp-misp-instructions.md
             - EULA: products/gcp-misp-eula.md

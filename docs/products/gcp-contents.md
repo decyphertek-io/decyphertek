@@ -11,6 +11,7 @@ Visit our [GCP Marketplace](https://console.cloud.google.com/marketplace/browse?
 ## Table of Contents
 
 - [Kali Linux Web Desktop](gcp-kali-web-desktop-instructions.md)
+- [Librechat AI](gcp-librechat-instructions.md)
 - [Misp](gcp-misp-instructions.md)
 - [Mitre Caldera V5](gcp-caldera-instructions.md)
 - [Odoo 18 CE](gcp-odoo-instructions.md)
