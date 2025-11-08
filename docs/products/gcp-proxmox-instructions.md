@@ -80,6 +80,7 @@ Proxmox UI > Create CT > Template: Select the template you downloaded.
 
 # Please be Patient
 Sometimes the console window for the container can take up to 5 mins to load properly.
+May have to click and refresh , a known Proxmox bug. 
 
 # Troubleshooting
 sudo cat /var/log/ufw.log | grep BLOCK
