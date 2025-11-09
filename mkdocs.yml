@@ -29,6 +29,7 @@ nav:
         - DFIR IRIS: products/aws/dfir-iris.md
         - Misp: products/aws/misp.md
         - Mitre Caldera V5: products/aws/caldera.md
+        - Nextcloud: products/aws/nextcloud.md
         - Odoo 18 CE: products/aws/odoo.md
         - OpenCTI: products/aws/opencti.md
         - OpenVas: products/aws/openvas.md
