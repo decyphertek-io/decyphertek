@@ -14,7 +14,6 @@ Visit our [GCP Marketplace](https://console.cloud.google.com/marketplace/browse?
 - [Librechat AI](gcp-librechat-instructions.md)
 - [Misp](gcp-misp-instructions.md)
 - [Mitre Caldera V5](gcp-caldera-instructions.md)
-- [Odoo 18 CE](gcp-odoo-instructions.md)
 - [OpenCTI](gcp-opencti-instructions.md)
 - [OpenSearch](gcp-opensearch-instructions.md)
 - [OpenVas](gcp-openvas-instructions.md)
