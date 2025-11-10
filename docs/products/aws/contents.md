@@ -22,6 +22,7 @@ Visit our [AWS Marketplace](https://aws.amazon.com/marketplace/seller-profile?id
 - [Nextcloud](nextcloud.md)
 - [Odoo 18 CE](odoo.md)
 - [OpenCTI](opencti.md)
+- [Opensearch](opensearch.md)
 - [OpenVas](openvas.md)
 - [Uptime Kuma](uptime-kuma.md)
 - [VaultWarden](vaultwarden.md)
