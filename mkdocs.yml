@@ -27,6 +27,7 @@ nav:
         - Kali Linux Web Desktop: products/aws/kali.md
         - ParrotSec Web Desktop: products/aws/parrotos.md
         - DFIR IRIS: products/aws/dfir-iris.md
+        - LibreChat AI: products/aws/librechat.md
         - Misp: products/aws/misp.md
         - Mitre Caldera V5: products/aws/caldera.md
         - Nextcloud: products/aws/nextcloud.md
