@@ -65,8 +65,8 @@ We may update this Privacy Policy from time to time. Any changes will be posted 
 
 If you have any questions about this Privacy Policy, please contact us at:
 
-- Email: [Your contact email]
-- Website: [Your website]
+- [GitHub Issues](https://github.com/decyphertek/langtek-app)
+- [Website](https://langtek.decyphertek.io/)
 
 ## Your Rights
 
