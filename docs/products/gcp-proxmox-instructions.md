@@ -48,6 +48,10 @@ Login to Proxmox VE:
 ```
 # Proxmox VE uses local PAM Authentication.
 sudo passwd adminotaur
+# Add user to Promox User DB
+sudo pveum user add adminotaur@pam
+sudo pveum acl modify / -user adminotaur@pam -role Administrator
+sudo systemctl restart pvedaemon pveproxy
 ```
 * login to Proxmox Dashboard:
 ```
