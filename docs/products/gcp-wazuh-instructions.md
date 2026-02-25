@@ -3,7 +3,7 @@ Wazuh is an open-source security monitoring and compliance tool that provides co
 
 Note:
 -------
-* Please be aware that it takes 10-15 minutes before the system is up and running. 
+* Please be aware that it takes 15-20 minutes before the system is up and running. 
 * Please be patient , you can check uptime from terminal. 
 * Wazuh Recomeneded Hardware settings:
 **1–25 Agents**  
