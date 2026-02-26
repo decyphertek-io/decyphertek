@@ -24,6 +24,7 @@ Note:
 SSH Into the server:
 --------------------
 * Utilize Google SSH Console or setup ssh keys or password.
+* EX: Edit > Security and access > Add item > ssh-rsa SSH PUB KEY adminotaur ( works with version 4.14 and above. )
 
 Wazuh Basics:
 -------------
