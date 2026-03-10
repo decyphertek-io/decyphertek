@@ -62,9 +62,6 @@ nav:
         - Misp: 
             - Instructions: products/gcp-misp-instructions.md
             - EULA: products/gcp-misp-eula.md
-        - OpenCTI:
-            - Instructions: products/gcp-opencti-instructions.md
-            - EULA: products/gcp-opencti-eula.md
         - OpenSearch:
             - Instructions: products/gcp-opensearch-instructions.md
             - EULA: products/gcp-opensearch-eula.md
@@ -74,9 +71,6 @@ nav:
         - OPNsense:
             - Instructions: products/gcp-opnsense-instructions.md
             - EULA: products/gcp-opnsense-eula.md
-        - Proxmox VE:
-            - Instructions: products/gcp-proxmox-instructions.md
-            - EULA: products/gcp-proxmox-eula.md
         - SonarQube CE:
             - Instructions: products/gcp-sonarqube-instructions.md
             - EULA: products/gcp-sonarqube-eula.md
