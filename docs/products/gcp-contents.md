@@ -11,7 +11,6 @@ Visit our [GCP Marketplace](https://console.cloud.google.com/marketplace/browse?
 ## Table of Contents
 
 - [Kali Linux Web Desktop](gcp-kali-web-desktop-instructions.md)
-- [Librechat AI](gcp-librechat-instructions.md)
 - [Misp](gcp-misp-instructions.md)
 - [OpenSearch](gcp-opensearch-instructions.md)
 - [OpenVas](gcp-openvas-instructions.md)
