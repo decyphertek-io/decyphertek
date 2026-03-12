@@ -42,7 +42,7 @@ sudo passwd kali
 ```
 sudo su kali
 cd ~ 
-vnpasswd 
+vncpasswd
 sudo systemctl daemon-reload 
 sudo systemctl restart tigervnc
 ```
@@ -54,6 +54,12 @@ Troubleshooting:
 * Your password is found in the kali linux home directory:
 ```
 sudo cat /home/kali/password.txt
+```
+* Newer noNVC introduced some changes. Known bugs:
+```
+* Firefox gives an error. can't access property "addEventListener", document.getElementById(...) is null
+* Passwords are limited to 8 characters?!?!?
+* SOlution: Use Chrome , use 8 character password. 
 ```
 * Forgot your password, you can change it. run form terminal:
 ```
