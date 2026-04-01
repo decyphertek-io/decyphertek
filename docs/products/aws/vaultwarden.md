@@ -22,8 +22,27 @@ Vaultwarden:
 * Optional: Enable MFA - Login > Account Settings > Security > Two Step Login > Select and enable your MFA.
 * You can now import or add your passwords. 
 
-Portainer - Manage Docker:
+Arcane - Manage Docker ( Used after 04/01/26 ):
+---------------------------------------------
+* How to access Arcane to manage your containers > https://ip-of-server:9443
+* Be patient , when you first access, takes a couple minutes to load.
+* Username: arcane Password: arcane-admin
+* It will immediatley require a password reset. 
+* Easily manage your docker containers.
+```
+* This is desinged to use a public IP. If you want to use a private IP, please do the following. 
+* SSH Into the server.
+cd .docker 
+docker-compose down
+nano .env 
+# Change the APP_URL=YOUR-IP
+docker-compose up -d 
+* You can now access Arcane via Private IP instead of a public one. 
+```
+
+Portainer - Manage Docker ( Used Before 04/01/26):
 --------------------------
+* This has been replaced by arcane in newer rleeases, due to the community version limiting functions. 
 * How to access Portainer to manage your containers > https://ip-of-server:9443
 * Follow the instructions to create a new admin account. 
 * Caution - Portainer can timeout if you dont create an account fast enough

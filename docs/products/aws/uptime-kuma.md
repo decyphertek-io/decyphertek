@@ -33,7 +33,7 @@ curl -sk "https://IP-OR-DOMAIN/metrics" \
   grep -E 'monitor_(status|response_time)'
 ```
 
-Arcane - Manage Docker ( Used after 3/3/26 ):
+Arcane - Manage Docker ( Used after 3/31/26 ):
 ---------------------------------------------
 * How to access Arcane to manage your containers > https://ip-of-server:9443
 * Be patient , when you first access, takes a couple minutes to load.
@@ -50,7 +50,6 @@ nano .env
 docker-compose up -d 
 * You can now access Arcane via Private IP instead of a public one. 
 ```
-
 
 Portainer - Manage Docker ( Used Before 3/31/26):
 --------------------------
