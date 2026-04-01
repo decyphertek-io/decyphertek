@@ -19,8 +19,9 @@ ssh core@ip-of-server
 Uptime Kuma:
 -------------
 * How to access Uptime-Kuma > https://ip-of-server
-* Follow instrucitons to create a new account. 
-* You now can easily add a website to monitor. 
+* Setup Database > Select Embedded Mariadb
+* Create the admin account , customize you username and password. 
+* Create a monitor > Select Add Monitor ( Top Right ) > Fill in data. Thats it. 
 
 (Optional) API:
 --------------
@@ -32,8 +33,28 @@ curl -sk "https://IP-OR-DOMAIN/metrics" \
   grep -E 'monitor_(status|response_time)'
 ```
 
-Portainer - Manage Docker:
+Arcane - Manage Docker ( Used after 3/3/26 ):
+---------------------------------------------
+* How to access Arcane to manage your containers > https://ip-of-server:9443
+* Be patient , when you first access, takes a couple minutes to load.
+* Username: arcane Password: arcane-admin
+* It will immediatley require a password reset. 
+* Easily manage your docker containers.
+```
+* This is desinged to use a public IP. If you want to use a private IP, please do the following. 
+* SSH Into the server.
+cd .docker 
+docker-compose down
+nano .env 
+# Change the APP_URL=YOUR-IP
+docker-compose up -d 
+* You can now access Arcane via Private IP instead of a public one. 
+```
+
+
+Portainer - Manage Docker ( Used Before 3/31/26):
 --------------------------
+* This has been replaced by arcane in newer rleeases, due to the community version limiting functions. 
 * How to access Portainer to manage your containers > https://ip-of-server:9443
 * Follow the instructions to create a new admin account. 
 * Caution - Portainer can timeout if you dont create an account fast enough
