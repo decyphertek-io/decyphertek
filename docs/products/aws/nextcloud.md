@@ -1,4 +1,4 @@
-Nextcloud is a self-hosted cloud suite and collaboration platform that provides secure business storage, document sharing, and real-time editing with full control over your data to ensure privacy. [AWS Marketplace: Nextcloud ]()
+Nextcloud is a self-hosted cloud suite and collaboration platform that provides secure business storage, document sharing, and real-time editing with full control over your data to ensure privacy. [AWS Marketplace: Nextcloud ](https://aws.amazon.com/marketplace/pp/prodview-7bloglkayfve2?sr=0-10&ref_=beagle&applicationId=AWSMPContessa)
 
 SSH Into the server:
 --------------------
@@ -9,7 +9,7 @@ SSH Into the server:
 Passwords - DB AND/OR User:
 ----------------------------
 1. ssh into server
-2. cat ~/.docker/.env
+2. cat ~/.podman/.env
 3. This will display the randomly generated passwords for DB AND/OR User. 
 
 NextCloud - Setup:
@@ -21,7 +21,53 @@ NextCloud - Setup:
 * Optional: Login > Select Account Icon: Top Right > Select: Apps > Office & Text > Download & Enable: Calender , Contacts , Nextcloud Office , 
 * Optional: Login > Select Account Icon: Top Right > Select: Apps > Social & COmmunication > Download & Enable: talk 
 
-Portainer - Manage Docker:
+Podman:
+-------
+* Podman is a daemonless, rootless container engine used to run Nextcloud, MariaDB, and Nginx securely.
+* Check running containers:
+```
+podman ps
+```
+* Update containers — ssh into the server then run:
+```
+cd ~/.podman
+podman-compose down
+podman-compose pull
+podman-compose up -d
+```
+* View container logs:
+```
+podman logs nginx-reverse-proxy
+podman logs mariadb
+podman logs nextcloud
+```
+
+FCOS Linux:
+-----------
+* Fedora CoreOS (FCOS) is an automatically updating, minimal, container-focused operating system.
+* Check SELinux status:
+```
+getenforce
+```
+* Check firewall rules:
+```
+sudo firewall-cmd --list-all
+```
+* Check audit logs:
+```
+sudo aureport --summary
+```
+* Install additional packages (requires reboot to apply):
+```
+sudo rpm-ostree install <package>
+sudo systemctl reboot
+```
+* Check system status:
+```
+sudo systemctl status
+```
+
+Portainer - Manage Docker: ( Before 4/16/26 )
 --------------------------
 * How to access Portainer to manage your containers > https://ip-of-server:9443
 * Follow the instructions to create a new admin account. 
@@ -29,14 +75,17 @@ Portainer - Manage Docker:
 * If this happens you need to restart the container, ssh into the server, then run. > docker restart portainer
 * Once logged into portainer, click get started and select local. You can manage docker from here. 
 
-Manage Flatcar Linux: 
+Manage Flatcar Linux: ( Before 4/16/26 )
 ---------------------
 * Optional: Manaully update Flatcar. Updates will happen automatically. 
 * If you want to manually check for updates run this command: update_engine_client -update
 
 
 References:
-https://docs.docker.com/
-https://docs.portainer.io/
-https://www.flatcar.org/docs/latest
-https://docs.nextcloud.com/
+-----------
+* https://docs.nextcloud.com/
+* https://docs.podman.io/en/latest/
+* https://docs.fedoraproject.org/en-US/fedora-coreos/
+* https://docs.docker.com/
+* https://docs.portainer.io/
+* https://www.flatcar.org/docs/latest
