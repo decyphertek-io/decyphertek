@@ -33,22 +33,49 @@ curl -sk "https://IP-OR-DOMAIN/metrics" \
   grep -E 'monitor_(status|response_time)'
 ```
 
-Arcane - Manage Docker ( Used after 3/31/26 ):
----------------------------------------------
-* How to access Arcane to manage your containers > https://ip-of-server:9443
-* Be patient , when you first access, takes a couple minutes to load.
-* Username: arcane Password: arcane-admin
-* It will immediatley require a password reset. 
-* Easily manage your docker containers.
+Podman:
+-------
+* Podman is a daemonless, rootless container engine used to run Uptime Kuma and Nginx securely.
+* Check running containers:
 ```
-* This is desinged to use a public IP. If you want to use a private IP, please do the following. 
-* SSH Into the server.
-cd .docker 
-docker-compose down
-nano .env 
-# Change the APP_URL=YOUR-IP
-docker-compose up -d 
-* You can now access Arcane via Private IP instead of a public one. 
+podman ps
+```
+* Update containers — ssh into the server then run:
+```
+cd ~/.podman
+podman-compose down
+podman-compose pull
+podman-compose up -d
+```
+* View container logs:
+```
+podman logs nginx-reverse-proxy
+podman logs uptime-kuma
+```
+
+FCOS Linux:
+-----------
+* Fedora CoreOS (FCOS) is an automatically updating, minimal, container-focused operating system.
+* Check SELinux status:
+```
+getenforce
+```
+* Check firewall rules:
+```
+sudo firewall-cmd --list-all
+```
+* Check audit logs:
+```
+sudo aureport --summary
+```
+* Install additional packages (requires reboot to apply):
+```
+sudo rpm-ostree install <package>
+sudo systemctl reboot
+```
+* Check system status:
+```
+sudo systemctl status
 ```
 
 Portainer - Manage Docker ( Used Before 3/31/26):
@@ -63,7 +90,7 @@ docker restart portainer
 ```
 * Once logged into portainer, click get started and select local. You can manage docker from here. 
 
-Docker - Update Containers: 
+Docker - Update Containers: ( Used Before 4/16/26):
 ---------------------------
 * Caution: Make sure to back up any data and test the update in a staging environment before running these commands on a production server.
 * ssh into the server 
@@ -74,7 +101,7 @@ cd .docker
 /opt/bin/docker-compose up -d
 ```
 
-Manage Flatcar Linux: 
+Manage Flatcar Linux: ( Used Before 4/16/26):
 ---------------------
 * Optional: Manaully update Flatcar. Updates will happen automatically. 
 * If you want to manually check for updates run this command
@@ -84,7 +111,9 @@ sudo update_engine_client -update
 
 References:
 -----------
+* https://github.com/louislam/uptime-kuma
+* https://docs.podman.io/en/latest/
+* https://docs.fedoraproject.org/en-US/fedora-coreos/
 * https://docs.docker.com/
 * https://docs.portainer.io/
 * https://www.flatcar.org/docs/latest
-* https://github.com/louislam/uptime-kuma
