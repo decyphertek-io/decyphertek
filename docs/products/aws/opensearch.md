@@ -15,7 +15,7 @@ ssh adminotaur@ip-of-server
 ```
 * If using putty or mobaxterm make sure to convert .pem using puttygen.
 
-==========================Instructions after 4/19/26 Version 3.6.0=============================
+===Instructions after 4/19/26 Version 3.6.0===
 
 Hardening Changes:
 ------------------
@@ -63,7 +63,7 @@ curl -k -u 'adminotaur:PASSWORD' -X POST "https://IP-OR-DOMAIN:9443/data/_doc/" 
 curl -k -u 'adminotaur:PASSWORD' "https://IP-OR-DOMAIN:9443/data/_search?pretty"
 ```
 
-==========================Instructions Before 4/19/26==========================================
+===Instructions Before 4/19/26===
 
 Passwords:
 ----------
