@@ -15,6 +15,56 @@ ssh adminotaur@ip-of-server
 ```
 * If using putty or mobaxterm make sure to convert .pem using puttygen.
 
+==========================Instructions after 4/19/26 Version 3.6.0=============================
+
+Hardening Changes:
+------------------
+* Starting with version 3.6.0, this image ships hardened by default:
+    * The OpenSearch Security demo configuration has been fully removed.
+    * The internal user database has been reduced to only the accounts required for operation
+      (`adminotaur` for administration and `kibanaserver` for the Dashboards service account).
+    * Self-signed TLS certificates and all account passwords are generated uniquely on first boot,
+      so no two deployments share the same credentials or keys.
+
+Passwords:
+----------
+* Credentials are now generated on first boot and stored in the `adminotaur` home directory:
+```
+sudo cat /home/adminotaur/opensearch-credentials.txt
+# adminotaur password=...   (OpenSearch admin user)
+# kibanaserver password=... (internal Dashboards <-> OpenSearch user, do not use to log in)
+```
+
+Login:
+------
+* Login to the OpenSearch Dashboard:
+```
+https://IP-OF-SERVER
+Username: adminotaur
+Password: (sudo cat /home/adminotaur/opensearch-credentials.txt)
+```
+
+OpenSearch GET/POST:
+--------------------
+* The default `admin` user has been replaced with `adminotaur`. Examples:
+```
+# Basic health check
+curl -k -u 'adminotaur:PASSWORD' "https://IP-OR-DOMAIN:9443/"
+# Cluster check
+curl -k -u 'adminotaur:PASSWORD' "https://IP-OR-DOMAIN:9443/_cluster/health?pretty"
+# List all indices
+curl -k -u 'adminotaur:PASSWORD' "https://IP-OR-DOMAIN:9443/_cat/indices?v"
+# Create an index for the data
+curl -k -u 'adminotaur:PASSWORD' -X PUT "https://IP-OR-DOMAIN:9443/data"
+# Get API data and Post json to _doc
+curl -s "https://api.crossref.org/journals?query=pharmacy+health" -H "Accept: application/json" -o health.json
+curl -k -u 'adminotaur:PASSWORD' -X POST "https://IP-OR-DOMAIN:9443/data/_doc/" -H "Content-Type: application/json" -d @health.json
+# Verify posted data was indexed
+curl -k -u 'adminotaur:PASSWORD' "https://IP-OR-DOMAIN:9443/data/_search?pretty"
+```
+
+==========================Instructions Before 4/19/26==========================================
+
 Passwords:
 ----------
 * To Get the OpenSearch admin Password , run the follwoing command from terminal:
@@ -50,11 +100,13 @@ curl -k -u 'admin:PASWORD'  -X POST "https://IP-OR-DOMAIN:9443/data/_doc/" -H "C
 curl -k -u 'admin:PASSWORD' "https://IP-OR-DOMAIN:9443/data/_search?pretty"
 ```
 
+====================Instructions below are the same for all versions============================================
+
 Optional - Nginx:
 -----------------
 * To change your SSL certs:
 ```
-sudo vim /etc/nginx/conf.d/opensearch.conf
+sudo vim /etc/nginx/conf.d/custom.conf
     # Replace with your SSL cert
     ssl_certificate      /etc/ssl/certs/self-signed-crt.pem;
     ssl_certificate_key  /etc/ssl/private/self-signed-key.pem;
