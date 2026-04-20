@@ -57,6 +57,11 @@ Troubleshooting:
 ```
 sudo systemctl restart novnc
 ```
+* Kali not updating? May need to renew the signing keys. 
+```
+sudo wget https://archive.kali.org/archive-keyring.gpg -O /usr/share/keyrings/kali-archive-keyring.gpg
+sudo apt update && sudo apt upgrade -y
+```
 
 Security Features:
 ------------------
