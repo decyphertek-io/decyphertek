@@ -58,13 +58,21 @@ sudo mv /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d/parrot.gpg
 sudo apt update
 ```
 
-Security Features:
------------------
-* Ossec Hids - https://decyphertek.readthedocs.io/en/latest/technotes/OSSEC/ 
-* Crowdsec IPS - https://decyphertek.readthedocs.io/en/latest/technotes/Crowdsec/ 
-* UFW Host Firewall - https://decyphertek.readthedocs.io/en/latest/technotes/UFW/ 
-* Auditd Logging - https://decyphertek.readthedocs.io/en/latest/technotes/Auditd/ 
-* Automated Updates - Update script upon first boot and at 3am daily.
+Security Features: 
+------------------
+* Note: AFter 4/19/26 , Removed Crowdsec, added Ossec , Rsyslog , and Daily Security Report. 
+* Rsyslog - https://www.rsyslog.com/doc/index.html
+* Ossec - https://decyphertek.readthedocs.io/en/latest/technotes/OSSEC/
+* UFW Host Firewall - https://decyphertek.readthedocs.io/en/latest/technotes/UFW/
+* Auditd Logging - https://decyphertek.readthedocs.io/en/latest/technotes/Auditd/
+* Automated Updates - Update script upon first boot and daily.
+* Nginx - https://nginx.org/en/docs/
+* Daily Security Report: ( Scheduled via crontab )
+```
+cd /var/log/decyphertek/
+ls
+sudo cat security_report_DATE-HERE.log
+```
 
 References:
 ------------
