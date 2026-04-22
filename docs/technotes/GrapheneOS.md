@@ -24,6 +24,8 @@ adb devices
 adb reboot bootloader
 fastboot flashing unlock  
 # Volume up & select unlock bootloader
+# Verify bootloader was unlocked
+fastboot getvar unlocked
 
 # Download & verify factory images
 # https://releases.grapheneos.org/
