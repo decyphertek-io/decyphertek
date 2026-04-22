@@ -79,7 +79,7 @@ bash flash-all.sh
 
 # Lock the bootloader ( required for verified boot )
 fastboot flashing lock  
-# Volme Up , slect lock bootlaoder , and press power button.
+# Volme Up , select lock bootlaoder , and press power button.
 
 # Power on: press power button with "Start" selected in bootloader menu
 # Once booted > Follow the GrapeheneOS setup screen > Select disable oem unlocking > start
