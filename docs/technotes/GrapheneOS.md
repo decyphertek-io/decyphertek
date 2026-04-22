@@ -65,6 +65,7 @@ bash flash-all.sh
 # Do not touch the device until script completes
 
 # Pixel 7a (lynx) example:
+curl -O https://releases.grapheneos.org/allowed_signers
 curl -O https://releases.grapheneos.org/lynx-install-2026040800.zip
 curl -O https://releases.grapheneos.org/lynx-install-2026040800.zip.sig
 ssh-keygen -Y verify -f allowed_signers -I contact@grapheneos.org -n "factory images" \
