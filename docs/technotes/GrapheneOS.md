@@ -1,5 +1,3 @@
-GrapheneOS:
-==========
 Privacy-focused, hardened Android for Google Pixel devices. No Google services, verified boot enforced.
 
 Install:
