@@ -73,17 +73,14 @@ ssh-keygen -Y verify -f allowed_signers -I contact@grapheneos.org -n "factory im
 bsdtar xvf lynx-install-2026040800.zip
 cd lynx-install-2026040800
 bash flash-all.sh
-# Do not touch the device until script completes
+# Allow the script to complete
 
 # Lock the bootloader ( required for verified boot )
-fastboot flashing lock  # Confirm on device; this wipes data again
+fastboot flashing lock  
+# Volme Up , slect lock bootlaoder , and press power button.
 
 # Power on: press power button with "Start" selected in bootloader menu
-# First setup: leave OEM unlocking DISABLED ( default checked )
-
-# Optional: verify install boot key hash on yellow boot screen
-# Compare against: https://grapheneos.org/install/cli#verified-boot-key-hash
-# EX Pixel 7a: 508d75dea10c5cbc3e7632260fc0b59f6055a8a49dd84e693b6d8899edbb01e4
+# Once booted > Follow the GrapeheneOS setup screen > Select disable oem unlocking > start
 
 # Optional: revert to stock OS ( erase GrapheneOS verified boot key first )
 fastboot erase avb_custom_key
