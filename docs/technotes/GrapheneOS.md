@@ -1,11 +1,15 @@
 Privacy-focused, hardened Android for Google Pixel devices. No Google services, verified boot enforced.
 
+Note:
+-----
+* Some apps do not work including Airbnb, Bolt, and a few other apps, even when Google Play is installed. 
+
 Install:
 --------
 ```
 # Prerequisites: 2GB RAM, 32GB free storage, USB-C cable, carrier-unlocked Pixel device
 # Phone > Settings > About phone > Tap Build number x7 ( enable Developer options )
-# Phone > Settings > System > Developer options > Toggle OEM unlocking ON
+# Phone > Settings > System > Developer options > Toggle OEM unlocking ON & Enable USB Debugging
 
 # Install fastboot on Debian
 sudo apt install android-sdk-platform-tools-common libarchive-tools openssh-client
@@ -83,10 +87,22 @@ fastboot flashing lock
 
 # Power on: press power button with "Start" selected in bootloader menu
 # Once booted > Follow the GrapeheneOS setup screen > Select disable oem unlocking > start
+```
 
+Restore Stock Image:
+--------------------
+```
+# Phone > Settings > About phone > Tap Build number x7 ( enable Developer options )
+# Phone > Settings > System > Developer options > Toggle OEM unlocking ON & Enable USB Debugging
 # Optional: revert to stock OS ( erase GrapheneOS verified boot key first )
+adb reboot bootloader
+fastboot oem unlock
 fastboot erase avb_custom_key
-# Then flash stock factory images using same process above
+# Download the Android stock version , Extract , enter directory , run flash all script. 
+* https://developers.google.com/android/images
+# Ex: If you want a specific Stock android 15 verison ( To install E/OS on Pixel 7a )
+curl -O https://dl.google.com/dl/android/aosp/lynx-bp1a.250505.005.b1-factory-45a1393f.zip
+unzip lynx-bp1a.250505.005.b1-factory-45a1393f.zip
 ```
 
 References:
