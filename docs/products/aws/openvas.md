@@ -1,22 +1,34 @@
 The OpenVAS GVM Vulnerability Scanner is an advanced, open-source security tool designed for comprehensive vulnerability assessment and management. It efficiently scans and identifies potential security weaknesses in network services and software systems. [AWS Marketplace: Openvas ](https://aws.amazon.com/marketplace/pp/prodview-cu6eq35jv7tek?sr=0-3&ref_=beagle&applicationId=AWSMPContessa)
 
+Note:
+-----
+* Please be patient , it takes 5-10 minutes to be accessible. 
+
+SSH Into the server:
+--------------------
+* Linux + MAC - add .pem key to 
+```
+~/.ssh/id_rsa
+# change permisisons
+chmod 400 id_rsa
+ssh adminotaur@ip-of-server
+```
+* If using putty or mobaxterm make sure to convert .pem using puttygen.
 
 OpenVAS GVM Login:
 ------------------
-* ssh into your server: 
+* ssh into your server.
+* Password:
 ```
-ssh adminotaur@ip-of-server
+sudo cat /home/adminotaur/password.txt 
 ```
-* Run from Terminal:
+* Go to your browser - https://ip-of-server
+* Login:
 ```
-cat password.txt
-```
-* Go to your browser:
-```
-https://ip-of-server
 username: admin 
-paswword: SSH > From Terminal > cat password.txt
+password: ( Output of password.txt )
 ```
+* You may see feeds syncing or Error fetching the feed , please wait for feeds to update. 
 
 OpenVas Basics:
 ---------------
@@ -71,6 +83,7 @@ Please migrate to the current data model.
 Use a command like this: gvmd --migrate
 
 # Please run this command to fix it.
+sudo apt update && sudo apt upgrade -y 
 sudo systemctl stop gvmd gsad ospd-openvas
 sudo -u _gvm gvmd --migrate
 sudo systemctl start gvmd gsad ospd-openvas
@@ -82,13 +95,19 @@ sudo greenbone-feed-sync --type all
 sudo greenbone-feed-sync --type all 
 ```
 
-Security Features:
----------------------------
-* Ossec Hids - https://decyphertek.readthedocs.io/en/latest/technotes/OSSEC/
+Additonal Security Features:
+----------------------------
+* Crowdsec IPS - https://decyphertek.readthedocs.io/en/latest/technotes/Crowdsec/
 * UFW Host Firewall - https://decyphertek.readthedocs.io/en/latest/technotes/UFW/
 * Auditd Logging - https://decyphertek.readthedocs.io/en/latest/technotes/Auditd/
-* Rsyslog - https://www.rsyslog.com/doc/index.html
-* Automated Updates - Update script upon first boot and at 3am daily.
+* Automated Updates - Update script upon first boot and daily.
+* Nginx - https://nginx.org/en/docs/
+* Daily Security Report: ( Scheduled via crontab )
+```
+cd /var/log/decyphertek/
+ls
+sudo cat security_report_DATE-HERE.log
+```
 
 References:
 ------------
