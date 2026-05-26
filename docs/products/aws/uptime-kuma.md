@@ -80,7 +80,7 @@ sudo systemctl status
 
 Portainer - Manage Docker ( Used Before 3/31/26):
 --------------------------
-* This has been replaced by arcane in newer rleeases, due to the community version limiting functions. 
+* This has been replaced by arcane in newer releases, due to the community version limiting functions. 
 * How to access Portainer to manage your containers > https://ip-of-server:9443
 * Follow the instructions to create a new admin account. 
 * Caution - Portainer can timeout if you dont create an account fast enough
