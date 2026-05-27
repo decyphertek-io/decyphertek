@@ -74,6 +74,17 @@ sudo runuser -u core -- podman ps
 sudo runuser -u core -- podman-compose -f /opt/.podman/docker-compose.yml ps
 ```
 
+Security: ( After 5/25/26 )
+---------
+* Fedora CoreOS 
+* Automatoic Updates
+* SE Linux
+* Auditd 
+* Firewalld
+* Podman Containers
+* Caddy Reverse proxy
+* Coraza WAF 
+
 References:
 ------------
 * https://podman.io/docs
