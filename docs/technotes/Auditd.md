@@ -7,7 +7,7 @@ Install
 --------
 ```
 sudo apt install -y auditd audispd-plugins
-sudo su -c "curl 'https://raw.githubusercontent.com/Neo23x0/auditd/master/audit.rules' >> /etc/audit/rules.d/audit.rules"
+sudo curl -fsSL -o /etc/audit/rules.d/audit.rules https://raw.githubusercontent.com/Neo23x0/auditd/master/audit.rules
 echo "kernel.audit_backlog_limit=8192" | sudo tee -a /etc/sysctl.conf
 sudo tee /etc/audit/auditd.conf > /dev/null <<'CONF'
 log_file = /var/log/audit/audit.log
