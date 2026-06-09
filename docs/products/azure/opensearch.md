@@ -3,17 +3,29 @@ OpenSearch is an adaptable, scalable open-source platform designed for creating 
 Note:
 -----
 * Please be patient , it takes 5-10 minutes for OpenSearch to be accessible. 
+* After 06/26 admin user is no longer used
+* The old password path before 06/26 /root/opensearch_admin_password.txt
 
 SSH Into the server:
 --------------------
 * Utilize Azure to setup user and ssh keys. 
 * Make sure to allow ssh, https, & 9443 via network security group.
 
+Hardening Changes:
+------------------
+* Starting with version 3.6.0, this image ships hardened by default:
+    * The OpenSearch Security demo configuration has been fully removed.
+    * The internal user database has been reduced to only the accounts required for operation
+      (`adminotaur` for administration and `kibanaserver` for the Dashboards service account).
+    * Self-signed TLS certificates and all account passwords are generated uniquely on first boot,
+      so no two deployments share the same credentials or keys.
+
 Passwords:
 ----------
 * To Get the OpenSearch admin Password , run the follwoing command from terminal:
 ```
-sudo cat /root/opensearch_admin_password.txt
+# The new path after 06/26
+sudo cat /root/opensearch-credentials.txt
 ```
 
 Login:
@@ -21,8 +33,8 @@ Login:
 * login to OpenSearch Dashboard:
 ```
 https://IP-OF-SERVER
-Username: admin
-Password: (sudo cat /root/opensearch_admin_password.txt )
+Username: adminotaur
+Password: (sudo cat /root/opensearch-credentials.txt )
 ```
 
 OpenSearch GET/POST:
