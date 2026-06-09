@@ -124,6 +124,7 @@ OPTIONAL: Dev API:
 # Retrieve the password for Wazuh api user from the wazuh terminal.
 sudo cat /opt/wazuh-install-files/wazuh-passwords.txt
 # Now, switch to your desktop. Run Locally from your own computer. ( Linux OS EX: )
+# Make sure to run this curl -s ifconfig.me from the Wazuh server and add the right IP/
 sudo vim wazuh-api.sh
 
 #!/bin/bash
