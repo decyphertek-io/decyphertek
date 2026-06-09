@@ -33,14 +33,15 @@ Working with immutbale rules:
 # Disable the -e2 immutable setting
 sudo sed -i 's/^-e 2/#-e 2/' /etc/audit/rules.d/audit.rules
 sudo reboot
-sudo augenrules --load 2>&1 | grep -i fail
+sudo journalctl -b 0 -t augenrules --no-pager
+sudo ausearch -m DAEMON_START,CONFIG_CHANGE -ts boot | grep -i "fail\|error"
 # Can edit any failing rules or add new ones. 
 sudo vim /etc/audit/rules.d/audit.rules
-sudo augenrules --load
 # Enable the -e2 immutable setting
 sudo sed -i 's/^#-e 2/-e 2/' /etc/audit/rules.d/audit.rules
 sudo augenrules --load
-sudo reboot
+# Check immutable state was set
+sudo augenrules --check
 ```
   
 Watch a directory
