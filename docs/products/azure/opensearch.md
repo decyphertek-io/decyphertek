@@ -39,21 +39,21 @@ Password: (sudo cat /root/opensearch-credentials.txt )
 
 OpenSearch GET/POST:
 --------------------
-* Example: Check Index Health, cluster check, and post to _doc using curl .
+* The default `admin` user has been replaced with `adminotaur`. Examples:
 ```
 # Basic health check
-curl -k -u 'admin:PASWORD' "https://IP-OR-DOMAIN:9443/"
+curl -k -u 'adminotaur:PASSWORD' "https://IP-OR-DOMAIN:9443/"
 # Cluster check
-curl -k -u 'admin:PASWORD' "https://IP-OR-DOMAIN:9443/_cluster/health?pretty"
+curl -k -u 'adminotaur:PASSWORD' "https://IP-OR-DOMAIN:9443/_cluster/health?pretty"
 # List all indices
-curl -k -u 'admin:PASWORD' "https://IP-OR-DOMAIN:9443/_cat/indices?v"
+curl -k -u 'adminotaur:PASSWORD' "https://IP-OR-DOMAIN:9443/_cat/indices?v"
 # Create an index for the data
-curl -k -u 'admin:PASSWORD' -X PUT "https://IP-OR-DOMAIN:9443/data"
+curl -k -u 'adminotaur:PASSWORD' -X PUT "https://IP-OR-DOMAIN:9443/data"
 # Get API data and Post json to _doc
 curl -s "https://api.crossref.org/journals?query=pharmacy+health" -H "Accept: application/json" -o health.json
-curl -k -u 'admin:PASWORD'  -X POST "https://IP-OR-DOMAIN:9443/data/_doc/" -H "Content-Type: application/json" -d @health.json
+curl -k -u 'adminotaur:PASSWORD' -X POST "https://IP-OR-DOMAIN:9443/data/_doc/" -H "Content-Type: application/json" -d @health.json
 # Verify posted data was indexed
-curl -k -u 'admin:PASSWORD' "https://IP-OR-DOMAIN:9443/data/_search?pretty"
+curl -k -u 'adminotaur:PASSWORD' "https://IP-OR-DOMAIN:9443/data/_search?pretty"
 ```
 
 Optional - Nginx:
