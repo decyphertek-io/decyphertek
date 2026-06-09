@@ -26,6 +26,22 @@ sudo systemctl restart auditd
 sudo systemctl status auditd
 sudo aureport
 ```
+
+Working with immutbale rules:
+----------------------------
+```
+# Disable the -e2 immutable setting
+sudo sed -i 's/^-e 2/#-e 2/' /etc/audit/rules.d/audit.rules
+sudo reboot
+sudo augenrules --load 2>&1 | grep -i fail
+# Can edit any failing rules or add new ones. 
+sudo vim /etc/audit/rules.d/audit.rules
+sudo augenrules --load
+# Enable the -e2 immutable setting
+sudo sed -i 's/^#-e 2/-e 2/' /etc/audit/rules.d/audit.rules
+sudo augenrules --load
+sudo reboot
+```
   
 Watch a directory
 -----------------
