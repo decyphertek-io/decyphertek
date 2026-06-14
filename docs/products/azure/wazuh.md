@@ -1,7 +1,4 @@
-Wazuh is an open-source security monitoring and compliance tool that provides comprehensive threat detection, security monitoring, 
-and incident response capabilities. It offers log analysis, file integrity monitoring, and vulnerability detection by collecting 
-and analyzing data from various sources across an organization’s IT infrastructure. Wazuh helps organizations identify potential 
-security threats, comply with regulatory requirements, and improve their overall security posture by providing real-time alerts 
+Wazuh is an open-source security monitoring and compliance tool that provides comprehensive threat detection, security monitoring, and incident response capabilities. It offers log analysis, file integrity monitoring, and vulnerability detection by collecting and analyzing data from various sources across an organization’s IT infrastructure. Wazuh helps organizations identify potential security threats, comply with regulatory requirements, and improve their overall security posture by providing real-time alerts 
 and actionable insights. [Azure Marketplace: Wazuh ]()
 
 
@@ -47,65 +44,13 @@ Ports & Protocols:
 1515 TCP - Agent enrollment service
 
 # Wazuh Syslog collector
-514 UDP (default) - Wazuh Syslog collector (disabled by default)
-514 TCP (optional) - Wazuh Syslog collector (disabled by default)
-OPTIONAL: Install syslog-ng 
+514 UDP/TCP (default) - Wazuh Syslog collector 
 
 # Wazuh server RESTful API
 55000 TCP - Wazuh server RESTful API
 
 # Wazuh dashboard
 443 TCP - Wazuh web user interface
-```
-
-OPTIONAL: Syslog-ng:
----------------------
-* Makes using TLS certs easy. 
-
-```
-# Allow firewall access
-sudo ufw allow 514/tcp
-sudo yum install -y syslog-ng
-cd /etc/syslog-ng/
-# Generate certs
-sudo openssl req -newkey rsa:2048 -nodes -keyout key.pem -out request.csr -subj "/C=US/ST=Any/L=Anytown/O=decyphertek-io/OU=adminotaur/CN=decyphertek"
-sudo openssl x509 -req -days 3650 -in request.csr -signkey key.pem -out server-cert.pem
->>> Upload server-cert.pem to SaaS you want to forward syslog from Once syslog-ng has been started . 
-sudo touch /var/log/syslog-ng.log
-sudo vim syslog-ng.conf
-
-# Keep default config and add the following. 
-# Wazuh / Syslog-NG - TLS Config
-source s_network_tls {
-    network(
-        transport("tls")
-        port(514)  # Specify the port to listen on for TLS connections
-        tls(
-            key-file("/etc/syslog-ng/key.pem")
-            cert-file("/etc/syslog-ng/server-cert.pem")
-            peer-verify(optional-untrusted) 
-        )
-    );
-};
-
-destination d_tls_logs {
-    file("/var/log/syslog-ng.log"); # Path to save the logs received over TLS
-};
-
-log { source(s_network_tls); destination(d_tls_logs); };
-
-
-sudo vim /var/ossec/etc/ossec.conf
-
-<localfile>
-    <log_format>syslog</log_format>
-    <location>/var/log/syslog-ng.log</location>
-</localfile>
-
-sudo systemctl daemon-reload
-sudo systemctl enable syslog-ng
-sudo systemctl start syslog-ng
-sudo systemctl restart wazuh manager
 ```
 
 OPTIONAL: Dev API:
