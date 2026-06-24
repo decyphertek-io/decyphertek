@@ -1,5 +1,6 @@
 Droidian
 ========
+* Drodian is outdated > See mobain > https://wiki.debian.org/Mobian/Devices
 "Droidian is a GNU/Linux distribution based on Debian for mobile devices. The goal of Droidian is to be able to run Debian on Android phones."
 
 Devices:
