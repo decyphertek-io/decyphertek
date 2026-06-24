@@ -1,4 +1,6 @@
-Libreboot — free/open BIOS/UEFI firmware replacement for the Lenovo ThinkPad T480s. This guide covers the **T480s (S model) only**. Do NOT use T480 ROMs — the boards have different wiring and you will brick.
+Libreboot
+=========
+ free/open BIOS/UEFI firmware replacement for the Lenovo ThinkPad T480s. This guide covers the **T480s (S model) only**. Do NOT use T480 ROMs — the boards have different wiring and you will brick.
 
 Official docs (diffuse, heavily cross-linked): https://libreboot.org/docs/install/t480.html
 
