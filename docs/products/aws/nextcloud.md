@@ -17,6 +17,8 @@ NextCloud - Setup:
 * Login > https://ip-of-server
 * Create an admin username and password ( There is no default set )
 * Skip install Recommended Apps, this takes a long time to work. 
+* Install Recommended apps also sometimes fails to load. If that happens, just go directly to here.
+* https://ip-of-server/apps/dashboard/
 * If you want to download the recommended packages you can do it manually. 
 * Optional: Login > Select Account Icon: Top Right > Select: Apps > Office & Text > Download & Enable: Calender , Contacts , Nextcloud Office , 
 * Optional: Login > Select Account Icon: Top Right > Select: Apps > Social & COmmunication > Download & Enable: talk 
