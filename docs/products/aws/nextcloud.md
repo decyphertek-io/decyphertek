@@ -88,6 +88,4 @@ References:
 * https://docs.nextcloud.com/
 * https://docs.podman.io/en/latest/
 * https://docs.fedoraproject.org/en-US/fedora-coreos/
-* https://docs.docker.com/
-* https://docs.portainer.io/
-* https://www.flatcar.org/docs/latest
+
