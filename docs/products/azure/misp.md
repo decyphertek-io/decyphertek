@@ -6,7 +6,7 @@ Note:
 * After 5/30/26 uses podman instead of docker and requires the core user.
 * After 5/30/26 Portainer is no longer used.
 * After 5/30/26 Fedora CoreOS is used instead of FlatCar Linux.
-* After 5/30/26 Caddy and Coraza WAF is used instead of nginx.
+* After 7/2/26 The new podman path is /home/core/.podman/ , ~/opt/.podman/ is not longer used. 
 * Please wait 5-10 minutes for MISP to be accessible.
 * Upon first login the system may be undergoing an update and display a warning message. Please wait.
 
@@ -20,7 +20,7 @@ MISP - Access The Server:
 * How to access MISP > https://ip-of-server
 * Retrieve the admin password — ssh into the server then run:
 ```
-cat /opt/.podman/.env | grep ADMIN_PASSWORD
+cat /var/home/core/.podman/.env | grep ADMIN_PASSWORD
 ```
 * Login credentials:
 ```
@@ -39,14 +39,14 @@ podman ps
 ```
 * Update containers — ssh into the server then run:
 ```
-cd ~/opt/.podman/
+cd /home/core/.podman/
 podman-compose down
 podman-compose pull
 podman-compose up -d
 ```
 * View container logs:
 ```
-podman logs caddy-ingress
+podman logs nginx-reverse-proxy
 podman logs misp-core
 podman logs misp-modules
 podman logs mariadb
@@ -78,15 +78,6 @@ sudo systemctl reboot
 sudo systemctl status
 ```
 
-Update to newest version:
--------------------------
-* A script is included that compares your current MISP versions against the latest upstream releases and outputs manual update instructions.
-```
-sudo /opt/.update.sh
-```
-* This will display current vs newest versions for CORE_TAG, MODULES_TAG, PHP_VER, Valkey, and MariaDB, followed by step-by-step update commands.
-* Please proceed with caution and back up volumes before updating.
-
 Troubleshooting:
 ---------------
 * If you didnt launch the vm using the core user you need to access podman this way:
@@ -96,23 +87,26 @@ sudo runuser -u core -- podman-compose -f /opt/.podman/docker-compose.yml ps
 ```
 * If IP changes or no Public IP — edit the .env file:
 ```
-vi /opt/.podman/.env
+vi /home/core/.podman/.env
     BASE_URL=https://your-server-IP
-cd /opt/.podman/
+cd /home/core/.podman/
 podman-compose down
 podman-compose up -d
+```
+* Check for SeLinux blocks and solutions:
+```
+sudo sealert -a /var/log/audit/audit.log
 ```
 
 Security: ( After 5/30/26 )
 ---------
-* Fedora CoreOS
+* Fedora CoreOS 
 * Automatic Updates
-* SE Linux
-* Auditd
-* Firewalld
 * Podman Containers
-* Caddy Reverse proxy
-* Coraza WAF
+* Firewalld
+* SE Linux
+* Auditd 
+* Nginx
 
 References:
 -----------
