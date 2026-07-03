@@ -6,7 +6,7 @@ Note:
 * After 5/27/26 uses podman instead of docker and requires the core user .
 * After 5/27/26 Portainer is no longer used.
 * After 5/27/26 Fedora CoreOS is used instead of FlatCar Linux
-* After 5/27/26 Caddy and Coraza Waf is used instead of nginx. 
+* After 7/2/26 The new podman path is /home/core/.podman/ , ~/opt/.podman/ is not longer used. 
 * Please be aware that it takes a few minutes for Vaultwarden to be up and running.
 
 SSH Into the server:
@@ -29,14 +29,14 @@ podman ps
 ```
 * Update containers — ssh into the server then run:
 ```
-cd ~/opt/.podman/
+cd /home/core/.podman/
 podman-compose down
 podman-compose pull
 podman-compose up -d
 ```
 * View container logs:
 ```
-podman logs caddy-ingress
+podman logs nginx-reverse-proxy
 podman logs vaultwarden
 ```
 
@@ -70,19 +70,22 @@ Troubleshooting:
 * If you didnt launch the vm using the core user you need to access pdoman this way:
 ```
 sudo runuser -u core -- podman ps
-sudo runuser -u core -- podman-compose -f /opt/.podman/docker-compose.yml ps
+sudo runuser -u core -- podman-compose -f /var/home/core/.podman/docker-compose.yml ps
+```
+* Check for SeLinux blocks and solutions:
+```
+sudo sealert -a /var/log/audit/audit.log
 ```
 
 Security: ( After 5/27/26 )
 ---------
 * Fedora CoreOS 
-* Automatoic Updates
+* Automatic Updates
+* Podman Containers
+* Firewalld
 * SE Linux
 * Auditd 
-* Firewalld
-* Podman Containers
-* Caddy Reverse proxy
-* Coraza WAF 
+* Nginx
 
 References:
 ------------
