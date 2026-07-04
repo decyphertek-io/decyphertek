@@ -31,14 +31,14 @@ podman ps
 ```
 * Update containers — ssh into the server then run:
 ```
-cd ~/opt/.podman/
+cd /home/core/.podman/
 podman-compose down
 podman-compose pull
 podman-compose up -d
 ```
 * View container logs:
 ```
-podman logs caddy-ingress
+podman logs nginx-reverse-proxy
 podman logs sonarqube
 ```
 
@@ -69,22 +69,25 @@ sudo systemctl status
 
 Troubleshooting:
 ---------------
-* If you didnt launch the vm using the core user you need to access podman this way:
+* If you didnt launch the vm using the core user you need to access pdoman this way:
 ```
 sudo runuser -u core -- podman ps
-sudo runuser -u core -- podman-compose -f /opt/.podman/docker-compose.yml ps
+sudo runuser -u core -- podman-compose -f /var/home/core/.podman/docker-compose.yml ps
+```
+* Check for SeLinux blocks and solutions:
+```
+sudo sealert -a /var/log/audit/audit.log
 ```
 
 Security: ( After 5/29/26 )
 ---------
-* Fedora CoreOS
+* Fedora CoreOS 
 * Automatic Updates
-* SE Linux
-* Auditd
-* Firewalld
 * Podman Containers
-* Caddy Reverse proxy
-* Coraza WAF
+* Firewalld
+* SE Linux
+* Auditd 
+* Nginx
 
 References:
 -----------
