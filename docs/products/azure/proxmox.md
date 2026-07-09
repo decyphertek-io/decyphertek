@@ -6,10 +6,10 @@ Note:
 * Proxmox VE requires Virtual Machines that support nested Virtualization:
 ```
 # Azure VM Sizes with Nested Virtualization Support & Pricing (East US region)
-Standard_F4_v2 $0.168/hour - 4 vCPUs, 8 GB RAM
+Standard_F4s_v2 $0.168/hour - 4 vCPUs, 8 GB RAM
 Standard_D4_v3 $0.192/hour - 4 vCPUs, 16 GB RAM
 Standard_E4_v3 $0.252/hour - 4 vCPUs, 32 GB RAM
-Standard_F8_v2 $0.336/hour - 8 vCPUs, 16 GB RAM
+Standard_F8s_v2 $0.336/hour - 8 vCPUs, 16 GB RAM
 Standard_D8_v3 $0.384/hour - 8 vCPUs, 32 GB RAM
 Standard_E8_v3 $0.504/hour - 8 vCPUs, 64 GB RAM
 ```
