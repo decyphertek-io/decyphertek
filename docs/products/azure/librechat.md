@@ -27,7 +27,9 @@ Manage Librechat:
 -----------------
 * Manage librechat , Meilisearch , and Ollama:
 ```
-# pm2-root manages librechat
+# Check the status of Librechat apps
+sudo systemctl status librechat meilisearch ollama
+# Before 7/12/26 This is the old command. pm2-root manages librechat
 sudo systemctl status pm2-root meilisearch ollama
 # By default ollama is not running, since it requires a GPU to run efficiently.
 # Ollama can be up and running with a simple command. 
@@ -67,9 +69,10 @@ vim librechat.yaml
       forcePrompt: false
       modelDisplayLabel: "Ollama"
 
-# This will stop pm2-root , which manages librechat and save the configuration changes. 
-bash /opt/.librechat.yaml
-# Wait a few minutes after the script finishes, you should see the changes in .env or librechat.yaml take effect. 
+# This will restart librechat and save the configuration changes. 
+sudo systemctl restart librechat.service
+# Before 7/12/26 The old command is 
+sudo systemctl restart pm2-root.service
 ```
 
 References:
