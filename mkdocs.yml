@@ -78,8 +78,12 @@ nav:
             - Instructions: products/gcp-wazuh-instructions.md
             - EULA: products/gcp-wazuh-eula.md
         - Privacy Policy: products/gcp-privacy-policy.md
+    - CloudTek:
+        - Privacy Policy: products/cloudtek/privacy.md
     - LangTek:
         - Privacy Policy: products/langtek/privacy.md
+    - StackTek:
+        - Privacy Policy: products/stacktek/privacy.md
     - Tech Notes:
         - Aide: technotes/Aide.md 
         - Android Roms: technotes/Android-Roms.md 
