@@ -12,12 +12,12 @@ The RSS reader is the core of the app. Bring the feeds you already follow, or st
 
 ### Add a Feed
 
-1. Open LangTek and go to the RSS Reader section
-2. Tap **Add Feed**
-3. Enter the RSS feed URL
-4. Save and start reading
+1. Open **Settings → Manage RSS Feeds**
+2. Tap **Add a Custom Feed**, or just select one from the **Feed Store**
+3. Choose Spanish or English, and pick Articles, Videos, or Podcasts
+4. **World News API (optional):** add an API key to pull custom news
 
-Popular Spanish sources include El País, BBC Mundo, CNN en Español, Xataka, Genbeta, El Cultural, and Jot Down.
+Popular Spanish sources for custom feeds include El País, BBC Mundo, CNN en Español, Xataka, Genbeta, El Cultural, and Jot Down.
 
 ### Read with Translation
 
