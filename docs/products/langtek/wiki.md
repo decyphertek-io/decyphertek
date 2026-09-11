@@ -56,7 +56,7 @@ Practice conversations with an optional AI tutor powered by the OpenRouter API. 
 
 1. Create a free account at [OpenRouter.ai](https://openrouter.ai) and generate an API key
 2. Open **Settings → AI Settings** in LangTek
-3. Paste your API key and pick a model (Llama 3.3 70B Instruct is the default; DeepSeek R1 0528 and Gemma 3 27B IT are also available)
+3. Paste your API key — the app uses OpenRouter's free models router (`openrouter/free`), so chatting with the AI is free and OpenRouter routes automatically between free models. You can optionally pick a different model, but the free one is recommended
 4. Choose whether responses arrive in Spanish or English
 5. Tap **Test Connection** to verify
 
