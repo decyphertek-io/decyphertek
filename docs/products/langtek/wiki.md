@@ -21,31 +21,30 @@ Popular Spanish sources for custom feeds include El País, BBC Mundo, CNN en Esp
 
 ### Read with Translation
 
-1. Open any article
-2. Tap any word for a quick word-by-word translation
-3. Tap a sentence for the full contextual translation
-4. Long-press for extra context and usage examples
+1. Open any article — RSS articles, plus the titles and descriptions of videos and podcasts, are translated word-for-word automatically
+2. Tap the **Translate** button for the contextual translation
+3. Tap any word for grammar info from the Wiktionary API
 
 ## Videos
 
-Watch Spanish or English videos on the topics you already follow. When a sentence goes by too fast, use the same translation tools you use for articles to pick it apart. Seeing and hearing a word together anchors the sound to the meaning.
+Watch Spanish or English videos on the topics you already follow. Most videos have a **Subtitle** option you can turn on, so you can read along while you listen. Seeing and hearing a word together anchors the sound to the meaning.
 
 ## Podcasts
 
-Podcast feeds live next to your articles and videos, not in a separate app. Listen while driving, walking, or doing chores, and tap the translation tools when a fast segment needs a second look. Listening at native speed is the fastest way to make fast speech stop sounding like noise.
+Podcast feeds live next to your articles and videos, not in a separate app. You just listen — while driving, walking, or doing chores. Listening at native speed is the fastest way to make fast speech stop sounding like noise.
 
 ## EPUB Books
 
-Load your own EPUB books, or browse the built-in **Public Domain Library**, a free collection of classic English and Spanish books (Cervantes, Twain, Verne, and more). The same translation tools follow you into every book.
+Load your own EPUB books, or browse the built-in **Public Domain Library**, a free collection of classic English and Spanish books (Cervantes, Twain, Verne, and more). Highlight a word or a sentence and LangTek translates it.
 
 ## Translations
 
 LangTek gives you two translations at once, and they teach you different things:
 
-- **Word-for-word** - the literal structure of the sentence, which teaches you how the language works
-- **Contextual** - what the sentence actually means, the way a native would say it
-- **Grammar analysis** - tap the grammar icon on a sentence for tense, conjugation, and structure breakdowns
-- **Wiktionary** - while reading articles or books, tap a word for definitions, parts of speech, and word forms without leaving the page
+- **Word-for-word** - the literal structure of the sentence, which teaches you how the language works. It runs automatically on RSS articles and on the titles and descriptions of videos and podcasts
+- **Contextual** - what the sentence actually means, the way a native would say it. Tap the **Translate** button to get it
+- **Grammar info** - tap a word in an article for definitions and grammar from the Wiktionary API
+- **EPUB books** - in the reader, highlight a word or a sentence to translate it
 
 Comparing the two translations trains you to stop translating in your head. Translations are cached, and common translations work from a built-in offline database, so reading does not always depend on a network connection. Language support is bidirectional, with automatic detection.
 
