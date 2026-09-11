@@ -27,7 +27,7 @@ Popular Spanish sources for custom feeds include El País, BBC Mundo, CNN en Esp
 
 ## Videos
 
-Watch Spanish or English videos on the topics you already follow. Most videos have a **Subtitle** option you can turn on, so you can read along while you listen. Seeing and hearing a word together anchors the sound to the meaning.
+Watch Spanish or English videos on the topics you already follow. The title and description of each video include a word-for-word translation, plus an optional contextual translation. While watching, you can enable **Subtitles** in the video's language or in your native language. Seeing and hearing a word together anchors the sound to the meaning.
 
 ## Podcasts
 
