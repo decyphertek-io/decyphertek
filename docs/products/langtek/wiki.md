@@ -76,15 +76,15 @@ Text-to-speech reads content aloud so you can hear the words while your eyes fol
 
 Tip: start at 0.7x - 0.8x while learning, and practice shadowing by repeating what you hear.
 
-## Saved Items
+## Favorites
 
-Bookmark articles and phrases to build a personal learning library.
+Your personal learning library, accessed from the study icon → **Favorites**.
 
-- **Save an article:** tap the bookmark icon at the top of any article
-- **Save a phrase:** long-press any sentence and select **Save**
-- **Manage:** go to **Settings → Saved Items** to browse, search, and delete (swipe left)
+- **Articles:** tap the heart icon in the main article view to favorite an article
+- **AI chats:** favorite conversations you want to revisit
+- **Grammar words:** when you tap a word and its Wiktionary grammar page opens, you can favorite the word for later review
 
-Saved items are stored locally on your device, work offline, and have no limit. There is no cloud sync, which keeps your data private.
+Favorites are stored locally on your device, work offline, and have no limit. There is no cloud sync, which keeps your data private.
 
 ## Reading Timer and Notifications
 
@@ -97,7 +97,6 @@ Access via the hamburger menu → **Settings**.
 - **Theme and fonts** - text size, light or dark theme, font family
 - **AI Settings** - OpenRouter API key, model, response language
 - **TTS Settings** - speech rates per language
-- **Saved Items** - your bookmarks
 
 All settings are stored locally on your device.
 
