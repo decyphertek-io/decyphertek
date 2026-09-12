@@ -29,18 +29,22 @@ Each launch builds a fresh, isolated container on a private network. Nothing per
 
 ## Getting Started
 
-1. Create the directory layout and TLS certs (self-signed is fine for self-hosting):
+Paste this whole block into a terminal on your server. It enables the Podman socket, makes the directories and certs, writes the Caddyfile and compose.yml, and starts StackTek:
 
 ```bash
+# 1. Enable the user-level Podman socket API
+systemctl --user enable --now podman.socket
+
+# 2. Create the directory layout
 mkdir -p ~/stacktek/certs ~/stacktek/caddy
+
+# 3. Generate TLS certs (self-signed is fine for self-hosting)
 openssl req -x509 -newkey ec -pkeyopt ec_paramgen_curve:prime256v1 \
   -keyout ~/stacktek/certs/key.pem -out ~/stacktek/certs/cert.pem \
   -days 3650 -nodes -subj "/O=decyphertek/CN=stacktek"
-```
 
-2. Save this as `~/stacktek/caddy/Caddyfile` (the Caddy edge config with the WAF):
-
-```
+# 4. Write the Caddy edge config (Caddy + Coraza WAF)
+tee ~/stacktek/caddy/Caddyfile >/dev/null <<'EOF'
 {
     # Self-signed certs — no public CA issuance.
     auto_https off
@@ -112,11 +116,10 @@ openssl req -x509 -newkey ec -pkeyopt ec_paramgen_curve:prime256v1 \
         level DEBUG
     }
 }
-```
+EOF
 
-3. Save this as `~/stacktek/compose.yml` and run it:
-
-```yaml
+# 5. Write compose.yml
+tee ~/stacktek/compose.yml >/dev/null <<'EOF'
 networks:
   stacktek:
     driver: bridge
@@ -171,16 +174,14 @@ services:
       interval: 30s
       timeout: 5s
       retries: 3
-```
+EOF
 
-4. Start it:
-
-```bash
+# 6. Start StackTek
 cd ~/stacktek
 podman-compose up -d
 ```
 
-5. Open `https://<your-server-ip>/` and accept the self-signed certificate warning.
+Then open `https://<your-server-ip>/` and accept the self-signed certificate warning.
 
 Images are pulled automatically from GHCR — the workspace catalog is baked into the stacktek image, so there is nothing else to download or clone.
 
