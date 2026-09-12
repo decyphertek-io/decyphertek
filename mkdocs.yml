@@ -84,6 +84,7 @@ nav:
         - Wiki: products/langtek/wiki.md
         - Privacy Policy: products/langtek/privacy.md
     - StackTek:
+        - Wiki: products/stacktek/wiki.md
         - Privacy Policy: products/stacktek/privacy.md
     - Tech Notes:
         - Aide: technotes/Aide.md 
