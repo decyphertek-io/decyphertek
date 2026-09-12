@@ -6,7 +6,7 @@ StackTek is a self-hosted workspace platform you run on your own server. It laun
 
     StackTek is in active development and is **not fully functional** yet. Expect missing features, rough edges, and breaking changes between versions.
 
-- **Privacy:** See the [StackTek Privacy Policy](/products/stacktek/privacy/)
+- **Privacy:** See the [StackTek Privacy Policy](https://decyphertek.readthedocs.io/en/latest/products/stacktek/privacy/)
 - **Product page:** [decyphertek.io/products/stacktek](https://decyphertek.io/products/stacktek/)
 - **License:** PolyForm Noncommercial — free for personal use, tinkering, research, and education
 
