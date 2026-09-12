@@ -10,7 +10,7 @@ StackTek is a self-hosted workspace platform you run on your own server. It laun
 - **Product page:** [decyphertek.io/products/stacktek](https://decyphertek.io/products/stacktek/)
 - **License:** PolyForm Noncommercial — free for personal use, tinkering, research, and education
 
-## What You Get
+## Features
 
 - **Web Desktops** — Full Linux desktops (Arch, Debian, Ubuntu, Fedora, Kali, Rocky, and more) with XFCE, GNOME, or KDE, rendered in the browser via VNC
 - **AI Agents** — LibreChat, Open WebUI, Flowise, Agent Zero, and other agent stacks, each in its own container
@@ -27,7 +27,7 @@ Each launch builds a fresh, isolated container on a private network. Nothing per
 - The compose file assumes your user is UID 1000 (the first user on most distros) — adjust the socket path in `compose.yml` if yours differs
 - Tested with Podman only; Docker Compose is not officially supported
 
-## Run It
+## Getting Started
 
 1. Create the directory layout and TLS certs (self-signed is fine for self-hosting):
 
