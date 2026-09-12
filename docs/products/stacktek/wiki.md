@@ -202,5 +202,4 @@ podman logs stacktek-caddy
 
 ## Support
 
-- [GitHub Issues](https://github.com/decyphertek-io/stacktek)
-- [Website](https://decyphertek.io/)
+- [Contact](https://decyphertek.readthedocs.io/en/latest/contact/)
