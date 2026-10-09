@@ -95,7 +95,6 @@ nav:
     - Tech Notes:
         - Android Roms: technotes/Android-Roms.md 
         - Ansible: technotes/Ansible.md 
-        - AWS CLI: technotes/AWS-CLI.md 
         - Beekeeper Studio: technotes/Beekeeper-Studio.md 
         - CIS Controls: technotes/CIS-Controls.md 
         - ClamAV: technotes/ClamAV.md 
