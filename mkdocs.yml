@@ -124,7 +124,6 @@ nav:
         - LXD: technotes/LXD.md
         - MySQL: technotes/MySql.md 
         - Nmap: technotes/Nmap.md 
-        - Nomad: technotes/Nomad.md 
         - Oscap: technotes/Oscap.md 
         - Packer: technotes/Packer.md 
         - Pulumi: technotes/Pulumi.md 
