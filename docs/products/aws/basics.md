@@ -38,6 +38,7 @@ AWS Health Dashboard:
 EC2 Networking Topics:
 --------------------
 If you would like to learn more about networking related to EC2 instances, here are some quick links.
+
 * Security Groups - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-security-groups.html
 * VPC - https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
 * Route Tables - https://docs.aws.amazon.com/vpc/latest/userguide/WorkWithRouteTables.html

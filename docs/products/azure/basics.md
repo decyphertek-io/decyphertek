@@ -43,6 +43,7 @@ Azure Service Health:
 VM Networking Topics:
 --------------------
 If you would like to learn more about networking related to Azure VMs, here are some quick links.
+
 * Network Security Groups - https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview
 * Virtual Networks - https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview
 * Route Tables - https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview

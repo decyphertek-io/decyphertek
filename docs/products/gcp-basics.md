@@ -43,6 +43,7 @@ GCP Health Dashboard:
 VM Networking Topics:
 --------------------
 If you would like to learn more about networking related to GCP instances, here are some quick links.
+
 * Firewall Rules - https://cloud.google.com/vpc/docs/firewalls
 * VPC - https://cloud.google.com/vpc/docs/overview
 * Routes - https://cloud.google.com/vpc/docs/routes
