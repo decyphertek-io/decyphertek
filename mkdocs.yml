@@ -120,8 +120,6 @@ nav:
         - GrapheneOS: technotes/GrapheneOS.md
         - HTTPIE: technotes/Httpie.md
         - IDS Tower: technotes/IdsTower.md 
-        - Incus: technotes/Incus.md
-        - Internet in A Box: technotes/Internet-In-A-Box.md 
         - Keycloak: technotes/Keycloak.md 
         - Kubernetes: technotes/Kubernetes.md 
         - LEMP Stack: technotes/LEMP-Stack.md 
