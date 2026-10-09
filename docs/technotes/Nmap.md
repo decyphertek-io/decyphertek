@@ -10,17 +10,17 @@ Nmap Install
       # Best practice is to use the newest version of nmap, provides fixes.
 
       # The suggested debian method doesnt work well using alien. Use apt instead.
-      $ sudo apt install nmap
+      sudo apt install nmap
       # Install zenmap 
-      $ wget http://archive.ubuntu.com/ubuntu/pool/universe/n/nmap/zenmap_7.60-1ubuntu5_all.deb
-      $ sudo dpkg -i zenmap_7.60-1ubuntu5_all.deb
+      wget http://archive.ubuntu.com/ubuntu/pool/universe/n/nmap/zenmap_7.60-1ubuntu5_all.deb
+      sudo dpkg -i zenmap_7.60-1ubuntu5_all.deb
 
 Nmap Script
 ------------
 
       # Requires sudo , nmap , xsltproc , and Lynx
       # ip addr or ifconfig to get your network info.
-      $ wget https://raw.githubusercontent.com/decyphertek-io/configs/main/bash-scripts/nmap.sh && bash nmap.sh
+      wget https://raw.githubusercontent.com/decyphertek-io/configs/main/bash-scripts/nmap.sh && bash nmap.sh
       # If you do not run the script from the home directry lynx will fail, it can be edited. 
 
 Nmap Basics
@@ -28,276 +28,276 @@ Nmap Basics
 
      # replace all [name] with a variable without brackets. 
      # EX: Replace [target] with IP or CIDR range. 192.168.0.1 or 192.168.0.0/24 . 
-     # You can find the subnet from a system on the network. $ ifconfig OR $ ip addr
+     # You can find the subnet from a system on the network. ifconfig OR ip addr
 
      # Scan a single target
-     $ sudo nmap [target]
+     sudo nmap [target]
      
      # Scan multiple targets
-     $ sudo nmap [target1], [target2], [target3]
+     sudo nmap [target1], [target2], [target3]
 
      # Scan a list of targets
-     $ nmap -iL [list.txt]
+     nmap -iL [list.txt]
 
      # Scan an entire subnet
-     $ sudo nmap [target]
+     sudo nmap [target]
 
      # Scan random hosts
-     $ sudo nmap -iR [number]
+     sudo nmap -iR [number]
 
      # Excluding targets from a scan
-     $ sudo nmap [target] --exclude [target1]
+     sudo nmap [target] --exclude [target1]
 
      # Excluding targets using a list
-     $ sudo nmap [target] --excludefile [list.txt]
+     sudo nmap [target] --excludefile [list.txt]
 
      # Perform an agressive scan
-     $ sudo nmap -A [target]
+     sudo nmap -A [target]
 
      # Scan an IPv6 target
-     $ sudo nmap -6 [target]
+     sudo nmap -6 [target]
 
 Nmap Discovery 
 --------------
 
      # Perform a ping-only scan
-     $ sudo nmap -sn [target]
+     sudo nmap -sn [target]
 	
      # Don't ping
-     $ sudo nmap -Pn [target]
+     sudo nmap -Pn [target]
 	
      # TCP SYN ping
-     $ sudo nmap -PS [target]
+     sudo nmap -PS [target]
 	
      # TCP ACK ping
-     $ sudo nmap -PA [target]
+     sudo nmap -PA [target]
 	
      # UDP ping
-     $ sudo nmap -PU [target]
+     sudo nmap -PU [target]
 	
      # SCTP INIT ping
-     $ sudo nmap -PY [target]
+     sudo nmap -PY [target]
 	
      # ICMP echo ping
-     $ sudo nmap -PE [target]
+     sudo nmap -PE [target]
 	
      # ICMP timestamp ping
-     $ sudo nmap -PP [target]
+     sudo nmap -PP [target]
 	
      # ICMP address mask ping
-     $ sudo nmap -PM [target]
+     sudo nmap -PM [target]
 	
      # IP protocol ping
-     $ sudo nmap -PO [target]
+     sudo nmap -PO [target]
 	
      # ARP ping
-     $ sudo nmap -PR [target]
+     sudo nmap -PR [target]
 	
      # Traceroute
-     $ sudo nmap --traceroute [target]
+     sudo nmap --traceroute [target]
 	
      # Force reverse DNS resolution
-     $ sudo nmap -R [target]
+     sudo nmap -R [target]
 	
      # Disable reverse DNS resolution
-     $ sudo nmap -n [target]
+     sudo nmap -n [target]
 	
-     $ Alternative DNS lookup
-     $ sudo nmap --system-dns [target]
+     Alternative DNS lookup
+     sudo nmap --system-dns [target]
 	
      # Manually specify DNS server(s)
-     $ nmap --dns-servers [servers] [target]
+     nmap --dns-servers [servers] [target]
 	
      # Create a host list 
-     $ sudo nmap -sL [targets]
+     sudo nmap -sL [targets]
 
 Nmap Port Scanning
 ------------------
 
      # Perform a fast scan
-     $ sudo nmap -F [target]
+     sudo nmap -F [target]
 	
      # Scan specific ports
-     $ sudo nmap -p [port(s)] [target]
+     sudo nmap -p [port(s)] [target]
 	
      # Scan ports by name
-     $ sudo nmap -p [port name(s)] [target]
+     sudo nmap -p [port name(s)] [target]
 	
      # Scan ports by protocol
-     $ sudo nmap -sU -sT -p U:[ports],T:[ports] [target]
+     sudo nmap -sU -sT -p U:[ports],T:[ports] [target]
 	
      # Scan all ports
-     $ sudo nmap -p 1-65535 [target]
+     sudo nmap -p 1-65535 [target]
 	
      # Scan top ports
-     $ sudo nmap --top-ports [number] [target]
+     sudo nmap --top-ports [number] [target]
 	
      # Perform a sequential port scan
-     $ sudo nmap -r [target]
+     sudo nmap -r [target]
 	
      # Attempt to guess an unknown OS
-     $ sudo nmap -O --osscan-guess [target]
+     sudo nmap -O --osscan-guess [target]
 	
      # Service version detection
-     $ sudo nmap -sV [target]
+     sudo nmap -sV [target]
 	
      # Troubleshooting version scans
-     $ sudo nmap -sV --version-trace [target]
+     sudo nmap -sV --version-trace [target]
 	
      # Perform a RPC scan
-     $ sudo nmap -sR [target]
+     sudo nmap -sR [target]
 
 Nmap Advanced Scans
 -------------------
 
      # TCP SYN scan
-     $ sudo nmap -sS [target]
+     sudo nmap -sS [target]
 	
      # TCP connect scan
-     $ sudo nmap -sT [target]
+     sudo nmap -sT [target]
 	
      # UDP scan
-     $ sudo nmap -sU [target]
+     sudo nmap -sU [target]
 	
      # TCP NULL scan
-     $ sudo nmap -sN [target]
+     sudo nmap -sN [target]
 	
      # TCP FIN scan
-     $ sudo nmap -sF [target]
+     sudo nmap -sF [target]
 	
      # Xmas scan
-     $ sudo nmap -sA [target]
+     sudo nmap -sA [target]
 	
      # TCP ACK scan
-     $ sudo nmap -sA [target]
+     sudo nmap -sA [target]
 	
      # Custom TCP scan
-     $ sudo nmap --scanflags [flags] [target]
+     sudo nmap --scanflags [flags] [target]
 	
      # IP protocol scan
-     $ sudo nmap -sO [target]
+     sudo nmap -sO [target]
 	
      # Send raw ethernet packets
-     $ sudo nmap --send-eth [target]
+     sudo nmap --send-eth [target]
 	
      # Send IP packets 
-     $ sudo nmap --send-ip [target]
+     sudo nmap --send-ip [target]
 
 Nmap Firewall Evasion 
 ---------------------
 
      # Fragment packets
-     $ sudo nmap -f [target]
+     sudo nmap -f [target]
 	
      # Specify a specific MTU
-     $ sudo nmap --mtu [MTU] [target]
+     sudo nmap --mtu [MTU] [target]
 	
      # Use a decoy
-     $ sudo nmap -D RND:[number] [target]
+     sudo nmap -D RND:[number] [target]
 	
      # Idle zombie scan
-     $ sudo nmap -sI [zombie] [target]
+     sudo nmap -sI [zombie] [target]
 	
      # Manually specify a source port
-     $ sudo nmap --source-port [port] [target]
+     sudo nmap --source-port [port] [target]
 	
      # Append random data
-     $ sudo nmap --data-length [size] [target]
+     sudo nmap --data-length [size] [target]
 	
      # Randomize target scan order
-     $ sudo nmap --randomize-hosts [target]
+     sudo nmap --randomize-hosts [target]
 	
      # Spoof MAC address
-     $ sudo nmap --spoof-mac [MAC|0|vendor] [target]
+     sudo nmap --spoof-mac [MAC|0|vendor] [target]
 	
      # Send bad checksums 
-     $ sudo nmap --badsum [target]
+     sudo nmap --badsum [target]
 
 Nmap Output
 ------------
 
      # Save output to a text file
-     $ sudo nmap -oN [scan.txt] [target]
+     sudo nmap -oN [scan.txt] [target]
 	
      # Save output to a XML file
      #  --webxml Makes it readable in web browser.
-     $ sudo nmap -oX [scan.xml] [target]
+     sudo nmap -oX [scan.xml] [target]
 	
      # Grepable output
-     $ sudo nmap -oG [scan.txt] [target]
+     sudo nmap -oG [scan.txt] [target]
 	
      # Output all supported file types
-     $ sudo nmap -oA [path/filename] [target]
+     sudo nmap -oA [path/filename] [target]
 	
      # Periodically display statistics
-     $ sudo nmap --stats-every [time] [target]
+     sudo nmap --stats-every [time] [target]
 	
      # 333 output 
-     $ sudo nmap -oS [scan.txt] [target]
+     sudo nmap -oS [scan.txt] [target]
 
 Ndiff nmap scans
 ----------
 
      # Install ndiff on debian sysyems
-     $ sudo apt install ndiff
+     sudo apt install ndiff
 
      # Comparison using Ndiff
-     $ sudo ndiff [scan1.xml] [scan2.xml]
+     sudo ndiff [scan1.xml] [scan2.xml]
 
      # Ndiff verbose mode	
-     $ sudo ndiff -v [scan1.xml] [scan2.xml]
+     sudo ndiff -v [scan1.xml] [scan2.xml]
 	
      # XML output mode 
-     $ sudo ndiff --xml [scan1.xml] [scan2.xml]
+     sudo ndiff --xml [scan1.xml] [scan2.xml]
 
 Nmap Timing 
 -----------
 
      # Timing templates
-     $ sudo nmap -T[0-5] [target]
+     sudo nmap -T[0-5] [target]
 	
      # Set the packet TTL
-     $ sudo nmap --ttl [time] [target]
+     sudo nmap --ttl [time] [target]
 	
      # Setting the --min-parallelism option may increase scan performance, setting it too high may produce inaccurate results.
      # Minimum number of parallel operations
-     $ sudo nmap --min-parallelism [number] [target]
+     sudo nmap --min-parallelism [number] [target]
 	
      # Maximum number of parallel operations
-     $ sudo nmap --max-parallelism [number] [target]
+     sudo nmap --max-parallelism [number] [target]
 
      # Minimum host group size	
-     $ sudo nmap --min-hostgroup [number] [targets]
+     sudo nmap --min-hostgroup [number] [targets]
 
      # Maximum host group size	
-     $ sudo nmap --max-hostgroup [number] [targets]
+     sudo nmap --max-hostgroup [number] [targets]
 
      # Maximum RTT timeout
-     $ sudo nmap --initial-rtt-timeout [time] [target]
+     sudo nmap --initial-rtt-timeout [time] [target]
 
      # Initial RTT timeout
-     $ sudo nmap --max-rtt-timeout [TTL] [target]
+     sudo nmap --max-rtt-timeout [TTL] [target]
 	
      # Maximum number of retries
-     $ sudo nmap --max-retries [number] [target]
+     sudo nmap --max-retries [number] [target]
 	
      # Host timeout
-     $ sudo nmap --host-timeout [time] [target]
+     sudo nmap --host-timeout [time] [target]
 	
      # Minimum scan delay
-     $ sudo nmap --scan-delay [time] [target]
+     sudo nmap --scan-delay [time] [target]
 	
      # Maximum scan delay
-     $ sudo nmap --max-scan-delay [time] [target]
+     sudo nmap --max-scan-delay [time] [target]
 	
      # Minimum packet rate   
-     $ sudo nmap --min-rate [number] [target]
+     sudo nmap --min-rate [number] [target]
 	
      # Maximum packet rate
-     $ sudo nmap --max-rate [number] [target]
+     sudo nmap --max-rate [number] [target]
 	
      # Defeat reset rate limits 
-     $ sudo nmap --defeat-rst-ratelimit [target]
+     sudo nmap --defeat-rst-ratelimit [target]
 	
 Nmap NSE - Scripting Engine
 ---------------------------------
@@ -306,28 +306,28 @@ Nmap NSE - Scripting Engine
      # Roll your own NSE - https://null-byte.wonderhowto.com/how-to/get-started-writing-your-own-nse-scripts-for-nmap-0187403/
 
      # Find script using locate
-     $ locate *.nse
+     locate *.nse
  
      # Execute individual scripts
-     $ sudo nmap --script [script.nse] [target]
+     sudo nmap --script [script.nse] [target]
 	
      # Execute multiple scripts
-     $ sudo nmap --script [expression] [target]
+     sudo nmap --script [expression] [target]
 	
      # Execute scripts by category
-     $ sudo nmap --script [category] [target]
+     sudo nmap --script [category] [target]
 	
      # Execute multiple script categories
-     $ sudo nmap --script [category1,category2,etc]
+     sudo nmap --script [category1,category2,etc]
 	
      # Troubleshoot scripts
-     $ sudo nmap --script [script] --script-trace [target]
+     sudo nmap --script [script] --script-trace [target]
 	
      # Update the script database 
-     $ sudo nmap --script-updatedb
+     sudo nmap --script-updatedb
 
      # Example Script snmp-info - https://nmap.org/nsedoc/scripts/snmp-info.html
-     $ sudo nmap --script snmp-info.nse [target]
+     sudo nmap --script snmp-info.nse [target]
 	
 Nmap Troubleshooting
 --------------------
@@ -349,71 +349,71 @@ Nmap Troubleshooting
      * Scan from a different location
      # Submit Nmap OS DB fix. ( Excluding JUST GUESSING results)
      # verify output against similar systems.
-     $ sudo nmap -O -sV -T4 -d <target>
+     sudo nmap -O -sV -T4 -d <target>
      # Submit results here - https://insecure.org/cgi-bin/submit.cgi?corr-os
      
      # Getting help
-     $ sudo nmap -h
+     sudo nmap -h
 	
      # Display nmap version
-     $ sudo nmap -V
+     sudo nmap -V
 
      # Verbose output	
-     $ sudo nmap -v [target]
+     sudo nmap -v [target]
 	
      # Debugging
-     $ sudo nmap -d [target]
+     sudo nmap -d [target]
 	
      # Display port state reason
-     $ sudo nmap --reason [target]
+     sudo nmap --reason [target]
 	
      # Only display open ports
-     $ sudo nmap --open [target]
+     sudo nmap --open [target]
 	
      # Trace packets
-     $ sudo nmap --packet-trace [target]
+     sudo nmap --packet-trace [target]
 	
      # Display host networking
-     $ sudo nmap --iflist
+     sudo nmap --iflist
 	
      # Specify a network interface
-     $ sudo nmap -e [interface] [target]
+     sudo nmap -e [interface] [target]
 
 Optional: Nmap Infosec 
 ----------------------
      
      # If you add scripts, update the DB
-     $ sudo nmap --script-updatedb
+     sudo nmap --script-updatedb
 
      # Vulners scan
-     $ sudo nmap -Pn -sV --script vulners [target]
+     sudo nmap -Pn -sV --script vulners [target]
 
      # Check SSL cert
-     $ sudo nmap --script ssl-cert -p 443 -v [target]
+     sudo nmap --script ssl-cert -p 443 -v [target]
 
      # Whois-domain
-     $ sudo nmap --script whois-domain.nse [target]
+     sudo nmap --script whois-domain.nse [target]
 
      # Geolocation
-     $ Wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
-     $ sudo mv GeoLiteCity.dat.gz /usr/local/share/nmap/nselib/data/GeoLiteCity.dat.gz
-     $ sudo nmap --script ip-geolocation-* [target]
+     Wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
+     sudo mv GeoLiteCity.dat.gz /usr/local/share/nmap/nselib/data/GeoLiteCity.dat.gz
+     sudo nmap --script ip-geolocation-* [target]
 
      # Google Safe Browsing
      # Get API Key - http://code.google.com/apis/safebrowsing/key_signup.html
-     $ sudo nmap -p80 --script http-google-malware –script-args http-google-malware.api=<API> [target]
+     sudo nmap -p80 --script http-google-malware –script-args http-google-malware.api=<API> [target]
 
      # Email
-     $ wget http://seclists.org/nmap-dev/2011/q3/att-401/http-google-email.nse 
-     $ sudo mv http-google-email.nse  /usr/share/nmap/scripts/http-google-email.nse 
-     $ sudo nmap -p80 --script http-google-email [target]
+     wget http://seclists.org/nmap-dev/2011/q3/att-401/http-google-email.nse 
+     sudo mv http-google-email.nse  /usr/share/nmap/scripts/http-google-email.nse 
+     sudo nmap -p80 --script http-google-email [target]
 
 Optional: Ansible Nmap
 ------------------
 
      # https://docs.ansible.com/ansible/latest/collections/community/general/nmap_inventory.html
      # Requirement: Install ansible galaxy community general
-     $ sudo ansible-galaxy collection install community.general
+     sudo ansible-galaxy collection install community.general
      # Reference community.general.nmap in the Ansible Playbook
      # inventory.config file in YAML format
 
@@ -442,31 +442,31 @@ Optional: Real World Scenarios
      #  --min-rate, --max-parallelism, and --host-timeout
 
      # Its faster to scan one subnet at a time, if you want to scan then all, then:
-     $ sudo nmap -sn 10.0.0.0/8 , 192.168.0.0/16 , 172.16.0.0/12
+     sudo nmap -sn 10.0.0.0/8 , 192.168.0.0/16 , 172.16.0.0/12
 
      # Quick inventory, OS , Ports. 
-     $ sudo vim nmap.sh
+     sudo vim nmap.sh
      sudo nmap -sn 192.168.0.0/24 | awk '/Nmap scan/{gsub(/[()]/,"",$NF); print $NF > "livehosts.txt"}'
      sudo nmap -sT -sV -sC -R -O --osscan-guess -iL livehosts.txt -oX livehosts-OS.xml 
      xsltproc livehosts-OS.xml -o livehosts-OS.html
-     $ bash nmap.sh
+     bash nmap.sh
      # Read results in web browser or lynx . 
 
      # Consider masscan to scan large subnets, suppose to be faster, nmap was faster on 192.168.0.0/24 using -sn -Pn and masscan would kick me off my VPN. 
-     $ sudo apt install masscan
-     $ sudo masscan -p0-65535 --rate=50000 10.0.0.0/8,192.168.0.0/16,172.16.0.0/12 | awk '/Nmap scan/{gsub(/[()]/,"",$NF); print $NF > "livehosts.txt"}'
+     sudo apt install masscan
+     sudo masscan -p0-65535 --rate=50000 10.0.0.0/8,192.168.0.0/16,172.16.0.0/12 | awk '/Nmap scan/{gsub(/[()]/,"",$NF); print $NF > "livehosts.txt"}'
      # Then use nmap
-     $ sudo nmap -O --osscan-limit -iL livehosts.txt -oX livehosts-OS.xml 
-     $ xsltproc livehosts-OS.xml -o livehosts-OS.html
+     sudo nmap -O --osscan-limit -iL livehosts.txt -oX livehosts-OS.xml 
+     xsltproc livehosts-OS.xml -o livehosts-OS.html
 
      # Get a second Opinion on nmap OS results. 
-     $ sudo xprobe2 192.168.0.1
+     sudo xprobe2 192.168.0.1
 
      # Netdiscover can also map an unknown network easily
-     $ sudo apt install netdiscover
-     $ sudo netdiscover
+     sudo apt install netdiscover
+     sudo netdiscover
      # Scan a specific subnet and save output
-     $ sudo netdiscover -f -r 192.168.0.0/24 -PN | awk '{print $1}' > livehosts.txt
+     sudo netdiscover -f -r 192.168.0.0/24 -PN | awk '{print $1}' > livehosts.txt
      # Can feed this to nmap.
      # I found that it didnt pick up my system? Maybe the firewall is blocking the probe?
 
