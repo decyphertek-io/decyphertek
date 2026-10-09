@@ -95,7 +95,6 @@ nav:
     - Tech Notes:
         - Android Roms: technotes/Android-Roms.md 
         - Ansible: technotes/Ansible.md 
-        - Beekeeper Studio: technotes/Beekeeper-Studio.md 
         - CIS Controls: technotes/CIS-Controls.md 
         - ClamAV: technotes/ClamAV.md 
         - Cloudinit: technotes/Cloud-Init.md 
@@ -118,8 +117,6 @@ nav:
         - Kubernetes: technotes/Kubernetes.md 
         - LEMP Stack: technotes/LEMP-Stack.md 
         - Linux: technotes/Linux.md 
-        - LXC: technotes/LXC.md
-        - LXD: technotes/LXD.md
         - MySQL: technotes/MySql.md 
         - Nmap: technotes/Nmap.md 
         - Oscap: technotes/Oscap.md 
