@@ -497,7 +497,6 @@ Network Mapping Alternatives
      * Cacti ( Server ) - https://www.cacti.net/info/downloads ; https://www.howtoforge.com/how-to-install-cacti-monitoring-on-ubuntu-22-04/
      * Skydive ( Server) - https://skydive.network/
      * Zmap  - https://zmap.io/
-     * RustScan - https://rustscan.github.io/RustScan/
      * Masscan - https://www.kali.org/tools/masscan/
      * Netdiscover - https://www.kali.org/tools/netdiscover/
      * Angry Ip Scanner - https://angryip.org/
