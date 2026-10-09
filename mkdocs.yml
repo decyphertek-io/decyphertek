@@ -93,7 +93,6 @@ nav:
         - Wiki: products/stacktek/wiki.md
         - Privacy Policy: products/stacktek/privacy.md
     - Tech Notes:
-        - Android Roms: technotes/Android-Roms.md 
         - Ansible: technotes/Ansible.md 
         - CIS Controls: technotes/CIS-Controls.md 
         - ClamAV: technotes/ClamAV.md 
