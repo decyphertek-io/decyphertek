@@ -5,35 +5,42 @@ Electronic Frontier Foundation
 
 Surveillance Self-Defense
 -------------------------
-
-    https://ssd.eff.org/
+```
+https://ssd.eff.org/
+```
 
 Privacy Badger
 --------------
-
-    https://privacybadger.org/
-
-HTTPS Everywhere
-----------------
-
-    https://www.eff.org/https-everywhere
+```
+https://privacybadger.org/
+```
 
 CertBot
 -------
-
-    https://www.eff.org/pages/certbot
+```
+https://www.eff.org/pages/certbot
+```
 
 Atlas Of Surveillance
 ---------------------
-
-    https://atlasofsurveillance.org/
+```
+https://atlasofsurveillance.org/
+```
 
 Cover Your Tracks
 -----------------
+```
+https://coveryourtracks.eff.org/
+```
 
-    https://coveryourtracks.eff.org/
+Street Level Survillence
+------------------------
+```
+https://sls.eff.org/
+```
 
-Crocodile Hunter
-----------------
-
-    https://github.com/EFForg/crocodilehunter
+AP Keep
+-------
+```
+https://www.eff.org/pages/apkeep
+```
