@@ -93,7 +93,6 @@ nav:
         - Wiki: products/stacktek/wiki.md
         - Privacy Policy: products/stacktek/privacy.md
     - Tech Notes:
-        - Aide: technotes/Aide.md 
         - Android Roms: technotes/Android-Roms.md 
         - Ansible: technotes/Ansible.md 
         - AWS CLI: technotes/AWS-CLI.md 
@@ -143,8 +142,6 @@ nav:
         - TCPdump: technotes/Tcpdump.md 
         - Technitium: technotes/Technitium.md 
         - Terraform: technotes/Terraform.md 
-        - UFW: technotes/UFW.md 
-        - Unattended Upgrades: technotes/Unattended-Upgrades.md 
         - Ventoy: technotes/Ventoy.md
         - Waydroid: technotes/Waydroid.md
         - Web Goat: technotes/WebGoat.md 
