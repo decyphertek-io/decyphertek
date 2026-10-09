@@ -98,7 +98,6 @@ nav:
         - CIS Controls: technotes/CIS-Controls.md 
         - ClamAV: technotes/ClamAV.md 
         - Cloudinit: technotes/Cloud-Init.md 
-        - CloudPanel: technotes/Cloudpanel.md 
         - Deja Dup: technotes/Deja-Dup.md 
         - Docker: technotes/Docker.md 
         - Droidian: technotes/Droidian.md
