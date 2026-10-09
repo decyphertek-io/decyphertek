@@ -32,8 +32,11 @@ nav:
         - OpenVas: products/aws/openvas.md
         - Uptime Kuma: products/aws/uptime-kuma.md
         - VaultWarden: products/aws/vaultwarden.md
+        - Privacy Policy: products/aws/privacy-policy.md
     - Azure Marketplace:
         - Table Of Contents: products/azure/contents.md
+        - FCOS Basics: products/azure/fcos-security.md
+        - Debian Basics: products/azure/debian-security.md
         - Kali Linux Web Desktop: products/azure/kali.md
         - Mitre Caldera V5: products/azure/caldera.md
         - Librechat AI: products/azure/librechat.md
@@ -49,6 +52,8 @@ nav:
         - Privacy Policy: products/azure/privacy-policy.md
     - Google Marketplace:
         - Table Of Contents: products/gcp-contents.md
+        - Flatcar Basics: products/gcp-flatcar-security.md
+        - FCOS Basics: products/gcp-fcos-security.md
         - Kali Linux Web Desktop: 
             - Instructions: products/gcp-kali-web-desktop-instructions.md
             - EULA: products/gcp-kali-web-desktop-eula.md

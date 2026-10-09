@@ -22,3 +22,4 @@ Visit our [AWS Marketplace](https://aws.amazon.com/marketplace/seller-profile?id
 - [OpenVas](openvas.md)
 - [Uptime Kuma](uptime-kuma.md)
 - [VaultWarden](vaultwarden.md)
+- [Privacy Policy](privacy-policy.md)

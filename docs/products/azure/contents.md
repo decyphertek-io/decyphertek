@@ -10,6 +10,8 @@ Visit our [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marke
 
 ## Table of Contents
 
+- [FCOS Basics](fcos-security.md)
+- [Debian Basics](debian-security.md)
 - [Kali Linux Web Desktop](kali.md)
 - [Mitre Caldera V5](caldera.md)
 - [Librechat AI](librechat.md)
