@@ -125,7 +125,6 @@ nav:
         - MySQL: technotes/MySql.md 
         - Nmap: technotes/Nmap.md 
         - Oscap: technotes/Oscap.md 
-        - Packer: technotes/Packer.md 
         - Pulumi: technotes/Pulumi.md 
         - Qemu: technotes/Qemu.md
         - Read The Docs: technotes/Read-The-Docs.md 
