@@ -10,6 +10,7 @@ Visit our [GCP Marketplace](https://console.cloud.google.com/marketplace/browse?
 
 ## Table of Contents
 
+- [GCP Basics](gcp-basics.md)
 - [Flatcar Basics](gcp-flatcar-security.md)
 - [FCOS Basics](gcp-fcos-security.md)
 - [Kali Linux Web Desktop](gcp-kali-web-desktop-instructions.md)

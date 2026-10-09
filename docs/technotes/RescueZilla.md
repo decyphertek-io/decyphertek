@@ -5,13 +5,15 @@ RescueZilla
 
 Live USB
 --------
-
-     $ wget https://github.com/rescuezilla/rescuezilla/releases/download/2.4/rescuezilla-2.4-64bit.jammy.iso
-     # Balena Etcher to create Live USB
-     # Boot from Computer - Research, models vary. ( F2 or F12 ) 
+```
+wget https://github.com/rescuezilla/rescuezilla/releases/download/2.6.2/rescuezilla-2.6.2-64bit.resolute.iso
+# Balena Etcher to create Live USB
+# Boot from Computer - Research, models vary. ( F2 or F12 ) 
+```
 
 
 References
 ----------
-
-     https://rescuezilla.com/
+```
+https://rescuezilla.com/
+```

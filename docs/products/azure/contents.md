@@ -10,6 +10,7 @@ Visit our [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marke
 
 ## Table of Contents
 
+- [Azure Basics](basics.md)
 - [FCOS Basics](fcos-security.md)
 - [Debian Basics](debian-security.md)
 - [Kali Linux Web Desktop](kali.md)
