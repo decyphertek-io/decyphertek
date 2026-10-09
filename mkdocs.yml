@@ -139,11 +139,9 @@ nav:
         - Tailscale: technotes/Tailscale.md 
         - Taskel: technotes/Tasksel.md 
         - TCPdump: technotes/Tcpdump.md 
-        - Technitium: technotes/Technitium.md 
         - Ventoy: technotes/Ventoy.md
         - Waydroid: technotes/Waydroid.md
         - Web Goat: technotes/WebGoat.md 
-        - Whonix: technotes/Whonix.md 
         - Windows: technotes/Windows.md 
     - Contact: contact.md
 
