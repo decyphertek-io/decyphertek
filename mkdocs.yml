@@ -115,7 +115,6 @@ nav:
         - GNS3: technotes/GNS3.md 
         - GrapheneOS: technotes/GrapheneOS.md
         - HTTPIE: technotes/Httpie.md
-        - IDS Tower: technotes/IdsTower.md 
         - Keycloak: technotes/Keycloak.md 
         - Kubernetes: technotes/Kubernetes.md 
         - LEMP Stack: technotes/LEMP-Stack.md 
