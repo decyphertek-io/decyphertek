@@ -22,9 +22,8 @@ nav:
         - Table Of Contents: products/aws/contents.md
         - AWS Basics: products/aws/basics.md
         - Debian Basics: products/aws/debian-security.md
-        - Flatcar Basics: products/aws/flatcar-security.md
+        - FCOS Basics: products/aws/fcos-security.md
         - Kali Linux Web Desktop: products/aws/kali.md
-        - ParrotSec Web Desktop: products/aws/parrotos.md
         - LibreChat AI: products/aws/librechat.md
         - Misp: products/aws/misp.md
         - Nextcloud: products/aws/nextcloud.md
