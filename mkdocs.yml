@@ -96,7 +96,6 @@ nav:
         - Aide: technotes/Aide.md 
         - Android Roms: technotes/Android-Roms.md 
         - Ansible: technotes/Ansible.md 
-        - Auditd: technotes/Auditd.md 
         - AWS CLI: technotes/AWS-CLI.md 
         - Beekeeper Studio: technotes/Beekeeper-Studio.md 
         - CIS Controls: technotes/CIS-Controls.md 
@@ -111,7 +110,6 @@ nav:
         - Exodus Privacy: technotes/Exodus-Privacy.md 
         - Falco: technotes/Falco.md
         - Flutter: technotes/Flutter.md 
-        - Fog Project: technotes/Fog-Project.md 
         - FreedomBox: technotes/FreedomBox.md 
         - FreeIPA: technotes/FreeIPA.md 
         - Github: technotes/Github.md 
@@ -129,7 +127,6 @@ nav:
         - Nmap: technotes/Nmap.md 
         - Nomad: technotes/Nomad.md 
         - Oscap: technotes/Oscap.md 
-        - OSSEC: technotes/OSSEC.md 
         - Packer: technotes/Packer.md 
         - Pulumi: technotes/Pulumi.md 
         - Qemu: technotes/Qemu.md

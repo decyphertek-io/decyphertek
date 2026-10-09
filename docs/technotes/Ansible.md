@@ -95,20 +95,6 @@ Vault
      # How to decrypt vault and use with a playbook.
      ansible-playbook -l firewall panos_facts.yml --ask-vault-pass
 
-Decyphertek Ansible
---------------------
-
-     # Ubuntu
-     # mac no sudo and run from home directory
-     cd /etc/ 
-     sudo rm -rf ansible
-     sudo git clone https://github.com/decyphertek-io/ansible.git
-     cd ansible/config
-     sudo cp ansible.cfg /etc/ansible/
-     # Run git fetch to recieve the newest updates to the repo. 
-     cd /etc/ansible
-     sudo git fetch
-
 Version Control
 ----------------
 
