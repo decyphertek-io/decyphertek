@@ -1,50 +1,84 @@
 LEMP Stack
 ==========
 
-LEMP Stack stands for Linux , Nginx , Mysql, and Php. The instructions here go further
-and add myphpadmin, composer and on the nginx docs page , Modsecurity WAF. 
+LEMP stands for Linux, Nginx ( Engine-X ), MySQL, and PHP. This guide goes a step
+further and adds phpMyAdmin and PHP Composer. For Nginx with Modsecurity WAF,
+see the Decyphertek Nginx docs.
 
-Install
--------
+System Update
+-------------
 ```
 sudo apt update && sudo apt upgrade
-# See Decyphertek - nginx docs how how to install nginx with Modsecurity WAF. 
-# Install mysql - See Decyphertek - mysql docs on how to manage mysql 
+```
+
+Nginx
+-----
+* See the Decyphertek Nginx docs for how to install Nginx with the Modsecurity WAF.
+
+MySQL
+-----
+* See the Decyphertek MySQL docs for day-to-day management. The commands below
+  cover the initial install and passwords.
+```
 sudo apt install mysql-server
+```
+* Set a root MySQL password:
+```
 sudo mysql
-# set a root mysql password
-mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
-mysql> exit
-# Debian generates a nonsecure password stored here - /etc/mysql/debian.cnf
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+exit
+```
+* Debian generates a non-secure password for the debian-sys-maint user, stored in
+  /etc/mysql/debian.cnf. View it:
+```
 sudo cat /etc/mysql/debian.cnf
+```
+* Set a new debian-sys-maint password and update /etc/mysql/debian.cnf to match:
+```
 sudo mysqladmin -u debian-sys-maint -p'oldPassword' password 'newPassword'
-# Update the password in the debian.cnf as well. 
 sudo vim /etc/mysql/debian.cnf
 sudo mysql_secure_installation
-# Verify your passwords work
-mysql -u root -p 
-mysql>exit
+```
+* Verify both logins work:
+```
+mysql -u root -p
+exit
 mysql -u debian-sys-maint -p
-mysql>exit 
-# Install PHP
+exit
+```
+
+PHP
+---
+```
 sudo apt install php-mysql php-fpm php-curl php-gd php-mbstring php-xml php-xmlrpc php-cli
-# Optional: Install myphpadmin
-# Requires a lot of setup to secure an get working with nginx, see Digital Ocean docs referenced. 
+```
+
+phpMyAdmin ( Optional )
+-----------------------
+* Caution: phpMyAdmin requires additional setup to secure and get working with
+  Nginx - see the Digital Ocean reference below before exposing it.
+```
 sudo apt-get -y install apt-transport-https ca-certificates curl
 curl -fsSL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x42636ff8dae547240e01a1ca2ea3055293cb3f45" | sudo gpg --dearmor -o /usr/share/keyrings/phpmyadmin-ppa.gpg
 sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/phpmyadmin-ppa.gpg] https://ppa.launchpadcontent.net/phpmyadmin/ppa/ubuntu jammy main" > /etc/apt/sources.list.d/phpmyadmin-ubuntu-ppa-jammy.list'
 sudo apt update
 sudo apt install -y phpmyadmin
-# install PHP Composer 
+```
+
+PHP Composer
+------------
+```
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') {echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
 sudo mv composer.phar /usr/local/bin/composer
-# start using composer
+```
+* Verify and update:
+```
 composer list
-# Update Composer
 composer self-update
+```
 
 References
 ----------
