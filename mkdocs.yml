@@ -109,7 +109,6 @@ nav:
         - FreedomBox: technotes/FreedomBox.md 
         - FreeIPA: technotes/FreeIPA.md 
         - Github: technotes/Github.md 
-        - GNS3: technotes/GNS3.md 
         - GrapheneOS: technotes/GrapheneOS.md
         - HTTPIE: technotes/Httpie.md
         - Keycloak: technotes/Keycloak.md 
