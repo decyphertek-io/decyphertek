@@ -100,7 +100,6 @@ nav:
         - AWS CLI: technotes/AWS-CLI.md 
         - Beekeeper Studio: technotes/Beekeeper-Studio.md 
         - CIS Controls: technotes/CIS-Controls.md 
-        - CIS / OSCAP: technotes/CIS-OSCAP.md 
         - ClamAV: technotes/ClamAV.md 
         - Cloudinit: technotes/Cloud-Init.md 
         - CloudPanel: technotes/Cloudpanel.md 
@@ -129,6 +128,7 @@ nav:
         - MySQL: technotes/MySql.md 
         - Nmap: technotes/Nmap.md 
         - Nomad: technotes/Nomad.md 
+        - Oscap: technotes/Oscap.md 
         - OSSEC: technotes/OSSEC.md 
         - Packer: technotes/Packer.md 
         - Pulumi: technotes/Pulumi.md 
