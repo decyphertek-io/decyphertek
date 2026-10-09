@@ -42,7 +42,7 @@ Manage Fedora CoreOS ( FCOS ):
 sudo rpm-ostree upgrade --bypass-driver
 ```
 
-Troubelshooting:
+Troubleshooting:
 ----------------
 ```
 # SELinux troubleshooting
