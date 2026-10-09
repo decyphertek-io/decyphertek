@@ -100,7 +100,6 @@ nav:
         - AWS CLI: technotes/AWS-CLI.md 
         - Balena Etcher: technotes/Balena-Etcher.md 
         - Beekeeper Studio: technotes/Beekeeper-Studio.md 
-        - Cap Analysis: technotes/Cap-Analysis.md 
         - CIS Controls: technotes/CIS-Controls.md 
         - CIS / OSCAP: technotes/CIS-OSCAP.md 
         - ClamAV: technotes/ClamAV.md 
