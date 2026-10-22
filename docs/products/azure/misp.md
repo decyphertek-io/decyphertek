@@ -28,7 +28,7 @@ Username: admin@misp
 Password: (retrieved from command above)
 ```
 * Get data feeds: Sync Actions > Feeds > Load Default feed metadata > select feed via checkbox > enable selected > Fetch & store all Feed Data 
-* Verify Feed Data enabled: Even Actions LIst Events.
+* Verify Feed Data enabled: Event Actions > List Events.
 * Change Password > Dashboard > Administration > List users > select user > Set Password > Save: Edit User - Confirm with old password
 
 Podman:
