@@ -27,7 +27,7 @@ cat /var/home/core/.podman/.env | grep ADMIN_PASSWORD
 Username: admin@misp
 Password: (retrieved from command above)
 ```
-* Get data feeds > Dashboard > Sync Actions > Feeds > Load Default feed metadata > select pencil indicator, enable, submit > Fetch & store all Feed Data
+* Get data feeds: Sync Actions > Feeds > Load Default feed metadata > select pencil indicator, enable, submit > Fetch & store all Feed Data
 * Change Password > Dashboard > Administration > List users > select user > Set Password > Save: Edit User - Confirm with old password
 
 Podman:
