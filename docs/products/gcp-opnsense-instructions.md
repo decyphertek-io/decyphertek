@@ -88,7 +88,7 @@ Password: What you set in option 3.
    - Add 
    - Save 
 ```
-* Now lets go back to the serial console to finish setting up the WAN & LAN. 
+* Now let's go back to the serial console to finish setting up the WAN & LAN. 
 * Select Option 1: Assign Network Interfaces
 ```
 Enter an option: 1

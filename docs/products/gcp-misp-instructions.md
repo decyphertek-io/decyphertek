@@ -43,7 +43,7 @@ Portainer - Manage Docker:
 ---------------------------
 * How to access Portainer to manage your containers > https://ip-of-server:9443
 * Follow the instructions to create a new admin account. 
-* Caution - Portainer can timeout if you dont create an account fast enough
+* Caution - Portainer can timeout if you don't create an account fast enough
 * If this happens you need to restart the container, ssh into the server, then from terminal:
 ```
 sudo su core

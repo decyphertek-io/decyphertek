@@ -468,7 +468,7 @@ Optional: Real World Scenarios
      # Scan a specific subnet and save output
      sudo netdiscover -f -r 192.168.0.0/24 -PN | awk '{print $1}' > livehosts.txt
      # Can feed this to nmap.
-     # I found that it didnt pick up my system? Maybe the firewall is blocking the probe?
+     # I found that it didn't pick up my system? Maybe the firewall is blocking the probe?
 
 Networking Models
 -----------------

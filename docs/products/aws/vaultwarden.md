@@ -9,7 +9,7 @@ SSH Into the server:
 * Linux + MAC - add .pem key to 
 ```
 ~/.ssh/id_rsa
-# change permisisons
+# change permissions
 chmod 400 id_rsa
 ssh core@ip-of-server
 ```
@@ -69,10 +69,10 @@ sudo systemctl status
 
 Portainer - Manage Docker ( Used Before 04/14/26):
 --------------------------
-* This has been replaced in newer rleeases, due to the community version limiting functions. 
+* This has been replaced in newer releases, due to the community version limiting functions. 
 * How to access Portainer to manage your containers > https://ip-of-server:9443
 * Follow the instructions to create a new admin account. 
-* Caution - Portainer can timeout if you dont create an account fast enough
+* Caution - Portainer can timeout if you don't create an account fast enough
 * If this happens you need to restart the container, ssh into the server, then run. 
 ```
 docker restart portainer
@@ -92,7 +92,7 @@ cd .docker
 
 Manage Flatcar Linux ( Used Before 4/14/26 ): 
 ---------------------
-* Optional: Manaully update Flatcar. Updates will happen automatically. 
+* Optional: Manually update Flatcar. Updates will happen automatically. 
 * If you want to manually check for updates run this command
 ```
 sudo update_engine_client -update

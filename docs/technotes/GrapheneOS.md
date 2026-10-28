@@ -2,7 +2,7 @@ Privacy-focused, hardened Android for Google Pixel devices. No Google services, 
 
 Note:
 -----
-* Some apps do not if you dont have google play services installed and logged into the account. Some apps do not work even after disabling some app protections. This is a known issue with Graphene OS. 
+* Some apps do not if you don't have google play services installed and logged into the account. Some apps do not work even after disabling some app protections. This is a known issue with Graphene OS. 
 
 Install:
 --------

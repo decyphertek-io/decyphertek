@@ -10,7 +10,7 @@ SSH Into the server:
 * Linux + MAC - add .pem key to 
 ```
 ~/.ssh/id_rsa
-# change permisisons
+# change permissions
 chmod 400 id_rsa
 ssh core@ip-of-server
 ```
@@ -21,7 +21,7 @@ Uptime Kuma:
 * How to access Uptime-Kuma > https://ip-of-server
 * Setup Database > Select Embedded Mariadb
 * Create the admin account , customize you username and password. 
-* Create a monitor > Select Add Monitor ( Top Right ) > Fill in data. Thats it. 
+* Create a monitor > Select Add Monitor ( Top Right ) > Fill in data. That's it. 
 
 (Optional) API:
 --------------
@@ -83,7 +83,7 @@ Portainer - Manage Docker ( Used Before 3/31/26):
 * This has been replaced by arcane in newer releases, due to the community version limiting functions. 
 * How to access Portainer to manage your containers > https://ip-of-server:9443
 * Follow the instructions to create a new admin account. 
-* Caution - Portainer can timeout if you dont create an account fast enough
+* Caution - Portainer can timeout if you don't create an account fast enough
 * If this happens you need to restart the container, ssh into the server, then run. 
 ```
 docker restart portainer
@@ -103,7 +103,7 @@ cd .docker
 
 Manage Flatcar Linux: ( Used Before 4/16/26):
 ---------------------
-* Optional: Manaully update Flatcar. Updates will happen automatically. 
+* Optional: Manually update Flatcar. Updates will happen automatically. 
 * If you want to manually check for updates run this command
 ```
 sudo update_engine_client -update

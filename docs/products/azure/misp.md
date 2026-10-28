@@ -5,8 +5,8 @@ Note:
 ------
 * After 5/30/26 uses podman instead of docker and requires the core user.
 * After 5/30/26 Portainer is no longer used.
-* After 5/30/26 Fedora CoreOS is used instead of FlatCar Linux.
-* After 7/2/26 The new podman path is /home/core/.podman/ , ~/opt/.podman/ is not longer used. 
+* After 5/30/26 Fedora CoreOS is used instead of Flatcar Linux.
+* After 7/2/26 The new podman path is /home/core/.podman/ , ~/opt/.podman/ is no longer used. 
 * Please wait 5-10 minutes for MISP to be accessible.
 * Upon first login the system may be undergoing an update and display a warning message. Please wait.
 
@@ -81,7 +81,7 @@ sudo systemctl status
 
 Troubleshooting:
 ---------------
-* If you didnt launch the vm using the core user you need to access podman this way:
+* If you didn't launch the vm using the core user you need to access podman this way:
 ```
 sudo runuser -u core -- podman ps
 sudo runuser -u core -- podman-compose -f /opt/.podman/docker-compose.yml ps
@@ -94,7 +94,7 @@ cd /home/core/.podman/
 podman-compose down
 podman-compose up -d
 ```
-* Check for SeLinux blocks and solutions:
+* Check for SELinux blocks and solutions:
 ```
 sudo sealert -a /var/log/audit/audit.log
 ```
@@ -105,7 +105,7 @@ Security: ( After 5/30/26 )
 * Automatic Updates
 * Podman Containers
 * Firewalld
-* SE Linux
+* SELinux
 * Auditd 
 * Nginx
 

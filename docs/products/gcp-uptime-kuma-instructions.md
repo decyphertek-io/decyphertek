@@ -19,14 +19,14 @@ cd ~
 Uptime Kuma:
 -------------
 * How to access Uptime-Kuma > https://ip-of-server
-* Follow instrucitons to create a new account. 
+* Follow instructions to create a new account. 
 * You can now add a website to monitor.
 
 Portainer - Manage Docker:
 --------------------------
 * How to access Portainer to manage your containers > https://ip-of-server:9443
 * Follow the instructions to create a new admin account. 
-* Caution - Portainer can timeout if you dont create an account fast enough
+* Caution - Portainer can timeout if you don't create an account fast enough
 * If this happens you need to restart the container, ssh into the server, from terminal:
 ```
 docker restart portainer

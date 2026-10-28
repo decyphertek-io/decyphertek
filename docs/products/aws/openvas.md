@@ -9,7 +9,7 @@ SSH Into the server:
 * Linux + MAC - add .pem key to 
 ```
 ~/.ssh/id_rsa
-# change permisisons
+# change permissions
 chmod 400 id_rsa
 ssh adminotaur@ip-of-server
 ```

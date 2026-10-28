@@ -35,7 +35,7 @@ Portainer:
 https://ip-of-server:9443
 ```
 * Follow the instructions to create a new admin account. 
-* Caution - Portainer can timeout if you dont create an account fast enough, if this happens ssh into your server & run:
+* Caution - Portainer can timeout if you don't create an account fast enough, if this happens ssh into your server & run:
 ```
 sudo su core
 cd ~

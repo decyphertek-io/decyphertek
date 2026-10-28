@@ -5,8 +5,8 @@ Note:
 ------
 * After 5/25/26 uses podman instead of docker and requires the core user .
 * After 5/25/26 Portainer is no longer used.
-* After 5/25/26 Fedora CoreOS is used instead of FlatCar Linux
-* After 7/2/26 The new podman path is /home/core/.podman/ , ~/opt/.podman/ is not longer used. 
+* After 5/25/26 Fedora CoreOS is used instead of Flatcar Linux
+* After 7/2/26 The new podman path is /home/core/.podman/ , ~/opt/.podman/ is no longer used. 
 * Please be aware that it takes a few minutes for Uptime Kuma to be up and running.
 
 SSH Into the server:
@@ -19,7 +19,7 @@ Uptime Kuma:
 * How to access Uptime-Kuma > https://ip-of-server
 * Setup Database > Select Embedded Mariadb
 * Create the admin account , customize you username and password. 
-* Create a monitor > Select Add Monitor ( Top Right ) > Fill in data. Thats it. 
+* Create a monitor > Select Add Monitor ( Top Right ) > Fill in data. That's it. 
 
 Podman: 
 -------
@@ -68,12 +68,12 @@ sudo systemctl status
 
 Troubleshooting:
 ---------------
-* If you didnt launch the vm using the core user you need to access pdoman this way:
+* If you didn't launch the vm using the core user you need to access podman this way:
 ```
 sudo runuser -u core -- podman ps
 sudo runuser -u core -- podman-compose -f /var/home/core/.podman/docker-compose.yml ps
 ```
-* Check for SeLinux blocks and solutions:
+* Check for SELinux blocks and solutions:
 ```
 sudo sealert -a /var/log/audit/audit.log
 ```
@@ -84,7 +84,7 @@ Security: ( After 5/25/26 )
 * Automatic Updates
 * Podman Containers
 * Firewalld
-* SE Linux
+* SELinux
 * Auditd 
 * Nginx
 

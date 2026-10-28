@@ -1,7 +1,7 @@
 Github
 =====
 
-Github provides a cloud based git repo freely to those who open souece their code. Lets find an easy way to manage it. 
+Github provides a cloud based git repo freely to those who open souece their code. Let's find an easy way to manage it. 
 
 Add ssh keys
 ------------
@@ -42,7 +42,7 @@ Setup
 ```
 sudo apt install git 
 git config --global user.email "email@domain"
-# If you dont want your email to be public
+# If you don't want your email to be public
 git config --global user.email "username@users.noreply.github.com"
 git config --global user.name "username"
 cd  ~/git/

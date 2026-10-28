@@ -3,7 +3,7 @@ LibreChat is an open-source AI chat platform that provides users with a versatil
 
 Note:
 -----
-* Please wait 10-15 minutes for Librechat to be accesible.
+* Please wait 10-15 minutes for Librechat to be accessible.
 * When creating a new user , if the register page goes blank , please refresh and wait, its not ready yet. 
 * Ollama is off by default and requires a GPU. To activate ollama run the following from terminal:
 ```
@@ -44,7 +44,7 @@ Librechat configuration update:
 * Any configuration changes to .env or librechat.yaml requires pm2 update for nodejs.
 * To simplify this I have an librechat update script, for example:
 ```
-# Lets say you want to add a new Ollama model and its not showing in librechat. We can fix that.
+# Let's say you want to add a new Ollama model and its not showing in librechat. We can fix that.
 sudo su
 cd /root/LibreChat/
 # EX: You install ollama codeqwen model 

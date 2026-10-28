@@ -4,7 +4,7 @@ SonarQube is an open-source platform for continuous inspection of code quality, 
 Note:
 ------
 * After 5/29/26 uses podman instead of docker and requires the core user.
-* After 5/29/26 Fedora CoreOS is used instead of FlatCar Linux.
+* After 5/29/26 Fedora CoreOS is used instead of Flatcar Linux.
 * After 5/29/26 Caddy and Coraza WAF is used instead of nginx.
 * Please be aware that it takes a few minutes for SonarQube CE to be up and running.
 
@@ -69,12 +69,12 @@ sudo systemctl status
 
 Troubleshooting:
 ---------------
-* If you didnt launch the vm using the core user you need to access pdoman this way:
+* If you didn't launch the vm using the core user you need to access podman this way:
 ```
 sudo runuser -u core -- podman ps
 sudo runuser -u core -- podman-compose -f /var/home/core/.podman/docker-compose.yml ps
 ```
-* Check for SeLinux blocks and solutions:
+* Check for SELinux blocks and solutions:
 ```
 sudo sealert -a /var/log/audit/audit.log
 ```
@@ -85,7 +85,7 @@ Security: ( After 5/29/26 )
 * Automatic Updates
 * Podman Containers
 * Firewalld
-* SE Linux
+* SELinux
 * Auditd 
 * Nginx
 

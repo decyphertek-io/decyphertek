@@ -9,7 +9,7 @@ SSH Into the server:
 * Linux + MAC - add .pem key to 
 ```
 ~/.ssh/id_rsa
-# change permisisons
+# change permissions
 chmod 400 id_rsa
 ssh adminotaur@ip-of-server
 ```
@@ -67,7 +67,7 @@ curl -k -u 'adminotaur:PASSWORD' "https://IP-OR-DOMAIN:9443/data/_search?pretty"
 
 Passwords:
 ----------
-* To Get the OpenSearch admin Password , run the follwoing command from terminal:
+* To Get the OpenSearch admin Password , run the following command from terminal:
 ```
 sudo cat /root/opensearch_admin_password.txt
 ```

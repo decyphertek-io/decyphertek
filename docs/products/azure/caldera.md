@@ -11,7 +11,7 @@ SSH Into the server:
 
 Passwords:
 ----------
-* To Get all the Mitre Caldera Passwords , run the follwoing command from terminal:
+* To Get all the Mitre Caldera Passwords , run the following command from terminal:
 ```
 sudo cat /home/adminotaur/caldera/conf/local.yml
 ```

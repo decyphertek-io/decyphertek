@@ -2,7 +2,7 @@ Nextcloud is a self-hosted cloud suite and collaboration platform that provides 
 
 SSH Into the server:
 --------------------
-1. Linux + MAC - add .pem key to ~/.ssh/id_rsa > change permisisons > chmod 400 id_rsa
+1. Linux + MAC - add .pem key to ~/.ssh/id_rsa > change permissions > chmod 400 id_rsa
 2. ssh core@ip-of-server 
 3. If using putty or mobaxterm make sure to convert .pem using puttygen.
 
@@ -20,8 +20,8 @@ NextCloud - Setup:
 * Install Recommended apps also sometimes fails to load. If that happens, just go directly to here.
 * https://ip-of-server/apps/dashboard/
 * If you want to download the recommended packages you can do it manually. 
-* Optional: Login > Select Account Icon: Top Right > Select: Apps > Office & Text > Download & Enable: Calender , Contacts , Nextcloud Office , 
-* Optional: Login > Select Account Icon: Top Right > Select: Apps > Social & COmmunication > Download & Enable: talk 
+* Optional: Login > Select Account Icon: Top Right > Select: Apps > Office & Text > Download & Enable: Calendar , Contacts , Nextcloud Office , 
+* Optional: Login > Select Account Icon: Top Right > Select: Apps > Social & Communication > Download & Enable: talk 
 
 Podman:
 -------
@@ -73,13 +73,13 @@ Portainer - Manage Docker: ( Before 4/16/26 )
 --------------------------
 * How to access Portainer to manage your containers > https://ip-of-server:9443
 * Follow the instructions to create a new admin account. 
-* Caution - Portainer can timeout if you dont create an account fast enough
+* Caution - Portainer can timeout if you don't create an account fast enough
 * If this happens you need to restart the container, ssh into the server, then run. > docker restart portainer
 * Once logged into portainer, click get started and select local. You can manage docker from here. 
 
 Manage Flatcar Linux: ( Before 4/16/26 )
 ---------------------
-* Optional: Manaully update Flatcar. Updates will happen automatically. 
+* Optional: Manually update Flatcar. Updates will happen automatically. 
 * If you want to manually check for updates run this command: update_engine_client -update
 
 

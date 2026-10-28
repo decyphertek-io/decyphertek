@@ -10,7 +10,7 @@ SSH:
 
 Passwords:
 ----------
-* To Get the OpenSearch admin Password , run the follwoing command from terminal:
+* To Get the OpenSearch admin Password , run the following command from terminal:
 ```
 sudo cat /home/adminotaur/opensearch_admin_password.txt
 ```

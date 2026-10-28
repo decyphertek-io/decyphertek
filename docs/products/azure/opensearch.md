@@ -22,7 +22,7 @@ Hardening Changes:
 
 Passwords:
 ----------
-* To Get the OpenSearch admin Password , run the follwoing command from terminal:
+* To Get the OpenSearch admin Password , run the following command from terminal:
 ```
 # The new path after 06/26
 sudo cat /root/opensearch-credentials.txt

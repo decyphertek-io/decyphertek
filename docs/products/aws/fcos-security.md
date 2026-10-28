@@ -7,7 +7,7 @@ view the status check from the ec2 / instances / dashboard. If it says intializi
 
 SSH Into the server:
 ---------------------
-* Linux + MAC - add .pem key to ~/.ssh/id_rsa > change permisisons > chmod 400 id_rsa
+* Linux + MAC - add .pem key to ~/.ssh/id_rsa > change permissions > chmod 400 id_rsa
 * ssh core@ip-of-server 
 * If using putty or mobaxterm make sure to convert .pem using puttygen.
 
@@ -53,12 +53,12 @@ sudo ausearch -m AVC,USER_AVC,SELINUX_ERR -ts boot -i
 sudo ausearch -m avc -ts recent | sudo audit2allow -M podman_policy
 sudo semodule -i podman_policy.pp
 
-# To disable SE Linux ( permissive - FCOS does not support fully disabled )
+# To disable SELinux ( permissive - FCOS does not support fully disabled )
 sudo sed -i 's/^SELINUX=.*/SELINUX=permissive/' /etc/selinux/config
 sudo setenforce 0
 sudo getenforce
 
-# To re-enable SE Linux
+# To re-enable SELinux
 sudo sed -i 's/^SELINUX=.*/SELINUX=enforcing/' /etc/selinux/config
 sudo setenforce 1
 sudo getenforce

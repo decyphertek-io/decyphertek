@@ -111,7 +111,7 @@ ACL
      sudo setfacl -m u:username:rwx -R folder/ 
      # Read , Write , & Execute access to All Users in a group
      sudo setfacl -m g:groupname:rwx folder/
-     # You can set which permisisons you want the user or group to have.
+     # You can set which permissions you want the user or group to have.
      sudo getfacl folder/
      # Revoke user & group access
      sudo setfacl -x u:username,g:groupname folder/
