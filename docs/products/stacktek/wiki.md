@@ -189,8 +189,9 @@ Images are pulled automatically from GHCR — the workspace catalog is baked int
 
 ```bash
 # Update to the latest images (also refreshes the workspace catalog)
-podman-compose pull
+echo "net.ipv4.ip_unprivileged_port_start=443" | sudo tee /etc/sysctl.d/99-stacktek.conf && sudo sysctl --system
 podman-compose up -d
+podman ps -a
 
 # Stop
 podman-compose down
