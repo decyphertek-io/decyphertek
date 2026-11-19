@@ -177,6 +177,7 @@ services:
 EOF
 
 # 6. Start StackTek
+echo "net.ipv4.ip_unprivileged_port_start=443" | sudo tee /etc/sysctl.d/99-stacktek.conf && sudo sysctl --system
 cd ~/stacktek
 podman-compose up -d
 ```
